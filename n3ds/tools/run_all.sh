@@ -29,8 +29,10 @@ mod mcu  0004013000001F02 0004013020001F02
 mod ptm  0004013000002202 0004013020002202
 python3 tools/r2_functions.py >/dev/null
 python3 tools/derive_ipc.py >/dev/null
-python3 tools/name_from_decomp.py >/dev/null 2>&1 || true
+python3 tools/extract_libctru_spec.py >/dev/null 2>&1 || true
 python3 tools/extract_ipc_from_decomp.py >/dev/null 2>&1 || true
+python3 tools/refine_with_libctru.py >/dev/null 2>&1 || true
+python3 tools/name_from_decomp.py >/dev/null 2>&1 || true
 python3 -I tools/build_master_table.py
 python3 -I tools/module_inventory.py
 python3 -I tools/make_stats.py >/dev/null

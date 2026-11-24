@@ -1,11 +1,37 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00104490,0x3e,ndm_ipc_cmd_0009_NDMU_ResumeScheduler_104490,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0009; libctru=NDMU_ResumeScheduler; req_hdr=0x00090040
+0x001044E0,0xc,ndm_ipc_cmd_0002_NDMU_LeaveExclusiveState_1044e0,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0002; libctru=NDMU_LeaveExclusiveState; req_hdr=0x00020002; reply_hdr=0x00020040
+0x00104654,0x18,ndm___ARM_common_switch8_104654,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x00104E28,0x8,ndm_svc_0x19_ClearEvent_104e28,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104F2C,0x8,ndm_svc_0x18_SignalEvent_104f2c,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001051E0,0x8,ndm_svc_0x24_WaitSynchronization1_1051e0,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001053E8,0x8,ndm_svc_0x23_CloseHandle_1053e8,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010558C,0x8,ndm_svc_0x32_SendSyncRequest_10558c,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010592C,0x18,ndm_svc_0x17_CreateEvent_10592c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106A14,0x22,ndm_ipc_cmd_000D_NDMU_QueryStatus_106a14,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000D; libctru=NDMU_QueryStatus; req_hdr=0x000D0080
+0x00106A3C,0x24,ndm_ipc_cmd_0005_NDMU_UnlockState_106a3c,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0005; libctru=NDMU_UnlockState; req_hdr=0x00050002; reply_hdr=0x00050040
+0x00106A68,0x96,ndm_ipc_cmd_0007_NDMU_ResumeDaemons_106a68,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0007; libctru=NDMU_ResumeDaemons; req_hdr=0x00070040
+0x00106B10,0xc,ndm_ndm_u_ipc_cmd_000B_handler_106b10,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000B; req_hdr=0x000B0080
+0x00106B20,0x98,ndm_ipc_cmd_0006_NDMU_SuspendDaemons_106b20,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0006; libctru=NDMU_SuspendDaemons; req_hdr=0x00060040
+0x00106BC8,0xc,ndm_ipc_cmd_000A_NDMU_GetCurrentState_106bc8,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000A; libctru=NDMU_GetCurrentState; req_hdr=0x000A0080
+0x00106BD8,0xc,ndm_ipc_cmd_0011_NDMU_GetScanInterval_106bd8,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0011; libctru=NDMU_GetScanInterval; req_hdr=0x00110080
+0x00106BE8,0xe,ndm_ipc_cmd_0010_NDMU_SetScanInterval_106be8,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0010; libctru=NDMU_SetScanInterval; req_hdr=0x00100040
+0x00106BFC,0xc,ndm_ipc_cmd_0013_NDMU_GetRetryInterval_106bfc,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0013; libctru=NDMU_GetRetryInterval; req_hdr=0x00130080
+0x00106C0C,0xe,ndm_ndm_u_ipc_cmd_0012_handler_106c0c,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0012; req_hdr=0x00120040
+0x00106C20,0x6e,ndm_ipc_cmd_0008_NDMU_SuspendScheduler_106c20,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0008; libctru=NDMU_SuspendScheduler; req_hdr=0x00080040
+0x00106CAC,0xc,ndm_ipc_cmd_0003_NDMU_GetExclusiveState_106cac,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0003; libctru=NDMU_GetExclusiveState; req_hdr=0x00030080
+0x00106CBC,0x14,ndm_ipc_cmd_0001_NDMU_EnterExclusiveState_106cbc,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0001; libctru=NDMU_EnterExclusiveState; req_hdr=0x00010042; reply_hdr=0x00010040
+0x00106CD4,0x12,ndm_ipc_cmd_0015_NDMU_ResetDaemons_106cd4,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0015; libctru=NDMU_ResetDaemons; req_hdr=0x00150040
+0x00106CEC,0x4,ndm_ndm_u_ipc_cmd_000C_handler_106cec,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000C; req_hdr=0x000C0042
+0x00106CF4,0x2a,ndm_ndm_u_ipc_cmd_000E_handler_106cf4,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000E; req_hdr=0x000E00C0
+0x00106D44,0x48,ndm_ndm_u_ipc_cmd_0014_handler_106d44,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0014; req_hdr=0x00140040
+0x00106D9C,0x10,ndm_ipc_cmd_0017_NDMU_ClearMacFilter_106d9c,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0017; libctru=NDMU_ClearMacFilter; req_hdr=0x00170040
+0x00106DF4,0x10,ndm_ndm_u_ipc_cmd_000F_handler_106df4,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x000F; req_hdr=0x000F00C0
+0x00106E20,0x26,ndm_ndm_u_ipc_cmd_0018_handler_106e20,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0018; req_hdr=0x00180004; reply_hdr=0x00180040
+0x00106E58,0x24,ndm_ipc_cmd_0004_NDMU_LockState_106e58,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0004; libctru=NDMU_LockState; req_hdr=0x00040002; reply_hdr=0x00040040
+0x001075E4,0x1c,ndm_ndm_u_ipc_dispatcher_1075e4,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (24 cases, cmd_id 0x01..0x18, service ndm:u, 17 matched to libctru)"
 0x00108680,0x6,ndm_str_service_frd_n,service_name_string,"client of (in ExHeader service-access list): ""frd:n"""
+0x0010887C,0x20,ndm_ipc_cmd_0016_NDMU_GetDefaultDaemons_10887c,ipc_command_handler,called from dispatcher 0x001075e4 (ndm:u) for cmd 0x0016; libctru=NDMU_GetDefaultDaemons; req_hdr=0x00160080
 0x0010918C,0x8,ndm_svc_0x03_ExitProcess_10918c,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001092F4,0x18,ndm_svc_0x21_CreateAddressArbiter_1092f4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010930C,0x18,ndm_svc_0x37_GetThreadId_10930c,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

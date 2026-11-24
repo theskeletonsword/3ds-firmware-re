@@ -2,8 +2,29 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0010102C,0x4c,hid_ipc_client_cmd_0004_10102c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00101F70,0x18,hid_svc_0x21_CreateAddressArbiter_101f70,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102D50,0x1c,hid_svc_0x2B_GetProcessInfo_102d50,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00102FC8,0x6ac,hid_ipc_handler_cmd_0002_0005_0008_etc_102fc8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00050040, 0x00080040, 0x000A0047"
+0x00102FC8,0x6ac,hid_hid_user_ipc_dispatcher_102fc8,ipc_dispatcher,"ARM IPC command dispatcher (24 cases, cmd_id 0x01..0x18, service hid:USER, 7 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00050040, 0x00080040, 0x000A0047"
 0x00103FA4,0x18,hid_svc_0x22_ArbitrateAddress_103fa4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104508,0x108,hid_hid_user_ipc_cmd_000D_handler_104508,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000D
+0x001046C8,0xa8,hid_ipc_cmd_0014_HIDUSER_DisableGyroscope_1046c8,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0014; libctru=HIDUSER_DisableGyroscope; req_hdr=0x00140000; reply_hdr=0x00140040 (DAT_001036c8)
+0x00104780,0x20,hid_ipc_cmd_0012_HIDUSER_DisableAccelerometer_104780,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0012; libctru=HIDUSER_DisableAccelerometer; req_hdr=0x00120000; reply_hdr=0x00120040 (DAT_001036c0)
+0x00104BE8,0x118,hid_hid_user_ipc_cmd_0009_handler_104be8,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0009
+0x001067A8,0x44,hid_ipc_cmd_000A_HIDUSER_GetHandles_1067a8,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000A; libctru=HIDUSER_GetHandles; req_hdr=0x000A0000
+0x001067F0,0x20,hid_ipc_cmd_0017_HIDUSER_GetSoundVolume_1067f0,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0017; libctru=HIDUSER_GetSoundVolume; req_hdr=0x00170000
+0x00106800,0x20,hid_ipc_cmd_0013_HIDUSER_EnableGyroscope_106800,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0013; libctru=HIDUSER_EnableGyroscope; req_hdr=0x00130000; reply_hdr=0x00130040 (DAT_001036c4)
+0x00106908,0x30,hid_ipc_cmd_0011_HIDUSER_EnableAccelerometer_106908,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0011; libctru=HIDUSER_EnableAccelerometer; req_hdr=0x00110000; reply_hdr=0x00110040 (DAT_001036bc)
+0x00107138,0x20,hid_hid_user_ipc_cmd_0010_handler_107138,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0010
+0x0010715C,0x20,hid_hid_user_ipc_cmd_000F_handler_10715c,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000F
+0x001071C0,0x20,hid_hid_user_ipc_cmd_0008_handler_1071c0,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0008
+0x00107258,0x20,hid_hid_user_ipc_cmd_0016_handler_107258,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0016; reply_hdr=0x00160180 (DAT_001036d4)
+0x001072E4,0x20,hid_hid_user_ipc_cmd_0002_handler_1072e4,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0002
+0x00107340,0x20,hid_hid_user_ipc_cmd_0003_handler_107340,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0003
+0x0010734C,0x20,hid_hid_user_ipc_cmd_0001_handler_10734c,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0001
+0x001074E0,0x20,hid_hid_user_ipc_cmd_000C_handler_1074e0,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000C
+0x00107608,0x20,hid_hid_user_ipc_cmd_000B_handler_107608,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000B
+0x00107644,0x20,hid_hid_user_ipc_cmd_000E_handler_107644,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x000E
+0x00107874,0x7c,hid_hid_user_ipc_cmd_0005_handler_107874,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0005
+0x001078FC,0xd8,hid_hid_user_ipc_cmd_0006_handler_1078fc,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0006
+0x001079DC,0x20,hid_hid_user_ipc_cmd_0004_handler_1079dc,ipc_command_handler,called from dispatcher 0x00102fc8 (hid:USER) for cmd 0x0004
 0x00107D38,0xc,hid_svc_0x0A_SleepThread_107d38,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00108860,0x18,hid_svc_0x13_CreateMutex_108860,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00108878,0x18,hid_svc_0x27_DuplicateHandle_108878,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

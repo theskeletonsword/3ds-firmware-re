@@ -17,6 +17,8 @@ content_*/
 firm_sections/
 decompiled/
 decompiled_*/
+!n3ds/docs/decompiled_notes/
+!n3ds/docs/decompiled_notes/**
 pseudocode/
 pseudocode_*/
 code_full_disasm.txt

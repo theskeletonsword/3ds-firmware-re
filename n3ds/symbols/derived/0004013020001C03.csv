@@ -1,8 +1,8 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100AFC,0x18,gsp_svc_0x4A_AcceptSession_100afc,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100DCC,0x54,gsp_ipc_client_cmd_0003_100dcc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100DCC,0x54,gsp_ipc_client_srvRegisterService_100dcc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100E28,0x4c,gsp_ipc_client_cmd_0004_100e28,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
-0x001014BC,0x4c8,gsp_ipc_handler_cmd_000F_0010_0011_etc_1014bc,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0040, 0x00100040, 0x00110040, 0x00120040"
+0x001014BC,0x4c8,gsp_gsp_lcd_ipc_dispatcher_1014bc,ipc_dispatcher,"ARM IPC command dispatcher (21 cases, cmd_id 0x01..0x15, service gsp::Lcd, 9 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0040, 0x00100040, 0x00110040, 0x00120040"
 0x00101AA0,0x1c,gsp_func_ptr_table_101aa0,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x001022C4,0x18,gsp_svc_0x21_CreateAddressArbiter_1022c4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001022DC,0x1c,gsp_svc_0x1E_CreateMemoryBlock_1022dc,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
@@ -11,14 +11,44 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001035D8,0x18,gsp_svc_0x2D_ConnectToPort_1035d8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00103614,0x1c,gsp_svc_0x2B_GetProcessInfo_103614,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00103630,0x10,gsp_svc_0x51_UnbindInterrupt_103630,svc_wrapper,"function body is a single `svc #0x51` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00103D80,0x750,gsp_ipc_handler_cmd_0001_0002_0003_etc_103d80,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00050040"
+0x00103D80,0x750,gsp_gsp_gpu_ipc_dispatcher_103d80,ipc_dispatcher,"ARM IPC command dispatcher (31 cases, cmd_id 0x01..0x1F, service gsp::Gpu, 19 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00050040"
 0x001055C0,0x18,gsp_svc_0x35_GetProcessId_1055c0,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001055D8,0x18,gsp_svc_0x37_GetThreadId_1055d8,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00107000,0x10,gsp_svc_0x23_CloseHandle_107000,svc_wrapper,"function body is a single `svc #0x23` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107798,0x8,gsp_ipc_cmd_0001_0003_etc_GSPGPU_WriteHWRegs_GSPGPU_ReadHWRegs_etc_107798,ipc_command_handler,"called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0001, 0x0003, 0x0004, 0x0005; libctru=GSPGPU_WriteHWRegs/GSPGPU_ReadHWRegs/GSPGPU_SetBufferSwap; req_hdr=0x00010082"
 0x00107BB4,0x18,gsp_svc_0x22_ArbitrateAddress_107bb4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00107D74,0x18,gsp_svc_0x17_CreateEvent_107d74,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108550,0x8,gsp_ipc_cmd_0001_0002_etc_GSPLCD_SetBrightnessRaw_GSPLCD_SetBrightness_etc_108550,ipc_command_handler,"called from dispatcher 0x001014bc (gsp::Lcd) for cmd 0x0001, 0x0002, 0x0003, 0x0004; libctru=GSPLCD_SetBrightnessRaw/GSPLCD_SetBrightness/GSPLCD_PowerOnAllBacklights; reply_hdr=0x00010040 (DAT_00101984)"
+0x0010855C,0x8,gsp_ipc_cmd_0013_GSPLCD_SetLedForceOff_10855c,ipc_command_handler,called from dispatcher 0x001014bc (gsp::Lcd) for cmd 0x0013; libctru=GSPLCD_SetLedForceOff; req_hdr=0x00130040; reply_hdr=0x00130040 (DAT_001019d0)
+0x001090D0,0x1c,gsp_ipc_cmd_0012_GSPGPU_GetPerfLog_1090d0,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0012; libctru=GSPGPU_GetPerfLog; req_hdr=0x00120000
+0x001090EC,0x8,gsp_gsp_gpu_ipc_cmd_0007_handler_1090ec,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0007
+0x001090F4,0x50,gsp_ipc_cmd_0016_GSPGPU_AcquireRight_1090f4,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0016; libctru=GSPGPU_AcquireRight; req_hdr=0x00160042
+0x00109144,0x34,gsp_ipc_cmd_001B_GSPGPU_ResetGpuCore_109144,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001B; libctru=GSPGPU_ResetGpuCore; req_hdr=0x001B0000
+0x0010917C,0x8,gsp_gsp_gpu_ipc_cmd_000F_handler_10917c,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000F
+0x00109188,0x68,gsp_ipc_cmd_0008_GSPGPU_FlushDataCache_109188,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0008; libctru=GSPGPU_FlushDataCache; req_hdr=0x00080082
+0x001091F4,0x8,gsp_gsp_gpu_ipc_cmd_0006_handler_1091f4,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0006
+0x001091FC,0x1c,gsp_ipc_cmd_001C_GSPGPU_SetLedForceOff_1091fc,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001C; libctru=GSPGPU_SetLedForceOff; req_hdr=0x001C0040
+0x00109218,0x20,gsp_ipc_cmd_0011_GSPGPU_SetPerfLogMode_109218,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0011; libctru=GSPGPU_SetPerfLogMode; req_hdr=0x00110040
+0x00109238,0x8,gsp_gsp_gpu_ipc_cmd_001D_handler_109238,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001D
+0x00109244,0x8,gsp_gsp_gpu_ipc_cmd_000E_handler_109244,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000E
+0x00109250,0x68,gsp_gsp_gpu_ipc_cmd_001F_handler_109250,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001F
+0x001092BC,0xe4,gsp_ipc_cmd_0019_GSPGPU_SaveVramSysArea_1092bc,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0019; libctru=GSPGPU_SaveVramSysArea; req_hdr=0x00190000
+0x001093A8,0x58,gsp_ipc_cmd_000B_GSPGPU_SetLcdForceBlack_1093a8,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000B; libctru=GSPGPU_SetLcdForceBlack; req_hdr=0x000B0040
+0x00109404,0x40,gsp_ipc_cmd_001A_GSPGPU_RestoreVramSysArea_109404,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001A; libctru=GSPGPU_RestoreVramSysArea; req_hdr=0x001A0000
+0x00109448,0x8,gsp_gsp_gpu_ipc_cmd_000D_handler_109448,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000D
+0x00109454,0x20,gsp_ipc_cmd_000C_GSPGPU_TriggerCmdReqQueue_109454,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000C; libctru=GSPGPU_TriggerCmdReqQueue; req_hdr=0x000C0000
+0x00109474,0x94,gsp_ipc_cmd_0009_GSPGPU_InvalidateDataCache_109474,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0009; libctru=GSPGPU_InvalidateDataCache; req_hdr=0x00090082
+0x00109510,0x2b98,gsp_ipc_cmd_0002_GSPGPU_WriteHWRegsWithMask_109510,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0002; libctru=GSPGPU_WriteHWRegsWithMask; req_hdr=0x00020084
+0x00109590,0x1fc0,gsp_gsp_gpu_ipc_cmd_001E_handler_109590,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x001E
+0x001095F8,0x8,gsp_gsp_gpu_ipc_cmd_000A_handler_1095f8,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x000A
+0x00109604,0x1c,gsp_ipc_cmd_0018_GSPGPU_ImportDisplayCaptureInfo_109604,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0018; libctru=GSPGPU_ImportDisplayCaptureInfo; req_hdr=0x00180000
+0x00109620,0x74,gsp_ipc_cmd_0013_GSPGPU_RegisterInterruptRelayQueue_109620,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0013; libctru=GSPGPU_RegisterInterruptRelayQueue; req_hdr=0x00130042
+0x0010969C,0x30,gsp_ipc_cmd_0014_GSPGPU_UnregisterInterruptRelayQueue_10969c,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0014; libctru=GSPGPU_UnregisterInterruptRelayQueue; req_hdr=0x00140000
 0x0010975C,0x174,gsp_ipc_dispatcher_10975c,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00050001, 0x00050002, 0x00050003, 0x00050006"
 0x0010A700,0xc,gsp_svc_0x0A_SleepThread_10a700,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B2A8,0x8c,gsp_ipc_cmd_0017_GSPGPU_ReleaseRight_10b2a8,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0017; libctru=GSPGPU_ReleaseRight; req_hdr=0x00170000
+0x0010B36C,0x124,gsp_gsp_gpu_ipc_cmd_0015_handler_10b36c,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0015
+0x0010B49C,0x64,gsp_gsp_gpu_ipc_cmd_0010_handler_10b49c,ipc_command_handler,called from dispatcher 0x00103d80 (gsp::Gpu) for cmd 0x0010
 0x0010E094,0x6,gsp_str_service_pdn_g,service_name_string,"client of (in ExHeader service-access list): ""pdn:g"""
 0x0010E0A0,0x6,gsp_str_service_qtm_s,service_name_string,"client of (in ExHeader service-access list): ""qtm:s"""
 0x0010E10C,0x5,gsp_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""

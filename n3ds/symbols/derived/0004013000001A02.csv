@@ -1,6 +1,6 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001006DC,0x18,dsp_svc_0x4A_AcceptSession_1006dc,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100A14,0x54,dsp_ipc_client_cmd_0003_100a14,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100A14,0x54,dsp_ipc_client_srvRegisterService_100a14,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100A70,0x4c,dsp_ipc_client_cmd_0004_100a70,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x001010F0,0x18,dsp_svc_0x21_CreateAddressArbiter_1010f0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101618,0x1c,dsp_svc_0x2B_GetProcessInfo_101618,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
@@ -8,9 +8,29 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001018E4,0x18,dsp_svc_0x35_GetProcessId_1018e4,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001018FC,0x10,dsp_svc_0x51_UnbindInterrupt_1018fc,svc_wrapper,"function body is a single `svc #0x51` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101B48,0xc,dsp_svc_0x0A_SleepThread_101b48,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001037F0,0x8c,dsp_ipc_cmd_000F_0010_DSP_ReadPipeIfPossible_1037f0,ipc_command_handler,"called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x000F, 0x0010; libctru=DSP_ReadPipeIfPossible; reply_hdr=0x000F0080 (DAT_001054bc)"
 0x00103D34,0x18,dsp_svc_0x22_ArbitrateAddress_103d34,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00103E78,0x18,dsp_svc_0x17_CreateEvent_103e78,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104228,0x18,dsp_svc_0x2D_ConnectToPort_104228,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001043D0,0x38,dsp_ipc_cmd_0001_0002_etc_DSP_RecvData_DSP_RecvDataIsReady_etc_1043d0,ipc_command_handler,"called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0001, 0x0002, 0x0003, 0x0004; libctru=DSP_RecvData/DSP_RecvDataIsReady/DSP_SendData; req_hdr=0x00010040; reply_hdr=0x00010080 (DAT_00105474)"
+0x00104B28,0x40,dsp_dsp_dsp_ipc_dispatcher_104b28,ipc_dispatcher,"ARM IPC command dispatcher (32 cases, cmd_id 0x01..0x21, service dsp::DSP, 16 matched to libctru)"
+0x00105DC0,0x20,dsp_ipc_cmd_0011_DSP_LoadComponent_105dc0,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0011; libctru=DSP_LoadComponent; req_hdr=0x001100C2
+0x00106038,0x20,dsp_ipc_cmd_0013_DSP_FlushDataCache_106038,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0013; libctru=DSP_FlushDataCache; req_hdr=0x00130082
+0x00106094,0x20,dsp_dsp_dsp_ipc_cmd_001C_handler_106094,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001C
+0x001060F4,0x20,dsp_ipc_cmd_0012_DSP_UnloadComponent_1060f4,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0012; libctru=DSP_UnloadComponent; req_hdr=0x00120000
+0x00106160,0x20,dsp_dsp_dsp_ipc_cmd_001D_handler_106160,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001D
+0x001061B0,0x20,dsp_dsp_dsp_ipc_cmd_001A_handler_1061b0,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001A
+0x001061F0,0x20,dsp_dsp_dsp_ipc_cmd_001B_handler_1061f0,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001B
+0x00106230,0x20,dsp_ipc_cmd_0017_DSP_SetSemaphoreMask_106230,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0017; libctru=DSP_SetSemaphoreMask; req_hdr=0x00170040
+0x00106244,0x20,dsp_dsp_dsp_ipc_cmd_0020_handler_106244,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0020
+0x001062D8,0x20,dsp_dsp_dsp_ipc_cmd_001E_handler_1062d8,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001E
+0x00106518,0x20,dsp_ipc_cmd_001F_DSP_GetHeadphoneStatus_106518,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x001F; libctru=DSP_GetHeadphoneStatus; req_hdr=0x001F0000
+0x001065BC,0x20,dsp_ipc_cmd_0014_DSP_InvalidateDataCache_1065bc,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0014; libctru=DSP_InvalidateDataCache; req_hdr=0x00140082
+0x00106794,0x20,dsp_ipc_cmd_000D_DSP_WriteProcessPipe_106794,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x000D; libctru=DSP_WriteProcessPipe; req_hdr=0x000D0082
+0x001068B4,0x20,dsp_dsp_dsp_ipc_cmd_0018_handler_1068b4,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0018
+0x00106984,0x20,dsp_ipc_cmd_0016_DSP_GetSemaphoreHandle_106984,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0016; libctru=DSP_GetSemaphoreHandle; req_hdr=0x00160000; reply_hdr=0x00160042 (DAT_001054ec)
+0x00106998,0x20,dsp_ipc_cmd_0015_DSP_RegisterInterruptEvents_106998,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x0015; libctru=DSP_RegisterInterruptEvents; req_hdr=0x00150082
+0x001069EC,0x20,dsp_ipc_cmd_000C_DSP_ConvertProcessAddressFromDspDram_1069ec,ipc_command_handler,called from dispatcher 0x00104b28 (dsp::DSP) for cmd 0x000C; libctru=DSP_ConvertProcessAddressFromDspDram; req_hdr=0x000C0040
 0x00108008,0x6,dsp_str_service_pdn_d,service_name_string,"client of (in ExHeader service-access list): ""pdn:d"""
 0x0010800E,0x8,dsp_str_service_cdc_DSP,service_name_string,"client of (in ExHeader service-access list): ""cdc:DSP"""
 0x0010801C,0x9,dsp_str_service_dsp__DSP,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dsp::DSP"""

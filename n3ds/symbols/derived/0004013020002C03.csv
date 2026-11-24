@@ -1,21 +1,160 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001013D8,0x18,nim_svc_0x4A_AcceptSession_1013d8,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x0010225C,0x54,nim_ipc_client_cmd_0003_10225c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x0010225C,0x54,nim_ipc_client_srvRegisterService_10225c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x001022B8,0x4c,nim_ipc_client_cmd_0004_1022b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x001034E0,0x18,nim_svc_0x21_CreateAddressArbiter_1034e0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104208,0x18,nim_svc_0x2D_ConnectToPort_104208,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104220,0x1c,nim_svc_0x1E_CreateMemoryBlock_104220,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010423C,0x1c,nim_svc_0x2B_GetProcessInfo_10423c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00105178,0x18,nim_svc_0x35_GetProcessId_105178,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x001054A0,0x2474,nim_ipc_handler_cmd_0001_0002_0005_etc_1054a0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00020040, 0x00050040, 0x00070086"
-0x00107958,0xe4,nim_ipc_handler_cmd_0001_0002_0003_etc_107958,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020040, 0x00030040, 0x00040040"
-0x00107A58,0x3dd8,nim_ipc_handler_cmd_0001_0002_0003_etc_107a58,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030240, 0x00050040"
-0x0010B8C4,0x350,nim_ipc_handler_cmd_0001_0002_0003_etc_10b8c4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020340, 0x00030040, 0x00040040"
+0x001054A0,0x2474,nim_nim_s_ipc_dispatcher_1054a0,ipc_dispatcher,"ARM IPC command dispatcher (38 cases, cmd_id 0x01..0x26, service nim:s, 7 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00020040, 0x00050040, 0x00070086"
+0x00107958,0xe4,nim_nim_s_ipc_dispatcher_107958,ipc_dispatcher,"ARM IPC command dispatcher (5 cases, cmd_id 0x01..0x05, service nim:s, 4 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020040, 0x00030040, 0x00040040"
+0x00107A58,0x3dd8,nim_nim_s_ipc_dispatcher_107a58,ipc_dispatcher,"ARM IPC command dispatcher (91 cases, cmd_id 0x01..0x5C, service nim:s, 12 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030240, 0x00050040"
+0x0010B8C4,0x350,nim_nim_s_ipc_dispatcher_10b8c4,ipc_dispatcher,"ARM IPC command dispatcher (16 cases, cmd_id 0x01..0x10, service nim:s, 7 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020340, 0x00030040, 0x00040040"
 0x0010BF04,0xc,nim_svc_0x0A_SleepThread_10bf04,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010C2D4,0x48,nim_ipc_cmd_0002_NIMS_CancelDownload_10c2d4,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0002; libctru=NIMS_CancelDownload; req_hdr=0x00020000
+0x0010C324,0xa4,nim_nim_s_ipc_cmd_000E_handler_10c324,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000E
+0x0010C3CC,0x14,nim_ipc_cmd_000B_NIMS_SetAttribute_10c3cc,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000B; libctru=NIMS_SetAttribute; req_hdr=0x000B0084
+0x0010C3E4,0x7c,nim_nim_s_ipc_cmd_000F_handler_10c3e4,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000F; reply_hdr=0x40
+0x0010C464,0x80,nim_nim_s_ipc_cmd_000D_handler_10c464,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000D
+0x0010C4E4,0x38,nim_nim_s_ipc_cmd_0007_handler_10c4e4,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0007
+0x0010C520,0x98,nim_nim_s_ipc_cmd_000C_handler_10c520,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000C
+0x0010C5B8,0xf954,nim_nim_s_ipc_cmd_0004_handler_10c5b8,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0004
+0x0010C5E0,0x9e44,nim_ipc_cmd_0001_NIMS_StartDownloadSimple_10c5e0,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0001; libctru=NIMS_StartDownloadSimple; req_hdr=0x00010200
+0x0010C608,0x84,nim_ipc_cmd_000A_NIMS_WantUpdate_10c608,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x000A; libctru=NIMS_WantUpdate; req_hdr=0x000A0000
+0x0010C698,0x38,nim_nim_s_ipc_cmd_0008_handler_10c698,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0008
+0x0010C6D8,0x60,nim_nim_s_ipc_cmd_0010_handler_10c6d8,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0010
+0x0010C738,0xd0ec,nim_ipc_cmd_0005_NIMS_UnregisterTask_10c738,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0005; libctru=NIMS_UnregisterTask; req_hdr=0x00050082; reply_hdr=0x00050042 (DAT_0010bc30)
+0x0010C760,0xd0e8,nim_ipc_cmd_0006_NIMS_IsTaskRegistered_10c760,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0006; libctru=NIMS_IsTaskRegistered; req_hdr=0x00060080; reply_hdr=0x00060042 (DAT_0010bc34)
+0x0010C788,0x1a7bc,nim_nim_s_ipc_cmd_0009_handler_10c788,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0009
+0x0010C7B0,0x20,nim_ipc_cmd_0003_NIMS_GetProgress_10c7b0,ipc_command_handler,called from dispatcher 0x0010b8c4 (nim:s) for cmd 0x0003; libctru=NIMS_GetProgress; req_hdr=0x00030000
+0x0010CA4C,0x1b4,nim_nim_s_ipc_cmd_0012_handler_10ca4c,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0012
+0x0010CC24,0x6c,nim_nim_s_ipc_cmd_0018_handler_10cc24,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0018; reply_hdr=0x00180440 (DAT_0010761c)
+0x0010CC90,0x18,nim_nim_s_ipc_cmd_0021_handler_10cc90,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0021; reply_hdr=0x00210040 (DAT_00107930)
+0x0010CCA8,0x1a8,nim_nim_s_ipc_cmd_0007_handler_10cca8,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0007
+0x0010CE70,0x184,nim_nim_s_ipc_cmd_0015_handler_10ce70,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0015
+0x0010D018,0x120,nim_nim_s_ipc_cmd_0010_handler_10d018,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0010
+0x0010D158,0x184,nim_nim_s_ipc_cmd_001C_handler_10d158,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001C
+0x0010D714,0x70,nim_nim_s_ipc_cmd_001F_handler_10d714,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001F
+0x0010D798,0x194,nim_nim_s_ipc_cmd_0013_handler_10d798,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0013
+0x0010D94C,0xd4,nim_nim_s_ipc_cmd_0022_handler_10d94c,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0022
+0x0010DA30,0x60,nim_nim_s_ipc_cmd_001E_handler_10da30,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001E
+0x0010DAA0,0x170,nim_nim_s_ipc_cmd_0011_handler_10daa0,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0011
+0x0010DC30,0x1a8,nim_nim_s_ipc_cmd_0008_handler_10dc30,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0008
+0x0010DDF8,0x1a8,nim_ipc_cmd_000A_NIMS_WantUpdate_10ddf8,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x000A; libctru=NIMS_WantUpdate; req_hdr=0x000A0000
+0x0010DFC0,0x50,nim_nim_s_ipc_cmd_0020_handler_10dfc0,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0020
+0x0010E01C,0x1fc,nim_nim_s_ipc_cmd_0014_handler_10e01c,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0014
+0x0010E248,0x184,nim_nim_s_ipc_cmd_0016_handler_10e248,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0016
+0x0010E3F0,0xac,nim_ipc_cmd_0003_NIMS_GetProgress_10e3f0,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0003; libctru=NIMS_GetProgress; req_hdr=0x00030000
+0x0010E4B0,0x144,nim_nim_s_ipc_cmd_001B_handler_10e4b0,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001B; reply_hdr=0x001B0044 (DAT_00107634)
+0x0010E610,0x1f4,nim_nim_s_ipc_cmd_0009_handler_10e610,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0009
+0x0010E834,0xa3c4,nim_ipc_cmd_0001_NIMS_StartDownloadSimple_10e834,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0001; libctru=NIMS_StartDownloadSimple; req_hdr=0x00010200
+0x0010E858,0x1b0,nim_nim_s_ipc_cmd_0017_handler_10e858,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0017
+0x0010EA2C,0x70,nim_nim_s_ipc_cmd_0025_handler_10ea2c,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0025
+0x0010EAB0,0x1f4,nim_ipc_cmd_000B_NIMS_SetAttribute_10eab0,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x000B; libctru=NIMS_SetAttribute; req_hdr=0x000B0084
+0x0010F0E8,0xa0,nim_nim_s_ipc_cmd_0019_handler_10f0e8,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0019
+0x0010F5D8,0x1e4,nim_nim_s_ipc_cmd_000C_handler_10f5d8,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x000C
+0x0010F7EC,0x94,nim_ipc_cmd_0002_NIMS_CancelDownload_10f7ec,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0002; libctru=NIMS_CancelDownload; req_hdr=0x00020000; reply_hdr=0x00020040 (DAT_0010651c)
+0x0010F898,0xb0,nim_nim_s_ipc_cmd_001A_handler_10f898,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001A
+0x0010F958,0x38,nim_nim_s_ipc_cmd_0023_handler_10f958,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0023; reply_hdr=0x00230040 (DAT_00107940)
+0x0010F998,0x28,nim_nim_s_ipc_cmd_001D_handler_10f998,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x001D
+0x0010F9C8,0x5c,nim_nim_s_ipc_cmd_0024_handler_10f9c8,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0024
+0x0010FA28,0x3c,nim_nim_s_ipc_cmd_0026_handler_10fa28,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0026
+0x0010FA6C,0x40,nim_ipc_cmd_0005_NIMS_UnregisterTask_10fa6c,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0005; libctru=NIMS_UnregisterTask; req_hdr=0x00050082; reply_hdr=0x00050040 (DAT_0010652c)
+0x0010FABC,0xb8,nim_nim_s_ipc_cmd_0004_handler_10fabc,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0004
+0x0010FB84,0x198,nim_ipc_cmd_0006_NIMS_IsTaskRegistered_10fb84,ipc_command_handler,called from dispatcher 0x001054a0 (nim:s) for cmd 0x0006; libctru=NIMS_IsTaskRegistered; req_hdr=0x00060080
+0x0010FD38,0x6d38,nim_ipc_cmd_0005_NIMS_UnregisterTask_10fd38,ipc_command_handler,called from dispatcher 0x00107958 (nim:s) for cmd 0x0005; libctru=NIMS_UnregisterTask; req_hdr=0x00050082
+0x0010FD48,0x14,nim_nim_s_ipc_cmd_0004_handler_10fd48,ipc_command_handler,called from dispatcher 0x00107958 (nim:s) for cmd 0x0004
+0x0010FD60,0x6d20,nim_ipc_cmd_0001_NIMS_StartDownloadSimple_10fd60,ipc_command_handler,called from dispatcher 0x00107958 (nim:s) for cmd 0x0001; libctru=NIMS_StartDownloadSimple; req_hdr=0x00010200; reply_hdr=0x00010042 (DAT_00107a40)
+0x0010FD70,0x6d18,nim_ipc_cmd_0002_NIMS_CancelDownload_10fd70,ipc_command_handler,called from dispatcher 0x00107958 (nim:s) for cmd 0x0002; libctru=NIMS_CancelDownload; req_hdr=0x00020000
+0x0010FD80,0x14,nim_ipc_cmd_0003_NIMS_GetProgress_10fd80,ipc_command_handler,called from dispatcher 0x00107958 (nim:s) for cmd 0x0003; libctru=NIMS_GetProgress; req_hdr=0x00030000
+0x0010FD98,0x1b8,nim_nim_s_ipc_cmd_0023_handler_10fd98,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0023
+0x0010FF74,0x70,nim_nim_s_ipc_cmd_0029_handler_10ff74,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0029; reply_hdr=0x00290440 (DAT_0010ab6c)
+0x0010FFF8,0x1a8,nim_nim_s_ipc_cmd_0016_handler_10fff8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0016
+0x001101C0,0x1a4,nim_nim_s_ipc_cmd_0025_handler_1101c0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0025
+0x00110384,0x10c,nim_nim_s_ipc_cmd_000F_handler_110384,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000F
+0x001104A8,0x1a4,nim_nim_s_ipc_cmd_000E_handler_1104a8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000E
+0x0011066C,0x2c,nim_ipc_cmd_0003_NIMS_GetProgress_11066c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0003; libctru=NIMS_GetProgress; req_hdr=0x00030000
+0x001106A0,0x198,nim_nim_s_ipc_cmd_0046_handler_1106a0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0046
+0x00110850,0x158,nim_nim_s_ipc_cmd_0026_handler_110850,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0026
+0x001109CC,0x144,nim_nim_s_ipc_cmd_0058_handler_1109cc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0058
+0x00110B34,0xb8,nim_nim_s_ipc_cmd_0007_handler_110b34,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0007
+0x00110BF4,0x120,nim_nim_s_ipc_cmd_001E_handler_110bf4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x001E
+0x00110D34,0x90,nim_nim_s_ipc_cmd_0008_handler_110d34,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0008
+0x00110DCC,0x94,nim_ipc_cmd_0006_NIMS_IsTaskRegistered_110dcc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0006; libctru=NIMS_IsTaskRegistered; req_hdr=0x00060080
+0x00110E64,0x108,nim_nim_s_ipc_cmd_002A_handler_110e64,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002A
+0x00110F88,0x10c,nim_ipc_cmd_0055_NIMS_RegisterTask_110f88,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0055; libctru=NIMS_RegisterTask; req_hdr=0x00550246
+0x0011109C,0x70,nim_nim_s_ipc_cmd_0030_handler_11109c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0030
+0x00111120,0xc4,nim_nim_s_ipc_cmd_0038_handler_111120,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0038
+0x0011134C,0x74,nim_ipc_cmd_0001_NIMS_StartDownloadSimple_11134c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0001; libctru=NIMS_StartDownloadSimple; req_hdr=0x00010200
+0x001113C8,0x24,nim_ipc_cmd_0002_NIMS_CancelDownload_1113c8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0002; libctru=NIMS_CancelDownload; req_hdr=0x00020000
+0x001113F4,0x18,nim_nim_s_ipc_cmd_0039_handler_1113f4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0039
+0x00111410,0x70,nim_nim_s_ipc_cmd_0033_handler_111410,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0033
+0x00111494,0x8,nim_nim_s_ipc_cmd_0047_handler_111494,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0047
+0x001114A0,0x194,nim_nim_s_ipc_cmd_0024_handler_1114a0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0024
+0x00111654,0x64,nim_nim_s_ipc_cmd_003E_handler_111654,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003E
+0x001116BC,0x13c,nim_nim_s_ipc_cmd_004D_handler_1116bc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004D
+0x001117FC,0x74,nim_nim_s_ipc_cmd_003D_handler_1117fc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003D
+0x00111874,0xe4,nim_nim_s_ipc_cmd_000C_handler_111874,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000C
+0x0011198C,0xac,nim_ipc_cmd_0005_NIMS_UnregisterTask_11198c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0005; libctru=NIMS_UnregisterTask; req_hdr=0x00050082
+0x00111A3C,0xd4,nim_nim_s_ipc_cmd_002D_handler_111a3c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002D
+0x00111B20,0x84,nim_nim_s_ipc_cmd_0056_handler_111b20,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0056; reply_hdr=0x00560442 (DAT_0010b89c)
+0x00111BAC,0x60,nim_nim_s_ipc_cmd_0032_handler_111bac,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0032
+0x00111DDC,0x18c,nim_nim_s_ipc_cmd_001F_handler_111ddc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x001F
+0x00111F8C,0x1a8,nim_nim_s_ipc_cmd_0017_handler_111f8c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0017
+0x00112154,0x1a8,nim_nim_s_ipc_cmd_0018_handler_112154,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0018
+0x0011231C,0x54,nim_nim_s_ipc_cmd_0049_handler_11231c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0049
+0x0011237C,0x34,nim_nim_s_ipc_cmd_0034_handler_11237c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0034
+0x001123B8,0x164,nim_nim_s_ipc_cmd_004A_handler_1123b8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004A
+0x00112534,0x158,nim_nim_s_ipc_cmd_0027_handler_112534,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0027
+0x00112794,0x8c,nim_ipc_cmd_003C_NIMS_RegisterSelf_112794,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003C; libctru=NIMS_RegisterSelf; req_hdr=0x003C0002
+0x00112834,0xe8,nim_nim_s_ipc_cmd_002F_handler_112834,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002F
+0x00112934,0x84,nim_nim_s_ipc_cmd_003A_handler_112934,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003A
+0x001129CC,0x118,nim_nim_s_ipc_cmd_002C_handler_1129cc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002C
+0x00112B04,0x20,nim_ipc_cmd_000A_NIMS_WantUpdate_112b04,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000A; libctru=NIMS_WantUpdate; req_hdr=0x000A0000
+0x00112B28,0x194,nim_nim_s_ipc_cmd_0028_handler_112b28,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0028
+0x00112CE0,0xe0,nim_nim_s_ipc_cmd_004C_handler_112ce0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004C
+0x00112DC4,0x3c0,nim_nim_s_ipc_cmd_001C_handler_112dc4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x001C
+0x001131A8,0xb8,nim_nim_s_ipc_cmd_0012_handler_1131a8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0012
+0x00113278,0x94,nim_ipc_cmd_003F_NIMS_GetInitializeResult_113278,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003F; libctru=NIMS_GetInitializeResult; req_hdr=0x003F0000
+0x0011331C,0x400,nim_nim_s_ipc_cmd_001D_handler_11331c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x001D
+0x00113740,0x6c,nim_nim_s_ipc_cmd_0022_handler_113740,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0022
+0x001137C0,0x110,nim_nim_s_ipc_cmd_004B_handler_1137c0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004B
+0x001138EC,0x20c,nim_nim_s_ipc_cmd_0019_handler_1138ec,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0019
+0x00113B1C,0x90,nim_nim_s_ipc_cmd_0013_handler_113b1c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0013
+0x00113BC4,0x6c,nim_nim_s_ipc_cmd_0014_handler_113bc4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0014
+0x00113C44,0x140,nim_nim_s_ipc_cmd_002E_handler_113c44,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002E
+0x00113DA0,0x84,nim_nim_s_ipc_cmd_003B_handler_113da0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x003B
+0x00113E38,0x8c,nim_nim_s_ipc_cmd_0048_handler_113e38,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0048
+0x00113ED8,0x38,nim_nim_s_ipc_cmd_0043_handler_113ed8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0043
+0x00113F18,0x60,nim_ipc_cmd_0042_NIMS_StartDownload_113f18,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0042; libctru=NIMS_StartDownload; req_hdr=0x00420240
+0x00113F80,0x28,nim_nim_s_ipc_cmd_0031_handler_113f80,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0031
+0x00113FB0,0x88,nim_nim_s_ipc_cmd_0051_handler_113fb0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0051
+0x0011404C,0x74,nim_nim_s_ipc_cmd_0052_handler_11404c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0052
+0x001140C4,0x64,nim_nim_s_ipc_cmd_0053_handler_1140c4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0053; reply_hdr=0x00530500 (DAT_0010b884)
+0x00114134,0x108,nim_nim_s_ipc_cmd_002B_handler_114134,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x002B
+0x00114258,0x140,nim_ipc_cmd_0057_NIMS_ConnectNoTicketDownload_114258,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0057; libctru=NIMS_ConnectNoTicketDownload; req_hdr=0x00570082
+0x001143B0,0x1a4,nim_nim_s_ipc_cmd_0021_handler_1143b0,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0021
+0x00114578,0x108,nim_nim_s_ipc_cmd_0015_handler_114578,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0015
+0x00114698,0x74,nim_nim_s_ipc_cmd_0035_handler_114698,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0035
+0x00114720,0x218,nim_nim_s_ipc_cmd_0040_handler_114720,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0040
+0x0011495C,0x5c,nim_nim_s_ipc_cmd_0045_handler_11495c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0045
+0x001149BC,0x140,nim_nim_s_ipc_cmd_0054_handler_1149bc,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0054
+0x00114B1C,0x470,nim_nim_s_ipc_cmd_0044_handler_114b1c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0044
+0x00114FA4,0x60,nim_nim_s_ipc_cmd_004E_handler_114fa4,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004E
+0x00115008,0x58,nim_nim_s_ipc_cmd_0050_handler_115008,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0050
+0x00115064,0x60,nim_nim_s_ipc_cmd_004F_handler_115064,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x004F
+0x001150C8,0x3c,nim_nim_s_ipc_cmd_0041_handler_1150c8,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0041
+0x0011510C,0x140,nim_nim_s_ipc_cmd_000D_handler_11510c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000D
+0x00115264,0x8,nim_nim_s_ipc_cmd_0011_handler_115264,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0011
+0x00115270,0x8,nim_nim_s_ipc_cmd_0010_handler_115270,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x0010
+0x00118E14,0x1a8,nim_ipc_cmd_000B_NIMS_SetAttribute_118e14,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x000B; libctru=NIMS_SetAttribute; req_hdr=0x000B0084
 0x00128DC8,0x18,nim_svc_0x17_CreateEvent_128dc8,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00131F4C,0x5,nim_str_service_urn_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""urn:"""
 0x00137F64,0x18,nim_svc_0x22_ArbitrateAddress_137f64,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00137F7C,0x88,nim_nim_s_ipc_cmd_005A_handler_137f7c,ipc_command_handler,called from dispatcher 0x00107a58 (nim:s) for cmd 0x005A; reply_hdr=0x005A0240 (DAT_0010b8b4)
 0x00138608,0x18,nim_svc_0x4F_ReplyAndReceive_138608,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00139648,0x74,nim_nim_s_ipc_cmd_000D_000E_etc_handler_139648,ipc_command_handler,"called from dispatcher 0x001054a0 (nim:s) for cmd 0x000D, 0x000E, 0x000F, 0x001A"
 0x00148A70,0x5,nim_str_service_ns1_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ns1:"""
 0x00148A80,0x11,nim_str_service_soapenv_Envelope,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soapenv:Envelope"""
 0x00148A94,0xd,nim_str_service_soapenv_Body,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soapenv:Body"""

@@ -1,7 +1,7 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100698,0x18,ro_svc_0x4A_AcceptSession_100698,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001006B0,0x18,ro_svc_0x4F_ReplyAndReceive_1006b0,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100AB8,0x54,ro_ipc_client_cmd_0003_100ab8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100AB8,0x54,ro_ipc_client_srvRegisterService_100ab8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100B14,0x4c,ro_ipc_client_cmd_0004_100b14,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00100E54,0x18,ro_svc_0x21_CreateAddressArbiter_100e54,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010106C,0x18,ro_svc_0x2D_ConnectToPort_10106c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

@@ -52,26 +52,32 @@ rows += [
 for r in rows:   # header-confirmed upgrade of a transferred row
     if r[2] == 'arm11_firm_entry_point' and r[1] == '0x1FFAF064':
         r[6] = 'exact'; r[8] += ';FIRM header Entrypoint ARM11=0x1FFAF064 (ctrtool -t firm) confirms the transferred address'
-# derived structural symbols (symbols/derived/*.csv from tools/derive_ipc.py): new names, no O3DS equivalent
+# manual symbols (hand-verified from decompiled C), see symbols/manual/README.md
+manual_seen = set()
+for f in sorted(glob.glob(B + 'manual/*.csv')):
+    for d in csv.DictReader(open(f)):
+        mt = re.search(r'([0-9A-F]{16})$', d['binary']); key = mt.group(1) if mt else d['binary']
+        manual_seen.add((key, int(d['ea'], 16) & ~1))
+# derived structural symbols (symbols/derived/*.csv from tools/derive_ipc.py + tools/refine_with_libctru.py): new names, no O3DS equivalent
 taken = collections.defaultdict(set)
 for r in rows:
-    if r[1]: taken[r[0].split()[-1] if r[0].startswith('SysModule') else r[0]].add(int(r[1], 16))
+    if r[1]: taken[r[0].split()[-1] if r[0].startswith('SysModule') else r[0]].add(int(r[1], 16) & ~1)
 for f in sorted(glob.glob(B + 'derived/*.csv')):
     stem = os.path.basename(f)[:-4]
     for d in csv.DictReader(open(f)):
         mod = d['symbol_name'].split('_')[0]
         comp = f'FIRM module {mod} (derived)' if stem.startswith('firm_') else f'SysModule {mod} {stem}'
-        key = stem if not stem.startswith('firm_') else comp
-        if d['kind'] in ('ipc_command_handler', 'ipc_client_call', 'ipc_dispatcher', 'svc_wrapper') and int(d['ea_n3ds'], 16) in taken.get(stem, set()): continue
+        ea_int = int(d['ea_n3ds'], 16) & ~1
+        if (stem, ea_int) in manual_seen: continue
+        if d['kind'] in ('ipc_command_handler', 'ipc_client_call', 'ipc_dispatcher', 'svc_wrapper', 'thumb_switch_helper') and ea_int in taken.get(stem, set()): continue
         rows.append([comp, d['ea_n3ds'], d['symbol_name'], '', '', '', 'derived_structural', d['kind'], 'derived from N3DS bytes (tools/derive_ipc.py): ' + d['technical_evidence'], ''])
 # names proven by the decompiled C itself (tools/name_from_decomp.py)
-_seen = {(re.search(r'([0-9A-F]{16})', r[0]).group(1) if re.search(r'([0-9A-F]{16})', r[0]) else r[0], r[1].upper()) for r in rows if r[1]}
+_seen = {(re.search(r'([0-9A-F]{16})', r[0]).group(1) if re.search(r'([0-9A-F]{16})', r[0]) else r[0], int(r[1], 16) & ~1) for r in rows if r[1]} | manual_seen
 for f in sorted(glob.glob(B + 'derived_decomp/n3ds__*.csv')):
     bn = os.path.basename(f)[6:-4]; mt = re.search(r'([0-9A-F]{16})$', bn); key = mt.group(1) if mt else bn
     for d in csv.DictReader(open(f)):
-        if (key, d['ea'].upper()) in _seen: continue
+        if (key, int(d['ea'], 16) & ~1) in _seen: continue
         rows.append([bn, d['ea'], d['symbol_name'], '', '', '', 'derived_decompiled', d['kind'], 'derived from the decompiled C: ' + d['technical_evidence'], ''])
-# manual symbols (hand-verified from decompiled C), see symbols/manual/README.md
 for f in sorted(glob.glob(B + 'manual/*.csv')):
     for d in csv.DictReader(open(f)):
         rows.append([d['binary'], d['ea'], d['symbol_name'], '', '', '', 'manual_decompiled', 'manual', d['evidence'], ''])

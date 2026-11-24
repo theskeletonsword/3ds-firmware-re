@@ -1,7 +1,7 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001004E8,0x18,pm_svc_0x4A_AcceptSession_1004e8,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00100500,0x18,pm_svc_0x4F_ReplyAndReceive_100500,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100C5C,0x54,pm_ipc_client_cmd_0003_100c5c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100C5C,0x54,pm_ipc_client_srvRegisterService_100c5c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100CB8,0x4c,pm_ipc_client_cmd_0004_100cb8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00100E38,0x18,pm_svc_0x17_CreateEvent_100e38,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00100E50,0x18,pm_svc_0x78_CreateResourceLimit_100e50,svc_wrapper,"function body is a single `svc #0x78` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
@@ -16,8 +16,21 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001031AC,0x4c,pm_ipc_client_cmd_0100_1031ac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x01000002
 0x0010393C,0x18,pm_svc_0x35_GetProcessId_10393c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00103DF8,0x18,pm_svc_0x27_DuplicateHandle_103df8,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103F1C,0x30,pm_ipc_cmd_0007_PMAPP_GetFIRMLaunchParams_103f1c,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0007; libctru=PMAPP_GetFIRMLaunchParams; req_hdr=0x00070042
+0x00103F50,0x22c,pm_ipc_cmd_0001_PMAPP_LaunchTitle_103f50,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0001; libctru=PMAPP_LaunchTitle; req_hdr=0x00010140
+0x00104190,0x44,pm_ipc_cmd_0009_PMAPP_SetFIRMLaunchParams_104190,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0009; libctru=PMAPP_SetFIRMLaunchParams; req_hdr=0x00090042
+0x001041D8,0xfc,pm_ipc_cmd_000C_PMAPP_UnregisterProcess_1041d8,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x000C; libctru=PMAPP_UnregisterProcess; req_hdr=0x000C0000
+0x00104394,0xa8,pm_ipc_cmd_0008_PMAPP_GetTitleExheaderFlags_104394,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0008; libctru=PMAPP_GetTitleExheaderFlags; req_hdr=0x00080100
+0x0010486C,0x90,pm_ipc_cmd_0003_PMAPP_TerminateCurrentApplication_10486c,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0003; libctru=PMAPP_TerminateCurrentApplication; req_hdr=0x00030080
+0x00104C40,0x120,pm_ipc_cmd_0005_PMAPP_TerminateProcess_104c40,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0005; libctru=PMAPP_TerminateProcess; req_hdr=0x000500C0
+0x00104D6C,0xf4,pm_ipc_cmd_0004_PMAPP_TerminateTitle_104d6c,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0004; libctru=PMAPP_TerminateTitle; req_hdr=0x00040100
+0x00105054,0x64,pm_ipc_cmd_0006_PMAPP_PrepareForReboot_105054,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0006; libctru=PMAPP_PrepareForReboot; req_hdr=0x00060082
+0x0010517C,0xdc,pm_ipc_cmd_000D_PMAPP_LaunchTitleUpdate_10517c,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x000D; libctru=PMAPP_LaunchTitleUpdate; req_hdr=0x000D0240
+0x0010526C,0x6c,pm_ipc_cmd_0002_PMAPP_LaunchFIRMSetParams_10526c,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x0002; libctru=PMAPP_LaunchFIRMSetParams; req_hdr=0x00020082
+0x001052E4,0xe4,pm_ipc_cmd_000B_PMAPP_GetAppResourceLimit_1052e4,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x000B; libctru=PMAPP_GetAppResourceLimit; req_hdr=0x000B0140
+0x001053D0,0xa0,pm_ipc_cmd_000A_PMAPP_SetAppResourceLimit_1053d0,ipc_command_handler,called from dispatcher 0x00105884 (pm:app) for cmd 0x000A; libctru=PMAPP_SetAppResourceLimit; req_hdr=0x000A0140
 0x00105770,0x100,pm_ipc_handler_cmd_0001_0002_0003_105770,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020040, 0x00030042"
-0x00105884,0x33c,pm_ipc_handler_cmd_0001_0003_0004_etc_105884,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00030040, 0x00040040, 0x00050040"
+0x00105884,0x33c,pm_pm_app_ipc_dispatcher_105884,ipc_dispatcher,"ARM IPC command dispatcher (13 cases, cmd_id 0x01..0x0D, service pm:app, 13 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00030040, 0x00040040, 0x00050040"
 0x0010624C,0x7,pm_str_service_pm_app,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pm:app"""
 0x00106253,0x7,pm_str_service_pm_dbg,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pm:dbg"""
 0x00106270,0x7,pm_str_service_fs_REG,service_name_string,"client of (in ExHeader service-access list): ""fs:REG"""

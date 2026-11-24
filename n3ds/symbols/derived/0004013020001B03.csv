@@ -3,7 +3,17 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100CEC,0x18,gpio_svc_0x21_CreateAddressArbiter_100cec,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00100E14,0x1c,gpio_svc_0x2B_GetProcessInfo_100e14,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001014A8,0x18,gpio_svc_0x22_ArbitrateAddress_1014a8,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00101DD8,0x1d4,gpio_ipc_handler_cmd_0001_0002_0003_etc_101dd8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00020040, 0x00030080, 0x00040040"
+0x00101DD8,0x1d4,gpio_ipc_dispatcher_101dd8,ipc_dispatcher,"ARM IPC command dispatcher (10 cases, cmd_id 0x01..0x0A); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00020040, 0x00030080, 0x00040040"
+0x00101FE0,0x20,gpio_ipc_cmd_0001_handler_101fe0,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0001
+0x0010208C,0x74,gpio_ipc_cmd_0002_handler_10208c,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0002
+0x00102110,0x20,gpio_ipc_cmd_0009_handler_102110,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0009; reply_hdr=0x00090040 (DAT_00101fd4)
+0x00102254,0x20,gpio_ipc_cmd_000A_handler_102254,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x000A
+0x0010235C,0x20,gpio_ipc_cmd_0003_handler_10235c,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0003
+0x00102408,0x70,gpio_ipc_cmd_0004_handler_102408,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0004
+0x00102488,0x20,gpio_ipc_cmd_0005_handler_102488,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0005
+0x00102534,0x74,gpio_ipc_cmd_0006_handler_102534,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0006
+0x001025B8,0x20,gpio_ipc_cmd_0007_handler_1025b8,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0007
+0x001026F0,0xac,gpio_ipc_cmd_0008_handler_1026f0,ipc_command_handler,called from dispatcher 0x00101dd8 for cmd 0x0008
 0x00103084,0x1c,gpio_func_ptr_table_103084,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x001030BC,0x9,gpio_str_service_gpio_CDC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:CDC"""
 0x001030C5,0x9,gpio_str_service_gpio_MCU,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:MCU"""

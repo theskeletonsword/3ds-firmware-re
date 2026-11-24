@@ -1,16 +1,73 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0010C7F8,0x6,cecd_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0010D00C,0x16,cecd_ipc_cmd_0006_0007_handler_10d00c,ipc_command_handler,"called from dispatcher 0x0011a5bc for cmd 0x0006, 0x0007; req_hdr=0x00060104; reply_hdr=0x00020040"
+0x0010D034,0x16,cecd_ipc_cmd_0007_0008_handler_10d034,ipc_command_handler,"called from dispatcher 0x0011ad68 for cmd 0x0007, 0x0008; req_hdr=0x00070042; reply_hdr=0x00070042"
+0x0010D0A4,0x16,cecd_ipc_cmd_0006_handler_10d0a4,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0006; req_hdr=0x00060042; reply_hdr=0x00060082
 0x0010F4B4,0x8,cecd_svc_0x18_SignalEvent_10f4b4,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010FE10,0x8,cecd_svc_0x28_GetSystemTick_10fe10,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00111868,0x18,cecd_svc_0x17_CreateEvent_111868,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00111EEC,0x6,cecd_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
 0x00112560,0x6,cecd_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
 0x00112D5C,0x8,cecd_svc_0x0A_SleepThread_112d5c,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00113050,0x18,cecd___ARM_common_switch8_113050,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x001132DC,0x6,cecd_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
 0x00113680,0x6,cecd_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
 0x00113838,0x8,cecd_svc_0x32_SendSyncRequest_113838,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001139EC,0x8,cecd_svc_0x24_WaitSynchronization1_1139ec,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00113A08,0x8,cecd_svc_0x23_CloseHandle_113a08,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00118BF4,0x26,cecd_ipc_cmd_001E_handler_118bf4,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x001E; req_hdr=0x001E0082; reply_hdr=0x001E0082
+0x00118C20,0x48,cecd_ipc_cmd_0003_handler_118c20,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0003; req_hdr=0x00030104; reply_hdr=0x00030080
+0x00118C80,0x1e,cecd_ipc_cmd_000E_handler_118c80,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000E; req_hdr=0x000E0080
+0x00118C9E,0xa,cecd_ipc_cmd_0415_handler_118c9e,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0415; req_hdr=0x041500C0
+0x00118CB8,0xc,cecd_ipc_cmd_0411_handler_118cb8,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0411; req_hdr=0x04110042; reply_hdr=0x00020042
+0x00118D50,0x10,cecd_ipc_cmd_0412_handler_118d50,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0412; req_hdr=0x041200C2; reply_hdr=0x00020040
+0x00118D64,0xc,cecd_ipc_cmd_0414_handler_118d64,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0414; req_hdr=0x04140040
+0x00118D94,0x62,cecd_ipc_cmd_0012_handler_118d94,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0012; req_hdr=0x00120104; reply_hdr=0x00120082
+0x00118E00,0x26,cecd_ipc_cmd_000D_handler_118e00,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000D; req_hdr=0x000D0082; reply_hdr=0x000D0042
+0x00118E3C,0x8e,cecd_ipc_cmd_0011_handler_118e3c,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0011; req_hdr=0x00110104; reply_hdr=0x00070104
+0x00118EFC,0x4c,cecd_ipc_cmd_0004_handler_118efc,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0004; req_hdr=0x00040106; reply_hdr=0x00040086
+0x00118F50,0xa,cecd_ipc_cmd_0417_handler_118f50,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0417; req_hdr=0x04170080
+0x00118F6C,0xc,cecd_ipc_cmd_0041_handler_118f6c,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0041; req_hdr=0x00410040
+0x00118FF0,0xc,cecd_ipc_cmd_0413_handler_118ff0,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0413; req_hdr=0x04130040
+0x00119000,0x26,cecd_ipc_cmd_000F_handler_119000,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000F; req_hdr=0x000F0042
+0x00119058,0x26,cecd_ipc_cmd_0010_handler_119058,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0010; req_hdr=0x00100042
+0x00119084,0xc,cecd_ipc_cmd_0416_handler_119084,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0416; req_hdr=0x04160002; reply_hdr=0x04160082
+0x00119090,0x60,cecd_ipc_cmd_0001_handler_119090,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0001; req_hdr=0x000100C2; reply_hdr=0x00010080
+0x001190F8,0x4a,cecd_ipc_cmd_0002_handler_1190f8,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0002; req_hdr=0x00020042; reply_hdr=0x00020082
+0x0011914C,0x4a,cecd_ipc_cmd_000C_handler_11914c,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000C; req_hdr=0x000C0040
+0x001191A0,0x3e,cecd_ipc_cmd_000B_handler_1191a0,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000B; req_hdr=0x000B0040
+0x001191E4,0x44,cecd_ipc_cmd_0005_handler_1191e4,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0005; req_hdr=0x00050042; reply_hdr=0x00020042
+0x00119230,0x4c,cecd_ipc_cmd_0008_handler_119230,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0008; req_hdr=0x00080102; reply_hdr=0x00020040
+0x00119284,0x86,cecd_ipc_cmd_0009_handler_119284,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x0009; req_hdr=0x000900C2; reply_hdr=0x00090042
+0x0011931C,0x86,cecd_ipc_cmd_000A_handler_11931c,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x000A; req_hdr=0x000A00C4; reply_hdr=0x00020040
+0x0011A5BC,0x40,cecd_ipc_dispatcher_11a5bc,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (22 cases, cmd_id 0x01..0x21)"
+0x0011AD68,0x40,cecd_ipc_dispatcher_11ad68,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (8 cases, cmd_id 0x01..0x08)"
+0x0011AF50,0x40,cecd_ipc_dispatcher_11af50,ipc_dispatcher,"Thumb-sw16/Thumb-sw8 IPC command dispatcher (28 cases, cmd_id 0x01..0x417)"
+0x0011B004,0x8,cecd_ipc_cmd_040F_handler_11b004,ipc_command_handler,called from dispatcher 0x0011af50 for cmd 0x040F
+0x0011C1A4,0x26,cecd_ipc_cmd_001E_handler_11c1a4,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x001E; req_hdr=0x001E0082; reply_hdr=0x00030082
+0x0011C1D0,0x42,cecd_ipc_cmd_0003_handler_11c1d0,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0003; req_hdr=0x00030104; reply_hdr=0x00030080
+0x0011C21C,0x20,cecd_ipc_cmd_000E_handler_11c21c,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000E; req_hdr=0x000E0080
+0x0011C28C,0x7c,cecd_ipc_cmd_0012_handler_11c28c,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0012; req_hdr=0x00120104; reply_hdr=0x00120082
+0x0011C314,0x28,cecd_ipc_cmd_000D_handler_11c314,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000D; req_hdr=0x000D0082; reply_hdr=0x00020042
+0x0011C33C,0xe,cecd_ipc_cmd_001F_handler_11c33c,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x001F; req_hdr=0x001F0080
+0x0011C350,0x8a,cecd_ipc_cmd_0011_handler_11c350,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0011; req_hdr=0x00110104; reply_hdr=0x00020042
+0x0011C3E4,0xe,cecd_ipc_cmd_0021_handler_11c3e4,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0021; req_hdr=0x00210080
+0x0011C3F8,0xe,cecd_ipc_cmd_0020_handler_11c3f8,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0020; req_hdr=0x00200080
+0x0011C4B0,0x28,cecd_ipc_cmd_000F_handler_11c4b0,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000F; req_hdr=0x000F0042
+0x0011C4DC,0x28,cecd_ipc_cmd_0010_handler_11c4dc,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0010; req_hdr=0x00100042
+0x0011C508,0x7a,cecd_ipc_cmd_0001_handler_11c508,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0001; req_hdr=0x000100C2; reply_hdr=0x00010080
+0x0011C590,0x48,cecd_ipc_cmd_0002_handler_11c590,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0002; req_hdr=0x00020042; reply_hdr=0x00030082
+0x0011C5E0,0x4c,cecd_ipc_cmd_000C_handler_11c5e0,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000C; req_hdr=0x000C0040
+0x0011C634,0x40,cecd_ipc_cmd_000B_handler_11c634,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000B; req_hdr=0x000B0040
+0x0011C678,0x42,cecd_ipc_cmd_0005_handler_11c678,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0005; req_hdr=0x00050042; reply_hdr=0x00020042
+0x0011C6C4,0x50,cecd_ipc_cmd_0008_handler_11c6c4,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0008; req_hdr=0x00080102; reply_hdr=0x00080042
+0x0011C71C,0x86,cecd_ipc_cmd_0009_handler_11c71c,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x0009; req_hdr=0x000900C2; reply_hdr=0x00020042
+0x0011C7C8,0x86,cecd_ipc_cmd_000A_handler_11c7c8,ipc_command_handler,called from dispatcher 0x0011a5bc for cmd 0x000A; req_hdr=0x000A00C4; reply_hdr=0x00020040
+0x0011C886,0x24,cecd_ipc_cmd_0005_handler_11c886,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0005; req_hdr=0x00050080
+0x0011C8AA,0x24,cecd_ipc_cmd_0004_handler_11c8aa,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0004; req_hdr=0x00040040
+0x0011C93E,0x24,cecd_ipc_cmd_0001_handler_11c93e,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0001; req_hdr=0x00010042
+0x0011C962,0x20,cecd_ipc_cmd_0002_handler_11c962,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0002; req_hdr=0x00020040
+0x0011C982,0x20,cecd_ipc_cmd_0003_handler_11c982,ipc_command_handler,called from dispatcher 0x0011ad68 for cmd 0x0003; req_hdr=0x00030040
 0x0011FF74,0x8,cecd_svc_0x03_ExitProcess_11ff74,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011FF7C,0x18,cecd_svc_0x4A_AcceptSession_11ff7c,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011FF94,0x18,cecd_svc_0x4F_ReplyAndReceive_11ff94,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

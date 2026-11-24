@@ -5,10 +5,59 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101C68,0x10,ir_svc_0x23_CloseHandle_101c68,svc_wrapper,"function body is a single `svc #0x23` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001022A8,0xc,ir_svc_0x0A_SleepThread_1022a8,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001029E8,0x18,ir_svc_0x13_CreateMutex_1029e8,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103054,0x20,ir_ipc_cmd_0003_IRU_StartSendTransfer_103054,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0003; libctru=IRU_StartSendTransfer; req_hdr=0x00030042
+0x00103160,0x20,ir_ipc_cmd_0001_IRU_Initialize_103160,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0001; libctru=IRU_Initialize; req_hdr=0x00010000
+0x00103190,0x20,ir_ipc_cmd_0005_IRU_StartRecvTransfer_103190,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0005; libctru=IRU_StartRecvTransfer; req_hdr=0x000500C2
+0x001031B4,0x1ac,ir_ipc_cmd_0002_IRU_Shutdown_1031b4,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0002; libctru=IRU_Shutdown; req_hdr=0x00020000
+0x00103380,0x20,ir_ipc_cmd_0004_IRU_WaitSendTransfer_103380,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0004; libctru=IRU_WaitSendTransfer; req_hdr=0x00040000
+0x00103468,0x20,ir_ipc_cmd_0006_IRU_WaitRecvTransfer_103468,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0006; libctru=IRU_WaitRecvTransfer; req_hdr=0x00060000
+0x00103968,0x58,ir_ir_u_ipc_cmd_0007_handler_103968,ipc_command_handler,called from dispatcher 0x00109834 (ir:u) for cmd 0x0007
+0x00105B50,0x40,ir_ir_u_ipc_dispatcher_105b50,ipc_dispatcher,"ARM IPC command dispatcher (18 cases, cmd_id 0x01..0x12, service ir:u, 12 matched to libctru)"
+0x00107068,0x20,ir_ir_u_ipc_cmd_000F_handler_107068,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x000F
+0x001071EC,0x20,ir_ipc_cmd_0009_IRU_SetBitRate_1071ec,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0009; libctru=IRU_SetBitRate; req_hdr=0x00090040
+0x001072FC,0x20,ir_ipc_cmd_0006_IRU_WaitRecvTransfer_1072fc,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0006; libctru=IRU_WaitRecvTransfer; req_hdr=0x00060000
+0x001073F8,0x20,ir_ipc_cmd_0002_IRU_Shutdown_1073f8,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0002; libctru=IRU_Shutdown; req_hdr=0x00020000
 0x00108888,0x18,ir_svc_0x17_CreateEvent_108888,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00108C18,0x18,ir_svc_0x22_ArbitrateAddress_108c18,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x001091A4,0x608,ir_ipc_handler_cmd_0001_0002_0003_etc_1091a4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00040040"
-0x00109834,0x178,ir_ipc_handler_cmd_0001_0002_0003_etc_109834,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010043, 0x00020040, 0x00030040, 0x00040080"
+0x001091A4,0x608,ir_ir_u_ipc_dispatcher_1091a4,ipc_dispatcher,"ARM IPC command dispatcher (26 cases, cmd_id 0x01..0x1A, service ir:u, 12 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00040040"
+0x00109834,0x178,ir_ir_u_ipc_dispatcher_109834,ipc_dispatcher,"ARM IPC command dispatcher (7 cases, cmd_id 0x01..0x07, service ir:u, 6 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010043, 0x00020040, 0x00030040, 0x00040080"
+0x001099D0,0x20,ir_ipc_cmd_0004_IRU_WaitSendTransfer_1099d0,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0004; libctru=IRU_WaitSendTransfer; req_hdr=0x00040000
+0x00109A90,0x20,ir_ipc_cmd_0001_IRU_Initialize_109a90,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0001; libctru=IRU_Initialize; req_hdr=0x00010000
+0x00109C58,0x20,ir_ipc_cmd_000A_IRU_GetBitRate_109c58,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000A; libctru=IRU_GetBitRate; req_hdr=0x000A0000
+0x0010A124,0x20,ir_ipc_cmd_0005_IRU_StartRecvTransfer_10a124,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0005; libctru=IRU_StartRecvTransfer; req_hdr=0x000500C2
+0x0010A2AC,0x20,ir_ir_u_ipc_cmd_0010_handler_10a2ac,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0010
+0x0010A2C4,0x20,ir_ir_u_ipc_cmd_0007_handler_10a2c4,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0007
+0x0010A2EC,0x20,ir_ir_u_ipc_cmd_0008_handler_10a2ec,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0008
+0x0010A4EC,0x20,ir_ir_u_ipc_cmd_0011_handler_10a4ec,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0011
+0x0010A510,0x20,ir_ipc_cmd_000D_IRU_GetSendFinishedEvent_10a510,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000D; libctru=IRU_GetSendFinishedEvent; req_hdr=0x000D0000; reply_hdr=0x000D0042 (DAT_00105e80)
+0x0010A608,0x20,ir_ipc_cmd_000E_IRU_GetRecvFinishedEvent_10a608,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000E; libctru=IRU_GetRecvFinishedEvent; req_hdr=0x000E0000; reply_hdr=0x000E0042 (DAT_00105e84)
+0x0010A620,0x20,ir_ipc_cmd_0003_IRU_StartSendTransfer_10a620,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0003; libctru=IRU_StartSendTransfer; req_hdr=0x00030042
+0x0010A774,0x60,ir_ipc_cmd_000C_IRU_GetIRLEDRecvState_10a774,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000C; libctru=IRU_GetIRLEDRecvState; req_hdr=0x000C0000
+0x0010AA08,0x20,ir_ipc_cmd_000B_IRU_SetIRLEDState_10aa08,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000B; libctru=IRU_SetIRLEDState; req_hdr=0x000B0040
+0x0010AA78,0x94,ir_ir_u_ipc_cmd_0012_handler_10aa78,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x0012
+0x0010AB24,0x20,ir_ir_u_ipc_cmd_000F_handler_10ab24,ipc_command_handler,called from dispatcher 0x00105b50 (ir:u) for cmd 0x000F
+0x0010AB40,0x20,ir_ipc_cmd_0009_IRU_SetBitRate_10ab40,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0009; libctru=IRU_SetBitRate; req_hdr=0x00090040
+0x0010ABF0,0x20,ir_ipc_cmd_000B_IRU_SetIRLEDState_10abf0,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x000B; libctru=IRU_SetIRLEDState; req_hdr=0x000B0040; reply_hdr=0x000B0042 (DAT_001097e0)
+0x0010AC08,0x20,ir_ir_u_ipc_cmd_0008_handler_10ac08,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0008
+0x0010ADAC,0x20,ir_ir_u_ipc_cmd_0007_handler_10adac,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0007
+0x0010AF30,0x20,ir_ipc_cmd_000E_IRU_GetRecvFinishedEvent_10af30,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x000E; libctru=IRU_GetRecvFinishedEvent; req_hdr=0x000E0000
+0x0010AF3C,0x20,ir_ipc_cmd_0005_IRU_StartRecvTransfer_10af3c,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0005; libctru=IRU_StartRecvTransfer; req_hdr=0x000500C2
+0x0010B074,0x20,ir_ipc_cmd_0004_IRU_WaitSendTransfer_10b074,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0004; libctru=IRU_WaitSendTransfer; req_hdr=0x00040000
+0x0010B124,0x20,ir_ipc_cmd_000A_IRU_GetBitRate_10b124,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x000A; libctru=IRU_GetBitRate; req_hdr=0x000A0000; reply_hdr=0x000A0042 (DAT_001097dc)
+0x0010B13C,0x28,ir_ipc_cmd_0001_IRU_Initialize_10b13c,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0001; libctru=IRU_Initialize; req_hdr=0x00010000
+0x0010B164,0x20,ir_ir_u_ipc_cmd_001A_handler_10b164,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x001A
+0x0010B1F4,0x20,ir_ir_u_ipc_cmd_0017_handler_10b1f4,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0017
+0x0010B26C,0x20,ir_ir_u_ipc_cmd_0010_handler_10b26c,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0010
+0x0010B280,0x20,ir_ipc_cmd_0006_IRU_WaitRecvTransfer_10b280,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0006; libctru=IRU_WaitRecvTransfer; req_hdr=0x00060000
+0x0010B3AC,0x20,ir_ipc_cmd_0003_IRU_StartSendTransfer_10b3ac,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0003; libctru=IRU_StartSendTransfer; req_hdr=0x00030042
+0x0010B45C,0x20,ir_ir_u_ipc_cmd_0013_handler_10b45c,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0013
+0x0010BA78,0x20,ir_ir_u_ipc_cmd_0019_handler_10ba78,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0019
+0x0010BE78,0x20,ir_ir_u_ipc_cmd_0016_handler_10be78,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0016
+0x0010BF68,0x20,ir_ipc_cmd_000C_IRU_GetIRLEDRecvState_10bf68,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x000C; libctru=IRU_GetIRLEDRecvState; req_hdr=0x000C0000; reply_hdr=0x000C0042 (DAT_001097e4)
+0x0010BF80,0x20,ir_ir_u_ipc_cmd_0012_handler_10bf80,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0012
+0x0010BFD8,0x20,ir_ir_u_ipc_cmd_0014_handler_10bfd8,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0014
+0x0010C04C,0x20,ir_ir_u_ipc_cmd_0015_handler_10c04c,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0015
+0x0010C0BC,0x20,ir_ir_u_ipc_cmd_0011_handler_10c0bc,ipc_command_handler,called from dispatcher 0x001091a4 (ir:u) for cmd 0x0011
 0x00110000,0x8,ir_str_service_i2c__IR,service_name_string,"client of (in ExHeader service-access list): ""i2c::IR"""
 0x00110008,0x8,ir_str_service_gpio_IR,service_name_string,"client of (in ExHeader service-access list): ""gpio:IR"""
 0x0011008C,0x5,ir_str_service_ir_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ir:u"""

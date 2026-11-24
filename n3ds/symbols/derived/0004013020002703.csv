@@ -1,8 +1,22 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00102AC0,0x34,csnd_ipc_cmd_0002_CSND_Shutdown_102ac0,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0002; libctru=CSND_Shutdown; req_hdr=0x00020040
 0x00102E58,0x8,csnd_svc_0x14_ReleaseMutex_102e58,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001033C0,0x18,csnd___ARM_common_switch8_1033c0,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x001034A8,0x8,csnd_svc_0x24_WaitSynchronization1_1034a8,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001038C8,0x8,csnd_svc_0x32_SendSyncRequest_1038c8,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00103910,0x8,csnd_svc_0x23_CloseHandle_103910,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001045F0,0x1e4,csnd_csnd_snd_ipc_dispatcher_1045f0,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (12 cases, cmd_id 0x01..0x0C, service csnd:SND, 11 matched to libctru)"
+0x0010480A,0x24,csnd_ipc_cmd_0008_CSND_ReleaseCapUnit_10480a,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0008; libctru=CSND_ReleaseCapUnit; req_hdr=0x00080040
+0x0010482E,0x8,csnd_ipc_cmd_0006_CSND_ReleaseSoundChannels_10482e,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0006; libctru=CSND_ReleaseSoundChannels; req_hdr=0x00060040
+0x00104836,0x8,csnd_ipc_cmd_0009_CSND_FlushDataCache_104836,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0009; libctru=CSND_FlushDataCache; req_hdr=0x00090082; reply_hdr=0x00090040
+0x0010483E,0x12,csnd_ipc_cmd_000C_CSND_Reset_10483e,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x000C; libctru=CSND_Reset; req_hdr=0x000C0000
+0x00104850,0x8,csnd_ipc_cmd_000A_CSND_StoreDataCache_104850,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x000A; libctru=CSND_StoreDataCache; req_hdr=0x000A0082; reply_hdr=0x000A0040
+0x00104858,0x48,csnd_ipc_cmd_0007_CSND_AcquireCapUnit_104858,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0007; libctru=CSND_AcquireCapUnit; req_hdr=0x00070080
+0x001048A4,0x16,csnd_ipc_cmd_0005_CSND_AcquireSoundChannels_1048a4,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0005; libctru=CSND_AcquireSoundChannels; req_hdr=0x00050080
+0x001048C0,0x10,csnd_csnd_snd_ipc_cmd_0004_handler_1048c0,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0004; req_hdr=0x00040040
+0x001048D0,0x84,csnd_ipc_cmd_0001_CSND_Initialize_1048d0,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0001; libctru=CSND_Initialize; req_hdr=0x00010043
+0x00104958,0x8,csnd_ipc_cmd_000B_CSND_InvalidateDataCache_104958,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x000B; libctru=CSND_InvalidateDataCache; req_hdr=0x000B0082; reply_hdr=0x000B0040
+0x00104A0C,0x36,csnd_ipc_cmd_0003_CSND_ExecuteCommands_104a0c,ipc_command_handler,called from dispatcher 0x001045f0 (csnd:SND) for cmd 0x0003; libctru=CSND_ExecuteCommands; req_hdr=0x00030040
 0x00104F40,0x18,csnd_svc_0x4A_AcceptSession_104f40,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104F58,0x8,csnd_svc_0x18_SignalEvent_104f58,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001050E4,0x18,csnd_svc_0x21_CreateAddressArbiter_1050e4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

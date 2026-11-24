@@ -6,6 +6,26 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00104E08,0x18,news_svc_0x17_CreateEvent_104e08,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00105048,0x8,news_svc_0x32_SendSyncRequest_105048,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001051B4,0x8,news_svc_0x23_CloseHandle_1051b4,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010549C,0x18,news___ARM_common_switch8_10549c,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
+0x00107458,0x10,news_ipc_cmd_0005_NEWS_GetTotalNotifications_107458,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0005; libctru=NEWS_GetTotalNotifications; req_hdr=0x00050080
+0x00107468,0x12,news_news_s_ipc_cmd_0011_handler_107468,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0011; req_hdr=0x00110040
+0x0010747A,0x10,news_news_s_ipc_cmd_0010_handler_10747a,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0010; req_hdr=0x00100040
+0x0010748A,0x18,news_news_s_ipc_cmd_000A_handler_10748a,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000A; req_hdr=0x000A0042; reply_hdr=0x00030082
+0x001074A2,0x44,news_ipc_cmd_000B_NEWS_GetNotificationHeader_1074a2,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000B; libctru=NEWS_GetNotificationHeader; req_hdr=0x000B0082; reply_hdr=0x00030082
+0x001074E6,0x14,news_news_s_ipc_cmd_0006_handler_1074e6,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0006; req_hdr=0x00060042; reply_hdr=0x00020042
+0x001074FA,0x3a,news_ipc_cmd_0007_NEWS_SetNotificationHeader_1074fa,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0007; libctru=NEWS_SetNotificationHeader; req_hdr=0x00070082; reply_hdr=0x00020042
+0x00107534,0x1c,news_ipc_cmd_000C_NEWS_GetNotificationMessage_107534,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000C; libctru=NEWS_GetNotificationMessage; req_hdr=0x000C0082; reply_hdr=0x00030082
+0x00107550,0x1c,news_ipc_cmd_000D_NEWS_GetNotificationImage_107550,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000D; libctru=NEWS_GetNotificationImage; req_hdr=0x000D0082; reply_hdr=0x00030082
+0x0010756C,0x18,news_ipc_cmd_0008_NEWS_SetNotificationMessage_10756c,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0008; libctru=NEWS_SetNotificationMessage; req_hdr=0x00080082; reply_hdr=0x00020042
+0x00107584,0x18,news_ipc_cmd_0009_NEWS_SetNotificationImage_107584,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0009; libctru=NEWS_SetNotificationImage; req_hdr=0x00090082; reply_hdr=0x00020042
+0x0010759C,0x12,news_news_s_ipc_cmd_0013_handler_10759c,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0013; req_hdr=0x00130040
+0x001075AE,0x10,news_news_s_ipc_cmd_0014_handler_1075ae,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0014; req_hdr=0x00140080
+0x001075BE,0x3a,news_news_s_ipc_cmd_0012_handler_1075be,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0012; req_hdr=0x00120082; reply_hdr=0x00020042
+0x001075F8,0xc,news_news_s_ipc_cmd_0004_handler_1075f8,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0004; req_hdr=0x00040040
+0x00107604,0xe,news_news_s_ipc_cmd_000F_handler_107604,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000F; req_hdr=0x000F0040
+0x00107614,0x34,news_news_s_ipc_cmd_000E_handler_107614,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x000E; req_hdr=0x000E0040
+0x00107658,0x20,news_news_s_ipc_cmd_0001_handler_107658,ipc_command_handler,called from dispatcher 0x001078c8 (news:s) for cmd 0x0001; req_hdr=0x000100C6; reply_hdr=0x00010046; libctru=news:u:NEWS_AddNotification
+0x001078C8,0x40,news_news_s_ipc_dispatcher_1078c8,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (20 cases, cmd_id 0x01..0x14, service news:s, 7 matched to libctru)"
 0x00108D90,0x8,news_svc_0x03_ExitProcess_108d90,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00108DE0,0x18,news_svc_0x4A_AcceptSession_108de0,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00108DF8,0x18,news_svc_0x4F_ReplyAndReceive_108df8,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

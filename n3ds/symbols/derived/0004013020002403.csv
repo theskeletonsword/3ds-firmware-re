@@ -1,6 +1,227 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010201C,0x94,ac_ac_u_ipc_dispatcher_10201c,ipc_dispatcher,"Thumb-sw16 IPC command dispatcher (65 cases, cmd_id 0x01..0x41, service ac:u, 17 matched to libctru)"
+0x0010216E,0x10,ac_ac_u_ipc_cmd_003C_handler_10216e,ipc_command_handler,called from dispatcher 0x0010201c (ac:u) for cmd 0x003C; req_hdr=0x003C0042; reply_hdr=0x003C0042
+0x00103330,0x1eba,ac_ac_i_ipc_dispatcher_103330,ipc_dispatcher,"Thumb-sw16 IPC command dispatcher (218 cases, cmd_id 0x01..0x4A2, service ac:i, 18 matched to libctru)"
+0x001035BA,0x10,ac_ac_i_ipc_cmd_0405_0466_handler_1035ba,ipc_command_handler,"called from dispatcher 0x00103330 (ac:i) for cmd 0x0405, 0x0466; req_hdr=0x04050084; reply_hdr=0x04050044"
+0x001063EC,0xe,ac_ipc_cmd_0401_ACI_LoadNetworkSetting_1063ec,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0401; libctru=ACI_LoadNetworkSetting; req_hdr=0x04010040
+0x00106404,0x14,ac_ac_i_ipc_cmd_0404_handler_106404,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0404
+0x0010641C,0x22,ac_ac_i_ipc_cmd_0403_handler_10641c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0403
+0x00106444,0x18,ac_ac_i_ipc_cmd_0402_handler_106444,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0402
+0x00106464,0xa,ac_ac_i_ipc_cmd_0409_handler_106464,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0409
+0x00106474,0x8,ac_ac_i_ipc_cmd_040A_handler_106474,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040A; req_hdr=0x040A0040
+0x00106490,0x8,ac_ac_i_ipc_cmd_0408_handler_106490,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0408
+0x001064D4,0xa,ac_ac_i_ipc_cmd_046D_handler_1064d4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046D; req_hdr=0x046D0080
+0x001064E4,0x8,ac_ac_i_ipc_cmd_046E_handler_1064e4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046E; req_hdr=0x046E0040
+0x001064F0,0xa,ac_ac_i_ipc_cmd_044F_handler_1064f0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044F
+0x00106500,0x10,ac_ac_i_ipc_cmd_0465_handler_106500,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0465; req_hdr=0x04650042
+0x00106514,0xa,ac_ac_i_ipc_cmd_0463_handler_106514,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0463; req_hdr=0x04630080
+0x00106524,0xa,ac_ac_i_ipc_cmd_0045_handler_106524,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0045; req_hdr=0x00450002; reply_hdr=0x00450040
+0x00106548,0x8,ac_ac_i_ipc_cmd_0464_handler_106548,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0464; req_hdr=0x04640040
+0x00106554,0xa,ac_ac_i_ipc_cmd_044B_handler_106554,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044B; req_hdr=0x044B0042; reply_hdr=0x00020004
+0x00106564,0xa,ac_ac_i_ipc_cmd_045F_handler_106564,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045F; req_hdr=0x045F0080
+0x00106574,0xa,ac_ac_i_ipc_cmd_044C_handler_106574,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044C; req_hdr=0x044C0002; reply_hdr=0x044C0040
+0x00106590,0xa,ac_ac_i_ipc_cmd_0047_handler_106590,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0047; req_hdr=0x00470080
+0x001065A0,0xa,ac_ac_i_ipc_cmd_0447_handler_1065a0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0447; req_hdr=0x04470080
+0x001065B0,0xa,ac_ac_i_ipc_cmd_0451_handler_1065b0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0451
+0x001065C0,0x8,ac_ac_i_ipc_cmd_0089_handler_1065c0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0089; req_hdr=0x00890040
+0x001065CC,0xa,ac_ac_i_ipc_cmd_0452_handler_1065cc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0452; req_hdr=0x04520002; reply_hdr=0x04520040
+0x001065DC,0xa,ac_ac_i_ipc_cmd_0461_handler_1065dc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0461; req_hdr=0x04610080
+0x001065EC,0x10,ac_ac_i_ipc_cmd_0469_handler_1065ec,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0469
+0x00106600,0x10,ac_ac_i_ipc_cmd_0467_handler_106600,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0467
+0x00106614,0x8,ac_ac_i_ipc_cmd_0462_handler_106614,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0462; req_hdr=0x04620040
+0x00106620,0xe,ac_ac_i_ipc_cmd_046A_handler_106620,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046A; req_hdr=0x046A0002; reply_hdr=0x046A0040
+0x00106634,0xe,ac_ac_i_ipc_cmd_008D_handler_106634,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x008D; req_hdr=0x008D0002; reply_hdr=0x008D0040
+0x00106648,0xa,ac_ac_i_ipc_cmd_0453_handler_106648,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0453
+0x00106658,0xa,ac_ac_i_ipc_cmd_040B_handler_106658,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040B
+0x00106668,0xa,ac_ac_i_ipc_cmd_0454_handler_106668,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0454; req_hdr=0x04540002; reply_hdr=0x04540040
+0x00106678,0x8,ac_ac_i_ipc_cmd_040C_handler_106678,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040C; req_hdr=0x040C0040
+0x00106684,0xa,ac_ac_i_ipc_cmd_046B_handler_106684,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046B; req_hdr=0x046B0080
+0x00106694,0x8,ac_ac_i_ipc_cmd_046C_handler_106694,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046C; req_hdr=0x046C0040
+0x001066A0,0x16,ac_ac_i_ipc_cmd_046F_handler_1066a0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x046F; req_hdr=0x046F0080
+0x001066C4,0xa,ac_ac_i_ipc_cmd_0449_handler_1066c4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0449; req_hdr=0x04490080
+0x001066D4,0xa,ac_ac_i_ipc_cmd_044D_handler_1066d4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044D; req_hdr=0x044D0042; reply_hdr=0x00020004
+0x001066E4,0x8,ac_ac_i_ipc_cmd_044A_handler_1066e4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044A; req_hdr=0x044A0040
+0x001066F0,0xa,ac_ac_i_ipc_cmd_044E_handler_1066f0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x044E; req_hdr=0x044E0002; reply_hdr=0x044E0040
+0x00106700,0xa,ac_ac_i_ipc_cmd_04A2_handler_106700,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x04A2; req_hdr=0x04A20080
+0x00106710,0xa,ac_ac_i_ipc_cmd_0493_handler_106710,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0493
+0x00106720,0x10,ac_ac_i_ipc_cmd_049E_handler_106720,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049E
+0x00106734,0xa,ac_ac_i_ipc_cmd_049D_handler_106734,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049D; req_hdr=0x049D0080
+0x00106744,0xa,ac_ac_i_ipc_cmd_0491_handler_106744,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0491
+0x00106754,0xa,ac_ac_i_ipc_cmd_049B_handler_106754,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049B; req_hdr=0x049B0080
+0x00106774,0xa,ac_ac_i_ipc_cmd_0494_handler_106774,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0494
+0x00106784,0xa,ac_ac_i_ipc_cmd_049C_handler_106784,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049C; req_hdr=0x049C0080
+0x00106794,0x10,ac_ac_i_ipc_cmd_04A0_handler_106794,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x04A0
+0x001067A8,0x10,ac_ac_i_ipc_cmd_049F_handler_1067a8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049F
+0x001067BC,0xa,ac_ac_i_ipc_cmd_0495_handler_1067bc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0495
+0x001067CC,0xa,ac_ac_i_ipc_cmd_0471_handler_1067cc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0471; req_hdr=0x04710080
+0x001067DC,0xa,ac_ac_i_ipc_cmd_0419_handler_1067dc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0419
+0x001067EC,0x8,ac_ac_i_ipc_cmd_041A_handler_1067ec,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041A; req_hdr=0x041A0040
+0x001067F8,0xa,ac_ac_i_ipc_cmd_04A1_handler_1067f8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x04A1; req_hdr=0x04A10080
+0x00106808,0x10,ac_ac_i_ipc_cmd_0417_handler_106808,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0417; req_hdr=0x04170042; reply_hdr=0x048F0080
+0x0010681C,0xe,ac_ac_i_ipc_cmd_0083_handler_10681c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0083; req_hdr=0x00830002; reply_hdr=0x00830040
+0x00106830,0xa,ac_ac_i_ipc_cmd_0049_handler_106830,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0049; req_hdr=0x00490080
+0x00106840,0xa,ac_ac_i_ipc_cmd_0492_handler_106840,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0492
+0x00106850,0x10,ac_ipc_cmd_040F_ACI_GetNetworkWirelessEssidSecuritySsid_106850,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040F; libctru=ACI_GetNetworkWirelessEssidSecuritySsid; req_hdr=0x040F0000
+0x00106864,0xe,ac_ac_i_ipc_cmd_0041_handler_106864,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0041; req_hdr=0x00410002; reply_hdr=0x00410040
+0x00106878,0xa,ac_ac_i_ipc_cmd_041D_handler_106878,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041D
+0x00106888,0x8,ac_ac_i_ipc_cmd_041E_handler_106888,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041E; req_hdr=0x041E0040
+0x00106894,0xa,ac_ac_i_ipc_cmd_040D_handler_106894,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040D
+0x001068A4,0x8,ac_ac_i_ipc_cmd_040E_handler_1068a4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x040E; req_hdr=0x040E0040
+0x001068B0,0xa,ac_ac_i_ipc_cmd_0455_handler_1068b0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0455; req_hdr=0x04550080
+0x001068C0,0x10,ac_ac_i_ipc_cmd_0427_handler_1068c0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0427; req_hdr=0x04270042; reply_hdr=0x048F0080
+0x001068E8,0x10,ac_ac_i_ipc_cmd_043B_handler_1068e8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043B; req_hdr=0x043B0042; reply_hdr=0x048F0080
+0x001068FC,0x10,ac_ac_i_ipc_cmd_0445_handler_1068fc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0445; req_hdr=0x04450042; reply_hdr=0x048F0080
+0x00106910,0x8,ac_ac_i_ipc_cmd_0456_handler_106910,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0456; req_hdr=0x04560040
+0x0010691C,0xe,ac_ac_i_ipc_cmd_0085_handler_10691c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0085; req_hdr=0x00850002; reply_hdr=0x00850040
+0x00106930,0xe,ac_ac_i_ipc_cmd_0432_handler_106930,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0432; req_hdr=0x04320002; reply_hdr=0x04320040
+0x00106944,0xe,ac_ac_i_ipc_cmd_043C_handler_106944,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043C; req_hdr=0x043C0002; reply_hdr=0x043C0040
+0x00106958,0xe,ac_ac_i_ipc_cmd_0446_handler_106958,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0446; req_hdr=0x04460002; reply_hdr=0x04460040
+0x0010696C,0xa,ac_ac_i_ipc_cmd_041B_handler_10696c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041B
+0x0010697C,0x10,ac_ac_i_ipc_cmd_041F_handler_10697c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041F
+0x00106990,0x10,ac_ac_i_ipc_cmd_0429_handler_106990,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0429
+0x001069A4,0x10,ac_ac_i_ipc_cmd_0433_handler_1069a4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0433
+0x001069B8,0x10,ac_ac_i_ipc_cmd_043D_handler_1069b8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043D
+0x001069CC,0x8,ac_ac_i_ipc_cmd_041C_handler_1069cc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x041C; req_hdr=0x041C0040
+0x001069EC,0xe,ac_ac_i_ipc_cmd_042A_handler_1069ec,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042A; req_hdr=0x042A0002; reply_hdr=0x042A0040
+0x00106A00,0xe,ac_ac_i_ipc_cmd_0434_handler_106a00,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0434; req_hdr=0x04340002; reply_hdr=0x04340040
+0x00106A14,0xe,ac_ac_i_ipc_cmd_043E_handler_106a14,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043E; req_hdr=0x043E0002; reply_hdr=0x043E0040
+0x00106A3C,0xa,ac_ac_i_ipc_cmd_0411_handler_106a3c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0411
+0x00106A4C,0xe,ac_ac_i_ipc_cmd_0416_handler_106a4c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0416; req_hdr=0x04160002; reply_hdr=0x04160040
+0x00106A60,0x8,ac_ac_i_ipc_cmd_0412_handler_106a60,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0412; req_hdr=0x04120040
+0x00106A6C,0xa,ac_ac_i_ipc_cmd_008F_handler_106a6c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x008F; req_hdr=0x008F0080
+0x00106A7C,0xa,ac_ac_i_ipc_cmd_0413_handler_106a7c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0413
+0x00106A8C,0x8,ac_ac_i_ipc_cmd_0414_handler_106a8c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0414; req_hdr=0x04140040
+0x00106A98,0x10,ac_ac_i_ipc_cmd_0477_handler_106a98,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0477; req_hdr=0x04770042; reply_hdr=0x048F0080
+0x00106AAC,0x10,ac_ac_i_ipc_cmd_0473_handler_106aac,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0473
+0x00106AC0,0xe,ac_ac_i_ipc_cmd_0459_handler_106ac0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0459; req_hdr=0x04590042; reply_hdr=0x00020006
+0x00106AD4,0xe,ac_ac_i_ipc_cmd_045A_handler_106ad4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045A; req_hdr=0x045A0002; reply_hdr=0x045A0040
+0x00106AE8,0x10,ac_ac_i_ipc_cmd_0425_handler_106ae8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0425; req_hdr=0x04250042; reply_hdr=0x048F0080
+0x00106AFC,0xa,ac_ac_i_ipc_cmd_0421_handler_106afc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0421
+0x00106B0C,0x10,ac_ac_i_ipc_cmd_042F_handler_106b0c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042F; req_hdr=0x042F0042; reply_hdr=0x048F0080
+0x00106B20,0xa,ac_ac_i_ipc_cmd_042B_handler_106b20,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042B
+0x00106B30,0x10,ac_ac_i_ipc_cmd_0439_handler_106b30,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0439; req_hdr=0x04390042; reply_hdr=0x048F0080
+0x00106B44,0xa,ac_ac_i_ipc_cmd_0435_handler_106b44,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0435; req_hdr=0x04350080
+0x00106B54,0x10,ac_ac_i_ipc_cmd_0443_handler_106b54,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0443; req_hdr=0x04430042; reply_hdr=0x048F0080
+0x00106B68,0xa,ac_ac_i_ipc_cmd_043F_handler_106b68,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043F; req_hdr=0x043F0080
+0x00106B78,0xe,ac_ac_i_ipc_cmd_0426_handler_106b78,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0426; req_hdr=0x04260002; reply_hdr=0x04260040
+0x00106B8C,0x8,ac_ac_i_ipc_cmd_0422_handler_106b8c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0422; req_hdr=0x04220040
+0x00106B98,0xe,ac_ac_i_ipc_cmd_0043_handler_106b98,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0043; req_hdr=0x00430002; reply_hdr=0x00430040
+0x00106BAC,0x8,ac_ac_i_ipc_cmd_042C_handler_106bac,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042C; req_hdr=0x042C0040
+0x00106BB8,0xe,ac_ac_i_ipc_cmd_043A_handler_106bb8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x043A; req_hdr=0x043A0002; reply_hdr=0x043A0040
+0x00106BCC,0x8,ac_ac_i_ipc_cmd_0436_handler_106bcc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0436; req_hdr=0x04360040
+0x00106BD8,0xe,ac_ac_i_ipc_cmd_0444_handler_106bd8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0444; req_hdr=0x04440002; reply_hdr=0x04440040
+0x00106BF8,0xa,ac_ac_i_ipc_cmd_047A_handler_106bf8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047A; req_hdr=0x047A0080
+0x00106C08,0xa,ac_ac_i_ipc_cmd_0472_handler_106c08,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0472; req_hdr=0x04720080
+0x00106C18,0xa,ac_ac_i_ipc_cmd_045B_handler_106c18,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045B; req_hdr=0x045B0080
+0x00106C28,0xa,ac_ac_i_ipc_cmd_0423_handler_106c28,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0423
+0x00106C38,0xa,ac_ac_i_ipc_cmd_042D_handler_106c38,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042D
+0x00106C48,0xa,ac_ac_i_ipc_cmd_0437_handler_106c48,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0437; req_hdr=0x04370080
+0x00106C58,0xa,ac_ac_i_ipc_cmd_0441_handler_106c58,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0441; req_hdr=0x04410080
+0x00106C68,0x8,ac_ac_i_ipc_cmd_045C_handler_106c68,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045C; req_hdr=0x045C0040
+0x00106C74,0x8,ac_ac_i_ipc_cmd_0424_handler_106c74,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0424; req_hdr=0x04240040
+0x00106C80,0x8,ac_ac_i_ipc_cmd_042E_handler_106c80,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x042E; req_hdr=0x042E0040
+0x00106C8C,0x8,ac_ac_i_ipc_cmd_0087_handler_106c8c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0087; req_hdr=0x00870040
+0x00106C98,0x8,ac_ac_i_ipc_cmd_0442_handler_106c98,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0442; req_hdr=0x04420040
+0x00106CA4,0xa,ac_ac_i_ipc_cmd_0496_handler_106ca4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0496; req_hdr=0x04960080
+0x00106CB4,0x10,ac_ac_i_ipc_cmd_047F_handler_106cb4,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047F; req_hdr=0x047F0042; reply_hdr=0x048F0080
+0x00106CC8,0x10,ac_ac_i_ipc_cmd_0484_handler_106cc8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0484; req_hdr=0x04840042; reply_hdr=0x048F0080
+0x00106CDC,0x10,ac_ac_i_ipc_cmd_0489_handler_106cdc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0489; req_hdr=0x04890042; reply_hdr=0x048F0080
+0x00106CF0,0x10,ac_ac_i_ipc_cmd_048E_handler_106cf0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x048E; req_hdr=0x048E0042; reply_hdr=0x048E0042
+0x00106D04,0xa,ac_ac_i_ipc_cmd_0457_handler_106d04,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0457
+0x00106D14,0xa,ac_ac_i_ipc_cmd_008B_handler_106d14,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x008B; req_hdr=0x008B0002; reply_hdr=0x008B0040
+0x00106D24,0xa,ac_ac_i_ipc_cmd_0479_handler_106d24,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0479; req_hdr=0x04790080
+0x00106D34,0x10,ac_ac_i_ipc_cmd_047B_handler_106d34,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047B
+0x00106D48,0x10,ac_ac_i_ipc_cmd_0480_handler_106d48,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0480
+0x00106D5C,0x10,ac_ac_i_ipc_cmd_0485_handler_106d5c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0485
+0x00106D70,0x10,ac_ac_i_ipc_cmd_048A_handler_106d70,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x048A
+0x00106D84,0x10,ac_ac_i_ipc_cmd_0476_handler_106d84,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0476; req_hdr=0x04760042; reply_hdr=0x048F0080
+0x00106D98,0xa,ac_ac_i_ipc_cmd_0474_handler_106d98,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0474; req_hdr=0x04740080
+0x00106DA8,0xa,ac_ac_i_ipc_cmd_0475_handler_106da8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0475; req_hdr=0x04750080
+0x00106DB8,0xe,ac_ac_i_ipc_cmd_0093_handler_106db8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0093; req_hdr=0x00930042; reply_hdr=0x00020006
+0x00106DCC,0x10,ac_ac_i_ipc_cmd_047E_handler_106dcc,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047E; req_hdr=0x047E0042; reply_hdr=0x048F0080
+0x00106DE0,0xa,ac_ac_i_ipc_cmd_047C_handler_106de0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047C; req_hdr=0x047C0080
+0x00106DF0,0x10,ac_ac_i_ipc_cmd_0483_handler_106df0,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0483; req_hdr=0x04830042; reply_hdr=0x048F0080
+0x00106E04,0xa,ac_ac_i_ipc_cmd_0481_handler_106e04,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0481; req_hdr=0x04810080
+0x00106E14,0x10,ac_ac_i_ipc_cmd_0091_handler_106e14,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0091; req_hdr=0x00910042; reply_hdr=0x048F0080
+0x00106E28,0xa,ac_ac_i_ipc_cmd_0486_handler_106e28,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0486; req_hdr=0x04860080
+0x00106E38,0x10,ac_ac_i_ipc_cmd_048D_handler_106e38,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x048D; req_hdr=0x048D0042; reply_hdr=0x048F0080
+0x00106E4C,0xa,ac_ac_i_ipc_cmd_048B_handler_106e4c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x048B; req_hdr=0x048B0080
+0x00106E5C,0xa,ac_ac_i_ipc_cmd_045D_handler_106e5c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045D; req_hdr=0x045D0080
+0x00106E6C,0x8,ac_ac_i_ipc_cmd_045E_handler_106e6c,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x045E; req_hdr=0x045E0040
+0x00106E78,0xa,ac_ac_i_ipc_cmd_0499_handler_106e78,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0499; req_hdr=0x04990080
+0x00106E88,0xa,ac_ac_i_ipc_cmd_047D_handler_106e88,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x047D; req_hdr=0x047D0080
+0x00106E98,0xa,ac_ac_i_ipc_cmd_0482_handler_106e98,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0482; req_hdr=0x04820080
+0x00106EA8,0xa,ac_ac_i_ipc_cmd_0487_handler_106ea8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0487; req_hdr=0x04870080
+0x00106EB8,0xa,ac_ac_i_ipc_cmd_048C_handler_106eb8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x048C; req_hdr=0x048C0080
+0x00106EC8,0xa,ac_ac_i_ipc_cmd_0497_handler_106ec8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x0497
+0x00106ED8,0xa,ac_ac_i_ipc_cmd_049A_handler_106ed8,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x049A; req_hdr=0x049A0080
+0x00107758,0x10,ac_ipc_cmd_000A_ACU_GetLastErrorCode_107758,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000A; libctru=ACU_GetLastErrorCode; req_hdr=0x000A0080
+0x0010776C,0x10,ac_ipc_cmd_000B_ACU_GetLastDetailErrorCode_10776c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000B; libctru=ACU_GetLastDetailErrorCode; req_hdr=0x000B0080
+0x00107A00,0x16,ac_ac_i_ipc_cmd_003C_handler_107a00,ipc_command_handler,called from dispatcher 0x00103330 (ac:i) for cmd 0x003C; req_hdr=0x003C0042; reply_hdr=0x003C0042
 0x0010E6A0,0x8,ac_svc_0x24_WaitSynchronization1_10e6a0,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010E8B8,0x1c,ac_ac_u_ipc_cmd_0040_handler_10e8b8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0040; req_hdr=0x00400042; reply_hdr=0x00400040
+0x0010E8DC,0x28,ac_ac_u_ipc_cmd_003F_handler_10e8dc,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x003F; reply_hdr=0x00030002
+0x0010E90C,0x22,ac_ac_u_ipc_cmd_003E_handler_10e90c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x003E; req_hdr=0x003E0042; reply_hdr=0x003E0080
+0x0010E938,0x16,ac_ac_u_ipc_cmd_003D_handler_10e938,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x003D; req_hdr=0x003D0042; reply_hdr=0x003D0040
 0x0010E9F8,0x5,ac_str_service_0H_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""0H:F"""
+0x0010EAC4,0x22,ac_ipc_cmd_003B_ACU_GetProxyPassword_10eac4,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x003B; libctru=ACU_GetProxyPassword; req_hdr=0x003B0000
+0x0010EAF8,0x22,ac_ipc_cmd_003A_ACU_GetProxyUserName_10eaf8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x003A; libctru=ACU_GetProxyUserName; req_hdr=0x003A0042; reply_hdr=0x00020020
+0x0010EB2C,0x22,ac_ipc_cmd_0039_ACU_GetProxyHost_10eb2c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u) for cmd 0x0039; libctru=ACU_GetProxyHost; req_hdr=0x00390042
+0x0010EB60,0x1e,ac_ipc_cmd_0038_ACU_GetProxyPort_10eb60,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0038; libctru=ACU_GetProxyPort; req_hdr=0x00380080
+0x0010EB90,0x1e,ac_ac_u_ipc_cmd_0037_handler_10eb90,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0037; req_hdr=0x00370080
+0x0010EBF8,0x1e,ac_ipc_cmd_0036_ACU_GetProxyEnable_10ebf8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0036; libctru=ACU_GetProxyEnable; req_hdr=0x00360080
+0x0010EC28,0x1e,ac_ipc_cmd_0035_ACU_GetSSIDLength_10ec28,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0035; libctru=ACU_GetSSIDLength; req_hdr=0x00350080
+0x0010EC58,0x22,ac_ipc_cmd_0034_ACU_GetSSID_10ec58,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0034; libctru=ACU_GetSSID; req_hdr=0x00340042; reply_hdr=0x00020020
+0x0010EC8C,0x1e,ac_ipc_cmd_0033_ACU_GetSecurityMode_10ec8c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0033; libctru=ACU_GetSecurityMode; req_hdr=0x00330080
+0x0010ECBC,0x10,ac_ac_u_ipc_cmd_0032_handler_10ecbc,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0032; req_hdr=0x00320042; reply_hdr=0x00320040
+0x0010ECD4,0x12,ac_ac_u_ipc_cmd_0031_handler_10ecd4,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0031; req_hdr=0x00310002; reply_hdr=0x00310042
+0x0010ECF0,0x26,ac_ac_u_ipc_cmd_0030_handler_10ecf0,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0030; req_hdr=0x00300004; reply_hdr=0x00300040
+0x0010ED20,0x26,ac_ac_u_ipc_cmd_002F_handler_10ed20,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002F; req_hdr=0x002F0004; reply_hdr=0x002F0040
+0x0010ED54,0x50,ac_ac_u_ipc_cmd_002E_handler_10ed54,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002E; req_hdr=0x002E00C4; reply_hdr=0x00020040
+0x0010EDA8,0x24,ac_ipc_cmd_002D_ACU_SetRequestEulaVersion_10eda8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002D; libctru=ACU_SetRequestEulaVersion; req_hdr=0x002D0082; reply_hdr=0x00030002
+0x0010EDD0,0x22,ac_ac_u_ipc_cmd_002C_handler_10edd0,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002C; req_hdr=0x002C0042; reply_hdr=0x00020002
+0x0010EDF8,0x2e,ac_ac_u_ipc_cmd_002B_handler_10edf8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002B; req_hdr=0x002B0004; reply_hdr=0x00030144
+0x0010EE2C,0x2c,ac_ac_u_ipc_cmd_002A_handler_10ee2c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x002A; req_hdr=0x002A0004; reply_hdr=0x00030104
+0x0010EE5C,0x10,ac_ac_u_ipc_cmd_0029_handler_10ee5c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0029; req_hdr=0x00290002; reply_hdr=0x00290080
+0x0010EE70,0x22,ac_ac_u_ipc_cmd_0028_handler_10ee70,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0028; req_hdr=0x00280042; reply_hdr=0x00020002
+0x0010EE98,0x10,ac_ac_u_ipc_cmd_0027_handler_10ee98,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0027; req_hdr=0x00270002; reply_hdr=0x00270080
+0x0010EEAC,0x22,ac_ac_u_ipc_cmd_0026_handler_10eeac,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0026; req_hdr=0x00260042; reply_hdr=0x00020002
+0x0010EED4,0x20,ac_ipc_cmd_0025_ACU_SetNetworkArea_10eed4,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0025; libctru=ACU_SetNetworkArea; req_hdr=0x00250042; reply_hdr=0x00020002
+0x0010EEF8,0x26,ac_ac_u_ipc_cmd_0024_handler_10eef8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0024; req_hdr=0x00240042; reply_hdr=0x00020002
+0x0010EF24,0x26,ac_ac_u_ipc_cmd_0023_handler_10ef24,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0023; req_hdr=0x00230042; reply_hdr=0x00020002
+0x0010EF50,0x22,ac_ipc_cmd_0022_ACU_SetAllowApType_10ef50,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0022; libctru=ACU_SetAllowApType; req_hdr=0x00220042; reply_hdr=0x00020002
+0x0010EF78,0xd2,ac_ac_u_ipc_cmd_0020_handler_10ef78,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0020; req_hdr=0x00200005; reply_hdr=0x00200040
+0x0010F064,0xaa,ac_ac_u_ipc_cmd_001F_handler_10f064,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001F; req_hdr=0x001F0042; reply_hdr=0x00030002
+0x0010F128,0xaa,ac_ac_u_ipc_cmd_001E_handler_10f128,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001E; req_hdr=0x001E0042; reply_hdr=0x00030002
+0x0010F1EC,0xac,ac_ac_u_ipc_cmd_001D_handler_10f1ec,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001D; req_hdr=0x001D0042; reply_hdr=0x00030002
+0x0010F2BC,0xa,ac_ac_u_ipc_cmd_001C_handler_10f2bc,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001C; req_hdr=0x001C0002; reply_hdr=0x001C0040
+0x0010F2C8,0x60,ac_ac_u_ipc_cmd_001B_handler_10f2c8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001B; req_hdr=0x001B0004; reply_hdr=0x001B0040
+0x0010F334,0xa,ac_ac_u_ipc_cmd_001A_handler_10f334,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x001A; req_hdr=0x001A0002; reply_hdr=0x001A0040
+0x0010F340,0x6c,ac_ac_u_ipc_cmd_0019_handler_10f340,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0019; req_hdr=0x00190004; reply_hdr=0x00190040
+0x0010F3B8,0xa,ac_ac_u_ipc_cmd_0018_handler_10f3b8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0018; req_hdr=0x00180002; reply_hdr=0x00010002
+0x0010F3C4,0x30,ac_ac_u_ipc_cmd_0017_handler_10f3c4,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0017; req_hdr=0x00170004; reply_hdr=0x00040044
+0x0010F400,0xa,ac_ac_u_ipc_cmd_0016_handler_10f400,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0016; req_hdr=0x00160002; reply_hdr=0x00010002
+0x0010F40C,0x5e,ac_ac_u_ipc_cmd_0015_handler_10f40c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0015; req_hdr=0x00150004; reply_hdr=0x00040044
+0x0010F47C,0xa6,ac_ac_u_ipc_cmd_0014_handler_10f47c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0014; req_hdr=0x00140002; reply_hdr=0x0002000B
+0x0010F534,0x3a,ac_ac_u_ipc_cmd_0013_handler_10f534,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0013; req_hdr=0x00130042; reply_hdr=0x00020002
+0x0010F588,0x32,ac_ac_u_ipc_cmd_0012_handler_10f588,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0012; req_hdr=0x00120042; reply_hdr=0x00020002
+0x0010F5D0,0x3c,ac_ac_u_ipc_cmd_0011_handler_10f5d0,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0011; req_hdr=0x00110042; reply_hdr=0x00020002
+0x0010F620,0x30,ac_ac_u_ipc_cmd_0010_handler_10f620,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0010; req_hdr=0x00100042; reply_hdr=0x00020002
+0x0010F664,0x22,ac_ac_u_ipc_cmd_000F_handler_10f664,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000F; req_hdr=0x000F0080
+0x0010F6A4,0x28,ac_ac_u_ipc_cmd_000E_handler_10f6a4,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000E; req_hdr=0x000E0042; reply_hdr=0x00020002
+0x0010F6E8,0x1a,ac_ipc_cmd_000D_ACU_GetWifiStatus_10f6e8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000D; libctru=ACU_GetWifiStatus; req_hdr=0x000D0080
+0x0010F710,0x12,ac_ipc_cmd_000C_ACU_GetStatus_10f710,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x000C; libctru=ACU_GetStatus; req_hdr=0x000C0080
+0x0010F72C,0xa,ac_ac_u_ipc_cmd_0009_handler_10f72c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0009; req_hdr=0x00090002; reply_hdr=0x00010002
+0x0010F738,0x30,ac_ac_u_ipc_cmd_0008_handler_10f738,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0008; req_hdr=0x00080004; reply_hdr=0x00040044
+0x0010F774,0xa,ac_ac_u_ipc_cmd_0007_handler_10f774,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0007; req_hdr=0x00070002; reply_hdr=0x00010002
+0x0010F784,0x126,ac_ac_u_ipc_cmd_0006_handler_10f784,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0006; req_hdr=0x000600C6; reply_hdr=0x00060040
+0x0010F8CE,0xa,ac_ac_u_ipc_cmd_0005_handler_10f8ce,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0005; req_hdr=0x00050002; reply_hdr=0x00010002
+0x0010F8D8,0xb4,ac_ipc_cmd_0004_ACU_ConnectAsync_10f8d8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0004; libctru=ACU_ConnectAsync; req_hdr=0x00040006; reply_hdr=0x00040046
+0x0010F9D0,0x22,ac_ac_u_ipc_cmd_0003_handler_10f9d0,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0003; req_hdr=0x00030042; reply_hdr=0x00020002
+0x0010F9F8,0x22,ac_ac_u_ipc_cmd_0002_handler_10f9f8,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0002; req_hdr=0x00020042; reply_hdr=0x00020001
+0x0010FA60,0x42,ac_ipc_cmd_0001_ACU_CreateDefaultConfig_10fa60,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0001; libctru=ACU_CreateDefaultConfig; req_hdr=0x00010042; reply_hdr=0x00020001
+0x001103F8,0x18,ac___ARM_common_switch8_1103f8,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
+0x0011044C,0x74,ac_ac_u_ipc_cmd_0021_handler_11044c,ipc_command_handler,called from dispatcher 0x0010201c (ac:u/ac:i) for cmd 0x0021; req_hdr=0x00210002; reply_hdr=0x00210040
 0x00110820,0x8,ac_svc_0x23_CloseHandle_110820,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00110AEC,0x8,ac_svc_0x32_SendSyncRequest_110aec,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00110C0C,0x18,ac_svc_0x17_CreateEvent_110c0c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

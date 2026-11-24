@@ -4,12 +4,44 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101B0C,0x18,socket_svc_0x1A_CreateTimer_101b0c,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102070,0x1c,socket_svc_0x2B_GetProcessInfo_102070,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00112684,0xc,socket_svc_0x28_GetSystemTick_112684,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00113010,0x20,socket_ipc_cmd_0003_0004_etc_listen_accept_etc_113010,ipc_command_handler,"called from dispatcher 0x0012cafc (soc:U) for cmd 0x0003, 0x0004, 0x0005, 0x0006; libctru=listen/accept/bind; req_hdr=0x00030082"
 0x001156F8,0xc,socket_svc_0x0A_SleepThread_1156f8,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00116AC4,0x18,socket_svc_0x22_ArbitrateAddress_116ac4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00119C80,0x4,socket_ipc_cmd_001A_SOCU_GetNetworkOpt_119c80,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001A; libctru=SOCU_GetNetworkOpt; req_hdr=0x001A00C0
+0x00119C84,0x28,socket_soc_u_ipc_cmd_001F_handler_119c84,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001F
+0x0011BD1C,0x2b0,socket_soc_u_ipc_cmd_001C_handler_11bd1c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001C
+0x0011C5A0,0x74,socket_ipc_cmd_0014_poll_11c5a0,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0014; libctru=poll; req_hdr=0x00140084
 0x00122B64,0x18,socket_svc_0x0B_GetThreadPriority_122b64,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012592C,0x14,socket_ipc_cmd_0016_gethostid_12592c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0016; libctru=gethostid; req_hdr=0x00160000
+0x001259B8,0x20,socket_ipc_cmd_0018_getpeername_1259b8,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0018; libctru=getpeername; req_hdr=0x00180082
+0x00125B04,0x20,socket_ipc_cmd_0017_getsockname_125b04,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0017; libctru=getsockname; req_hdr=0x00170082
+0x00125C2C,0x230,socket_ipc_cmd_0011_getsockopt_125c2c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0011; libctru=getsockopt; req_hdr=0x00110102
+0x00125EC4,0x20,socket_soc_u_ipc_cmd_001D_handler_125ec4,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001D
+0x00125FD0,0x20,socket_soc_u_ipc_cmd_001E_handler_125fd0,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001E
+0x001266CC,0x136bc,socket_soc_u_ipc_cmd_001B_handler_1266cc,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x001B
 0x00127A4C,0x488,socket_ipc_handler_cmd_0001_127a4c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x0001000D
 0x0012B864,0xc,socket_func_ptr_table_12b864,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
-0x0012DD58,0x248,socket_ipc_handler_cmd_0001_0002_0003_etc_12dd58,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030080, 0x00060080"
+0x0012C3B0,0x20,socket_ipc_cmd_000F_getaddrinfo_detail_12c3b0,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x000F; libctru=getaddrinfo_detail; req_hdr=0x000F0106
+0x0012C50C,0x20,socket_ipc_cmd_0010_getnameinfo_12c50c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0010; libctru=getnameinfo; req_hdr=0x00100102
+0x0012C560,0x20,socket_ipc_cmd_000E_gethostbyaddr_12c560,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x000E; libctru=gethostbyaddr; req_hdr=0x000E00C2
+0x0012C608,0x20,socket_ipc_cmd_000D_gethostbyname_12c608,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x000D; libctru=gethostbyname; req_hdr=0x000D0082
+0x0012C788,0x20,socket_ipc_cmd_0003_listen_12c788,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0003; libctru=listen; req_hdr=0x00030082
+0x0012C7E0,0x1c,socket_ipc_cmd_0008_socuipc_cmd8_12c7e0,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0008; libctru=socuipc_cmd8; req_hdr=0x00080102
+0x0012C7FC,0x20,socket_ipc_cmd_0007_socuipc_cmd7_12c7fc,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0007; libctru=socuipc_cmd7; req_hdr=0x00070104; reply_hdr=0x00070042 (DAT_0012dfcc)
+0x0012C814,0x20,socket_ipc_cmd_0004_accept_12c814,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0004; libctru=accept; req_hdr=0x00040082
+0x0012C820,0x24,socket_ipc_cmd_0002_socket_12c820,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0002; libctru=socket; req_hdr=0x000200C2
+0x0012C848,0x20,socket_ipc_cmd_0001_SOCU_Initialize_12c848,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0001; libctru=SOCU_Initialize; req_hdr=0x00010044
+0x0012C870,0x1c,socket_ipc_cmd_0006_connect_12c870,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0006; libctru=connect; req_hdr=0x00060084
+0x0012CAFC,0x40,socket_soc_u_ipc_dispatcher_12cafc,ipc_dispatcher,"ARM IPC command dispatcher (35 cases, cmd_id 0x01..0x23, service soc:U, 28 matched to libctru)"
+0x0012DD58,0x248,socket_soc_u_ipc_dispatcher_12dd58,ipc_dispatcher,"ARM IPC command dispatcher (9 cases, cmd_id 0x01..0x09, service soc:U, 9 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030080, 0x00060080"
+0x0012E29C,0x150,socket_ipc_cmd_0002_socket_12e29c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0002; libctru=socket; req_hdr=0x000200C2
+0x0012EFE8,0x20,socket_ipc_cmd_0009_socuipc_cmd9_12efe8,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0009; libctru=socuipc_cmd9; req_hdr=0x00090106
+0x0012F024,0x20,socket_ipc_cmd_0005_bind_12f024,ipc_command_handler,called from dispatcher 0x0012dd58 (soc:U) for cmd 0x0005; libctru=bind; req_hdr=0x00050084
+0x0012F258,0x20,socket_ipc_cmd_0021_SOCU_CloseSockets_12f258,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0021; libctru=SOCU_CloseSockets; req_hdr=0x00210002; reply_hdr=0x00210040 (DAT_0012dd48)
+0x0012F264,0x20,socket_ipc_cmd_0001_SOCU_Initialize_12f264,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0001; libctru=SOCU_Initialize; req_hdr=0x00010044
+0x0012F2D0,0x30,socket_ipc_cmd_0019_SOCU_Shutdown_12f2d0,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0019; libctru=SOCU_Shutdown; req_hdr=0x00190000
+0x0012F304,0x20,socket_soc_u_ipc_cmd_0022_handler_12f304,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0022
+0x0012F31C,0x20,socket_ipc_cmd_0023_SOCU_AddGlobalSocket_12f31c,ipc_command_handler,called from dispatcher 0x0012cafc (soc:U) for cmd 0x0023; libctru=SOCU_AddGlobalSocket; req_hdr=0x00230040
 0x0012F73C,0xc,socket_func_ptr_table_12f73c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x00132000,0x6,socket_str_service_soc_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soc:U"""
 0x00132006,0x6,socket_str_service_soc_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soc:P"""

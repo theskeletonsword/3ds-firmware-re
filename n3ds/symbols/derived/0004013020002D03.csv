@@ -1,12 +1,93 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101B14,0x24c,nwm_ipc_dispatcher_101b14,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010007, 0x0002000B, 0x00140308, 0x00140344"
 0x00102488,0x1ce6,nwm_ipc_dispatcher_102488,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x00010002, 0x00010005, 0x00010006, 0x00020002"
+0x00104960,0x40,nwm_nwm_uds_ipc_dispatcher_104960,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (64 cases, cmd_id 0x01..0x42, service nwm::UDS, 22 matched to libctru)"
 0x00107454,0x6c,nwm_ipc_dispatcher_107454,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00140280, 0x00140281, 0x00140282, 0x00140284"
+0x00107962,0x7c,nwm_nwm_uds_ipc_cmd_0041_handler_107962,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0041; req_hdr=0x00410040
+0x00107DC8,0x54,nwm_nwm_uds_ipc_cmd_0009_handler_107dc8,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0009; req_hdr=0x00090040
+0x00107E1C,0x22,nwm_nwm_uds_ipc_cmd_0019_handler_107e1c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0019; req_hdr=0x001900C2
+0x00107E3E,0x18,nwm_nwm_uds_ipc_cmd_0018_handler_107e3e,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0018; req_hdr=0x00180042; reply_hdr=0x00180040
+0x00107E58,0x58,nwm_nwm_uds_ipc_cmd_0015_handler_107e58,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0015; req_hdr=0x00150082; reply_hdr=0x00020042
+0x00107EB4,0x50,nwm_ipc_cmd_0012_udsipc_Bind_107eb4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0012; libctru=udsipc_Bind; req_hdr=0x00120100; reply_hdr=0x00120040
+0x00107F08,0x1c,nwm_ipc_cmd_001A_udsGetChannel_107f08,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x001A; libctru=udsGetChannel; req_hdr=0x001A0082; reply_hdr=0x00030082
+0x00107F24,0xa,nwm_ipc_cmd_001B_udsipc_InitializeWithVersion_107f24,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x001B; libctru=udsipc_InitializeWithVersion; req_hdr=0x001B0040
+0x00107F30,0x48,nwm_ipc_cmd_000A_udsDisconnectNetwork_107f30,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000A; libctru=udsDisconnectNetwork; req_hdr=0x000A0000; reply_hdr=0x000A0040
+0x00107F7C,0x64,nwm_ipc_cmd_000F_udsipc_RecvBeaconBroadcastData_107f7c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000F; libctru=udsipc_RecvBeaconBroadcastData; req_hdr=0x000F0040
+0x00107FE4,0x4e,nwm_ipc_cmd_0013_udsipc_Unbind_107fe4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0013; libctru=udsipc_Unbind; req_hdr=0x00130040
+0x00108038,0x9a,nwm_ipc_cmd_0008_udsDestroyNetwork_108038,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0008; libctru=udsDestroyNetwork; req_hdr=0x00080502; reply_hdr=0x00080040
+0x001080E0,0xb2,nwm_ipc_cmd_0007_udsUpdateNetworkAttribute_1080e0,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0007; libctru=udsUpdateNetworkAttribute; req_hdr=0x00070502; reply_hdr=0x00070040
+0x001081A4,0x50,nwm_ipc_cmd_000D_udsGetNodeInformation_1081a4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000D; libctru=udsGetNodeInformation; req_hdr=0x000D0082; reply_hdr=0x000D0042
+0x001081F8,0x4e,nwm_ipc_cmd_0011_udsGetApplicationData_1081f8,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0011; libctru=udsGetApplicationData; req_hdr=0x00110040; reply_hdr=0x00110040
+0x0010824C,0x34,nwm_ipc_cmd_0014_udsPullPacket_10824c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0014; libctru=udsPullPacket; req_hdr=0x00140042; reply_hdr=0x00020042
+0x00108284,0x4c,nwm_nwm_uds_ipc_cmd_000C_handler_108284,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000C; req_hdr=0x000C0042; reply_hdr=0x00020042
+0x001082D4,0x66,nwm_nwm_uds_ipc_cmd_001C_handler_1082d4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x001C; req_hdr=0x001C0042; reply_hdr=0x00020042
+0x00108344,0x4c,nwm_nwm_uds_ipc_cmd_000E_handler_108344,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000E; req_hdr=0x000E0040
+0x00108394,0x4c,nwm_ipc_cmd_000B_udsGetConnectionStatus_108394,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x000B; libctru=udsGetConnectionStatus; req_hdr=0x000B0042; reply_hdr=0x00020042
+0x001083E4,0x82,nwm_ipc_cmd_0006_udsEjectSpectator_1083e4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0006; libctru=udsEjectSpectator; req_hdr=0x00060002; reply_hdr=0x00060040
+0x0010846C,0x6a,nwm_nwm_uds_ipc_cmd_0016_handler_10846c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0016; req_hdr=0x00160042; reply_hdr=0x00020042
+0x001084E0,0x6c,nwm_ipc_cmd_0017_udsSendTo_1084e0,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0017; libctru=udsSendTo; req_hdr=0x00170042; reply_hdr=0x00020042
+0x00108554,0x52,nwm_ipc_cmd_001D_udsipc_BeginHostingNetwork_108554,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x001D; libctru=udsipc_BeginHostingNetwork; req_hdr=0x001D0042
+0x001085AC,0x6c,nwm_ipc_cmd_0010_udsSetApplicationData_1085ac,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0010; libctru=udsSetApplicationData; req_hdr=0x00100040
+0x00108620,0xe2,nwm_ipc_cmd_0003_udsipc_Shutdown_108620,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0003; libctru=udsipc_Shutdown; req_hdr=0x00030040
+0x0010870C,0x50,nwm_nwm_uds_ipc_cmd_0004_handler_10870c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0004; req_hdr=0x00040040
+0x00108A3E,0x30,nwm_nwm_uds_ipc_cmd_0027_handler_108a3e,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0027; req_hdr=0x002700C2; reply_hdr=0x00040002
+0x00108A6E,0x1c,nwm_nwm_uds_ipc_cmd_0026_handler_108a6e,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0026; req_hdr=0x00260082; reply_hdr=0x00260040
+0x00108C1C,0xb0,nwm_nwm_uds_ipc_cmd_0020_handler_108c1c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0020; req_hdr=0x00200F80
+0x00108D30,0x62,nwm_ipc_cmd_0021_udsipc_SetProbeResponseParam_108d30,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0021; libctru=udsipc_SetProbeResponseParam; req_hdr=0x00210082
+0x00108DE8,0x74,nwm_nwm_uds_ipc_cmd_0025_handler_108de8,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0025; req_hdr=0x00250042; reply_hdr=0x00020042
+0x00108EB0,0x68,nwm_nwm_uds_ipc_cmd_0024_handler_108eb0,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0024; req_hdr=0x00240042; reply_hdr=0x00020042
+0x00108F20,0x70,nwm_nwm_uds_ipc_cmd_0023_handler_108f20,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0023; req_hdr=0x00230042; reply_hdr=0x00020042
+0x00109534,0x66,nwm_nwm_uds_ipc_dispatcher_109534,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (35 cases, cmd_id 0x01..0x23, service nwm::UDS, 22 matched to libctru)"
+0x00109D84,0x3e,nwm_ipc_cmd_0003_udsipc_Shutdown_109d84,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0003; libctru=udsipc_Shutdown; req_hdr=0x00030040
+0x0010AAA4,0x24,nwm_ipc_cmd_001A_udsGetChannel_10aaa4,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x001A; libctru=udsGetChannel; req_hdr=0x001A0080
+0x0010AB14,0x30,nwm_ipc_cmd_0005_udsEjectClient_10ab14,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0005; libctru=udsEjectClient; req_hdr=0x00050040
+0x0010AB54,0x30,nwm_nwm_uds_ipc_cmd_0004_handler_10ab54,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0004; req_hdr=0x00040402; reply_hdr=0x00040040
+0x0010AB90,0x24,nwm_nwm_uds_ipc_cmd_001C_handler_10ab90,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x001C; req_hdr=0x001C0040
+0x0010ABC0,0x36,nwm_nwm_uds_ipc_cmd_0009_handler_10abc0,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0009; req_hdr=0x00090442; reply_hdr=0x00090040
+0x0010AC04,0x30,nwm_ipc_cmd_001D_udsipc_BeginHostingNetwork_10ac04,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x001D; libctru=udsipc_BeginHostingNetwork; req_hdr=0x001D0044; reply_hdr=0x001D0040
+0x0010AC40,0x24,nwm_ipc_cmd_0008_udsDestroyNetwork_10ac40,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0008; libctru=udsDestroyNetwork; req_hdr=0x00080040
+0x0010AC70,0x24,nwm_ipc_cmd_0006_udsEjectSpectator_10ac70,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0006; libctru=udsEjectSpectator; req_hdr=0x00060040
+0x0010ACA0,0x36,nwm_ipc_cmd_001E_udsipc_ConnectToNetwork_10aca0,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x001E; libctru=udsipc_ConnectToNetwork; req_hdr=0x001E0084; reply_hdr=0x001E0040
+0x0010ACE4,0x1c,nwm_nwm_uds_ipc_cmd_0019_handler_10ace4,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0019; req_hdr=0x00190040
+0x0010AD04,0x68,nwm_nwm_uds_ipc_cmd_0015_handler_10ad04,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0015; req_hdr=0x00150040
+0x0010ADC8,0x50,nwm_nwm_uds_ipc_cmd_0016_handler_10adc8,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0016; req_hdr=0x00160040
+0x0010AE28,0x24,nwm_ipc_cmd_000A_udsDisconnectNetwork_10ae28,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000A; libctru=udsDisconnectNetwork; req_hdr=0x000A0040
+0x0010AE58,0x20,nwm_nwm_uds_ipc_cmd_0018_handler_10ae58,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0018; req_hdr=0x00180040
+0x0010AEB4,0x2a,nwm_ipc_cmd_000D_udsGetNodeInformation_10aeb4,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000D; libctru=udsGetNodeInformation; req_hdr=0x000D02C0; reply_hdr=0x000D0A00
+0x0010AEEC,0x2c,nwm_ipc_cmd_0010_udsSetApplicationData_10aeec,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0010; libctru=udsSetApplicationData; req_hdr=0x00100042; reply_hdr=0x00100040
+0x0010AF24,0x34,nwm_ipc_cmd_000B_udsGetConnectionStatus_10af24,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000B; libctru=udsGetConnectionStatus; req_hdr=0x000B0340; reply_hdr=0x000B0C00
+0x0010AF5C,0x2e,nwm_nwm_uds_ipc_cmd_000C_handler_10af5c,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000C; req_hdr=0x000C0280
+0x0010AF98,0x6c,nwm_ipc_cmd_0001_001B_udsipc_InitializeWithVersion_10af98,ipc_command_handler,"called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0001, 0x001B; libctru=udsipc_InitializeWithVersion; req_hdr=0x000102C2; reply_hdr=0x00020042"
+0x0010B018,0x18,nwm_ipc_cmd_0021_udsipc_SetProbeResponseParam_10b018,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0021; libctru=udsipc_SetProbeResponseParam; req_hdr=0x00210040
+0x0010B030,0x26,nwm_nwm_uds_ipc_cmd_000E_handler_10b030,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000E; req_hdr=0x000E0006; reply_hdr=0x000500C6
+0x0010B064,0x2c,nwm_ipc_cmd_0007_udsUpdateNetworkAttribute_10b064,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0007; libctru=udsUpdateNetworkAttribute; req_hdr=0x00070040
+0x0010B09C,0x26,nwm_ipc_cmd_001F_udsipc_DecryptBeaconData_10b09c,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x001F; libctru=udsipc_DecryptBeaconData; req_hdr=0x001F0006; reply_hdr=0x00020005
+0x0010B0D0,0xe,nwm_nwm_uds_ipc_cmd_0023_handler_10b0d0,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0023; req_hdr=0x00230080
+0x0010B0E0,0x2e,nwm_ipc_cmd_0012_udsipc_Bind_10b0e0,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0012; libctru=udsipc_Bind; req_hdr=0x00120042; reply_hdr=0x00020042
+0x0010B120,0x2a,nwm_nwm_uds_ipc_cmd_0020_handler_10b120,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0020; req_hdr=0x00200040
+0x0010B160,0x22,nwm_nwm_uds_ipc_cmd_0002_handler_10b160,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0002; req_hdr=0x00020040
+0x0010B190,0x3e,nwm_ipc_cmd_0017_udsSendTo_10b190,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0017; libctru=udsSendTo; req_hdr=0x00170182; reply_hdr=0x00170040
+0x0010B1EC,0x18,nwm_ipc_cmd_0013_udsipc_Unbind_10b1ec,ipc_command_handler,called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0013; libctru=udsipc_Unbind; req_hdr=0x00130140
+0x0010D9F8,0xbc,nwm_nwm_uds_ipc_dispatcher_10d9f8,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (7 cases, cmd_id 0x01..0x0A, service nwm::UDS, 4 matched to libctru)"
+0x0010F424,0x46,nwm_ipc_cmd_0005_udsEjectClient_10f424,ipc_command_handler,called from dispatcher 0x0010d9f8 (nwm::UDS) for cmd 0x0005; libctru=udsEjectClient; req_hdr=0x00050040; reply_hdr=0x00030000
+0x0010F728,0xe,nwm_nwm_uds_ipc_cmd_0001_handler_10f728,ipc_command_handler,called from dispatcher 0x0010d9f8 (nwm::UDS) for cmd 0x0001
+0x0011ABA4,0x19e,nwm_nwm_uds_ipc_dispatcher_11aba4,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (2 cases, cmd_id 0x03..0x06, service nwm::UDS, 2 matched to libctru)"
+0x0011F22C,0xa,nwm_nwm_uds_ipc_cmd_0002_handler_11f22c,ipc_command_handler,called from dispatcher 0x0010d9f8 (nwm::UDS) for cmd 0x0002
 0x00120058,0x8,nwm_svc_0x18_SignalEvent_120058,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012077C,0xc,nwm_ipc_cmd_0011_0014_udsGetApplicationData_udsPullPacket_12077c,ipc_command_handler,"called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x0011, 0x0014; libctru=udsGetApplicationData/udsPullPacket; req_hdr=0x00110082; reply_hdr=0x00030002"
 0x00121218,0x8,nwm_svc_0x28_GetSystemTick_121218,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x001215FC,0x1a,nwm_ipc_handler_cmd_0014_1215fc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001402C4
+0x00121392,0x2c,nwm_nwm_uds_ipc_cmd_0031_handler_121392,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0031; req_hdr=0x00310082; reply_hdr=0x00030082
+0x0012140C,0xa,nwm_nwm_uds_ipc_cmd_002E_handler_12140c,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x002E; req_hdr=0x002E0040
+0x00121416,0x10,nwm_nwm_uds_ipc_cmd_002D_handler_121416,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x002D; req_hdr=0x002D0082; reply_hdr=0x002D0080
+0x0012146A,0x66,nwm_nwm_uds_ipc_cmd_002C_handler_12146a,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x002C
+0x001214D0,0xe8,nwm_nwm_uds_ipc_cmd_002B_handler_1214d0,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x002B; req_hdr=0x002B0384; reply_hdr=0x00020042
+0x001215C4,0xa,nwm_nwm_uds_ipc_cmd_0029_handler_1215c4,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0029; req_hdr=0x00290040
+0x001215CE,0x1c,nwm_nwm_uds_ipc_cmd_0028_handler_1215ce,ipc_command_handler,called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0028; req_hdr=0x00280082; reply_hdr=0x00280080
+0x001215FC,0x1a,nwm_ipc_cmd_0022_udsipc_ScanOnConnection_1215fc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001402C4; called from dispatcher 0x00104960 (nwm::UDS) for cmd 0x0022; libctru=udsipc_ScanOnConnection; req_hdr=0x00220042; reply_hdr=0x00020042
 0x00121DB8,0x7,nwm_str_service_3F_FiF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""3F:FiF"""
+0x0012219E,0x16,nwm_ipc_cmd_000F_0022_udsipc_RecvBeaconBroadcastData_udsipc_ScanOnConnection_12219e,ipc_command_handler,"called from dispatcher 0x00109534 (nwm::UDS) for cmd 0x000F, 0x0022; libctru=udsipc_RecvBeaconBroadcastData/udsipc_ScanOnConnection; req_hdr=0x000F0404; reply_hdr=0x000F0042"
 0x001225F8,0x4e,nwm_ipc_dispatcher_1225f8,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00140280, 0x00140281, 0x00140282, 0x00140284"
+0x00122FF8,0x18,nwm___ARM_common_switch8_122ff8,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x001231D0,0x18,nwm_svc_0x4F_ReplyAndReceive_1231d0,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001236E4,0x18,nwm_svc_0x17_CreateEvent_1236e4,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001238A8,0x3ca,nwm_ipc_dispatcher_1238a8,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x00010006, 0x0001000D, 0x00020001, 0x0003000F"

@@ -1,8 +1,16 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x001009A0,0x4c,spi_ipc_client_cmd_0004_1009a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00100FA4,0x18,spi_svc_0x21_CreateAddressArbiter_100fa4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x0010104C,0x220,spi_ipc_handler_cmd_0001_0002_0004_etc_10104c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00040040, 0x00050040"
+0x0010104C,0x220,spi_ipc_dispatcher_10104c,ipc_dispatcher,"ARM IPC command dispatcher (9 cases, cmd_id 0x01..0x09); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00040040, 0x00050040"
 0x001012C8,0x1c,spi_svc_0x2B_GetProcessInfo_1012c8,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001012E8,0x20,spi_ipc_cmd_0001_handler_1012e8,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0001
+0x00101308,0x20,spi_ipc_cmd_0005_handler_101308,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0005
+0x0010141C,0x20,spi_ipc_cmd_0007_handler_10141c,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0007
+0x0010143C,0x20,spi_ipc_cmd_0006_handler_10143c,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0006
+0x0010145C,0x20,spi_ipc_cmd_0008_handler_10145c,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0008
+0x001014EC,0x20,spi_ipc_cmd_0009_handler_1014ec,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0009
+0x00101510,0x28,spi_ipc_cmd_0003_handler_101510,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0003
+0x0010153C,0x28,spi_ipc_cmd_0004_handler_10153c,ipc_command_handler,called from dispatcher 0x0010104c for cmd 0x0004
 0x00101768,0x18,spi_svc_0x22_ArbitrateAddress_101768,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102E7C,0x18,spi_svc_0x13_CreateMutex_102e7c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00104018,0x5,spi_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""

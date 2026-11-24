@@ -2,6 +2,56 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00109220,0x12,friends_ipc_handler_cmd_0016_109220,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160104
 0x00109ABB,0x6,friends_str_service_h_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""h:F1F"""
 0x00125230,0x8,friends_svc_0x03_ExitProcess_125230,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012600C,0x1b6,friends_ipc_cmd_0407_FRDA_AddFriendOffline_12600c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0407; libctru=FRDA_AddFriendOffline; req_hdr=0x04070D80; reply_hdr=0x04070040
+0x001261CC,0x5a,friends_ipc_cmd_0405_FRDA_Save_1261cc,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0405; libctru=FRDA_Save; req_hdr=0x04050000; reply_hdr=0x04050040
+0x0012622C,0x40,friends_ipc_cmd_0035_FRD_DecryptApproachContext_12622c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0035; libctru=FRD_DecryptApproachContext; req_hdr=0x00350082; reply_hdr=0x00020001
+0x0012626C,0x15c,friends_ipc_cmd_0034_FRD_AddFriendWithApproach_12626c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0034; libctru=FRD_AddFriendWithApproach; req_hdr=0x00340046; reply_hdr=0x00340040
+0x001263DC,0x9e,friends_ipc_cmd_0033_FRD_GetMyApproachContext_1263dc,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0033; libctru=FRD_GetMyApproachContext; req_hdr=0x00330000; reply_hdr=0x00020001
+0x00126488,0xa8,friends_ipc_cmd_0031_FRD_GetFriendComment_126488,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0031; libctru=FRD_GetFriendComment; req_hdr=0x00310082; reply_hdr=0x00310042
+0x00126534,0x62,friends_ipc_cmd_0030_FRD_GetServerTypes_126534,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0030; libctru=FRD_GetServerTypes; req_hdr=0x00300000; reply_hdr=0x00300100
+0x0012659C,0x52,friends_ipc_cmd_002E_FRD_GetServerTimeDifference_12659c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x002E; libctru=FRD_GetServerTimeDifference; req_hdr=0x002E0000; reply_hdr=0x002E00C0
+0x0012666C,0xac,friends_ipc_cmd_002C_FRD_DetectNatProperties_12666c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x002C; libctru=FRD_DetectNatProperties; req_hdr=0x002C0002; reply_hdr=0x002C0040
+0x0012671C,0x28,friends_ipc_cmd_002B_FRD_GetServiceLocatorData_12671c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x002B; libctru=FRD_GetServiceLocatorData; req_hdr=0x002B0042
+0x00126748,0x10c,friends_ipc_cmd_002A_FRD_RequestServiceLocator_126748,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x002A; libctru=FRD_RequestServiceLocator; req_hdr=0x002A0204; reply_hdr=0x000C0054
+0x00126864,0x26,friends_ipc_cmd_0029_FRD_GetGameAuthenticationData_126864,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0029; libctru=FRD_GetGameAuthenticationData; req_hdr=0x00290042
+0x00126890,0xf8,friends_ipc_cmd_0028_FRD_RequestGameAuthentication_126890,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0028; libctru=FRD_RequestGameAuthentication; req_hdr=0x00280244; reply_hdr=0x000D0B44
+0x001269AC,0x70,friends_ipc_cmd_0027_FRD_ResultToErrorCode_1269ac,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0027; libctru=FRD_ResultToErrorCode; req_hdr=0x00270080
+0x00126A24,0x10,friends_ipc_cmd_0025_FRD_FriendCodeToPrincipalId_126a24,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0025; libctru=FRD_FriendCodeToPrincipalId; req_hdr=0x00250080
+0x00126A34,0x28,friends_ipc_cmd_0022_FRD_GetEventNotification_126a34,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0022; libctru=FRD_GetEventNotification; req_hdr=0x00220040; reply_hdr=0x00040002
+0x00126A5C,0x26,friends_ipc_cmd_0020_FRD_AttachToEventNotification_126a5c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0020; libctru=FRD_AttachToEventNotification; req_hdr=0x00200002; reply_hdr=0x00200040
+0x00126A88,0x110,friends_ipc_cmd_001F_FRD_SendInvitation_126a88,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001F; libctru=FRD_SendInvitation; req_hdr=0x001F0042; reply_hdr=0x001F0040
+0x00126BA4,0x10e,friends_ipc_cmd_001E_FRD_UpdateMyPresence_126ba4,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001E; libctru=FRD_UpdateMyPresence; req_hdr=0x001E02C2; reply_hdr=0x001E0040
+0x00126CB8,0xf0,friends_ipc_cmd_001D_FRD_UpdateGameModeDescription_126cb8,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001D; libctru=FRD_UpdateGameModeDescription; req_hdr=0x001D0002; reply_hdr=0x001D0040
+0x00126DAC,0x7e,friends_ipc_cmd_001C_FRD_UnscrambleLocalFriendCode_126dac,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001C; libctru=FRD_UnscrambleLocalFriendCode; req_hdr=0x001C0042; reply_hdr=0x00020002
+0x00126E30,0x58,friends_ipc_cmd_001B_FRD_IsInFriendList_126e30,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001B; libctru=FRD_IsInFriendList; req_hdr=0x001B0080
+0x00126E8C,0x9c,friends_ipc_cmd_001A_FRD_GetFriendInfo_126e8c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x001A; libctru=FRD_GetFriendInfo; req_hdr=0x001A00C4; reply_hdr=0x001A0042
+0x00126F2C,0xa6,friends_ipc_cmd_0019_FRD_GetFriendFavoriteGame_126f2c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0019; libctru=FRD_GetFriendFavoriteGame; req_hdr=0x00190042; reply_hdr=0x00190042
+0x00126FD8,0xb2,friends_ipc_cmd_0018_FRD_GetFriendPlayingGame_126fd8,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0018; libctru=FRD_GetFriendPlayingGame; req_hdr=0x00180044; reply_hdr=0x00180042
+0x00127090,0x72,friends_ipc_cmd_0017_FRD_GetFriendAttributeFlags_127090,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0017; libctru=FRD_GetFriendAttributeFlags; req_hdr=0x00170042; reply_hdr=0x00170042
+0x0012710C,0x86,friends_ipc_cmd_0016_FRD_GetFriendRelationship_12710c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0016; libctru=FRD_GetFriendRelationship; req_hdr=0x00160042; reply_hdr=0x00020002
+0x00127198,0xa2,friends_ipc_cmd_0015_FRD_GetFriendProfile_127198,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0015; libctru=FRD_GetFriendProfile; req_hdr=0x00150042; reply_hdr=0x00020002
+0x00127240,0xa2,friends_ipc_cmd_0014_FRD_GetFriendMii_127240,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0014; libctru=FRD_GetFriendMii; req_hdr=0x00140044; reply_hdr=0x00140042
+0x00127410,0xc2,friends_ipc_cmd_0012_FRD_GetFriendPresence_127410,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0012; libctru=FRD_GetFriendPresence; req_hdr=0x00120042; reply_hdr=0x00120042
+0x001274F8,0xae,friends_ipc_cmd_0011_FRD_GetFriendKeyList_1274f8,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0011; libctru=FRD_GetFriendKeyList; req_hdr=0x00110080; reply_hdr=0x00030002
+0x001275AC,0x74,friends_ipc_cmd_0010_FRD_GetMyPassword_1275ac,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0010; libctru=FRD_GetMyPassword; req_hdr=0x00100040; reply_hdr=0x00020002
+0x00127624,0x56,friends_ipc_cmd_000F_FRD_GetMyComment_127624,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000F; libctru=FRD_GetMyComment; req_hdr=0x000F0000
+0x00127680,0x50,friends_ipc_cmd_000E_FRD_GetMyNcPrincipalId_127680,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000E; libctru=FRD_GetMyNcPrincipalId; req_hdr=0x000E0000; reply_hdr=0x000E0080
+0x001276EC,0x54,friends_ipc_cmd_000D_FRD_GetMyFavoriteGame_1276ec,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000D; libctru=FRD_GetMyFavoriteGame; req_hdr=0x000D0000; reply_hdr=0x00020140
+0x00127744,0x56,friends_ipc_cmd_000C_FRD_GetMyPlayingGame_127744,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000C; libctru=FRD_GetMyPlayingGame; req_hdr=0x000C0000; reply_hdr=0x00020140
+0x001277A0,0x50,friends_ipc_cmd_000B_FRD_GetMyLocalAccountId_1277a0,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000B; libctru=FRD_GetMyLocalAccountId; req_hdr=0x000B0000; reply_hdr=0x000B0080
+0x001277F4,0x54,friends_ipc_cmd_000A_FRD_GetMyMii_1277f4,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x000A; libctru=FRD_GetMyMii; req_hdr=0x000A0000; reply_hdr=0x000A0640
+0x0012784C,0x58,friends_ipc_cmd_0009_FRD_GetMyScreenName_12784c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0009; libctru=FRD_GetMyScreenName; req_hdr=0x00090000
+0x001278A8,0x62,friends_ipc_cmd_0008_FRD_GetMyPresence_1278a8,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0008; libctru=FRD_GetMyPresence; req_hdr=0x00080000; reply_hdr=0x00080042
+0x00127910,0x54,friends_ipc_cmd_0007_FRD_GetMyProfile_127910,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0007; libctru=FRD_GetMyProfile; req_hdr=0x00070000; reply_hdr=0x000700C0
+0x00127968,0x62,friends_ipc_cmd_0006_FRD_GetMyPreference_127968,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0006; libctru=FRD_GetMyPreference; req_hdr=0x00060000; reply_hdr=0x00060100
+0x001279D0,0x58,friends_ipc_cmd_0005_FRD_GetMyFriendKey_1279d0,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0005; libctru=FRD_GetMyFriendKey; req_hdr=0x00050000; reply_hdr=0x00050140
+0x00127A2C,0x14,friends_ipc_cmd_0003_FRD_Login_127a2c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0003; libctru=FRD_Login; req_hdr=0x00030002; reply_hdr=0x00030040
+0x00127A7C,0x14,friends_ipc_cmd_0002_FRD_IsOnline_127a7c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0002; libctru=FRD_IsOnline; req_hdr=0x00020000; reply_hdr=0x00020080
+0x00127A94,0x16,friends_ipc_cmd_0001_FRD_HasLoggedIn_127a94,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0001; libctru=FRD_HasLoggedIn; req_hdr=0x00010000; reply_hdr=0x00010080
+0x00127EF4,0x18,friends_ipc_cmd_002F_FRD_AllowHalfAwake_127ef4,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x002F; libctru=FRD_AllowHalfAwake; req_hdr=0x002F0040
+0x001280F6,0x10,friends_ipc_cmd_0004_FRD_Logout_1280f6,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0004; libctru=FRD_Logout; req_hdr=0x00040000
+0x00128106,0x2e,friends_ipc_cmd_0026_FRD_IsValidFriendCode_128106,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0026; libctru=FRD_IsValidFriendCode; req_hdr=0x00260080
+0x00128134,0x26,friends_ipc_cmd_0024_FRD_PrincipalIdToFriendCode_128134,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0024; libctru=FRD_PrincipalIdToFriendCode; req_hdr=0x002400C0
 0x00128C1C,0x56,friends_ipc_handler_cmd_0016_128c1c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
 0x0012F9A0,0x18,friends_ipc_handler_cmd_0001_12f9a0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
 0x0012FF14,0xa,friends_ipc_handler_cmd_0016_12ff14,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001603CC
@@ -9,6 +59,7 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00131DB8,0x8,friends_svc_0x28_GetSystemTick_131db8,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00132694,0x8,friends_svc_0x0A_SleepThread_132694,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00132C08,0x8,friends_svc_0x24_WaitSynchronization1_132c08,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00133610,0x18,friends___ARM_common_switch8_133610,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x00134070,0x18,friends_svc_0x35_GetProcessId_134070,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00135100,0x18,friends_svc_0x17_CreateEvent_135100,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00135430,0x1c,friends_ipc_handler_cmd_0016_135430,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x0016000C
@@ -30,7 +81,22 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0013A604,0xc,friends_func_ptr_table_13a604,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x0013B7C0,0x14,friends_func_ptr_table_13b7c0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x0013CEC4,0x18,friends_ipc_handler_cmd_0001_13cec4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
+0x00141110,0x1c,friends_ipc_cmd_0403_FRDA_LoadLocalAccount_141110,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0403; libctru=FRDA_LoadLocalAccount; req_hdr=0x04030040
+0x00141134,0x28,friends_ipc_cmd_0401_FRDA_CreateLocalAccount_141134,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0401; libctru=FRDA_CreateLocalAccount; req_hdr=0x04010040
+0x00141164,0x1c,friends_ipc_cmd_0402_FRDA_DeleteLocalAccount_141164,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0402; libctru=FRDA_DeleteLocalAccount; req_hdr=0x04020040
+0x00141188,0x18,friends_ipc_cmd_0404_FRDA_UnloadLocalAccount_141188,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0404; libctru=FRDA_UnloadLocalAccount; req_hdr=0x04040040
 0x0014123A,0x5,friends_str_service_h0_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""h0:F"""
+0x001415F8,0x54,friends_frd_a_ipc_dispatcher_1415f8,ipc_dispatcher,"Thumb-sw16/Thumb-sw8 IPC command dispatcher (70 cases, cmd_id 0x01..0x410, service frd:a, 70 matched to libctru)"
+0x00143B24,0x78,friends_ipc_cmd_0409_FRDA_RemoveFriend_143b24,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0409; libctru=FRDA_RemoveFriend; req_hdr=0x04090100; reply_hdr=0x04090040
+0x00143C90,0x72,friends_ipc_cmd_040F_FRDA_UpdateComment_143c90,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040F; libctru=FRDA_UpdateComment; req_hdr=0x040F0240; reply_hdr=0x040F0040
+0x00143F7C,0x56,friends_ipc_cmd_040B_FRDA_UpdatePreference_143f7c,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040B; libctru=FRDA_UpdatePreference; req_hdr=0x040B00C0; reply_hdr=0x040B0040
+0x001440FC,0x78,friends_ipc_cmd_040A_FRDA_UpdatePlayingGame_1440fc,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040A; libctru=FRDA_UpdatePlayingGame; req_hdr=0x040A0100; reply_hdr=0x040A0040
+0x00144248,0x4a,friends_ipc_cmd_0410_FRDA_IncrementMoveCount_144248,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0410; libctru=FRDA_IncrementMoveCount; req_hdr=0x04100000; reply_hdr=0x00410040
+0x00144368,0x66,friends_ipc_cmd_040D_FRDA_UpdateFavoriteGame_144368,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040D; libctru=FRDA_UpdateFavoriteGame; req_hdr=0x040D0100; reply_hdr=0x040D0040
+0x00144402,0x4e,friends_ipc_cmd_040E_FRDA_SetNcPrincipalId_144402,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040E; libctru=FRDA_SetNcPrincipalId; req_hdr=0x040E0040; reply_hdr=0x040E0040
+0x001446A4,0x90,friends_ipc_cmd_0408_FRDA_UpdateMiiScreenName_1446a4,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0408; libctru=FRDA_UpdateMiiScreenName; req_hdr=0x040802C0; reply_hdr=0x00810040
+0x00144898,0xa2,friends_ipc_cmd_0406_FRDA_AddFriendOnline_144898,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x0406; libctru=FRDA_AddFriendOnline; req_hdr=0x04060042; reply_hdr=0x04060040
+0x00144980,0xba,friends_ipc_cmd_040C_FRDA_UpdateMii_144980,ipc_command_handler,called from dispatcher 0x001415f8 (frd:a) for cmd 0x040C; libctru=FRDA_UpdateMii; req_hdr=0x040C0800; reply_hdr=0x040C0040
 0x0014AED8,0x84,friends_ipc_handler_cmd_0016_14aed8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
 0x00153D30,0x3e,friends_ipc_handler_cmd_0016_153d30,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
 0x00153F44,0x68,friends_ipc_handler_cmd_0016_153f44,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160184

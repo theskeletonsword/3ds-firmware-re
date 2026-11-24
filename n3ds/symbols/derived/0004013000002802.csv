@@ -1,9 +1,50 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00103858,0x16,dlp_ipc_cmd_000B_handler_103858,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x000B; req_hdr=0x000B0042; reply_hdr=0x000B0082
+0x0010485C,0x74,dlp_ipc_cmd_0014_handler_10485c,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0014; req_hdr=0x00140080
+0x001048E0,0x15a,dlp_ipc_cmd_000D_handler_1048e0,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x000D; req_hdr=0x000D0040
+0x00104A58,0x11a,dlp_ipc_cmd_000C_handler_104a58,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x000C; req_hdr=0x000C0040
+0x00104B90,0x160,dlp_ipc_cmd_000B_handler_104b90,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x000B; req_hdr=0x000B0080
+0x00104D34,0x56,dlp_ipc_cmd_0009_handler_104d34,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0009; req_hdr=0x00090040
+0x00104D9C,0x122,dlp_ipc_cmd_0005_handler_104d9c,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0005; req_hdr=0x00050040
+0x00104EEC,0xa,dlp_ipc_cmd_0006_handler_104eec,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0006; req_hdr=0x00060040
+0x00104EF8,0x52,dlp_ipc_cmd_000C_handler_104ef8,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x000C; req_hdr=0x000C02C0; reply_hdr=0x000C0A00
+0x0010528C,0x6c,dlp_ipc_cmd_000D_handler_10528c,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x000D; req_hdr=0x000D0180
+0x00105308,0xd0,dlp_ipc_cmd_0007_handler_105308,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0007; req_hdr=0x00070040
+0x001053E8,0x5c,dlp_ipc_cmd_000A_handler_1053e8,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x000A; req_hdr=0x000A0040
+0x00105454,0x44,dlp_ipc_cmd_0010_handler_105454,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0010; req_hdr=0x00100080
+0x001054A4,0x74,dlp_ipc_cmd_0008_handler_1054a4,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0008; req_hdr=0x00080040
+0x00105D18,0x3c,dlp_ipc_cmd_000E_handler_105d18,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x000E; req_hdr=0x000E0080
+0x00105FA4,0xac,dlp_ipc_cmd_0002_handler_105fa4,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0002; req_hdr=0x00020040
+0x00106058,0xc,dlp_ipc_cmd_0003_handler_106058,ipc_command_handler,called from dispatcher 0x0010bc6c for cmd 0x0003; req_hdr=0x00030080
+0x00106D54,0xb4,dlp_ipc_cmd_0013_handler_106d54,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0013; req_hdr=0x001300C0
+0x00107900,0x1a,dlp_ipc_cmd_0001_000F_handler_107900,ipc_command_handler,"called from dispatcher 0x0010bc6c for cmd 0x0001, 0x000F; req_hdr=0x00010183; reply_hdr=0x00090083"
+0x0010791A,0x20,dlp_ipc_cmd_0004_handler_10791a,ipc_command_handler,called from dispatcher 0x0010c058 for cmd 0x0004; req_hdr=0x00040083; reply_hdr=0x00010040
+0x0010793C,0x3e,dlp_ipc_cmd_0011_000F_handler_10793c,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x0011, 0x000F; req_hdr=0x00110100"
+0x00107988,0x6c,dlp_ipc_cmd_0010_000E_handler_107988,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x0010, 0x000E; req_hdr=0x001002C0"
+0x00107A04,0x62,dlp_ipc_cmd_000F_000D_handler_107a04,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x000F, 0x000D; reply_hdr=0x00030002"
+0x00107A70,0x6e,dlp_ipc_cmd_000E_000C_handler_107a70,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x000E, 0x000C; req_hdr=0x000E0180"
+0x00107AE4,0x3c,dlp_ipc_cmd_000A_handler_107ae4,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x000A; req_hdr=0x000A0040
+0x00107B28,0x62,dlp_ipc_cmd_0009_handler_107b28,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0009; reply_hdr=0x00020002
+0x00107B98,0x76,dlp_ipc_cmd_0008_handler_107b98,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0008; reply_hdr=0x00020002
+0x00107C1C,0x6c,dlp_ipc_cmd_0007_handler_107c1c,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0007; reply_hdr=0x00070042
+0x00107C9C,0x68,dlp_ipc_cmd_0005_handler_107c9c,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0005; req_hdr=0x00050040
+0x00107D14,0x8,dlp_ipc_cmd_0004_handler_107d14,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0004; req_hdr=0x00040080
+0x00107D20,0xa,dlp_ipc_cmd_0003_0004_handler_107d20,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x0003, 0x0004; req_hdr=0x00030200"
+0x00107D2C,0x44,dlp_ipc_cmd_0002_handler_107d2c,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0002; req_hdr=0x00020040
+0x00107EB8,0x52,dlp_ipc_cmd_0006_handler_107eb8,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0006; req_hdr=0x00060040
+0x00107F18,0x4e,dlp_ipc_cmd_0012_0010_handler_107f18,ipc_command_handler,"called from dispatcher 0x0010b8e0 for cmd 0x0012, 0x0010; req_hdr=0x00120040"
+0x00108628,0x18,dlp___ARM_common_switch8_108628,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
+0x00108DC0,0x82,dlp_ipc_cmd_0002_handler_108dc0,ipc_command_handler,called from dispatcher 0x0010c058 for cmd 0x0002; req_hdr=0x00020040
 0x0010A164,0x8,dlp_svc_0x18_SignalEvent_10a164,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010A2C4,0x8,dlp_svc_0x28_GetSystemTick_10a2c4,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A7A0,0x16,dlp_ipc_cmd_0001_handler_10a7a0,ipc_command_handler,called from dispatcher 0x0010b8e0 for cmd 0x0001; req_hdr=0x00010040
 0x0010A8B8,0x8,dlp_svc_0x24_WaitSynchronization1_10a8b8,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010A960,0x8,dlp_svc_0x32_SendSyncRequest_10a960,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010AB04,0x8,dlp_svc_0x23_CloseHandle_10ab04,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010AD94,0x50,dlp_ipc_cmd_000B_handler_10ad94,ipc_command_handler,called from dispatcher 0x0010c058 for cmd 0x000B; req_hdr=0x000B0040
+0x0010B8E0,0x22,dlp_ipc_dispatcher_10b8e0,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (20 cases, cmd_id 0x01..0x14)"
+0x0010BC6C,0x26,dlp_ipc_dispatcher_10bc6c,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (16 cases, cmd_id 0x01..0x10)"
+0x0010C058,0x22,dlp_ipc_dispatcher_10c058,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (15 cases, cmd_id 0x02..0x10)"
 0x00110F58,0x8,dlp_svc_0x03_ExitProcess_110f58,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00110FFC,0x18,dlp_svc_0x4A_AcceptSession_110ffc,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001110D8,0x18,dlp_svc_0x21_CreateAddressArbiter_1110d8,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

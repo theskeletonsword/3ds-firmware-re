@@ -1,4 +1,15 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010504C,0x14,ssl_ipc_cmd_0045_handler_10504c,ipc_command_handler,called from dispatcher 0x00107624 for cmd 0x0045
+0x00107624,0x4,ssl_ipc_dispatcher_107624,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (6 cases, cmd_id 0x01..0x48)"
+0x00110F80,0x12,ssl_ipc_cmd_0001_0012_sslcipc_Initialize_sslcipc_InitializeConnectionSession_110f80,ipc_command_handler,"called from dispatcher 0x00111730 (ssl:C) for cmd 0x0001, 0x0012; libctru=sslcipc_Initialize/sslcipc_InitializeConnectionSession; req_hdr=0x00010002; reply_hdr=0x00010040"
+0x00111730,0x38,ssl_ssl_c_ipc_dispatcher_111730,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (32 cases, cmd_id 0x01..0x20, service ssl:C, 15 matched to libctru)"
+0x001161E4,0x1da,ssl_ipc_cmd_0042_handler_1161e4,ipc_command_handler,called from dispatcher 0x00107624 for cmd 0x0042
+0x001164F0,0xae,ssl_ipc_cmd_0001_handler_1164f0,ipc_command_handler,called from dispatcher 0x00107624 for cmd 0x0001; req_hdr=0x00010400
+0x00125E68,0x14,ssl_ipc_cmd_000D_0020_sslcOpenClientCertContext_sslcAddCert_125e68,ipc_command_handler,"called from dispatcher 0x00111730 (ssl:C) for cmd 0x000D, 0x0020; libctru=sslcOpenClientCertContext/sslcAddCert; req_hdr=0x000D0084; reply_hdr=0x000D0084"
+0x00125E7C,0x14,ssl_ipc_cmd_0011_sslcGenerateRandomData_125e7c,ipc_command_handler,called from dispatcher 0x00111730 (ssl:C) for cmd 0x0011; libctru=sslcGenerateRandomData; req_hdr=0x00110042; reply_hdr=0x00110042
+0x00128074,0x24,ssl_ipc_cmd_0043_handler_128074,ipc_command_handler,called from dispatcher 0x00107624 for cmd 0x0043
+0x0012931C,0x24,ssl_ipc_cmd_0041_handler_12931c,ipc_command_handler,called from dispatcher 0x00107624 for cmd 0x0041
+0x00129C74,0x18,ssl___ARM_common_switch8_129c74,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x0012B1D4,0x8,ssl_svc_0x32_SendSyncRequest_12b1d4,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0012B29C,0x8,ssl_svc_0x23_CloseHandle_12b29c,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00141384,0x8,ssl_svc_0x03_ExitProcess_141384,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

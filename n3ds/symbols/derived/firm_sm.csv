@@ -4,7 +4,20 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0010131C,0x1c,sm_svc_0x2B_GetProcessInfo_10131c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101C34,0x18,sm_svc_0x22_ArbitrateAddress_101c34,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001021F8,0x18,sm_svc_0x15_CreateSemaphore_1021f8,svc_wrapper,"function body is a single `svc #0x15` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00103930,0xf4,sm_ipc_handler_cmd_0002_0003_103930,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00030040"
-0x00103A44,0x3b4,sm_ipc_handler_cmd_0001_0002_0003_etc_103a44,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020042, 0x00030042, 0x00040040"
+0x00102280,0x20,sm_ipc_cmd_0003_srvRegisterService_102280,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0003; libctru=srvRegisterService; req_hdr=0x00030100
+0x00102900,0x118,sm_ipc_cmd_000A_srvUnsubscribe_102900,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x000A; libctru=srvUnsubscribe; req_hdr=0x000A0040
+0x00102AA8,0xc0,sm_ipc_cmd_0008_srvGetPort_102aa8,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0008; libctru=srvGetPort; req_hdr=0x00080100; reply_hdr=0x00080042 (DAT_00103e24)
+0x00102B78,0x20,sm_ipc_cmd_0006_srvRegisterPort_102b78,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0006; libctru=srvRegisterPort; req_hdr=0x000600C2
+0x00102DFC,0xd8,sm_ipc_cmd_0005_srvGetServiceHandleDirect_102dfc,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0005; libctru=srvGetServiceHandleDirect; req_hdr=0x00050100
+0x00102FB0,0x20,sm_ipc_cmd_0007_srvUnregisterPort_102fb0,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0007; libctru=srvUnregisterPort; req_hdr=0x000700C0
+0x00103238,0x20,sm_ipc_cmd_0004_srvUnregisterService_103238,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0004; libctru=srvUnregisterService; req_hdr=0x000400C0
+0x00103318,0x128,sm_ipc_cmd_0002_srvEnableNotification_103318,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0002; libctru=srvEnableNotification; req_hdr=0x00020000; reply_hdr=0x00020042 (DAT_00103e08)
+0x00103448,0x8c,sm_ipc_cmd_000E_srvIsServiceRegistered_103448,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x000E; libctru=srvIsServiceRegistered; req_hdr=0x000E00C0
+0x001034D8,0xf4,sm_ipc_cmd_000C_srvPublishToSubscriber_1034d8,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x000C; libctru=srvPublishToSubscriber; req_hdr=0x000C0080
+0x001035D0,0x20,sm_ipc_cmd_000B_srvReceiveNotification_1035d0,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x000B; libctru=srvReceiveNotification; req_hdr=0x000B0000
+0x001036A8,0x20,sm_ipc_cmd_000D_srvPublishAndGetSubscriber_1036a8,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x000D; libctru=srvPublishAndGetSubscriber; req_hdr=0x000D0040
+0x001037C8,0x10c,sm_ipc_cmd_0009_srvSubscribe_1037c8,ipc_command_handler,called from dispatcher 0x00103a44 (srv:) for cmd 0x0009; libctru=srvSubscribe; req_hdr=0x00090040
+0x00103930,0xf4,sm_ipc_cmd_0002_SRVPM_PublishToAll_103930,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00030040; libctru=srv:pm:SRVPM_PublishToAll"
+0x00103A44,0x3b4,sm_srv_ipc_dispatcher_103a44,ipc_dispatcher,"ARM IPC command dispatcher (14 cases, cmd_id 0x01..0x0E, service srv:, 14 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020042, 0x00030042, 0x00040040"
 0x00104198,0x5,sm_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
 0x0010419D,0x7,sm_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""

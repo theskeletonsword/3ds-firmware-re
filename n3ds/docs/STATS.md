@@ -13,15 +13,15 @@
 | Error-Dialog-SafeMode-000400302000C503 | 55 |  |  |  |  |  |  |  |  |  |  | 55 |  |  |
 | Error-Display-ErrDisp-0004003000008A02 | 41 |  |  |  |  |  |  |  |  |  |  | 41 |  |  |
 | Error-Display-SafeMode-0004003020008A03 | 51 |  |  |  |  |  |  |  |  |  |  | 51 |  |  |
-| FIRM module fs (derived) | 24 |  |  |  |  |  |  |  |  |  | 24 |  |  |  |
+| FIRM module fs (derived) | 119 |  |  |  |  |  |  |  |  |  | 119 |  |  |  |
 | FIRM module fs 0004013000001102 | 1572 | 1572 |  |  |  |  |  |  |  |  |  |  |  |  |
 | FIRM module loader (derived) | 17 |  |  |  |  |  |  |  |  |  | 17 |  |  |  |
 | FIRM module loader 0004013000001302 | 115 | 115 |  |  |  |  |  |  |  |  |  |  |  |  |
-| FIRM module pm (derived) | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
+| FIRM module pm (derived) | 39 |  |  |  |  |  |  |  |  |  | 39 |  |  |  |
 | FIRM module pm 0004013000001202 | 142 | 62 |  | 55 | 16 | 6 |  | 3 |  |  |  |  |  |  |
 | FIRM module pxi (derived) | 22 |  |  |  |  |  |  |  |  |  | 22 |  |  |  |
 | FIRM module pxi 0004013000001402 | 111 | 111 |  |  |  |  |  |  |  |  |  |  |  |  |
-| FIRM module sm (derived) | 9 |  |  |  |  |  |  |  |  |  | 9 |  |  |  |
+| FIRM module sm (derived) | 22 |  |  |  |  |  |  |  |  |  | 22 |  |  |  |
 | FIRM module sm 0004013000001002 | 107 | 107 |  |  |  |  |  |  |  |  |  |  |  |  |
 | Face-Raiders-0004001020021D00 | 6 |  |  |  |  |  |  |  |  |  |  | 6 |  |  |
 | Friend-List-0004003000009602 | 64 |  |  |  |  |  |  |  |  |  |  | 64 |  |  |
@@ -55,7 +55,7 @@
 | Module-GPIO-GPIO-0004013000001B02 | 13 |  |  |  |  |  |  |  |  |  |  | 13 |  |  |
 | Module-GPIO-GPIO-SafeMode-N3DS-0004013020001B03 | 13 |  |  |  |  |  |  |  |  |  |  | 13 |  |  |
 | Module-GSP-GPU-Service-N3DS-0004013020001C02 | 8 |  |  |  |  |  |  |  |  |  |  | 5 | 3 |  |
-| Module-GSP-GPU-Service-SafeMode-N3DS-0004013020001C03 | 38 |  |  |  |  |  |  |  |  |  |  | 38 |  |  |
+| Module-GSP-GPU-Service-SafeMode-N3DS-0004013020001C03 | 36 |  |  |  |  |  |  |  |  |  |  | 36 |  |  |
 | Module-HID-Buttons-and-Touch-Input-SafeMode-N3DS-0004013020001D03 | 42 |  |  |  |  |  |  |  |  |  |  | 42 |  |  |
 | Module-HTTP-HTTP-Client-0004013000002902 | 44 |  |  |  |  |  |  |  |  |  |  | 44 |  |  |
 | Module-HTTP-HTTP-Client-SafeMode-N3DS-0004013020002903 | 42 |  |  |  |  |  |  |  |  |  |  | 42 |  |  |
@@ -64,20 +64,20 @@
 | Module-IR-Infrared-SafeMode-N3DS-0004013020003303 | 34 |  |  |  |  |  |  |  |  |  |  | 34 |  |  |
 | Module-MCU-Microcontroller-Power-N3DS-0004013020001F02 | 2 |  |  |  |  |  |  |  |  |  |  | 1 | 1 |  |
 | Module-MCU-Microcontroller-Power-SafeMode-N3DS-0004013020001F03 | 26 |  |  |  |  |  |  |  |  |  |  | 26 |  |  |
-| Module-MVD-Video-Decoder-N3DS-0004013020004102 | 6 |  |  |  |  |  |  |  |  |  |  | 6 |  |  |
+| Module-MVD-Video-Decoder-N3DS-0004013020004102 | 67 |  |  |  |  |  |  |  |  |  |  | 6 | 61 |  |
 | Module-NDM-Network-Daemon-Manager-0004013000002B02 | 6 |  |  |  |  |  |  |  |  |  |  | 6 |  |  |
 | Module-NEWS-News-Notifications-0004013000003502 | 4 |  |  |  |  |  |  |  |  |  |  | 4 |  |  |
 | Module-NFC-amiibo-NFC-N3DS-0004013020004002 | 7 |  |  |  |  |  |  |  |  |  |  | 7 |  |  |
 | Module-NIM-Updates-and-Downloads-0004013000002C02 | 7 |  |  |  |  |  |  |  |  |  |  | 7 |  |  |
 | Module-NIM-Updates-and-Downloads-SafeMode-N3DS-0004013020002C03 | 47 |  |  |  |  |  |  |  |  |  |  | 47 |  |  |
-| Module-NS-Nintendo-Shell-0004013000008002 | 64 |  |  |  |  |  |  |  |  |  |  | 64 |  |  |
-| Module-NS-Nintendo-Shell-SafeMode-N3DS-0004013020008003 | 54 |  |  |  |  |  |  |  |  |  |  | 54 |  |  |
+| Module-NS-Nintendo-Shell-0004013000008002 | 63 |  |  |  |  |  |  |  |  |  |  | 63 |  |  |
+| Module-NS-Nintendo-Shell-SafeMode-N3DS-0004013020008003 | 53 |  |  |  |  |  |  |  |  |  |  | 53 |  |  |
 | Module-NWM-WiFi-SafeMode-N3DS-0004013020002D03 | 8 |  |  |  |  |  |  |  |  |  |  | 8 |  |  |
 | Module-PDN-Power-and-Clock-Domains-SafeMode-N3DS-0004013020002103 | 13 |  |  |  |  |  |  |  |  |  |  | 13 |  |  |
 | Module-PS-Process-Services-and-Crypto-0004013000003102 | 22 |  |  |  |  |  |  |  |  |  |  | 22 |  |  |
 | Module-PS-Process-Services-and-Crypto-SafeMode-N3DS-0004013020003103 | 22 |  |  |  |  |  |  |  |  |  |  | 22 |  |  |
 | Module-PTM-Battery-and-Pedometer-SafeMode-N3DS-0004013020002203 | 4 |  |  |  |  |  |  |  |  |  |  | 4 |  |  |
-| Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202 | 54 |  |  |  |  |  |  |  |  |  |  | 47 | 7 |  |
+| Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202 | 79 |  |  |  |  |  |  |  |  |  |  | 47 | 32 |  |
 | Module-RO-Dynamic-Libraries-CRO-0004013000003702 | 11 |  |  |  |  |  |  |  |  |  |  | 11 |  |  |
 | Module-SOCKET-Internet-Sockets-0004013000002E02 | 32 |  |  |  |  |  |  |  |  |  |  | 32 |  |  |
 | Module-SOCKET-Internet-Sockets-SafeMode-N3DS-0004013020002E03 | 30 |  |  |  |  |  |  |  |  |  |  | 30 |  |  |
@@ -95,62 +95,62 @@
 | Software-Keyboard-000400300000C802 | 36 |  |  |  |  |  |  |  |  |  |  | 36 |  |  |
 | Software-Keyboard-SafeMode-000400302000C803 | 36 |  |  |  |  |  |  |  |  |  |  | 36 |  |  |
 | Sound-Picker-000400300000CC02 | 2 |  |  |  |  |  |  |  |  |  |  | 2 |  |  |
-| SysModule ac 0004013000002402 | 44 |  |  |  |  |  |  |  |  |  | 44 |  |  |  |
-| SysModule ac 0004013020002403 | 44 |  |  |  |  |  |  |  |  |  | 44 |  |  |  |
-| SysModule act 0004013000003802 | 45 |  |  |  |  |  |  |  |  |  | 45 |  |  |  |
-| SysModule am 0004013000001502 | 34 |  |  |  |  |  |  |  |  |  | 34 |  |  |  |
-| SysModule am 0004013020001503 | 34 |  |  |  |  |  |  |  |  |  | 34 |  |  |  |
-| SysModule boss 0004013000003402 | 75 |  |  |  |  |  |  |  |  |  | 75 |  |  |  |
-| SysModule camera 0004013020001602 | 55 |  |  |  |  |  |  |  |  |  | 55 |  |  |  |
-| SysModule cecd 0004013000002602 | 1705 | 1676 |  |  |  |  |  |  |  |  | 29 |  |  |  |
-| SysModule cfg 0004013000001702 | 41 |  |  |  |  |  |  |  |  |  | 41 |  |  |  |
-| SysModule cfg 0004013020001703 | 41 |  |  |  |  |  |  |  |  |  | 41 |  |  |  |
-| SysModule codec 0004013000001802 | 30 |  |  |  |  |  |  |  |  |  | 30 |  |  |  |
-| SysModule codec 0004013020001803 | 30 |  |  |  |  |  |  |  |  |  | 30 |  |  |  |
-| SysModule csnd 0004013000002702 | 37 |  |  |  |  |  |  |  |  |  | 37 |  |  |  |
-| SysModule csnd 0004013020002703 | 37 |  |  |  |  |  |  |  |  |  | 37 |  |  |  |
-| SysModule dlp 0004013000002802 | 47 |  |  |  |  |  |  |  |  |  | 47 |  |  |  |
-| SysModule dsp 0004013000001A02 | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
-| SysModule dsp 0004013020001A03 | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
-| SysModule friends 0004013000003202 | 87 |  |  |  |  |  |  |  |  |  | 87 |  |  |  |
-| SysModule friends 0004013020003203 | 84 |  |  |  |  |  |  |  |  |  | 84 |  |  |  |
-| SysModule gpio 0004013000001B02 | 16 |  |  |  |  |  |  |  |  |  | 16 |  |  |  |
-| SysModule gpio 0004013020001B03 | 16 |  |  |  |  |  |  |  |  |  | 16 |  |  |  |
+| SysModule ac 0004013000002402 | 265 |  |  |  |  |  |  |  |  |  | 265 |  |  |  |
+| SysModule ac 0004013020002403 | 265 |  |  |  |  |  |  |  |  |  | 265 |  |  |  |
+| SysModule act 0004013000003802 | 121 |  |  |  |  |  |  |  |  |  | 121 |  |  |  |
+| SysModule am 0004013000001502 | 132 |  |  |  |  |  |  |  |  |  | 132 |  |  |  |
+| SysModule am 0004013020001503 | 132 |  |  |  |  |  |  |  |  |  | 132 |  |  |  |
+| SysModule boss 0004013000003402 | 137 |  |  |  |  |  |  |  |  |  | 137 |  |  |  |
+| SysModule camera 0004013020001602 | 178 |  |  |  |  |  |  |  |  |  | 178 |  |  |  |
+| SysModule cecd 0004013000002602 | 1706 | 1676 |  |  |  |  |  |  |  |  | 30 |  |  |  |
+| SysModule cfg 0004013000001702 | 112 |  |  |  |  |  |  |  |  |  | 112 |  |  |  |
+| SysModule cfg 0004013020001703 | 111 |  |  |  |  |  |  |  |  |  | 111 |  |  |  |
+| SysModule codec 0004013000001802 | 34 |  |  |  |  |  |  |  |  |  | 34 |  |  |  |
+| SysModule codec 0004013020001803 | 34 |  |  |  |  |  |  |  |  |  | 34 |  |  |  |
+| SysModule csnd 0004013000002702 | 51 |  |  |  |  |  |  |  |  |  | 51 |  |  |  |
+| SysModule csnd 0004013020002703 | 51 |  |  |  |  |  |  |  |  |  | 51 |  |  |  |
+| SysModule dlp 0004013000002802 | 88 |  |  |  |  |  |  |  |  |  | 88 |  |  |  |
+| SysModule dsp 0004013000001A02 | 46 |  |  |  |  |  |  |  |  |  | 46 |  |  |  |
+| SysModule dsp 0004013020001A03 | 46 |  |  |  |  |  |  |  |  |  | 46 |  |  |  |
+| SysModule friends 0004013000003202 | 153 |  |  |  |  |  |  |  |  |  | 153 |  |  |  |
+| SysModule friends 0004013020003203 | 150 |  |  |  |  |  |  |  |  |  | 150 |  |  |  |
+| SysModule gpio 0004013000001B02 | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
+| SysModule gpio 0004013020001B03 | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
 | SysModule gsp 0004013020001C02 | 370 | 4 | 321 | 12 | 5 |  | 1 |  |  |  | 18 |  |  | 9 |
-| SysModule gsp 0004013020001C03 | 35 |  |  |  |  |  |  |  |  |  | 35 |  |  |  |
+| SysModule gsp 0004013020001C03 | 65 |  |  |  |  |  |  |  |  |  | 65 |  |  |  |
 | SysModule hid 0004013000001D02 | 281 | 263 |  |  |  |  |  |  |  |  | 18 |  |  |  |
-| SysModule hid 0004013020001D03 | 25 |  |  |  |  |  |  |  |  |  | 25 |  |  |  |
+| SysModule hid 0004013020001D03 | 46 |  |  |  |  |  |  |  |  |  | 46 |  |  |  |
 | SysModule http 0004013000002902 | 34 |  |  |  |  |  |  |  |  |  | 34 |  |  |  |
 | SysModule http 0004013020002903 | 31 |  |  |  |  |  |  |  |  |  | 31 |  |  |  |
-| SysModule i2c 0004013020001E02 | 166 | 4 | 121 | 13 | 5 | 1 | 9 |  |  |  | 13 |  |  |  |
-| SysModule i2c 0004013020001E03 | 26 |  |  |  |  |  |  |  |  |  | 26 |  |  |  |
-| SysModule ir 0004013000003302 | 28 |  |  |  |  |  |  |  |  |  | 28 |  |  |  |
-| SysModule ir 0004013020003303 | 28 |  |  |  |  |  |  |  |  |  | 28 |  |  |  |
+| SysModule i2c 0004013020001E02 | 167 | 4 | 121 | 13 | 5 | 1 | 9 |  |  |  | 14 |  |  |  |
+| SysModule i2c 0004013020001E03 | 47 |  |  |  |  |  |  |  |  |  | 47 |  |  |  |
+| SysModule ir 0004013000003302 | 79 |  |  |  |  |  |  |  |  |  | 79 |  |  |  |
+| SysModule ir 0004013020003303 | 77 |  |  |  |  |  |  |  |  |  | 77 |  |  |  |
 | SysModule mcu 0004013020001F02 | 272 | 12 | 193 | 37 | 10 | 3 | 1 |  |  |  | 15 |  |  | 1 |
-| SysModule mcu 0004013020001F03 | 32 |  |  |  |  |  |  |  |  |  | 32 |  |  |  |
-| SysModule mvd 0004013020004102 | 31 |  |  |  |  |  |  |  |  |  | 31 |  |  |  |
-| SysModule ndm 0004013000002B02 | 46 |  |  |  |  |  |  |  |  |  | 46 |  |  |  |
-| SysModule news 0004013000003502 | 44 |  |  |  |  |  |  |  |  |  | 44 |  |  |  |
-| SysModule nfc 0004013020004002 | 65 |  |  |  |  |  |  |  |  |  | 65 |  |  |  |
-| SysModule nim 0004013000002C02 | 55 |  |  |  |  |  |  |  |  |  | 55 |  |  |  |
-| SysModule nim 0004013020002C03 | 49 |  |  |  |  |  |  |  |  |  | 49 |  |  |  |
-| SysModule ns 0004013000008002 | 51 |  |  |  |  |  |  |  |  |  | 51 |  |  |  |
-| SysModule ns 0004013020008003 | 47 |  |  |  |  |  |  |  |  |  | 47 |  |  |  |
+| SysModule mcu 0004013020001F03 | 38 |  |  |  |  |  |  |  |  |  | 38 |  |  |  |
+| SysModule mvd 0004013020004102 | 72 |  |  |  |  |  |  |  |  |  | 72 |  |  |  |
+| SysModule ndm 0004013000002B02 | 72 |  |  |  |  |  |  |  |  |  | 72 |  |  |  |
+| SysModule news 0004013000003502 | 64 |  |  |  |  |  |  |  |  |  | 64 |  |  |  |
+| SysModule nfc 0004013020004002 | 178 |  |  |  |  |  |  |  |  |  | 178 |  |  |  |
+| SysModule nim 0004013000002C02 | 207 |  |  |  |  |  |  |  |  |  | 207 |  |  |  |
+| SysModule nim 0004013020002C03 | 188 |  |  |  |  |  |  |  |  |  | 188 |  |  |  |
+| SysModule ns 0004013000008002 | 156 |  |  |  |  |  |  |  |  |  | 156 |  |  |  |
+| SysModule ns 0004013020008003 | 150 |  |  |  |  |  |  |  |  |  | 150 |  |  |  |
 | SysModule nwm 0004013000002D02 | 2811 | 2784 |  |  |  |  |  |  |  |  | 27 |  |  |  |
-| SysModule nwm 0004013020002D03 | 65 |  |  |  |  |  |  |  |  |  | 65 |  |  |  |
+| SysModule nwm 0004013020002D03 | 146 |  |  |  |  |  |  |  |  |  | 146 |  |  |  |
 | SysModule pdn 0004013020002103 | 14 |  |  |  |  |  |  |  |  |  | 14 |  |  |  |
-| SysModule ps 0004013000003102 | 13 |  |  |  |  |  |  |  |  |  | 13 |  |  |  |
-| SysModule ps 0004013020003103 | 13 |  |  |  |  |  |  |  |  |  | 13 |  |  |  |
+| SysModule ps 0004013000003102 | 30 |  |  |  |  |  |  |  |  |  | 30 |  |  |  |
+| SysModule ps 0004013020003103 | 30 |  |  |  |  |  |  |  |  |  | 30 |  |  |  |
 | SysModule ptm 0004013020002202 | 791 | 21 | 718 | 27 | 1 | 1 | 1 |  |  |  | 22 |  |  |  |
-| SysModule ptm 0004013020002203 | 44 |  |  |  |  |  |  |  |  |  | 44 |  |  |  |
-| SysModule qtm 0004013020004202 | 30 |  |  |  |  |  |  |  |  |  | 30 |  |  |  |
+| SysModule ptm 0004013020002203 | 79 |  |  |  |  |  |  |  |  |  | 79 |  |  |  |
+| SysModule qtm 0004013020004202 | 27 |  |  |  |  |  |  |  |  |  | 27 |  |  |  |
 | SysModule ro 0004013000003702 | 18 |  |  |  |  |  |  |  |  |  | 18 |  |  |  |
-| SysModule socket 0004013000002E02 | 24 |  |  |  |  |  |  |  |  |  | 24 |  |  |  |
-| SysModule socket 0004013020002E03 | 24 |  |  |  |  |  |  |  |  |  | 24 |  |  |  |
-| SysModule spi 0004013020002302 | 14 |  |  |  |  |  |  |  |  |  | 14 |  |  |  |
-| SysModule spi 0004013020002303 | 14 |  |  |  |  |  |  |  |  |  | 14 |  |  |  |
-| SysModule ssl 0004013000002F02 | 45 |  |  |  |  |  |  |  |  |  | 45 |  |  |  |
-| SysModule ssl 0004013020002F03 | 45 |  |  |  |  |  |  |  |  |  | 45 |  |  |  |
+| SysModule socket 0004013000002E02 | 56 |  |  |  |  |  |  |  |  |  | 56 |  |  |  |
+| SysModule socket 0004013020002E03 | 56 |  |  |  |  |  |  |  |  |  | 56 |  |  |  |
+| SysModule spi 0004013020002302 | 13 |  |  |  |  |  |  |  |  |  | 13 |  |  |  |
+| SysModule spi 0004013020002303 | 22 |  |  |  |  |  |  |  |  |  | 22 |  |  |  |
+| SysModule ssl 0004013000002F02 | 56 |  |  |  |  |  |  |  |  |  | 56 |  |  |  |
+| SysModule ssl 0004013020002F03 | 56 |  |  |  |  |  |  |  |  |  | 56 |  |  |  |
 | System-Settings-0004001000021000 | 223 |  |  |  |  |  |  |  |  |  |  | 223 |  |  |
 | amiibo-Settings-0004003000009E02 | 5 |  |  |  |  |  |  |  |  |  |  | 5 |  |  |
 | amiibo-Settings-App-000400100002C000 | 8 |  |  |  |  |  |  |  |  |  |  | 8 |  |  |
@@ -159,7 +159,7 @@
 | kernel_native/arm9 | 2 |  |  |  |  |  |  |  |  |  |  |  | 2 |  |
 | pm | 1 |  |  |  |  |  |  |  |  |  |  | 1 |  |  |
 | pxi | 2 |  |  |  |  |  |  |  |  |  |  | 2 |  |  |
-| **TOTAL** | 24437 | 7750 | 9229 | 1525 | 268 | 306 | 81 | 63 | 6 | 4 | 2079 | 2654 | 28 | 444 |
+| **TOTAL** | 27068 | 7750 | 9229 | 1525 | 268 | 306 | 81 | 63 | 6 | 4 | 4628 | 2650 | 114 | 444 |
 
 `adapted_n3ds` rows by underlying match level: exact=4177, probable_by_transfer=4152, probable_by_callgraph=625, probable_by_layout=174, probable_by_similarity=70, probable_by_gap_function=29, probable_by_constants=2
 

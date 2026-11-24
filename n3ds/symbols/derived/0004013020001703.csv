@@ -5,9 +5,79 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100894,0x568,cfg_ipc_dispatcher_100894,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00040004, 0x00050008, 0x00070002, 0x00090001"
 0x00101A4C,0x3d2,cfg_ipc_dispatcher_101a4c,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040002, 0x00050002, 0x00050003, 0x00050007"
 0x00101E80,0x2fc,cfg_ipc_dispatcher_101e80,ipc_dispatcher,"11 distinct header-shaped literals (command-id compare table), e.g. 0x00030001, 0x00050001, 0x00070001, 0x00080001"
+0x00104000,0x16,cfg_ipc_cmd_0006_0010_CFGNOR_WriteData_104000,ipc_command_handler,"called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0006, 0x0010; libctru=CFGNOR_WriteData; req_hdr=0x00060082; reply_hdr=0x00060042"
+0x00104028,0x16,cfg_ipc_cmd_0005_000F_CFGNOR_ReadData_104028,ipc_command_handler,"called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0005, 0x000F; libctru=CFGNOR_ReadData; req_hdr=0x00050082; reply_hdr=0x00050042"
+0x00104E30,0x18,cfg___ARM_common_switch8_104e30,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x001054A4,0x8,cfg_svc_0x32_SendSyncRequest_1054a4,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00105C9C,0x7,cfg_str_service_cfgdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfgdb:"""
 0x00105D48,0x8,cfg_svc_0x23_CloseHandle_105d48,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106480,0xc,cfg_cfg_i_ipc_cmd_0407_handler_106480,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0407; req_hdr=0x04070080
+0x00106490,0xa,cfg_ipc_cmd_0005_CFGU_GetSystemModel_106490,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0005; libctru=CFGU_GetSystemModel; req_hdr=0x00050080
+0x001064B0,0xc,cfg_cfg_i_ipc_cmd_0406_handler_1064b0,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0406; req_hdr=0x04060080
+0x001064E4,0xc,cfg_cfg_i_ipc_cmd_0081_handler_1064e4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0081; req_hdr=0x00810042; reply_hdr=0x00020042
+0x001064F4,0xc,cfg_ipc_cmd_0003_CFGU_GenHashConsoleUnique_1064f4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0003; libctru=CFGU_GenHashConsoleUnique; req_hdr=0x000300C0
+0x00106500,0xe,cfg_ipc_cmd_0006_CFGU_GetModelNintendo2DS_106500,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0006; libctru=CFGU_GetModelNintendo2DS; req_hdr=0x00060080
+0x0010650E,0xa,cfg_ipc_cmd_0004_CFGU_GetRegionCanadaUSA_10650e,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0004; libctru=CFGU_GetRegionCanadaUSA; req_hdr=0x00040080
+0x00106522,0xa,cfg_cfg_i_ipc_cmd_040E_handler_106522,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040E; req_hdr=0x040E0080
+0x0010652C,0xa,cfg_cfg_i_ipc_cmd_040D_handler_10652c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040D; req_hdr=0x040D0040
+0x00106544,0xc,cfg_cfg_i_ipc_cmd_040A_handler_106544,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040A; req_hdr=0x040A0040
+0x00106554,0xc,cfg_ipc_cmd_040F_CFGI_ClearParentalControls_106554,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040F; libctru=CFGI_ClearParentalControls; req_hdr=0x040F0040
+0x00106564,0xc,cfg_ipc_cmd_0405_CFGI_GetLocalFriendCodeSeed_106564,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0405; libctru=CFGI_GetLocalFriendCodeSeed; req_hdr=0x040500C0
+0x0010658C,0xc,cfg_cfg_i_ipc_cmd_040B_handler_10658c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040B; req_hdr=0x040B0040
+0x0010659C,0xc,cfg_cfg_i_ipc_cmd_040C_handler_10659c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x040C; req_hdr=0x040C0040
+0x001065AC,0xc,cfg_cfg_i_ipc_cmd_0409_handler_1065ac,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0409; req_hdr=0x04090040
+0x001065BC,0xc,cfg_ipc_cmd_0404_CFGI_GetLocalFriendCodeSeedData_1065bc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0404; libctru=CFGI_GetLocalFriendCodeSeedData; req_hdr=0x04040042; reply_hdr=0x00020042
+0x001065CC,0x10,cfg_ipc_cmd_0001_CFGU_GetConfigInfoBlk2_1065cc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0001; libctru=CFGU_GetConfigInfoBlk2; req_hdr=0x00010082; reply_hdr=0x00020042
+0x001065E0,0xc,cfg_ipc_cmd_0002_CFGU_SecureInfoGetRegion_1065e0,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0002; libctru=CFGU_SecureInfoGetRegion; req_hdr=0x00020080
+0x001065F4,0xc,cfg_cfg_i_ipc_cmd_0807_handler_1065f4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0807; req_hdr=0x08070040
+0x00106634,0xc,cfg_cfg_i_ipc_cmd_0817_handler_106634,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0817; req_hdr=0x08170080
+0x0010667C,0xc,cfg_cfg_i_ipc_cmd_0816_handler_10667c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0816; req_hdr=0x08160080
+0x001066DC,0xc,cfg_cfg_i_ipc_cmd_0818_handler_1066dc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0818; req_hdr=0x08180042; reply_hdr=0x00020042
+0x00106740,0xa,cfg_cfg_i_ipc_cmd_0007_handler_106740,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0007; req_hdr=0x00070040
+0x00106754,0xc,cfg_ipc_cmd_0806_CFGI_FormatConfig_106754,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0806; libctru=CFGI_FormatConfig; req_hdr=0x08060040
+0x00106764,0xe,cfg_cfg_i_ipc_cmd_0811_handler_106764,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0811; req_hdr=0x08110084; reply_hdr=0x08110044
+0x00106784,0xc,cfg_ipc_cmd_0805_CFGI_DeleteConfigSavefile_106784,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0805; libctru=CFGI_DeleteConfigSavefile; req_hdr=0x08050040
+0x00106794,0xc,cfg_cfg_i_ipc_cmd_0808_handler_106794,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0808; req_hdr=0x08080040
+0x001067C4,0xc,cfg_ipc_cmd_0812_CFGI_RestoreSecureInfo_1067c4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0812; libctru=CFGI_RestoreSecureInfo; req_hdr=0x08120040
+0x001067D4,0xc,cfg_cfg_i_ipc_cmd_0819_handler_1067d4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0819; req_hdr=0x08190040
+0x001067E4,0xc,cfg_ipc_cmd_0814_CFGI_GetSecureInfoData_1067e4,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0814; libctru=CFGI_GetSecureInfoData; req_hdr=0x08140042; reply_hdr=0x00020042
+0x00106804,0xc,cfg_ipc_cmd_0813_CFGI_VerifySigSecureInfo_106804,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0813; libctru=CFGI_VerifySigSecureInfo; req_hdr=0x08130040
+0x00106814,0xc,cfg_cfg_i_ipc_cmd_081A_handler_106814,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081A; req_hdr=0x081A0042; reply_hdr=0x00020042
+0x0010686C,0xc,cfg_cfg_i_ipc_cmd_0041_handler_10686c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0041; req_hdr=0x00410042; reply_hdr=0x00020042
+0x0010687C,0xc,cfg_ipc_cmd_0815_CFGI_GetSecureInfoSignature_10687c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0815; libctru=CFGI_GetSecureInfoSignature; req_hdr=0x08150042; reply_hdr=0x00020042
+0x0010688C,0xc,cfg_cfg_i_ipc_cmd_0809_handler_10688c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0809; req_hdr=0x08090040
+0x0010689C,0xc,cfg_cfg_i_ipc_cmd_081C_handler_10689c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081C; req_hdr=0x081C0040
+0x001068AC,0xc,cfg_cfg_i_ipc_cmd_081E_handler_1068ac,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081E; req_hdr=0x081E0042; reply_hdr=0x00020042
+0x001068BC,0xc,cfg_ipc_cmd_080D_CFGI_RestoreLocalFriendCodeSeed_1068bc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080D; libctru=CFGI_RestoreLocalFriendCodeSeed; req_hdr=0x080D0040
+0x001068CC,0xc,cfg_cfg_i_ipc_cmd_081B_handler_1068cc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081B; req_hdr=0x081B0042; reply_hdr=0x00020042
+0x001068EC,0xc,cfg_cfg_i_ipc_cmd_081F_handler_1068ec,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081F; req_hdr=0x081F0040
+0x001068FC,0x1a,cfg_cfg_i_ipc_cmd_080B_handler_1068fc,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080B; req_hdr=0x080B0082; reply_hdr=0x00020042
+0x0010691C,0xc,cfg_cfg_i_ipc_cmd_081D_handler_10691c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x081D; req_hdr=0x081D0040
+0x0010692C,0xc,cfg_cfg_i_ipc_cmd_080A_handler_10692c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080A; req_hdr=0x080A0040
+0x0010693C,0xc,cfg_ipc_cmd_080E_CFGI_VerifySigLocalFriendCodeSeed_10693c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080E; libctru=CFGI_VerifySigLocalFriendCodeSeed; req_hdr=0x080E0040
+0x0010695C,0xc,cfg_cfg_i_ipc_cmd_080C_handler_10695c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080C; req_hdr=0x080C0042; reply_hdr=0x080C0042
+0x0010697C,0xc,cfg_cfg_i_ipc_cmd_080F_handler_10697c,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x080F; req_hdr=0x080F0042; reply_hdr=0x00020042
+0x001069EA,0xe,cfg_cfg_i_ipc_cmd_0008_handler_1069ea,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0008; req_hdr=0x00080080
+0x001069F8,0xc,cfg_ipc_cmd_0009_CFGU_GetCountryCodeString_1069f8,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x0009; libctru=CFGU_GetCountryCodeString; req_hdr=0x00090080
+0x00106A04,0xc,cfg_ipc_cmd_000A_CFGU_GetCountryCodeID_106a04,ipc_command_handler,called from dispatcher 0x00106bf4 (cfg:i) for cmd 0x000A; libctru=CFGU_GetCountryCodeID; req_hdr=0x000A0080
+0x00106BF4,0x1e,cfg_cfg_i_ipc_dispatcher_106bf4,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (49 cases, cmd_id 0x01..0x81F, service cfg:i, 19 matched to libctru)"
+0x001080B8,0xc,cfg_ipc_cmd_0001_CFGNOR_Initialize_1080b8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0001; libctru=CFGNOR_Initialize; req_hdr=0x00010040
+0x001080C8,0xc,cfg_cfg_nor_ipc_cmd_0007_handler_1080c8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0007; req_hdr=0x00070040
+0x001080D8,0xc,cfg_cfg_nor_ipc_cmd_0012_handler_1080d8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0012; req_hdr=0x00120040
+0x001080E8,0xc,cfg_cfg_nor_ipc_cmd_0008_handler_1080e8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0008; req_hdr=0x00080040
+0x001080F8,0xc,cfg_cfg_nor_ipc_cmd_0009_handler_1080f8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0009; req_hdr=0x00090080
+0x00108108,0xc,cfg_cfg_nor_ipc_cmd_000C_handler_108108,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x000C; req_hdr=0x000C0080
+0x00108118,0xc,cfg_cfg_nor_ipc_cmd_000B_handler_108118,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x000B; req_hdr=0x000B0040
+0x00108128,0xc,cfg_cfg_nor_ipc_cmd_0013_handler_108128,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0013; req_hdr=0x00130040
+0x00108148,0xc,cfg_cfg_nor_ipc_cmd_000D_handler_108148,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x000D; req_hdr=0x000D0080
+0x00108158,0xc,cfg_cfg_nor_ipc_cmd_000E_handler_108158,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x000E; req_hdr=0x000E0080
+0x00108168,0xc,cfg_cfg_nor_ipc_cmd_0014_handler_108168,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0014; req_hdr=0x00140040
+0x00108198,0xc,cfg_ipc_cmd_0002_CFGNOR_Shutdown_108198,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0002; libctru=CFGNOR_Shutdown; req_hdr=0x00020040
+0x001081A8,0xc,cfg_cfg_nor_ipc_cmd_0011_handler_1081a8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0011; req_hdr=0x00110040
+0x001081B8,0xc,cfg_cfg_nor_ipc_cmd_0004_handler_1081b8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0004; req_hdr=0x00040080
+0x001081C8,0xc,cfg_cfg_nor_ipc_cmd_0003_handler_1081c8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x0003; req_hdr=0x00030040; libctru=cfg:u:CFGU_GenHashConsoleUnique
+0x001081D8,0xc,cfg_cfg_nor_ipc_cmd_000A_handler_1081d8,ipc_command_handler,called from dispatcher 0x001081fc (cfg:nor) for cmd 0x000A; req_hdr=0x000A0040; libctru=cfg:u:CFGU_GetCountryCodeID
+0x001081FC,0x40,cfg_cfg_nor_ipc_dispatcher_1081fc,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (20 cases, cmd_id 0x01..0x14, service cfg:nor, 4 matched to libctru)"
 0x00109D94,0x8,cfg_svc_0x03_ExitProcess_109d94,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00109E38,0x18,cfg_svc_0x4A_AcceptSession_109e38,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00109E50,0x18,cfg_svc_0x4F_ReplyAndReceive_109e50,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

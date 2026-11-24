@@ -4,6 +4,23 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100E20,0x18,ps_svc_0x21_CreateAddressArbiter_100e20,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00100F80,0x1c,ps_svc_0x2B_GetProcessInfo_100f80,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101D34,0x18,ps_svc_0x22_ArbitrateAddress_101d34,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102464,0x40,ps_ps_ps_ipc_dispatcher_102464,ipc_dispatcher,"ARM IPC command dispatcher (17 cases, cmd_id 0x01..0x11, service ps:ps, 7 matched to libctru)"
+0x00102AA4,0x3c,ps_ps_ps_ipc_cmd_0011_handler_102aa4,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0011
+0x00102AE4,0x28,ps_ipc_cmd_000B_PS_GetDeviceId_102ae4,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000B; libctru=PS_GetDeviceId; req_hdr=0x000B0000
+0x00102B10,0x3c,ps_ps_ps_ipc_cmd_000F_handler_102b10,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000F
+0x00102B50,0x80,ps_ps_ps_ipc_cmd_000C_handler_102b50,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000C
+0x00102BD8,0x3c,ps_ipc_cmd_0001_PS_SignRsaSha256_102bd8,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0001; libctru=PS_SignRsaSha256; req_hdr=0x00010244
+0x00102C18,0x20,ps_ps_ps_ipc_cmd_000E_handler_102c18,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000E
+0x00102C60,0x64,ps_ps_ps_ipc_cmd_0008_handler_102c60,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0008
+0x00102CCC,0x3c,ps_ipc_cmd_0002_PS_VerifyRsaSha256_102ccc,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0002; libctru=PS_VerifyRsaSha256; req_hdr=0x00020244
+0x00102D0C,0x80,ps_ipc_cmd_0004_PS_EncryptDecryptAes_102d0c,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0004; libctru=PS_EncryptDecryptAes; req_hdr=0x00040204
+0x00102D94,0xa4,ps_ipc_cmd_000D_PS_GenerateRandomBytes_102d94,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000D; libctru=PS_GenerateRandomBytes; req_hdr=0x000D0042
+0x00102E40,0x28,ps_ipc_cmd_000A_PS_GetLocalFriendCodeSeed_102e40,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x000A; libctru=PS_GetLocalFriendCodeSeed; req_hdr=0x000A0000
+0x00102E6C,0x3c,ps_ps_ps_ipc_cmd_0010_handler_102e6c,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0010
+0x00102EAC,0x28,ps_ps_ps_ipc_cmd_0009_handler_102eac,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0009
+0x00102ED8,0x20,ps_ipc_cmd_0005_PS_EncryptSignDecryptVerifyAesCcm_102ed8,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0005; libctru=PS_EncryptSignDecryptVerifyAesCcm; req_hdr=0x00050284
+0x00102F70,0x74,ps_ps_ps_ipc_cmd_0006_handler_102f70,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0006
+0x00102FEC,0x78,ps_ps_ps_ipc_cmd_0007_handler_102fec,ipc_command_handler,called from dispatcher 0x00102464 (ps:ps) for cmd 0x0007
 0x00105024,0x6,ps_str_service_ps_ps,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ps:ps"""
 0x00105030,0x9,ps_str_service_mcu__PLS,service_name_string,"client of (in ExHeader service-access list): ""mcu::PLS"""
 0x0010504C,0x7,ps_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""

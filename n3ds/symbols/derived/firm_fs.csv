@@ -1,7 +1,10 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001147C8,0x10c,fs_ipc_cmd_0801_FSUSER_Initialize_1147c8,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0801; libctru=FSUSER_Initialize; req_hdr=0x08010002
 0x0011703D,0x6,fs_str_service_F_FhF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""F:FhF"""
+0x0011A60C,0x18,fs___ARM_common_switch8_11a60c,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x0011D1EE,0x5,fs_str_service_80_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""80:F"""
 0x0011DAA0,0x18,fs_svc_0x22_ArbitrateAddress_11daa0,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011DF04,0x74,fs_fs_user_ipc_cmd_003D_085E_etc_handler_11df04,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003D, 0x085E, 0x0880"
 0x00124320,0x18,fs_svc_0x21_CreateAddressArbiter_124320,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00124D94,0x1c,fs_svc_0x2B_GetProcessInfo_124d94,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00124DB0,0x18,fs_svc_0x0B_GetThreadPriority_124db0,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
@@ -9,6 +12,98 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00125F84,0x18,fs_svc_0x57_GetDmaState_125f84,svc_wrapper,"function body is a single `svc #0x57` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00125F9C,0x8,fs_svc_0x28_GetSystemTick_125f9c,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00125FA4,0x8,fs_svc_0x0C_SetThreadPriority_125fa4,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001265FC,0xb8,fs_fs_user_ipc_cmd_0001_handler_1265fc,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0001
+0x00126744,0x8c,fs_ipc_cmd_0804_FSUSER_DeleteFile_126744,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0804; libctru=FSUSER_DeleteFile; req_hdr=0x08040142
+0x001267D4,0x68,fs_ipc_cmd_081A_FSUSER_GetNandCid_1267d4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081A; libctru=FSUSER_GetNandCid; req_hdr=0x081A0042
+0x00126840,0x8c,fs_ipc_cmd_081E_FSUSER_GetNandLog_126840,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081E; libctru=FSUSER_GetNandLog; req_hdr=0x081E0042
+0x001268D4,0x68,fs_ipc_cmd_0819_FSUSER_GetSdmcCid_1268d4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0819; libctru=FSUSER_GetSdmcCid; req_hdr=0x08190042
+0x00126940,0x8c,fs_ipc_cmd_081D_FSUSER_GetSdmcLog_126940,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081D; libctru=FSUSER_GetSdmcLog; req_hdr=0x081D0042
+0x00126AB4,0x84,fs_ipc_cmd_0813_FSUSER_GetCardType_126ab4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0813; libctru=FSUSER_GetCardType; req_hdr=0x08130000
+0x00126B44,0x54,fs_ipc_cmd_003E_085F_etc_FSUSER_SwitchCleanupInvalidSaveData_126b44,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003E, 0x085F, 0x0881; libctru=FSUSER_SwitchCleanupInvalidSaveData; reply_hdr=0x08810840 (DAT_0012de20)"
+0x00126BA4,0x58,fs_fs_user_ipc_cmd_0005_handler_126ba4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0005
+0x00126C60,0x4c,fs_ipc_cmd_002D_084E_etc_FSUSER_UpdateSha256Context_126c60,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002D, 0x084E, 0x0870; libctru=FSUSER_UpdateSha256Context"
+0x00126CAC,0x7c,fs_ipc_cmd_0820_0822_FSUSER_ClearNandLog_FSUSER_CardSlotPowerOn_126cac,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0820, 0x0822; libctru=FSUSER_ClearNandLog/FSUSER_CardSlotPowerOn; req_hdr=0x08200000"
+0x00126D30,0x7c,fs_ipc_cmd_081F_0821_FSUSER_ClearSdmcLog_FSUSER_CardSlotIsInserted_126d30,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081F, 0x0821; libctru=FSUSER_ClearSdmcLog/FSUSER_CardSlotIsInserted; req_hdr=0x081F0000"
+0x00126DB4,0xc,fs_fs_user_ipc_cmd_0007_handler_126db4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0007
+0x00126DEC,0x78,fs_ipc_cmd_0812_FSUSER_GetFreeBytes_126dec,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0812; libctru=FSUSER_GetFreeBytes; req_hdr=0x08120080
+0x00126E68,0x10,fs_ipc_cmd_0025_0846_etc_FSUSER_GetLegacyRomHeader2_FSUSER_GetMediaType_126e68,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0025, 0x0846, 0x0868; libctru=FSUSER_GetLegacyRomHeader2/FSUSER_GetMediaType"
+0x00127240,0x410,fs_fs_user_ipc_cmd_003C_085D_etc_handler_127240,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003C, 0x085D, 0x087F"
+0x00127674,0x4c,fs_ipc_cmd_0041_0862_etc_FSUSER_SetPriority_127674,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0041, 0x0862, 0x0884; libctru=FSUSER_SetPriority"
+0x001276CC,0x274,fs_fs_user_ipc_cmd_0004_handler_1276cc,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0004; reply_hdr=0x080B0042 (DAT_0012c428)
+0x00127958,0x74,fs_fs_user_ipc_cmd_0006_handler_127958,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0006
+0x001279D0,0x7c,fs_ipc_cmd_0020_0841_FSUSER_DeleteSdmcRoot_1279d0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0020, 0x0841; libctru=FSUSER_DeleteSdmcRoot"
+0x00127A58,0x50,fs_ipc_cmd_003F_0860_etc_FSUSER_EnumerateSystemSaveData_127a58,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003F, 0x0860, 0x0882; libctru=FSUSER_EnumerateSystemSaveData"
+0x00127C58,0x50,fs_ipc_cmd_000D_082E_FSUSER_GetProductInfo_127c58,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000D, 0x082E; libctru=FSUSER_GetProductInfo"
+0x00127CB4,0x60,fs_ipc_cmd_0817_FSUSER_IsSdmcDetected_127cb4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0817; libctru=FSUSER_IsSdmcDetected; req_hdr=0x08170000
+0x00127D18,0x60,fs_ipc_cmd_0818_FSUSER_IsSdmcWritable_127d18,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0818; libctru=FSUSER_IsSdmcWritable; req_hdr=0x08180000
+0x00127D7C,0x70,fs_ipc_cmd_0027_0848_etc_FSUSER_GetSdmcCtrRootPath_127d7c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0027, 0x0848, 0x086A; libctru=FSUSER_GetSdmcCtrRootPath"
+0x00127E7C,0xa0,fs_fs_user_ipc_cmd_0002_handler_127e7c,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0002
+0x00127FB0,0xeaa4,fs_ipc_cmd_0038_0859_etc_FSUSER_StartDeviceMoveAsDestination_127fb0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0038, 0x0859, 0x087B; libctru=FSUSER_StartDeviceMoveAsDestination"
+0x00127FE4,0x3c,fs_ipc_cmd_0040_0861_etc_FSUSER_InitializeWithSdkVersion_127fe4,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0040, 0x0861, 0x0883; libctru=FSUSER_InitializeWithSdkVersion"
+0x00128094,0xdc,fs_fs_user_ipc_cmd_0003_handler_128094,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0003
+0x00128174,0x58,fs_ipc_cmd_0037_0858_etc_FSUSER_StartDeviceMoveAsSource_128174,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0037, 0x0858, 0x087A; libctru=FSUSER_StartDeviceMoveAsSource"
+0x001281D8,0x84,fs_ipc_cmd_0823_FSUSER_CardSlotPowerOff_1281d8,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0823; libctru=FSUSER_CardSlotPowerOff; req_hdr=0x08230000
+0x00128264,0x84,fs_ipc_cmd_081C_FSUSER_GetNandSpeedInfo_128264,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081C; libctru=FSUSER_GetNandSpeedInfo; req_hdr=0x081C0000
+0x001282F0,0x84,fs_ipc_cmd_081B_FSUSER_GetSdmcSpeedInfo_1282f0,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x081B; libctru=FSUSER_GetSdmcSpeedInfo; req_hdr=0x081B0000
+0x00128450,0x94,fs_ipc_cmd_0827_FSUSER_CardNorDirectRead_128450,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0827; libctru=FSUSER_CardNorDirectRead; req_hdr=0x08270082
+0x001284EC,0x6c,fs_ipc_cmd_0024_0845_etc_FSUSER_GetFormatInfo_FSUSER_ControlSecureSave_1284ec,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0024, 0x0845, 0x0867; libctru=FSUSER_GetFormatInfo/FSUSER_ControlSecureSave"
+0x00128560,0x84,fs_ipc_cmd_0816_FSUSER_GetSdmcFatfsError_128560,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0816; libctru=FSUSER_GetSdmcFatfsError; req_hdr=0x08160000
+0x001285EC,0x4c,fs_ipc_cmd_003B_085C_etc_FSUSER_SetCtrCardLatencyParameter_1285ec,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003B, 0x085C, 0x087E; libctru=FSUSER_SetCtrCardLatencyParameter"
+0x00128644,0x84,fs_ipc_cmd_0017_0838_FSUSER_SetCardSpiBusMode_128644,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0017, 0x0838; libctru=FSUSER_SetCardSpiBusMode"
+0x001286D0,0x74,fs_ipc_cmd_002A_084B_etc_FSUSER_ImportIntegrityVerificationSeed_1286d0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002A, 0x084B, 0x086D; libctru=FSUSER_ImportIntegrityVerificationSeed"
+0x0012874C,0x94,fs_ipc_cmd_0829_FSUSER_CardNorDirectWrite_12874c,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0829; libctru=FSUSER_CardNorDirectWrite; req_hdr=0x08290082
+0x00128878,0x50,fs_ipc_cmd_0039_085A_etc_FSUSER_SetArchivePriority_128878,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0039, 0x085A, 0x087C; libctru=FSUSER_SetArchivePriority"
+0x00128A08,0xa0,fs_ipc_cmd_001A_083B_FSUSER_GetLegacyRomHeader_128a08,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001A, 0x083B; libctru=FSUSER_GetLegacyRomHeader"
+0x00128C48,0x84,fs_ipc_cmd_0016_0837_FSUSER_SetCardSpiBaudRate_128c48,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0016, 0x0837; libctru=FSUSER_SetCardSpiBaudRate"
+0x00128CD4,0x20c,fs_ipc_cmd_0042_0044_etc_FSUSER_GetPriority_128cd4,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0042, 0x0044, 0x0863, 0x0885; libctru=FSUSER_GetPriority"
+0x00128EF0,0x4,fs_ipc_cmd_001F_0840_FSUSER_AbnegateAccessRight_128ef0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001F, 0x0840; libctru=FSUSER_AbnegateAccessRight"
+0x00128F20,0xa4,fs_ipc_cmd_001B_083C_FSUSER_GetLegacyBannerData_128f20,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001B, 0x083C; libctru=FSUSER_GetLegacyBannerData"
+0x00129084,0x3c,fs_ipc_cmd_003A_085B_etc_FSUSER_GetArchivePriority_129084,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x003A, 0x085B, 0x087D; libctru=FSUSER_GetArchivePriority"
+0x001290C8,0x48,fs_ipc_cmd_001D_083E_FSUSER_QueryTotalQuotaSize_1290c8,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001D, 0x083E; libctru=FSUSER_QueryTotalQuotaSize"
+0x00129190,0x84,fs_ipc_cmd_0825_FSUSER_CardNorDirectCommand_129190,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0825; libctru=FSUSER_CardNorDirectCommand; req_hdr=0x08250040
+0x00129354,0x50,fs_ipc_cmd_000E_082F_FSUSER_GetProgramLaunchInfo_129354,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000E, 0x082F; libctru=FSUSER_GetProgramLaunchInfo"
+0x001293B0,0x7c,fs_ipc_cmd_002F_0850_etc_FSUSER_GetSpecialFileSize_1293b0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002F, 0x0850, 0x0872; libctru=FSUSER_GetSpecialFileSize"
+0x00129434,0x74,fs_fs_user_ipc_cmd_0043_0045_etc_handler_129434,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0043, 0x0045, 0x0864, 0x0886"
+0x001294AC,0x4,fs_ipc_cmd_0031_0852_etc_FSUSER_DeleteExtSaveData_1294ac,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0031, 0x0852, 0x0874; libctru=FSUSER_DeleteExtSaveData"
+0x00129510,0x4,fs_ipc_cmd_0018_0839_FSUSER_SendInitializeInfoTo9_129510,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0018, 0x0839; libctru=FSUSER_SendInitializeInfoTo9"
+0x00129578,0x9c,fs_ipc_cmd_000A_082B_FSUSER_CardNorDirectRead_4xIO_129578,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000A, 0x082B; libctru=FSUSER_CardNorDirectRead_4xIO"
+0x001296CC,0x84,fs_ipc_cmd_0815_FSUSER_GetNandArchiveResource_1296cc,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0815; libctru=FSUSER_GetNandArchiveResource; req_hdr=0x08150000
+0x0012975C,0x7c,fs_ipc_cmd_0033_0854_etc_FSUSER_GetExtDataBlockSize_12975c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0033, 0x0854, 0x0876; libctru=FSUSER_GetExtDataBlockSize"
+0x001297DC,0x60,fs_ipc_cmd_0814_FSUSER_GetSdmcArchiveResource_1297dc,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0814; libctru=FSUSER_GetSdmcArchiveResource; req_hdr=0x08140000
+0x00129840,0xc0,fs_ipc_cmd_0019_083A_FSUSER_GetSpecialContentIndex_129840,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0019, 0x083A; libctru=FSUSER_GetSpecialContentIndex"
+0x0012990C,0x98,fs_ipc_cmd_002E_084F_etc_FSUSER_ReadSpecialFile_12990c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002E, 0x084F, 0x0871; libctru=FSUSER_ReadSpecialFile"
+0x00129A24,0x80,fs_ipc_cmd_0032_0853_etc_FSUSER_ReadExtSaveDataIcon_129a24,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0032, 0x0853, 0x0875; libctru=FSUSER_ReadExtSaveDataIcon"
+0x00129AA8,0x64,fs_ipc_cmd_0030_0851_etc_FSUSER_CreateExtSaveData_129aa8,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0030, 0x0851, 0x0873; libctru=FSUSER_CreateExtSaveData"
+0x00129C58,0x4,fs_ipc_cmd_0021_0842_FSUSER_DeleteAllExtSaveDataOnNand_129c58,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0021, 0x0842; libctru=FSUSER_DeleteAllExtSaveDataOnNand"
+0x00129D4C,0x44,fs_ipc_cmd_002C_084D_etc_FSUSER_GetLegacySubBannerData_129d4c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002C, 0x084D, 0x086F; libctru=FSUSER_GetLegacySubBannerData"
+0x00129DF0,0x38,fs_ipc_cmd_002B_084C_etc_FSUSER_FormatSaveData_129df0,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x002B, 0x084C, 0x086E; libctru=FSUSER_FormatSaveData"
+0x00129E28,0x6c,fs_ipc_cmd_0034_0855_etc_FSUSER_EnumerateExtSaveData_129e28,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0034, 0x0855, 0x0877; libctru=FSUSER_EnumerateExtSaveData"
+0x00129E9C,0x9c,fs_ipc_cmd_0828_FSUSER_CardNorDirectReadWithAddress_129e9c,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0828; libctru=FSUSER_CardNorDirectReadWithAddress; req_hdr=0x082800C2
+0x00129F40,0x84,fs_ipc_cmd_0824_FSUSER_CardSlotGetCardIFPowerStatus_129f40,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0824; libctru=FSUSER_CardSlotGetCardIFPowerStatus; req_hdr=0x08240000
+0x00129FCC,0x64,fs_ipc_cmd_0029_084A_etc_FSUSER_ExportIntegrityVerificationSeed_129fcc,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0029, 0x084A, 0x086C; libctru=FSUSER_ExportIntegrityVerificationSeed"
+0x0012A038,0x5c,fs_ipc_cmd_0028_0849_etc_FSUSER_GetArchiveResource_12a038,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0028, 0x0849, 0x086B; libctru=FSUSER_GetArchiveResource"
+0x0012A1CC,0x9c,fs_ipc_cmd_0009_082A_FSUSER_CardNorDirectWriteWithAddress_12a1cc,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0009, 0x082A; libctru=FSUSER_CardNorDirectWriteWithAddress"
+0x0012A270,0x64,fs_ipc_cmd_0035_0856_etc_FSUSER_CreateSystemSaveData_12a270,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0035, 0x0856, 0x0878; libctru=FSUSER_CreateSystemSaveData"
+0x0012A2DC,0x8c,fs_ipc_cmd_0826_FSUSER_CardNorDirectCommandWithAddress_12a2dc,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0826; libctru=FSUSER_CardNorDirectCommandWithAddress; req_hdr=0x08260080
+0x0012A400,0xa4,fs_ipc_cmd_0036_0857_etc_FSUSER_DeleteSystemSaveData_12a400,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0036, 0x0857, 0x0879; libctru=FSUSER_DeleteSystemSaveData"
+0x0012A540,0x50,fs_fs_user_ipc_cmd_000F_0830_handler_12a540,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000F, 0x0830"
+0x0012A590,0x2c,fs_fs_user_ipc_cmd_0014_0835_handler_12a590,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0014, 0x0835"
+0x0012A5BC,0x8,fs_fs_user_ipc_cmd_0026_0847_etc_handler_12a5bc,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0026, 0x0847, 0x0869"
+0x0012A628,0x68,fs_ipc_cmd_001C_083D_FSUSER_CheckAuthorityToAccessExtSaveData_12a628,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001C, 0x083D; libctru=FSUSER_CheckAuthorityToAccessExtSaveData"
+0x0012A694,0x40,fs_fs_user_ipc_cmd_001E_083F_handler_12a694,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x001E, 0x083F"
+0x0012A6D4,0x44,fs_fs_user_ipc_cmd_0011_0832_handler_12a6d4,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0011, 0x0832"
+0x0012A718,0x94,fs_ipc_cmd_000B_082C_FSUSER_CardNorDirectCpuWriteWithoutVerify_12a718,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000B, 0x082C; libctru=FSUSER_CardNorDirectCpuWriteWithoutVerify"
+0x0012A7B4,0xc8,fs_fs_user_ipc_cmd_0810_handler_12a7b4,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0810
+0x0012A880,0xa8,fs_fs_user_ipc_cmd_0811_handler_12a880,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0811
+0x0012A930,0x34,fs_fs_user_ipc_cmd_0012_0833_handler_12a930,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0012, 0x0833"
+0x0012A964,0x74,fs_fs_user_ipc_cmd_0008_handler_12a964,ipc_command_handler,called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0008
+0x0012A9D8,0xa8,fs_ipc_cmd_0023_0844_etc_FSUSER_CreateSeed_FSUSER_GetSaveDataSecureValue_12a9d8,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0023, 0x0844, 0x0866; libctru=FSUSER_CreateSeed/FSUSER_GetSaveDataSecureValue"
+0x0012AA88,0xac,fs_ipc_cmd_0022_0843_etc_FSUSER_InitializeCtrFileSystem_FSUSER_SetSaveDataSecureValue_12aa88,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0022, 0x0843, 0x0865; libctru=FSUSER_InitializeCtrFileSystem/FSUSER_SetSaveDataSecureValue"
+0x0012AB3C,0x84,fs_ipc_cmd_000C_082D_FSUSER_CardNorDirectSectorEraseWithoutVerify_12ab3c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x000C, 0x082D; libctru=FSUSER_CardNorDirectSectorEraseWithoutVerify"
+0x0012ABC8,0x64,fs_fs_user_ipc_cmd_0010_0831_handler_12abc8,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0010, 0x0831"
+0x0012AC2C,0x34,fs_fs_user_ipc_cmd_0015_0836_handler_12ac2c,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0015, 0x0836"
+0x0012AD04,0x38,fs_fs_user_ipc_cmd_0013_0834_handler_12ad04,ipc_command_handler,"called from dispatcher 0x0012b4fc (fs:USER) for cmd 0x0013, 0x0834"
+0x0012B4FC,0x2848,fs_fs_user_ipc_dispatcher_12b4fc,ipc_dispatcher,"ARM IPC command dispatcher (193 cases, cmd_id 0x01..0x886, service fs:USER, 80 matched to libctru)"
 0x00133FBC,0x7,fs_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
 0x00133FC3,0x7,fs_str_service_fs_REG,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:REG"""
 0x00133FCA,0x8,fs_str_service_fs_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:USER"""

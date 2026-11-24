@@ -1,9 +1,44 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00104B38,0x10,ptm_ptm_sysm_ipc_cmd_000F_handler_104b38,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000F; req_hdr=0x000F0084; reply_hdr=0x00040044
+0x00104B4C,0x8,ptm_ptm_sysm_ipc_cmd_000E_handler_104b4c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000E; req_hdr=0x000E0080
+0x00104B54,0xc,ptm_ipc_cmd_000C_PTMU_GetTotalStepCount_104b54,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000C; libctru=PTMU_GetTotalStepCount; req_hdr=0x000C0080
+0x00104B64,0x14,ptm_ipc_cmd_000B_PTMU_GetStepHistory_104b64,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000B; libctru=PTMU_GetStepHistory; req_hdr=0x000B00C2; reply_hdr=0x000B0042
+0x00104B7C,0xc,ptm_ptm_sysm_ipc_cmd_000A_handler_104b7c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000A; req_hdr=0x000A0042; reply_hdr=0x00020042
+0x00104CCA,0x16,ptm_ipc_cmd_0806_PTMSYSM_SetStepHistory_104cca,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0806; libctru=PTMSYSM_SetStepHistory; req_hdr=0x080600C2; reply_hdr=0x08060042
+0x00104D74,0x36,ptm_ptm_sysm_ipc_cmd_000D_handler_104d74,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x000D; req_hdr=0x000D0040
 0x0010530C,0x8,ptm_svc_0x7C_KernelSetState_10530c,svc_wrapper,"function body is a single `svc #0x7C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001053D4,0x74,ptm_ptm_sysm_ipc_cmd_0801_handler_1053d4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0801; req_hdr=0x08010040
+0x001057B4,0x2a8,ptm_ptm_sysm_ipc_cmd_0807_handler_1057b4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0807; req_hdr=0x08070082; reply_hdr=0x00030082; libctru=ptm:play:PTMPLAYS_GetPlayHistory
+0x00106470,0x8,ptm_ptm_sysm_ipc_cmd_0081_handler_106470,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0081; req_hdr=0x00810040
+0x00106478,0x12,ptm_ipc_cmd_0405_PTMSYSM_GetWakeReason_106478,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0405; libctru=PTMSYSM_GetWakeReason; req_hdr=0x04050140
 0x0010650C,0x8,ptm_svc_0x24_WaitSynchronization1_10650c,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00106520,0x18,ptm_svc_0x1B_SetTimer_106520,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106DE8,0x18,ptm___ARM_common_switch8_106de8,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x0010706C,0x8,ptm_svc_0x32_SendSyncRequest_10706c,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00107114,0x8,ptm_svc_0x23_CloseHandle_107114,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00109506,0x20,ptm_ipc_cmd_0409_PTMSYSM_RebootAsync_109506,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0409; libctru=PTMSYSM_RebootAsync; req_hdr=0x04090040
+0x001096A0,0xc,ptm_ipc_cmd_080C_PTMSYSM_SetUserTime_1096a0,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080C; libctru=PTMSYSM_SetUserTime; req_hdr=0x080C0040
+0x001096B0,0xc,ptm_ipc_cmd_0818_PTMSYSM_ConfigureNew3DSCPU_1096b0,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0818; libctru=PTMSYSM_ConfigureNew3DSCPU; req_hdr=0x08180040
+0x001096D0,0x80,ptm_ptm_sysm_ipc_cmd_0813_handler_1096d0,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0813; req_hdr=0x08130040
+0x0010977C,0xe,ptm_ptm_sysm_ipc_cmd_0811_handler_10977c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0811
+0x001097A8,0x16,ptm_ptm_sysm_ipc_cmd_080E_handler_1097a8,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080E; req_hdr=0x080E0040
+0x001097C4,0xc,ptm_ipc_cmd_080A_PTMSYSM_ClearPlayHistory_1097c4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080A; libctru=PTMSYSM_ClearPlayHistory; req_hdr=0x080A0040
+0x001097D4,0xc,ptm_ipc_cmd_0805_PTMSYSM_ClearStepHistory_1097d4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0805; libctru=PTMSYSM_ClearStepHistory; req_hdr=0x08050040
+0x001097E4,0xc,ptm_ptm_sysm_ipc_cmd_0803_handler_1097e4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0803; req_hdr=0x08030080
+0x001097F4,0x1e,ptm_ptm_sysm_ipc_cmd_080F_handler_1097f4,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080F
+0x0010983C,0xc,ptm_ptm_sysm_ipc_cmd_0808_handler_10983c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0808; req_hdr=0x08080080
+0x0010984C,0xc,ptm_ptm_sysm_ipc_cmd_080B_handler_10984c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080B; req_hdr=0x080B0080
+0x0010985C,0xc,ptm_ptm_sysm_ipc_cmd_0809_handler_10985c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0809; req_hdr=0x08090080
+0x0010986C,0xc,ptm_ipc_cmd_080D_PTMSYSM_InvalidateSystemTime_10986c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x080D; libctru=PTMSYSM_InvalidateSystemTime; req_hdr=0x080D0040
+0x0010987C,0xc,ptm_ptm_sysm_ipc_cmd_0802_handler_10987c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0802; req_hdr=0x08020040
+0x0010988C,0xc,ptm_ptm_sysm_ipc_cmd_0804_handler_10988c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0804; req_hdr=0x08040040
+0x0010989C,0xe,ptm_ptm_sysm_ipc_cmd_0814_handler_10989c,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0814
+0x001098B0,0xc,ptm_ptm_sysm_ipc_cmd_0815_handler_1098b0,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0815; req_hdr=0x08150040
+0x001098C0,0x14,ptm_ipc_cmd_0816_PTMSYSM_GetRtcTime_1098c0,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0816; libctru=PTMSYSM_GetRtcTime; req_hdr=0x081600C0
+0x001098D8,0xc,ptm_ipc_cmd_0817_PTMSYSM_SetRtcTime_1098d8,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0817; libctru=PTMSYSM_SetRtcTime; req_hdr=0x08170040
+0x001098E8,0xc,ptm_ipc_cmd_0406_PTMSYSM_RequestSleep_1098e8,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0406; libctru=PTMSYSM_RequestSleep; req_hdr=0x04060040
+0x001098F8,0xc,ptm_ipc_cmd_0407_PTMSYSM_ShutdownAsync_1098f8,ipc_command_handler,called from dispatcher 0x00109948 (ptm:sysm) for cmd 0x0407; libctru=PTMSYSM_ShutdownAsync; req_hdr=0x04070040
+0x00109948,0xc,ptm_ptm_sysm_ipc_dispatcher_109948,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (42 cases, cmd_id 0x01..0x818, service ptm:sysm, 19 matched to libctru)"
 0x0010B930,0x8,ptm_svc_0x03_ExitProcess_10b930,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010B9D4,0x18,ptm_svc_0x4A_AcceptSession_10b9d4,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010B9EC,0x18,ptm_svc_0x4F_ReplyAndReceive_10b9ec,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

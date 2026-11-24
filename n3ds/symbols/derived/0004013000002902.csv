@@ -5,7 +5,7 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0010381C,0x18,http_svc_0x4A_AcceptSession_10381c,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010D2AC,0x18,http_svc_0x22_ArbitrateAddress_10d2ac,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00114640,0xc,http_func_ptr_table_114640,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
-0x00114BAC,0x1528,http_ipc_handler_cmd_0003_0004_0005_etc_114bac,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030040, 0x00040040, 0x00050080, 0x000600C0"
+0x00114BAC,0x1528,http_http_c_ipc_dispatcher_114bac,ipc_dispatcher,"ARM IPC command dispatcher (66 cases, cmd_id 0x01..0x42, service http:C, 36 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030040, 0x00040040, 0x00050080, 0x000600C0"
 0x0011A6F0,0xc,http_func_ptr_table_11a6f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
 0x0011B008,0x7,http_str_service_http_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:C"""
 0x0011B220,0x5,http_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""

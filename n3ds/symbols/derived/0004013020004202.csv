@@ -1,12 +1,38 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101580,0x4c,qtm_ipc_client_cmd_0004_101580,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x001026A4,0x18,qtm_svc_0x21_CreateAddressArbiter_1026a4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00103464,0x144,qtm_ipc_handler_cmd_0001_0003_0004_etc_103464,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
-0x001035C4,0x30c,qtm_ipc_handler_cmd_0001_0003_0004_etc_1035c4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
-0x001039F8,0x3b4,qtm_ipc_handler_cmd_0001_0003_0004_etc_1039f8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
+0x00103464,0x144,qtm_qtm_u_ipc_dispatcher_103464,ipc_dispatcher,"ARM IPC command dispatcher (6 cases, cmd_id 0x01..0x06, service qtm:u, 6 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
+0x001035C4,0x30c,qtm_qtm_s_ipc_dispatcher_1035c4,ipc_dispatcher,"ARM IPC command dispatcher (16 cases, cmd_id 0x01..0x40A, service qtm:s, 16 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
+0x00103918,0x40,qtm_qtm_c_ipc_dispatcher_103918,ipc_dispatcher,"ARM IPC command dispatcher (5 cases, cmd_id 0x01..0x05, service qtm:c, 5 matched to libctru)"
+0x001039F8,0x3b4,qtm_qtm_sp_ipc_dispatcher_1039f8,ipc_dispatcher,"ARM IPC command dispatcher (20 cases, cmd_id 0x01..0x804, service qtm:sp, 20 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010340, 0x00030040, 0x00040040, 0x00050040"
 0x00104674,0x1c,qtm_svc_0x2B_GetProcessInfo_104674,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010599C,0x1b70,qtm_ipc_cmd_0004_QTMC_WaitAndCheckExpanderWorking_10599c,ipc_command_handler,called from dispatcher 0x00103918 (qtm:c) for cmd 0x0004; libctru=QTMC_WaitAndCheckExpanderWorking; req_hdr=0x00040000
+0x00105A0C,0x20,qtm_ipc_cmd_0005_QTMC_SetIrLedStatusOverride_105a0c,ipc_command_handler,called from dispatcher 0x00103918 (qtm:c) for cmd 0x0005; libctru=QTMC_SetIrLedStatusOverride; req_hdr=0x00050040
+0x00105A30,0x20,qtm_ipc_cmd_0003_QTMC_SetBarrierPattern_105a30,ipc_command_handler,called from dispatcher 0x00103918 (qtm:c) for cmd 0x0003; libctru=QTMC_SetBarrierPattern; req_hdr=0x00030040
+0x00105A5C,0x2c,qtm_ipc_cmd_0002_QTMC_StopHardwareCheck_105a5c,ipc_command_handler,called from dispatcher 0x00103918 (qtm:c) for cmd 0x0002; libctru=QTMC_StopHardwareCheck; req_hdr=0x00020000
+0x00105A90,0x20,qtm_ipc_cmd_0001_QTMC_StartHardwareCheck_105a90,ipc_command_handler,called from dispatcher 0x00103918 (qtm:c) for cmd 0x0001; libctru=QTMC_StartHardwareCheck; req_hdr=0x00010000
+0x00105AC8,0x20,qtm_ipc_cmd_0801_QTMSP_NotifyTopLcdModeChange_105ac8,ipc_command_handler,called from dispatcher 0x001039f8 (qtm:sp) for cmd 0x0801; libctru=QTMSP_NotifyTopLcdModeChange; req_hdr=0x08010040
+0x00105ADC,0x10,qtm_ipc_cmd_0802_QTMSP_NotifyTopLcdPowerOn_105adc,ipc_command_handler,called from dispatcher 0x001039f8 (qtm:sp) for cmd 0x0802; libctru=QTMSP_NotifyTopLcdPowerOn; req_hdr=0x08020000
+0x00105AEC,0x20,qtm_ipc_cmd_0804_QTMSP_NotifyTopLcdPowerOff_105aec,ipc_command_handler,called from dispatcher 0x001039f8 (qtm:sp) for cmd 0x0804; libctru=QTMSP_NotifyTopLcdPowerOff; req_hdr=0x08040000
+0x001070E8,0x54,qtm_ipc_cmd_0402_QTMS_GetCameraLuminance_1070e8,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0402; libctru=QTMS_GetCameraLuminance; req_hdr=0x04020000
+0x001072EC,0x1c,qtm_ipc_cmd_0409_QTMS_GetQtmStatus_1072ec,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0409; libctru=QTMS_GetQtmStatus; req_hdr=0x04090000
+0x00107430,0x58,qtm_ipc_cmd_0401_QTMS_SetCentralBarrierPosition_107430,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0401; libctru=QTMS_SetCentralBarrierPosition; req_hdr=0x04010040
 0x0010FE08,0x18,qtm_svc_0x17_CreateEvent_10fe08,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011238C,0x88,qtm_ipc_cmd_0407_QTMS_SetIrLedStatusOverride_11238c,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0407; libctru=QTMS_SetIrLedStatusOverride; req_hdr=0x04070040
+0x0011349C,0x1aec,qtm_ipc_cmd_040A_QTMS_SetQtmStatus_11349c,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x040A; libctru=QTMS_SetQtmStatus; req_hdr=0x040A0040
+0x001134D4,0x114,qtm_ipc_cmd_0408_QTMS_SetCalibrationData_1134d4,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0408; libctru=QTMS_SetCalibrationData; req_hdr=0x040801C0
+0x00113604,0x28,qtm_ipc_cmd_0406_QTMS_GetCurrentBarrierPosition_113604,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0406; libctru=QTMS_GetCurrentBarrierPosition; req_hdr=0x04060000
+0x00113630,0x34,qtm_ipc_cmd_0405_QTMS_SetBarrierPosition_113630,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0405; libctru=QTMS_SetBarrierPosition; req_hdr=0x04050040
+0x0011366C,0x20,qtm_ipc_cmd_0404_QTMS_DisableAutoBarrierControl_11366c,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0404; libctru=QTMS_DisableAutoBarrierControl; req_hdr=0x04040000
+0x00113694,0x14,qtm_ipc_cmd_0006_QTMU_IsCurrentAppBlacklisted_113694,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0006; libctru=QTMU_IsCurrentAppBlacklisted; req_hdr=0x00060000
+0x001136AC,0x7c,qtm_ipc_cmd_0005_QTMU_SetIrLedStatus_1136ac,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0005; libctru=QTMU_SetIrLedStatus; req_hdr=0x00050040
+0x00113738,0x4c,qtm_ipc_cmd_0004_QTMU_DisableManualIrLedControl_113738,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0004; libctru=QTMU_DisableManualIrLedControl; req_hdr=0x00040000
+0x0011378C,0x4c,qtm_ipc_cmd_0003_QTMU_EnableManualIrLedControl_11378c,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0003; libctru=QTMU_EnableManualIrLedControl; req_hdr=0x00030000
+0x001137E0,0x234,qtm_ipc_cmd_0002_QTMU_GetTrackingDataEx_1137e0,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0002; libctru=QTMU_GetTrackingDataEx; req_hdr=0x00020080
+0x00113A38,0x110,qtm_ipc_cmd_0001_QTMU_GetRawTrackingDataEx_113a38,ipc_command_handler,called from dispatcher 0x00103464 (qtm:u/qtm:s/qtm:sp) for cmd 0x0001; libctru=QTMU_GetRawTrackingDataEx; req_hdr=0x00010080
 0x00113DAC,0x18,qtm_svc_0x22_ArbitrateAddress_113dac,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00114C38,0x28,qtm_ipc_cmd_0403_QTMS_EnableAutoBarrierControl_114c38,ipc_command_handler,called from dispatcher 0x001035c4 (qtm:s/qtm:sp) for cmd 0x0403; libctru=QTMS_EnableAutoBarrierControl; req_hdr=0x04030000
+0x00115338,0x20,qtm_ipc_cmd_0803_QTMSP_IsExpanderInUse_115338,ipc_command_handler,called from dispatcher 0x001039f8 (qtm:sp) for cmd 0x0803; libctru=QTMSP_IsExpanderInUse; req_hdr=0x08030000
 0x00125064,0x6,qtm_str_service_cam_q,service_name_string,"client of (in ExHeader service-access list): ""cam:q"""
 0x0012506A,0x9,qtm_str_service_gpio_QTM,service_name_string,"client of (in ExHeader service-access list): ""gpio:QTM"""
 0x001250E4,0x9,qtm_str_service_i2c__QTM,service_name_string,"client of (in ExHeader service-access list): ""i2c::QTM"""

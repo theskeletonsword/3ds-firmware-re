@@ -1,6 +1,6 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100600,0x18,i2c_svc_0x4A_AcceptSession_100600,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100A2C,0x54,i2c_ipc_client_cmd_0003_100a2c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100A2C,0x54,i2c_ipc_client_srvRegisterService_100a2c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100A88,0x4c,i2c_ipc_client_cmd_0004_100a88,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00100F04,0x18,i2c_svc_0x21_CreateAddressArbiter_100f04,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010103C,0x18,i2c_svc_0x2D_ConnectToPort_10103c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
@@ -11,8 +11,29 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101844,0x18,i2c_svc_0x17_CreateEvent_101844,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010185C,0x18,i2c_svc_0x13_CreateMutex_10185c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010188C,0x18,i2c_svc_0x4F_ReplyAndReceive_10188c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00101ED0,0x604,i2c_ipc_handler_cmd_0001_0002_0003_etc_101ed0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00040040"
+0x00101ED0,0x604,i2c_ipc_dispatcher_101ed0,ipc_dispatcher,"ARM IPC command dispatcher (21 cases, cmd_id 0x01..0x15); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00040040"
+0x00102554,0x38,i2c_ipc_cmd_0003_handler_102554,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0003
+0x00102594,0x64,i2c_ipc_cmd_0009_handler_102594,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0009
+0x001025FC,0x74,i2c_ipc_cmd_000D_handler_1025fc,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000D
 0x00103444,0x18,i2c_svc_0x22_ArbitrateAddress_103444,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103934,0xfe8,i2c_ipc_cmd_0005_handler_103934,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0005
+0x001039A4,0x6,i2c_ipc_cmd_000A_handler_1039a4,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000A
+0x00103A0C,0x34e,i2c_ipc_cmd_000B_handler_103a0c,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000B
+0x00103A84,0x34e,i2c_ipc_cmd_0010_handler_103a84,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0010
+0x00103B00,0x1988,i2c_ipc_cmd_0007_handler_103b00,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0007
+0x00103B70,0x1c6c,i2c_ipc_cmd_000C_handler_103b70,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000C
+0x00103BE8,0x19f4,i2c_ipc_cmd_0011_handler_103be8,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0011
+0x00103C60,0x79e,i2c_ipc_cmd_000F_handler_103c60,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000F
+0x00103CDC,0x34e,i2c_ipc_cmd_0012_handler_103cdc,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0012
+0x00103D58,0x692,i2c_ipc_cmd_000E_handler_103d58,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x000E
+0x00103DD0,0x9f2,i2c_ipc_cmd_0004_handler_103dd0,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0004
+0x00103E80,0x1974,i2c_ipc_cmd_0008_handler_103e80,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0008
+0x00103F44,0x350,i2c_ipc_cmd_0013_handler_103f44,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0013
+0x00103FA4,0x6,i2c_ipc_cmd_0015_handler_103fa4,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0015
+0x00104018,0x6,i2c_ipc_cmd_0006_handler_104018,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0006
+0x00104080,0xe04,i2c_ipc_cmd_0014_handler_104080,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0014
+0x001040F0,0x1a8a,i2c_ipc_cmd_0002_handler_1040f0,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0002
+0x00104130,0x34e,i2c_ipc_cmd_0001_handler_104130,ipc_command_handler,called from dispatcher 0x00101ed0 for cmd 0x0001
 0x00106000,0x9,i2c_str_service_i2c__MCU,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""i2c::MCU"""
 0x00106009,0x9,i2c_str_service_i2c__CAM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""i2c::CAM"""
 0x00106012,0x9,i2c_str_service_i2c__LCD,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""i2c::LCD"""

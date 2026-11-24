@@ -20,10 +20,13 @@ n3ds/
 │   └── RENAME_MAP.tsv            # old name -> new English name
 ├── decrypted_titles/             # every non-sysmodule title (apps, applets, system/shared data, TWL): code.bin, exheader.bin, exefs_dir/, full romfs/ tree, analysis/
 ├── symbols/                      # RESULTS
-│   ├── N3DS_SYMBOL_TABLE.csv     # merged table (21 755 rows)
+│   ├── N3DS_SYMBOL_TABLE.csv     # merged table (27 068 rows)
+│   ├── ipc/                      # LIBCTRU_IPC_SPEC.csv (1 242 libctru commands) + IPC_COMMANDS_FROM_DECOMPILATION.csv (5 167 ARM+Thumb case rows)
+│   ├── manual/                   # hand- and libctru-verified symbols from decompiled C (Kernel11, ARM9, gsp, mcu, qtm, mvd, spi)
+│   ├── derived_decomp/           # symbols proven directly by the decompiled C (SVC wrappers, TLS accessors, IPC server loops)
 │   ├── titles/                   # TITLES_SYMBOL_TABLE.csv, TITLES_INVENTORY.csv, LIBRARY_MATCHES.csv (apps/applets, both models)
 │   ├── N3DS_IPC_COMMANDS.csv     # IPC header-shaped constants found per handler / client call
-│   ├── derived/<TID>.csv         # structural symbols per module
+│   ├── derived/<TID>.csv         # structural & libctru-refined IPC symbols per module
 │   ├── r2_functions/             # radare2 function lists (cache)
 │   ├── N3DS_MODULE_INVENTORY.csv # per-module identity vs O3DS, exheader deltas, services, SVC numbers
 │   └── <component>.{csv,sym,r2}  # per-component results (+ radare2 flag scripts)
@@ -44,9 +47,9 @@ n3ds/
   Every placed row carries a `verification` status (call sites / strings / callers must agree with the mapping); across all components 6 487 non-exact matches are `verified` that way, 714 are leaf functions with no call/string evidence, 188 `partial`, 11 `conflict` (see `docs/STATS.md`).
 * **SAFE_MODE_FIRM** (older build, system 15.45.1): ARM9 and Kernel11 symbols transferred as well (`kernel9_safe`, `kernel11_safe`), with more `unresolved` rows because the code is older.
 * **N3DS-only code:** arm9loader (FIRM ARM9 entry `0x0808AA3C`), module `qtm` (head tracking) and the N3DS build of `mvd`, plus a `qtm:sp`/`qtm:s` dependency in `gsp`/`ns`.
-* **Derived structural symbols (2 079 rows)** for every module, including the ones that have no O3DS reference (`qtm`, `mvd`, ...): 865 SVC wrapper functions named after the SVC they wrap,
-  IPC command handlers / client calls / dispatchers detected from header-shaped literals, service-name strings classified as *client of* / *registered name*, and function-pointer tables.
-  These are `derived_structural` (names describe evidence; they are not Nintendo's names).
+* **Derived structural & `libctru`-refined symbols (4 628 rows)** for every module, including the ones that have no O3DS reference (`qtm`, `mvd`, ...): 865 SVC wrapper functions named after the SVC they wrap,
+  ARM and Thumb (`__ARM_common_switch8` / 16-bit inline table-branch) IPC dispatchers and per-case command handlers cross-referenced against `libctru` (`symbols/ipc/LIBCTRU_IPC_SPEC.csv`, 1 242 command specs; `symbols/ipc/IPC_COMMANDS_FROM_DECOMPILATION.csv`, 5 167 case rows across 155 dispatchers in 73 binaries, 2 641 matched to official `libctru` functions), service-name strings classified as *client of* / *registered name*, and function-pointer tables.
+  Additionally, **2 650 `derived_decompiled` rows** (functions proven by their decompiled C body) and **114 `manual_decompiled` rows** (`kernel_native`, `gsp`, `mcu`, `qtm`, `mvd`, `spi`) bring the master `N3DS_SYMBOL_TABLE.csv` to **27 068 rows**.
 
 ## Applications, applets and data titles (everything in `extracted` / `updates`)
 

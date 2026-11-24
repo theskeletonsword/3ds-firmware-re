@@ -331,7 +331,7 @@ Address         Size    Confidence      Name                                    
 0x001094CC  0x0030  EVIDENCE_BASED  nwm_ipc_services_1094cc                                 C: nwm_ipc_services (calls=[0x120d10,0x120d2c,0x12397c], callers=[0x107074,0x107084]; 14L)
 0x001094FC  0x0074  CONFIRMED       nwm_ext_tls_static_buf_setup                            C: configures static buffer TLS+0x180 (0x300 bytes) for nwm::EXT sessions
 0x00109580  0x003C  CONFIRMED       nwm_ext_ipc_dispatcher                                  ASM Thumb: IPC dispatcher of nwm::EXT (35 active cmds 0x01..0x23 WiFi HW on/off/config)
-0x00109DD0  0x003E  EVIDENCE_BASED  nwm_ipc_services_109dd0                                 C: nwm_ipc_services (calls=[0x10a300,0x123144,0x123552], callers=[0x102428]; 17L)
+0x00109DD0  0x003E  EVIDENCE_BASED  nwm_ipc_services_109dd0_udsipc_Shutdown                                 C: nwm_ipc_services (calls=[0x10a300,0x123144,0x123552], callers=[0x102428]; 17L)
 0x00109E18  0x0030  EVIDENCE_BASED  nwm_ipc_services_109e18                                 C: nwm_ipc_services (calls=[0x10b588,0x1208f4,0x123f44], callers=[0x122cd4]; 11L)
 0x00109E4C  0x0008  EVIDENCE_BASED  nwm_ipc_services_109e4c                                 C: nwm_ipc_services (calls=[], callers=[0x100b08,0x10ea78]; 5L)
 0x00109E54  0x0008  EVIDENCE_BASED  nwm_ipc_services_109e54                                 C: nwm_ipc_services (calls=[], callers=[0x12255c]; 5L)
@@ -409,7 +409,7 @@ Address         Size    Confidence      Name                                    
 0x0010AA58  0x0024  EVIDENCE_BASED  nwm_soc_10aa58                                          C: soc-domain helper reached from 0x121b34 (undefined4 FUN_0010aa58(undefined4 param; 19L)
 0x0010AA80  0x0048  EVIDENCE_BASED  nwm_soc_thumb_10aa80                                    Thumb ASM (undecompiled gap): bl_in=1, calls=[0x120630,0x12324c,0x123268], callers=[0x108aba]
 0x0010AAC8  0x0028  EVIDENCE_BASED  nwm_ipc_services_10aac8                                 C: nwm_ipc_services (calls=[0x124248,0x13b4c4], callers=[0x109fa8,0x122738]; 11L)
-0x0010AAF0  0x0024  EVIDENCE_BASED  nwm_ipc_services_10aaf0                                 C: nwm_ipc_services (calls=[0x10bb30,0x1204d4], callers=[]; 13L)
+0x0010AAF0  0x0024  EVIDENCE_BASED  nwm_ipc_services_10aaf0_udsGetChannel                                 C: nwm_ipc_services (calls=[0x10bb30,0x1204d4], callers=[]; 13L)
 0x0010AB20  0x0040  EVIDENCE_BASED  nwm_ipc_services_thumb_10ab20                           Thumb ASM (undecompiled gap): bl_in=1, calls=[0x10c8e8], callers=[]
 0x0010AB60  0x0034  EVIDENCE_BASED  nwm_ipc_services_thumb_10ab60                           Thumb ASM (undecompiled gap): bl_in=1, calls=[0x10f718,0x1204d4], callers=[]
 0x0010AB94  0x000C  EVIDENCE_BASED  nwm_ipc_services_thumb_10ab94                           Thumb ASM (undecompiled gap): bl_in=1, calls=[], callers=[0x100b78]

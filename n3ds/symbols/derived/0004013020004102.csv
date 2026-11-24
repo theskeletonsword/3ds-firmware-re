@@ -2,14 +2,116 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x0010635C,0x5b8,mvd_ipc_dispatcher_10635c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010001, 0x00020001, 0x00100001, 0x00200001"
 0x00107720,0x70,mvd_ipc_handler_cmd_0002_107720,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020001
 0x0010B3B8,0x8,mvd_svc_0x03_ExitProcess_10b3b8,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B838,0x16,mvd_ipc_cmd_001D_001E_MVDSTD_SetConfig_10b838,ipc_command_handler,"called from dispatcher 0x00112318 (mvd:STD) for cmd 0x001D, 0x001E; libctru=MVDSTD_SetConfig; req_hdr=0x001D0042; reply_hdr=0x001D0042"
 0x0010B8B4,0x8,mvd_svc_0x52_InvalidateProcessDataCache_10b8b4,svc_wrapper,"function body is a single `svc #0x52` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0010B97C,0x8,mvd_svc_0x53_StoreProcessDataCache_10b97c,svc_wrapper,"function body is a single `svc #0x53` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B99E,0x20,mvd_ipc_cmd_0008_000A_handler_10b99e,ipc_command_handler,"called from dispatcher 0x00111e64 for cmd 0x0008, 0x000A; req_hdr=0x00080040"
+0x0010EC08,0x18,mvd___ARM_common_switch8_10ec08,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x0010F68C,0x8,mvd_svc_0x54_FlushProcessDataCache_10f68c,svc_wrapper,"function body is a single `svc #0x54` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010FABC,0x74,mvd_ipc_cmd_0024_Y2RU_SetDitheringWeightParams_10fabc,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0024; libctru=Y2RU_SetDitheringWeightParams; req_hdr=0x00240040
+0x0010FEF0,0x5a,mvd_ipc_cmd_002C_Y2RU_DriverFinalize_10fef0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x002C; libctru=Y2RU_DriverFinalize; req_hdr=0x002C0040
 0x0011011C,0x8,mvd_svc_0x32_SendSyncRequest_11011c,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011019C,0x8,mvd_svc_0x51_UnbindInterrupt_11019c,svc_wrapper,"function body is a single `svc #0x51` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00110218,0x8,mvd_svc_0x50_BindInterrupt_110218,svc_wrapper,"function body is a single `svc #0x50` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011026C,0x18,mvd_svc_0x17_CreateEvent_11026c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00110390,0x8,mvd_svc_0x23_CloseHandle_110390,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00111E64,0x40,mvd_ipc_dispatcher_111e64,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (23 cases, cmd_id 0x01..0x17)"
+0x00112238,0xa,mvd_ipc_cmd_0017_handler_112238,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0017; req_hdr=0x00170080
+0x00112268,0xa,mvd_ipc_cmd_000F_handler_112268,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x000F; req_hdr=0x000F0080
+0x00112272,0xa,mvd_ipc_cmd_000E_handler_112272,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x000E; req_hdr=0x000E0040
+0x0011227C,0x14,mvd_ipc_cmd_0002_handler_11227c,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0002; req_hdr=0x00020080
+0x00112290,0xa,mvd_ipc_cmd_0001_handler_112290,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0001; req_hdr=0x00010040
+0x0011229A,0xa,mvd_ipc_cmd_0013_handler_11229a,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0013; req_hdr=0x00130040
+0x001122A4,0x16,mvd_ipc_cmd_0004_handler_1122a4,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0004; req_hdr=0x00040080
+0x001122BA,0xc,mvd_ipc_cmd_0003_handler_1122ba,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0003; req_hdr=0x00030040
+0x001122C8,0x3e,mvd_ipc_cmd_0012_handler_1122c8,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0012; req_hdr=0x00120040
+0x0011230C,0xa,mvd_ipc_cmd_0014_handler_11230c,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0014; req_hdr=0x00140080
+0x00112318,0xb2,mvd_mvd_std_ipc_dispatcher_112318,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (33 cases, cmd_id 0x01..0x21, service mvd:STD, 15 matched to libctru)"
+0x001123D4,0xa,mvd_ipc_cmd_000D_handler_1123d4,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x000D; req_hdr=0x000D0080
+0x001123DE,0x10,mvd_ipc_cmd_0009_handler_1123de,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0009; req_hdr=0x00090080
+0x001123EE,0xa,mvd_ipc_cmd_000C_handler_1123ee,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x000C; req_hdr=0x000C0040
+0x001123F8,0x4c,mvd_ipc_cmd_0016_handler_1123f8,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0016; req_hdr=0x00160140
+0x00112444,0x8,mvd_ipc_cmd_0007_handler_112444,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0007; req_hdr=0x00070042
+0x0011244C,0x10,mvd_ipc_cmd_000B_handler_11244c,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x000B; req_hdr=0x000B0080
+0x0011245C,0x48,mvd_ipc_cmd_0015_handler_11245c,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0015; req_hdr=0x00150040
+0x001124A4,0xa,mvd_ipc_cmd_0006_handler_1124a4,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0006; req_hdr=0x00060080
+0x001124AE,0xa,mvd_ipc_cmd_0005_handler_1124ae,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0005; req_hdr=0x00050040
+0x001124B8,0xa,mvd_ipc_cmd_0011_handler_1124b8,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0011; req_hdr=0x00110080
+0x001124C2,0xa,mvd_ipc_cmd_0010_handler_1124c2,ipc_command_handler,called from dispatcher 0x00111e64 for cmd 0x0010; req_hdr=0x00100040
+0x00112C04,0x5e,mvd_ipc_cmd_0008_MVDSTD_ProcessNALUnit_112c04,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0008; libctru=MVDSTD_ProcessNALUnit; req_hdr=0x00080142; reply_hdr=0x00080100
+0x00112C6C,0x12,mvd_mvd_std_ipc_cmd_0016_handler_112c6c,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0016; req_hdr=0x00160280; reply_hdr=0x00160900
+0x00112C7E,0x12,mvd_mvd_std_ipc_cmd_0010_handler_112c7e,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0010; req_hdr=0x001002C0; reply_hdr=0x00100A00
+0x00112C90,0xc,mvd_mvd_std_ipc_cmd_0013_handler_112c90,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0013; req_hdr=0x00130040
+0x00112C9C,0xc,mvd_mvd_std_ipc_cmd_000D_handler_112c9c,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000D; req_hdr=0x000D0040
+0x00112CA8,0x12,mvd_mvd_std_ipc_cmd_0006_handler_112ca8,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0006; req_hdr=0x00060040
+0x00112CBC,0x1c,mvd_ipc_cmd_0002_MVDSTD_Shutdown_112cbc,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0002; libctru=MVDSTD_Shutdown; req_hdr=0x00020040
+0x00112CE0,0x12,mvd_mvd_std_ipc_cmd_000A_handler_112ce0,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000A; req_hdr=0x000A0440; reply_hdr=0x000A1000
+0x00112D04,0x12,mvd_ipc_cmd_001A_MVDSTD_cmd1a_112d04,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x001A; libctru=MVDSTD_cmd1a; req_hdr=0x001A0040
+0x00112D16,0xc,mvd_ipc_cmd_0007_MVDSTD_cmd7_112d16,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0007; libctru=MVDSTD_cmd7; req_hdr=0x00070040
+0x00112D88,0x4e,mvd_ipc_cmd_0001_MVDSTD_Initialize_112d88,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0001; libctru=MVDSTD_Initialize; req_hdr=0x00010082; reply_hdr=0x00010040
+0x00112DE8,0x62,mvd_mvd_std_ipc_cmd_0020_handler_112de8,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0020; req_hdr=0x00200002; reply_hdr=0x002000C0
+0x00112E58,0x2e,mvd_mvd_std_ipc_cmd_0015_handler_112e58,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0015; req_hdr=0x00150042; reply_hdr=0x00150280
+0x00112E8C,0x2e,mvd_mvd_std_ipc_cmd_000F_handler_112e8c,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000F; req_hdr=0x000F0042; reply_hdr=0x000F0440
+0x00112EC0,0x2e,mvd_ipc_cmd_0009_MVDSTD_ControlFrameRendering_112ec0,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0009; libctru=MVDSTD_ControlFrameRendering; req_hdr=0x00090042; reply_hdr=0x00090440
+0x00112EF4,0xb4,mvd_ipc_cmd_001F_mvdstdSetupOutputBuffers_112ef4,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x001F; libctru=mvdstdSetupOutputBuffers; req_hdr=0x001F0902; reply_hdr=0x001F0040
+0x00112FB4,0x16,mvd_ipc_cmd_001B_MVDSTD_cmd1b_112fb4,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x001B; libctru=MVDSTD_cmd1b; req_hdr=0x001B0040
+0x00112FCA,0x14,mvd_ipc_cmd_001C_MVDSTD_cmd1c_112fca,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x001C; libctru=MVDSTD_cmd1c; req_hdr=0x001C0040
+0x00112FE0,0x90,mvd_ipc_cmd_0021_mvdstdOverrideOutputBuffers_112fe0,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0021; libctru=mvdstdOverrideOutputBuffers; req_hdr=0x00210100
+0x0011307C,0x36,mvd_ipc_cmd_0003_MVDSTD_CalculateWorkBufSize_11307c,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0003; libctru=MVDSTD_CalculateWorkBufSize; req_hdr=0x00030080
+0x001130B2,0x14,mvd_mvd_std_ipc_cmd_0004_handler_1130b2,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0004; req_hdr=0x00040080
+0x001130C8,0x38,mvd_ipc_cmd_0018_MVDSTD_cmd18_1130c8,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0018; libctru=MVDSTD_cmd18; req_hdr=0x00180040
+0x00113108,0x10,mvd_mvd_std_ipc_cmd_0012_handler_113108,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0012; req_hdr=0x00120040
+0x00113118,0x14,mvd_mvd_std_ipc_cmd_000C_handler_113118,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000C; req_hdr=0x000C0040
+0x0011312C,0x12,mvd_mvd_std_ipc_cmd_0017_handler_11312c,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0017
+0x0011313E,0x12,mvd_mvd_std_ipc_cmd_0011_handler_11313e,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0011
+0x00113150,0x14,mvd_ipc_cmd_0005_MVDSTD_cmd5_113150,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0005; libctru=MVDSTD_cmd5; req_hdr=0x00050040
+0x00113164,0x12,mvd_mvd_std_ipc_cmd_000B_handler_113164,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000B
+0x00113178,0x5e,mvd_mvd_std_ipc_cmd_0014_handler_113178,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0014; req_hdr=0x001400C2; reply_hdr=0x00140080
+0x001131E0,0x5e,mvd_mvd_std_ipc_cmd_000E_handler_1131e0,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x000E; req_hdr=0x000E0202; reply_hdr=0x000E0080
+0x00113248,0x36,mvd_ipc_cmd_0019_MVDSTD_cmd19_113248,ipc_command_handler,called from dispatcher 0x00112318 (mvd:STD) for cmd 0x0019; libctru=MVDSTD_cmd19; req_hdr=0x00190040
+0x0011328C,0x40,mvd_y2r2_u_ipc_dispatcher_11328c,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (45 cases, cmd_id 0x01..0x2D, service y2r2:u, 44 matched to libctru)"
+0x001138B0,0x16,mvd_ipc_cmd_0006_Y2RU_GetRotation_1138b0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0006; libctru=Y2RU_GetRotation; req_hdr=0x00060080
+0x001138CC,0xa,mvd_ipc_cmd_002A_Y2RU_PingProcess_1138cc,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x002A; libctru=Y2RU_PingProcess; req_hdr=0x002A0080
+0x001138DC,0xe,mvd_ipc_cmd_0005_Y2RU_SetRotation_1138dc,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0005; libctru=Y2RU_SetRotation; req_hdr=0x00050040
+0x001138F0,0xb0,mvd_ipc_cmd_0011_Y2RU_SetSendingU_1138f0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0011; libctru=Y2RU_SetSendingU; req_hdr=0x00110102; reply_hdr=0x00110040
+0x001139B0,0xb0,mvd_ipc_cmd_0012_Y2RU_SetSendingV_1139b0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0012; libctru=Y2RU_SetSendingV; req_hdr=0x00120102; reply_hdr=0x00120040
+0x00113B30,0x26,mvd_ipc_cmd_0018_Y2RU_SetReceiving_113b30,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0018; libctru=Y2RU_SetReceiving; req_hdr=0x00180102; reply_hdr=0x00180040
+0x00113B58,0xa,mvd_ipc_cmd_001D_Y2RU_GetInputLines_113b58,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001D; libctru=Y2RU_GetInputLines; req_hdr=0x001D0080
+0x00113B68,0xa,mvd_ipc_cmd_001C_Y2RU_SetInputLines_113b68,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001C; libctru=Y2RU_SetInputLines; req_hdr=0x001C0040
+0x00113B78,0x26,mvd_ipc_cmd_0013_Y2RU_SetSendingYUYV_113b78,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0013; libctru=Y2RU_SetSendingYUYV; req_hdr=0x00130102; reply_hdr=0x00130040
+0x00113BA0,0x14,mvd_ipc_cmd_0002_Y2RU_GetInputFormat_113ba0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0002; libctru=Y2RU_GetInputFormat; req_hdr=0x00020080
+0x00113BB8,0xa,mvd_ipc_cmd_0001_Y2RU_SetInputFormat_113bb8,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0001; libctru=Y2RU_SetInputFormat; req_hdr=0x00010040
+0x00113BC8,0xa,mvd_ipc_cmd_0027_Y2RU_StopConversion_113bc8,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0027; libctru=Y2RU_StopConversion; req_hdr=0x00270040
+0x00113BD8,0x16,mvd_ipc_cmd_0004_Y2RU_GetOutputFormat_113bd8,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0004; libctru=Y2RU_GetOutputFormat; req_hdr=0x00040080
+0x00113BF4,0xc,mvd_ipc_cmd_0003_Y2RU_SetOutputFormat_113bf4,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0003; libctru=Y2RU_SetOutputFormat; req_hdr=0x00030040
+0x00113C04,0x5c,mvd_ipc_cmd_0026_Y2RU_StartConversion_113c04,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0026; libctru=Y2RU_StartConversion; req_hdr=0x00260040
+0x00113C68,0x1c,mvd_ipc_cmd_002B_Y2RU_DriverInitialize_113c68,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x002B; libctru=Y2RU_DriverInitialize; req_hdr=0x002B0040
+0x00113C8C,0xc,mvd_ipc_cmd_0028_Y2RU_IsBusyConversion_113c8c,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0028; libctru=Y2RU_IsBusyConversion; req_hdr=0x00280080
+0x00113D48,0x16,mvd_ipc_cmd_0008_Y2RU_GetBlockAlignment_113d48,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0008; libctru=Y2RU_GetBlockAlignment; req_hdr=0x00080080
+0x00113D64,0xa,mvd_ipc_cmd_001B_Y2RU_GetInputLineWidth_113d64,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001B; libctru=Y2RU_GetInputLineWidth; req_hdr=0x001B0080
+0x00113D74,0xe,mvd_ipc_cmd_0007_Y2RU_SetBlockAlignment_113d74,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0007; libctru=Y2RU_SetBlockAlignment; req_hdr=0x00070040
+0x00113D88,0xa,mvd_ipc_cmd_001A_Y2RU_SetInputLineWidth_113d88,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001A; libctru=Y2RU_SetInputLineWidth; req_hdr=0x001A0040
+0x00113E64,0x10,mvd_ipc_cmd_0016_Y2RU_IsDoneSendingU_113e64,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0016; libctru=Y2RU_IsDoneSendingU; req_hdr=0x00160080
+0x00113E78,0x10,mvd_ipc_cmd_0017_Y2RU_IsDoneSendingV_113e78,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0017; libctru=Y2RU_IsDoneSendingV; req_hdr=0x00170080
+0x00113E8C,0x10,mvd_ipc_cmd_0015_Y2RU_IsDoneSendingY_113e8c,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0015; libctru=Y2RU_IsDoneSendingY; req_hdr=0x00150080
+0x00113EA0,0xf0,mvd_y2r2_u_ipc_cmd_002D_handler_113ea0,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x002D; req_hdr=0x002D0200
+0x00113F98,0xa,mvd_ipc_cmd_000A_Y2RU_GetSpacialDithering_113f98,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000A; libctru=Y2RU_GetSpacialDithering; req_hdr=0x000A0080
+0x00113FA8,0xa,mvd_ipc_cmd_000F_Y2RU_GetTransferEndEvent_113fa8,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000F; libctru=Y2RU_GetTransferEndEvent; req_hdr=0x000F0042
+0x00113FB8,0x10,mvd_ipc_cmd_0019_Y2RU_IsDoneReceiving_113fb8,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0019; libctru=Y2RU_IsDoneReceiving; req_hdr=0x00190080
+0x00113FCC,0x72,mvd_ipc_cmd_0029_Y2RU_SetConversionParams_113fcc,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0029; libctru=Y2RU_SetConversionParams; req_hdr=0x00290040
+0x00114044,0xa,mvd_ipc_cmd_0009_Y2RU_SetSpacialDithering_114044,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0009; libctru=Y2RU_SetSpacialDithering; req_hdr=0x00090040
+0x00114054,0xa,mvd_ipc_cmd_001F_Y2RU_GetCoefficients_114054,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001F; libctru=Y2RU_GetCoefficients; req_hdr=0x001F0140
+0x00114064,0xa,mvd_ipc_cmd_000C_Y2RU_GetTemporalDithering_114064,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000C; libctru=Y2RU_GetTemporalDithering; req_hdr=0x000C0080
+0x00114074,0x10,mvd_ipc_cmd_0014_Y2RU_IsDoneSendingYUYV_114074,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0014; libctru=Y2RU_IsDoneSendingYUYV; req_hdr=0x00140080
+0x00114088,0x48,mvd_ipc_cmd_001E_Y2RU_SetCoefficients_114088,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x001E; libctru=Y2RU_SetCoefficients; req_hdr=0x001E0040
+0x001140D4,0xa,mvd_ipc_cmd_000B_Y2RU_SetTemporalDithering_1140d4,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000B; libctru=Y2RU_SetTemporalDithering; req_hdr=0x000B0040
+0x001140E4,0xa,mvd_ipc_cmd_0020_Y2RU_SetStandardCoefficient_1140e4,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0020; libctru=Y2RU_SetStandardCoefficient; req_hdr=0x00200040
+0x001140F4,0xa,mvd_ipc_cmd_000E_Y2RU_GetTransferEndInterrupt_1140f4,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000E; libctru=Y2RU_GetTransferEndInterrupt; req_hdr=0x000E0080
+0x00114104,0xa,mvd_ipc_cmd_000D_Y2RU_SetTransferEndInterrupt_114104,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x000D; libctru=Y2RU_SetTransferEndInterrupt; req_hdr=0x000D0040
+0x00114114,0x72,mvd_ipc_cmd_0025_Y2RU_GetDitheringWeightParams_114114,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0025; libctru=Y2RU_GetDitheringWeightParams; req_hdr=0x00250240
+0x0011422C,0xa,mvd_ipc_cmd_0021_Y2RU_GetStandardCoefficient_11422c,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0021; libctru=Y2RU_GetStandardCoefficient; req_hdr=0x00210140
+0x0011423C,0xa,mvd_ipc_cmd_0023_Y2RU_GetAlpha_11423c,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0023; libctru=Y2RU_GetAlpha; req_hdr=0x00230080
+0x0011424C,0xa,mvd_ipc_cmd_0022_Y2RU_SetAlpha_11424c,ipc_command_handler,called from dispatcher 0x0011328c (y2r2:u) for cmd 0x0022; libctru=Y2RU_SetAlpha; req_hdr=0x00220040
 0x00119918,0x18,mvd_svc_0x4A_AcceptSession_119918,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00119954,0x18,mvd_svc_0x4F_ReplyAndReceive_119954,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00119A6C,0x18,mvd_svc_0x21_CreateAddressArbiter_119a6c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

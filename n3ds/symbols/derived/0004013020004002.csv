@@ -1,11 +1,124 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00108B46,0xa,nfc_str_service_KKKK0__0K,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""KKKK0::0K"""
+0x0010B678,0xbe,nfc_ipc_cmd_0004_NFC_StopCommunication_10b678,ipc_command_handler,called from dispatcher 0x0010b9ec (nfc:m) for cmd 0x0004; libctru=NFC_StopCommunication; req_hdr=0x00040000
+0x0010B908,0xe4,nfc_ipc_cmd_000D_000E_nfcGetTagState_10b908,ipc_command_handler,"called from dispatcher 0x0010b9ec (nfc:m) for cmd 0x000D, 0x000E; libctru=nfcGetTagState; req_hdr=0x000D0000"
+0x0010B9EC,0x30,nfc_nfc_m_ipc_dispatcher_10b9ec,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (5 cases, cmd_id 0x04..0x0E, service nfc:m, 4 matched to libctru)"
+0x0010BD78,0x5e,nfc_ipc_cmd_0006_NFC_StopTagScanning_10bd78,ipc_command_handler,called from dispatcher 0x0010b9ec (nfc:m) for cmd 0x0006; libctru=NFC_StopTagScanning; req_hdr=0x00060000; reply_hdr=0x000A0000
+0x001136F4,0x1c,nfc_ipc_cmd_0022_nfcCmd22_1136f4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0022; libctru=nfcCmd22; req_hdr=0x00220040
+0x00113714,0x1c,nfc_ipc_cmd_0021_nfcCmd21_113714,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0021; libctru=nfcCmd21; req_hdr=0x00210040
+0x00113734,0x38,nfc_ipc_cmd_0020_nfcSendTagCommand_113734,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0020; libctru=nfcSendTagCommand; req_hdr=0x00200102; reply_hdr=0x00200082
+0x00113770,0x20,nfc_nfc_m_ipc_cmd_001D_handler_113770,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001D; req_hdr=0x001D0040
+0x00113794,0x20,nfc_nfc_m_ipc_cmd_001B_handler_113794,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001B; req_hdr=0x001B03C0; reply_hdr=0x001B0D80
+0x001137B8,0x20,nfc_ipc_cmd_0019_NFC_GetAppDataInitStruct_1137b8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0019; libctru=NFC_GetAppDataInitStruct; req_hdr=0x00190400; reply_hdr=0x00190F00
+0x001137DC,0x20,nfc_ipc_cmd_0018_nfcGetAmiiboConfig_1137dc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0018; libctru=nfcGetAmiiboConfig; req_hdr=0x00180440; reply_hdr=0x00181000
+0x00113800,0x20,nfc_ipc_cmd_0017_nfcGetAmiiboSettings_113800,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0017; libctru=nfcGetAmiiboSettings; req_hdr=0x00170AC0
+0x00113824,0x28,nfc_ipc_cmd_0016_nfcWriteAppData_113824,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0016; libctru=nfcWriteAppData; req_hdr=0x00160242; reply_hdr=0x00160040
+0x00113850,0x24,nfc_ipc_cmd_0015_nfcReadAppData_113850,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0015; libctru=nfcReadAppData; req_hdr=0x00150040; reply_hdr=0x00020002
+0x00113878,0x42,nfc_ipc_cmd_0014_NFC_InitializeWriteAppData_113878,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0014; libctru=NFC_InitializeWriteAppData; req_hdr=0x00140384; reply_hdr=0x00140040
+0x001138F8,0x20,nfc_ipc_cmd_0013_nfcOpenAppData_1138f8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0013; libctru=nfcOpenAppData; req_hdr=0x00130040
+0x0011391C,0x28,nfc_ipc_cmd_0012_NFC_CommunicationGetResult_11391c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0012; libctru=NFC_CommunicationGetResult; req_hdr=0x00120080
+0x00113944,0x28,nfc_ipc_cmd_0011_nfcGetTagInfo_113944,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0011; libctru=nfcGetTagInfo; req_hdr=0x00110300; reply_hdr=0x00110B00
+0x0011396C,0x62,nfc_nfc_m_ipc_cmd_0010_handler_11396c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0010; req_hdr=0x00100640
+0x001139D8,0x20,nfc_nfc_m_ipc_cmd_000E_handler_1139d8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000E; req_hdr=0x000E0080
+0x001139FC,0x28,nfc_nfc_m_ipc_cmd_000C_handler_1139fc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000C; req_hdr=0x000C0042; reply_hdr=0x00020042
+0x00113A24,0x28,nfc_nfc_m_ipc_cmd_000B_handler_113a24,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000B; req_hdr=0x000B0042; reply_hdr=0x00020042
+0x00113A80,0x3c,nfc_ipc_cmd_0006_NFC_StopTagScanning_113a80,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0006; libctru=NFC_StopTagScanning; req_hdr=0x00060040
+0x00113AC0,0x3c,nfc_ipc_cmd_0005_NFC_StartTagScanning_113ac0,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0005; libctru=NFC_StartTagScanning; req_hdr=0x00050040
+0x00113B00,0x22,nfc_ipc_cmd_0004_NFC_StopCommunication_113b00,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0004; libctru=NFC_StopCommunication; req_hdr=0x00040040
+0x00113B24,0x4a,nfc_ipc_cmd_0001_NFC_Initialize_113b24,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0001; libctru=NFC_Initialize; req_hdr=0x00010040
+0x00117FE0,0x70,nfc_ipc_cmd_0005_NFC_StartTagScanning_117fe0,ipc_command_handler,called from dispatcher 0x0010b9ec (nfc:m) for cmd 0x0005; libctru=NFC_StartTagScanning; req_hdr=0x00050040; reply_hdr=0x000A0000
 0x0011A008,0x8,nfc_svc_0x24_WaitSynchronization1_11a008,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011ACBC,0x8,nfc_svc_0x18_SignalEvent_11acbc,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011ACC4,0x16,nfc_nfc_m_ipc_cmd_000E_handler_11acc4,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000E; req_hdr=0x000E0480; reply_hdr=0x00050082
 0x0011BF04,0x8,nfc_svc_0x28_GetSystemTick_11bf04,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011CAB8,0x18,nfc___ARM_common_switch8_11cab8,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x0011D408,0x18,nfc_svc_0x17_CreateEvent_11d408,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011D9A8,0x8,nfc_svc_0x32_SendSyncRequest_11d9a8,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0011DB90,0x8,nfc_svc_0x23_CloseHandle_11db90,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001212EC,0x24,nfc_nfc_m_ipc_cmd_001E_handler_1212ec,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001E; req_hdr=0x001E0080
+0x00121314,0x22,nfc_ipc_cmd_000F_NFC_CommunicationGetStatus_121314,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000F; libctru=NFC_CommunicationGetStatus; req_hdr=0x000F0080
+0x00121338,0x20,nfc_nfc_m_ipc_cmd_001C_handler_121338,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001C; req_hdr=0x001C0040
+0x0012135C,0x26,nfc_ipc_cmd_001F_NFC_StartOtherTagScanning_12135c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001F; libctru=NFC_StartOtherTagScanning; req_hdr=0x001F0040
+0x00121388,0x30,nfc_ipc_cmd_0009_nfcUpdateStoredAmiiboData_121388,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0009; libctru=nfcUpdateStoredAmiiboData; req_hdr=0x00090002; reply_hdr=0x00090040
+0x001213BC,0x2a,nfc_ipc_cmd_0007_nfcLoadAmiiboData_1213bc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0007; libctru=nfcLoadAmiiboData; req_hdr=0x00070040
+0x001213EC,0x22,nfc_ipc_cmd_0003_NFC_StartCommunication_1213ec,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0003; libctru=NFC_StartCommunication; req_hdr=0x00030040
+0x00121428,0x2a,nfc_nfc_m_ipc_cmd_000A_handler_121428,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000A; req_hdr=0x000A0040
+0x00121458,0x2a,nfc_ipc_cmd_0008_nfcResetTagScanState_121458,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0008; libctru=nfcResetTagScanState; req_hdr=0x00080040
+0x00121488,0x4a,nfc_ipc_cmd_0002_NFC_Shutdown_121488,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0002; libctru=NFC_Shutdown; req_hdr=0x00020040
+0x001214DC,0x2a,nfc_nfc_m_ipc_cmd_001A_handler_1214dc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x001A; req_hdr=0x001A0040
+0x00121524,0x2c,nfc_ipc_cmd_000D_nfcGetTagState_121524,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x000D; libctru=nfcGetTagState; req_hdr=0x000D0080
+0x00124ACC,0x1e,nfc_nfc_m_ipc_cmd_0413_handler_124acc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0413; req_hdr=0x04130040
+0x00124AF0,0x20,nfc_nfc_m_ipc_cmd_0402_handler_124af0,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0402; req_hdr=0x04020440; reply_hdr=0x04021000
+0x00124B14,0x14,nfc_nfc_m_ipc_cmd_040F_handler_124b14,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040F; req_hdr=0x040F00C0
+0x00124B28,0xc,nfc_nfc_m_ipc_cmd_040D_handler_124b28,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040D; req_hdr=0x040D0040
+0x00124B34,0x20,nfc_nfc_m_ipc_cmd_0404_handler_124b34,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0404; reply_hdr=0x04040040
+0x00124B58,0xc,nfc_nfc_m_ipc_cmd_0041_handler_124b58,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0041; req_hdr=0x00410040
+0x00124B64,0x1c,nfc_nfc_m_ipc_cmd_040C_handler_124b64,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040C; req_hdr=0x040C0040
+0x00124B88,0x10,nfc_nfc_m_ipc_cmd_040E_handler_124b88,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040E
+0x00124B98,0x1c,nfc_nfc_m_ipc_cmd_0406_handler_124b98,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0406; req_hdr=0x04060040
+0x00124BB8,0x1c,nfc_nfc_m_ipc_cmd_0405_handler_124bb8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0405; req_hdr=0x04050040
+0x00124BF4,0x26,nfc_nfc_m_ipc_cmd_0409_handler_124bf4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0409; req_hdr=0x04090042; reply_hdr=0x04090040
+0x00124C20,0x20,nfc_nfc_m_ipc_cmd_0407_handler_124c20,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0407; req_hdr=0x04070080
+0x00124C44,0x48,nfc_nfc_m_ipc_cmd_0414_handler_124c44,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0414; req_hdr=0x04140042; reply_hdr=0x00030042
+0x00124C9C,0x3e,nfc_nfc_m_ipc_cmd_040B_handler_124c9c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040B; req_hdr=0x040B00C2; reply_hdr=0x00020001
+0x00124CE4,0x2e,nfc_nfc_m_ipc_cmd_040A_handler_124ce4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x040A; req_hdr=0x040A0042; reply_hdr=0x040A0E00
+0x00124D18,0x20,nfc_nfc_m_ipc_cmd_0403_handler_124d18,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0403; req_hdr=0x04030A80
+0x00124D58,0x1c,nfc_nfc_m_ipc_cmd_0411_handler_124d58,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0411
+0x00124D78,0x20,nfc_nfc_m_ipc_cmd_0415_handler_124d78,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0415
+0x00124D9C,0x1c,nfc_nfc_m_ipc_cmd_0412_handler_124d9c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0412; req_hdr=0x04120042; reply_hdr=0x00020082
+0x00124DD0,0x10,nfc_nfc_m_ipc_cmd_0034_handler_124dd0,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0034; req_hdr=0x00340040
+0x00124DE0,0x28,nfc_nfc_m_ipc_cmd_0033_handler_124de0,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0033; req_hdr=0x00330184; reply_hdr=0x000900C4
+0x00124E14,0x20,nfc_nfc_m_ipc_cmd_0031_handler_124e14,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0031
+0x00124E5C,0x28,nfc_nfc_m_ipc_cmd_0032_handler_124e5c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0032; req_hdr=0x00320182; reply_hdr=0x00070002
+0x00124E84,0x10,nfc_nfc_m_ipc_cmd_0042_handler_124e84,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0042; req_hdr=0x00420042; reply_hdr=0x00020042
+0x00124EAC,0x1c,nfc_nfc_m_ipc_cmd_0038_handler_124eac,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0038; req_hdr=0x00380040
+0x00124EC8,0x10,nfc_nfc_m_ipc_cmd_0045_handler_124ec8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0045; req_hdr=0x00450042; reply_hdr=0x00020042
+0x00124F12,0x18,nfc_nfc_m_ipc_cmd_0028_handler_124f12,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0028
+0x00124F2A,0x20,nfc_nfc_m_ipc_cmd_002D_handler_124f2a,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x002D; reply_hdr=0x00040044
+0x00124F7C,0x1c,nfc_nfc_m_ipc_cmd_0027_handler_124f7c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0027; reply_hdr=0x00020002
+0x00124F98,0x10,nfc_nfc_m_ipc_cmd_0043_handler_124f98,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0043; req_hdr=0x00430042; reply_hdr=0x00020042
+0x00124FA8,0xc,nfc_nfc_m_ipc_cmd_0024_handler_124fa8,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0024; req_hdr=0x00240040
+0x00124FC4,0x10,nfc_nfc_m_ipc_cmd_003E_handler_124fc4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003E; req_hdr=0x003E0002; reply_hdr=0x003E0040
+0x00124FEC,0xc,nfc_nfc_m_ipc_cmd_0023_handler_124fec,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0023
+0x00125010,0x20,nfc_nfc_m_ipc_cmd_002C_handler_125010,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x002C
+0x00125030,0x1c,nfc_nfc_m_ipc_cmd_002F_handler_125030,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x002F
+0x00125064,0x20,nfc_nfc_m_ipc_cmd_0025_handler_125064,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0025
+0x001250A4,0x20,nfc_nfc_m_ipc_cmd_002E_handler_1250a4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x002E; req_hdr=0x002E0102; reply_hdr=0x00050002
+0x001250C4,0x20,nfc_nfc_m_ipc_cmd_0030_handler_1250c4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0030; req_hdr=0x00300102; reply_hdr=0x00050002
+0x001250F4,0x10,nfc_nfc_m_ipc_cmd_0044_handler_1250f4,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0044; req_hdr=0x00440042; reply_hdr=0x00020042
+0x00125118,0x1c,nfc_nfc_m_ipc_cmd_0035_handler_125118,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0035; reply_hdr=0x00030002
+0x00125134,0x18,nfc_nfc_m_ipc_cmd_003C_handler_125134,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003C
+0x00125164,0x1c,nfc_nfc_m_ipc_cmd_003B_handler_125164,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003B
+0x001251D6,0x26,nfc_nfc_m_ipc_cmd_0026_handler_1251d6,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0026
+0x0012521C,0x18,nfc_nfc_m_ipc_cmd_0040_handler_12521c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0040
+0x001252CC,0x18,nfc_nfc_m_ipc_cmd_003F_handler_1252cc,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003F
+0x0012533C,0x22,nfc_nfc_m_ipc_cmd_003D_handler_12533c,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003D; reply_hdr=0x003D0042
+0x0012535E,0x18,nfc_nfc_m_ipc_cmd_002A_handler_12535e,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x002A
+0x0012539A,0x18,nfc_nfc_m_ipc_cmd_0029_handler_12539a,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0029
+0x001253B2,0x1c,nfc_nfc_m_ipc_cmd_0036_handler_1253b2,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0036; req_hdr=0x003600C2; reply_hdr=0x00360040
+0x001253CE,0x18,nfc_nfc_m_ipc_cmd_0039_handler_1253ce,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0039
+0x001253E6,0x18,nfc_nfc_m_ipc_cmd_003A_handler_1253e6,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x003A; reply_hdr=0x00020002
+0x00125450,0x20,nfc_nfc_m_ipc_cmd_0037_handler_125450,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0037; req_hdr=0x00370104; reply_hdr=0x000700C4
+0x00128CEE,0xa,nfc_ipc_cmd_0011_nfcGetTagInfo_128cee,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0011; libctru=nfcGetTagInfo; req_hdr=0x00110040
+0x00128CF8,0xc,nfc_ipc_cmd_0001_NFC_Initialize_128cf8,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0001; libctru=NFC_Initialize; req_hdr=0x00010040
+0x00128D04,0x10,nfc_nfc_m_ipc_cmd_000A_handler_128d04,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000A; req_hdr=0x000A0080
+0x00128D34,0x10,nfc_ipc_cmd_0006_NFC_StopTagScanning_128d34,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0006; libctru=NFC_StopTagScanning; req_hdr=0x00060300
+0x00128D52,0x14,nfc_ipc_cmd_000F_NFC_CommunicationGetStatus_128d52,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000F; libctru=NFC_CommunicationGetStatus; req_hdr=0x000F0000; reply_hdr=0x00020002
+0x00128D7E,0x10,nfc_ipc_cmd_0008_nfcResetTagScanState_128d7e,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0008; libctru=nfcResetTagScanState; req_hdr=0x00080042
+0x00128D8E,0xa,nfc_ipc_cmd_0013_nfcOpenAppData_128d8e,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0013; libctru=nfcOpenAppData; req_hdr=0x00130080
+0x00128DA6,0x10,nfc_ipc_cmd_0009_nfcUpdateStoredAmiiboData_128da6,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0009; libctru=nfcUpdateStoredAmiiboData; req_hdr=0x00090042
+0x00128DB6,0x2e,nfc_nfc_m_ipc_cmd_000B_handler_128db6,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000B; req_hdr=0x000B0340
+0x00128DE4,0xa,nfc_ipc_cmd_0012_NFC_CommunicationGetResult_128de4,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0012; libctru=NFC_CommunicationGetResult; req_hdr=0x00120080
+0x00128DEE,0x14,nfc_nfc_m_ipc_cmd_000C_handler_128dee,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000C; reply_hdr=0x00020002
+0x00128E02,0x14,nfc_ipc_cmd_000D_nfcGetTagState_128e02,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x000D; libctru=nfcGetTagState; req_hdr=0x000D0000; reply_hdr=0x00020002
+0x00128E16,0x14,nfc_ipc_cmd_0003_NFC_StartCommunication_128e16,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0003; libctru=NFC_StartCommunication; req_hdr=0x00030040
+0x00128E2A,0xc,nfc_ipc_cmd_0004_NFC_StopCommunication_128e2a,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0004; libctru=NFC_StopCommunication; req_hdr=0x00040040
+0x00128E36,0xa,nfc_nfc_m_ipc_cmd_0010_handler_128e36,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0010; req_hdr=0x00100040
+0x00128E4E,0xc,nfc_ipc_cmd_0002_NFC_Shutdown_128e4e,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0002; libctru=NFC_Shutdown; req_hdr=0x00020040
+0x00128E68,0x10,nfc_ipc_cmd_0007_nfcLoadAmiiboData_128e68,ipc_command_handler,called from dispatcher 0x0012c13a (nfc:m) for cmd 0x0007; libctru=nfcLoadAmiiboData; req_hdr=0x00070080
+0x001292A0,0x40,nfc_nfc_m_ipc_dispatcher_1292a0,ipc_dispatcher,"Thumb-sw16/Thumb-sw8 IPC command dispatcher (88 cases, cmd_id 0x01..0x415, service nfc:m, 24 matched to libctru)"
+0x0012A520,0x8,nfc_nfc_m_ipc_cmd_0408_handler_12a520,ipc_command_handler,called from dispatcher 0x001292a0 (nfc:m) for cmd 0x0408
+0x0012C13A,0xa4,nfc_nfc_m_ipc_dispatcher_12c13a,ipc_dispatcher,"Thumb-sw8 IPC command dispatcher (18 cases, cmd_id 0x01..0x13, service nfc:m, 13 matched to libctru)"
 0x00133930,0x8,nfc_svc_0x03_ExitProcess_133930,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001339D4,0x18,nfc_svc_0x4A_AcceptSession_1339d4,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00133A10,0x18,nfc_svc_0x4F_ReplyAndReceive_133a10,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

@@ -3,8 +3,12 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101574,0x18,codec_svc_0x21_CreateAddressArbiter_101574,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001022FC,0x1c,codec_svc_0x2B_GetProcessInfo_1022fc,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102734,0x18,codec_svc_0x22_ArbitrateAddress_102734,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x001052F0,0x1b4,codec_ipc_dispatcher_1052f0,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010040, 0x00020080, 0x00030040, 0x00040080"
-0x001054CC,0x280,codec_ipc_handler_cmd_0009_1054cc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00090042
+0x001037E8,0x20,codec_ipc_cmd_0006_CDCCHK_WriteNtrPmicRegister_1037e8,ipc_command_handler,called from dispatcher 0x00104d6c (cdc:CHK) for cmd 0x0006; libctru=CDCCHK_WriteNtrPmicRegister; req_hdr=0x00060080; reply_hdr=0x00060080 (DAT_001050b0)
+0x001038D4,0x38,codec_ipc_cmd_0001_0002_etc_CDCCHK_ReadRegisters1_CDCCHK_ReadRegisters2_etc_1038d4,ipc_command_handler,"called from dispatcher 0x00104d6c (cdc:CHK) for cmd 0x0001, 0x0002, 0x0003, 0x0005; libctru=CDCCHK_ReadRegisters1/CDCCHK_ReadRegisters2/CDCCHK_WriteRegisters1; req_hdr=0x000100C0"
+0x00104D6C,0x40,codec_cdc_chk_ipc_dispatcher_104d6c,ipc_dispatcher,"ARM IPC command dispatcher (8 cases, cmd_id 0x01..0x08, service cdc:CHK, 7 matched to libctru)"
+0x001052F0,0x1b4,codec_cdc_chk_ipc_dispatcher_1052f0,ipc_dispatcher,"ARM IPC command dispatcher (5 cases, cmd_id 0x01..0x05, service cdc:CHK, 5 matched to libctru); 5 distinct header-shaped literals (command-id compare table), e.g. 0x00010040, 0x00020080, 0x00030040, 0x00040080"
+0x001054CC,0x280,codec_cdc_chk_ipc_dispatcher_1054cc,ipc_dispatcher,"ARM IPC command dispatcher (9 cases, cmd_id 0x01..0x09, service cdc:CHK, 7 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00090042"
+0x00105784,0x40,codec_cdc_chk_ipc_dispatcher_105784,ipc_dispatcher,"ARM IPC command dispatcher (7 cases, cmd_id 0x01..0x07, service cdc:CHK, 7 matched to libctru)"
 0x00108000,0x6,codec_str_service_pdn_i,service_name_string,"client of (in ExHeader service-access list): ""pdn:i"""
 0x00108006,0x9,codec_str_service_gpio_CDC,service_name_string,"client of (in ExHeader service-access list): ""gpio:CDC"""
 0x0010800F,0x9,codec_str_service_mcu__CDC,service_name_string,"client of (in ExHeader service-access list): ""mcu::CDC"""

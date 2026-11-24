@@ -6,21 +6,83 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00106BF4,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
 0x00107470,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
 0x00113663,0x6,boss_str_service_h_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""h:F1F"""
+0x0011B214,0x432,boss_boss_p_ipc_cmd_0016_handler_11b214,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0016; req_hdr=0x00160082; reply_hdr=0x00160082
+0x0011B7E4,0x414,boss_ipc_cmd_0014_bossSendProperty_11b7e4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0014; libctru=bossSendProperty; req_hdr=0x00140082; reply_hdr=0x04140082
 0x0011E0C4,0x18,boss_ipc_handler_cmd_0001_11e0c4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
 0x001210AA,0x5,boss_str_service_DH_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""DH:F"""
+0x00121FA0,0x16,boss_ipc_cmd_0001_bossipc_InitializeSession_121fa0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0001; libctru=bossipc_InitializeSession; req_hdr=0x00010040
+0x00124164,0x18,boss___ARM_common_switch8_124164,thumb_switch_helper,exact 24-byte RVCT ARM helper __ARM_common_switch8 called by Thumb IPC switch dispatchers
 0x00124E3C,0x8,boss_svc_0x28_GetSystemTick_124e3c,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00125460,0x8,boss_svc_0x18_SignalEvent_125460,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00126A5C,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
 0x00126AA0,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
 0x00126F70,0x8,boss_svc_0x24_WaitSynchronization1_126f70,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00127388,0x8,boss_boss_p_ipc_cmd_0008_0015_handler_127388,ipc_command_handler,"called from dispatcher 0x00130b8c (boss:P) for cmd 0x0008, 0x0015; req_hdr=0x00080002; reply_hdr=0x00010042"
 0x00127808,0x18,boss_svc_0x17_CreateEvent_127808,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001279C0,0x6,boss_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
 0x00127A88,0x8,boss_svc_0x32_SendSyncRequest_127a88,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00127AA8,0x8,boss_svc_0x23_CloseHandle_127aa8,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x0012A2B3,0x6,boss_str_service_H8_iF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""H8:iF"""
 0x0012EC54,0x18,boss_ipc_handler_cmd_0001_12ec54,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
+0x0012F6E4,0x26,boss_ipc_cmd_001E_bossipc_CancelTask_12f6e4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001E; libctru=bossipc_CancelTask; req_hdr=0x001E0042; reply_hdr=0x00030082
+0x0012F7E0,0x14,boss_boss_p_ipc_cmd_040A_handler_12f7e0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040A
+0x0012F80C,0x2e,boss_boss_p_ipc_cmd_001A_handler_12f80c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001A; req_hdr=0x001A0042; reply_hdr=0x00030082
+0x0012F8B0,0x3a,boss_ipc_cmd_0020_bossGetTaskState_12f8b0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0020; libctru=bossGetTaskState; req_hdr=0x00200082; reply_hdr=0x00200102
+0x0012F8F0,0x4e,boss_ipc_cmd_000B_bossRegisterTask_12f8f0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000B; libctru=bossRegisterTask; req_hdr=0x000B00C2; reply_hdr=0x000400C2
+0x0012F98C,0x26,boss_boss_p_ipc_cmd_000A_handler_12f98c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000A
+0x0012F9C8,0x30,boss_boss_p_ipc_cmd_000F_handler_12f9c8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000F; req_hdr=0x000F0042; reply_hdr=0x00020042
+0x0012F9FC,0x2a,boss_boss_p_ipc_cmd_000E_handler_12f9fc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000E
+0x0012FAC4,0x26,boss_boss_p_ipc_cmd_0009_handler_12fac4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0009
+0x0012FBA8,0x30,boss_ipc_cmd_000C_bossipc_UnregisterTask_12fba8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000C; libctru=bossipc_UnregisterTask; req_hdr=0x000C0082; reply_hdr=0x00030082
+0x0012FBDC,0x3e,boss_boss_p_ipc_cmd_0010_handler_12fbdc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0010; req_hdr=0x00100102; reply_hdr=0x00050102
+0x0012FC20,0x2e,boss_boss_p_ipc_cmd_0019_handler_12fc20,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0019; req_hdr=0x00190042; reply_hdr=0x00190082
+0x0012FC54,0x32,boss_boss_p_ipc_cmd_000D_handler_12fc54,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x000D; req_hdr=0x000D0082; reply_hdr=0x00030082
+0x0012FCF0,0x2a,boss_boss_p_ipc_cmd_0018_handler_12fcf0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0018; req_hdr=0x00180082; reply_hdr=0x00030082
+0x0012FEC4,0x3e,boss_boss_p_ipc_cmd_0011_handler_12fec4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0011; req_hdr=0x00110102; reply_hdr=0x001100C2
+0x0012FF3C,0x26,boss_ipc_cmd_001D_bossStartTaskImmediate_12ff3c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001D; libctru=bossStartTaskImmediate; req_hdr=0x001D0042; reply_hdr=0x00030082
+0x0012FF68,0x2a,boss_boss_p_ipc_cmd_0017_handler_12ff68,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0017; req_hdr=0x00170082; reply_hdr=0x00030082
+0x0012FFFC,0x22,boss_boss_p_ipc_cmd_001F_handler_12fffc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001F; req_hdr=0x001F0042
+0x001300D8,0x2e,boss_boss_p_ipc_cmd_001B_handler_1300d8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001B; req_hdr=0x001B0042; reply_hdr=0x001B0082
+0x00130218,0x28,boss_boss_p_ipc_cmd_040F_handler_130218,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040F; req_hdr=0x040F0102; reply_hdr=0x040F0042
+0x001302E0,0x3e,boss_boss_p_ipc_cmd_0012_handler_1302e0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0012; req_hdr=0x00120102; reply_hdr=0x001200C2
+0x00130488,0x1c,boss_boss_p_ipc_cmd_040C_handler_130488,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040C; req_hdr=0x040C00C2; reply_hdr=0x040C0042
+0x001304A8,0x16,boss_boss_p_ipc_cmd_040B_handler_1304a8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040B
+0x001304EC,0x2c,boss_boss_p_ipc_cmd_0041_handler_1304ec,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0041; req_hdr=0x00410102; reply_hdr=0x00050102
+0x001305D8,0x1a,boss_boss_p_ipc_cmd_0409_handler_1305d8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0409; req_hdr=0x04090102; reply_hdr=0x00050102
+0x001305F8,0x2c,boss_boss_p_ipc_cmd_040D_handler_1305f8,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040D; req_hdr=0x040D0182; reply_hdr=0x040D00C2
+0x00130628,0x3e,boss_boss_p_ipc_cmd_0013_handler_130628,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0013; req_hdr=0x00130102; reply_hdr=0x001300C2
+0x001309E0,0x2c,boss_boss_p_ipc_cmd_040E_handler_1309e0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x040E; req_hdr=0x040E0182; reply_hdr=0x040E00C2
+0x00130A8C,0x26,boss_boss_p_ipc_cmd_001C_handler_130a8c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x001C; req_hdr=0x001C0042; reply_hdr=0x00030082
+0x00130B8C,0x66,boss_boss_p_ipc_dispatcher_130b8c,ipc_dispatcher,"Thumb-sw16/Thumb-sw8 IPC command dispatcher (64 cases, cmd_id 0x01..0x40F, service boss:P, 14 matched to libctru)"
+0x00130DD4,0x10,boss_ipc_cmd_0033_bossStartBgImmediate_130dd4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0033; libctru=bossStartBgImmediate; req_hdr=0x00330042; reply_hdr=0x00020042
+0x00131DE0,0x8,boss_boss_p_ipc_cmd_0408_handler_131de0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0408
 0x00136280,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
 0x001370B4,0x8,boss_str_service_bossdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""bossdb:"""
+0x00138990,0xc,boss_boss_p_ipc_cmd_0005_handler_138990,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0005; req_hdr=0x00050080
+0x001389AC,0xc,boss_boss_p_ipc_cmd_0006_handler_1389ac,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0006; req_hdr=0x00060080
+0x001389BC,0x12,boss_boss_p_ipc_cmd_0004_handler_1389bc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0004; req_hdr=0x00040042
+0x001389D4,0x1a,boss_boss_p_ipc_cmd_0007_handler_1389d4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0007; req_hdr=0x00070080
+0x001389F4,0x8,boss_ipc_cmd_0002_bossSetStorageInfo_1389f4,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0002; libctru=bossSetStorageInfo; req_hdr=0x00020040
+0x001389FC,0xa,boss_ipc_cmd_0003_bossUnregisterStorage_1389fc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0003; libctru=bossUnregisterStorage; req_hdr=0x00030040
+0x00138A8C,0x3e,boss_ipc_cmd_0028_bossReadNsData_138a8c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0028; libctru=bossReadNsData; req_hdr=0x00280102; reply_hdr=0x002800C2
+0x00138AD0,0x3c,boss_boss_p_ipc_cmd_0025_handler_138ad0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0025; req_hdr=0x00250082; reply_hdr=0x00030082
+0x00138B10,0x26,boss_ipc_cmd_0026_bossDeleteNsData_138b10,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0026; libctru=bossDeleteNsData; req_hdr=0x00260040
+0x00138B3C,0xc,boss_boss_p_ipc_cmd_002E_handler_138b3c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002E; req_hdr=0x002E0080
+0x00138B80,0x38,boss_boss_p_ipc_cmd_0024_handler_138b80,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0024; req_hdr=0x00240082; reply_hdr=0x00240082
+0x00138BBC,0x2e,boss_boss_p_ipc_cmd_0037_handler_138bbc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0037; req_hdr=0x00370084; reply_hdr=0x00020044
+0x001390C0,0x2e,boss_boss_p_ipc_cmd_0036_handler_1390c0,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0036; req_hdr=0x00360084; reply_hdr=0x00040044
+0x00139800,0x2a,boss_boss_p_ipc_cmd_002C_handler_139800,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002C; req_hdr=0x002C0080
+0x00139830,0x30,boss_boss_p_ipc_cmd_0032_handler_139830,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0032; req_hdr=0x00320140
+0x00139864,0x2a,boss_boss_p_ipc_cmd_002B_handler_139864,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002B; req_hdr=0x002B0040
+0x00139894,0x30,boss_boss_p_ipc_cmd_0031_handler_139894,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0031; req_hdr=0x00310040
+0x00139A0C,0x30,boss_ipc_cmd_0027_bossGetNsDataHeaderInfo_139a0c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0027; libctru=bossGetNsDataHeaderInfo; req_hdr=0x002700C2; reply_hdr=0x00270042
+0x00139A40,0x2a,boss_boss_p_ipc_cmd_0030_handler_139a40,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0030; req_hdr=0x003000C0
+0x00139A9C,0x2a,boss_boss_p_ipc_cmd_002D_handler_139a9c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002D; req_hdr=0x002D00C0
+0x00139B3C,0x56,boss_boss_p_ipc_cmd_002F_handler_139b3c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002F; req_hdr=0x002F0040
+0x00139BCC,0x2a,boss_ipc_cmd_0034_bossGetTaskProperty0_139bcc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0034; libctru=bossGetTaskProperty0; req_hdr=0x00340042; reply_hdr=0x00340082
+0x00139BFC,0x62,boss_boss_p_ipc_cmd_0035_handler_139bfc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0035; req_hdr=0x003500C2; reply_hdr=0x000400C2
+0x00139CDC,0x2a,boss_boss_p_ipc_cmd_002A_handler_139cdc,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x002A; req_hdr=0x002A0080
+0x00139D5C,0x2a,boss_boss_p_ipc_cmd_0029_handler_139d5c,ipc_command_handler,called from dispatcher 0x00130b8c (boss:P) for cmd 0x0029; req_hdr=0x00290040
 0x00142BB4,0x8,boss_svc_0x03_ExitProcess_142bb4,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00142BE0,0x18,boss_svc_0x21_CreateAddressArbiter_142be0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00142C34,0x1c,boss_svc_0x2B_GetProcessInfo_142c34,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"

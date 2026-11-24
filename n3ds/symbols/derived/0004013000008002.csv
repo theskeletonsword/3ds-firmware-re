@@ -3,21 +3,126 @@ ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00101E78,0x18,ns_svc_0x21_CreateAddressArbiter_101e78,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101E90,0x1c,ns_svc_0x1E_CreateMemoryBlock_101e90,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101EDC,0x18,ns_svc_0x4F_ReplyAndReceive_101edc,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00102754,0x54,ns_ipc_client_cmd_0003_102754,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00102754,0x54,ns_ipc_client_srvRegisterService_102754,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x001027B0,0x4c,ns_ipc_client_cmd_0004_1027b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
 0x00102E7C,0x18,ns_svc_0x2D_ConnectToPort_102e7c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102E94,0x18,ns_svc_0x13_CreateMutex_102e94,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102EAC,0x18,ns_svc_0x1A_CreateTimer_102eac,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00102EC4,0x1c,ns_svc_0x2B_GetProcessInfo_102ec4,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x001034C8,0x1d0,ns_ipc_dispatcher_1034c8,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00030001, 0x00040001, 0x00050001, 0x00050002"
-0x00103E6C,0x1798,ns_ipc_handler_cmd_0001_0002_0003_etc_103e6c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000100C2, 0x00020043, 0x00030040, 0x00040040"
+0x00103E6C,0x1798,ns_apt_u_ipc_dispatcher_103e6c,ipc_dispatcher,"ARM IPC command dispatcher (90 cases, cmd_id 0x05..0x105, service APT:U, 33 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000100C2, 0x00020043, 0x00030040, 0x00040040"
 0x001057F0,0x18,ns_svc_0x1B_SetTimer_1057f0,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105BBC,0xac,ns_apt_u_ipc_cmd_0048_handler_105bbc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0048
+0x00105DF8,0xbc,ns_apt_u_ipc_cmd_0056_handler_105df8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0056
+0x00105F60,0xbc,ns_apt_u_ipc_cmd_004A_handler_105f60,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x004A
+0x00106500,0x1d8,ns_ipc_cmd_0006_APT_GetAppletInfo_106500,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0006; libctru=APT_GetAppletInfo; req_hdr=0x00060040
+0x001066F8,0x20,ns_apt_u_ipc_cmd_0046_handler_1066f8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0046
+0x0010671C,0x5c,ns_ipc_cmd_000E_APT_GlanceParameter_10671c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000E; libctru=APT_GlanceParameter; req_hdr=0x000E0080
+0x00106780,0x4c,ns_apt_u_ipc_cmd_005C_handler_106780,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x005C
+0x001067CC,0x44,ns_ipc_cmd_000D_APT_ReceiveParameter_1067cc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000D; libctru=APT_ReceiveParameter; req_hdr=0x000D0080
+0x00106814,0xcc,ns_ipc_cmd_0040_APT_SendCaptureBufferInfo_106814,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0040; libctru=APT_SendCaptureBufferInfo; req_hdr=0x00400042
+0x001068E4,0xf8,ns_apt_u_ipc_cmd_000A_handler_1068e4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000A
+0x001069E8,0x90,ns_ipc_cmd_0005_APT_GetAppletManInfo_1069e8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0005; libctru=APT_GetAppletManInfo; req_hdr=0x00050040
+0x00106A7C,0x68,ns_ipc_cmd_0032_APT_DoApplicationJump_106a7c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0032; libctru=APT_DoApplicationJump; req_hdr=0x00320084
+0x00106AE8,0xd0,ns_apt_u_ipc_cmd_0041_handler_106ae8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0041
+0x00106BBC,0x3c,ns_apt_u_ipc_cmd_0010_handler_106bbc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0010
+0x00106BF8,0x34,ns_ipc_cmd_004E_APT_HardwareResetAsync_106bf8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x004E; libctru=APT_HardwareResetAsync; req_hdr=0x004E0000
+0x00106C30,0x178,ns_apt_u_ipc_cmd_0030_handler_106c30,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0030
+0x00106DB4,0x18,ns_apt_u_ipc_cmd_003A_handler_106db4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x003A
+0x00106DCC,0x90,ns_apt_u_ipc_cmd_0013_handler_106dcc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0013
+0x00106E6C,0x48,ns_apt_u_ipc_cmd_0012_handler_106e6c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0012
+0x00106EB4,0xa8,ns_ipc_cmd_0042_APT_SleepSystem_106eb4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0042; libctru=APT_SleepSystem; req_hdr=0x00420080
+0x00106F6C,0x18,ns_apt_u_ipc_cmd_003B_handler_106f6c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x003B
+0x00106F84,0x1d0,ns_ipc_cmd_002B_APT_PrepareToJumpToHomeMenu_106f84,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002B; libctru=APT_PrepareToJumpToHomeMenu; req_hdr=0x002B0000
+0x0010716C,0xf0,ns_ipc_cmd_0009_APT_IsRegistered_10716c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0009; libctru=APT_IsRegistered; req_hdr=0x00090040
+0x00107268,0x48,ns_apt_u_ipc_cmd_0011_handler_107268,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0011
+0x001072B0,0x9c,ns_ipc_cmd_001F_APT_StartSystemApplet_1072b0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001F; libctru=APT_StartSystemApplet; req_hdr=0x001F0084
+0x00107354,0xc0,ns_apt_u_ipc_cmd_0021_handler_107354,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0021
+0x00107434,0x9c,ns_apt_u_ipc_cmd_002D_handler_107434,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002D
+0x001074E0,0xb8,ns_apt_u_ipc_cmd_0036_handler_1074e0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0036
+0x001075B0,0x18,ns_apt_u_ipc_cmd_0101_handler_1075b0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0101
+0x001075C8,0x144,ns_apt_u_ipc_cmd_0028_handler_1075c8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0028
+0x00107720,0x5c,ns_apt_u_ipc_cmd_0039_handler_107720,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0039
+0x0010777C,0x348,ns_ipc_cmd_0023_APT_PrepareToJumpToApplication_10777c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0023; libctru=APT_PrepareToJumpToApplication; req_hdr=0x00230040
+0x00107AE4,0x78,ns_apt_u_ipc_cmd_0020_handler_107ae4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0020
+0x00107B70,0x194,ns_ipc_cmd_002C_APT_JumpToHomeMenu_107b70,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002C; libctru=APT_JumpToHomeMenu; req_hdr=0x002C0044
+0x00107D18,0x120,ns_apt_u_ipc_cmd_0055_handler_107d18,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0055
+0x00107E3C,0xb4,ns_ipc_cmd_0022_APT_PrepareToCloseApplication_107e3c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0022; libctru=APT_PrepareToCloseApplication; req_hdr=0x00220040
+0x00107F00,0x110,ns_ipc_cmd_003F_APT_ReplySleepNotificationComplete_107f00,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x003F; libctru=APT_ReplySleepNotificationComplete; req_hdr=0x003F0040
+0x00108034,0x1c,ns_apt_u_ipc_cmd_0017_handler_108034,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0017
+0x00108054,0x64,ns_ipc_cmd_000F_APT_CancelParameter_108054,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000F; libctru=APT_CancelParameter; req_hdr=0x000F0100
+0x001080C0,0x2c,ns_ipc_cmd_0050_APT_GetAppCpuTimeLimit_1080c0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0050; libctru=APT_GetAppCpuTimeLimit; req_hdr=0x00500040
+0x001080F4,0x10,ns_ipc_cmd_0018_APT_PrepareToStartLibraryApplet_1080f4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0018; libctru=APT_PrepareToStartLibraryApplet; req_hdr=0x00180040
+0x00108108,0x28,ns_ipc_cmd_0024_APT_JumpToApplication_108108,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0024; libctru=APT_JumpToApplication; req_hdr=0x00240044
+0x00108138,0x74,ns_apt_u_ipc_cmd_005B_handler_108138,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x005B
+0x001081BC,0x2c0,ns_apt_u_ipc_cmd_0051_handler_1081bc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0051
+0x00108490,0xe4,ns_apt_u_ipc_cmd_001A_handler_108490,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001A
+0x00108590,0x1c,ns_ipc_cmd_000C_APT_SendParameter_108590,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000C; libctru=APT_SendParameter; req_hdr=0x000C0104
+0x001085AC,0x18,ns_apt_u_ipc_cmd_0049_handler_1085ac,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0049
+0x001085C4,0x38,ns_ipc_cmd_0044_APT_GetSharedFont_1085c4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0044; libctru=APT_GetSharedFont; req_hdr=0x00440000
+0x00108604,0x54,ns_apt_u_ipc_cmd_0104_handler_108604,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0104
+0x0010865C,0x6c,ns_ipc_cmd_0031_APT_PrepareToDoApplicationJump_10865c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0031; libctru=APT_PrepareToDoApplicationJump; req_hdr=0x00310100
+0x001086DC,0x14,ns_ipc_cmd_000B_APT_InquireNotification_1086dc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x000B; libctru=APT_InquireNotification; req_hdr=0x000B0040
+0x001086F4,0x24,ns_apt_u_ipc_cmd_0105_handler_1086f4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0105; reply_hdr=0x40
+0x00108718,0xfc,ns_apt_u_ipc_cmd_0025_handler_108718,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0025
+0x00108830,0x9c,ns_apt_u_ipc_cmd_002F_handler_108830,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002F
+0x001088E4,0x130,ns_apt_u_ipc_cmd_002E_handler_1088e4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002E
+0x00108A30,0x54,ns_apt_u_ipc_cmd_0045_handler_108a30,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0045
+0x00108A8C,0x70,ns_apt_u_ipc_cmd_0103_handler_108a8c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0103
+0x00108B04,0x188,ns_apt_u_ipc_cmd_0026_handler_108b04,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0026
+0x00108CAC,0x68,ns_ipc_cmd_0019_APT_PrepareToStartSystemApplet_108cac,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0019; libctru=APT_PrepareToStartSystemApplet; req_hdr=0x00190040
+0x00108D20,0x18,ns_ipc_cmd_0102_APT_CheckNew3DS_System_108d20,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0102; libctru=APT_CheckNew3DS_System; req_hdr=0x01020000
+0x00108D38,0xe4,ns_apt_u_ipc_cmd_002A_handler_108d38,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x002A
+0x00108E34,0x100,ns_ipc_cmd_0035_APT_ReceiveDeliverArg_108e34,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0035; libctru=APT_ReceiveDeliverArg; req_hdr=0x00350080
+0x00108F4C,0xac,ns_ipc_cmd_0027_APT_CloseApplication_108f4c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0027; libctru=APT_CloseApplication; req_hdr=0x00270044
+0x00109014,0xc8,ns_apt_u_ipc_cmd_001D_handler_109014,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001D
+0x001090F8,0xec,ns_apt_u_ipc_cmd_0029_handler_1090f8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0029
+0x001091F4,0x110,ns_apt_u_ipc_cmd_001C_handler_1091f4,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001C
+0x00109324,0x144,ns_ipc_cmd_0058_APT_GetProgramID_109324,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0058; libctru=APT_GetProgramID; req_hdr=0x00580002
+0x00109478,0xb4,ns_ipc_cmd_001E_APT_StartLibraryApplet_109478,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001E; libctru=APT_StartLibraryApplet; req_hdr=0x001E0084
+0x00109548,0x80,ns_apt_u_ipc_cmd_001B_handler_109548,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x001B
+0x001095D0,0x4c,ns_apt_u_ipc_cmd_0037_handler_1095d0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0037
+0x00109624,0x1c,ns_apt_u_ipc_cmd_005A_handler_109624,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x005A
+0x00109644,0x78,ns_ipc_cmd_0043_APT_NotifyToWait_109644,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0043; libctru=APT_NotifyToWait; req_hdr=0x00430040
+0x001096CC,0x10,ns_apt_u_ipc_cmd_0059_handler_1096cc,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0059
+0x001096E0,0xe4,ns_apt_u_ipc_cmd_0007_handler_1096e0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0007
+0x001097D0,0x50,ns_ipc_cmd_004D_APT_GetAppletProgramInfo_1097d0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x004D; libctru=APT_GetAppletProgramInfo; req_hdr=0x004D0080
+0x00109828,0x78,ns_apt_u_ipc_cmd_0008_handler_109828,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0008
+0x001098AC,0x10,ns_apt_u_ipc_cmd_0014_handler_1098ac,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0014
 0x00109BB8,0xc,ns_svc_0x0A_SleepThread_109bb8,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00109C3C,0x74,ns_apt_u_ipc_cmd_0054_handler_109c3c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0054
+0x00109CB8,0xe8,ns_apt_u_ipc_cmd_0053_handler_109cb8,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0053
 0x0010E868,0x18,ns_svc_0x22_ArbitrateAddress_10e868,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001103E0,0x298,ns_ipc_cmd_004F_APT_SetAppCpuTimeLimit_1103e0,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x004F; libctru=APT_SetAppCpuTimeLimit; req_hdr=0x004F0080
+0x00110698,0x20,ns_apt_u_ipc_cmd_0038_handler_110698,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0038
 0x00110D70,0x18,ns_svc_0x17_CreateEvent_110d70,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011154C,0x24,ns_apt_u_ipc_cmd_004C_handler_11154c,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x004C
+0x00111E90,0x8,ns_apt_u_ipc_cmd_0052_handler_111e90,ipc_command_handler,called from dispatcher 0x00103e6c (APT:U) for cmd 0x0052
+0x00111E98,0x2148,ns_ipc_cmd_0010_NS_RebootToTitle_111e98,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0010; libctru=NS_RebootToTitle; req_hdr=0x00100180
+0x00114400,0x38,ns_ipc_cmd_0011_NS_TerminateProcessTID_114400,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0011; libctru=NS_TerminateProcessTID; req_hdr=0x00110100
 0x00115030,0x18,ns_svc_0x27_DuplicateHandle_115030,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00116DEC,0x6c,ns_ipc_handler_cmd_0001_0002_116dec,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040"
-0x00116E68,0x43c,ns_ipc_handler_cmd_0001_0002_0003_etc_116e68,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020080, 0x00030040, 0x00040040"
+0x0011509C,0x150,ns_ipc_cmd_0005_NS_LaunchApplicationFIRM_11509c,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0005; libctru=NS_LaunchApplicationFIRM; req_hdr=0x000500C0
+0x001151F4,0x80,ns_ipc_cmd_0002_NS_LaunchTitle_1151f4,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0002; libctru=NS_LaunchTitle; req_hdr=0x000200C0
+0x0011529C,0xe0,ns_ipc_cmd_0001_NS_LaunchFIRM_11529c,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0001; libctru=NS_LaunchFIRM; req_hdr=0x000100C0
+0x001154EC,0xd0,ns_ns_s_ipc_cmd_0012_handler_1154ec,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0012
+0x00116A18,0x58,ns_ns_s_ipc_cmd_000B_handler_116a18,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000B
+0x00116A84,0x18,ns_ns_s_ipc_cmd_000C_handler_116a84,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000C
+0x00116A9C,0x24,ns_ns_s_ipc_cmd_000A_handler_116a9c,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000A
+0x00116AC4,0x6c,ns_ns_s_ipc_cmd_0007_handler_116ac4,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0007
+0x00116B30,0x68,ns_ns_s_ipc_cmd_0009_handler_116b30,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0009
+0x00116DEC,0x6c,ns_ipc_cmd_0001_APT_GetLockHandle_116dec,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040; libctru=APT:U:APT_GetLockHandle"
+0x00116E68,0x43c,ns_ns_s_ipc_dispatcher_116e68,ipc_dispatcher,"ARM IPC command dispatcher (22 cases, cmd_id 0x01..0x16, service ns:s, 7 matched to libctru); stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020080, 0x00030040, 0x00040040"
+0x00117570,0x78,ns_ns_s_ipc_cmd_0015_handler_117570,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0015
+0x001175E8,0x14,ns_ns_s_ipc_cmd_000D_handler_1175e8,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000D
+0x001175FC,0x18,ns_ns_s_ipc_cmd_0006_handler_1175fc,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0006
+0x00117614,0x18,ns_ipc_cmd_0016_NS_RebootSystem_117614,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0016; libctru=NS_RebootSystem; req_hdr=0x00160000
+0x0011800C,0x38,ns_ns_s_ipc_cmd_000E_handler_11800c,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000E
+0x00118184,0x34,ns_ipc_cmd_0003_NS_TerminateTitle_118184,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0003; libctru=NS_TerminateTitle; req_hdr=0x00030000
+0x001181C0,0x38,ns_ns_s_ipc_cmd_0004_handler_1181c0,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0004
+0x00118E50,0x40,ns_ns_s_ipc_cmd_000F_handler_118e50,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x000F
+0x00119628,0xb6c,ns_ns_s_ipc_cmd_0014_handler_119628,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0014; reply_hdr=0x40
+0x00119650,0xb94,ns_ns_s_ipc_cmd_0013_handler_119650,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0013
+0x0011A814,0x3c,ns_ns_s_ipc_cmd_0008_handler_11a814,ipc_command_handler,called from dispatcher 0x00116e68 (ns:s) for cmd 0x0008
 0x0011AF70,0xd8,ns_ipc_handler_cmd_0012_11af70,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00120348
 0x0011DA3C,0x21c,ns_ipc_handler_cmd_0012_11da3c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00120248, 0x00120284, 0x00120290, 0x00120204"
 0x00120098,0x6,ns_str_service_cam_s,service_name_string,"client of (in ExHeader service-access list): ""cam:s"""

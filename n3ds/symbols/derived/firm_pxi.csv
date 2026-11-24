@@ -1,6 +1,6 @@
 ea_n3ds,size,symbol_name,kind,technical_evidence
 0x00100770,0x18,pxi_svc_0x4A_AcceptSession_100770,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
-0x00100994,0x54,pxi_ipc_client_cmd_0003_100994,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100994,0x54,pxi_ipc_client_srvRegisterService_100994,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100; libctru=srv::srvRegisterService
 0x00100E8C,0x18,pxi_svc_0x2D_ConnectToPort_100e8c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00100EA4,0x18,pxi_svc_0x13_CreateMutex_100ea4,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
 0x00101BB8,0x18,pxi_svc_0x16_ReleaseSemaphore_101bb8,svc_wrapper,"function body is a single `svc #0x16` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
