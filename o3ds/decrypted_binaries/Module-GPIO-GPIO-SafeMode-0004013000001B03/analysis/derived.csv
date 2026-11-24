@@ -1,0 +1,21 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,gpio_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100154,0x1c4,gpio_ipc_handler_cmd_0001_0002_0003_etc_100154,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00020040, 0x00030080, 0x00040040"
+0x001014E8,0x18,gpio_svc_0x2D_ConnectToPort_1014e8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101710,0x18,gpio_svc_0x35_GetProcessId_101710,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101B18,0x10,gpio_svc_0x3C_Break_101b18,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101F88,0x18,gpio_svc_0x4A_AcceptSession_101f88,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101FA0,0x18,gpio_svc_0x4F_ReplyAndReceive_101fa0,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102264,0x54,gpio_ipc_client_cmd_0003_102264,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x001022C0,0x48,gpio_ipc_client_cmd_0004_1022c0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x001027B8,0x34,gpio_ipc_client_cmd_0001_1027b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x001028B0,0x18,gpio_svc_0x21_CreateAddressArbiter_1028b0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103064,0x14,gpio_func_ptr_table_103064,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0010308C,0x9,gpio_str_service_gpio_CDC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:CDC"""
+0x00103095,0x9,gpio_str_service_gpio_MCU,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:MCU"""
+0x0010309E,0x9,gpio_str_service_gpio_HID,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:HID"""
+0x001030A7,0x9,gpio_str_service_gpio_NWM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:NWM"""
+0x001030B0,0x8,gpio_str_service_gpio_IR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gpio:IR"""
+0x001030C4,0x5,gpio_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001030C9,0x7,gpio_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00103104,0x6,gpio_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

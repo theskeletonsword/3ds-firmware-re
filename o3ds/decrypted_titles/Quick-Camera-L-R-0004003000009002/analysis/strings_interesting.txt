@@ -1,0 +1,64 @@
+0x00105E1B	c%d&ced
+0x0010628C	http://
+0x00106294	https://
+0x00106D25	U%dedh
+0x00115C0C	RWSTDERR
+0x00142F64	Exception: %s.
+0x00155B28	MoCamAllocator: not enough memory to allocate %d bytes !!!
+0x00167AA4	 k%s+F
+0x0016BAA0	%03d%s
+0x0016BACC	%s%04d
+0x00184F3E	/H/J0I00
+0x00186330	.bclyt
+0x00186D4C	cbf_std.bcfnt
+0x00186D5C	HudNOTES.bcfnt
+0x001C67C8	Pane.bclyt
+0x001CB33C	MoCamAllocator: not enough memory to allocate %d bytes !!!
+0x0024AD18	/17h/>BS
+0x0029CE59	photo/Nintendo 3DS/Private/00020400
+0x0029D102	SE_CTR_COMMON_ERROR
+0x0029D335	Data_Delete_Failure_00
+0x0029D34C	Data_Copy_Failure_00
+0x0029D56F	Data_Delete_Failure_00_Btn0
+0x0029D58B	Data_Copy_Failure_00_Btn0
+0x0029D832	Data_Delete_Failure_01_Btn0
+0x0029D84E	Data_Copy_Failure_01_Btn0
+0x0029D9DE	Data_Copy_Failure_02_Btn0
+0x0029DAA8	Data_Copy_Failure_03_Btn0
+0x0029DB16	Data_Copy_Failure_04_Btn0
+0x0029DC72	FailureSd_Btn0
+0x0029DCC6	MakeImageDb_Failure_Btn0
+0x0029DF45	Data_Delete_Failure_01
+0x0029DF5C	Data_Copy_Failure_01
+0x0029E3F8	Data_Copy_Failure_02
+0x0029E4CD	Data_Copy_Failure_03
+0x0029E529	Data_Copy_Failure_04
+0x0029E675	FailureSd
+0x0029E6B8	MakeImageDb_Failure
+0x0029E7E5	http://
+0x0029E7ED	https://
+0x002A0F68	gsp::Lcd
+0x002A0F71	gsp::Gpu
+0x002A0F86	%s: bad locale name: "%s"
+0x002A0FA0	%s: range error: invalid range [%d, %d)
+0x002A0FC8	%s: argument value %u out of range [0, %u)
+0x002A0FF3	%s: conversion failed
+0x002A1009	%s: facet %u not found in "%s" locale
+0x002A102F	%s: failed to construct locale name
+0x002A1053	%s: exception
+0x002A1061	%s: unexpected exception
+0x002A107A	%s: invalid pointer %p
+0x002A1091	%s: logic error
+0x002A10A1	%s: unspecified error
+0x002A10B7	%s: runtime error
+0x002A10C9	%s: underflow error
+0x002A10DD	%s: overflow error
+0x002A10F0	%s: stream object has set %s
+0x002A110D	%s: stream object has set ios::badbit
+0x002A1133	%s: stream object has set ios::eofbit
+0x002A1159	%s: stream object has set ios::failbit
+0x002A1180	%s: bad cast
+0x002A118D	%s: length error: %u > %u
+0x002A11A7	%s: bad_alloc: out of memory
+0x002A11C4	%s: out of memory
+0x002A9711	s4s/s)s%s>sNsOs

@@ -1,0 +1,30 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001207D8,0xa8,strref_ERROR_1207d8,string_reference,function references string(s): ERROR   
+0x0012C574,0x328,strref_NintendoDS_12c574,string_reference,function references string(s): NintendoDS
+0x00130EC8,0x28c,strref_Nintendo_3DS_130ec8,string_reference,function references string(s): Nintendo | Nintendo 3DS
+0x001813D4,0xcc,strref_Guide_D_00_00_1813d4,string_reference,function references string(s): Guide_D_00_00
+0x0018A7A8,0x60c,strref_S_Inf_U_NoPhoto_18a7a8,string_reference,function references string(s): S_Inf_U-NoPhoto
+0x0019027C,0x294,strref_IconCrwn1_19027c,string_reference,function references string(s): IconCrwn1
+0x00197628,0x9c,strref_DefaultMii_197628,string_reference,function references string(s): DefaultMii
+0x001985A0,0x9c,strref_DefaultMii_1985a0,string_reference,function references string(s): DefaultMii
+0x0019864C,0xc0,strref_TextDataAlb_19864c,string_reference,function references string(s): TextDataAlb
+0x00198720,0xc4,strref_TextDataMus_198720,string_reference,function references string(s): TextDataMus
+0x001987F8,0xc4,strref_TextDataSin_1987f8,string_reference,function references string(s): TextDataSin
+0x0019D650,0xca8,strref_B_PageL_02_19d650,string_reference,function references string(s): -B-PageL_02 | -B-PageR_02 | -L-SldV_S
+0x001AACBC,0x6c,strref_CurBarIconPushP_1aacbc,string_reference,function references string(s): CurBarIconPushP
+0x001AB2C8,0x404,strref_RydIvsudPanUfUshuchedNeorwaHolop_1ab2c8,string_reference,function references string(s): RydIvsudPanUfUshuchedNeorwaHolop
+0x001B8CB8,0x54,strref_PlyTimeTxt_1b8cb8,string_reference,function references string(s): PlyTimeTxt
+0x001BEB20,0x9c,strref_Dlg0BtnTxt_1beb20,string_reference,function references string(s): Dlg0BtnTxt
+0x001BEBD0,0x224,strref_Dlg2TxtL0_1bebd0,string_reference,function references string(s): Dlg2TxtL0 | Dlg2TxtR0
+0x001BEE28,0x160,strref_Dlg1TxtW_1bee28,string_reference,function references string(s): Dlg1TxtW
+0x001C36CC,0x474,strref_S_Common_1c36cc,string_reference,function references string(s): S_Common
+0x001C3B40,0x108,strref_S_BG_Record_1c3b40,string_reference,function references string(s): S_BG-Record | U_Default
+0x001C5288,0x174,strref_S_Common_ListScroll_1c5288,string_reference,function references string(s): InfoListU | PlayList | PlayListU
+0x001C5EDC,0x2c0,strref_S_Common_ListScroll_1c5edc,string_reference,function references string(s): S_Common-ListScroll | S_Common-Null
+0x001C65C8,0x200,strref_S_Common_1c65c8,string_reference,function references string(s): S_Common
+0x001E9430,0x6f4,strref_ListIcon1_1e9430,string_reference,function references string(s): ListIcon1 | TextList1
+0x001F5BCC,0x25c,strref_FrameOut_1f5bcc,string_reference,function references string(s): FrameOut
+0x0022FE34,0x3c0,strref_S_T_Play_22fe34,string_reference,function references string(s): -S-T_Play
+0x00277D74,0x28c,strref_IconCrwn1_277d74,string_reference,function references string(s): IconCrwn1
+0x002BC938,0xf0,strref_C_ColColor_bclim_2bc938,string_reference,function references string(s): C_ColColor.bclim
+0x00303100,0x534,strref_dmp_LightEnv_shadowSecondary_303100,string_reference,function references string(s): dmp_LightEnv.shadowSecondary

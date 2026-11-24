@@ -1,0 +1,12 @@
+ea,size,symbol_name,kind,technical_evidence
+0x14000784,0x14,ro_svc_0x23_CloseHandle_14000784,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x14000D58,0x10,ro_get_tls_14000d58,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x14000DA0,0x34,ro_svc_0x32_SendSyncRequest_14000da0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x14000DDC,0x38,ro_svc_0x32_SendSyncRequest_14000ddc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x14000E18,0x38,ro_svc_0x32_SendSyncRequest_14000e18,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x14001774,0xc,ro_get_tls_14001774,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x140021D8,0x30,ro_svc_0x02_QueryMemory_140021d8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x140023D8,0x28,ro_svc_0x23_CloseHandle_140023d8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x14002458,0x28,ro_svc_0x23_CloseHandle_14002458,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x14005468,0x4,ro_svc_0x3C_Break_14005468,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x14000174,0x464,ro_ipc_server_loop_14000174,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x140006b0

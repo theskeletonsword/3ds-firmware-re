@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00135BF0,0x48,strref_possix_C_get_mode_not_supported_135bf0,string_reference,function references string(s): possix _C_get_mode not supported
+0x001712B4,0x2f8,strref_Nintendo_1712b4,string_reference,function references string(s): Nintendo
+0x00185268,0x140,strref_NintendoDS_185268,string_reference,function references string(s): NintendoDS
+0x00219000,0x288,strref_rom_hal_snd_kbb_CTR_SOUND_bcsar_219000,string_reference,function references string(s): rom:/hal/snd/kbb/CTR_SOUND.bcsar
+0x0028F854,0x88,strref_NANDFile_write_error_28f854,string_reference,function references string(s): NANDFile::write() : error
+0x003C6418,0xf5c,strref_dmp_FragmentLightSource_5_geomFactor0_3c6418,string_reference,function references string(s): dmp_FragmentLightSource[5].geomFactor0 | dmp_FragmentMaterial.samplerD1

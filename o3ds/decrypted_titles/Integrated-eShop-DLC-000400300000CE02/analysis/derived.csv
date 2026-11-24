@@ -1,0 +1,150 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00106FD8,0x10,mint_func_ptr_table_106fd8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00108010,0x18,mint_svc_0x21_CreateAddressArbiter_108010,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108478,0x5,mint_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010B540,0x1c,mint_svc_0x2B_GetProcessInfo_10b540,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00115930,0x18,mint_svc_0x1B_SetTimer_115930,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00118F64,0x6,mint_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
+0x001221E8,0xc,mint_svc_0x0A_SleepThread_1221e8,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00127ACC,0x1c,mint_svc_0x1E_CreateMemoryBlock_127acc,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001340EC,0x6,mint_str_service_act_a,service_name_string,"client of (in ExHeader service-access list): ""act:a"""
+0x0014C45C,0xc,mint_func_ptr_table_14c45c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0014D3C8,0xc,mint_func_ptr_table_14d3c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0014DBA0,0xc,mint_func_ptr_table_14dba0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0014E25C,0xc,mint_func_ptr_table_14e25c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001514A0,0xc,mint_func_ptr_table_1514a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015231C,0xc,mint_func_ptr_table_15231c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00152CE8,0xc,mint_func_ptr_table_152ce8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00153840,0xc,mint_func_ptr_table_153840,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015427C,0xc,mint_func_ptr_table_15427c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00156CE8,0x10,mint_func_ptr_table_156ce8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157AF0,0xc,mint_func_ptr_table_157af0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158970,0xc,mint_func_ptr_table_158970,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001595D4,0xc,mint_func_ptr_table_1595d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A5EC,0xc,mint_func_ptr_table_15a5ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015B3F8,0xc,mint_func_ptr_table_15b3f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BF54,0xc,mint_func_ptr_table_15bf54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015CB50,0xc,mint_func_ptr_table_15cb50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00163908,0x6,mint_str_service_ncnt_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ncnt:"""
+0x00166200,0x14,mint_func_ptr_table_166200,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00166318,0xc,mint_func_ptr_table_166318,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0016A960,0xc,mint_func_ptr_table_16a960,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0016AB18,0xc,mint_func_ptr_table_16ab18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0016B2F4,0xc,mint_func_ptr_table_16b2f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0016BE80,0xc,mint_func_ptr_table_16be80,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0016C7E8,0xc,mint_func_ptr_table_16c7e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00170634,0xc,mint_func_ptr_table_170634,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00172880,0xc,mint_func_ptr_table_172880,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0017293C,0xc,mint_func_ptr_table_17293c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0017C898,0xadc,mint_ipc_dispatcher_17c898,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0083, 0x000F0085, 0x000F008E"
+0x00185874,0x18,mint_svc_0x22_ArbitrateAddress_185874,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00186740,0x6,mint_str_service_act_u,service_name_string,"client of (in ExHeader service-access list): ""act:u"""
+0x001877FC,0x18,mint_svc_0x35_GetProcessId_1877fc,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0018A798,0x18,mint_svc_0x17_CreateEvent_18a798,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00194414,0xc,mint_func_ptr_table_194414,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00195474,0xc,mint_func_ptr_table_195474,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00199674,0x10,mint_func_ptr_table_199674,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A63F0,0x1770,mint_ipc_handler_cmd_0023_1a63f0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00230050
+0x001EF954,0x6,mint_str_service_ncnt_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ncnt:"""
+0x002032BC,0x6,mint_str_service_nim_s,service_name_string,"client of (in ExHeader service-access list): ""nim:s"""
+0x00206394,0x5,mint_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x00206431,0x7,mint_str_service_am_sys,service_name_string,"client of (in ExHeader service-access list): ""am:sys"""
+0x00206470,0x9,mint_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x002064BC,0x7,mint_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x002064C3,0x8,mint_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x002064F0,0x7,mint_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x002064F9,0x7,mint_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x0020651C,0x6,mint_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x00206B84,0xc,mint_func_ptr_table_206b84,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002095A0,0x6,mint_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x002095C4,0x6,mint_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x00209758,0x5,mint_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0020975D,0x7,mint_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00209D00,0x6,mint_str_service_nfc_p,service_name_string,"client of (in ExHeader service-access list): ""nfc:p"""
+0x00209D06,0x6,mint_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0020A4F4,0xc,mint_func_ptr_table_20a4f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020A788,0xc,mint_func_ptr_table_20a788,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020A88C,0xc,mint_func_ptr_table_20a88c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AB98,0xc,mint_func_ptr_table_20ab98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AC24,0x10,mint_func_ptr_table_20ac24,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020ACFC,0xc,mint_func_ptr_table_20acfc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AF68,0xc,mint_func_ptr_table_20af68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AF90,0x18,mint_func_ptr_table_20af90,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AFB4,0xc,mint_func_ptr_table_20afb4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AFCC,0x24,mint_func_ptr_table_20afcc,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020AFFC,0xc,mint_func_ptr_table_20affc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B024,0x18,mint_func_ptr_table_20b024,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B048,0xc,mint_func_ptr_table_20b048,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B070,0x18,mint_func_ptr_table_20b070,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B0B0,0xc,mint_func_ptr_table_20b0b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B0E4,0xc,mint_func_ptr_table_20b0e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B0FC,0xc,mint_func_ptr_table_20b0fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B114,0x24,mint_func_ptr_table_20b114,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B28C,0x14,mint_func_ptr_table_20b28c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B42C,0xc,mint_func_ptr_table_20b42c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B5F8,0x10,mint_func_ptr_table_20b5f8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B630,0xc,mint_func_ptr_table_20b630,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B66C,0xc,mint_func_ptr_table_20b66c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020B694,0xc,mint_func_ptr_table_20b694,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BBE0,0xc,mint_func_ptr_table_20bbe0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BBF8,0x14,mint_func_ptr_table_20bbf8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BC10,0xc,mint_func_ptr_table_20bc10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BC64,0xc,mint_func_ptr_table_20bc64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BC7C,0x14,mint_func_ptr_table_20bc7c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BC94,0xc,mint_func_ptr_table_20bc94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BCE8,0xc,mint_func_ptr_table_20bce8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BD04,0x10,mint_func_ptr_table_20bd04,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BD18,0xc,mint_func_ptr_table_20bd18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BD6C,0xc,mint_func_ptr_table_20bd6c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BD84,0x14,mint_func_ptr_table_20bd84,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BD9C,0xc,mint_func_ptr_table_20bd9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BDF0,0xc,mint_func_ptr_table_20bdf0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BE0C,0x10,mint_func_ptr_table_20be0c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BE74,0xc,mint_func_ptr_table_20be74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BE8C,0x14,mint_func_ptr_table_20be8c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BEA4,0xc,mint_func_ptr_table_20bea4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BF10,0x14,mint_func_ptr_table_20bf10,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BF94,0x10,mint_func_ptr_table_20bf94,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020BFE4,0xc,mint_func_ptr_table_20bfe4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C068,0x1c,mint_func_ptr_table_20c068,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C08C,0xc,mint_func_ptr_table_20c08c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C0A0,0xc,mint_func_ptr_table_20c0a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C0C8,0xc,mint_func_ptr_table_20c0c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C168,0xc,mint_func_ptr_table_20c168,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C1A4,0xc,mint_func_ptr_table_20c1a4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C244,0xc,mint_func_ptr_table_20c244,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C2BC,0xc,mint_func_ptr_table_20c2bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C3C0,0xc,mint_func_ptr_table_20c3c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C410,0xc,mint_func_ptr_table_20c410,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C460,0xc,mint_func_ptr_table_20c460,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C514,0xc,mint_func_ptr_table_20c514,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C53C,0xc,mint_func_ptr_table_20c53c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C5B4,0xc,mint_func_ptr_table_20c5b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C5DC,0xc,mint_func_ptr_table_20c5dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C62C,0xc,mint_func_ptr_table_20c62c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020C6CC,0xc,mint_func_ptr_table_20c6cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CBF4,0xc,mint_func_ptr_table_20cbf4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CE10,0xc,mint_func_ptr_table_20ce10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CF50,0xc,mint_func_ptr_table_20cf50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CF78,0xc,mint_func_ptr_table_20cf78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D1E4,0xc,mint_func_ptr_table_20d1e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D360,0xc,mint_func_ptr_table_20d360,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D374,0xc,mint_func_ptr_table_20d374,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D71C,0xc,mint_func_ptr_table_20d71c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D730,0xc,mint_func_ptr_table_20d730,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D8BC,0x5,mint_str_service_SYS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SYS:"""
+0x0020D8C4,0x5,mint_str_service_EXT_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""EXT:"""
+0x0020FB3A,0x6,mint_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x0020FB77,0x6,mint_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0020FB7D,0x8,mint_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x0020FB85,0x8,mint_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x0020FB8D,0x9,mint_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x0020FB96,0x9,mint_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x002120D8,0x6,mint_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x002120DE,0x6,mint_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x002120E4,0x6,mint_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x002120EA,0x6,mint_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x002120F0,0x9,mint_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x002120F9,0x9,mint_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x00212102,0x6,mint_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x0021C900,0xb,mint_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

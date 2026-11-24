@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010088C,0x10,amiibo_get_tls_10088c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00107730,0x8,amiibo_svc_0x0A_SleepThread_107730,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x0011510C,0xc,amiibo_get_tls_11510c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0018952C,0x4,amiibo_svc_0x0A_SleepThread_18952c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x0018A338,0x4,amiibo_svc_0x3C_Break_18a338,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines

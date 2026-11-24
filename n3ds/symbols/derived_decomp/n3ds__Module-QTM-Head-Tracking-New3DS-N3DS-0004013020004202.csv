@@ -1,0 +1,48 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00101FAC,0x10,qtm_get_tls_101fac,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x001022C4,0x34,qtm_svc_0x32_SendSyncRequest_1022c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102300,0x38,qtm_svc_0x32_SendSyncRequest_102300,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010233C,0x38,qtm_svc_0x32_SendSyncRequest_10233c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102694,0x10,qtm_svc_0x23_CloseHandle_102694,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x001026BC,0x24,qtm_svc_0x08_CreateThread_1026bc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x001026E0,0x30,qtm_svc_0x02_QueryMemory_1026e0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x00103168,0x38,qtm_svc_0x32_SendSyncRequest_103168,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001033F4,0x40,qtm_svc_0x32_SendSyncRequest_1033f4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010418C,0x2c,qtm_svc_0x32_SendSyncRequest_10418c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001041BC,0x2c,qtm_svc_0x32_SendSyncRequest_1041bc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105B60,0x30,qtm_svc_0x32_SendSyncRequest_105b60,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105B98,0x30,qtm_svc_0x32_SendSyncRequest_105b98,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105D94,0x18,qtm_svc_0x13_CreateMutex_105d94,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x13) (CreateMutex); 5 C lines
+0x00105DAC,0x18,qtm_svc_0x35_GetProcessId_105dac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x35) (GetProcessId); 5 C lines
+0x00107088,0x2c,qtm_svc_0x32_SendSyncRequest_107088,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001070B8,0x2c,qtm_svc_0x32_SendSyncRequest_1070b8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00107968,0xc,qtm_svc_0x0A_SleepThread_107968,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x00107E24,0x30,qtm_svc_0x32_SendSyncRequest_107e24,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001084B0,0x38,qtm_svc_0x32_SendSyncRequest_1084b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001093B8,0xc,qtm_get_tls_1093b8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00113CA4,0x18,qtm_svc_0x2D_ConnectToPort_113ca4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x2D) (ConnectToPort); 5 C lines
+0x00114C14,0x24,qtm_svc_0x25_WaitSynchronizationN_114c14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00114C98,0x4,qtm_svc_0x3C_Break_114c98,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00115300,0x30,qtm_svc_0x32_SendSyncRequest_115300,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011562C,0x24,qtm_svc_0x01_ControlMemory_11562c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00115740,0x18,qtm_svc_0x4A_AcceptSession_115740,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4A) (AcceptSession); 5 C lines
+0x00115880,0x38,qtm_svc_0x24_WaitSynchronization1_115880,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x0011829C,0x2c,qtm_svc_0x23_CloseHandle_11829c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x0011836C,0x2c,qtm_svc_0x23_CloseHandle_11836c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x00118398,0x28,qtm_svc_0x23_CloseHandle_118398,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00118468,0x28,qtm_svc_0x23_CloseHandle_118468,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00119674,0x34,qtm_svc_0x32_SendSyncRequest_119674,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119704,0x38,qtm_svc_0x32_SendSyncRequest_119704,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119740,0x40,qtm_svc_0x32_SendSyncRequest_119740,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119788,0x34,qtm_svc_0x32_SendSyncRequest_119788,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119814,0x40,qtm_svc_0x32_SendSyncRequest_119814,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001198C4,0x34,qtm_svc_0x32_SendSyncRequest_1198c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119900,0x40,qtm_svc_0x32_SendSyncRequest_119900,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119948,0x40,qtm_svc_0x32_SendSyncRequest_119948,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001199E4,0x40,qtm_svc_0x32_SendSyncRequest_1199e4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119A74,0x40,qtm_svc_0x32_SendSyncRequest_119a74,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119BB8,0x34,qtm_svc_0x32_SendSyncRequest_119bb8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102004,0xa0,qtm_ipc_server_loop_102004,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x115928
+0x001020C0,0xa0,qtm_ipc_server_loop_1020c0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x115928
+0x0010216C,0xa0,qtm_ipc_server_loop_10216c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x115928
+0x00102218,0xa0,qtm_ipc_server_loop_102218,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x115928

@@ -1,0 +1,15 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100828,0x4c,pdn_ipc_client_cmd_0004_100828,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00100BB4,0x18,pdn_svc_0x21_CreateAddressArbiter_100bb4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100CDC,0x1c,pdn_svc_0x2B_GetProcessInfo_100cdc,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100E70,0x18,pdn_svc_0x22_ArbitrateAddress_100e70,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101AAC,0x58,pdn_ipc_handler_cmd_0001_101aac,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x00101B10,0x58,pdn_ipc_handler_cmd_0001_101b10,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x00103064,0x6,pdn_str_service_pdn_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:s"""
+0x0010306A,0x6,pdn_str_service_pdn_d,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:d"""
+0x00103070,0x6,pdn_str_service_pdn_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:i"""
+0x00103076,0x6,pdn_str_service_pdn_g,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:g"""
+0x0010307C,0x6,pdn_str_service_pdn_c,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:c"""
+0x00103094,0x5,pdn_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00103099,0x7,pdn_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001030DC,0x6,pdn_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

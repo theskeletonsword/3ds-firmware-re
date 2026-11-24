@@ -1,0 +1,15 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010096C,0x4c,spi_ipc_client_cmd_0004_10096c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00100F70,0x18,spi_svc_0x21_CreateAddressArbiter_100f70,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101018,0x220,spi_ipc_handler_cmd_0001_0002_0004_etc_101018,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00040040, 0x00050040"
+0x00101294,0x1c,spi_svc_0x2B_GetProcessInfo_101294,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001017E8,0x18,spi_svc_0x22_ArbitrateAddress_1017e8,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102E4C,0x18,spi_svc_0x13_CreateMutex_102e4c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104018,0x5,spi_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0010401D,0x7,spi_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00104058,0x9,spi_str_service_SPI__CD2,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CD2"""
+0x00104061,0x9,spi_str_service_SPI__CS2,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CS2"""
+0x0010406A,0x9,spi_str_service_SPI__CS3,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CS3"""
+0x00104073,0x9,spi_str_service_SPI__DEF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::DEF"""
+0x0010407C,0x9,spi_str_service_SPI__NOR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::NOR"""
+0x00104085,0x6,spi_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

@@ -1,0 +1,74 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00121444,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00121770,0x3c,str_srcpath_Utf8Writer_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\Utf8Writer.cpp
+0x00121AA8,0x3b,str_srcpath_ExiString_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiString.cpp
+0x00121E30,0x3f,str_srcpath_StringEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\StringEncoder.cpp
+0x00121F1C,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x00122534,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001226C8,0x3f,str_srcpath_StringDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\StringDecoder.cpp
+0x00122928,0x3a,str_srcpath_ExiCoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiCoder.cpp
+0x00124B00,0x38,str_srcpath_ExiCoder_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x00125324,0x3a,str_srcpath_ExiCoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiCoder.cpp
+0x00145040,0x3c,str_srcpath_XmlStreamWriter_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\XmlStreamWriter.cpp
+0x001450DC,0x3c,str_srcpath_XmlStreamWriter_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\XmlStreamWriter.cpp
+0x001451B4,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145300,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001453A8,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145494,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001455B8,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145640,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145924,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001459E8,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145B9C,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00145DE8,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x00145FB0,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x00146218,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x001463F8,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x0014648C,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x00146618,0x3c,str_srcpath_ExiEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiEncoder.cpp
+0x001470D0,0x3b,str_srcpath_ExiString_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiString.cpp
+0x001474A0,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014751C,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00147590,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00147604,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00148880,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x001489A4,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00148B00,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00148F74,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x001491F0,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x0014928C,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x001494BC,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00149540,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x0014962C,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x001497B4,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149894,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149978,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149A28,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149BFC,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149C6C,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149E48,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x00149EF0,0x3d,str_srcpath_TextEncoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextEncoder.cpp
+0x0014A674,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A6EC,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A760,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A7D4,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A8E4,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014DB90,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001522C8,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x0015230C,0x44,str_srcpath_XmlExiStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\XmlExiStreamReader.cpp
+0x00152384,0x44,str_srcpath_XmlExiStreamWriter_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\XmlExiStreamWriter.cpp
+0x001523FC,0x45,str_srcpath_XmlTextStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\XmlTextStreamReader.cpp
+0x0015250C,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x00152550,0x45,str_srcpath_BitByteStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x001525AC,0x45,str_srcpath_BitByteStreamWriter_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamWriter.cpp
+0x00121828,0x92,srcref_BitByteStreamWriter_cpp_121828,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamWriter.cpp
+0x00121B38,0x54,srcref_BitByteStreamReader_h_121b38,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x0014710C,0x344,srcref_XmlExiStreamReader_cpp_14710c,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\XmlExiStreamReader.cpp
+0x00147D7C,0x112,srcref_BitByteStreamReader_cpp_147d7c,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x00147EB0,0x6e,srcref_BitByteStreamReader_cpp_147eb0,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x00147F24,0x9c,srcref_BitByteStreamReader_cpp_147f24,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x00147FC4,0x9e,srcref_BitByteStreamReader_cpp_147fc4,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x001480B8,0xcc,srcref_BitByteStreamReader_cpp_1480b8,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x00148188,0x13a,srcref_BitByteStreamWriter_cpp_148188,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamWriter.cpp
+0x001482D4,0xc6,srcref_BitByteStreamWriter_cpp_1482d4,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamWriter.cpp
+0x001483A0,0x46,srcref_BitByteStreamWriter_cpp_1483a0,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamWriter.cpp

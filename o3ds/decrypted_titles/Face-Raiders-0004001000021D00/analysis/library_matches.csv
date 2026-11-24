@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001E6774,0x2c,lib_crt_fini_array_1e6774,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x001EAFE4,0x20,lib_nn_fnd_ExpHeapBase__vslot2_1eafe4,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x00289E90 ""nn_fnd_ExpHeapBase__vslot2_289e90"" (rtti_vslot)"
+0x002F0E10,0x150,lib_nw_lyt_Pane__vptr_init_2f0e10,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x00217558 ""nw_lyt_Pane__vptr_init_217558"" (rtti_vptr_init)"
+0x001C279C,0x120,lib_nw_lyt_Picture__vptr_init_1c279c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x00217430 ""nw_lyt_Picture__vptr_init_217430"" (rtti_vptr_init)"
+0x001C02D4,0x114,lib_nw_lyt_Pane__vptr_init_1c02d4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x00216B40 ""nw_lyt_Pane__vptr_init_216b40"" (rtti_vptr_init)"
+0x0034672C,0x174,lib_lib_MemFun_sequence_main_inputaddr_InputAddr_void_bool__vptr_init_34672c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x0019EDF4 ""lib_MemFun_sequence_main_inputaddr_InputAddr_void_bool__vptr_init_19edf4"" (rtti_vptr_init)"
+0x002F00AC,0x34,lib_nw_gfx_WorldMatrixUpdater__vptr_init_2f00ac,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00125890 ""nw_gfx_WorldMatrixUpdater__vptr_init_125890"" (rtti_vptr_init)"
+0x003067F8,0x34,lib_nw_gfx_WorldMatrixUpdater__vptr_init_3067f8,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00125890 ""nw_gfx_WorldMatrixUpdater__vptr_init_125890"" (rtti_vptr_init)"
+0x003066B4,0x34,lib_nw_gfx_WorldMatrixUpdater__vptr_init_3066b4,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00125890 ""nw_gfx_WorldMatrixUpdater__vptr_init_125890"" (rtti_vptr_init)"

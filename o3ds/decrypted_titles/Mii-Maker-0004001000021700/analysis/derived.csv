@@ -1,0 +1,189 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00105238,0x1c,EDIT_svc_0x2B_GetProcessInfo_105238,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105810,0x5,EDIT_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00105EDC,0x6,EDIT_str_service_frd_a,service_name_string,"client of (in ExHeader service-access list): ""frd:a"""
+0x00106D60,0x18,EDIT_svc_0x21_CreateAddressArbiter_106d60,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010D3A0,0x48,EDIT_ipc_client_cmd_004B_10d3a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x004B0002
+0x0010EC58,0xca4,EDIT_ipc_handler_cmd_0007_0008_0040_etc_10ec58,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x001172B8,0x1c,EDIT_svc_0x1E_CreateMemoryBlock_1172b8,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00117334,0xc,EDIT_svc_0x28_GetSystemTick_117334,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00124890,0x258,EDIT_ipc_handler_cmd_000F_124890,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F008A
+0x0013FC18,0x258,EDIT_ipc_dispatcher_13fc18,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F008F, 0x000F01C0, 0x000F01C2, 0x000F01C3"
+0x001439C4,0x18,EDIT_svc_0x13_CreateMutex_1439c4,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001439F4,0x1c,EDIT_svc_0x29_GetHandleInfo_1439f4,svc_wrapper,"function body is a single `svc #0x29` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015C560,0xc,EDIT_func_ptr_table_15c560,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001645EC,0xc,EDIT_func_ptr_table_1645ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00171E64,0xc,EDIT_func_ptr_table_171e64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5C08,0xbf184,EDIT_ipc_handler_cmd_0004_000B_1a5c08,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x001C848C,0x18,EDIT_svc_0x0B_GetThreadPriority_1c848c,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001CAC30,0xc,EDIT_func_ptr_table_1cac30,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001DCFF8,0x18,EDIT_svc_0x22_ArbitrateAddress_1dcff8,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001F1B30,0x18,EDIT_svc_0x17_CreateEvent_1f1b30,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0022450C,0x998,EDIT_ipc_dispatcher_22450c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000B0289, 0x000F004F, 0x000F028A, 0x01000002"
+0x00226174,0x6,EDIT_str_service_act_a,service_name_string,"client of (in ExHeader service-access list): ""act:a"""
+0x002301E4,0x68,EDIT_ipc_client_cmd_00A0_2301e4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00A00002
+0x00254744,0x654,EDIT_ipc_dispatcher_254744,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000A0080, 0x000F02C0, 0x00BF02C1, 0x00FF02C1"
+0x00264D98,0x648,EDIT_ipc_dispatcher_264d98,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x0027ECDC,0xc,EDIT_func_ptr_table_27ecdc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0028302C,0xc,EDIT_func_ptr_table_28302c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002842BC,0xc,EDIT_func_ptr_table_2842bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00291CE0,0x4060,EDIT_ipc_dispatcher_291ce0,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x002957D8,0x3a04,EDIT_ipc_dispatcher_2957d8,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x002B1444,0x6,EDIT_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x002B144A,0x6,EDIT_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x002B1EA4,0x9,EDIT_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x002B1EF0,0x7,EDIT_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x002B1EF7,0x8,EDIT_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x002B2F20,0x5,EDIT_str_service_mp_u,service_name_string,"client of (in ExHeader service-access list): ""mp:u"""
+0x002B2F28,0x8,EDIT_str_service_ngword_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ngword:"""
+0x002B2FD2,0xa,EDIT_str_service_2nwm__UDS,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""2nwm::UDS"""
+0x002B8EDC,0x6,EDIT_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x002B908C,0x5,EDIT_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x002B9091,0x7,EDIT_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x002B9A14,0xc,EDIT_func_ptr_table_2b9a14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002B9A24,0xc,EDIT_func_ptr_table_2b9a24,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003643A0,0x2c,EDIT_func_ptr_table_3643a0,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036446C,0xc,EDIT_func_ptr_table_36446c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364518,0xc,EDIT_func_ptr_table_364518,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036453C,0xc,EDIT_func_ptr_table_36453c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003645A8,0x18,EDIT_func_ptr_table_3645a8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003645E0,0x10,EDIT_func_ptr_table_3645e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036463C,0x10,EDIT_func_ptr_table_36463c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364698,0x10,EDIT_func_ptr_table_364698,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364738,0xc,EDIT_func_ptr_table_364738,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003647B8,0xc,EDIT_func_ptr_table_3647b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364830,0xc,EDIT_func_ptr_table_364830,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364880,0xc,EDIT_func_ptr_table_364880,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003648DC,0xc,EDIT_func_ptr_table_3648dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003649F8,0xc,EDIT_func_ptr_table_3649f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364A78,0xc,EDIT_func_ptr_table_364a78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364AF8,0xc,EDIT_func_ptr_table_364af8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364B94,0x18,EDIT_func_ptr_table_364b94,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364BEC,0xc,EDIT_func_ptr_table_364bec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364C20,0xc,EDIT_func_ptr_table_364c20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364C30,0x14,EDIT_func_ptr_table_364c30,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364C50,0xc,EDIT_func_ptr_table_364c50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364C70,0x10,EDIT_func_ptr_table_364c70,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364C84,0x10,EDIT_func_ptr_table_364c84,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364CCC,0x14,EDIT_func_ptr_table_364ccc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364D24,0xc,EDIT_func_ptr_table_364d24,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364DA4,0xc,EDIT_func_ptr_table_364da4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364E64,0xc,EDIT_func_ptr_table_364e64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364EBC,0x10,EDIT_func_ptr_table_364ebc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364F08,0xc,EDIT_func_ptr_table_364f08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364F1C,0xc,EDIT_func_ptr_table_364f1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364F68,0x14,EDIT_func_ptr_table_364f68,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00364F94,0x14,EDIT_func_ptr_table_364f94,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365044,0xc,EDIT_func_ptr_table_365044,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036512C,0x24,EDIT_func_ptr_table_36512c,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003651B8,0x14,EDIT_func_ptr_table_3651b8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365208,0xc,EDIT_func_ptr_table_365208,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365218,0x10,EDIT_func_ptr_table_365218,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003652C4,0x10,EDIT_func_ptr_table_3652c4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036537C,0xc,EDIT_func_ptr_table_36537c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003653FC,0xc,EDIT_func_ptr_table_3653fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365428,0xc,EDIT_func_ptr_table_365428,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365448,0xc,EDIT_func_ptr_table_365448,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003654D4,0xc,EDIT_func_ptr_table_3654d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003654FC,0x10,EDIT_func_ptr_table_3654fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036557C,0x10,EDIT_func_ptr_table_36557c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003655D8,0x10,EDIT_func_ptr_table_3655d8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003656A4,0x10,EDIT_func_ptr_table_3656a4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003656B8,0x18,EDIT_func_ptr_table_3656b8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003656DC,0xc,EDIT_func_ptr_table_3656dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036576C,0x18,EDIT_func_ptr_table_36576c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003657A0,0x10,EDIT_func_ptr_table_3657a0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003657D4,0x10,EDIT_func_ptr_table_3657d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365834,0xc,EDIT_func_ptr_table_365834,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036588C,0x10,EDIT_func_ptr_table_36588c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003658E8,0x10,EDIT_func_ptr_table_3658e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036599C,0x10,EDIT_func_ptr_table_36599c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003659E0,0x10,EDIT_func_ptr_table_3659e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365A40,0xc,EDIT_func_ptr_table_365a40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365A74,0x10,EDIT_func_ptr_table_365a74,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365AD8,0xc,EDIT_func_ptr_table_365ad8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365B60,0x24,EDIT_func_ptr_table_365b60,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365C38,0xc,EDIT_func_ptr_table_365c38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365C5C,0xc,EDIT_func_ptr_table_365c5c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365CC0,0x10,EDIT_func_ptr_table_365cc0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365D0C,0xc,EDIT_func_ptr_table_365d0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365F40,0xc,EDIT_func_ptr_table_365f40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365F54,0xc,EDIT_func_ptr_table_365f54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00365FAC,0x10,EDIT_func_ptr_table_365fac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366008,0x10,EDIT_func_ptr_table_366008,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366064,0x10,EDIT_func_ptr_table_366064,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003660C0,0x10,EDIT_func_ptr_table_3660c0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003661AC,0x20,EDIT_func_ptr_table_3661ac,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003661E4,0x14,EDIT_func_ptr_table_3661e4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036634C,0xc,EDIT_func_ptr_table_36634c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366504,0x1c,EDIT_func_ptr_table_366504,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366540,0xc,EDIT_func_ptr_table_366540,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366598,0x10,EDIT_func_ptr_table_366598,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003665F4,0x10,EDIT_func_ptr_table_3665f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366650,0x10,EDIT_func_ptr_table_366650,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366698,0x10,EDIT_func_ptr_table_366698,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003666AC,0x10,EDIT_func_ptr_table_3666ac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003666F8,0xc,EDIT_func_ptr_table_3666f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036670C,0xc,EDIT_func_ptr_table_36670c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003667A8,0xc,EDIT_func_ptr_table_3667a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366828,0xc,EDIT_func_ptr_table_366828,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366928,0xc,EDIT_func_ptr_table_366928,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366E0C,0x14,EDIT_func_ptr_table_366e0c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366E34,0x14,EDIT_func_ptr_table_366e34,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366E5C,0x14,EDIT_func_ptr_table_366e5c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366E84,0x14,EDIT_func_ptr_table_366e84,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366EAC,0xc,EDIT_func_ptr_table_366eac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366ECC,0xc,EDIT_func_ptr_table_366ecc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366EEC,0xc,EDIT_func_ptr_table_366eec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366F0C,0xc,EDIT_func_ptr_table_366f0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366F2C,0x14,EDIT_func_ptr_table_366f2c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366F54,0x14,EDIT_func_ptr_table_366f54,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00366F7C,0xc,EDIT_func_ptr_table_366f7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367068,0xc,EDIT_func_ptr_table_367068,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367398,0x10,EDIT_func_ptr_table_367398,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367634,0x10,EDIT_func_ptr_table_367634,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003678D4,0xc,EDIT_func_ptr_table_3678d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036791C,0x10,EDIT_func_ptr_table_36791c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367948,0x14,EDIT_func_ptr_table_367948,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036797C,0xc,EDIT_func_ptr_table_36797c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036799C,0xc,EDIT_func_ptr_table_36799c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367A10,0xc,EDIT_func_ptr_table_367a10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367A38,0x18,EDIT_func_ptr_table_367a38,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367A94,0x10,EDIT_func_ptr_table_367a94,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367B10,0x10,EDIT_func_ptr_table_367b10,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367B98,0x10,EDIT_func_ptr_table_367b98,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367BC4,0x14,EDIT_func_ptr_table_367bc4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367DA8,0xc,EDIT_func_ptr_table_367da8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367DF4,0xc,EDIT_func_ptr_table_367df4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367EA0,0xc,EDIT_func_ptr_table_367ea0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00367F68,0x10,EDIT_func_ptr_table_367f68,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00368074,0xc,EDIT_func_ptr_table_368074,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00368134,0xc,EDIT_func_ptr_table_368134,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003682DC,0xc,EDIT_func_ptr_table_3682dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00368380,0xc,EDIT_func_ptr_table_368380,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003684C8,0xc,EDIT_func_ptr_table_3684c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00368538,0x18,EDIT_func_ptr_table_368538,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036859C,0xc,EDIT_func_ptr_table_36859c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003685FC,0x18,EDIT_func_ptr_table_3685fc,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036867C,0xc,EDIT_func_ptr_table_36867c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003686C4,0xc,EDIT_func_ptr_table_3686c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0036870C,0x10,EDIT_func_ptr_table_36870c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00369116,0x6,EDIT_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00369140,0x6,EDIT_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x00369146,0x6,EDIT_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x0036B685,0x6,EDIT_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x0036B68B,0x6,EDIT_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x0036B691,0x6,EDIT_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x0036B697,0x6,EDIT_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x0036B69D,0x9,EDIT_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x0036B6A6,0x9,EDIT_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x0036B6AF,0x9,EDIT_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x0036B6B8,0x9,EDIT_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x0036B75D,0x6,EDIT_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x0036B763,0x6,EDIT_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x0036B77A,0x6,EDIT_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x00372B18,0xc,EDIT_func_ptr_table_372b18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00372DA0,0x40,EDIT_func_ptr_table_372da0,pointer_table,16 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00380768,0x10,EDIT_func_ptr_table_380768,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00383C90,0x10,EDIT_func_ptr_table_383c90,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AEEB0,0xb,EDIT_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

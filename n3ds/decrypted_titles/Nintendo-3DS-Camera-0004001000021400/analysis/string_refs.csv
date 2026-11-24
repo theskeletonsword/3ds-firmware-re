@@ -1,0 +1,38 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00109980,0x114,strref_C_ColColor_bclim_109980,string_reference,function references string(s): C_ColColor.bclim
+0x001136B8,0xcc,strref_csnd_SND_1136b8,string_reference,function references string(s): csnd:SND
+0x001961EC,0x358,strref_NintendoDS_1961ec,string_reference,function references string(s): NintendoDS
+0x00202830,0x284,strref_IconPtrn_202830,string_reference,function references string(s): IconPtrn
+0x00204E8C,0xc0,strref_CountOff_204e8c,string_reference,function references string(s): CountOff
+0x002064DC,0xf8,strref_Finder_Mov_04_00_2064dc,string_reference,function references string(s): Finder_Mov_04_00 | Finder_Mov_04_03 | Finder_Mov_04_04
+0x00206B88,0x88,strref_CountOff_206b88,string_reference,function references string(s): CountOff
+0x00206C30,0x348,strref_TimI_Num11_206c30,string_reference,function references string(s): TimI_Num11
+0x002088F0,0x250,strref_HntDefault_2088f0,string_reference,function references string(s): BtnTxtIn | BtnTxtOut | HntDefault
+0x0020C5D0,0xac,strref_Set_Storage_02_20c5d0,string_reference,function references string(s): Set_Storage_02
+0x0020C93C,0x88,strref_Set_Storage_02_20c93c,string_reference,function references string(s): Set_Storage_02
+0x00211B24,0x9a4,strref_FNaWeG0hDUF8Hwjx_211b24,string_reference,function references string(s): FNaWeG0hDUF8Hwjx | ZH7qfvRRlXM30oMP
+0x00216C58,0x3a4,strref_P_ImgEdiDlg_D_216c58,string_reference,function references string(s): P_ImgEdiDlg_D
+0x00217308,0x160,strref_m_dialog_217308,string_reference,function references string(s): m_dialog
+0x0023A900,0x2f8,strref_Nintendo_23a900,string_reference,function references string(s): Nintendo
+0x00274388,0xd4,strref_Guide_D_00_00_274388,string_reference,function references string(s): Guide_D_00_00
+0x00278194,0x63c,strref_P_ImgTool_PenClr_278194,string_reference,function references string(s): P_ImgTool_PenClr | P_ImgTool_Rnbw
+0x002791A8,0xd4,strref_PaintOut_2791a8,string_reference,function references string(s): PaintOut
+0x0027D798,0x1b4,strref_DIO_Brws_27d798,string_reference,function references string(s): DIO_Brws
+0x0028DE0C,0xd4,strref_res_P_Shoot_D_bcenv_28de0c,string_reference,function references string(s): P_Shoot_D | res/P_Shoot_D.bcenv
+0x0028EAC0,0x290,strref_res_P_Shoot_D_28eac0,string_reference,function references string(s): res/P_Shoot_D
+0x00291FCC,0xa4,strref_Set_Info_02_00_291fcc,string_reference,function references string(s): Set_Info_02_00 | Set_Info_02_01
+0x002983B8,0x37c,strref_LDefault_2983b8,string_reference,function references string(s): LDefault | RDefault
+0x00298C44,0xb28,strref_HntDefault_298c44,string_reference,function references string(s): HntDefault
+0x0029C258,0xe8,strref_IconPtrn_29c258,string_reference,function references string(s): IconPtrn
+0x0029E9C4,0x989ac,strref_TimMovTop_29e9c4,string_reference,function references string(s): CountOff | TimMovTop
+0x002B2180,0x1e8,strref_MovGraphOut_2b2180,string_reference,function references string(s): MovGraphOut
+0x002B2ED8,0xfc,strref_IconPtrn_2b2ed8,string_reference,function references string(s): IconPtrn
+0x002B4730,0x1a4,strref_DIO_Brws_2b4730,string_reference,function references string(s): DIO_Brws
+0x002B5BF8,0x2c4,strref_P_MovGra_2b5bf8,string_reference,function references string(s): P_MovGra
+0x002D2F54,0x160,strref_DIO_Brws_AlbPnt_2d2f54,string_reference,function references string(s): DIO_Brws_AlbPnt
+0x002D32F4,0xbe,strref_DIO_Brws_AlbPnt_2d32f4,string_reference,function references string(s): DIO_Brws_AlbPnt
+0x002F9660,0x34,strref_res_P_Finder_U_bcenv_2f9660,string_reference,function references string(s): res/P_Finder_U.bcenv
+0x002F9694,0x5a,strref_res_P_Finder_U_bcenv_2f9694,string_reference,function references string(s): RoomLight | res/P_Finder_U.bcenv
+0x002F97CC,0x198,strref_res_P_Finder_U_2f97cc,string_reference,function references string(s): res/P_Finder_U
+0x00311664,0x88,strref_BtnGuidOfsY_311664,string_reference,function references string(s): BtnGuidOfsY
+0x0034D428,0xa24,strref_dmp_FragmentMaterial_samplerRG_34d428,string_reference,function references string(s): dmp_FragmentMaterial.samplerRG | dmp_LightEnv.absLutInputSP | dmp_TexEnv[0].operandRgb

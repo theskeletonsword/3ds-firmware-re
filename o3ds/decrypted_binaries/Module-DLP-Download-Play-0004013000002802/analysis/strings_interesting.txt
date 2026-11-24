@@ -1,0 +1,11 @@
+0x00105F80	%s:/%016llx.cia
+0x0010B3B0	%sSNAKE/%016llx.cia
+0x0010B3C4	%s%016llx.cia
+0x0010B524	%s%016llx.cia
+0x0010B5FC	%sversion.bin
+0x0010C040	%s:/SNAKE/
+0x0010F640	%s:/SNAKE/%016llx.cia
+0x00112060	%s:/%016llx.cia
+0x001121CE	2nwm::UDS
+0x00112838	gsp::Lcd
+0x00112841	gsp::Gpu

@@ -1,0 +1,6 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100048,0x10,DummyBox_svc_0x3C_Break_100048,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100058,0x18,DummyBox_svc_0x2D_ConnectToPort_100058,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100070,0x18,DummyBox_svc_0x27_DuplicateHandle_100070,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100088,0x18,DummyBox_svc_0x35_GetProcessId_100088,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010102C,0x6,DummyBox_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

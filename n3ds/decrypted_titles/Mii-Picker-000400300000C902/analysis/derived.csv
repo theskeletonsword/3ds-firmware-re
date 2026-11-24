@@ -1,0 +1,79 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00101F58,0x5,appletEd_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001037C8,0x18,appletEd_svc_0x21_CreateAddressArbiter_1037c8,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001037E0,0x1c,appletEd_svc_0x2B_GetProcessInfo_1037e0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107218,0x1c,appletEd_svc_0x1E_CreateMemoryBlock_107218,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001085E0,0x998,appletEd_ipc_dispatcher_1085e0,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000B0289, 0x000F004F, 0x000F028A, 0x01000002"
+0x0010BBD8,0xca4,appletEd_ipc_handler_cmd_0007_0008_0040_etc_10bbd8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0010C8F4,0x18,appletEd_svc_0x2D_ConnectToPort_10c8f4,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001126E8,0x18,appletEd_svc_0x35_GetProcessId_1126e8,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00112700,0xc,appletEd_svc_0x28_GetSystemTick_112700,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011270C,0xc,appletEd_svc_0x0A_SleepThread_11270c,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001245D0,0x18,appletEd_svc_0x27_DuplicateHandle_1245d0,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001442E0,0x4b604,appletEd_ipc_handler_cmd_0004_000B_1442e0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x00158078,0x18,appletEd_svc_0x22_ArbitrateAddress_158078,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015E9F8,0xc,appletEd_func_ptr_table_15e9f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015FD4C,0x18,appletEd_svc_0x17_CreateEvent_15fd4c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00185698,0x654,appletEd_ipc_dispatcher_185698,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000A0080, 0x000F02C0, 0x00BF02C1, 0x00FF02C1"
+0x0018F8F0,0x648,appletEd_ipc_dispatcher_18f8f0,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x00194F60,0x258,appletEd_ipc_dispatcher_194f60,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F008F, 0x000F01C0, 0x000F01C2, 0x000F01C3"
+0x0019CF08,0x3a24,appletEd_ipc_dispatcher_19cf08,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x001A0A00,0x3a04,appletEd_ipc_dispatcher_1a0a00,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x001A45C4,0xc,appletEd_func_ptr_table_1a45c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABB04,0x5d8,appletEd_ipc_dispatcher_1abb04,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x001B29C4,0x9,appletEd_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x001B2A04,0x7,appletEd_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001B2A0B,0x8,appletEd_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001B85A4,0x5,appletEd_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001B85A9,0x7,appletEd_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001B8D9C,0x6,appletEd_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001B8DA8,0xc,appletEd_func_ptr_table_1b8da8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B8DB8,0xc,appletEd_func_ptr_table_1b8db8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B925C,0xc,appletEd_func_ptr_table_1b925c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B93FC,0xc,appletEd_func_ptr_table_1b93fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B9424,0xc,appletEd_func_ptr_table_1b9424,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B9480,0xc,appletEd_func_ptr_table_1b9480,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B94FC,0xc,appletEd_func_ptr_table_1b94fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B95AC,0xc,appletEd_func_ptr_table_1b95ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B9888,0xc,appletEd_func_ptr_table_1b9888,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B9B88,0x10,appletEd_func_ptr_table_1b9b88,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B9F60,0xc,appletEd_func_ptr_table_1b9f60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA24C,0x10,appletEd_func_ptr_table_1ba24c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA464,0x10,appletEd_func_ptr_table_1ba464,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA704,0xc,appletEd_func_ptr_table_1ba704,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA74C,0x10,appletEd_func_ptr_table_1ba74c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA778,0x14,appletEd_func_ptr_table_1ba778,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA7A8,0x10,appletEd_func_ptr_table_1ba7a8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA7CC,0xc,appletEd_func_ptr_table_1ba7cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA840,0xc,appletEd_func_ptr_table_1ba840,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA868,0x18,appletEd_func_ptr_table_1ba868,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA8C4,0x10,appletEd_func_ptr_table_1ba8c4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA940,0x10,appletEd_func_ptr_table_1ba940,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA9C8,0x10,appletEd_func_ptr_table_1ba9c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA9F4,0x14,appletEd_func_ptr_table_1ba9f4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BABD4,0xc,appletEd_func_ptr_table_1babd4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAC78,0xc,appletEd_func_ptr_table_1bac78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAD94,0x14,appletEd_func_ptr_table_1bad94,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BADF8,0x14,appletEd_func_ptr_table_1badf8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAE58,0x14,appletEd_func_ptr_table_1bae58,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAEA8,0xc,appletEd_func_ptr_table_1baea8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAEF0,0xc,appletEd_func_ptr_table_1baef0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BAF38,0x10,appletEd_func_ptr_table_1baf38,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BB47C,0x8,appletEd_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x001BB484,0x8,appletEd_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x001BB48C,0x9,appletEd_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001BB495,0x9,appletEd_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001BB49E,0x6,appletEd_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x001BD9DD,0x6,appletEd_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001BD9E3,0x6,appletEd_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001BD9E9,0x6,appletEd_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x001BD9EF,0x6,appletEd_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001BD9F5,0x6,appletEd_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001BD9FB,0x9,appletEd_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001BDA04,0x9,appletEd_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001BDAA9,0x6,appletEd_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001BDAAF,0x6,appletEd_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x001C347C,0x1c,appletEd_func_ptr_table_1c347c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C349C,0x20,appletEd_func_ptr_table_1c349c,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C374C,0x10,appletEd_func_ptr_table_1c374c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3970,0x20,appletEd_func_ptr_table_1c3970,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)

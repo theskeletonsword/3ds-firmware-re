@@ -1,0 +1,305 @@
+0x0010034C	RWSTDERR
+0x0010307C	Exception: %s.
+0x001796CB	?Remove_ERRdlg01_01
+0x001BA9A8	.bclim
+0x001BBE84	CommonWin_ERRdlg01_08
+0x001C3724	rom:/sound/TigerSound.bcsar
+0x001FDF0C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001FE778	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001FF87C	http://www.w3.org/XML/1998/namespace
+0x001FF8C4	http://www.w3.org/2001/XMLSchema-instance
+0x00201F84	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x00202B34	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00202F54	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00207654	https://%c-npns.app.nintendo.net/api/v1/
+0x002076B8	%splatforms/3ds/devices.json
+0x00207AC4	%splatforms/3ds/devices/%s.json
+0x00223E4C	%s/ninja/ws/%s/tax_locations?lang=%s&shop_id=1&_type=json
+0x00223E88	%s&postal_code=%s
+0x00227B0C	%s/ninja/ws/my/transaction/%llu/receipt?shop_id=1&_type=json
+0x00227CB4	%s/samurai/ws/%s/titles?lang=%s&shop_id=1&_type=json
+0x0022825C	&genre%%5B%%5D=%u
+0x00228274	&publisher%%5B%%5D=%u
+0x00228290	&price_min=%d
+0x002282A0	&price_max=%d
+0x002282CC	&freeword=%s
+0x002282DC	&limit=%u
+0x002282E8	&offset=%u
+0x00228580	&%s=%s
+0x00228588	&release_date_before=%%2B%u
+0x002285A4	&release_date_after=-%u
+0x0023940C	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x0025821C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x00259E3C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x002622D4	%s/ninja/ws/my/wishlist/%llu/!delete?shop_id=1&_type=json
+0x00262360	%s/ninja/ws/my/wishlist/!put?shop_id=1&_type=json
+0x0028D450	%d.%02d
+0x002969EC	.bclyt
+0x002A7410	std::ios::badbit, std::ios::failbit, std::ios::eofbit
+0x002A7460	badbit, failbit
+0x002A7480	failbit, eofbit
+0x002E648C	cbf_std.bcfnt
+0x00304420	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x00305714	ReadEp: cannot find stream %d
+0x00305758	ReadEp: stream %d already disabled
+0x003071B4	.bclim
+0x0031C010	Unknown(%d)
+0x0031C025	W @TIGER-%.2f/%s-%s-%s_%s/%016llX-%016llX-%s
+0x0031C57C	bytes=%u-%u
+0x0031C588	bytes=%u-
+0x0031EDEC	https://
+0x0031EED8	%s/ninja/ws/%s/title/%llu/ec_info?shop_id=1&lang=%s&_type=json
+0x0031EF68	%s/ninja/ws/my/wishlist/notice?shop_id=1&_type=json
+0x0031F000	%s/ninja/ws/%s/title/%014llu/!redeem?shop_id=1&_type=json
+0x0031F09C	%s/eou/referer/%s/%s/eoufile
+0x0031F11C	%s/samurai/ws/%s/news?lang=%s&shop_id=1&_type=json
+0x0031F1A0	%s/ninja/ws/my/balance/current?shop_id=1&_type=json
+0x0031F234	%s/ninja/ws/country/%s?lang=%s&shop_id=1&_type=json
+0x0031F334	%s/ninja/ws/%s/title/%llu/ec_info?lang=%s&shop_id=1&_type=json
+0x0031F3D4	%s/samurai/layout/rating_info/%d_%s.layout
+0x0031F464	%s/ninja/ws/%s/title/%llu/!purchase?shop_id=1&_type=json
+0x0031F510	%s/ninja/ws/my/wishlist?sort=registered&shop_id=1&_type=json
+0x0031F550	%s/ninja/ws/my/wishlist?sort=release&shop_id=1&_type=json
+0x0031F5EC	%s/samurai/ws/%s/telops?lang=%s&shop_id=1&_type=json
+0x0031F674	%s/ninja/ws/my/wishlist/notice/!ack?shop_id=1&_type=json
+0x0031F790	&filter=%u
+0x0031F7EC	%s/ninja/ws/my/credit_card/?shop_id=1&_type=json
+0x0031F870	%s/ninja/ws/my/npns_status?shop_id=1&_type=json
+0x0031F8F0	%s/ninja/ws/my/language?shop_id=1&_type=json
+0x0031F978	%s/ninja/ws/%s/coupon/!check?shop_id=1&_type=json
+0x0031FA10	%s/ninja/ws/%s/movie/%llu/!play?shop_id=1
+0x0031FADC	%s/ninja/ws/%s/title/%llu/prepurchase_info?shop_id=1&_type=json
+0x0031FB7C	%s/ninja/ws/my/votes?shop_id=1&limit=%u&offset=%u&_type=json
+0x0031FC0C	%s/ninja/ws/my/session/!open?_type=json
+0x0031FC84	%s/ninja/ws/my/tax_location?shop_id=1&_type=json
+0x0031FD78	%s/samurai/ws/%s/directory/~%s?lang=%s&shop_id=1&_type=json
+0x0031FDB4	%s/samurai/ws/%s/directory/%llu?lang=%s&shop_id=1&_type=json
+0x0031FE54	%s/samurai/ws/%s/languages?lang=%s&shop_id=1&_type=json
+0x0031FF88	%s/ninja/ws/my/owned_coupons?ns_uid=%llu&shop_id=1&_type=json
+0x003200A0	%s/ninja/ws/%s/title/public_status?lang=%s&shop_id=1&_type=json
+0x00320168	%s/ninja/ws/%s/demo/%llu/!purchase?shop_id=1&_type=json
+0x003201F0	%s/ninja/ws/my/votes/!put?shop_id=1&_type=json
+0x003202E8	%s/ninja/ws/my/session/!close?_type=json
+0x003203D8	%s/ninja/ws/titles/id_pair?lang=%s&title_id%%5B%%5D=%s
+0x00320520	https://tagaya-ctr.cdn.nintendo.net/tagaya/versionlist
+0x0032055C	https://tagaya-dev-ctr.cdn.nintendo.net/tagaya/versionlist
+0x003205E8	%s/ninja/ws/my/balance/current/!cc_add?shop_id=1&_type=json
+0x003206D8	%s/ninja/ws/my/wishlist/!merge?shop_id=1&_type=json
+0x00320804	%s/samurai/ws/%s/title/%llu?lang=%s&shop_id=1&_type=json
+0x003208B8	%s/samurai/ws/%s/movie/%llu?shop_id=1&lang=%s&_type=json
+0x00320954	%s/samurai/ws/%s/rankings?shop_id=1&device=4&lang=%s&_type=json
+0x003209F4	%s/samurai/ws/%s/genres?lang=%s&shop_id=1&_type=json
+0x00320A7C	%s/CCIF/services/credit_card/!input
+0x00320AF0	%s/ninja/ws/my/shared_title_ids?shop_id=1&_type=json
+0x00320B78	%s/ninja/ws/my/tax_location/!put?shop_id=1&_type=json
+0x00320C00	%s/ninja/ws/my/owned_coupons?shop_id=1&_type=json
+0x00320C84	%s/ninja/ws/my/votes/!delete?shop_id=1&_type=json
+0x00320D08	%s/ninja/ws/redeemable_card/!check?shop_id=1&_type=json
+0x00320E1C	%s/samurai/ws/%s/contents?lang=%s&shop_id=1&_type=json
+0x00320F80	%s/ninja/ws/my/loyalty_account/!link?shop_id=1&_type=json
+0x0032100C	%s/ninja/ws/my/credit_card/!delete?shop_id=1&_type=json
+0x00321094	%s/ninja/ws/my/votes/!migrate_ctr?shop_id=1&_type=json
+0x00321190	%s/samurai/ws/%s/searchcategory?lang=%s&shop_id=1&_type=json
+0x00321300	%s/ninja/ws/my/tax_location/!delete?shop_id=1&_type=json
+0x00321400	%s/samurai/ws/%s/movies?lang=%s&shop_id=1&_type=json
+0x00321834	%s/samurai/ws/%s/directory/~%s?lang=%s&shop_id=1&_type=json
+0x00321870	&limit=%u&offset=%u
+0x00321884	%s/samurai/ws/%s/directory/%llu?lang=%s&shop_id=1&_type=json
+0x003218F4	&%s=%s
+0x00321900	&genre%%5B%%5D=%u
+0x00321918	&publisher%%5B%%5D=%u
+0x00321A30	%s/samurai/ws/%s/publishers?lang=%s&shop_id=1&_type=json
+0x00321ABC	%s/ninja/ws/my/loyalty_account/!unlink?shop_id=1&_type=json
+0x00321B48	%s/ninja/ws/my/parental_control/!put?shop_id=1&_type=json
+0x00321BD4	%s/ninja/ws/my/loyalty_account?shop_id=1&_type=json
+0x00321C58	%s/ninja/ws/my/votable_titles/!put?shop_id=1&_type=json
+0x00321DDC	%s/ninja/ws/my/session/!open_without_nna
+0x003263F4	:%d,%d,%d
+0x0032640C	,%lld,%d
+0x00326418	,%d,%d,%d,%d
+0x00326428	,%d,%d
+0x003267A0	,%d,%d,%d,%d,%d
+0x003267B0	,%lld,%d,%d,%d
+0x003267C0	,%x,%x,%016llx,%d,%s,%d
+0x003267D8	,%x,%x,%lld,%d,%s,%d
+0x003267F4	,%d,%d,%d
+0x00326970	,%lld,%d,%d,%d,%d
+0x00349240	fail_02.bclim
+0x00349258	fail_01.bclim
+0x0034926C	fail_00.bclim
+0x00349280	fail_04.bclim
+0x00349294	fail_03.bclim
+0x003492A8	fail_05.bclim
+0x0034CA20	news_UL_00.bclim
+0x003520D4	rom:/sound/dspaudio.cdc
+0x00364E58	CommonWin_ERRdlg01_09
+0x0036CEDC	Hud.bcfnt
+0x0038AEFC	https://samurai.ctr.shop.nintendo.net
+0x0038AF30	https://ninja.ctr.shop.nintendo.net
+0x0038AF58	https://ccif.ctr.shop.nintendo.net
+0x0038AF80	https://eou.c.shop.nintendowifi.net
+0x003B89AC	dsp::DSP
+0x003BAACC	CTR/%c/1.0.0/r%u
+0x003BAB00	http://
+0x003BAB08	https://
+0x003BDA80	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C6DB0	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x003C6DF0	Found stream index %d but this stream is already present (duplicate?)...
+0x003C6E3C	error: synchronized fixe packet size reader returned a packet with an unexpected size (%d != %d)
+0x003C6EA0	error: synchronized variable packet size reader returned a packet with an unexpected size (%d > %d)
+0x003C6F08	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x003C70A0	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C712C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C8BC8	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C994E	std::cin
+0x003C9959	std::cout
+0x003C9964	std::cerr
+0x003C996F	std::clog
+0x003C997A	std::wcin
+0x003C9985	std::wcout
+0x003C9990	std::wcerr
+0x003C999B	std::wclog
+0x003CEA3C	area:/CN/country_LZ.bin
+0x003CEA54	area:/JP/country_LZ.bin
+0x003CEA6C	area:/KR/country_LZ.bin
+0x003CEA84	area:/US/country_LZ.bin
+0x003CEA9C	area:/EU/country_LZ.bin
+0x003CEAB4	area:/TW/country_LZ.bin
+0x003D0B61	",                 "phone_number":"0570-012-789",                 "url":"http://www.d3p.co.jp"             },             {                 "publisher":{"name":
+0x003D0C4D	",                 "phone_number":"0570-012-789",                 "url":"http://www.d3p.co.jp"             }         ],         "length":93     } }
+0x003D1235	","content":"2013/07/12 18:32:52 (JST)"},{"header":"
+0x003D1440	https://ninja
+0x003D1450	https://tagaya.wup.shop.nintendo.net/tagaya_ctr/dev/tiger/versionlist%d
+0x003D1498	%s/samurai/ws/%s/title/%014llu/law_message?lang=%s&shop_id=1&_type=json&content_type=title
+0x003D14F4	https://ccif
+0x003D1504	https://samurai
+0x003D1514	%s/ninja/ws/my/recommend_title?directory_id=%llu&friend_code=%016llX&shop_id=1&_type=json
+0x003D1570	%s/ninja/ws/%s/titles/online_prices?title%%5B%%5D=%s&lang=%s&include_coupon=true&shop_id=1&_type=json
+0x003D15D8	%s/ninja/ws/service_hosts?country=%s&lang=%s&shop_id=1&_type=json
+0x003D161C	%s/samurai/ws/%s/eshop_message/agreement_send_info?lang=%s&shop_id=1&_type=json
+0x003D166C	%s/samurai/ws/%s/title/%014llu/aocs?lang=%s&shop_id=1&_type=json
+0x003D16B0	%s/ninja/ws/country/%s/replenish_amounts?lang=%s&shop_id=1&_type=json
+0x003D16F8	%s/samurai/ws/%s/eshop_message/law_payment?lang=%s&shop_id=1&_type=json
+0x003D1740	%s/samurai/ws/%s/eshop_message/about?lang=%s&shop_id=1&_type=json
+0x003D1784	%s/samurai/ws/%s/directories?lang=%s&pattern=%s&shop_id=1&_type=json
+0x003D17CC	%s/ninja/ws/%s/title/%llu/prepurchase_info?%s=%s&shop_id=1&_type=json
+0x003D1814	%s/samurai/ws/%s/coupon/%llu/titles?lang=%s&limit=%u&offset=%u&shop_id=1&_type=json
+0x003D1868	%s/ninja/ws/my/abandoned_transactions?tracing_transaction_id=%llu&limit=%u&offset=%u&shop_id=1&_type=json
+0x003D18D4	%s/ninja/ws/my/shared_titles?limit=%u&offset=%u&shop_id=1&_type=json
+0x003D191C	%s/ninja/ws/my/auto_billing/plans?limit=%u&offset=%u&shop_id=1&_type=json
+0x003D1968	%s/ninja/ws/my/transactions?limit=%u&offset=%u&shop_id=1&_type=json
+0x003D19AC	%s/ninja/ws/my/abandoned_transaction/%llu/receipt?tracing_transaction_id=%llu&shop_id=1&_type=json
+0x003D1A10	%s/ninja/ws/%s/titles/online_prices?title%%5B%%5D=%s&lang=%s&include_coupon=true&coupon_id=%llu&shop_id=1&_type=json
+0x003D1A88	%s/ninja/ws/my/account/ctr/!migrate_without_nna?shop_id=1&_type=json
+0x003D1AD0	%s/ninja/ws/my/auto_billing/%014llu/!cancel?shop_id=1&_type=json
+0x003D1B14	%s/samurai/ws/%s/publishers/contacts?shop_id=1&lang=%s&_type=json
+0x003D1B58	%s/samurai/ws/%s/ranking/%u?shop_id=1&limit=%u&offset=%u&lang=%s&_type=json
+0x003D1BA4	%s/ninja/ws/my/votable_titles?shop_id=1&limit=%u&offset=%u&_type=json
+0x003D1BEC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/7RW9z5Cb71Fpt1OE/BGM1/JP_BGM1
+0x003D1C5C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/vD1TyxppgptrZdfK/BGM1/KR_BGM1
+0x003D1CCC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/BGM1/US_BGM1
+0x003D1D3C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/BGM1/EU_BGM1
+0x003D1DAC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/kRlrRG3XMEZShz9a/BGM1/TW_BGM1
+0x003D1E1C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/7RW9z5Cb71Fpt1OE/BGM2/JP_BGM2
+0x003D1E8C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/vD1TyxppgptrZdfK/BGM2/KR_BGM2
+0x003D1EFC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/BGM2/US_BGM2
+0x003D1F6C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/BGM2/EU_BGM2
+0x003D1FDC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/kRlrRG3XMEZShz9a/BGM2/TW_BGM2
+0x003D204C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/7RW9z5Cb71Fpt1OE/TIGER1/JP_ja
+0x003D20BC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/kRlrRG3XMEZShz9a/TIGER1/TW_tc
+0x003D212C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_de
+0x003D219C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_nl
+0x003D220C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/TIGER1/US_en
+0x003D227C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_en
+0x003D22EC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/AEU_en
+0x003D235C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/vD1TyxppgptrZdfK/TIGER1/KR_ko
+0x003D23CC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/TIGER1/US_fr
+0x003D243C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_fr
+0x003D24AC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/TIGER1/US_es
+0x003D251C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_es
+0x003D258C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_it
+0x003D25FC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/CtfKXACbUPl8s7lk/TIGER1/US_pt
+0x003D266C	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_pt
+0x003D26DC	https://a248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net/p01/nsa/AH3oZwrEbne6qHCO/TIGER1/EU_ru
+0x003D2F64	CommonWin_ERRdlg01_03
+0x003D39E4	E_bagOrange_00.bclim
+0x003D39FC	bagOrange_00.bclim
+0x003D3A10	E_bagBlue_00.bclim
+0x003D3A24	bagBlue_00.bclim
+0x003D3A38	E_bagPink_00.bclim
+0x003D3A4C	bagPink_00.bclim
+0x003D3A60	E_bagGreen_00.bclim
+0x003D3A74	bagGreen_00.bclim
+0x003D3A88	E_bagYellow_00.bclim
+0x003D3AA0	bagYellow_00.bclim
+0x003D402C	recommend_D_00.bclim
+0x003D4044	setting_D_00.bclim
+0x003D4058	search_D_00.bclim
+0x003D406C	wish_D_00.bclim
+0x003D407C	rank_D_00.bclim
+0x003D408C	newArrival_D_00.bclim
+0x003D40A4	news_D_00.bclim
+0x003D40B4	point_D_00.bclim
+0x003D40C8	discount_D_00.bclim
+0x003D40DC	recommend_UL_00.bclim
+0x003D40F4	setting_UL_00.bclim
+0x003D4108	search_UL_00.bclim
+0x003D411C	wish_UL_00.bclim
+0x003D4130	rank_UL_00.bclim
+0x003D4144	newArrival_UL_00.bclim
+0x003D415C	news_UL_00.bclim
+0x003D4170	point_UL_00.bclim
+0x003D4184	discount_UL_00.bclim
+0x003D419C	recommend_UR_00.bclim
+0x003D41B4	setting_UR_00.bclim
+0x003D41C8	search_UR_00.bclim
+0x003D41DC	wish_UR_00.bclim
+0x003D41F0	rank_UR_00.bclim
+0x003D4204	newArrival_UR_00.bclim
+0x003D421C	news_UR_00.bclim
+0x003D4230	point_UR_00.bclim
+0x003D4244	discount_UR_00.bclim
+0x003D4A38	https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/201/ja/rating/1/icon
+0x003D4A90	https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/201/ja/rating/6/icon
+0x003D4AE8	https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/icon
+0x003D4B3C	https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/banner
+0x003D4E36	1.9Mbps","icon_url":"https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/icon","banner_url":"https://samurai.wup.shop.nintendo.net/sa
+0x003D4ED6	murai/image/JP/ja/movie/50040000000026/banner","files":{"file":[{"format":"mp4","width":1280,"height":720,"dimension":"2d","play_time_sec":21,"quality":"HQ"},{"
+0x003D5016	me_sec":60}]},"rating_info":{"rating_system":{"name":"CERO","id":201},"rating":{"icon_url":"https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/20
+0x003D50B6	1/ja/rating/6/icon","name":"
+0x003D5225	","id":190},"rating_info":{"rating_system":{"name":"CERO","id":201},"rating":{"icon_url":"https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/201/
+0x003D52C5	ja/rating/1/icon","name":"A","age":0,"id":1}},"release_date_on_eshop":"2011-09-19","retail_sales":false,"eshop_sales":true,"movie_available":true,"demo_availabl
+0x003D7485	gsp::Lcd
+0x003D748E	gsp::Gpu
+0x003D7C64	%s: bad locale name: "%s"
+0x003D7C80	%s: range error: invalid range [%d, %d)
+0x003D7CA8	%s: argument value %u out of range [0, %u)
+0x003D7CD4	%s: conversion failed
+0x003D7CEC	%s: facet %u not found in "%s" locale
+0x003D7D14	%s: failed to construct locale name
+0x003D7D38	%s: exception
+0x003D7D48	%s: unexpected exception
+0x003D7D64	%s: invalid pointer %p
+0x003D7D7C	%s: logic error
+0x003D7D8C	%s: unspecified error
+0x003D7DA4	%s: runtime error
+0x003D7DB8	%s: underflow error
+0x003D7DCC	%s: overflow error
+0x003D7DE0	%s: stream object has set %s
+0x003D7E00	%s: stream object has set ios::badbit
+0x003D7E28	%s: stream object has set ios::eofbit
+0x003D7E50	%s: stream object has set ios::failbit
+0x003D7E78	%s: bad cast
+0x003D7E88	%s: length error: %u > %u
+0x003D7EA4	%s: bad_alloc: out of memory
+0x003D7EC4	%s: out of memory
+0x003EFA8C	/ninja/ws/my/votes?
+0x003EFAA0	/cp3s/contentset/n/
+0x003EFAB4	/ninja/ws/my/credit_card/
+0x003EFACE	/ccif/credit_card/!input
+0x003EFAE7	/ninja/ws/country/
+0x003EFB13	/ninja/ws/my/credit_card/!delete
+0x003EFB34	ninja/ws/my/transaction/
+0x003EFB61	/ninja/ws/my/balance/current/!cc_add
+0x003EFB86	/ninja/ws/my/balance/current/!cc_prepare
+0x003EFBAF	/ninja/ws/my/balance/current/!wallet_add

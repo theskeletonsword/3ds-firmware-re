@@ -1,0 +1,108 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001175D8,0xc,friends_func_ptr_table_1175d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011776C,0xc,friends_func_ptr_table_11776c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00117F28,0xc,friends_func_ptr_table_117f28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011800C,0xc,friends_func_ptr_table_11800c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00118B44,0x14,friends_func_ptr_table_118b44,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011A050,0x48,friends_func_ptr_table_11a050,pointer_table,18 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001257EC,0x8,friends_svc_0x22_ArbitrateAddress_1257ec,svc_wrapper,"function body is a single `svc #0x22` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001262B0,0x12c,friends_ipc_dispatcher_1262b0,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010001, 0x00060001, 0x001501D0, 0x00650001"
+0x00128794,0x8,friends_svc_0x28_GetSystemTick_128794,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012F494,0x18,friends_svc_0x35_GetProcessId_12f494,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00131B68,0x8,friends_svc_0x23_CloseHandle_131b68,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00131CF0,0x8,friends_svc_0x32_SendSyncRequest_131cf0,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001356D8,0xc,friends_func_ptr_table_1356d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00135A60,0xc,friends_func_ptr_table_135a60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00135D00,0xc,friends_func_ptr_table_135d00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0014E734,0x18,friends_svc_0x27_DuplicateHandle_14e734,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014E74C,0x8,friends_svc_0x14_ReleaseMutex_14e74c,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014ED70,0x8,friends_svc_0x03_ExitProcess_14ed70,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014ED84,0x18,friends_svc_0x4A_AcceptSession_14ed84,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014ED9C,0x18,friends_svc_0x4F_ReplyAndReceive_14ed9c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EDD8,0x18,friends_svc_0x21_CreateAddressArbiter_14edd8,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EE4C,0x8,friends_svc_0x3C_Break_14ee4c,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EE54,0x18,friends_svc_0x2D_ConnectToPort_14ee54,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EE6C,0x18,friends_svc_0x17_CreateEvent_14ee6c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EE84,0x1c,friends_svc_0x1E_CreateMemoryBlock_14ee84,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EEA0,0x8,friends_svc_0x09_ExitThread_14eea0,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EEA8,0x8,friends_svc_0x18_SignalEvent_14eea8,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EEFC,0x8,friends_svc_0x20_UnmapMemoryBlock_14eefc,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014EFE4,0x8,friends_svc_0x0A_SleepThread_14efe4,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014F03C,0x18,friends_svc_0x37_GetThreadId_14f03c,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014F228,0x8,friends_svc_0x0C_SetThreadPriority_14f228,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00150438,0x6,friends_str_service_frd_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:u"""
+0x0015043E,0x6,friends_str_service_frd_a,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:a"""
+0x00150444,0x6,friends_str_service_frd_n,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:n"""
+0x0015176C,0x6,friends_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x00151778,0x6,friends_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x00151980,0x5,friends_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x001519A0,0x6,friends_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x001519E4,0x7,friends_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001519EB,0x8,friends_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001519F3,0x7,friends_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x001519FA,0x7,friends_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x00151A01,0x9,friends_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x00151A18,0x6,friends_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x00151A1E,0x6,friends_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x00151A24,0x9,friends_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x00151A2D,0x9,friends_str_service_ptm_sets,service_name_string,"client of (in ExHeader service-access list): ""ptm:sets"""
+0x00151A3C,0x5,friends_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00151A41,0x7,friends_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00153188,0x6,friends_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x001531A4,0x6,friends_str_service_ndm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ndm:u"""
+0x001531C4,0x6,friends_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x001574F8,0x10,friends_func_ptr_table_1574f8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001576CC,0xc,friends_func_ptr_table_1576cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001576E8,0xc,friends_func_ptr_table_1576e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015774C,0xc,friends_func_ptr_table_15774c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157778,0xc,friends_func_ptr_table_157778,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157844,0x14,friends_func_ptr_table_157844,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157A20,0xc,friends_func_ptr_table_157a20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157A60,0xc,friends_func_ptr_table_157a60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157A88,0xc,friends_func_ptr_table_157a88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157AB0,0xc,friends_func_ptr_table_157ab0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157AD8,0xc,friends_func_ptr_table_157ad8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157D04,0xc,friends_func_ptr_table_157d04,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157D2C,0xc,friends_func_ptr_table_157d2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157D90,0x10,friends_func_ptr_table_157d90,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157E80,0xc,friends_func_ptr_table_157e80,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00157EA8,0xc,friends_func_ptr_table_157ea8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158098,0xc,friends_func_ptr_table_158098,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001581EC,0xc,friends_func_ptr_table_1581ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158278,0x10,friends_func_ptr_table_158278,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001582E8,0x1c,friends_func_ptr_table_1582e8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001583EC,0xc,friends_func_ptr_table_1583ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158518,0xc,friends_func_ptr_table_158518,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158540,0xc,friends_func_ptr_table_158540,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158568,0xc,friends_func_ptr_table_158568,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001585E0,0xc,friends_func_ptr_table_1585e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001586B0,0xc,friends_func_ptr_table_1586b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001586D8,0xc,friends_func_ptr_table_1586d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001586E8,0xc,friends_func_ptr_table_1586e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158768,0xc,friends_func_ptr_table_158768,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158880,0x10,friends_func_ptr_table_158880,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158A08,0xc,friends_func_ptr_table_158a08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158A40,0xc,friends_func_ptr_table_158a40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158A9C,0xc,friends_func_ptr_table_158a9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158B0C,0xc,friends_func_ptr_table_158b0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158D54,0xc,friends_func_ptr_table_158d54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158E2C,0xc,friends_func_ptr_table_158e2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00158ED0,0xc,friends_func_ptr_table_158ed0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001590C0,0xc,friends_func_ptr_table_1590c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015913C,0xc,friends_func_ptr_table_15913c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00159200,0xc,friends_func_ptr_table_159200,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00159290,0xc,friends_func_ptr_table_159290,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00159388,0xc,friends_func_ptr_table_159388,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001593E4,0xc,friends_func_ptr_table_1593e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001595AC,0xc,friends_func_ptr_table_1595ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001595D4,0xc,friends_func_ptr_table_1595d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001595FC,0xc,friends_func_ptr_table_1595fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015996C,0x10,friends_func_ptr_table_15996c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001599E0,0xc,friends_func_ptr_table_1599e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00159A40,0x6,friends_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00159AF3,0x6,friends_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x00159AF9,0x6,friends_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x00159AFF,0x9,friends_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x00159B08,0x9,friends_str_service_gsp__Gpu,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Gpu"""
+0x0015B63C,0xc,friends_func_ptr_table_15b63c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015B730,0xb,friends_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

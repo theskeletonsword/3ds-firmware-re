@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100174,0x2c,lib_crt_fini_array_100174,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x001025EC,0x5c,lib_crt_strlen_1025ec,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:fs @0x0011E1FC ""fs_crt_strlen_0011e1fc"" (o3ds_semantic)"
+0x001020DC,0x38,lib_i2c_bus_1020dc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x00102DC8 ""i2c_i2c_bus_102dc8"" (o3ds_semantic)"
+0x00102F04,0xe0,lib_i2c_bus_102f04,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x001013C0 ""i2c_i2c_bus_1013c0"" (o3ds_semantic)"
+0x00102204,0xb4,lib_sync_event_or_arbiter_wait_102204,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x0010352C ""pm_sync_event_or_arbiter_wait_0010352c"" (o3ds_semantic)"
+0x00102114,0xe4,lib_thread_create_and_start_102114,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:pm @0x00100FB4 ""pm_thread_create_and_start"" (o3ds_semantic)"
+0x001030A8,0x148,lib_slab_alloc_entry_1030a8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x0010270C ""sm_slab_alloc_entry"" (o3ds_semantic)"

@@ -1,0 +1,23 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100770,0x18,pxi_svc_0x4A_AcceptSession_100770,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100994,0x54,pxi_ipc_client_cmd_0003_100994,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00100E8C,0x18,pxi_svc_0x2D_ConnectToPort_100e8c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100EA4,0x18,pxi_svc_0x13_CreateMutex_100ea4,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101BB8,0x18,pxi_svc_0x16_ReleaseSemaphore_101bb8,svc_wrapper,"function body is a single `svc #0x16` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101CAC,0x18,pxi_svc_0x22_ArbitrateAddress_101cac,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102728,0x18,pxi_svc_0x17_CreateEvent_102728,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001027C4,0x18,pxi_svc_0x21_CreateAddressArbiter_1027c4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010280C,0x18,pxi_svc_0x4F_ReplyAndReceive_10280c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102824,0xc,pxi_svc_0x0A_SleepThread_102824,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102BCC,0x10,pxi_svc_0x50_BindInterrupt_102bcc,svc_wrapper,"function body is a single `svc #0x50` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102C30,0x1c,pxi_svc_0x2B_GetProcessInfo_102c30,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102C4C,0x10,pxi_svc_0x51_UnbindInterrupt_102c4c,svc_wrapper,"function body is a single `svc #0x51` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102E48,0x18,pxi_svc_0x15_CreateSemaphore_102e48,svc_wrapper,"function body is a single `svc #0x15` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102E60,0x18,pxi_svc_0x27_DuplicateHandle_102e60,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103134,0x48,pxi_ipc_handler_cmd_0001_103134,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x00103866,0x8,pxi_str_service_pxi_am9,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pxi:am9"""
+0x0010386E,0x8,pxi_str_service_pxi_dev,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pxi:dev"""
+0x00103876,0x7,pxi_str_service_pxi_mc,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pxi:mc"""
+0x0010387D,0x8,pxi_str_service_pxi_ps9,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pxi:ps9"""
+0x00103928,0x5,pxi_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0010392D,0x7,pxi_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""

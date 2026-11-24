@@ -1,0 +1,74 @@
+0x0010317C	%s %s %06X %s
+0x00110270	%s%a Feap
+0x00113F88	https://%s/title/0x%016llx/ext_key?country=%s
+0x00115518	%s_TKT
+0x00116330	%s/%016llX/%08X
+0x00117DA8	https://%c-npns.app.nintendo.net/api/v1/
+0x00117E0C	%snotifications.json?maxlength=%d
+0x00117E30	%snotifications.json?revision=%llu&maxlength=%d
+0x00117EF8	%snotifications/sweep.json
+0x001182D4	UNEXPECTED ERROR
+0x001183F4	%s/%016llX/tmd.%u
+0x00118408	%s/%016llX/tmd
+0x00118428	%caccountId=%s
+0x0011AB80	%s%s%s%s
+0x0011B088	CTR/%c/1.0.0/r%u
+0x00124B00	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x001252A0	http://www.w3.org/XML/1998/namespace
+0x001252E8	http://www.w3.org/2001/XMLSchema-instance
+0x0012AADC	%s-%llu-%llu
+0x0012CD70	https://
+0x0012D630	%s%s%s%s
+0x001316AC	%llu%s
+0x00131714	%llu%s%s
+0x00139DA0	RWSTDERR
+0x0013E65D	H%s%a 8ea$
+0x001474A0	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014751C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00147590	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00147604	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014863D	on%s&%p
+0x0014A674	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A6EC	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A760	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A7D4	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014A8E4	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0014B2F8	%s/%016llX/%08X
+0x0014B7B8	Exception: %s.
+0x0014DB90	d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001511BC	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x001514B0	https://ninja.ctr.shop.nintendo.net/ninja/ws/my/balance/current_raw
+0x001514F4	https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x00151533	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x00151BDE	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+0x00151C2C	                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+0x00151C7A	                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+0x00151CC3	                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+0x00151D03	                   xmlns:%s="urn:%s.wsapi.broadon.com">
+0x00151D4B	%s%s%s<%s:%s xsi:type="%s:%sRequestType">
+0x00151D75	<%s:Version>%s</%s:Version>
+0x00151D91	<%s:MessageId>%s</%s:MessageId>
+0x001522C8	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x0015250C	d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x00154BC2	%s: bad locale name: "%s"
+0x00154BDC	%s: range error: invalid range [%d, %d)
+0x00154C04	%s: argument value %u out of range [0, %u)
+0x00154C2F	%s: conversion failed
+0x00154C45	%s: facet %u not found in "%s" locale
+0x00154C6B	%s: failed to construct locale name
+0x00154C8F	%s: exception
+0x00154C9D	%s: unexpected exception
+0x00154CB6	%s: invalid pointer %p
+0x00154CCD	%s: logic error
+0x00154CDD	%s: unspecified error
+0x00154CF3	%s: runtime error
+0x00154D05	%s: underflow error
+0x00154D19	%s: overflow error
+0x00154D2C	%s: stream object has set %s
+0x00154D49	%s: stream object has set ios::badbit
+0x00154D6F	%s: stream object has set ios::eofbit
+0x00154D95	%s: stream object has set ios::failbit
+0x00154DBC	%s: bad cast
+0x00154DC9	%s: length error: %u > %u
+0x00154DE3	%s: bad_alloc: out of memory
+0x00154E00	%s: out of memory

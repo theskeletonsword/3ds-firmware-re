@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010D7D4,0x56,strref_csnd_SND_10d7d4,string_reference,function references string(s): csnd:SND
+0x0013EBD8,0x222,strref_NintendoDS_13ebd8,string_reference,function references string(s): NintendoDS
+0x0013F2A0,0x1a0,strref_Nintendo_13f2a0,string_reference,function references string(s): Nintendo
+0x001B4F28,0xa8,strref_IconPtrn_1b4f28,string_reference,function references string(s): IconPtrn
+0x0029962E,0x518,strref_s_invalid_pointer_p_29962e,string_reference,function references string(s): %s: invalid pointer %p

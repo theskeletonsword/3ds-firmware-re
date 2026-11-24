@@ -1,0 +1,27 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010ECF0,0x328,strref_NintendoDS_10ecf0,string_reference,function references string(s): NintendoDS
+0x00153410,0xdc,strref_coin_count_T_sdw_153410,string_reference,function references string(s): coin_count_T | coin_count_T_sdw | gamecoin_count
+0x0015BDE4,0x160,strref_cmn_dialogU_bclyt_15bde4,string_reference,function references string(s): cmn_dialogU.bclyt
+0x00165D48,0x15c,strref_drgn_bite01_165d48,string_reference,function references string(s): RootPane | drgn_bite01 | drgn_bite02
+0x00176874,0x74,strref_titleT_sdw_176874,string_reference,function references string(s): titleT_sdw
+0x00177238,0xdc,strref_ar_mii_appearance01Model_177238,string_reference,function references string(s): ar_mii_appearance01Model | ar_mii_appearance02Model | ar_mii_change01Model
+0x00178828,0x128,strref_ar_mii_select_cursor_loop_178828,string_reference,function references string(s): ar_mii_select_cursor_loop
+0x00185B18,0xbec,strref_shadow_model_185b18,string_reference,function references string(s): shadow_model
+0x0018F58C,0x44,strref_a_button_18f58c,string_reference,function references string(s): a_button
+0x001A3090,0x61c,strref_fish_gold_1a3090,string_reference,function references string(s): fish_gold
+0x001A373C,0x80,strref_fish_silver_1a373c,string_reference,function references string(s): fish_Msize | fish_Ssize | fish_gold
+0x001AB28C,0x124,strref_spotlight_model_1ab28c,string_reference,function references string(s): spotlight_model
+0x001ACE00,0xd8,strref_helpmaru_T_sdw_1ace00,string_reference,function references string(s): helpmaru_T | helpmaru_T_sdw
+0x001B45B0,0x80,strref_StepShooting1_1b45b0,string_reference,function references string(s): StepShooting1
+0x001E2934,0x74,strref_ar_mii_select_cursor_start_1e2934,string_reference,function references string(s): ar_mii_select_cursor_start
+0x001F73B8,0x970,strref_shadow_model_1f73b8,string_reference,function references string(s): shadow_model
+0x00215AB4,0x28c,strref_Nintendo_3DS_215ab4,string_reference,function references string(s): Nintendo | Nintendo 3DS
+0x00221008,0x168,strref_ghost_die_221008,string_reference,function references string(s): ghost_die
+0x0022B43C,0xf8,strref_ar_chara_appearance02Model_22b43c,string_reference,function references string(s): ar_chara_appearance02Model | ar_chara_appearance03Model | ar_chara_appearance04Model
+0x0022F38C,0xb8,strref_window02_T_22f38c,string_reference,function references string(s): window02_T | window_T
+0x00231874,0xdc,strref_cmn_start_clearU_bclyt_231874,string_reference,function references string(s): cmn_start_clearU.bclyt
+0x0023EC88,0x14c,strref_drgn_bite01_23ec88,string_reference,function references string(s): RootPane | drgn_bite01 | drgn_bite02
+0x0024926C,0xb8,strref_window02_T_24926c,string_reference,function references string(s): window02_T | window_T
+0x002528F0,0x90,strref_zukan_number_bclyt_2528f0,string_reference,function references string(s): namber_modelPs | pageT_sdw | zukan_number.bclyt
+0x00292708,0x148,strref_rom_sound_cplay_bcsar_292708,string_reference,function references string(s): rom:/sound/cplay.bcsar
+0x00292870,0xe8,strref_rom_sound_cplay_bcsar_292870,string_reference,function references string(s): rom:/sound/cplay.bcsar

@@ -1,0 +1,9 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00108A70,0x24,camera_svc_0x01_ControlMemory_108a70,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00108AB8,0x8,camera_get_tls_108ab8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0010E41C,0x30,camera_svc_0x02_QueryMemory_10e41c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x0010E500,0x24,camera_svc_0x08_CreateThread_10e500,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0010E5C8,0x24,camera_svc_0x25_WaitSynchronizationN_10e5c8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x0010E8CC,0x8,camera_get_tls_10e8cc,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0010EB5C,0x28,camera_svc_0x55_StartInterProcessDma_10eb5c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x55) (StartInterProcessDma); 8 C lines
+0x00100100,0x2aa,camera_ipc_server_loop_100100,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10e34c

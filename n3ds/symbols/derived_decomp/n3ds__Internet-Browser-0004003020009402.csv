@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0025BA58,0x4,internet_svc_0x3C_Break_25ba58,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x002646BC,0x10,internet_get_tls_2646bc,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00264BEC,0x30,internet_svc_0x02_QueryMemory_264bec,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x00265974,0x8,internet_get_tls_265974,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0026711C,0x24,internet_svc_0x01_ControlMemory_26711c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0026DE58,0xc,internet_get_tls_26de58,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0026FB10,0x24,internet_svc_0x08_CreateThread_26fb10,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0027657C,0x24,internet_svc_0x25_WaitSynchronizationN_27657c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00280FC0,0x10,internet_get_tls_280fc0,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0028FE64,0x18,internet_svc_0x3C_Break_28fe64,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines

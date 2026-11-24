@@ -1,0 +1,121 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100AB8,0x18,FACE_svc_0x21_CreateAddressArbiter_100ab8,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100C3C,0x5,FACE_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00101324,0x1c,FACE_svc_0x2B_GetProcessInfo_101324,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102730,0x18,FACE_svc_0x2D_ConnectToPort_102730,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105420,0x18,FACE_svc_0x35_GetProcessId_105420,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105438,0x8,FACE_svc_0x0A_SleepThread_105438,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010C228,0x18,FACE_svc_0x13_CreateMutex_10c228,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010C240,0x8,FACE_svc_0x20_UnmapMemoryBlock_10c240,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00115790,0xb3c,FACE_ipc_handler_cmd_0008_0040_0192_etc_115790,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x00115E52,0x94,FACE_ipc_handler_cmd_0008_115e52,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080300
+0x00115EE6,0x54e,FACE_ipc_handler_cmd_0007_0040_115ee6,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00070100, 0x00400050"
+0x00116C0C,0x18,FACE_svc_0x22_ArbitrateAddress_116c0c,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00116C48,0x8,FACE_svc_0x03_ExitProcess_116c48,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012C1E0,0x8,FACE_svc_0x1F_MapMemoryBlock_12c1e0,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001376D8,0xd94,FACE_ipc_dispatcher_1376d8,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0200, 0x000F028B, 0x000F028C"
+0x00143A1C,0x18,FACE_svc_0x17_CreateEvent_143a1c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015859C,0x5d8,FACE_ipc_dispatcher_15859c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x00159EB8,0x8,FACE_svc_0x18_SignalEvent_159eb8,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017ED50,0x8,FACE_svc_0x19_ClearEvent_17ed50,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001FDA5E,0x5,FACE_str_service_d_Y0,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""d:Y0"""
+0x00212C5C,0xc,FACE_func_ptr_table_212c5c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00226D84,0x688,FACE_ipc_handler_cmd_004B_226d84,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B00C4
+0x0022740C,0x1ec,FACE_ipc_handler_cmd_004B_22740c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B00C4
+0x0023B460,0x27c,FACE_ipc_dispatcher_23b460,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x01000087, 0x01000089, 0x0100008A, 0x0100008B"
+0x0023C83C,0x2a0,FACE_ipc_dispatcher_23c83c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x01000087, 0x01000089, 0x010000CA, 0x0100010D"
+0x0025D818,0x160,FACE_ipc_dispatcher_25d818,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x01000087, 0x01000089, 0x010000CA, 0x01000107"
+0x00268E94,0x1ec,FACE_ipc_dispatcher_268e94,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x003F0110, 0x0100008C, 0x0100008D, 0x0100008E"
+0x00284248,0xc,FACE_func_ptr_table_284248,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00297C0C,0x8,FACE_svc_0x14_ReleaseMutex_297c0c,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029A3A0,0x8,FACE_svc_0x28_GetSystemTick_29a3a0,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029BD94,0x5,FACE_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0029C734,0x8,FACE_svc_0x23_CloseHandle_29c734,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029C73C,0x8,FACE_svc_0x24_WaitSynchronization1_29c73c,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029CE04,0x8,FACE_svc_0x32_SendSyncRequest_29ce04,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002B466C,0x12c,FACE_ipc_handler_cmd_004B_2b466c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0144
+0x002B8BA8,0x148,FACE_ipc_handler_cmd_004B_2b8ba8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0340
+0x002BCBC4,0x48,FACE_ipc_handler_cmd_004B_2bcbc4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0388
+0x002C2D68,0x12c,FACE_ipc_handler_cmd_004B_2c2d68,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B018C
+0x002C3B2C,0xe4,FACE_ipc_handler_cmd_004B_2c3b2c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B03D0
+0x002CE708,0xd8,FACE_ipc_handler_cmd_004B_2ce708,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0010
+0x002DA474,0x18,FACE_svc_0x27_DuplicateHandle_2da474,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00391CB0,0xc54,FACE_ipc_dispatcher_391cb0,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x0001008F, 0x00010149, 0x00020107, 0x000401C4"
+0x003A12C8,0x9e54,FACE_ipc_handler_cmd_0004_000B_3a12c8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x003AB128,0x648,FACE_ipc_dispatcher_3ab128,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x003C6070,0x5,FACE_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x003C6075,0x7,FACE_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x003C60B0,0x9,FACE_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x003C60C8,0x6,FACE_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x003C7A78,0x7,FACE_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x003C7A7F,0x8,FACE_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x003C8F68,0x6,FACE_str_service_save_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""save:"""
+0x003C9082,0x6,FACE_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x003C9088,0x6,FACE_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x003CB7B8,0x6,FACE_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x003CB7BE,0x6,FACE_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x003F0C5E,0x5,FACE_str_service_K_zh,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""K:zh"""
+0x003F1651,0x6,FACE_str_service_8r_06,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""8r:06"""
+0x003FF0AE,0x5,FACE_str_service_N_Ge,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""N:Ge"""
+0x004A51E4,0x6,FACE_str_service_6789_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""6789:"""
+0x004AB8D0,0x9,FACE_str_service_std__cin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cin"""
+0x004AB8DB,0xa,FACE_str_service_std__cout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cout"""
+0x004AB8E6,0xa,FACE_str_service_std__cerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cerr"""
+0x004AB8F1,0xa,FACE_str_service_std__clog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::clog"""
+0x004AB8FC,0xa,FACE_str_service_std__wcin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcin"""
+0x004AB907,0xb,FACE_str_service_std__wcout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcout"""
+0x004AB912,0xb,FACE_str_service_std__wcerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcerr"""
+0x004AB91D,0xb,FACE_str_service_std__wclog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wclog"""
+0x004AF3B4,0xc,FACE_func_ptr_table_4af3b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B06B0,0xc,FACE_func_ptr_table_4b06b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B0800,0xc,FACE_func_ptr_table_4b0800,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B08CC,0x10,FACE_func_ptr_table_4b08cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B0BE4,0xc,FACE_func_ptr_table_4b0be4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B0E1C,0xc,FACE_func_ptr_table_4b0e1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B0F64,0xc,FACE_func_ptr_table_4b0f64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B0FF4,0x10,FACE_func_ptr_table_4b0ff4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B118C,0xc,FACE_func_ptr_table_4b118c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B1244,0x10,FACE_func_ptr_table_4b1244,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B1384,0x18,FACE_func_ptr_table_4b1384,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B1404,0xc,FACE_func_ptr_table_4b1404,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B1670,0xc,FACE_func_ptr_table_4b1670,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B1690,0xc,FACE_func_ptr_table_4b1690,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B23B0,0xc,FACE_func_ptr_table_4b23b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2564,0xc,FACE_func_ptr_table_4b2564,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B26C4,0xc,FACE_func_ptr_table_4b26c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B273C,0x10,FACE_func_ptr_table_4b273c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2A28,0xc,FACE_func_ptr_table_4b2a28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2A80,0xc,FACE_func_ptr_table_4b2a80,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2BBC,0xc,FACE_func_ptr_table_4b2bbc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2BF0,0xc,FACE_func_ptr_table_4b2bf0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B2D80,0x10,FACE_func_ptr_table_4b2d80,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3124,0xc,FACE_func_ptr_table_4b3124,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3220,0xc,FACE_func_ptr_table_4b3220,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3254,0xc,FACE_func_ptr_table_4b3254,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3524,0x10,FACE_func_ptr_table_4b3524,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B39DC,0xc,FACE_func_ptr_table_4b39dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3B94,0xc,FACE_func_ptr_table_4b3b94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B3E48,0x10,FACE_func_ptr_table_4b3e48,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B4084,0xc,FACE_func_ptr_table_4b4084,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B4B00,0xc,FACE_func_ptr_table_4b4b00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B4B20,0xc,FACE_func_ptr_table_4b4b20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B4B48,0xc,FACE_func_ptr_table_4b4b48,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004B4EDC,0x6,FACE_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x004B4EE2,0x6,FACE_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x004B4EE8,0x6,FACE_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x004B4EEE,0x6,FACE_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x004B4EF4,0x9,FACE_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x004B4EFD,0x9,FACE_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x004B75BA,0x6,FACE_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x004B75C0,0x8,FACE_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x004B75C8,0x9,FACE_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x004B75D1,0x9,FACE_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x004B76A5,0x5,FACE_str_service_EXT_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""EXT:"""
+0x004B7993,0x6,FACE_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x004B7999,0x6,FACE_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x004BC4E9,0x6,FACE_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x004D45A0,0x18,FACE_func_ptr_table_4d45a0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004D45BC,0x24,FACE_func_ptr_table_4d45bc,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004D49A4,0x10,FACE_func_ptr_table_4d49a4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004D4A70,0x20,FACE_func_ptr_table_4d4a70,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x004FD968,0xb,FACE_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

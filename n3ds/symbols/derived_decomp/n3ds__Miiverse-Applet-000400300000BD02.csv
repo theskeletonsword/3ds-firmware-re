@@ -1,0 +1,9 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001002D4,0x10,miiverse_get_tls_1002d4,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00105688,0xc,miiverse_get_tls_105688,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00106A04,0x4,miiverse_svc_0x0A_SleepThread_106a04,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x00192158,0x18,miiverse_svc_0x3C_Break_192158,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x001AB37C,0x10,miiverse_svc_0x3C_Break_1ab37c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0024A004,0x4,miiverse_svc_0x28_GetSystemTick_24a004,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x28) (GetSystemTick); 5 C lines
+0x0024EF14,0x4,miiverse_svc_0x3C_Break_24ef14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00288300,0x10,miiverse_get_tls_288300,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"

@@ -1,0 +1,46 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,hid_svc_0x13_CreateMutex_10004c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100064,0x18,hid_svc_0x27_DuplicateHandle_100064,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001012CC,0x6c,hid_ipc_client_cmd_000D_1012cc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D00C0
+0x00102524,0x18,hid_svc_0x4A_AcceptSession_102524,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102DBC,0x54,hid_ipc_client_cmd_0003_102dbc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00102E18,0x48,hid_ipc_client_cmd_0004_102e18,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00103648,0x34,hid_ipc_client_cmd_0001_103648,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00103D24,0x18,hid_svc_0x21_CreateAddressArbiter_103d24,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104080,0x18,hid_svc_0x2D_ConnectToPort_104080,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104098,0x30,hid_ipc_client_cmd_0008_104098,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080080
+0x001040D0,0x44,hid_ipc_client_cmd_0005_1040d0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000500C0
+0x00104118,0x44,hid_ipc_client_cmd_0002_104118,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000200C0
+0x00104160,0x44,hid_ipc_client_cmd_0003_104160,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000300C0
+0x001041A8,0x30,hid_ipc_client_cmd_0002_1041a8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020080
+0x001041E0,0x58,hid_ipc_client_cmd_000E_1041e0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E00C2
+0x00104508,0x10,hid_svc_0x23_CloseHandle_104508,svc_wrapper,"function body is a single `svc #0x23` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104644,0x18,hid_svc_0x1B_SetTimer_104644,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001047B4,0x34,hid_ipc_client_cmd_0001_1047b4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010040
+0x00104988,0x18,hid_svc_0x17_CreateEvent_104988,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001049A0,0x18,hid_svc_0x1A_CreateTimer_1049a0,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104A44,0x30,hid_ipc_client_cmd_0009_104a44,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x00104D18,0x18,hid_svc_0x35_GetProcessId_104d18,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106114,0x48,hid_ipc_client_cmd_0009_106114,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090082
+0x00106164,0x44,hid_ipc_client_cmd_000A_106164,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000A0042
+0x001061B0,0x30,hid_ipc_client_cmd_0004_1061b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040080
+0x001061E8,0x30,hid_ipc_client_cmd_0006_1061e8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00060080
+0x00106790,0x1c,hid_svc_0x1E_CreateMemoryBlock_106790,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106DCC,0x6c,hid_ipc_client_cmd_000F_106dcc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000F00C0
+0x001071D4,0x10,hid_svc_0x3C_Break_1071d4,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001071E4,0x18,hid_svc_0x4F_ReplyAndReceive_1071e4,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001076C8,0x6d0,hid_ipc_handler_cmd_0002_0005_0008_etc_1076c8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00050040, 0x00080040, 0x000A0047"
+0x00109004,0x8,hid_str_service_cdc_HID,service_name_string,"client of (in ExHeader service-access list): ""cdc:HID"""
+0x0010900C,0x9,hid_str_service_gpio_HID,service_name_string,"client of (in ExHeader service-access list): ""gpio:HID"""
+0x00109015,0x9,hid_str_service_mcu__HID,service_name_string,"client of (in ExHeader service-access list): ""mcu::HID"""
+0x0010901E,0x9,hid_str_service_i2c__HID,service_name_string,"client of (in ExHeader service-access list): ""i2c::HID"""
+0x0010904C,0x9,hid_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x00109055,0x9,hid_str_service_hid_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:USER"""
+0x00109080,0x6,hid_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x00109086,0x6,hid_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x0010908C,0x9,hid_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x0010909C,0x5,hid_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001090A1,0x7,hid_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001090AC,0x6,hid_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x001090E0,0x6,hid_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x00109128,0x6,hid_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

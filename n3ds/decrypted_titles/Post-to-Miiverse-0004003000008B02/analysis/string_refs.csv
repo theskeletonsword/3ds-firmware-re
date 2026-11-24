@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00140094,0x524,strref_STR_ERROR_SAVEBROKEN_140094,string_reference,function references string(s): STR_ERROR_SAVEBROKEN
+0x001410B8,0xc0,strref_1_2_7_f_NINTENDO_CTR_SDK_v1_1410b8,string_reference,function references string(s): 1.2.7.f-NINTENDO-CTR-SDK-v1
+0x00141184,0xd4,strref_1_2_7_f_NINTENDO_CTR_SDK_v1_141184,string_reference,function references string(s): 1.2.7.f-NINTENDO-CTR-SDK-v1
+0x001C36BC,0x1076,strref_STR_ERROR_SAVEMSG_1c36bc,string_reference,function references string(s): STR_ERROR_SAVEMSG
+0x001C7020,0x1a98,strref_STR_DELETE_DLG_1c7020,string_reference,function references string(s): STR_DELETE_DLG | confirmIn_00
+0x001C7650,0x6c6,strref_confirmOut_00_1c7650,string_reference,function references string(s): confirmOut_00
+0x001D25E4,0xe88,strref_STR_ERROR_COMMON_1d25e4,string_reference,function references string(s): STR_ERROR_COMMON
+0x001D36B4,0x28c,strref_STR_ERROR_INIT_1d36b4,string_reference,function references string(s): STR_ERROR_INIT | agree_olv
+0x001D3EC8,0xc8,strref_STR_SAVE_ERROR_1d3ec8,string_reference,function references string(s): STR_SAVE_ERROR
+0x001D4C88,0x28be,strref_STR_CANCEL_EDIT_1d4c88,string_reference,function references string(s): STR_CANCEL_EDIT

@@ -1,0 +1,284 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100C9C,0x18,spider_svc_0x35_GetProcessId_100c9c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001041B0,0x18,spider_svc_0x2D_ConnectToPort_1041b0,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001041C8,0x8,spider_svc_0x0A_SleepThread_1041c8,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107CC4,0xc80,spider_ipc_handler_cmd_0007_0008_0040_etc_107cc4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x00109A94,0x3c,spider_ipc_handler_cmd_0011_109a94,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00110240
+0x0010ADCC,0x18,spider_svc_0x22_ArbitrateAddress_10adcc,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00111E58,0x18,spider_svc_0x13_CreateMutex_111e58,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00111E70,0x18,spider_svc_0x37_GetThreadId_111e70,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00115940,0x870,spider_ipc_handler_cmd_0001_115940,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010140
+0x0012C3D0,0x54,spider_ipc_handler_cmd_0005_12c3d0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00050100
+0x00138B08,0x8,spider_str_service_Issuer_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Issuer:"""
+0x0013F9AC,0x7,spider_str_service_ldr_ro,service_name_string,"client of (in ExHeader service-access list): ""ldr:ro"""
+0x00144A44,0x6,spider_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00144AA4,0x5,spider_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001692B0,0x48,spider_ipc_handler_cmd_0019_1692b0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00190002
+0x001693FC,0x48,spider_ipc_handler_cmd_0008_1693fc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x0016944C,0x48,spider_ipc_handler_cmd_0008_16944c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x0016B5CC,0x48,spider_ipc_handler_cmd_004B_16b5cc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0002
+0x0017AB40,0x18,spider_svc_0x17_CreateEvent_17ab40,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017AB58,0x18,spider_svc_0x1A_CreateTimer_17ab58,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017AB70,0x8,spider_svc_0x14_ReleaseMutex_17ab70,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017AB78,0x18,spider_svc_0x1B_SetTimer_17ab78,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00186068,0x2420,spider_ipc_dispatcher_186068,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F01C5, 0x000F0200, 0x000F028B"
+0x0018AD60,0x5d8,spider_ipc_dispatcher_18ad60,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0019D478,0x8,spider_svc_0x19_ClearEvent_19d478,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D480,0x1c,spider_svc_0x1E_CreateMemoryBlock_19d480,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D4A0,0x8,spider_svc_0x03_ExitProcess_19d4a0,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D4A8,0x8,spider_svc_0x1F_MapMemoryBlock_19d4a8,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D4B0,0x8,spider_svc_0x18_SignalEvent_19d4b0,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D4B8,0x8,spider_svc_0x20_UnmapMemoryBlock_19d4b8,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019DAA4,0x5,spider_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001AFC14,0x7e0,spider_ipc_dispatcher_1afc14,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000F02C0, 0x00390280, 0x00390380, 0x00390410"
+0x001BC860,0x18,spider_svc_0x27_DuplicateHandle_1bc860,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BC878,0x18,spider_svc_0x06_GetProcessIdealProcessor_1bc878,svc_wrapper,"function body is a single `svc #0x06` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BC890,0x18,spider_svc_0x0B_GetThreadPriority_1bc890,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BC8A8,0x8,spider_svc_0x0C_SetThreadPriority_1bc8a8,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001D95C0,0xc,spider_str_service_about_blank,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""about:blank"""
+0x001DCF6C,0x9,spider_str_service_Subject_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Subject:"""
+0x001DCF94,0x8,spider_str_service_Issuer_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Issuer:"""
+0x001E6F54,0xc,spider_str_service_about_blank,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""about:blank"""
+0x00228A14,0x8,spider_svc_0x23_CloseHandle_228a14,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0022C74C,0x8,spider_svc_0x28_GetSystemTick_22c74c,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00236960,0x10,spider_func_ptr_table_236960,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0023CC8C,0x5e0,spider_ipc_handler_cmd_0011_23cc8c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00110240
+0x002447B8,0x8,spider_svc_0x32_SendSyncRequest_2447b8,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00275B54,0x48,spider_ipc_handler_cmd_0008_275b54,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x0028E178,0x4c,spider_ipc_handler_cmd_0007_28e178,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000700C0
+0x0028E204,0x4c,spider_ipc_handler_cmd_0004_28e204,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000400C0
+0x0028E294,0x50,spider_ipc_handler_cmd_000E_28e294,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000E00C0
+0x0028E4AC,0x54,spider_ipc_handler_cmd_0003_28e4ac,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030100
+0x0028E508,0x4c,spider_ipc_handler_cmd_0007_28e508,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000700C0
+0x0028E55C,0x4c,spider_ipc_handler_cmd_0004_28e55c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000400C0
+0x0028E5B0,0x50,spider_ipc_handler_cmd_000E_28e5b0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000E00C0
+0x0029AE58,0x5,spider_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x002ACD50,0x48,spider_ipc_handler_cmd_0080_2acd50,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00800002
+0x002B090C,0x11674,spider_ipc_handler_cmd_0004_000B_2b090c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x002C1FF8,0x728,spider_ipc_dispatcher_2c1ff8,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x002C2BDC,0x60,spider_ipc_handler_cmd_000F_2c2bdc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F02C0
+0x00321F5C,0x35b0,spider_ipc_dispatcher_321f5c,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x000F01C3, 0x000F01C5, 0x000F0200, 0x000F028B"
+0x00337E2C,0xc,spider_func_ptr_table_337e2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00351668,0xc,spider_func_ptr_table_351668,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00356EEC,0xc,spider_func_ptr_table_356eec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0037B1C4,0x5,spider_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0037B1C9,0x7,spider_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0037B1D0,0x6,spider_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x00382840,0x10,spider_func_ptr_table_382840,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00382854,0x7,spider_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0038285B,0x8,spider_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x00382863,0x6,spider_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0038287C,0x6,spider_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x00386C6C,0xc,spider_func_ptr_table_386c6c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00386C98,0xc,spider_func_ptr_table_386c98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0038921C,0x9,spider_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x00389225,0x5,spider_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x00389330,0x18,spider_func_ptr_table_389330,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00389428,0x10,spider_func_ptr_table_389428,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00389458,0x18,spider_func_ptr_table_389458,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0038947C,0xc,spider_func_ptr_table_38947c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00389498,0x10,spider_func_ptr_table_389498,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003894B8,0x10,spider_func_ptr_table_3894b8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00389554,0x4c,spider_func_ptr_table_389554,pointer_table,19 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00389698,0x80,spider_func_ptr_table_389698,pointer_table,32 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0038C3A8,0x5,spider_str_service_ac_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ac:i"""
+0x0038C3AD,0x7,spider_str_service_cecd_u,service_name_string,"client of (in ExHeader service-access list): ""cecd:u"""
+0x0038C3B4,0x7,spider_str_service_cecd_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cecd:s"""
+0x0038C3BB,0x6,spider_str_service_frd_a,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:a"""
+0x0038F3FC,0x6,spider_str_service_CWAT_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""CWAT:"""
+0x003926E0,0x7,spider_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x003926E9,0x7,spider_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x00396676,0x8,spider_str_service_ir_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ir:USER"""
+0x003A55AC,0x10,spider_func_ptr_table_3a55ac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A55C0,0xc,spider_func_ptr_table_3a55c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5634,0x18,spider_func_ptr_table_3a5634,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A56F0,0xc,spider_func_ptr_table_3a56f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A576C,0xc,spider_func_ptr_table_3a576c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A57AC,0xc,spider_func_ptr_table_3a57ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A59D8,0x1c,spider_func_ptr_table_3a59d8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5A20,0xc,spider_func_ptr_table_3a5a20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5A44,0xc,spider_func_ptr_table_3a5a44,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5A5C,0x1c,spider_func_ptr_table_3a5a5c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5C18,0xc,spider_func_ptr_table_3a5c18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5C3C,0xc,spider_func_ptr_table_3a5c3c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5C84,0x10,spider_func_ptr_table_3a5c84,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5CA8,0x1c,spider_func_ptr_table_3a5ca8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5CE0,0x10,spider_func_ptr_table_3a5ce0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5D04,0x10,spider_func_ptr_table_3a5d04,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5D78,0xc,spider_func_ptr_table_3a5d78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5D98,0x20,spider_func_ptr_table_3a5d98,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5DFC,0x10,spider_func_ptr_table_3a5dfc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5E20,0x14,spider_func_ptr_table_3a5e20,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5E78,0x10,spider_func_ptr_table_3a5e78,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5E9C,0x1c,spider_func_ptr_table_3a5e9c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5F00,0x10,spider_func_ptr_table_3a5f00,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A5F24,0x1c,spider_func_ptr_table_3a5f24,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A607C,0x10,spider_func_ptr_table_3a607c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A60CC,0x10,spider_func_ptr_table_3a60cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A617C,0x10,spider_func_ptr_table_3a617c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A62DC,0x10,spider_func_ptr_table_3a62dc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A636C,0xc,spider_func_ptr_table_3a636c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A63B8,0x14,spider_func_ptr_table_3a63b8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6510,0x10,spider_func_ptr_table_3a6510,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A65B4,0x10,spider_func_ptr_table_3a65b4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A660C,0x10,spider_func_ptr_table_3a660c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6620,0x14,spider_func_ptr_table_3a6620,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A663C,0x10,spider_func_ptr_table_3a663c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6E34,0xc,spider_func_ptr_table_3a6e34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6E4C,0xc,spider_func_ptr_table_3a6e4c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6E64,0xc,spider_func_ptr_table_3a6e64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6E7C,0xc,spider_func_ptr_table_3a6e7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6E94,0xc,spider_func_ptr_table_3a6e94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6EF4,0xc,spider_func_ptr_table_3a6ef4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A6F0C,0xc,spider_func_ptr_table_3a6f0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A7044,0xc,spider_func_ptr_table_3a7044,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A7104,0xc,spider_func_ptr_table_3a7104,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A747C,0xc,spider_func_ptr_table_3a747c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A74DC,0xc,spider_func_ptr_table_3a74dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A7AE4,0x1c,spider_func_ptr_table_3a7ae4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8168,0xc,spider_func_ptr_table_3a8168,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A82AC,0x30,spider_func_ptr_table_3a82ac,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A82EC,0x14,spider_func_ptr_table_3a82ec,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8380,0x30,spider_func_ptr_table_3a8380,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A83D0,0x10,spider_func_ptr_table_3a83d0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A845C,0xc,spider_func_ptr_table_3a845c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A84A4,0x14,spider_func_ptr_table_3a84a4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A84F4,0x1c,spider_func_ptr_table_3a84f4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8578,0x14,spider_func_ptr_table_3a8578,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A85C8,0x1c,spider_func_ptr_table_3a85c8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A862C,0x14,spider_func_ptr_table_3a862c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A867C,0x14,spider_func_ptr_table_3a867c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A86CC,0x1c,spider_func_ptr_table_3a86cc,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8720,0xc,spider_func_ptr_table_3a8720,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8760,0x14,spider_func_ptr_table_3a8760,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8788,0xc,spider_func_ptr_table_3a8788,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A889C,0x30,spider_func_ptr_table_3a889c,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A88E4,0x10,spider_func_ptr_table_3a88e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8914,0xc,spider_func_ptr_table_3a8914,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8928,0xc,spider_func_ptr_table_3a8928,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8950,0xc,spider_func_ptr_table_3a8950,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8964,0xc,spider_func_ptr_table_3a8964,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A89A4,0xc,spider_func_ptr_table_3a89a4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8A4C,0xc,spider_func_ptr_table_3a8a4c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8B30,0xc,spider_func_ptr_table_3a8b30,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8BC8,0xc,spider_func_ptr_table_3a8bc8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8C10,0xc,spider_func_ptr_table_3a8c10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8F84,0x10,spider_func_ptr_table_3a8f84,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8F9C,0xc,spider_func_ptr_table_3a8f9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8FB0,0xb4,spider_func_ptr_table_3a8fb0,pointer_table,45 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9504,0xc,spider_func_ptr_table_3a9504,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A96E0,0x10,spider_func_ptr_table_3a96e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9770,0x10,spider_func_ptr_table_3a9770,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A97C8,0x10,spider_func_ptr_table_3a97c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9950,0xc,spider_func_ptr_table_3a9950,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9994,0x18,spider_func_ptr_table_3a9994,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9A24,0x10,spider_func_ptr_table_3a9a24,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9A48,0x10,spider_func_ptr_table_3a9a48,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9A6C,0xc,spider_func_ptr_table_3a9a6c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9AD0,0xc,spider_func_ptr_table_3a9ad0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9B14,0x14,spider_func_ptr_table_3a9b14,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9B34,0x10,spider_func_ptr_table_3a9b34,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9BC4,0xc,spider_func_ptr_table_3a9bc4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9C88,0xc,spider_func_ptr_table_3a9c88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9D50,0x10,spider_func_ptr_table_3a9d50,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9D74,0x1c,spider_func_ptr_table_3a9d74,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9DE8,0xc,spider_func_ptr_table_3a9de8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9EE4,0xc,spider_func_ptr_table_3a9ee4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9F1C,0x14,spider_func_ptr_table_3a9f1c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9FA4,0xc,spider_func_ptr_table_3a9fa4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A9FF8,0x1c,spider_func_ptr_table_3a9ff8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA06C,0x18,spider_func_ptr_table_3aa06c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA0A4,0x10,spider_func_ptr_table_3aa0a4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA0B8,0x18,spider_func_ptr_table_3aa0b8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA13C,0x10,spider_func_ptr_table_3aa13c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA150,0xb4,spider_func_ptr_table_3aa150,pointer_table,45 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA328,0xc,spider_func_ptr_table_3aa328,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA350,0x50,spider_func_ptr_table_3aa350,pointer_table,20 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA3F4,0x10,spider_func_ptr_table_3aa3f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA43C,0x18,spider_func_ptr_table_3aa43c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA474,0x18,spider_func_ptr_table_3aa474,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA494,0xc,spider_func_ptr_table_3aa494,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA500,0x18,spider_func_ptr_table_3aa500,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA520,0x1c,spider_func_ptr_table_3aa520,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA540,0x14,spider_func_ptr_table_3aa540,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA558,0x10,spider_func_ptr_table_3aa558,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA56C,0xc,spider_func_ptr_table_3aa56c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA6D4,0x38,spider_func_ptr_table_3aa6d4,pointer_table,14 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA724,0x30,spider_func_ptr_table_3aa724,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA768,0x18,spider_func_ptr_table_3aa768,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA79C,0x1c,spider_func_ptr_table_3aa79c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA7C4,0x10,spider_func_ptr_table_3aa7c4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA7DC,0xc,spider_func_ptr_table_3aa7dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA7F4,0x1c,spider_func_ptr_table_3aa7f4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA824,0x10,spider_func_ptr_table_3aa824,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA83C,0xc,spider_func_ptr_table_3aa83c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA858,0x1c,spider_func_ptr_table_3aa858,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA880,0x18,spider_func_ptr_table_3aa880,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA89C,0x10,spider_func_ptr_table_3aa89c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA8CC,0xc,spider_func_ptr_table_3aa8cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA8DC,0xc,spider_func_ptr_table_3aa8dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA8FC,0x1c,spider_func_ptr_table_3aa8fc,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA92C,0xc,spider_func_ptr_table_3aa92c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA94C,0x14,spider_func_ptr_table_3aa94c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AA984,0xc,spider_func_ptr_table_3aa984,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAC1C,0x1c,spider_func_ptr_table_3aac1c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AACE4,0xc,spider_func_ptr_table_3aace4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAD10,0x1c,spider_func_ptr_table_3aad10,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAD38,0xc,spider_func_ptr_table_3aad38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAD74,0xc,spider_func_ptr_table_3aad74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AADC0,0x10,spider_func_ptr_table_3aadc0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAE18,0xc,spider_func_ptr_table_3aae18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAE4C,0xc,spider_func_ptr_table_3aae4c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAF58,0xc,spider_func_ptr_table_3aaf58,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAF6C,0x10,spider_func_ptr_table_3aaf6c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AAFE0,0x44,spider_func_ptr_table_3aafe0,pointer_table,17 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB12C,0xc,spider_func_ptr_table_3ab12c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB170,0x10,spider_func_ptr_table_3ab170,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB1D4,0x10,spider_func_ptr_table_3ab1d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB2A0,0x10,spider_func_ptr_table_3ab2a0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB2D0,0x10,spider_func_ptr_table_3ab2d0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB300,0x10,spider_func_ptr_table_3ab300,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB330,0x10,spider_func_ptr_table_3ab330,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB360,0x10,spider_func_ptr_table_3ab360,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB3C0,0x10,spider_func_ptr_table_3ab3c0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB3F0,0x10,spider_func_ptr_table_3ab3f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB450,0x10,spider_func_ptr_table_3ab450,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB490,0xc,spider_func_ptr_table_3ab490,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB4A4,0xc,spider_func_ptr_table_3ab4a4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB574,0xc,spider_func_ptr_table_3ab574,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB588,0xc,spider_func_ptr_table_3ab588,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB870,0xc,spider_func_ptr_table_3ab870,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB920,0xc,spider_func_ptr_table_3ab920,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB930,0x10,spider_func_ptr_table_3ab930,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB95C,0x10,spider_func_ptr_table_3ab95c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB9FC,0xc,spider_func_ptr_table_3ab9fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABA28,0x14,spider_func_ptr_table_3aba28,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABA40,0x10,spider_func_ptr_table_3aba40,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABA7C,0xc,spider_func_ptr_table_3aba7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABABC,0xc,spider_func_ptr_table_3ababc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABAD4,0x24,spider_func_ptr_table_3abad4,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABBE4,0x24,spider_func_ptr_table_3abbe4,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABC0C,0xc,spider_func_ptr_table_3abc0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ABFB8,0x10,spider_func_ptr_table_3abfb8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AC0C8,0x10,spider_func_ptr_table_3ac0c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AC198,0xc,spider_func_ptr_table_3ac198,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AC200,0x10,spider_func_ptr_table_3ac200,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AC23C,0xc,spider_func_ptr_table_3ac23c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003ACB44,0x6,spider_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x003ACD08,0x6,spider_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x003AF78E,0x9,spider_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x003AF797,0x9,spider_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x003AF7A0,0x9,spider_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x003AF7A9,0x9,spider_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x003AF7B2,0x9,spider_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x003AF7BB,0x6,spider_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x003AF7C1,0x9,spider_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x003AF7CA,0x6,spider_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x003AF7D0,0x9,spider_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x003AF7D9,0x6,spider_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x003AF7DF,0x6,spider_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x003AF945,0x6,spider_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x003AF94B,0x6,spider_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x003AFE93,0x6,spider_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x003DBD18,0xc,spider_func_ptr_table_3dbd18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EB7E0,0xb,spider_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

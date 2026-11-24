@@ -1,0 +1,37 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00102260,0x5d4,strref_3D_nwgfx_DefaultShader_LZ_bin_102260,string_reference,function references string(s): 3D/nwgfx_DefaultShader_LZ.bin
+0x0011F708,0x1b0,strref_s_s_bclan_11f708,string_reference,function references string(s): %s_%s.bclan
+0x00147BE4,0x2b2c,strref_ESSID_AOSS_147be4,string_reference,function references string(s): ESSID-AOSS
+0x0016A8A4,0x358,strref_NintendoDS_16a8a4,string_reference,function references string(s): NintendoDS
+0x00170F80,0x2f8,strref_Nintendo_170f80,string_reference,function references string(s): Nintendo
+0x0017474C,0x1ac,strref_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv_17474c,string_reference,function references string(s): ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x0018BBA4,0x70,strref_DSAHCFG_18bba4,string_reference,function references string(s): DSAHCFG-
+0x0018CC38,0x98,strref_ctx_digest_md_size_EVP_MAX_MD_SIZE_18cc38,string_reference,function references string(s): ctx->digest->md_size <= EVP_MAX_MD_SIZE
+0x00195C24,0x4e4,strref_TextBox_05_195c24,string_reference,function references string(s): TextBox_05
+0x00197FEC,0x2c0,strref_Aplt_D_00_197fec,string_reference,function references string(s): Aplt_D_00
+0x001990F0,0x290,strref_N_I_Button_02d_1990f0,string_reference,function references string(s): BasicTop_D_00 | BasicTop_D_03 | N_I_Button_%02d
+0x0019B878,0x560,strref_dlg_jump_reboot_19b878,string_reference,function references string(s): dlg_jump_reboot
+0x001C8AB4,0xb4,strref_WaitIcon_bclyt_1c8ab4,string_reference,function references string(s): N_WaitIcon_00 | WaitIcon.bclyt
+0x001D1E78,0x964,strref_ProgStart_bclan_1d1e78,string_reference,function references string(s): NumbWndw_10 | TextBoxTitle_04 | _ProgStart.bclan
+0x001F460C,0x10c,strref_net_new_raku1_1f460c,string_reference,function references string(s): net_new_aoss | net_new_raku1
+0x002013F0,0x5c8,strref_rom_broken_icon_broken_icon_LZ_bin_2013f0,string_reference,function references string(s): rom:/broken_icon/broken_icon_LZ.bin
+0x00208CDC,0x168,strref_BalloonNavi_D_SceneIn_01_bclan_208cdc,string_reference,function references string(s): BalloonNavi_D_SceneIn_01.bclan | Null_Obj | flw_last_entr_1
+0x00209190,0xf4,strref_Null_Obj_209190,string_reference,function references string(s): Null_Obj
+0x0020C514,0xe0,strref_Invalid_02d_20c514,string_reference,function references string(s): Invalid%02d
+0x00211BE8,0xf04,strref_3d_qtm_detail_211be8,string_reference,function references string(s): 3d_qtm_bonus | 3d_qtm_detail | 3d_qtm_look
+0x00211D9C,0x6c,strref_PlateBelt_211d9c,string_reference,function references string(s): PlateBelt
+0x002139C8,0xcc,strref_TextNum_00_2139c8,string_reference,function references string(s): TextNum_00
+0x002162AC,0x130,strref_starting_finish_2162ac,string_reference,function references string(s): starting_finish
+0x002163EC,0x184,strref_net_fact_change1_2163ec,string_reference,function references string(s): net_fact_change | net_fact_change1 | net_proxy
+0x0021658C,0x21414,strref_net_fact_change1_21658c,string_reference,function references string(s): net_fact_change | net_fact_change1 | net_proxy
+0x0021DD60,0x160,strref_IconApp_00_21dd60,string_reference,function references string(s): IconApp_00
+0x0021E9C0,0x110,strref_PareRtng_D_00_21e9c0,string_reference,function references string(s): PareRtng_D_00
+0x002233E0,0xc4,strref_TextBoxTitle_00_2233e0,string_reference,function references string(s): Null_Title | TextBoxTitle_00
+0x00224548,0x534,strref_TextBox_00_224548,string_reference,function references string(s): TextBox_00
+0x00227990,0x88,strref_TextNum_00_227990,string_reference,function references string(s): TextNum_00
+0x0022F15C,0x258,strref_TextBox_00_22f15c,string_reference,function references string(s): TextBox_00
+0x00232CAC,0xc4,strref_NetInit_D_06_232cac,string_reference,function references string(s): NetInit_D_06
+0x00233014,0xdd8,strref_flw_last_wait_233014,string_reference,function references string(s): flw_last_wait | starting_end | trans_wait
+0x0023547C,0x5cc,strref_s_Decide_02d_bclan_23547c,string_reference,function references string(s): %s_Decide_%02d.bclan | %s_Select_%02d.bclan
+0x00239FB4,0xa6db4,strref_N_I_TopLTs_00_239fb4,string_reference,function references string(s): N_I_TopLT_00 | N_I_TopLTs_00
+0x0025A138,0xa1c,strref_DSAHCFG_25a138,string_reference,function references string(s): DSAHCFG-

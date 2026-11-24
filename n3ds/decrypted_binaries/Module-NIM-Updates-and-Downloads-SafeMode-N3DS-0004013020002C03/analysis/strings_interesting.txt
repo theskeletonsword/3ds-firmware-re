@@ -1,0 +1,25 @@
+0x00104DA8	%s %s %06X %s
+0x00120D30	%s_TKT
+0x00123C50	%s/%016llX/%08X
+0x00131F88	%s-%llu-%llu
+0x001360C0	%s%s%s%s
+0x0013A8A0	UNEXPECTED ERROR
+0x0013AA44	%s/%016llX/tmd.%u
+0x0013AA58	%s/%016llX/tmd
+0x0013AA7C	%caccountId=%s
+0x0013F374	%s%s%s%s
+0x0014AE64	%llu%s
+0x0014AECC	%llu%s%s
+0x001584D4	%s/%016llX/%08X
+0x0015B0BC	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x0015B340	https://ninja.ctr.shop.nintendo.net/ninja/ws/my/balance/current_raw
+0x0015B384	https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x0015B3C3	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x0015B9C3	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+0x0015BA11	                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+0x0015BA5F	                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+0x0015BAA8	                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+0x0015BAE8	                   xmlns:%s="urn:%s.wsapi.broadon.com">
+0x0015BB30	%s%s%s<%s:%s xsi:type="%s:%sRequestType">
+0x0015BB5A	<%s:Version>%s</%s:Version>
+0x0015BB76	<%s:MessageId>%s</%s:MessageId>

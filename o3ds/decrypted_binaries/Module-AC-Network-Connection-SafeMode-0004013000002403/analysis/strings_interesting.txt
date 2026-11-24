@@ -1,0 +1,36 @@
+0x00104400	Exception: %s.
+0x001156C8	http://conntest.nintendowifi.net/
+0x00117FA4	RWSTDERR
+0x0011B325	nwm::INF
+0x0011BEE4	http://conntest.nintendowifi.net/
+0x0011BF06	https://nasc.nintendowifi.net/ac
+0x0011BF27	https://nas.nintendowifi.net/ac
+0x0011BF47	https://nasc.test.nintendowifi.net/ac
+0x0011BF6D	https://nas.test.nintendowifi.net/ac
+0x0011BF92	https://nasc.dev.nintendowifi.net/ac
+0x0011BFB7	https://nas.dev.nintendowifi.net/ac
+0x0011C047	%s: bad locale name: "%s"
+0x0011C061	%s: range error: invalid range [%d, %d)
+0x0011C089	%s: argument value %u out of range [0, %u)
+0x0011C0B4	%s: conversion failed
+0x0011C0CA	%s: facet %u not found in "%s" locale
+0x0011C0F0	%s: failed to construct locale name
+0x0011C114	%s: exception
+0x0011C122	%s: unexpected exception
+0x0011C13B	%s: invalid pointer %p
+0x0011C152	%s: logic error
+0x0011C162	%s: unspecified error
+0x0011C178	%s: runtime error
+0x0011C18A	%s: underflow error
+0x0011C19E	%s: overflow error
+0x0011C1B1	%s: stream object has set %s
+0x0011C1CE	%s: stream object has set ios::badbit
+0x0011C1F4	%s: stream object has set ios::eofbit
+0x0011C21A	%s: stream object has set ios::failbit
+0x0011C241	%s: bad cast
+0x0011C24E	%s: length error: %u > %u
+0x0011C268	%s: bad_alloc: out of memory
+0x0011C285	%s: out of memory
+0x0011F08D	%http://crl.globalsign.net/root-r2.crl0
+0x001210C3	#http://logo.verisign.com/vslogo.gif0
+0x00121580	#http://logo.verisign.com/vslogo.gif0

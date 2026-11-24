@@ -1,0 +1,338 @@
+0x001004A0	MARS: Couldn't initialize nn::ndm.
+0x001004DC	rom:/layout.nwcx
+0x001004F0	cbf_std.bcfnt
+0x00100500	rom:/fonts/Hud.bcfnt
+0x00100518	Hud.bcfnt
+0x0010053C	PANIC: jump to an unrecognized MSET target! (%d)
+0x00100954	rom:/messages/%s/%s
+0x00100980	mars.msbt
+0x00100F5C	rom:/shaders/DecalTextureVShader.shbin
+0x00101B08	rom:/dspaudio.cdc.nwcx
+0x00101B24	rom:/sound/mars_sound_data.bcsar
+0x00106AE8	boss::GetNsDataIdList
+0x00106B00	NsData::Initialize
+0x00106B14	NsData::GetHeaderInfo
+0x00106CAC	boss::Initialize()
+0x00106D90	ndm::Finalize()
+0x00106DA0	boss::Finalize()
+0x00107F98	UNKNOWN PLUGINMANAGER SUSPEND STATE! %d
+0x00108660	rom:/messages/mars.msbp
+0x00108E00	src/manager/http/http.cpp
+0x001094B0	Cache::~Cache called with an open handle on file '%s'
+0x001100DC	src/manager/http/http.cpp
+0x00110108	Got a double buffer usage where fill_length:%d > r->b->len:%d
+0x001213FC	App_ERR_Comm_WirelessDisconnect
+0x00121420	App_ERR_Comm_WirelessNG_13xx
+0x00121444	App_ERR_Comm_Wired
+0x00121458	App_ERR_Spider_Jump_InvalidURL
+0x00121478	App_ERR_Spider_Jump_NoWebBrowser
+0x0012149C	App_ERR_HTTP_StatusError
+0x001214B8	App_ERR_HTTP_FileNotFound
+0x001214D8	App_ERR_ZoneServer_DSMACDenied
+0x00121538	App_ERR_ZoneServer_APMACDenied
+0x00121558	App_ERR_ZoneServer_APNUMDenied
+0x00121578	App_ERR_ZoneServer_UnknownErr
+0x00121598	App_ERR_ZoneServer_NoHtmlTemplate
+0x001215BC	App_ERR_ZoneServer_NoGameList
+0x001215DC	App_ERR_ZoneServer_NoGameInfo
+0x001215FC	App_ERR_ZoneServer_NoAPInfo
+0x00121618	App_ERR_ZoneServer_NG_ServiceSuspended
+0x00121770	App_ERR_Trial_NeedAgreeEula
+0x0012178C	App_ERR_SD_300DownloadLimit
+0x001217A8	App_ERR_Trial_DownloadMgrError
+0x001217C8	App_ERR_Trial_CannotDownload
+0x001217E8	App_ERR_Trial_DownloadFail
+0x00121804	App_ERR_Trial_UnexpectedResult
+0x00121824	App_ERR_Trial_HttpError
+0x0012183C	App_ERR_Trial_OverAgeLimit
+0x00121930	App_ERR_Sys_SavedPageReadError
+0x00121950	App_ERR_Sys_SavePageFailed
+0x0012196C	App_ERR_Sys_SavedPageWriteError
+0x0012198C	App_ERR_Sys_SavedPageEraseError
+0x001219AC	App_ERR_Browser_PageSizeExceed
+0x001219CC	App_ERR_Browser_TooManyRedirects
+0x001219F4	App_ERR_ZoneSelect_FailWDBSearchInit
+0x00121A1C	App_ERR_ZoneSelect_ConnectionFailed
+0x00121A40	App_ERR_ZoneSelect_ServiceNotFound
+0x00121B38	App_ERR_HTTP_UnsupportedFile
+0x00121B58	App_ERR_SD_HardwareAccess
+0x00121B74	App_ERR_SD_FileNotFound
+0x00121B8C	App_ERR_SD_CreateExtDataError
+0x00121BAC	App_ERR_SD_GeneralReadError
+0x00121BC8	App_ERR_SD_BadFormat
+0x00121BE0	App_ERR_SD_GeneralReadError_sub
+0x00121C00	App_ERR_Sys_InitializationFailed
+0x00121C24	App_ERR_Sys_MemoryShortage
+0x00121C40	App_ERR_Sys_NANDError
+0x00121D74	App_ERR_BOSSDataCorrupt
+0x00121D8C	App_ERR_BOSSDataUnknownErr
+0x00121DA8	App_ERR_BOSSSetFailed
+0x00121DC0	App_ERR_BOSSTaskFull
+0x00121DD8	App_ERR_BOSSTaskAlreadyRegistered
+0x00122BA4	src/manager/http/http.cpp
+0x00133D20	src/manager/http/http.cpp
+0x00134130	bytes=%d-
+0x001349A8	RWSTDERR
+0x00134A44	https://
+0x00134A60	data:/
+0x00135220	makeUserdata bufname fails
+0x00135630	Handle::redirect - unable to find handle
+0x0013D2B8	libs/libloader/src/connection.cpp
+0x0013E568	Sound::voiceDropped sound = NULL!
+0x0014F40C	Stream::read_callback with NULL pointer!
+0x0014F43C	Stream: Read past end of buffer, read %d/%d bytes.
+0x0015A550	Cache::freeHandle - Called on a non-existant handle!
+0x001850FC	/ds/service/index.cgi?page=tb_index
+0x001851C8	ext:/boss_page/info/info.html
+0x001852E4	ext:/boss_page/news/news.html
+0x00186240	ext:/boss_page/news/news.html
+0x00186890	/ds/service/index.cgi?page=tb_index_up
+0x00186960	ext:/boss_page/info/info_top.html
+0x00186A88	ext:/boss_page/news/news_top.html
+0x00186B1C	rom:/www/included_html/startup_page/startup.html
+0x001876C4	ext:/boss_page/3dbanner.nwcla
+0x001876E4	rom:/www/included_html/3dbanner_US.nwcla
+0x001877DC	/ds/service/software_download/showimage.cgi?name=gameicon
+0x001878E4	/ds/service/software_download/gameinfo_top.cgi
+0x00188170	ext:/boss_page/news/news_top.html
+0x00188B44	/ds/service/software_download/showimage.cgi?name=gamerating
+0x00188BE4	rom:/www/included_html/startup_page/startup_top.html
+0x00188CE8	/ds/service/zone_select.cgi
+0x0018AD2C	rom:/www/included_html/offline_mode/
+0x0018D888	rom:/img/button_luna.gif
+0x0018D8AC	rom:/img/button.gif
+0x0018D8C0	rom:/img/button_pressed.gif
+0x0018DD54	rom:/img/radio_checked.gif
+0x0018DD70	rom:/img/radio_unchecked.gif
+0x0018DD94	rom:/img/checkbox_checked.gif
+0x0018DDB4	rom:/img/checkbox_unchecked.gif
+0x001B8870	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x001BB29C	http://
+0x001BB334	http://
+0x001C0728	Download Failed: System Must Be Updated
+0x001C0750	Download Failed: SD Card Error
+0x001C0774	Download Failed: Save Data Error
+0x001C079C	Download Failed: Invalid Title
+0x001C07C0	Download Failed: NIM Suspended
+0x001C07E4	Download Failed: Invalid Title Version
+0x001C0810	Download Failed: Over Age Limit
+0x001C0C64	Download Failed: Need to Agree to Latest EULA
+0x001C0C98	Download Failed: Invalid Country Code
+0x001C0CC4	Download Failed: Invalid Language Code
+0x001C0CF8	AC Connection Error %d
+0x001C110C	Download Failed: HTTP Error
+0x001C1148	Unknown Eshop error %d
+0x001C1160	Download Failed: Media Access Error
+0x001C1188	Download Failed: Unknown Error
+0x001C775C	http://
+0x001CA034	data:/MARS/mars_s.dat
+0x001DC774	rom:/img/image_select.gif
+0x001DF624	[class~="%s"]
+0x001DF634	[id~="%s"]
+0x001E2990	rom:/www/included_html/boss_page/
+0x001EB0A0	Handle::seek called on magic handle
+0x001EB0C8	Handle::seek called on non-seekable source
+0x001EB60C	Task::Initialize
+0x001EB620	Task::Cancel
+0x001EB630	boss::UnregisterTask
+0x001EB648	NsData::Delete
+0x001EBA74	boss::RegisterStorage
+0x001EBA8C	TaskPolicy::Initialize
+0x001EBAB0	NsaDownloadAction::Initialize
+0x001EBAD4	Task::Initialize
+0x001EBAF8	Task::Start
+0x001EE868	Handle::read called on magic handle
+0x001EE890	How did we get past end of file? (%d+%d)/%d
+0x001F0C70	 %d , %d , %d 
+0x001F0CA0	 %d , %d , %d , %lf 
+0x001F1008	 %d , %lf%% , %lf%% 
+0x001F1020	 %d , %lf%% , %lf%% , %lf 
+0x001F31CC	Connection::AddHeaderField returned failure
+0x001F3294	Impossible %d!
+0x001F5518	sdmc:/
+0x001F5520	data:/
+0x001F5538	http://
+0x001F5540	https://
+0x001F8DB0	Buffer::operator-- goes below zero
+0x001F91A8	Cache::reserve attempt to remove a non-existant buffer
+0x001F91E0	Cache::reserve was unable to find cache_entry_t entry
+0x001FD980	src/manager/http/http.cpp
+0x00201F84	Error at %s in %s.%d
+0x00202054	----------> Error at %s in %s.%d
+0x0020281C	ScrollBar.bclyt
+0x00202C58	rom:/img/missing.gif
+0x00209CA4	Handle::readall called on magic handle
+0x0020AE20	http://
+0x0020AE28	https://
+0x0020DD00	nw::lyt::Layout::CalculateMtx
+0x0021938C	.bclyt
+0x0021AA6C	data:/MARS/memo/
+0x0021B0F8	data:/MARS/memo/
+0x0021BD08	data:/MARS/memo/
+0x0021BD1C	%s%04d%02d%02d%02d%02d%02d
+0x0021F954	data:/MARS/memo/
+0x002206C0	Hud_00.bclyt
+0x00221DC8	Unable to allocate %d bytes for a new audio buffer
+0x002236EC	NsData::SetReadFlag
+0x00223768	NsData::GetReadFlag
+0x00224444	Page-save error - save status %d in unexpected state %d
+0x002276F8	Page-save error, page %d wouldn't allow saving!
+0x00228F4C	MediaPlugin::tophrefBrowserCallback missing param!
+0x00229E24	U_Memo.bclyt
+0x0022F6BC	page_fade.bclyt
+0x0023392C	BrowserPlugin::cleanTrashThreadFn with NULL param!
+0x00233DEC	BrowserPlugin::cleanTrashCallbackFn with NULL param!
+0x002363FC	Failed to Load Rating Information
+0x00238FD8	D_avcontrol.bclyt
+0x002395E4	Dialog.bclyt
+0x0023C260	rom:/saveicon_US.icn
+0x0023DCD4	PCNTL_FAIL
+0x0023FAC0	D_Help.bclyt
+0x00240314	D_Memo.bclyt
+0x00240A64	PageFadePlugin::doWork called while state is %d
+0x00240AE0	PageFadePlugin::FadeOut called while state is %d, and not idle
+0x002456D0	bottommenu_l.bclyt
+0x00245DD0	HomeNixSign.bclyt
+0x00247958	paint.bclyt
+0x0024DB54	U_avcontrol.bclyt
+0x0024E040	U_PluginBanner.bclyt
+0x0024E994	ZoneSelectPlugin::scanForWDBs
+0x0024FCE8	DownloadMgrPlugin::TaskWorkExecute param is NULL!
+0x0024FFC8	DownloadMgrPlugin::TaskWorkCallback param is NULL!
+0x0025080C	rom:/img/downloadmgr_defaulticon.jpg
+0x00250E7C	FileBrowserPlugin: unknown state %d
+0x0025125C	nzv::FileBrowserPlugin::photoSelectCallback NULL arg!
+0x0025137C	nzv::FileBrowserPlugin::soundSelectCallback NULL arg!
+0x0025151C	nzv::FileBrowserPlugin::requestErrorCallback NULL arg!
+0x00251740	nzv::NW4CArchivedSound::initialize(): No data.
+0x002526CC	U_Help.bclyt
+0x00256C80	DL_plogures.bclyt
+0x00257458	page_transition.bclyt
+0x0025781C	DL_plogures_U.bclyt
+0x00257D14	page_transition.bclyt
+0x00259C1C	Failed to create client certificate
+0x00259CA0	Failed to get proxy setting
+0x00259D20	ac failed startup
+0x00259D34	ac failed connect to access point
+0x00259D58	AC failed dhcp
+0x0025A1E0	AC failed connection test
+0x0025A214	AC failed hotspot authentication
+0x0025A238	AC failed hotspot connection test
+0x0025A274	AC failed hotspot logout
+0x0025A2BC	AC failed scan
+0x0025B25C	Precondition Failed
+0x0025B2DC	Expectation failed
+0x0025B350	Failed Dependency
+0x0025BD14	General SSL failure
+0x0025C2A8	SSL Failed to create certificate store
+0x0025C2D0	SSL Failed to create CRL store
+0x0025C2F0	SSL Failed to create client certificate
+0x0025C358	rom:/certs/root.der
+0x0025C390	rom:/certs/Nintendo_Class_2_CA.der
+0x0025C76C	Attempting to sleep at %d
+0x0025E014	data:/MARS/memo/
+0x0025F510	%d.%d.%d
+0x0025F664	data:/MARS/mars_s.dat
+0x002636E0	Exception: %s.
+0x002655EC	Sound::soundThreadProc with NULL soundPtr!
+0x00268858	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x00268F78	ReadEp: cannot find stream %d
+0x00268FBC	ReadEp: stream %d already disabled
+0x0026ABFC	, dispose: %d, delay: %d
+0x0026B288	  gif: block 0x2c, Image Block, %dx%d @ %d,%d, 
+0x0026B2B8	  local color map %d colors
+0x0026B2F4	    Block %d bytes
+0x0026B668	clear, dumping(0x%.3x), previous_code=%d, first_char=%d
+0x0026C0D4	  gif: global color table is %d bytes
+0x0026EC70	gfff%u. 
+0x00276DFE	Content-Disposition: form-data; name="%s"
+0x00276E32	--%s--
+0x002C3900	setting dict.entry[%d]=(first_char)%d, dict.prev[%d]=(prev_code)%d
+0x002C3948	Cache::open called with post data, and CACHE_NOCACHE was not set
+0x002C3998	Connection::Connection! FATAL, unable to allocate a new connection
+0x002C3AA0	Sound couldn't enforce the voice limit! (current = %d, limit = %d)
+0x002C3C60	BrowserPlugin::thumbnailCaptureCallback - no screen capture data!
+0x002C4314	Unable to initialize ssl, nn::ssl::Initialize returned failure.
+0x002C4358	[Startup::checkAge_callback] Somehow, ended up with an invalid date for today: (month=%d, day=%d, year=%d)
+0x002C43C4	[Startup::checkAge_callback] MsgDialogPlugin::GetAgeCheckResults() returned false.  This should never happen.
+0x002C44D4	PageFadePlugin::Enable3DMode called while state is %d, and not idle
+0x002C451C	PageFadePlugin::BlackOutScreens called while state is %d, and not idle
+0x002C4564	PageFadePlugin::RestoreScreens called while state is %d, and not idle
+0x002C45AC	NW4CPageTransition::addToPane -- requested to add to a bad pane!
+0x002C45F0	NW4C_TopPageTransition::updateLoading - unknown loadingState %d !
+0x002C4634	NW4C_BottomPageTransition::updateLoading - unknown loadingState %d !
+0x002C487C	Unsupported nw::lyt::TexFormat passed into DynamicTexture::Initialize!(): %d
+0x002C4BC8	nzv::NW4CArchivedSound::initialize(): Can't initialize SoundDataManager.
+0x002C4C14	nzv::NW4CArchivedSound::initialize(): Can't open specified archive.
+0x002C6C70	dsp::DSP
+0x002D49EC	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x002D4A2C	Found stream index %d but this stream is already present (duplicate?)...
+0x002D4A78	error: synchronized fixe packet size reader returned a packet with an unexpected size (%d != %d)
+0x002D4ADC	error: synchronized variable packet size reader returned a packet with an unexpected size (%d > %d)
+0x002D4B44	MoLive::Allocator: not enough memory to allocate %d bytes !!!
+0x002D5148	std::cin
+0x002D5153	std::cout
+0x002D515E	std::cerr
+0x002D5169	std::clog
+0x002D5174	std::wcin
+0x002D517F	std::wcout
+0x002D518A	std::wcerr
+0x002D5195	std::wclog
+0x002D8E40	rom:/fonts/twl21_2.nzf
+0x002D8E57	rom:/fonts/twl12_2.nzf
+0x002D8E6E	rom:/fonts/twl16_2.nzf
+0x002D8EB1	https://web001.nzone001.nintendo-europe.com
+0x002D8EDD	https://web002.nzone001.nintendo-europe.com
+0x002D8F09	https://web003.nzone001.nintendo-europe.com
+0x002D8F35	https://nzone001.nintendo-europe.com
+0x002D8F5A	https://zonebnr.nintendo.com
+0x002D8F77	https://ntn.nintendogateway.com
+0x002D8F97	https://osagashi.n-zone.jp
+0x002D8FB2	https://nwdsrvnzone-korea.nintendo.co.jp
+0x002D8FDB	https://nwdsrvnzone-china.nintendo.co.jp
+0x002D9004	https://nwdsrvnzone.nintendo.co.jp
+0x002D9027	https://dsdl.nintendowifi.net
+0x002D9416	App_ERR_ZoneServer_NG_ServiceSuspended
+0x002D94C1	App_Upload_Failed
+0x002D94D3	App_Paint_SendFailed
+0x002D94E8	App_Paint_SaveFailed
+0x002D95AE	App_Paint_SaveFailedSend
+0x002D985F	App_ERR_Comm_WirelessSwitchOff
+0x002D9C5E	App_ERR_ZoneServer_UnknownErr
+0x002DAD5D	rom:/img/stamp_cloud.gif
+0x002DAD76	rom:/img/stamp_flash.gif
+0x002DAD8F	rom:/img/stamp_ball.gif
+0x002DADA7	rom:/img/stamp_balloon.gif
+0x002DADC2	rom:/img/stamp_star.gif
+0x002DADDA	rom:/img/stamp_flower.gif
+0x002DADF4	rom:/img/stamp_foot.gif
+0x002DAE0C	rom:/img/stamp_heart.gif
+0x002DAE77	rom:/img/
+0x002DB1B6	https://npdl.cdn.nintendowifi.net/p01/nsa/wfGi1AUhRfVvZ2KR/NZOffPg/GB/nzvBossContent_
+0x002DB20C	https://npdl.cdn.nintendowifi.net/p01/nsa/HpRhWfgZE0SoEiJ6/NZOffPg/JP/nzvBossContent_
+0x002DB262	https://npdl.cdn.nintendowifi.net/p01/nsa/rO34jReRezcPv4HS/NZOffPg/US/nzvBossContent_
+0x002DB2DF	rom:/keys/0
+0x002DDAAA	gsp::Lcd
+0x002DDAB3	gsp::Gpu
+0x002DDABC	%s: bad locale name: "%s"
+0x002DDAD6	%s: range error: invalid range [%d, %d)
+0x002DDAFE	%s: argument value %u out of range [0, %u)
+0x002DDB29	%s: conversion failed
+0x002DDB3F	%s: facet %u not found in "%s" locale
+0x002DDB65	%s: failed to construct locale name
+0x002DDB89	%s: exception
+0x002DDB97	%s: unexpected exception
+0x002DDBB0	%s: invalid pointer %p
+0x002DDBC7	%s: logic error
+0x002DDBD7	%s: unspecified error
+0x002DDBED	%s: runtime error
+0x002DDBFF	%s: underflow error
+0x002DDC13	%s: overflow error
+0x002DDC26	%s: stream object has set %s
+0x002DDC43	%s: stream object has set ios::badbit
+0x002DDC69	%s: stream object has set ios::eofbit
+0x002DDC8F	%s: stream object has set ios::failbit
+0x002DDCB6	%s: bad cast
+0x002DDCC3	%s: length error: %u > %u
+0x002DDCDD	%s: bad_alloc: out of memory
+0x002DDCFA	%s: out of memory

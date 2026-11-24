@@ -1,0 +1,416 @@
+0x00102D7C	RWSTDERR
+0x00102EC4	Exception: %s.
+0x00161740	.bclyt
+0x0017C89C	LocalNetwork::CreateInstance: Instance is already created.
+0x0017D53C	LocalEventJob::WatchUpdateEvent
+0x0017F6A0	LocalReceiveFromJob::CheckLocalInputStream
+0x0017F738	LocalReceiveFromJob::ReceiveFrom
+0x0017F77C	LocalReceiveFromJob::CheckLocalInputStream
+0x0017F90C	LocalScanNetworkJob::WaitForCancel
+0x0017F9F8	LocalScanNetworkJob::WaitScanNetwork
+0x0017FC4C	LocalSendMessageJob::SendMessage
+0x0018036C	LocalCreateNetworkJob::WaitForCancel
+0x0018045C	LocalCreateNetworkJob::WaitCreateNetwork
+0x00180698	LocalHostMigrationJob::WaitForCancel
+0x001806CC	LocalHostMigrationJob::WaitScanNetwork
+0x001807C0	LocalHostMigrationJob::WaitForCancel
+0x001807EC	LocalHostMigrationJob::WaitCreateNetwork
+0x00180948	LocalHostMigrationJob::WaitForCancel
+0x00180974	LocalHostMigrationJob::WaitConnectNetwork
+0x00180AB4	LocalHostMigrationJob::WaitForCancel
+0x00180AE4	LocalHostMigrationJob::SearchNewHostNetwork
+0x00180BF4	LocalHostMigrationJob::WaitForCancel
+0x00180C20	LocalHostMigrationJob::WaitDisconnectNetwork
+0x00180D00	LocalHostMigrationJob::WaitForCancel
+0x00180E3C	LocalHostMigrationJob::WaitForCancel
+0x00180E68	LocalHostMigrationJob::WaitUntilAllClientsConnection
+0x00180FB8	LocalHostMigrationJob::WaitForCancel
+0x00181118	LocalHostMigrationJob::WaitForCancel
+0x00181144	LocalHostMigrationJob::ConnectNetwork
+0x0018116C	LocalHostMigrationJob::ScanNetwork
+0x001812BC	LocalHostMigrationJob::WaitForCancel
+0x001812E8	LocalHostMigrationJob::CreateNetwork
+0x00181310	LocalHostMigrationJob::ScanNetwork
+0x00181590	LocalHostMigrationJob::WaitForCancel
+0x001815C4	LocalHostMigrationJob::WaitAllClientsAck
+0x001816BC	LocalHostMigrationJob::DisconnectNetwork
+0x0018289C	LocalConnectNetworkJob::WaitForCancel
+0x00182A18	LocalConnectNetworkJob::WaitForCancel
+0x00182A44	LocalConnectNetworkJob::WaitNetworkInformation
+0x00182B58	LocalConnectNetworkJob::WaitForCancel
+0x00182B80	LocalConnectNetworkJob::ProcessSucceeded
+0x00182C70	LocalConnectNetworkJob::WaitConnectNetwork
+0x00182EC8	LocalDestroyNetworkJob::WaitForCancel
+0x00183008	LocalDestroyNetworkJob::WaitForCancel
+0x00183034	LocalDestroyNetworkJob::SendDestroyNetworkMessage
+0x00183140	LocalDestroyNetworkJob::WaitForCancel
+0x00183168	LocalDestroyNetworkJob::WaitUntilAllClientsDisconnection
+0x00183358	LocalDestroyNetworkJob::WaitForCancel
+0x00183384	LocalDestroyNetworkJob::WaitDestroyNetwork
+0x001833B0	LocalDestroyNetworkJob::SendDestroyNetworkMessage
+0x00183514	LocalDestroyNetworkJob::WaitForCancel
+0x00183540	LocalDestroyNetworkJob::SendDestroyNetworkMessage
+0x00183654	LocalDestroyNetworkJob::TryPrepareDestroyNetwork
+0x00183ECC	UdsBackgroundProcessJob::WaitCreateNetworkEvent
+0x001840BC	UdsBackgroundProcessJob::WaitConnectNetworkEvent
+0x001843E8	UdsBackgroundProcessJob::ScanNetwork
+0x00184508	UdsBackgroundProcessJob::CreateNetwork
+0x00184678	UdsBackgroundProcessJob::ConnectNetwork
+0x001846E8	UdsBackgroundProcessJob::DestroyNetwork
+0x001848CC	UdsBackgroundProcessJob::DisconnectNetwork
+0x00184934	UdsBackgroundProcessJob::ReceiveSessionInfo
+0x00184B98	LocalMatchJoinSessionJob::JoinMatchmakeSession
+0x00184C14	LocalMatchJoinSessionJob::CompleteFailure
+0x00184EC0	LocalMatchJoinSessionJob::WaitForCancel
+0x00184EF4	JoinSessionJob::MeshStartup
+0x00184FF4	LocalMatchJoinSessionJob::WaitJoinMatchmake
+0x00185058	LocalMatchJoinSessionJob::LocalCleanup
+0x001850C4	LocalMatchJoinSessionJob::MeshCleanup
+0x0018512C	LocalMatchJoinSessionJob::MeshCleanup
+0x00185514	LocalDisconnectNetworkJob::WaitForCancel
+0x0018564C	LocalDisconnectNetworkJob::WaitForCancel
+0x0018567C	LocalDisconnectNetworkJob::WaitDisconnectNetwork
+0x0018572C	LocalDisconnectNetworkJob::TryPrepareDisconnectNetwork
+0x00185850	LeaveSessionJob::LeaveCurrentMatchmakeSession
+0x001858A8	LeaveSessionJob::MeshCleanup
+0x0018598C	LeaveSessionJob::WaitLeaveCurrentMatchmakeSession
+0x001859F0	LocalMatchLeaveSessionJob::CompleteProcess
+0x00185A44	LocalMatchLeaveSessionJob::RetryLeaveCurrentMatchmakeSession
+0x00185E40	LocalMatchCreateSessionJob::CreateLocalNetwork
+0x00185F7C	CreateSessionJob::MeshStartup
+0x00186048	LocalMatchCreateSessionJob::WaitCreateLocalNetwork
+0x00186178	LocalMatchCreateSessionJob::StartLocalSession
+0x001861D0	CreateSessionJob::CompleteProcess
+0x00186234	LocalMatchCreateSessionJob::CompleteFailure
+0x00186448	LocalMatchDestroySessionJob::WaitDestroyLocalNetwork
+0x0018655C	LocalMatchDestroySessionJob::DestroyLocalNetwork
+0x001865B8	DestroySessionJob::MeshCleanup
+0x0018663C	LocalMatchBrowseMatchmakeJob::BrowseMatchmake
+0x00186714	LocalMatchBrowseMatchmakeJob::WaitBrowseMatchmake
+0x00186810	session::BrowseMatchmakeJob::CompleteProcess
+0x00186D58	LocalProcessHostMigrationJobNew::LocalCleanupOldHostInfo
+0x00186D94	LocalProcessHostMigrationJobNew::LocalDecideNextHost
+0x00187058	LocalProcessHostMigrationJobNew::HostMigrationFailure
+0x001870A0	LocalProcessHostMigrationJobNew::LocalPrepareForBecomingHost
+0x001870E0	LocalProcessHostMigrationJobNew::WaitLocalHostMigrationClient
+0x001872FC	LocalProcessHostMigrationJobNew::HostMigrationFailure
+0x00187338	LocalProcessHostMigrationJobNew::LocalPrepareForBecomingHost
+0x00187378	LocalProcessHostMigrationJobNew::WaitLocalHostMigrationClient
+0x00187520	LocalProcessHostMigrationJobNew::HostMigrationFailure
+0x00187558	LocalProcessHostMigrationJobNew::WaitLocalHostMigrationNewHost
+0x0018769C	LocalProcessHostMigrationJobNew::HostMigrationFailure
+0x001876D4	LocalProcessHostMigrationJobNew::WaitNewHostGreeting
+0x00187864	LocalProcessHostMigrationJobNew::HostMigrationFailure
+0x0018789C	LocalProcessHostMigrationJobNew::SendGreetingMessage
+0x00188FC4	[ERROR] Singleton is already created.
+0x00188FF4	[ERROR] common module is not initialized.
+0x00189244	UpdatePayloadSize() failed.  mtuSize(%d) is too small.
+0x00189284	UpdatePayloadSize() failed.  mtuSize(%d) is too large.
+0x001892C0	UpdatePayloadSize() failed.  signatureSize(%d) is too big.
+0x0018A3CC	JoinMeshJob::StartConnectingToHost
+0x0018A53C	JoinMeshJob::AnalyzeJoinResponse
+0x0018A560	JoinMeshJob::WaitJoinResponse
+0x0018A83C	JoinMeshJob::WaitRequestAck
+0x0018A914	JoinMeshJob::AnalyzeJoinResponse
+0x0018B280	JoinMeshJob::WaitAllConnection
+0x0018B564	JoinMeshJob::WaitUntilConnectToHost
+0x0018B7AC	JoinMeshJob::SendJoinRequest
+0x0018BDC4	LeaveMeshJob::WaitLeaveResponse
+0x0018BEBC	LeaveMeshJob::LeaveSuccess
+0x0018BED8	LeaveMeshJob::StartDisconnectStations
+0x0018BFC8	LeaveMeshJob::LeaveSuccess
+0x0018C14C	LeaveMeshJob::LeaveSuccess
+0x0018C168	LeaveMeshJob::WaitLeavingProcess
+0x0018C344	LeaveMeshJob::SendLeaveRequest
+0x0018FA88	CreateMeshJob::SetupSystemProtocols
+0x0018FEC4	CreateMeshJob::SetupMeshStatus
+0x0018FFB8	CreateMeshJob::SetupLocalStation
+0x00190204	DestroyMeshJob::CleanupMesh
+0x00190220	DestroyMeshJob::WaitDestroyResponse
+0x00190328	DestroyMeshJob::CleanupMesh
+0x00190490	DestroyMeshJob::SendDestroyMesh
+0x0019064C	JoinSessionJob::JoinMesh
+0x001907F0	JoinSessionJob::CompleteProcess
+0x001909F8	JoinSessionJob::LeaveMesh
+0x00190C90	JoinSessionJob::WaitJoinMesh
+0x00190CF8	JoinSessionJob::WaitLeaveMesh
+0x0019169C	LeaveSessionJob::WaitLeaveCurrentMatchmakeSession
+0x001917E4	LeaveSessionJob::WaitHostMigrated
+0x00191928	LeaveSessionJob::LeaveMesh
+0x00191B2C	LeaveSessionJob::LeaveMesh
+0x00191B70	LeaveSessionJob::MeshCleanup
+0x00191CF0	LeaveSessionJob::WaitForcedTerminatingOfMergeJob
+0x00191E70	LeaveSessionJob::WaitLeaveMeshWithHostMigration
+0x00191EA4	LeaveSessionJob::WaitLeaveMesh
+0x001935CC	CreateSessionJob::WaitCreateMesh
+0x001936BC	CreateSessionJob::CreateMesh
+0x00193B94	KickoutManageJob::ClientFinalize
+0x00193BB8	KickoutManageJob::ClientStartLeaveMesh
+0x00193CE4	KickoutManageJob::ClientFinalize
+0x00193E18	KickoutManageJob::ClientFinalize
+0x00193E3C	KickoutManageJob::ClientWaitLeaveMesh
+0x001940E0	DestroySessionJob::WaitDestroyMesh
+0x001942C0	DestroySessionJob::DestroyMesh
+0x00194414	DestroySessionJob::WaitForcedTerminatingOfMergeJob
+0x00194B33	?SyncClockProtocol::UpdateProtocolEvent() Mesh is not ready.
+0x00194B70	SyncClockProtocol::UpdateProtocolEvent() Unknown event type?
+0x00194E70	SyncClockProtocol failed to exec pHandler->Commit().
+0x001958F8	RelayRouteManageJob::WaitAllDirectConnectionReport
+0x00195BC8	RelayRouteManageJob::SendRelayRouteDirections
+0x00195CD8	RelayRouteManageJob::WaitAllDirectConnectionReport
+0x00196D6C	ProcessUpdateMeshJob::UpdateFailed
+0x001977B0	ProcessUpdateMeshJob::UpdateFailed
+0x001977D4	ProcessUpdateMeshJob::StartRelayConnection
+0x00197B70	ProcessUpdateMeshJob::UpdateFailed
+0x00197F6C	ProcessUpdateMeshJob::CheckConnectionAll
+0x0019830C	ProcessUpdateMeshJob::UpdateFailed
+0x0019839C	ProcessUpdateMeshJob::SendConnectionReport
+0x001987AC	ProcessUpdateMeshJob::CheckConnectionAll
+0x001987D8	ProcessUpdateMeshJob::WaitDirectConnection
+0x00198804	ProcessUpdateMeshJob::SendConnectionReport
+0x00198830	ProcessUpdateMeshJob::UpdateFailed
+0x001989D8	ProcessUpdateMeshJob::CheckConnectionAll
+0x00198A04	ProcessUpdateMeshJob::WaitDirectConnection
+0x00198A30	ProcessUpdateMeshJob::SendConnectionReport
+0x00198A5C	ProcessUpdateMeshJob::UpdateFailed
+0x00199938	CloseParticipationJob::WaitCloseParticipation
+0x00199A9C	CloseParticipationJob::WaitP2PStable
+0x00199BCC	CloseParticipationJob::CloseParticipation
+0x00199D64	ProcessDestroyMeshJob::CleanupMesh
+0x00199F34	ProcessDestroyMeshJob::SendDestroyResponse
+0x0019A010	ProcessJoinRequestJob::CheckApprovalJoin
+0x0019A0A8	ProcessJoinRequestJob::InitialStep
+0x0019A1D8	ProcessJoinRequestJob::InitialStep
+0x0019A1FC	ProcessJoinRequestJob::JoinSucceeded
+0x0019A604	ProcessJoinRequestJob::InitialStep
+0x0019A634	ProcessJoinRequestJob::SendDenyingJoinResponse
+0x0019A7B0	ProcessJoinRequestJob::WaitResponseAck
+0x0019A9D0	JoinRequest Station's connection still not finish. Id:%x
+0x0019AA10	ProcessJoinRequestJob::InitialStep
+0x0019AA38	ProcessJoinRequestJob::SendDenyingJoinResponse
+0x0019AA6C	ProcessJoinRequestJob::SendJoinResponse
+0x0019AB5C	ProcessJoinRequestJob::InitialStep
+0x0019AC74	ProcessJoinRequestJob::InitialStep
+0x0019AF14	SessionStatusCheckJob::CheckSessionStatus4SessionMerge
+0x0019AF4C	SessionStatusCheckJob::CheckSessionStatus
+0x0019B660	ProcessHostMigrationJob::HostMigrationFailure
+0x0019B69C	ProcessHostMigrationJob::WaitGreetingResponse
+0x0019B76C	ProcessHostMigrationJob::WaitUpdateSessionHost
+0x0019B79C	ProcessHostMigrationJob::HostMigrationSuccess
+0x0019B8CC	ProcessHostMigrationJob::HostMigrationFailure
+0x0019B900	ProcessHostMigrationJob::HostMigrationSuccess
+0x0019BBA0	ProcessHostMigrationJob::HostMigrationFailure
+0x0019BBD8	ProcessHostMigrationJob::WaitNewHostFinished
+0x0019BE98	ProcessHostMigrationJob::SendMigrationFinish
+0x0019BF3C	ProcessHostMigrationJob::HostMigrationSuccess
+0x0019CA18	LeaveWithHostMigrationJob::CleanupMesh
+0x0019CB24	LeaveWithHostMigrationJob::CleanupMesh
+0x0019CB4C	LeaveWithHostMigrationJob::SendStartMigrationMessage
+0x0019CC60	LeaveWithHostMigrationJob::CleanupMesh
+0x0019CC88	LeaveWithHostMigrationJob::WaitHostMigrationProcess
+0x0019CCBC	LeaveWithHostMigrationJob::SendStartMultiMigrationMessage
+0x0019CCF8	LeaveWithHostMigrationJob::SendStartMigrationMessage
+0x0019CE30	LeaveWithHostMigrationJob::CleanupMesh
+0x0019CE58	LeaveWithHostMigrationJob::WaitMigrationResponse
+0x0019CF1C	LeaveWithHostMigrationJob::WaitMigrationResponse
+0x0019CF50	LeaveWithHostMigrationJob::CleanupMesh
+0x0019D090	LeaveWithHostMigrationJob::CheckHostMigrationProcess
+0x0019E49C	Mesh::Initialize: MeshProtocol::Initialize() failed.
+0x0019EB54	Mesh::CreateInstance: Instance is already created.
+0x0019ECE4	Mesh::DestroyInstance: Instance is not ready.
+0x001A1388	Invalid maxStations (%d) is specified.
+0x001A13B8	Memory allocation failed in RttProtocol::Initialize().
+0x001A15B4	RttProtocol::UpdateProtocolEvent() Unknown event type?
+0x001A318C	PacketAnalyzer::UpdatePacketAnalysisData() got invalid packet.
+0x001A32C8	[ERROR] PacketAnalyzer::Startup() is already called.
+0x001A3598	Memory allocation for StationIdTable failed.
+0x001A3CB4	[ERROR] Singleton is already created.
+0x001A3CE4	[ERROR] transport module is not initialized.
+0x001A4638	Invalid pointer was passed to LatencyEmulator::Read().
+0x001A6260	ConnectStationJob::SendConnectionRequest
+0x001A64CC	ConnectStationJob::ConnectionSucceeded
+0x001A64F8	ConnectStationJob::WaitForConnection
+0x001A66B0	ConnectStationJob::ConnectionSucceeded
+0x001A6910	ConnectStationJob::WaitRequestAck
+0x001A6934	ConnectStationJob::ConnectionFailed
+0x001A69B8	ConnectStationJob::SendRelayConnectionRequest
+0x001A6B7C	ConnectStationJob::WaitRequestAck
+0x001A9B88	[ERROR] TransportAnalyzer is already created.
+0x001A9BC0	[ERROR] Failed to create ConnectionAnalyzer instance.
+0x001A9DAC	[ERROR] Singleton is already created.
+0x001A9DDC	[ERROR] transport module is not initialized.
+0x001A9E1F	?[ERROR] Failed to create object.
+0x001AA268	[ERROR] TransportAnalyzer is not initialized?
+0x001AA2A8	[ERROR] ThreadStreamManager is not ready?
+0x001AA2D4	[ERROR] TransportAnalyzer::Startup() is not called?
+0x001AA38C	[ERROR] ConnectionAnalyzer is not ready?
+0x001AA500	[ERROR] TransportAnalyzer is not initialized?
+0x001AA53C	[ERROR] TransportAnalyzer::Startup() is already called.
+0x001AA578	[ERROR] ThreadStreamManager is not ready?
+0x001AA80C	[ERROR] ConnectionAnalyzer::Startup() is already called.
+0x001AA8F4	PacketAnalysisData::CreateIndex() called, but entry is full.
+0x001AB15C	DisconnectStationJob::SendDisconnectionRequest
+0x001AB198	DisconnectStationJob::CutRouteOfRelayConnection
+0x001AB304	DisconnectStationJob::DisconnectionSucceeded
+0x001AB508	DisconnectStationJob::WaitForDisconnection
+0x001AB534	DisconnectStationJob::DisconnectionSucceeded
+0x001AB5D8	DisconnectStationJob::DisconnectionSucceeded
+0x001AD32C	[ERROR] Singleton is already created.
+0x001AD35C	[ERROR] transport module is not initialized.
+0x001B096C	ProcessConnectionRequestJob::SendConnectionResponse
+0x001B0AF4	ProcessConnectionRequestJob::WaitResponseAck
+0x001B0C9C	ProcessConnectionRequestJob::WaitInverseConnection
+0x001B0D0C	ProcessConnectionRequestJob::WaitInverseConnection
+0x001B0F10	ProcessConnectionRequestJob::ConnectToRequesterStation
+0x001B1B28	[ERROR] Singleton is already created.
+0x001B1B58	[ERROR] transport module is not initialized.
+0x001BEA90	%03d%s
+0x001BEADC	%s%04d
+0x001E0558	RttProtocol failed to exec pHandler->Commit().
+0x001E842C	LocalForceDisconnectNetworkJob::WaitHostMigrationEnd
+0x001E8464	LocalForceDisconnectNetworkJob::WaitDisconnected
+0x001F4078	https://ninja.ctr.shop.nintendo.net/ninja
+0x001F40A4	%s/ws/my/session/!close
+0x002549A0	flower%d_A_%02d
+0x002549B0	flower%d_B_%02d
+0x00278EE0	https://ninja.ctr.shop.nintendo.net/ninja
+0x00278F0C	%s/ws/my/balance/current
+0x002790F4	https://ninja.ctr.shop.nintendo.net/ninja
+0x00279120	%s/ws/my/session/!open_without_nna
+0x0027948C	https://ninja.ctr.shop.nintendo.net/ninja
+0x002794B8	%s/ws/my/device/ctr/!migrate_assets
+0x00279864	https://ninja.ctr.shop.nintendo.net/ninja
+0x00279890	%s/ws/my/session/!open
+0x00289050	.bclyt
+0x002953E0	.bclyt
+0x002A4C38	RttProtocol::GetRtt() got invalid peerId: %d
+0x002A4F34	[ERROR] pData is invalid pointer.
+0x002A5948	[ERROR] pData is invalid pointer.
+0x002A5B64	[Analysis] ------ BEGIN(%s, %d.%03d sec. passed) ------
+0x002A5D4C	[Analysis] 0x%08x, %8d,  %8d,    %8d, %s(%d)
+0x002C517C	rom:/shaders/nwgfx_DefaultShader.bcsdr
+0x002CB6C0	CARDBOARD-%d.%d
+0x002CCD48	Session::JoinSession cannot start.
+0x002CCD6C	Session::JoinSession failed.
+0x002CCDC0	BrowseSession failed.
+0x002CCDD8	Session::CreateSession failed.
+0x002CCE10	Session::Startup failed.
+0x002CCE2C	LocalNetwork::Initialize failed.
+0x002CE498	hsvtnsvtSession::Initialize: CreateProtocol<session::SessionProtocol>() is failure.
+0x002CE4EC	Session::SetDebugSetting() is designed for debugging purposes.  Do not use it in your production ROM.
+0x002CE554	[ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x002CE59C	Transport::SetDebugSetting() is designed for debugging purposes.  Do not use it in your production ROM.
+0x002CE608	TransportAnalyzer::Update() failed.
+0x002D001C	dsp::DSP
+0x002D10EE	2nwm::UDS
+0x002D1770	[ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x002D17B8	UpdatePayloadSize() failed.  mtuSize(%d) is too big for payload of PacketOld.
+0x002D1808	UpdatePayloadSize() failed.  mtuSize(%d) is too big for data size limit of ChunkOld.
+0x002D18C8	LocalDestroyNetworkJob::WaitUntilAllClientsReceiveUpdateSessionMessage
+0x002D1988	UdsNetworkManager::Finalize: Failed To Destroy System UdsHandle.
+0x002D1AA8	Mesh::Initialize:CreateProtocol<session::MeshProtocol>() failed.
+0x002D1AEC	Mesh::Initialize:CreateProtocol<session::SyncClockProtocol>() failed.
+0x002D1B34	Mesh::SetDebugSetting() is designed for debugging purposes.  Do not use it in your production ROM.
+0x002D1B98	maxSilenceTime less than Session::NN_PIA_SESSION_MAX_SILENCE_TIME_MIN.
+0x002D1BE0	maxSilenceTime greater than Session::NN_PIA_SESSION_MAX_SILENCE_TIME_MAX.
+0x002D1CAC	[ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x002D1CF4	[ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x002D1D3C	StationProtocolManager::Initialize:CreateProtocol<StationProtocol>() failed.
+0x002D1D8C	StationProtocolManager::Initialize:CreateProtocol<StationProtocolReliable>() failed.
+0x002D1DE4	StationProtocolManager::Initialize:CreateProtocol<RttProtocol>() failed.
+0x002D1E30	[ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x002D1E78	[ERROR] TransportAnalyzer::SetMarker() got invalid argument(white space character is not allowed).
+0x002D1EDC	[ERROR] TransportAnalyzer::SetMarker() is called, but Startup() is not called.
+0x002D1F34	LatencyEmulator is not ready, but TransportThreadStreamOld::SetLatency() is called.
+0x002D67A8	LocalMessage::LocalMessage:misaligned:%08x
+0x002D69AC	SyncClock::GetTime() is called, but INVALID_TIME will be returned.
+0x002D69F4	SyncClockProtocol::response() failed.  Invalid destId.
+0x002D6A2C	SyncClockProtocol::response() PacketHandler instance is not ready.
+0x002D6A70	SyncClockProtocol::response() SyncClock basetime is not set.
+0x002D6AB0	m_LocalStationIndex is invalid.  SyncClockProtocol::Startup() is not called?
+0x002D6B00	SyncClockProtocol::UpdateProtocolEvent() StationIndex is out of range.
+0x002D6B48	SyncClockProtocol::UpdateProtocolEvent() Own StationIndex is specified?
+0x002D6BC0	[Analysis] ------ BEGIN(Pia Connection info, %d.%03d sec. passed) ------
+0x002D6C58	ConnectionAnalyzer::UpdateConnectionAnalysisData() called, but StationManager is not ready.
+0x002D6CD4	You must call LatencyEmulator::SetInput() before LatencyEmulator::Read().
+0x002D6D20	LatencyEmulator buffer is full.  Please increase Setting::sendThreadLatencyEmulationPacketNum value.
+0x002D6D8C	LatencyEmulator buffer is full.  Please increase Setting::receiveThreadLatencyEmulationPacketNum value.
+0x002D6DF4	Invalid argument combination. (minLatency, maxLatency) = (%d, %d)
+0x002D6ECC	RelayRouteManager::UpdateDirectConnectionData: invalid relayStationIndex : relayStationIndex:%d,stationNum:%d,i=%d,j=%d,new:0x%08x,stay:0x%08x,leave:0x%08x,refu
+0x002D6F78	RelayRouteManager::WriteRelayRouteDirectionsToBuffer: invalid relayStationIndex : relayStationIndex:%d,stationNum:%d,i=%d,j=%d
+0x002D6FF8	RelayRouteManager::ReadRelayRouteDirectionsFromBuffer: invalid relayStationIndex : relayStationIndex:%d,stationNum:%d,i=%d,j=%d,dataIdx:%d,shiftR:%d,bitOffset:%
+0x002D7098	d,bufSize:%d
+0x002D70A8	RelayRouteManager::SetRelayRoute: invalid relayStationIndex : srcId:%d,destId:%d,relayStationIndex:%d,stationNum:%d
+0x002D711C	ReliableSlidingWindow::PopData: Received too large data. Please restart.
+0x002D7168	ReliableSlidingWindow: proId:0x%08x, src:0x%02x, dest:0x%02x, Send:%d/%d,seq:0x%08x, Recv:%d/%d,seq0x%08x
+0x002D71EC	StationIndex %d is invalid argument.
+0x002D7230	m_LocalStationIndex is invalid.  RttProtocol::Startup() is not called?
+0x002D7278	RttProtocol::UpdateProtocolEvent() StationIndex is out of range.
+0x002D72BC	RttProtocol::UpdateProtocolEvent() Own StationIndex is specified?
+0x002D7300	RttProtocol::GetRtt(StationIndex, size_t) got invalid peerId: %d
+0x002D9DC3	;d22Vt::N
+0x002E470E	mask_D_00.bclyt
+0x002E471E	mask_U_00.bclyt
+0x002E47D9	sb01_D_00.bclyt
+0x002E47E9	whiteBG_D_00.bclyt
+0x002E47FC	sliderBar_D_00.bclyt
+0x002E48A5	noMove_U_00.bclyt
+0x002E48B7	pop_U_00.bclyt
+0x002E4AF6	move_U_00.bclyt
+0x002E4C3A	move_U_01.bclyt
+0x002E4CF8	dialog_D_00.bclyt
+0x002E4D48	dialog_D_01.bclyt
+0x002E4E0E	dialog_D_02.bclyt
+0x002E4EB7	dialog_D_03.bclyt
+0x002E4F13	dialog_D_04.bclyt
+0x002E4F9F	dialog_D_05.bclyt
+0x002E5005	dialog_D_06.bclyt
+0x002E5048	dialog_D_07.bclyt
+0x002E50BE	dialog_D_08.bclyt
+0x002E511A	dialog_D_09.bclyt
+0x002E5176	dialog_D_10.bclyt
+0x002E51CD	textBox_D_00.bclyt
+0x002E51FC	dlgMask_D_00.bclyt
+0x002E524E	dialog_U_00.bclyt
+0x002E5260	cbf_std.bcfnt
+0x002E526E	Hud.bcfnt
+0x002E5290	HomeNixSign.bclyt
+0x002E53F7	CommonBG_U_00.bclyt
+0x002E540B	Hud_00.bclyt
+0x002E5495	Bg_U_00.bclyt
+0x002E54C5	listEnd_D_00.bclyt
+0x002E54D8	soft_D_00.bclyt
+0x002E54E8	title_D_01.bclyt
+0x002E5564	message_D_00.bclyt
+0x002E56C0	position_D_00.bclyt
+0x002E59DA	Bg_D_00.bclyt
+0x002E5A06	selectBtn_D_00.bclyt
+0x002E5A5E	rom:/CARDBOARD/cdc/dspaudio.cdc
+0x002E5A7E	rom:/CARDBOARD/sound/cardboard.bcsar
+0x002E5AEB	WaitIcon.bclyt
+0x002E6FC2	sdmc:/tids/
+0x002E96F3	photo/Nintendo 3DS/Private/00020400
+0x002E97F5	gsp::Lcd
+0x002E97FE	gsp::Gpu
+0x002E981E	%s: bad locale name: "%s"
+0x002E9838	%s: range error: invalid range [%d, %d)
+0x002E9860	%s: argument value %u out of range [0, %u)
+0x002E988B	%s: conversion failed
+0x002E98A1	%s: facet %u not found in "%s" locale
+0x002E98C7	%s: failed to construct locale name
+0x002E98EB	%s: exception
+0x002E98F9	%s: unexpected exception
+0x002E9912	%s: invalid pointer %p
+0x002E9929	%s: logic error
+0x002E9939	%s: unspecified error
+0x002E994F	%s: runtime error
+0x002E9961	%s: underflow error
+0x002E9975	%s: overflow error
+0x002E9988	%s: stream object has set %s
+0x002E99A5	%s: stream object has set ios::badbit
+0x002E99CB	%s: stream object has set ios::eofbit
+0x002E99F1	%s: stream object has set ios::failbit
+0x002E9A18	%s: bad cast
+0x002E9A25	%s: length error: %u > %u
+0x002E9A3F	%s: bad_alloc: out of memory
+0x002E9A5C	%s: out of memory

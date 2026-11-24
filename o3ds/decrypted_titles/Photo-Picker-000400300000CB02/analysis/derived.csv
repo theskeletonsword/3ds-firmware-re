@@ -1,0 +1,126 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001004F0,0x5,PNOTE_AP_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00100830,0x5,PNOTE_AP_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00101938,0x6,PNOTE_AP_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00101988,0x6,PNOTE_AP_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00101C4F,0x6,PNOTE_AP_str_service_03F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""03F:F"""
+0x00103C40,0x6b2,PNOTE_AP_ipc_dispatcher_103c40,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x00070100, 0x00080300, 0x00080340, 0x00400004"
+0x001085E0,0x308,PNOTE_AP_ipc_handler_cmd_000F_1085e0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0010
+0x001086C1,0x6,PNOTE_AP_str_service_H_h9F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""H:h9F"""
+0x0010D7E0,0x506,PNOTE_AP_ipc_handler_cmd_0001_0008_00E4_10d7e0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010245, 0x00010245, 0x00080289, 0x00010245"
+0x0010DD04,0x6e,PNOTE_AP_ipc_handler_cmd_000D_000F_10dd04,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000D0080, 0x000F008C"
+0x0011AA0E,0x5,PNOTE_AP_str_service_3F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""3F:F"""
+0x0011C37C,0x24,PNOTE_AP_ipc_handler_cmd_000F_11c37c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F02C0
+0x00124A3E,0x5,PNOTE_AP_str_service_am_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""am:F"""
+0x00129D08,0x6,PNOTE_AP_str_service_cver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cver:"""
+0x00129E04,0x6,PNOTE_AP_str_service_nver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nver:"""
+0x0013AA38,0xd6,PNOTE_AP_ipc_handler_cmd_0001_0005_13aa38,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00050080"
+0x0013AB88,0x2a2,PNOTE_AP_ipc_handler_cmd_0001_000F_13ab88,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0101, 0x000F0101, 0x00010107, 0x00010107"
+0x0013AF14,0xc6,PNOTE_AP_ipc_handler_cmd_0003_13af14,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030101, 0x00030101"
+0x0013B440,0x290,PNOTE_AP_ipc_handler_cmd_0001_13b440,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00010080"
+0x0015545C,0x8,PNOTE_AP_svc_0x14_ReleaseMutex_15545c,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001556B8,0x8,PNOTE_AP_svc_0x03_ExitProcess_1556b8,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015BA40,0x8,PNOTE_AP_svc_0x32_SendSyncRequest_15ba40,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015BA68,0x8,PNOTE_AP_svc_0x24_WaitSynchronization1_15ba68,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015BF2C,0xe2,PNOTE_AP_ipc_handler_cmd_000F_15bf2c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0010
+0x0015CC18,0x8,PNOTE_AP_svc_0x28_GetSystemTick_15cc18,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015CCA8,0x18,PNOTE_AP_svc_0x37_GetThreadId_15cca8,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015CE30,0x8,PNOTE_AP_svc_0x23_CloseHandle_15ce30,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015CE68,0x8,PNOTE_AP_svc_0x1F_MapMemoryBlock_15ce68,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00169CA8,0x8,PNOTE_AP_svc_0x0C_SetThreadPriority_169ca8,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016A480,0x18,PNOTE_AP_svc_0x21_CreateAddressArbiter_16a480,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016A68C,0x18,PNOTE_AP_svc_0x13_CreateMutex_16a68c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016A6A4,0x1c,PNOTE_AP_svc_0x2B_GetProcessInfo_16a6a4,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016BE14,0x18,PNOTE_AP_svc_0x2D_ConnectToPort_16be14,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016CEB8,0x8,PNOTE_AP_svc_0x3C_Break_16ceb8,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016CEC0,0x18,PNOTE_AP_svc_0x17_CreateEvent_16cec0,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016CED8,0x18,PNOTE_AP_svc_0x35_GetProcessId_16ced8,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016CEF0,0x8,PNOTE_AP_svc_0x0A_SleepThread_16cef0,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016D834,0x18,PNOTE_AP_svc_0x22_ArbitrateAddress_16d834,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016D84C,0x8,PNOTE_AP_svc_0x19_ClearEvent_16d84c,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016D854,0x1c,PNOTE_AP_svc_0x1E_CreateMemoryBlock_16d854,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016D894,0x8,PNOTE_AP_svc_0x20_UnmapMemoryBlock_16d894,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016E19C,0x8,PNOTE_AP_svc_0x09_ExitThread_16e19c,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016E1A4,0x8,PNOTE_AP_svc_0x18_SignalEvent_16e1a4,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00170268,0x18,PNOTE_AP_svc_0x27_DuplicateHandle_170268,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001792DC,0x578,PNOTE_AP_ipc_dispatcher_1792dc,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x00188DA8,0x1bb8,PNOTE_AP_ipc_handler_cmd_000F_188da8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0200
+0x0018C5D8,0x3810,PNOTE_AP_ipc_handler_cmd_000F_18c5d8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0200
+0x00196B28,0x600,PNOTE_AP_ipc_dispatcher_196b28,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0019973C,0x30,PNOTE_AP_func_ptr_table_19973c,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00199788,0x30,PNOTE_AP_func_ptr_table_199788,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0019C8FC,0x9,PNOTE_AP_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x0019C954,0x7,PNOTE_AP_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0019C95B,0x8,PNOTE_AP_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001A2364,0x5,PNOTE_AP_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001A2369,0x7,PNOTE_AP_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001A27D0,0x6,PNOTE_AP_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001A46E8,0xc,PNOTE_AP_func_ptr_table_1a46e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A47DC,0xc,PNOTE_AP_func_ptr_table_1a47dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4848,0xc,PNOTE_AP_func_ptr_table_1a4848,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4930,0xc,PNOTE_AP_func_ptr_table_1a4930,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4954,0xc,PNOTE_AP_func_ptr_table_1a4954,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4AE0,0xc,PNOTE_AP_func_ptr_table_1a4ae0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4BB8,0xc,PNOTE_AP_func_ptr_table_1a4bb8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4BDC,0xc,PNOTE_AP_func_ptr_table_1a4bdc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4C48,0xc,PNOTE_AP_func_ptr_table_1a4c48,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4C90,0xc,PNOTE_AP_func_ptr_table_1a4c90,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4CFC,0xc,PNOTE_AP_func_ptr_table_1a4cfc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4D20,0xc,PNOTE_AP_func_ptr_table_1a4d20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4D68,0xc,PNOTE_AP_func_ptr_table_1a4d68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4E1C,0xc,PNOTE_AP_func_ptr_table_1a4e1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4E3C,0x10,PNOTE_AP_func_ptr_table_1a4e3c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4F04,0xc,PNOTE_AP_func_ptr_table_1a4f04,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A4FDC,0xc,PNOTE_AP_func_ptr_table_1a4fdc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5368,0xc,PNOTE_AP_func_ptr_table_1a5368,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A538C,0xc,PNOTE_AP_func_ptr_table_1a538c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A53EC,0xc,PNOTE_AP_func_ptr_table_1a53ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5410,0xc,PNOTE_AP_func_ptr_table_1a5410,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5470,0xc,PNOTE_AP_func_ptr_table_1a5470,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5494,0xc,PNOTE_AP_func_ptr_table_1a5494,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A54F4,0xc,PNOTE_AP_func_ptr_table_1a54f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5518,0xc,PNOTE_AP_func_ptr_table_1a5518,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5678,0xc,PNOTE_AP_func_ptr_table_1a5678,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A569C,0xc,PNOTE_AP_func_ptr_table_1a569c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5700,0xc,PNOTE_AP_func_ptr_table_1a5700,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5724,0xc,PNOTE_AP_func_ptr_table_1a5724,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5788,0xc,PNOTE_AP_func_ptr_table_1a5788,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A57AC,0xc,PNOTE_AP_func_ptr_table_1a57ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5814,0xc,PNOTE_AP_func_ptr_table_1a5814,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5838,0xc,PNOTE_AP_func_ptr_table_1a5838,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5890,0xc,PNOTE_AP_func_ptr_table_1a5890,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A58B4,0xc,PNOTE_AP_func_ptr_table_1a58b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A590C,0xc,PNOTE_AP_func_ptr_table_1a590c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5930,0xc,PNOTE_AP_func_ptr_table_1a5930,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5998,0xc,PNOTE_AP_func_ptr_table_1a5998,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A59BC,0xc,PNOTE_AP_func_ptr_table_1a59bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5A14,0xc,PNOTE_AP_func_ptr_table_1a5a14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5B2C,0xc,PNOTE_AP_func_ptr_table_1a5b2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5D6C,0xc,PNOTE_AP_func_ptr_table_1a5d6c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5D8C,0x10,PNOTE_AP_func_ptr_table_1a5d8c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5E18,0xc,PNOTE_AP_func_ptr_table_1a5e18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5E3C,0xc,PNOTE_AP_func_ptr_table_1a5e3c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5EE4,0xc,PNOTE_AP_func_ptr_table_1a5ee4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5F60,0xc,PNOTE_AP_func_ptr_table_1a5f60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A60A8,0xc,PNOTE_AP_func_ptr_table_1a60a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A613C,0xc,PNOTE_AP_func_ptr_table_1a613c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A6160,0xc,PNOTE_AP_func_ptr_table_1a6160,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A61AC,0xc,PNOTE_AP_func_ptr_table_1a61ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A62CC,0xc,PNOTE_AP_func_ptr_table_1a62cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A62EC,0x10,PNOTE_AP_func_ptr_table_1a62ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A636C,0xc,PNOTE_AP_func_ptr_table_1a636c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A6420,0xc,PNOTE_AP_func_ptr_table_1a6420,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A67E1,0x6,PNOTE_AP_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x001AA9E0,0x6,PNOTE_AP_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001AA9E6,0x8,PNOTE_AP_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x001AA9EE,0x9,PNOTE_AP_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001AA9F7,0x9,PNOTE_AP_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001AAA00,0x6,PNOTE_AP_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001AAA06,0x6,PNOTE_AP_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001AAA0C,0x6,PNOTE_AP_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x001AAA12,0x6,PNOTE_AP_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001AAA18,0x9,PNOTE_AP_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001AAA21,0x9,PNOTE_AP_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001AAA2A,0x6,PNOTE_AP_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001AAA30,0x6,PNOTE_AP_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x001B18FC,0xb,PNOTE_AP_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

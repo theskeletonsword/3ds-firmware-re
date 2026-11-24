@@ -1,0 +1,37 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,dsp_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100064,0x18,dsp_svc_0x4F_ReplyAndReceive_100064,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100484,0x68,dsp_ipc_client_cmd_0002_100484,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020244
+0x001007EC,0xa44,dsp_ipc_handler_cmd_000C_0011_0013_etc_1007ec,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000C0080, 0x00110082, 0x00130040, 0x00140040"
+0x001029F0,0x48,dsp_ipc_client_cmd_0003_1029f0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030082
+0x00102A3C,0x6c,dsp_ipc_client_cmd_0004_102a3c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00102AAC,0x3c,dsp_ipc_client_cmd_0001_102aac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010042
+0x00102AEC,0x3c,dsp_ipc_client_cmd_0002_102aec,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020042
+0x00102B2C,0x34,dsp_ipc_client_cmd_0008_102b2c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080040
+0x00102B64,0x58,dsp_ipc_client_cmd_0005_102b64,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000500C2
+0x00103314,0x18,dsp_svc_0x17_CreateEvent_103314,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010345C,0x18,dsp_svc_0x35_GetProcessId_10345c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010349C,0x48,dsp_ipc_client_cmd_0001_10349c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000100C0
+0x00103ECC,0x34,dsp_ipc_client_cmd_0007_103ecc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00070040
+0x00105B74,0x18,dsp_svc_0x4A_AcceptSession_105b74,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106068,0x54,dsp_ipc_client_cmd_0003_106068,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x001060C4,0x48,dsp_ipc_client_cmd_0004_1060c4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00106114,0x30,dsp_ipc_client_cmd_0009_106114,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x001066D8,0x34,dsp_ipc_client_cmd_0001_1066d8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00106994,0x18,dsp_svc_0x2D_ConnectToPort_106994,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001069AC,0x18,dsp_svc_0x21_CreateAddressArbiter_1069ac,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107318,0x10,dsp_svc_0x50_BindInterrupt_107318,svc_wrapper,"function body is a single `svc #0x50` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010736C,0x10,dsp_svc_0x51_UnbindInterrupt_10736c,svc_wrapper,"function body is a single `svc #0x51` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108004,0x6,dsp_str_service_pdn_d,service_name_string,"client of (in ExHeader service-access list): ""pdn:d"""
+0x0010800A,0x8,dsp_str_service_cdc_DSP,service_name_string,"client of (in ExHeader service-access list): ""cdc:DSP"""
+0x00108012,0x9,dsp_str_service_dsp__DSP,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dsp::DSP"""
+0x0010802C,0x6,dsp_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x0010803C,0x6,dsp_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x00108058,0x6,dsp_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0010805E,0x6,dsp_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x00108064,0x9,dsp_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x00108074,0x5,dsp_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00108079,0x7,dsp_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00108084,0x6,dsp_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x001080DC,0x6,dsp_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x00109148,0x10,dsp_func_ptr_table_109148,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)

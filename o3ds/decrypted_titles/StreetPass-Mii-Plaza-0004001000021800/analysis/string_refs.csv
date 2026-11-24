@@ -1,0 +1,32 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001A11E0,0x5c,strref_Btn_circle_00_1a11e0,string_reference,function references string(s): Btn_circle_00
+0x001A6338,0x240,strref_dialogue_btn_bclyt_1a6338,string_reference,function references string(s): Btn_circle | dialogue_btn.bclyt
+0x001ACA5C,0x30,strref_map_main_1aca5c,string_reference,function references string(s): map_main
+0x001AE5B8,0xe8,strref_WaitIcon_bclyt_1ae5b8,string_reference,function references string(s): WaitIcon.bclyt | WaitIcon00_00
+0x001B0104,0x118,strref_item_panel_simple_model_18x30_1b0104,string_reference,function references string(s): item_panel_simple_model_18x30 | panel_cover_pink
+0x001B0228,0x18c,strref_item_panel_simple_model_18x30_1b0228,string_reference,function references string(s): item_panel_simple_model_18x30 | panel_new_pink
+0x001B1398,0xe4,strref_item_panel_default_position_1b1398,string_reference,function references string(s): item_panel_default_position | item_panel_trade3_1_trade
+0x001B5D94,0x41c,strref_cursor_model_1b5d94,string_reference,function references string(s): cursor_model
+0x001B6CE8,0x264,strref_piece_name_fade_in_bclan_1b6ce8,string_reference,function references string(s): piece_name.bclyt | piece_name_fade_in.bclan
+0x001D261C,0x2f0,strref_news_meet_1d261c,string_reference,function references string(s): news_meet
+0x001F2424,0x35da4,strref_cursor_panel_model_1f2424,string_reference,function references string(s): cursor_panel_model
+0x001F8294,0x90,strref_map_main_1f8294,string_reference,function references string(s): map_main
+0x0023A584,0x1bf2,strref_boss_shadow_model_23a584,string_reference,function references string(s): boss_shadow_model
+0x0024CAC4,0xe82,strref_shadow_model_24cac4,string_reference,function references string(s): shadow_model
+0x0024F2D6,0x6ac,strref_gate_model_24f2d6,string_reference,function references string(s): gate_model
+0x00250394,0x9b2,strref_dialogue_number_bclyt_250394,string_reference,function references string(s): dialogue_number.bclyt
+0x00258414,0x42cd4,strref_dialogue_choice_bclyt_258414,string_reference,function references string(s): dialogue_choice.bclyt
+0x00268BEC,0x9c0,strref_greetingU_bclyt_268bec,string_reference,function references string(s): greetingU.bclyt
+0x0027CC94,0x6a0,strref_ending_filter_bclyt_27cc94,string_reference,function references string(s): ending_filter.bclyt
+0x0027DD24,0xdf8,strref_ending_filter_focus_bclan_27dd24,string_reference,function references string(s): ending_filter_focus.bclan
+0x0027E59E,0x746,strref_result_life_bclyt_27e59e,string_reference,function references string(s): Btn_circle | mainD.bclyt | resultU.bclyt
+0x00280400,0x11e6,strref_life_empty_280400,string_reference,function references string(s): life_empty
+0x00284B34,0x350,strref_Btn_circle_284b34,string_reference,function references string(s): Btn_circle
+0x00284ED4,0x5fe,strref_newly_arrived_gametitle_u_284ed4,string_reference,function references string(s): newly_arrived_gametitle_u
+0x002A19CC,0x1a24,strref_mii_snapPs_2a19cc,string_reference,function references string(s): mii_snapPs
+0x002A1AA8,0x4e4,strref_mii_snapPs_2a1aa8,string_reference,function references string(s): mii_snapPs
+0x002A2100,0x516,strref_card_choice_prof_2a2100,string_reference,function references string(s): card_choice_prof | card_profU.bclyt
+0x002B250C,0xe9a,strref_shadow_model_2b250c,string_reference,function references string(s): shadow_model
+0x002B50CC,0x1524,strref_dialogue_mini_mask_bclyt_2b50cc,string_reference,function references string(s): dia_mini_mask | dialogue_mini_mask.bclyt
+0x002B65A4,0x1650,strref_mii_hand_handwaving_2b65a4,string_reference,function references string(s): mii_hand_handwaving
+0x002CB9CC,0x38,strref_bgU_bclyt_2cb9cc,string_reference,function references string(s): bgU.bclyt

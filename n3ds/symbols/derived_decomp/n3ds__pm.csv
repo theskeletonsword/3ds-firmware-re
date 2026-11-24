@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00101EA8,0x24,pm_svc_0x25_WaitSynchronizationN_101ea8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 7 C lines

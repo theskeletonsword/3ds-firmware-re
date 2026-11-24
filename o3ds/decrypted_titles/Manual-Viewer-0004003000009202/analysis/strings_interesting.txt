@@ -1,0 +1,126 @@
+0x00118CA4	font:/cbf_std.bcfnt.lz
+0x0012D4C4	rom:/message/
+0x00132160	RWSTDERR
+0x0013F994	%s: %s
+0x0013FBB8	Logger::write buffer size is not enough.
+0x0013FDB8	%s: %s
+0x0013FDCC	%s: %c
+0x0013FDE0	%s: %hhd
+0x0013FDF8	%s: %hd
+0x0013FE0C	%s: %d
+0x0013FE20	%s: %ld
+0x0013FE4C	%s: %lld
+0x0013FE64	%s: %hhu
+0x0013FE7C	%s: %hu
+0x0013FE90	%s: %u
+0x0013FEA4	%s: %lu
+0x0013FED0	%s: %llu
+0x0013FF00	%s: %f
+0x0013FF28	%s: %lf
+0x0013FF50	%s: %Lf
+0x00140358	test %d %d %d
+0x00140710	HEL_CHECK_POINT(): %s, line %d
+0x00147E5C	Texture.arc
+0x00148C58	sdmc:/
+0x0014968C	Failure
+0x0015101C	%s%03d%s%d%s
+0x001510C8	%s%03d%s%s%s
+0x00153620	%s%03d
+0x00156D58	cbf_std.bcfnt
+0x00156D68	BcmaInfo.bclyt
+0x00156D7C	%s_%s_index.arc
+0x00156D8C	%s_%s_small.arc
+0x00156D9C	%s_%s_large.arc
+0x00156EC0	%s_index.arc
+0x00156ED0	%s_small.arc
+0x00156EE0	%s_large.arc
+0x00156F94	BcmaInfo.arc
+0x0015C4C0	rom:/%s
+0x0015C4CC	rom:/%s.%s
+0x0015C4E4	cbf_std.bcfnt
+0x0015C4F4	%s.bclyt
+0x00174BD0	rom:/sound/Main.bcsar
+0x0019280C	(%s , %s, %s)
+0x0019A1C4	nw::lyt::Layout::CalculateMtx
+0x0019A6A8	nw::lyt::Layout::Animate
+0x001A3680	Exception: %s.
+0x001AEA7C	dsp::DSP
+0x001B61C8	std::cin
+0x001B61D3	std::cout
+0x001B61DE	std::cerr
+0x001B61E9	std::clog
+0x001B61F4	std::wcin
+0x001B61FF	std::wcout
+0x001B620A	std::wcerr
+0x001B6215	std::wclog
+0x001B954B	ebird.msbt
+0x001B9556	cbf_std.bcfnt
+0x001B9641	Index.bclyt
+0x001B99A6	rom:/layout/PowBtnFadeD00.arc
+0x001B99C4	rom:/layout/ApltBootD00.arc
+0x001B99E0	rom:/layout/PowBtnFadeU00.arc
+0x001B99FE	rom:/layout/ApltBootU00.arc
+0x001B9A1A	rom:/layout/CsrHeadLine00.arc
+0x001B9A38	rom:/layout/IndexBase00.arc
+0x001B9A54	rom:/layout/BtnClose00.arc
+0x001B9A6F	rom:/layout/BtnTextSize00.arc
+0x001B9A8D	rom:/layout/PageBg00.arc
+0x001B9AA6	rom:/layout/BtnCloseLng00.arc
+0x001B9AC4	rom:/layout/BtnBackLng00.arc
+0x001B9AE1	rom:/layout/Dialog00.arc
+0x001B9AFA	rom:/layout/BtnBack00.arc
+0x001B9B14	rom:/layout/DialogMask00.arc
+0x001B9B31	rom:/layout/BtnLngSel00.arc
+0x001B9B4D	rom:/layout/PageShdw00.arc
+0x001B9B68	rom:/layout/BtnShdw00.arc
+0x001B9B82	rom:/layout/BtnClose01.arc
+0x001B9B9D	rom:/layout/Dialog01.arc
+0x001B9BB6	rom:/layout/Dialog02.arc
+0x001B9BCF	rom:/layout/PureLocator2.arc
+0x001B9BEC	rom:/layout/HeadLineCheckMark.arc
+0x001B9C0E	rom:/layout/LanguageSelManual.arc
+0x001B9C30	rom:/layout/AllNull.arc
+0x001B9C48	rom:/layout/MainNull.arc
+0x001B9C61	rom:/layout/IndexNull.arc
+0x001B9C7B	rom:/layout/PageNum.arc
+0x001B9C93	rom:/layout/HomeNixSign.arc
+0x001B9CAF	rom:/layout/WaitIcon.arc
+0x001B9CC8	rom:/layout/PageGroup.arc
+0x001B9CE2	rom:/layout/SoftTitleHeader.arc
+0x001B9D02	rom:/layout/LanguageSelHeader.arc
+0x001B9D24	rom:/layout/LoadError.arc
+0x001B9D3E	rom:/layout/ScrollIndicator.arc
+0x001B9D5E	rom:/layout/PureLocator.arc
+0x001B9D7A	rom:/layout/LangSelectorTest.arc
+0x001B9D9B	rom:/layout/HLTxt.arc
+0x001B9DB1	rom:/layout/BtnHeadLineTxt.arc
+0x001B9DD0	rom:/layout/ContentsTxt.arc
+0x001B9DEC	rom:/layout/SideScrollArw.arc
+0x001B9E0A	rom:/shaders/nwlyt_PaneShader.shbin
+0x001B9E2E	rom:/shaders/nwfont_TextWriterShader.shbin
+0x001B9E59	rom:/shaders/nwfont_RectDrawerShader.shbin
+0x001B9E84	rom:/shaders/nwlyt_ConstColorShader.shbin
+0x001BC565	gsp::Lcd
+0x001BC56E	gsp::Gpu
+0x001BC583	%s: bad locale name: "%s"
+0x001BC59D	%s: range error: invalid range [%d, %d)
+0x001BC5C5	%s: argument value %u out of range [0, %u)
+0x001BC5F0	%s: conversion failed
+0x001BC606	%s: facet %u not found in "%s" locale
+0x001BC62C	%s: failed to construct locale name
+0x001BC650	%s: exception
+0x001BC65E	%s: unexpected exception
+0x001BC677	%s: invalid pointer %p
+0x001BC68E	%s: logic error
+0x001BC69E	%s: unspecified error
+0x001BC6B4	%s: runtime error
+0x001BC6C6	%s: underflow error
+0x001BC6DA	%s: overflow error
+0x001BC6ED	%s: stream object has set %s
+0x001BC70A	%s: stream object has set ios::badbit
+0x001BC730	%s: stream object has set ios::eofbit
+0x001BC756	%s: stream object has set ios::failbit
+0x001BC77D	%s: bad cast
+0x001BC78A	%s: length error: %u > %u
+0x001BC7A4	%s: bad_alloc: out of memory
+0x001BC7C1	%s: out of memory

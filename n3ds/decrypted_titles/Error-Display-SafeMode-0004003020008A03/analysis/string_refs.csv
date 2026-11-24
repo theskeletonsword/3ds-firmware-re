@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00102178,0x12cc,strref_csnd_SND_102178,string_reference,function references string(s): csnd:SND | gpio:NWM

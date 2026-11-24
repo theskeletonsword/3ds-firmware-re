@@ -1,0 +1,7 @@
+0x001182A7	nwm::EXT
+0x00118717	font:/cbf_zh-Hans-CN.bcfnt.lz
+0x00118735	font:/cbf_ko-Hang-KR.bcfnt.lz
+0x00118753	font:/cbf_zh-Hant-TW.bcfnt.lz
+0x00118771	font:/cbf_std.bcfnt.lz
+0x001187A0	gsp::Lcd
+0x001187A9	gsp::Gpu

@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001340DC,0x4c,lib_dispatchers_rt_arm_1340dc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x0011DB28,0x54,lib_crt_aeabi_memcpy_11db28,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00102C2C ""pm_crt_aeabi_memcpy_00102c2c"" (o3ds_semantic)"
+0x0011DC4C,0x5c,lib_crt_strlen_11dc4c,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:fs @0x0011E1FC ""fs_crt_strlen_0011e1fc"" (o3ds_semantic)"
+0x00133BF4,0x4c,lib_dispatchers_rt_arm_133bf4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x0011B5D8,0xb0,lib_crt_aeabi_uidivmod_11b5d8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-PTM-Battery-and-Pedometer-0004013000002202 @0x001055E8 ""ptm_crt_aeabi_uidivmod"" (o3ds_semantic)"
+0x001190D6,0x22,lib_crt_aeabi_vec_ctor_1190d6,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:fs @0x0011D4E2 ""fs_crt_aeabi_vec_ctor_0011d4e2"" (o3ds_semantic)"
+0x00133FA8,0x4c,lib_dispatchers_rt_arm_133fa8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00133F5C,0x4c,lib_dispatchers_rt_arm_133f5c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00134760,0x68,lib_engine_fsm_arm_134760,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E938 ""cecd_engine_fsm_arm_10e938"" (o3ds_semantic)"
+0x001347E4,0x20c,lib_engine_fsm_arm_1347e4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E9BC ""cecd_engine_fsm_arm_10e9bc"" (o3ds_semantic)"

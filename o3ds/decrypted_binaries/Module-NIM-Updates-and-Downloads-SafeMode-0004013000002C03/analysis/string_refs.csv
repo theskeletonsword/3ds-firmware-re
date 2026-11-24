@@ -1,0 +1,5 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00103E40,0x68,strref_https_nus_c_shop_nintendowifi_net_nus_services_N_103e40,string_reference,function references string(s): https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x00104010,0x680,strref_https_ecs_c_shop_nintendowifi_net_ecs_services_E_104010,string_reference,function references string(s): https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x00111B88,0x680,strref_https_ecs_c_shop_nintendowifi_net_ecs_services_E_111b88,string_reference,function references string(s): https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x0013299C,0xd4c,strref_Connection_GetStatusCode_13299c,string_reference,function references string(s): Connection.GetStatusCode

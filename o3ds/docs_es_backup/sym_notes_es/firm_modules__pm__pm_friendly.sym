@@ -1,0 +1,147 @@
+# Symbol table for FIRM built-in module 'pm' (TitleID 0x0004013000001202)
+# Load .text: 0x00100000 (+0x5F38) | .rodata: 0x00106000 (+0x39C) | .data: 0x00107000 (+0x1D0) | .bss: 0x3804
+# Total: 142 | CONFIRMED: 97 | EVIDENCE_BASED: 45 | HYPOTHESIS: 0
+Address         Size    Confidence      Name                                                    Notes
+----------------------------------------------------------------------------------------------------------------------------------
+0x00100000  0x002C  CONFIRMED       pm_entry                                                Entry point: init BSS, init_array, connect srv (0x100a30), main loop (0x100084)
+0x00100024  0x001C  CONFIRMED       pm_crt0_bss_zero_init                                   C: bucle limpiado a cero de seccion .bss (10L)
+0x00100048  0x001A  EVIDENCE_BASED  pm_sub_00100048                                         C: helper PM (void FUN_00100048(void); calls=[], callers=[0x100000]) (10L)
+0x00100084  0x03A4  CONFIRMED       pm_server_main_loop                                     C: inicializa layout memoria APPMEMALLOC (0x100524), registra pm:app y pm:dbg, ReplyAndReceive
+0x00100460  0x002C  CONFIRMED       pm_crt_fini_array                                       C: itera destructores estaticos CRT
+0x00100494  0x004C  CONFIRMED       pm_os_init_args                                         C: compara argumentos de entorno
+0x001004E8  0x0018  CONFIRMED       pm_svc_0x4A_AcceptSession_001004e8                      Wrapper/stub directo svc 0x4A (AcceptSession) (6L)
+0x00100500  0x0018  CONFIRMED       pm_svc_0x4F_ReplyAndReceive_00100500                    Wrapper/stub directo svc 0x4F (ReplyAndReceive) (6L)
+0x00100518  0x0008  EVIDENCE_BASED  pm_getter_setter_stub_00100518                          C: getter/setter/constante directa (4L)
+0x00100524  0x044C  CONFIRMED       pm_init_builtin_and_appmemalloc                         C+SWI 0x77/0x78/0x79/0x7C: lee APPMEMALLOC (GetSystemInfo), crea/fija ResourceLimits, KernelSetState y lanza sysmodules iniciales
+0x001009B8  0x0074  EVIDENCE_BASED  pm_check_pending_and_relaunch                           C: comprueba trabajo pendiente y coordina relanzamiento
+0x00100A30  0x0064  CONFIRMED       pm_runtime_heap_and_arbiter_init                        C: inicializa AddressArbiter y escanea memoria (QueryMemory)
+0x00100A54  0x0034  EVIDENCE_BASED  pm_sub_00100a54                                         C: helper PM (int FUN_00100a54(undefined4 *param_1); calls=[0x1012a0], callers=[0x100084]) (11L)
+0x00100A88  0x00B8  EVIDENCE_BASED  pm_sub_00100a88                                         C: helper PM (int FUN_00100a88(void); calls=[0x1012dc,0x1035e4,0x103658], callers=[0x100084]) (53L)
+0x00100B44  0x004C  CONFIRMED       pm_srv_notify_wait_thread                               C: inicia monitoreo de notificaciones srv:
+0x00100B98  0x008C  EVIDENCE_BASED  pm_sub_00100b98                                         C: helper PM (undefined4 FUN_00100b98(int param_1,undefined; calls=[0x1035e4,0x103658], callers=[0x100084]) (44L)
+0x00100C28  0x0018  EVIDENCE_BASED  pm_sub_00100c28                                         C: helper PM (bool FUN_00100c28(void); calls=[], callers=[0x100084]) (4L)
+0x00100C44  0x0054  CONFIRMED       pm_ipc_send_cmd_0x03_00100c44                           C+SWI 0x32: envia cmd IPC 0x00030100 via TLS+0x80 (sig: int FUN_00100c44(undefined4 *param_1,undefine)
+0x00100CA0  0x004C  CONFIRMED       pm_ipc_send_cmd_0x04_00100ca0                           C+SWI 0x32: envia cmd IPC 0x000400C0 via TLS+0x80 (sig: int FUN_00100ca0(undefined4 param_1,undefined)
+0x00100CF4  0x0088  CONFIRMED       pm_srv_shutdown_handles                                 C+SWI 0x23: cierra handles srv
+0x00100D90  0x0040  EVIDENCE_BASED  pm_match_cstr_helper_00100d90                           C: valida puntero C-string no vacio y compara con constante (9L)
+0x00100DD8  0x0040  EVIDENCE_BASED  pm_match_cstr_helper_00100dd8                           C: valida puntero C-string no vacio y compara con constante (9L)
+0x00100E20  0x0018  CONFIRMED       pm_svc_0x17_CreateEvent_00100e20                        Wrapper/stub directo svc 0x17 (CreateEvent) (6L)
+0x00100E38  0x0018  CONFIRMED       pm_svc_0x78_CreateResourceLimit_00100e38                Wrapper/stub directo svc 0x78 (CreateResourceLimit) (6L)
+0x00100E50  0x001C  CONFIRMED       pm_svc_0x2A_GetSystemInfo_00100e50                      Wrapper/stub directo svc 0x2A (GetSystemInfo) (7L)
+0x00100E6C  0x0018  CONFIRMED       pm_svc_0x33_OpenProcess_00100e6c                        Wrapper/stub directo svc 0x33 (OpenProcess) (6L)
+0x00100E84  0x00B8  EVIDENCE_BASED  pm_sub_00100e84                                         C: helper PM (uint FUN_00100e84(uint *param_1,uint *param_2; calls=[], callers=[0x100d90,0x100dd8]) (78L)
+0x00100F44  0x0034  EVIDENCE_BASED  pm_sync_atomic_op_00100f44                              C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x00100F78  0x0038  EVIDENCE_BASED  pm_sub_00100f78                                         C: helper PM (void FUN_00100f78(void); calls=[0x1013f4], callers=[0x100a30]) (15L)
+0x00100FB4  0x00E4  CONFIRMED       pm_thread_create_and_start                              C: reserva stack y lanza thread con svcCreateThread (0x10140c)
+0x001010A4  0x0064  EVIDENCE_BASED  pm_sub_001010a4                                         C: helper PM (void FUN_001010a4(void); calls=[0x101430,0x1036c4], callers=[0x100a30]) (40L)
+0x0010110C  0x0074  EVIDENCE_BASED  pm_sub_0010110c                                         C: helper PM (void FUN_0010110c(void); calls=[0x1036c4], callers=[0x100a30]) (26L)
+0x00101120  0x0010  EVIDENCE_BASED  pm_sub_00101120                                         C: helper PM (void FUN_00101120(void); calls=[], callers=[0x100a30]) (7L)
+0x00101134  0x0044  EVIDENCE_BASED  pm_sub_00101134                                         C: helper PM (int FUN_00101134(void); calls=[0x101c54,0x103690,0x103780], callers=[0x100524]) (13L)
+0x0010117C  0x0108  CONFIRMED       pm_srv_connect_initial                                  C: conecta a srv: y registra eventos/clientes
+0x001012A0  0x0038  CONFIRMED       pm_srv_EnableNotification_0x20000                       C+SWI 0x32: srv: cmd 0x00020000 EnableNotification
+0x001012DC  0x0038  CONFIRMED       pm_srv_ReceiveNotification_0xB0000                      C+SWI 0x32: srv: cmd 0x000B0000 ReceiveNotification
+0x00101318  0x0034  EVIDENCE_BASED  pm_sub_00101318                                         C: helper PM (void FUN_00101318(undefined4 param_1,undefine; calls=[0x101bb4], callers=[0x100524]) (5L)
+0x001013DC  0x0018  CONFIRMED       pm_svc_0x2D_ConnectToPort_001013dc                      Wrapper/stub directo svc 0x2D (ConnectToPort) (6L)
+0x001013F4  0x0018  CONFIRMED       pm_svc_0x21_CreateAddressArbiter_001013f4               Wrapper/stub directo svc 0x21 (CreateAddressArbiter) (6L)
+0x0010140C  0x0024  CONFIRMED       pm_svc_0x08_CreateThread_0010140c                       Wrapper/stub directo svc 0x08 (CreateThread) (8L)
+0x00101430  0x0030  CONFIRMED       pm_svc_0x02_QueryMemory_00101430                        Wrapper/stub directo svc 0x02 (QueryMemory) (12L)
+0x00101460  0x021C  CONFIRMED       pm_proc_list_prepare_shutdown_ids                       ASM r2: recopila PIDs activos bajo lock para apagado/terminacion
+0x0010167C  0x0498  CONFIRMED       pm_launch_title_ex                                      C+SWI 0x76: prepara dependencias, valida limites, lanza titulo con Loader y registra proceso
+0x00101BB4  0x00A0  EVIDENCE_BASED  pm_sub_00101bb4                                         C: helper PM (void FUN_00101bb4(int param_1,int param_2,int; calls=[0x1036e0], callers=[0x100524,0x101318]) (33L)
+0x00101C54  0x000C  EVIDENCE_BASED  pm_sub_00101c54                                         C: helper PM (void FUN_00101c54(undefined4 param_1); calls=[], callers=[0x101134]) (5L)
+0x00101C64  0x0034  CONFIRMED       pm_ipc_send_cmd_0x01_00101c64                           C+SWI 0x32: envia cmd IPC 0x00010002 via TLS+0x80 (sig: int FUN_00101c64(void))
+0x00101CFC  0x00E8  CONFIRMED       pm_build_dependency_list                                C: construye lista de TitleIDs dependientes desde ExHeader
+0x00101E4C  0x0020  EVIDENCE_BASED  pm_sub_00101e4c                                         C: helper PM (void FUN_00101e4c(undefined4 param_1); calls=[], callers=[0x103840]) (7L)
+0x00101E74  0x0018  CONFIRMED       pm_svc_0x60_DebugActiveProcess_00101e74                 Wrapper/stub directo svc 0x60 (DebugActiveProcess) (6L)
+0x00101E8C  0x001C  CONFIRMED       pm_svc_0x2B_GetProcessInfo_00101e8c                     Wrapper/stub directo svc 0x2B (GetProcessInfo) (7L)
+0x00101EA8  0x000C  CONFIRMED       pm_svc_0x0A_SleepThread_00101ea8                        Wrapper/stub directo svc 0x0A (SleepThread) (5L)
+0x00101ED8  0x0178  CONFIRMED       pm_launch_dependency_titles                             C: verifica dependencias ya activas e invoca carga via Loader/fs:REG
+0x00102054  0x0358  CONFIRMED       pm_apply_kernel_state_and_notify                        C+SWI 0x18/0x23/0x79/0x7C: aplica KernelSetState (0x7C), srv:pm y lanza/registra proceso en SM
+0x001023C0  0x0018  EVIDENCE_BASED  pm_sync_unlock_or_signal_001023c0                       C: liberacion atomica LDREX/STREX de lock (9L)
+0x001023D8  0x004C  EVIDENCE_BASED  pm_sub_001023d8                                         C: helper PM (void FUN_001023d8(void); calls=[], callers=[0x1024b4,0x103840]) (22L)
+0x00102424  0x004C  EVIDENCE_BASED  pm_sub_00102424                                         C: helper PM (void FUN_00102424(void); calls=[], callers=[0x103840]) (20L)
+0x00102478  0x0030  CONFIRMED       pm_crt_fill_words_00102478                              C verificado: rellena rango [param_1, param_2) con palabra param_3
+0x001024B4  0x0014  EVIDENCE_BASED  pm_getter_setter_stub_001024b4                          C: getter/setter/constante directa (5L)
+0x001024C8  0x000C  EVIDENCE_BASED  pm_getter_setter_stub_001024c8                          C: getter/setter/constante directa (4L)
+0x00102524  0x022C  CONFIRMED       pm_app_LaunchTitle                                      C: pm:app cmd 1 (0x00010080); lanza titulo por ProgramInfo + flags
+0x00102764  0x0140  CONFIRMED       pm_terminate_process_timeout                            C+SWI 0x24/0x76: espera WaitSynchronization1 o fuerza svcTerminateProcess
+0x001028A8  0x012C  CONFIRMED       pm_cleanup_process_entry                                C: desenlaza entrada de proceso de tabla SM/PM
+0x001029D4  0x01B8  CONFIRMED       pm_launch_title_core                                    C+SWI 0x76: secuencia completa Loader::LoadProcess + srv:pm::RegisterProcess + svcRunProcess (0x103154)
+0x00102BA4  0x0088  EVIDENCE_BASED  pm_sub_00102ba4                                         C: helper PM (undefined8 FUN_00102ba4(uint *param_1,uint *p; calls=[], callers=[0x103e64,0x103e98,0x104f90]) (198L)
+0x00102C2C  0x0054  CONFIRMED       pm_crt_aeabi_memcpy_00102c2c                            C verificado: copia de memoria optimizada 32B __aeabi_memcpy (56L)
+0x00102C80  0x002C  CONFIRMED       pm_ns_error_or_state_sync                               C: helper estado / notificacion via 0x103cfc + check Result
+0x00102CB0  0x0004  CONFIRMED       pm_svc_0x3C_Break_00102cb0                              Wrapper/stub directo svc 0x3C (Break) (11L)
+0x00102CB4  0x0030  CONFIRMED       pm_srv_PublishToAll_0x000C0080                          C+SWI 0x32: srv: cmd 0x000C0080 PublishToAll (handle 0x107178)
+0x00102CEC  0x0018  CONFIRMED       pm_svc_0x22_ArbitrateAddress_00102cec                   Wrapper/stub directo svc 0x22 (ArbitrateAddress) (5L)
+0x00102D04  0x0074  EVIDENCE_BASED  pm_sync_atomic_op_00102d04                              C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x00102D7C  0x009C  EVIDENCE_BASED  pm_sub_00102d7c                                         C: helper PM (uint FUN_00102d7c(int param_1,uint param_2); calls=[], callers=[0x10167c,0x101ed8,0x102054]) (34L)
+0x00102E18  0x0020  EVIDENCE_BASED  pm_sub_00102e18                                         C: helper PM (void FUN_00102e18(undefined4 *param_1); calls=[], callers=[0x103ee0]) (9L)
+0x0010308C  0x00C4  EVIDENCE_BASED  pm_sync_atomic_op_0010308c                              C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x00103154  0x0024  CONFIRMED       pm_svc_0x12_RunProcess_00103154                         Wrapper/stub directo svc 0x12 (RunProcess) (5L)
+0x00103178  0x0030  CONFIRMED       pm_loader_UnregisterProgram_0x00030080                  C+SWI 0x32: Loader cmd 0x00030080 UnregisterProgram (handle 0x107154)
+0x001031B0  0x004C  CONFIRMED       pm_loader_GetProgramInfo_0x00040080                     C+SWI 0x32: Loader cmd 0x00040080 GetProgramInfo ExHeader (handle 0x107154)
+0x00103208  0x0064  CONFIRMED       pm_loader_RegisterProgram_0x00020200                    C+SWI 0x32: Loader cmd 0x00020200 RegisterProgram (handle 0x107154)
+0x00103274  0x0014  EVIDENCE_BASED  pm_sub_00103274                                         C: helper PM (void FUN_00103274(undefined4 *param_1,undefin; calls=[], callers=[0x100c44,0x100ca0,0x103690]) (8L)
+0x00103288  0x004C  EVIDENCE_BASED  pm_sub_00103288                                         C: helper PM (int * FUN_00103288(int *param_1); calls=[0x102d04,0x1035e4,0x103658], callers=[0x1009b8,0x10167c,0x101ed8]) (14L)
+0x001032D4  0x013C  CONFIRMED       pm_launch_system_or_app_process                         C+SWI 0x76: variante lanzamiento proceso sistema/aplicacion con dependencias
+0x00103414  0x0114  EVIDENCE_BASED  pm_sync_atomic_op_00103414                              C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x0010352C  0x0104  EVIDENCE_BASED  pm_sync_event_or_arbiter_wait_0010352c                  C: espera atomica LDREX/STREX + ArbitrateAddress sobre contador
+0x001035E4  0x0020  EVIDENCE_BASED  pm_sync_atomic_op_001035e4                              C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x00103604  0x0050  EVIDENCE_BASED  pm_sub_00103604                                         C: helper PM (undefined4 * FUN_00103604(void); calls=[0x102478], callers=[0x100524,0x102054]) (15L)
+0x00103658  0x0038  EVIDENCE_BASED  pm_reclock_lock_00103658                                C: verifica owner TLS (c13,c0,3) en param_1+4 y adquiere lock recursivo
+0x00103690  0x007C  CONFIRMED       pm_ipc_send_cmd_0x05_00103690                           C+SWI 0x32: envia cmd IPC 0x00050100 via TLS+0x80 (sig: int FUN_00103690(undefined4 *param_1,undefine)
+0x001036C4  0x001C  EVIDENCE_BASED  pm_sub_001036c4                                         C: helper PM (void FUN_001036c4(int param_1); calls=[0x1023c0], callers=[0x100524,0x1010a4,0x10110c]) (7L)
+0x001036E0  0x0130  CONFIRMED       pm_crt_aeabi_uidivmod_001036e0                          C verificado: division entera sin signo __aeabi_uidivmod (112L)
+0x00103710  0x0068  EVIDENCE_BASED  pm_sub_00103710                                         C: helper PM (void FUN_00103710(uint param_1); calls=[0x1037e0,0x1037e4], callers=[0x100524,0x100a30,0x102054]) (21L)
+0x00103780  0x005C  CONFIRMED       pm_crt_strlen_00103780                                  C verificado: strlen palabra-alineado (40L)
+0x001037E0  0x0004  CONFIRMED       pm_svc_0x3C_Break_001037e0                              Wrapper/stub directo svc 0x3C (Break) (11L)
+0x001037E4  0x0058  CONFIRMED       pm_svc_0x3C_Break_001037e4                              Wrapper/stub directo svc 0x3C (Break) (11L)
+0x00103840  0x004C  CONFIRMED       pm_svc_0x09_ExitThread_00103840                         Wrapper/stub directo svc 0x09 (ExitThread) (15L)
+0x0010388C  0x0018  CONFIRMED       pm_svc_0x35_GetProcessId_0010388c                       Wrapper/stub directo svc 0x35 (GetProcessId) (6L)
+0x001038A4  0x010C  CONFIRMED       pm_run_process_setup                                    C+SWI 0x05/0x07/0x77: configura affinity mask, ideal processor y resource limit del proceso
+0x001039B0  0x0108  CONFIRMED       pm_terminate_all_matching                               C+SWI 0x76: termina procesos que coinciden con mascara/criterio
+0x00103AB8  0x002C  CONFIRMED       pm_fsreg_UnloadProgram_0x04020040                       C+SWI 0x32: fs:REG cmd 0x04020040 UnloadProgram
+0x00103AE8  0x00E0  EVIDENCE_BASED  pm_sync_lock_acquire_00103ae8                           C: adquisicion atomica LDREX/STREX + ArbitrateAddress
+0x00103BCC  0x003C  CONFIRMED       pm_loader_LoadProcess_0x00010080                        C+SWI 0x32: Loader cmd 0x00010080 LoadProcess (handle 0x107154)
+0x00103C10  0x0050  CONFIRMED       pm_fsreg_Register_0x040103C0                            C+SWI 0x32: fs:REG cmd 0x040103C0 RegisterProgram
+0x00103C64  0x0034  CONFIRMED       pm_srvpm_UnregisterProcess_0x00040040                   C+SWI 0x32: srv:pm cmd 0x00040040 UnregisterProcess (handle 0x107184)
+0x00103CA0  0x0008  EVIDENCE_BASED  pm_getter_setter_stub_00103ca0                          C: getter/setter/constante directa (4L)
+0x00103CAC  0x0048  CONFIRMED       pm_srvpm_RegisterProcess_0x00030082                     C+SWI 0x32: srv:pm cmd 0x00030082 RegisterProcess con ACLs (handle 0x107184)
+0x00103CFC  0x003C  CONFIRMED       pm_srvpm_PublishToProcess_0x00010042                    C+SWI 0x32: srv:pm cmd 0x00010042 PublishToProcess (handle 0x107184)
+0x00103D48  0x0018  CONFIRMED       pm_svc_0x27_DuplicateHandle_00103d48                    Wrapper/stub directo svc 0x27 (DuplicateHandle) (6L)
+0x00103D60  0x0040  CONFIRMED       pm_crt_aeabi_memclr_00103d60                            C verificado: limpiado a cero __aeabi_memclr (86L)
+0x00103DA0  0x0074  CONFIRMED       pm_crt_aeabi_memcpy_00103da0                            C verificado: copia de memoria optimizada 32B __aeabi_memcpy (114L)
+0x00103E14  0x004C  CONFIRMED       pm_kernel_set_state_reboot                              C+SWI 0x7C: ejecuta svcKernelSetState para reinicio FIRM y espera evento
+0x00103E64  0x0030  CONFIRMED       pm_app_GetFIRMLaunchParams                              C: pm:app cmd 7; copia <=0x1000 bytes desde buffer chainload 0x12000000 a buffer cliente
+0x00103E98  0x0044  CONFIRMED       pm_app_SetFIRMLaunchParams                              C: pm:app cmd 9; copia <=0x1000 bytes al buffer chainload 0x12000000 y limpia resto a cero
+0x00103EE0  0x00FC  CONFIRMED       pm_app_UnregisterProcess                                C+SWI 0x23: pm:app cmd 0xC; desenlaza/cierra proceso bajo lock
+0x00103FE0  0x00B4  CONFIRMED       pm_dbg_LaunchAppDebug                                   C+SWI 0x79: pm:dbg cmd 1; lanza aplicacion en modo debug o RunQueuedProcess
+0x0010409C  0x00A8  CONFIRMED       pm_app_GetCurrentAppInfo                                C: pm:app cmd 8; obtiene TitleID y media/version de aplicacion activa via fs:REG
+0x00104148  0x0438  CONFIRMED       pm_system_shutdown_sequence                             C+SWI 0x19/0x28: coordina apagado ordenado de procesos por prioridad y timeout
+0x00104590  0x0090  CONFIRMED       pm_app_LaunchFIRM                                       C+SWI 0x19: pm:app cmd 3; termina aplicacion/sistema y prepara salto a FIRM
+0x00104624  0x018C  CONFIRMED       pm_terminate_process_group_helper                       ASM r2: recorre lista procesos limpiando handles y notificando 0x102cb4
+0x001047B0  0x013C  CONFIRMED       pm_terminate_processes_by_flag                          C+SWI 0x19: termina procesos activos segun bandera de apagado/reboot
+0x001048F0  0x006C  CONFIRMED       pm_dbg_LaunchApp                                        C+SWI 0x79: pm:dbg cmd 2; lanza app con flags|3
+0x00104964  0x0120  CONFIRMED       pm_app_TerminateTitle                                   C+SWI 0x76: pm:app cmd 5; termina proceso del TitleID dado
+0x00104A90  0x00F4  CONFIRMED       pm_app_TerminateCurrentApplication                      C+SWI 0x76: pm:app cmd 4; termina aplicacion en primer plano
+0x00104B90  0x01A0  CONFIRMED       pm_dbg_RunQueuedProcess                                 C+SWI 0x76: pm:dbg cmd 3; libera/ejecuta proceso debug en espera con DebugActiveProcess + svcRunProcess
+0x00104D40  0x0030  EVIDENCE_BASED  pm_sub_00104d40                                         C: helper PM (void FUN_00104d40(undefined4 param_1,undefine; calls=[0x102c80,0x104148], callers=[]) (10L)
+0x00104D78  0x0064  CONFIRMED       pm_app_PrepareForReboot                                 C: pm:app cmd 6; marca shutdown pending (+0x35=1), guarda TID y senaliza evento NS
+0x00104DE8  0x0094  CONFIRMED       pm_svc_0x28_GetSystemTick_00104de8                      Wrapper/stub directo svc 0x28 (GetSystemTick) (32L)
+0x00104EA0  0x00DC  CONFIRMED       pm_app_LaunchTitleUpdate                                C: pm:app cmd 0xD; lanza titulo de actualizacion validando flags&1/8
+0x00104F90  0x006C  CONFIRMED       pm_app_GetTitleExHeaderFlags                            C: pm:app cmd 2; copia <=0x1000 flags desde 0x12000000/ExHeader del PID
+0x00105008  0x00E4  CONFIRMED       pm_app_GetAppResourceLimit                              C+SWI 0x39: pm:app cmd 0xB; obtiene GetResourceLimitLimitValues y ajusta offset
+0x001050F4  0x00A0  CONFIRMED       pm_app_SetAppResourceLimit                              C+SWI 0x79: pm:app cmd 0xA; establece limite de memoria de aplicacion
+0x0010519C  0x0098  CONFIRMED       pm_manager_state_ctor                                   ASM r2: inicializa estructura principal PM + vtable 0x1061f8
+0x00105238  0x0088  CONFIRMED       pm_manager_state_dtor                                   ASM r2: destruye eventos/handles de manager PM (vtable 0x1061d4)
+0x001052F8  0x0058  CONFIRMED       pm_svc_0x23_CloseHandle_001052f8                        Wrapper/stub directo svc 0x23 (CloseHandle) (16L)
+0x00105354  0x0028  CONFIRMED       pm_svc_0x23_CloseHandle_00105354                        Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x0010537C  0x0038  CONFIRMED       pm_svc_0x24_WaitSynchronization1_0010537c               Wrapper/stub directo svc 0x24 (WaitSynchronization1) (11L)
+0x001053B4  0x0054  EVIDENCE_BASED  pm_sub_001053b4                                         C: helper PM (int * FUN_001053b4(int *param_1); calls=[0x103710], callers=[]) (15L)
+0x00105408  0x0028  CONFIRMED       pm_svc_0x23_CloseHandle_00105408                        Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x00105430  0x005C  EVIDENCE_BASED  pm_sub_00105430                                         C: helper PM (undefined4 * FUN_00105430(undefined4 *param_1; calls=[0x1037e4], callers=[]) (23L)
+0x00105494  0x0100  CONFIRMED       pm_dbg_ipc_dispatcher                                   C: dispatcher IPC 'pm:dbg' cmds 1..3 (LaunchAppDebug, LaunchApp, RunQueuedProcess)
+0x001055A8  0x03A4  CONFIRMED       pm_app_ipc_dispatcher                                   ASM r2: dispatcher IPC 'pm:app' ARM jump table 0x1055c8 (14 casos 0..0xD)
+0x0010594C  0x0054  EVIDENCE_BASED  pm_sub_0010594c                                         C: helper PM (undefined8 FUN_0010594c(void); calls=[0x103710,0x103d48], callers=[]) (21L)
+0x001059AC  0x0328  CONFIRMED       pm_static_init_globals                                  ASM r2: .init_array ctor principal estado PM y tablas estaticas
+0x00106038  0x0010  CONFIRMED       pm_ro_str_pm_ports                                      .rodata: strings 'pm:app' y 'pm:dbg'

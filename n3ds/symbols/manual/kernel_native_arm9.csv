@@ -1,0 +1,3 @@
+binary,ea,symbol_name,evidence
+kernel_native/arm9,0x0805680C,p9_thumb_interwork_stub_0x0805680C,decompiled-C similarity 0.67 with O3DS 0x08056A0C; address shift -0x200 equals every other Process9 function placed in this region (p9_memcpy 0x08056CBC -> 0x08056ABC)
+kernel_native/arm9,0x080568F4,p9_thumb_interwork_stub_0x080568F4,decompiled-C similarity 0.67 with O3DS 0x08056AF4; shift -0x200

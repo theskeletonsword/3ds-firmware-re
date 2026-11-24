@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00110214,0x8,ac_get_tls_110214,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0011090C,0x24,ac_svc_0x25_WaitSynchronizationN_11090c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x0011172C,0x8,ac_get_tls_11172c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00119414,0x24,ac_svc_0x01_ControlMemory_119414,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00119450,0x24,ac_svc_0x08_CreateThread_119450,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines

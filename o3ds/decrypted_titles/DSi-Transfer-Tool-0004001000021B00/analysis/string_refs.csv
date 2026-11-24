@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00108984,0x880,strref_connect_ac_internal_108984,string_reference,function references string(s): connect_ac_internal
+0x0013393C,0x7e4,strref_connect_http_13393c,string_reference,function references string(s): connect_http
+0x0018D12C,0xdbc,strref_rom_img_button_pressed_gif_18d12c,string_reference,function references string(s): rom:/img/button.gif | rom:/img/button_luna.gif | rom:/img/button_pressed.gif
+0x001A060C,0x358,strref_NintendoDS_1a060c,string_reference,function references string(s): NintendoDS
+0x001A59B4,0x2f8,strref_Nintendo_1a59b4,string_reference,function references string(s): Nintendo
+0x001FD864,0x10c,strref_disconnect_ac_1fd864,string_reference,function references string(s): disconnect_ac
+0x00229A90,0x124,strref_media_src_text_decoration_underline_color_0000FF_229a90,string_reference,function references string(s): media[src] { text-decoration: underline; color: #0000FF; }
+0x002590C0,0x2ab0,strref_Not_initialized_2590c0,string_reference,function references string(s): Not initialized
+0x00263584,0x48,strref_possix_C_get_mode_not_supported_263584,string_reference,function references string(s): possix _C_get_mode not supported

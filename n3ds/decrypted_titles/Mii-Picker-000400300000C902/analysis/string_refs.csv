@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00107374,0xbc,strref_CFLRES_107374,string_reference,function references string(s): $CFLRES:
+0x00107F84,0x174,strref_Dialog_00_107f84,string_reference,function references string(s): Dialog_00
+0x0010DDB4,0xcc,strref_csnd_SND_10ddb4,string_reference,function references string(s): csnd:SND
+0x00112BF4,0x174,strref_CFLDB_CFL_OldDB_dat_112bf4,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x0012F39C,0xc58c,strref_s_s_bclan_12f39c,string_reference,function references string(s): %s_%s.bclan
+0x0012FBE0,0x12c,strref_s_s_bclan_12fbe0,string_reference,function references string(s): %s_%s.bclan
+0x00131634,0x4d8,strref_AplSelectBase_Up_131634,string_reference,function references string(s): %s_%s.bclan | AplSelectBase | AplSelectBase_Up
+0x00131F88,0x94,strref_T_Base_02d_131f88,string_reference,function references string(s): T_Base_%02d
+0x0014C180,0xd4,strref_W_Dialog_14c180,string_reference,function references string(s): W_Dialog

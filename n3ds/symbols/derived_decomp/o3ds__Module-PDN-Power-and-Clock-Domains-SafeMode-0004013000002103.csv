@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001000C4,0x34,pdn_svc_0x23_CloseHandle_1000c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x001000F8,0x28,pdn_svc_0x23_CloseHandle_1000f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x001012E8,0x4,pdn_svc_0x3C_Break_1012e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0010131C,0x8,pdn_svc_0x3C_Break_10131c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00101B8C,0x38,pdn_svc_0x32_SendSyncRequest_101b8c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101BC8,0x3c,pdn_svc_0x32_SendSyncRequest_101bc8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100B14,0x388,pdn_ipc_server_loop_100b14,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x1013d4

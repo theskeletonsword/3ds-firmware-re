@@ -1,0 +1,46 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0012B1D4,0x8,ssl_svc_0x32_SendSyncRequest_12b1d4,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012B29C,0x8,ssl_svc_0x23_CloseHandle_12b29c,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141384,0x8,ssl_svc_0x03_ExitProcess_141384,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014144C,0x18,ssl_svc_0x21_CreateAddressArbiter_14144c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001414A0,0x1c,ssl_svc_0x2B_GetProcessInfo_1414a0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001414E0,0x18,ssl_svc_0x35_GetProcessId_1414e0,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001415B8,0x18,ssl_svc_0x4A_AcceptSession_1415b8,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001415D0,0x18,ssl_svc_0x2D_ConnectToPort_1415d0,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001415E8,0x18,ssl_svc_0x15_CreateSemaphore_1415e8,svc_wrapper,"function body is a single `svc #0x15` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141600,0x18,ssl_svc_0x16_ReleaseSemaphore_141600,svc_wrapper,"function body is a single `svc #0x16` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141618,0x18,ssl_svc_0x4F_ReplyAndReceive_141618,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141630,0x8,ssl_svc_0x0A_SleepThread_141630,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141638,0x8,ssl_svc_0x24_WaitSynchronization1_141638,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014164C,0x1c,ssl_svc_0x1E_CreateMemoryBlock_14164c,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141668,0x8,ssl_svc_0x09_ExitThread_141668,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141670,0x8,ssl_svc_0x20_UnmapMemoryBlock_141670,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001416C4,0x8,ssl_svc_0x3C_Break_1416c4,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141718,0x18,ssl_svc_0x22_ArbitrateAddress_141718,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141818,0x18,ssl_svc_0x27_DuplicateHandle_141818,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141830,0x8,ssl_svc_0x28_GetSystemTick_141830,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00141838,0x8,ssl_svc_0x1F_MapMemoryBlock_141838,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00146060,0x9,ssl_str_service_ClCertA_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ClCertA:"""
+0x001460B0,0x6,ssl_str_service_ssl_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ssl:C"""
+0x001460B6,0x6,ssl_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x001460CC,0x7,ssl_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001460D3,0x8,ssl_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001463E4,0x5,ssl_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001463E9,0x7,ssl_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00147188,0x6,ssl_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x00147BD8,0xc,ssl_func_ptr_table_147bd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00147C0C,0xc,ssl_func_ptr_table_147c0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00147C40,0xc,ssl_func_ptr_table_147c40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00147C74,0xc,ssl_func_ptr_table_147c74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00147CA8,0xc,ssl_func_ptr_table_147ca8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001481E4,0xc,ssl_func_ptr_table_1481e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0014AA80,0x6,ssl_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x00151DD8,0xc,ssl_func_ptr_table_151dd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00151F0C,0x14,ssl_func_ptr_table_151f0c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00151F4C,0x10,ssl_func_ptr_table_151f4c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00152124,0xc,ssl_func_ptr_table_152124,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00152174,0x14,ssl_func_ptr_table_152174,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001521B4,0x10,ssl_func_ptr_table_1521b4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001521CC,0x14,ssl_func_ptr_table_1521cc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00154EEC,0xc,ssl_func_ptr_table_154eec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00155134,0x24,ssl_func_ptr_table_155134,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)

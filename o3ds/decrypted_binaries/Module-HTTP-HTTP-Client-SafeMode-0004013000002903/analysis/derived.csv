@@ -1,0 +1,44 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,http_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001020AC,0x4c,http_ipc_client_cmd_0005_1020ac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050082
+0x001020FC,0x2c,http_ipc_client_cmd_0007_1020fc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00070080
+0x0010212C,0x44,http_ipc_client_cmd_000E_10212c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E0040
+0x00102174,0x48,http_ipc_client_cmd_0006_102174,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00060080
+0x00107274,0x18,http_svc_0x4A_AcceptSession_107274,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010728C,0x18,http_svc_0x21_CreateAddressArbiter_10728c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107AE4,0x54,http_ipc_client_cmd_0003_107ae4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00107B40,0x48,http_ipc_client_cmd_0004_107b40,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00108858,0x34,http_ipc_client_cmd_0001_108858,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00109038,0x10,http_svc_0x3C_Break_109038,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A434,0x54,http_ipc_client_cmd_0005_10a434,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050100
+0x0010AECC,0x18,http_svc_0x2D_ConnectToPort_10aecc,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B8EC,0x18,http_svc_0x35_GetProcessId_10b8ec,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010BB8C,0x18,http_svc_0x17_CreateEvent_10bb8c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010F938,0x40,http_ipc_client_cmd_0001_10f938,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010044
+0x0010FA1C,0x1c,http_svc_0x1E_CreateMemoryBlock_10fa1c,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010FA5C,0x18,http_svc_0x4F_ReplyAndReceive_10fa5c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00110CC8,0x30,http_ipc_client_cmd_0001_110cc8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00110CFC,0x138c,http_ipc_handler_cmd_0003_0004_0005_etc_110cfc,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030040, 0x00040040, 0x00050080, 0x000600C0"
+0x0011453C,0x2c,http_ipc_client_cmd_0004_11453c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040040
+0x0011456C,0x2c,http_ipc_client_cmd_000F_11456c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000F0040
+0x00115CA4,0x2c,http_ipc_client_cmd_001E_115ca4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001E0040
+0x00116828,0x34,http_ipc_client_cmd_0012_116828,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00120042
+0x001174A0,0xb8,http_ipc_client_cmd_0008_1174a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080102
+0x001175A4,0x60,http_ipc_client_cmd_0006_1175a4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00060084
+0x00118398,0x2c,http_ipc_client_cmd_0023_118398,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00230040
+0x001184DC,0x4c,http_ipc_client_cmd_0015_1184dc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00150082
+0x0011852C,0x4c,http_ipc_client_cmd_0017_11852c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00170082
+0x00119000,0x7,http_str_service_http_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:C"""
+0x001191EC,0x5,http_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001191F1,0x7,http_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00119280,0x6,http_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x00119410,0x6,http_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0011941C,0x6,http_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x00119564,0x18,http_func_ptr_table_119564,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00119580,0xc,http_func_ptr_table_119580,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011969C,0x10,http_func_ptr_table_11969c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001196E4,0x10,http_func_ptr_table_1196e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011970C,0x20,http_func_ptr_table_11970c,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00119740,0x1c,http_func_ptr_table_119740,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001197AC,0xc,http_func_ptr_table_1197ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011988C,0x6,http_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

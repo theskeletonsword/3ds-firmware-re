@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00113D80,0x5c,strref_https_ninja_ctr_shop_nintendo_net_ninja_ws_my_ba_113d80,string_reference,function references string(s): https://ninja.ctr.shop.nintendo.net/ninja/ws/my/balance/current_raw
+0x00115498,0x80,strref_EC_PLATFORM_STRING_TKT_115498,string_reference,function references string(s): EC_PLATFORM_STRING_TKT
+0x0011827C,0x50,strref_The_nup_debug_message_can_not_be_read_because_an_11827c,string_reference,function references string(s): The nup debug message can not be read because an api is active in other thread.
+0x0011A99C,0x42,strref_https_nus_c_shop_nintendowifi_net_nus_services_N_11a99c,string_reference,function references string(s): https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x0014AE18,0xde,strref_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv_14ae18,string_reference,function references string(s): ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/

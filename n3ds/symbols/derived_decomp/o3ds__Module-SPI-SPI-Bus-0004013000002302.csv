@@ -1,0 +1,17 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100558,0x18,spi_svc_0x4A_AcceptSession_100558,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4A) (AcceptSession); 5 C lines
+0x00100570,0x24,spi_svc_0x25_WaitSynchronizationN_100570,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00100DEC,0x10,spi_get_tls_100dec,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00100EAC,0x34,spi_svc_0x32_SendSyncRequest_100eac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100EE8,0x38,spi_svc_0x32_SendSyncRequest_100ee8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100F24,0x38,spi_svc_0x32_SendSyncRequest_100f24,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100F88,0x24,spi_svc_0x08_CreateThread_100f88,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00100FAC,0x18,spi_svc_0x4F_ReplyAndReceive_100fac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4F) (ReplyAndReceive); 5 C lines
+0x0010159C,0x18,spi_svc_0x35_GetProcessId_10159c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x35) (GetProcessId); 5 C lines
+0x00101D08,0x18,spi_svc_0x2D_ConnectToPort_101d08,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x2D) (ConnectToPort); 5 C lines
+0x00101DFC,0x24,spi_svc_0x01_ControlMemory_101dfc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00101E20,0x38,spi_svc_0x24_WaitSynchronization1_101e20,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x00102138,0x4,spi_svc_0x3C_Break_102138,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00102E40,0xc,spi_get_tls_102e40,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00103338,0x2c,spi_svc_0x23_CloseHandle_103338,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x00100E00,0xa0,spi_ipc_server_loop_100e00,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x100fac

@@ -1,0 +1,35 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010C314,0x64,strref_person_gender_c_gender_region_u_region_tz_name_s_10c314,string_reference,function references string(s): <person><gender>%c</gender><region>%u</region><tz_name>%s</tz_name></person>
+0x00115864,0x58,strref_TextBoxB_115864,string_reference,function references string(s): TextBoxB
+0x001158BC,0x54,strref_TextBoxB_1158bc,string_reference,function references string(s): TextBoxB
+0x00120488,0xbc,strref_CFLRES_120488,string_reference,function references string(s): $CFLRES:
+0x001318E4,0x174,strref_CFLDB_CFL_OldDB_dat_1318e4,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x001B42F0,0x70,strref_Mozilla_5_0_Nintendo_3DS_d_AppleWebKit_s_KHTML_l_1b42f0,string_reference,"function references string(s): Mozilla/5.0 (Nintendo 3DS/%d) AppleWebKit/%s (KHTML, like Gecko) NX/%s %s/%.1f.prod.%s"
+0x001B857C,0x2f8,strref_Nintendo_1b857c,string_reference,function references string(s): Nintendo
+0x001BADA4,0x358,strref_NintendoDS_1bada4,string_reference,function references string(s): NintendoDS
+0x001C9BE0,0xae0,strref_ScrollAreaRct_1c9be0,string_reference,function references string(s): ScrollAreaRct
+0x001E26B4,0x7c,strref_about_blank_1e26b4,string_reference,function references string(s): about:blank
+0x001E9B24,0x140,strref_error_code_d_error_kind_s_need_coppa_s_result_s_1e9b24,string_reference,"function references string(s): {""error_code"": %d, ""error_kind"": ""%s"", ""need_coppa"": %s, ""result"": %s}"
+0x001EA1FC,0x9c,strref_error_code_d_error_kind_s_year_d_month_d_day_d_1ea1fc,string_reference,"function references string(s): {""error_code"": %d, ""error_kind"": ""%s"", ""year"": %d, ""month"": %d, ""day"": %d}"
+0x00214D9C,0x5c,strref_FocusedOnOff_214d9c,string_reference,function references string(s): FocusedOnOff
+0x00214E20,0xb8,strref_InvalidatedOnOff_214e20,string_reference,function references string(s): InvalidatedOnOff
+0x00215374,0xac,strref_FocusedOnOff_215374,string_reference,function references string(s): DecidedOn | FocusedOnOff
+0x00215738,0x98,strref_FocusedOnOff_215738,string_reference,function references string(s): FocusedOnOff
+0x002157D0,0xbc,strref_FocusedOnOff_2157d0,string_reference,function references string(s): FocusedOnOff
+0x0021588C,0xb0,strref_FocusedOnOff_21588c,string_reference,function references string(s): FocusedOnOff
+0x0021593C,0xf4,strref_DecidedOn_21593c,string_reference,function references string(s): DecidedOn
+0x00219E28,0x310,strref_DialogPos_219e28,string_reference,function references string(s): DialogPos
+0x0021DACC,0x8dc,strref_Keyboard_InputDefault_21dacc,string_reference,function references string(s): Dialog_Decide | Keyboard_InputDefault
+0x00226F70,0xb4,strref_Bounding_226f70,string_reference,function references string(s): Bounding
+0x002275C8,0xc0,strref_BottomFrameFPct_2275c8,string_reference,function references string(s): BottomFrameFPct
+0x00227688,0xc0,strref_BottomFrameF2Pct_227688,string_reference,function references string(s): BottomFrameF2Pct
+0x00227748,0xd4,strref_SE_CTR_COMMON_CANCEL_227748,string_reference,function references string(s): BottomBtnLRct | BottomFrameHPct | SE_CTR_COMMON_CANCEL
+0x0022781C,0xf4,strref_BottomFrameHPct_22781c,string_reference,function references string(s): BottomFrameHPct
+0x0023216C,0x2b4,strref_BGM_ACCOUNT_OP_23216c,string_reference,function references string(s): BGM_ACCOUNT_OP
+0x0023726C,0xcc,strref_SE_CTR_SPIDER_LINK_23726c,string_reference,function references string(s): SE_CTR_SPIDER_LINK
+0x00243E58,0x320,strref_TitleTxb_243e58,string_reference,function references string(s): TitleTxb
+0x002441A8,0x240,strref_TitleTxb_2441a8,string_reference,function references string(s): TitleTxb
+0x0025FB84,0x8c,strref_CFLDB_CFL_OldDB_dat_25fb84,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x002855C8,0x1a4,strref_MainThread_2855c8,string_reference,function references string(s): MainThread
+0x002858A4,0xe8,strref_MainThread_2858a4,string_reference,function references string(s): MainThread
+0x002B3EFC,0x88,strref_PAErrorMsg_Brs_RecoveryReloadOrExit_Act_2b3efc,string_reference,function references string(s): PAErrorMsg_Brs_RecoveryReloadOrExit_Act

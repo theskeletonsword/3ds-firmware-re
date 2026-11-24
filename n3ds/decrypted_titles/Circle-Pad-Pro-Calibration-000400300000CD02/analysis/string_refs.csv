@@ -1,0 +1,9 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00121510,0x110,strref_s_Decide_bclan_121510,string_reference,function references string(s): %s_Decide.bclan | %s_Select.bclan | Group_00
+0x00121634,0x38c,strref_base_2b_cancel_121634,string_reference,function references string(s): base_2b_cancel | base_3b_ok
+0x001330C0,0xcc,strref_csnd_SND_1330c0,string_reference,function references string(s): csnd:SND
+0x0014B994,0x980c,strref_dlg_1b_retry_14b994,string_reference,function references string(s): dlg_1b_retry
+0x0014BFC4,0x230,strref_dlg_1b_retry_14bfc4,string_reference,function references string(s): cepd_dlg_ok | dlg_1b_retry
+0x0014CB44,0x1f4,strref_cepd_dlg_connect_14cb44,string_reference,function references string(s): cepd_dlg_connect
+0x0014D418,0x188,strref_Dialog_D_02d_Decide_bclan_14d418,string_reference,function references string(s): Dialog_D_%02d_Decide.bclan | Dialog_D_%02d_Select.bclan | Group_00
+0x0014DB60,0x1638,strref_TextBox_00_14db60,string_reference,function references string(s): TextBox_00

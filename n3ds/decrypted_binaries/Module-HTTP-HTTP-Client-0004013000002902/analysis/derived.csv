@@ -1,0 +1,35 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010174C,0x18,http_svc_0x21_CreateAddressArbiter_10174c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001020E0,0x4c,http_ipc_client_cmd_0004_1020e0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x001027D0,0x1c,http_svc_0x2B_GetProcessInfo_1027d0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010381C,0x18,http_svc_0x4A_AcceptSession_10381c,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010D2AC,0x18,http_svc_0x22_ArbitrateAddress_10d2ac,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00114640,0xc,http_func_ptr_table_114640,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00114BAC,0x1528,http_ipc_handler_cmd_0003_0004_0005_etc_114bac,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030040, 0x00040040, 0x00050080, 0x000600C0"
+0x0011A6F0,0xc,http_func_ptr_table_11a6f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B008,0x7,http_str_service_http_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:C"""
+0x0011B220,0x5,http_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0011B225,0x7,http_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0011B2B8,0x6,http_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x0011B448,0x6,http_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0011B44E,0x6,http_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0011B45C,0x7,http_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0011B463,0x8,http_str_service_fs_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:USER"""
+0x0011B4C8,0xc,http_func_ptr_table_11b4c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B5DC,0xc,http_func_ptr_table_11b5dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B5EC,0x18,http_func_ptr_table_11b5ec,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B608,0xc,http_func_ptr_table_11b608,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B618,0xc,http_func_ptr_table_11b618,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B628,0xc,http_func_ptr_table_11b628,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B758,0x10,http_func_ptr_table_11b758,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B7E0,0x18,http_func_ptr_table_11b7e0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B808,0x10,http_func_ptr_table_11b808,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B81C,0x2c,http_func_ptr_table_11b81c,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B860,0xc,http_func_ptr_table_11b860,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B8C0,0xc,http_func_ptr_table_11b8c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011B9BC,0x6,http_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0011B9C2,0x9,http_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x0011B9CB,0x6,http_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x0011B9D1,0x9,http_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x0011B9DA,0x6,http_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0011B9E0,0x9,http_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""

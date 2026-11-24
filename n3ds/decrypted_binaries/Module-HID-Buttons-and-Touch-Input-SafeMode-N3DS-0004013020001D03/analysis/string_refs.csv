@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001006D8,0x1988,strref_gpio_HID_1006d8,string_reference,function references string(s): gpio:HID

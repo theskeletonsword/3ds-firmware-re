@@ -1,0 +1,27 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100788,0x24,mcu_svc_0x25_WaitSynchronizationN_100788,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00101240,0x10,mcu_get_tls_101240,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00101304,0x34,mcu_svc_0x32_SendSyncRequest_101304,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101340,0x38,mcu_svc_0x32_SendSyncRequest_101340,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010137C,0x38,mcu_svc_0x32_SendSyncRequest_10137c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001013B8,0x3c,mcu_svc_0x32_SendSyncRequest_1013b8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001013FC,0x3c,mcu_svc_0x32_SendSyncRequest_1013fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101440,0x30,mcu_svc_0x32_SendSyncRequest_101440,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001014C4,0x24,mcu_svc_0x08_CreateThread_1014c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00101858,0x30,mcu_svc_0x32_SendSyncRequest_101858,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101BC8,0xc,mcu_get_tls_101bc8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00101CFC,0x28,mcu_svc_0x23_CloseHandle_101cfc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00101D38,0x2c,mcu_svc_0x23_CloseHandle_101d38,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x001039EC,0x4,mcu_svc_0x3C_Break_1039ec,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00103CA8,0x24,mcu_svc_0x01_ControlMemory_103ca8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00103CCC,0x38,mcu_svc_0x24_WaitSynchronization1_103ccc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x001041A8,0x30,mcu_svc_0x32_SendSyncRequest_1041a8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104240,0x30,mcu_svc_0x32_SendSyncRequest_104240,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104278,0x3c,mcu_svc_0x32_SendSyncRequest_104278,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101E10,0xa0,mcu_ipc_server_loop_101e10,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x00101EBC,0xa0,mcu_ipc_server_loop_101ebc,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x00101F68,0xa0,mcu_ipc_server_loop_101f68,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x00102014,0xa0,mcu_ipc_server_loop_102014,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x001021C8,0xa0,mcu_ipc_server_loop_1021c8,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x001023D0,0xa0,mcu_ipc_server_loop_1023d0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178
+0x00106314,0xa0,mcu_ipc_server_loop_106314,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x103178

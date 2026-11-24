@@ -1,0 +1,59 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0015DD68,0xb0,strref_N_nextPos_00_15dd68,string_reference,function references string(s): N_nextPos_00
+0x0015E0E0,0x26c,strref_TitleInfo_heading01_04_15e0e0,string_reference,function references string(s): N_nextPos_00 | T_title_00 | TitleInfo_heading01_04
+0x001688C0,0x18c,strref_T_message_00_1688c0,string_reference,function references string(s): T_message_00
+0x001719D8,0xe8,strref_T_message_00_1719d8,string_reference,function references string(s): T_message_00
+0x001A4318,0xcb70c,strref_T_message_00_1a4318,string_reference,function references string(s): T_message_00 | inOut_00
+0x001AE1A8,0x150,strref_T_message_00_1ae1a8,string_reference,function references string(s): T_message_00
+0x001D2BC8,0xfa0,strref_checkList_D_00_1d2bc8,string_reference,function references string(s): T_message_01 | T_message_02 | checkList_D_00
+0x0020C58C,0x12c,strref_https_20c58c,string_reference,function references string(s): https://
+0x00221768,0x12c,strref_T_message_00_221768,string_reference,function references string(s): T_message_00 | inOut_00
+0x00222458,0xc78,strref_T_message_00_222458,string_reference,function references string(s): T_message_00
+0x00231DF0,0x1280,strref_start_datetime_231df0,string_reference,function references string(s): end_datetime | start_datetime
+0x00264FB0,0x1ec,strref_Credit_txt02_04_264fb0,string_reference,function references string(s): Credit_txt02_04 | T_cardName_00 | T_cardNumber_00
+0x002930E0,0x134,strref_T_title_00_2930e0,string_reference,function references string(s): T_title_00
+0x002F7918,0x370,strref_T_condition_01_2f7918,string_reference,function references string(s): T_condition_01
+0x00300850,0x694,strref_T_condition_01_300850,string_reference,function references string(s): T_condition_01
+0x0031EDFC,0x5c,strref_s_ninja_ws_service_hosts_country_s_lang_s_shop_i_31edfc,string_reference,function references string(s): %s/ninja/ws/service_hosts?country=%s&lang=%s&shop_id=1&_type=json
+0x0031F268,0x4c,strref_s_ninja_ws_my_account_ctr_migrate_without_nna_sh_31f268,string_reference,function references string(s): %s/ninja/ws/my/account/ctr/!migrate_without_nna?shop_id=1&_type=json
+0x0031F6B0,0xd8,strref_s_samurai_ws_s_ranking_u_shop_id_1_limit_u_offse_31f6b0,string_reference,function references string(s): %s/samurai/ws/%s/ranking/%u?shop_id=1&limit=%u&offset=%u&lang=%s&_type=json
+0x0031FA3C,0x98,strref_s_ninja_ws_s_title_llu_prepurchase_info_s_s_shop_31fa3c,string_reference,function references string(s): %s/ninja/ws/%s/title/%llu/prepurchase_info?%s=%s&shop_id=1&_type=json
+0x0031FEC4,0x5c,strref_s_ninja_ws_s_titles_online_prices_title_5B_5D_s__31fec4,string_reference,function references string(s): %s/ninja/ws/%s/titles/online_prices?title%%5B%%5D=%s&lang=%s&include_coupon=true&shop_id=1&_type=json
+0x00320220,0x70,strref_s_ninja_ws_my_recommend_title_directory_id_llu_f_320220,string_reference,function references string(s): %s/ninja/ws/my/recommend_title?directory_id=%llu&friend_code=%016llX&shop_id=1&_type=json
+0x00320410,0x5c,strref_s_ninja_ws_my_transactions_limit_u_offset_u_shop_320410,string_reference,function references string(s): %s/ninja/ws/my/transactions?limit=%u&offset=%u&shop_id=1&_type=json
+0x00320474,0xa8,strref_https_tagaya_wup_shop_nintendo_net_tagaya_ctr_de_320474,string_reference,function references string(s): https://tagaya.wup.shop.nintendo.net/tagaya_ctr/dev/tiger/versionlist%d
+0x00320624,0x5c,strref_s_ninja_ws_my_votable_titles_shop_id_1_limit_u_o_320624,string_reference,function references string(s): %s/ninja/ws/my/votable_titles?shop_id=1&limit=%u&offset=%u&_type=json
+0x0032070C,0x70,strref_s_samurai_ws_s_directories_lang_s_pattern_s_shop_32070c,string_reference,function references string(s): %s/samurai/ws/%s/directories?lang=%s&pattern=%s&shop_id=1&_type=json
+0x00320D40,0x74,strref_s_samurai_ws_s_title_014llu_aocs_lang_s_shop_id__320d40,string_reference,function references string(s): %s/samurai/ws/%s/title/%014llu/aocs?lang=%s&shop_id=1&_type=json
+0x00320E54,0x70,strref_s_ninja_ws_my_abandoned_transaction_llu_receipt__320e54,string_reference,function references string(s): %s/ninja/ws/my/abandoned_transaction/%llu/receipt?tracing_transaction_id=%llu&shop_id=1&_type=json
+0x00320ECC,0x5c,strref_s_ninja_ws_my_auto_billing_plans_limit_u_offset__320ecc,string_reference,function references string(s): %s/ninja/ws/my/auto_billing/plans?limit=%u&offset=%u&shop_id=1&_type=json
+0x003210CC,0x5c,strref_s_ninja_ws_country_s_replenish_amounts_lang_s_sh_3210cc,string_reference,function references string(s): %s/ninja/ws/country/%s/replenish_amounts?lang=%s&shop_id=1&_type=json
+0x003211D0,0x5c,strref_s_ninja_ws_my_auto_billing_014llu_cancel_shop_id_3211d0,string_reference,function references string(s): %s/ninja/ws/my/auto_billing/%014llu/!cancel?shop_id=1&_type=json
+0x00321234,0x74,strref_s_ninja_ws_s_titles_online_prices_title_5B_5D_s__321234,string_reference,function references string(s): %s/ninja/ws/%s/titles/online_prices?title%%5B%%5D=%s&lang=%s&include_coupon=true&coupon_id=%llu&shop_id=1&_type=json
+0x0032133C,0x5c,strref_s_samurai_ws_s_publishers_contacts_shop_id_1_lan_32133c,string_reference,function references string(s): %s/samurai/ws/%s/publishers/contacts?shop_id=1&lang=%s&_type=json
+0x00321C90,0x7c,strref_s_samurai_ws_s_coupon_llu_titles_lang_s_limit_u__321c90,string_reference,function references string(s): %s/samurai/ws/%s/coupon/%llu/titles?lang=%s&limit=%u&offset=%u&shop_id=1&_type=json
+0x00321D14,0x70,strref_s_ninja_ws_my_abandoned_transactions_tracing_tra_321d14,string_reference,function references string(s): %s/ninja/ws/my/abandoned_transactions?tracing_transaction_id=%llu&limit=%u&offset=%u&shop_id=1&_type=json
+0x00321E08,0x140,strref_https_321e08,string_reference,function references string(s): https://
+0x003221E8,0x38,strref_ninja_ws_my_votes_3221e8,string_reference,function references string(s): /ninja/ws/my/votes?
+0x00322230,0x38,strref_cp3s_contentset_n_322230,string_reference,function references string(s): /cp3s/contentset/n/
+0x00322278,0x38,strref_ninja_ws_my_credit_card_322278,string_reference,function references string(s): /ninja/ws/my/credit_card/
+0x003222C0,0x38,strref_ccif_credit_card_input_3222c0,string_reference,function references string(s): /ccif/credit_card/!input
+0x00322308,0x5c,strref_replenish_amounts_lang_322308,string_reference,function references string(s): /ninja/ws/country/ | /replenish_amounts?lang=
+0x00322378,0x38,strref_ninja_ws_my_credit_card_delete_322378,string_reference,function references string(s): /ninja/ws/my/credit_card/!delete
+0x003223C0,0x38,strref_ninja_ws_my_transaction_3223c0,string_reference,function references string(s): ninja/ws/my/transaction/
+0x00322408,0x38,strref_publishers_contacts_322408,string_reference,function references string(s): publishers/contacts
+0x00322450,0x38,strref_ninja_ws_my_balance_current_cc_add_322450,string_reference,function references string(s): /ninja/ws/my/balance/current/!cc_add
+0x00322498,0x38,strref_ninja_ws_my_balance_current_cc_prepare_322498,string_reference,function references string(s): /ninja/ws/my/balance/current/!cc_prepare
+0x003224E0,0x38,strref_ninja_ws_my_balance_current_wallet_add_3224e0,string_reference,function references string(s): /ninja/ws/my/balance/current/!wallet_add
+0x00357C3C,0x160,strref_TitleInfo_btn01_05_357c3c,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01 | TitleInfo_btn01_05
+0x00357DD4,0xb8,strref_T_buyBtn_00_357dd4,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x00358614,0x90,strref_T_buyBtn_00_358614,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x003586C0,0x90,strref_T_buyBtn_00_3586c0,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x0035876C,0x90,strref_T_buyBtn_00_35876c,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x0035891C,0xb8,strref_T_buyBtn_00_35891c,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x00358AD8,0xb4,strref_T_buyBtn_04_358ad8,string_reference,function references string(s): T_buyBtn_04 | T_buyBtn_05
+0x00358CF4,0xb8,strref_T_buyBtn_00_358cf4,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x00358E1C,0xa8,strref_T_buyBtn_00_358e1c,string_reference,function references string(s): T_buyBtn_00 | T_buyBtn_01
+0x0038963C,0x228,strref_https_samurai_wup_shop_nintendo_net_samurai_imag_38963c,string_reference,function references string(s): https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/banner | https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/icon | https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/201/ja/rating/1/icon
+0x0038A3F0,0x218,strref_https_samurai_wup_shop_nintendo_net_samurai_imag_38a3f0,string_reference,function references string(s): https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/banner | https://samurai.wup.shop.nintendo.net/samurai/image/JP/ja/movie/50040000000026/icon | https://samurai.wup.shop.nintendo.net/samurai/image/rating_system/201/ja/rating/1/icon
+0x003B4740,0x4ec,strref_movie_U_01_3b4740,string_reference,function references string(s): movie_U_01

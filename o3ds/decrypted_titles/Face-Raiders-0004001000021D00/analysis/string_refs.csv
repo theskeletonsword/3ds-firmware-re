@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0028A47A,0x150,strref_NANDFile_write_error_28a47a,string_reference,function references string(s): NANDFile::write() : error
+0x002B7728,0x3fc,strref_rom_hal_snd_kbb_CTR_SOUND_bcsar_2b7728,string_reference,function references string(s): rom:/hal/snd/kbb/CTR_SOUND.bcsar
+0x002EF2B8,0x28c,strref_Nintendo_3DS_2ef2b8,string_reference,function references string(s): Nintendo | Nintendo 3DS
+0x00301CBC,0x29c,strref_NintendoDS_301cbc,string_reference,function references string(s): NintendoDS
+0x003D6E02,0x6ea,strref_rom_hal_lyt_common_white_fade_arc_bin_3d6e02,string_reference,function references string(s): rom:/hal/lyt/common/white_fade.arc.bin
+0x0054ABBE,0x12a,strref_face5_select_layout_right_in_bclan_54abbe,string_reference,function references string(s): face5_select_layout_right_in.bclan

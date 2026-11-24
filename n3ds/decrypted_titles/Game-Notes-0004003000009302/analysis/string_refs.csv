@@ -1,0 +1,24 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00103780,0x144,strref_memo_02d_103780,string_reference,function references string(s): memo%02d
+0x001038C8,0xc4,strref_memo_02d_1038c8,string_reference,function references string(s): memo%02d
+0x00135D08,0x6c,strref_P_IconSwitch_135d08,string_reference,function references string(s): P_IconSwitch
+0x00138D20,0x14c,strref_TextBox_00_138d20,string_reference,function references string(s): TextBox_00 | TextBox_01 | TextBox_02
+0x00138E80,0x170,strref_TextBox_00_138e80,string_reference,function references string(s): TextBox_00 | TextBox_01
+0x001391F0,0xf0,strref_TextBoxDialog_1391f0,string_reference,function references string(s): TextBoxDialog
+0x00139300,0x22c,strref_Dlg_A_D_00_bclyt_139300,string_reference,function references string(s): Dlg_A_D_00.bclyt
+0x00139538,0xf0,strref_TextBoxDialog_139538,string_reference,function references string(s): TextBoxDialog | TextBox_00 | TextBox_01
+0x0013BDD0,0xb78,strref_N_BtnMemo_02d_13bdd0,string_reference,function references string(s): N_BtnMemo%02d
+0x0013D5D4,0x138,strref_9800Dlog_ErrDestructionData4_13d5d4,string_reference,function references string(s): 9800Dlog_ErrDestructionData4
+0x0013E1E0,0xec,strref_N_BtnTutorial_13e1e0,string_reference,function references string(s): N_BtnTutorial
+0x0014EE8C,0x8c,strref_N_BtnMemo_02d_14ee8c,string_reference,function references string(s): N_BtnMemo%02d
+0x00155A34,0x78,strref_memo_02d_155a34,string_reference,function references string(s): memo%02d
+0x00160DF4,0xa8,strref_memo_02d_160df4,string_reference,function references string(s): memo%02d
+0x00165F04,0x40,strref_ApltBoot_U_00_bclyt_165f04,string_reference,function references string(s): ApltBoot_U_00.bclyt
+0x00166214,0x38,strref_PowBtnFade_D_00_bclyt_166214,string_reference,function references string(s): PowBtnFade_D_00.bclyt
+0x00166418,0x118,strref_N_PartsTutorial_166418,string_reference,function references string(s): N_Parts00 | N_PartsTutorial
+0x00166DB0,0x38,strref_HomeNixSign_bclyt_166db0,string_reference,function references string(s): HomeNixSign.bclyt
+0x00167600,0xd60,strref_P_BtnMemoEraser_167600,string_reference,function references string(s): G_TextAll | P_BtnMemoEraser
+0x00168ECC,0x38,strref_PowBtnFade_U_00_bclyt_168ecc,string_reference,function references string(s): PowBtnFade_U_00.bclyt
+0x0016FE74,0x358,strref_NintendoDS_16fe74,string_reference,function references string(s): NintendoDS
+0x00174F10,0x2f8,strref_Nintendo_174f10,string_reference,function references string(s): Nintendo
+0x001966E8,0x1a4a,strref_lau_connect_d_1966e8,string_reference,function references string(s): lau_connect%d | lau_hours | lau_minutes

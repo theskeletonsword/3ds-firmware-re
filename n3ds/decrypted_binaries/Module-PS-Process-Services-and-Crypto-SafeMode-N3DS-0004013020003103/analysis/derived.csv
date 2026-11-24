@@ -1,0 +1,14 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001009BC,0x4c,ps_ipc_client_cmd_0004_1009bc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00100E0C,0x10,ps_svc_0x23_CloseHandle_100e0c,svc_wrapper,"function body is a single `svc #0x23` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100E1C,0x18,ps_svc_0x21_CreateAddressArbiter_100e1c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100F7C,0x1c,ps_svc_0x2B_GetProcessInfo_100f7c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101D30,0x18,ps_svc_0x22_ArbitrateAddress_101d30,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105024,0x6,ps_str_service_ps_ps,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ps:ps"""
+0x00105030,0x9,ps_str_service_mcu__PLS,service_name_string,"client of (in ExHeader service-access list): ""mcu::PLS"""
+0x0010504C,0x7,ps_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x00105053,0x8,ps_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x00105068,0x8,ps_str_service_pxi_ps9,service_name_string,"client of (in ExHeader service-access list): ""pxi:ps9"""
+0x00105074,0x5,ps_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00105079,0x7,ps_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00105134,0x6,ps_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

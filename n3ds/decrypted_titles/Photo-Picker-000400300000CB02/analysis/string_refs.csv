@@ -1,0 +1,4 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010BE60,0x56,strref_csnd_SND_10be60,string_reference,function references string(s): csnd:SND
+0x00119680,0x222,strref_NintendoDS_119680,string_reference,function references string(s): NintendoDS
+0x00119D94,0x1a0,strref_Nintendo_119d94,string_reference,function references string(s): Nintendo

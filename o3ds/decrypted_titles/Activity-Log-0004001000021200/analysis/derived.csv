@@ -1,0 +1,127 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100098,0x18,PLOG_svc_0x27_DuplicateHandle_100098,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103060,0xc,PLOG_func_ptr_table_103060,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0010DE38,0x44,PLOG_ipc_client_cmd_0003_10de38,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030040
+0x001388D4,0x63c,PLOG_ipc_dispatcher_1388d4,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0083, 0x000F0085, 0x000F008E"
+0x0014591C,0xc,PLOG_func_ptr_table_14591c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015E55C,0x40,PLOG_ipc_client_cmd_0009_15e55c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x0015F934,0x18,PLOG_svc_0x17_CreateEvent_15f934,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016FC14,0x18,PLOG_svc_0x35_GetProcessId_16fc14,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00185694,0x8,PLOG_svc_0x22_ArbitrateAddress_185694,svc_wrapper,"function body is a single `svc #0x22` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019A2A0,0x3d4,PLOG_ipc_handler_cmd_0001_19a2a0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010107, 0x00010105"
+0x001A2054,0x5c9c,PLOG_ipc_handler_cmd_0002_1a2054,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020200
+0x001A4FB4,0x14,PLOG_func_ptr_table_1a4fb4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5FE4,0x18,PLOG_svc_0x21_CreateAddressArbiter_1a5fe4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001A5FFC,0x1c,PLOG_svc_0x2B_GetProcessInfo_1a5ffc,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001A6AD0,0x5,PLOG_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001A6FA4,0x34,PLOG_ipc_client_cmd_0001_1a6fa4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x001A8180,0x4c,PLOG_ipc_client_cmd_0002_1a8180,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020080
+0x001AE7C0,0x16c,PLOG_ipc_dispatcher_1ae7c0,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00070041, 0x00070043, 0x000F0042, 0x000F0044"
+0x001AE958,0x383c,PLOG_ipc_dispatcher_1ae958,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x001B24B0,0x5a0,PLOG_ipc_dispatcher_1b24b0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x001B2AE8,0x18,PLOG_svc_0x2D_ConnectToPort_1b2ae8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001B47D4,0x34,PLOG_ipc_client_cmd_0006_1b47d4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00060040
+0x001B4810,0x34,PLOG_ipc_client_cmd_0014_1b4810,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00140040
+0x001B5C24,0x30,PLOG_ipc_client_cmd_0042_1b5c24,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00420080
+0x001B5C5C,0x40,PLOG_ipc_client_cmd_000B_1b5c5c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B0040
+0x001B5CA4,0x30,PLOG_ipc_client_cmd_0003_1b5ca4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030040
+0x001BA7DC,0xc14,PLOG_ipc_handler_cmd_0040_1ba7dc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400050
+0x001BBB40,0x1c,PLOG_svc_0x1E_CreateMemoryBlock_1bbb40,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BD028,0xd810,PLOG_ipc_client_cmd_000B_1bd028,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B0040
+0x001BD7F8,0x48,PLOG_ipc_client_cmd_002C_1bd7f8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x002C0044
+0x001BD848,0x48,PLOG_ipc_client_cmd_0027_1bd848,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00270044
+0x001BD898,0x6c,PLOG_ipc_client_cmd_0005_1bd898,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050040
+0x001C12EC,0x250,PLOG_ipc_dispatcher_1c12ec,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F008F, 0x000F01C0, 0x000F01C2, 0x000F01C3"
+0x001C2854,0x3804,PLOG_ipc_dispatcher_1c2854,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x001C959C,0x60,PLOG_ipc_client_cmd_0011_1c959c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001100C2
+0x001CA7A4,0x40,PLOG_ipc_client_cmd_0016_1ca7a4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00160042
+0x001CB204,0x30,PLOG_ipc_client_cmd_0043_1cb204,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00430040
+0x001CB23C,0x50,PLOG_ipc_client_cmd_000C_1cb23c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0104
+0x001CB294,0x58,PLOG_ipc_client_cmd_000F_1cb294,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000F0100
+0x001CB2F4,0x94,PLOG_ipc_client_cmd_000E_1cb2f4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E0080
+0x001CB390,0x3c,PLOG_ipc_client_cmd_003E_1cb390,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003E0080
+0x001CB3D4,0x44,PLOG_ipc_client_cmd_001F_1cb3d4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001F0084
+0x001CB490,0x30,PLOG_ipc_client_cmd_0019_1cb490,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00190040
+0x001CD6BC,0x7e0,PLOG_ipc_handler_cmd_0001_00E4_1cd6bc,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010140, 0x00E40100"
+0x001D471C,0x34,PLOG_ipc_client_cmd_0015_1d471c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00150082
+0x001D553C,0x58,PLOG_ipc_client_cmd_0002_1d553c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020084
+0x001D5614,0x94,PLOG_ipc_client_cmd_000D_1d5614,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D0080
+0x001D56B0,0x44,PLOG_ipc_client_cmd_0040_1d56b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00400042
+0x001D56FC,0x30,PLOG_ipc_client_cmd_003F_1d56fc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003F0040
+0x001D5774,0x34,PLOG_ipc_client_cmd_003D_1d5774,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003D0040
+0x001D57F0,0x34,PLOG_ipc_client_cmd_0013_1d57f0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00130040
+0x001D82C0,0x6c,PLOG_ipc_client_cmd_0010_1d82c0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001000C0
+0x001D8330,0x3c,PLOG_ipc_client_cmd_000C_1d8330,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0040
+0x001D8FAC,0x50,PLOG_ipc_client_cmd_0013_1d8fac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00130042
+0x001E150C,0x7,PLOG_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001E1513,0x8,PLOG_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001E49CC,0x9,PLOG_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x001E49E8,0x6,PLOG_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001E4A04,0x5,PLOG_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001E4A09,0x7,PLOG_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001E7D40,0xc,PLOG_func_ptr_table_1e7d40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001E7D50,0xc,PLOG_func_ptr_table_1e7d50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EC15C,0x18,PLOG_func_ptr_table_1ec15c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EC178,0xc,PLOG_func_ptr_table_1ec178,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EC89C,0x14,PLOG_func_ptr_table_1ec89c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ECB88,0x38,PLOG_func_ptr_table_1ecb88,pointer_table,14 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED018,0x14,PLOG_func_ptr_table_1ed018,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED094,0xc,PLOG_func_ptr_table_1ed094,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED0DC,0x10,PLOG_func_ptr_table_1ed0dc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED158,0x10,PLOG_func_ptr_table_1ed158,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED1D0,0xc,PLOG_func_ptr_table_1ed1d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED254,0x10,PLOG_func_ptr_table_1ed254,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED2D0,0x10,PLOG_func_ptr_table_1ed2d0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED358,0x10,PLOG_func_ptr_table_1ed358,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED51C,0xc,PLOG_func_ptr_table_1ed51c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED5B4,0xc,PLOG_func_ptr_table_1ed5b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED65C,0x10,PLOG_func_ptr_table_1ed65c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED768,0xc,PLOG_func_ptr_table_1ed768,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ED828,0xc,PLOG_func_ptr_table_1ed828,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDAB8,0xc,PLOG_func_ptr_table_1edab8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDADC,0x18,PLOG_func_ptr_table_1edadc,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDAF8,0xc,PLOG_func_ptr_table_1edaf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDB24,0x14,PLOG_func_ptr_table_1edb24,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDB44,0x10,PLOG_func_ptr_table_1edb44,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDB84,0x18,PLOG_func_ptr_table_1edb84,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDC04,0x14,PLOG_func_ptr_table_1edc04,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDC24,0x10,PLOG_func_ptr_table_1edc24,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDC64,0xc,PLOG_func_ptr_table_1edc64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDC84,0x18,PLOG_func_ptr_table_1edc84,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDCAC,0x10,PLOG_func_ptr_table_1edcac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDD7C,0xc,PLOG_func_ptr_table_1edd7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDD9C,0xc,PLOG_func_ptr_table_1edd9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDE1C,0x14,PLOG_func_ptr_table_1ede1c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDE54,0x18,PLOG_func_ptr_table_1ede54,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDEB8,0xc,PLOG_func_ptr_table_1edeb8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDECC,0xc,PLOG_func_ptr_table_1edecc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDF10,0x14,PLOG_func_ptr_table_1edf10,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EDF84,0x18,PLOG_func_ptr_table_1edf84,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE024,0x14,PLOG_func_ptr_table_1ee024,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE140,0xc,PLOG_func_ptr_table_1ee140,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE1E0,0xc,PLOG_func_ptr_table_1ee1e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE270,0xc,PLOG_func_ptr_table_1ee270,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE2D8,0xc,PLOG_func_ptr_table_1ee2d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE314,0xc,PLOG_func_ptr_table_1ee314,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE324,0xc,PLOG_func_ptr_table_1ee324,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE350,0xc,PLOG_func_ptr_table_1ee350,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE3CC,0x14,PLOG_func_ptr_table_1ee3cc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EE41C,0xc,PLOG_func_ptr_table_1ee41c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001EEA41,0x6,PLOG_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001EEA47,0x6,PLOG_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001EEA4D,0x9,PLOG_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001EEA56,0x9,PLOG_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001EF173,0x5,PLOG_str_service_pld_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pld:"""
+0x001F1503,0x6,PLOG_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001F1509,0x6,PLOG_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001F150F,0x9,PLOG_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001F1518,0x9,PLOG_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001F1525,0x9,PLOG_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x001F152E,0x6,PLOG_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x001F1534,0x9,PLOG_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x001F153D,0x6,PLOG_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x001F1543,0x9,PLOG_str_service_ptm_play,service_name_string,"client of (in ExHeader service-access list): ""ptm:play"""
+0x001F154C,0x6,PLOG_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x001F47F8,0xc,PLOG_func_ptr_table_1f47f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002009CC,0x10,PLOG_func_ptr_table_2009cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00200A94,0x10,PLOG_func_ptr_table_200a94,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)

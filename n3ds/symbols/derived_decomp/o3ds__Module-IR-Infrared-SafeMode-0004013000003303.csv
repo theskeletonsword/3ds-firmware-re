@@ -1,0 +1,14 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001000B8,0x24,ir_svc_0x08_CreateThread_1000b8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00101CC8,0x2c,ir_svc_0x23_CloseHandle_101cc8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x00101EE4,0x28,ir_svc_0x23_CloseHandle_101ee4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00102090,0x34,ir_svc_0x23_CloseHandle_102090,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00102134,0x28,ir_svc_0x23_CloseHandle_102134,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x001025E8,0x24,ir_svc_0x01_ControlMemory_1025e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x001028DC,0x3c,ir_svc_0x32_SendSyncRequest_1028dc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102920,0xc,ir_svc_0x3C_Break_102920,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00102D04,0x8,ir_svc_0x3C_Break_102d04,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00102E7C,0x24,ir_svc_0x25_WaitSynchronizationN_102e7c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00104E34,0x38,ir_svc_0x32_SendSyncRequest_104e34,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104E70,0x3c,ir_svc_0x32_SendSyncRequest_104e70,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104008,0x444,ir_ipc_server_loop_104008,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x104534

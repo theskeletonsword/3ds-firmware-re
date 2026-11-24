@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001356BC,0x18,friends_svc_0x2D_ConnectToPort_1356bc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x2D) (ConnectToPort); 5 C lines
+0x00135840,0x8,friends_get_tls_135840,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00155600,0x24,friends_svc_0x08_CreateThread_155600,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00155758,0x8,friends_get_tls_155758,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00155958,0x24,friends_svc_0x25_WaitSynchronizationN_155958,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00100104,0x272,friends_ipc_server_loop_100104,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x15558c

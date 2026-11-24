@@ -1,0 +1,22 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,spi_svc_0x13_CreateMutex_10004c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100064,0x18,spi_svc_0x27_DuplicateHandle_100064,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101084,0x18,spi_svc_0x4A_AcceptSession_101084,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101544,0x54,spi_ipc_client_cmd_0003_101544,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x001015A0,0x48,spi_ipc_client_cmd_0004_1015a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00101D84,0x18,spi_svc_0x2D_ConnectToPort_101d84,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101F0C,0x18,spi_svc_0x35_GetProcessId_101f0c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101F24,0x10,spi_svc_0x3C_Break_101f24,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101FA4,0x8,spi_svc_0x22_ArbitrateAddress_101fa4,svc_wrapper,"function body is a single `svc #0x22` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001022A4,0x34,spi_ipc_client_cmd_0001_1022a4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x001023BC,0x18,spi_svc_0x21_CreateAddressArbiter_1023bc,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001023F8,0x18,spi_svc_0x4F_ReplyAndReceive_1023f8,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001025B8,0x230,spi_ipc_handler_cmd_0001_0002_0004_etc_1025b8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00040040, 0x00050040"
+0x00104014,0x5,spi_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00104019,0x7,spi_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0010404C,0x9,spi_str_service_SPI__CD2,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CD2"""
+0x00104055,0x9,spi_str_service_SPI__CS2,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CS2"""
+0x0010405E,0x9,spi_str_service_SPI__CS3,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::CS3"""
+0x00104067,0x9,spi_str_service_SPI__DEF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::DEF"""
+0x00104070,0x9,spi_str_service_SPI__NOR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""SPI::NOR"""
+0x00104079,0x6,spi_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

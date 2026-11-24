@@ -1,0 +1,30 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00105BEA,0x9,ssl_str_service_QC_FXCZC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""QC:FXCZC"""
+0x0011D190,0x8,ssl_svc_0x22_ArbitrateAddress_11d190,svc_wrapper,"function body is a single `svc #0x22` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001267F8,0x8,ssl_svc_0x32_SendSyncRequest_1267f8,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001268A8,0x8,ssl_svc_0x23_CloseHandle_1268a8,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144798,0x18,ssl_svc_0x4A_AcceptSession_144798,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001447D4,0x18,ssl_svc_0x21_CreateAddressArbiter_1447d4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144810,0x18,ssl_svc_0x35_GetProcessId_144810,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144838,0x8,ssl_svc_0x3C_Break_144838,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144840,0x18,ssl_svc_0x2D_ConnectToPort_144840,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144858,0x8,ssl_svc_0x0A_SleepThread_144858,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144878,0x1c,ssl_svc_0x1E_CreateMemoryBlock_144878,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014490C,0x18,ssl_svc_0x4F_ReplyAndReceive_14490c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144924,0x8,ssl_svc_0x20_UnmapMemoryBlock_144924,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00144954,0x8,ssl_svc_0x09_ExitThread_144954,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014495C,0x18,ssl_svc_0x37_GetThreadId_14495c,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00145060,0x9,ssl_str_service_ClCertA_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ClCertA:"""
+0x001450A6,0x6,ssl_str_service_ssl_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ssl:C"""
+0x001450AC,0x6,ssl_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x001450C0,0x7,ssl_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001450C7,0x8,ssl_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001453CC,0x5,ssl_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001453D1,0x7,ssl_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00146358,0x6,ssl_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x00147194,0xc,ssl_func_ptr_table_147194,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00149CF4,0x6,ssl_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x00151800,0xc,ssl_func_ptr_table_151800,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001519A8,0x10,ssl_func_ptr_table_1519a8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00151C10,0x10,ssl_func_ptr_table_151c10,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001548C4,0xc,ssl_func_ptr_table_1548c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)

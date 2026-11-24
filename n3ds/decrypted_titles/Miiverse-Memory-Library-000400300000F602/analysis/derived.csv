@@ -1,0 +1,46 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100C28,0x5,memolib_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00101EE8,0x5,memolib_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001031D0,0x1c,memolib_svc_0x1E_CreateMemoryBlock_1031d0,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001092B0,0x18,memolib_svc_0x21_CreateAddressArbiter_1092b0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011540C,0x1c,memolib_svc_0x2B_GetProcessInfo_11540c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00122BBC,0x18,memolib_svc_0x22_ArbitrateAddress_122bbc,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00123EC4,0x18,memolib_svc_0x17_CreateEvent_123ec4,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00131C30,0x5d8,memolib_ipc_dispatcher_131c30,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x001324C0,0x18,memolib_svc_0x2D_ConnectToPort_1324c0,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00135ED0,0xca4,memolib_ipc_handler_cmd_0007_0008_0040_etc_135ed0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x001371A4,0x18,memolib_svc_0x35_GetProcessId_1371a4,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001371BC,0xc,memolib_svc_0x0A_SleepThread_1371bc,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00139B7C,0x3a04,memolib_ipc_dispatcher_139b7c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x00153930,0x3e0,memolib_ipc_handler_cmd_0001_153930,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010107, 0x00010105"
+0x001599BC,0x9,memolib_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x00159A08,0x7,memolib_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x00159A0F,0x8,memolib_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x0015B074,0x5,memolib_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0015B079,0x7,memolib_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0015B388,0x6,memolib_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x0015B850,0xc,memolib_func_ptr_table_15b850,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015B898,0x10,memolib_func_ptr_table_15b898,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015B920,0xc,memolib_func_ptr_table_15b920,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015B994,0xc,memolib_func_ptr_table_15b994,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BA18,0x10,memolib_func_ptr_table_15ba18,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BA98,0x10,memolib_func_ptr_table_15ba98,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BB20,0x10,memolib_func_ptr_table_15bb20,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BC08,0xc,memolib_func_ptr_table_15bc08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BD1C,0xc,memolib_func_ptr_table_15bd1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BD58,0xc,memolib_func_ptr_table_15bd58,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015BF5C,0xc,memolib_func_ptr_table_15bf5c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015C034,0xc,memolib_func_ptr_table_15c034,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015C1B4,0xc,memolib_func_ptr_table_15c1b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015F2FA,0x6,memolib_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0015F300,0x8,memolib_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x0015F308,0x9,memolib_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x0015F311,0x9,memolib_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x0015F3B6,0x6,memolib_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x0015F3BC,0x6,memolib_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x0015F3C2,0x6,memolib_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x0015F3C8,0x6,memolib_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x0015F3CE,0x9,memolib_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x0015F3D7,0x9,memolib_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x0015F3E0,0x6,memolib_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x0015F3E6,0x6,memolib_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""

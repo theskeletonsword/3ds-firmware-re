@@ -1,0 +1,19 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00101AF8,0x5a4,strref_3D_nwgfx_DefaultShader_LZ_bin_101af8,string_reference,function references string(s): 3D/nwgfx_DefaultShader_LZ.bin
+0x00143D20,0x174,strref_CFLDB_CFL_OldDB_dat_143d20,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x00145424,0xbc,strref_CFLRES_145424,string_reference,function references string(s): $CFLRES:
+0x0015C318,0x194,strref_T_FrdCode_00_15c318,string_reference,function references string(s): T_FrdCode_00 | T_FrdName_00 | T_TopInfo_00
+0x001B9524,0x176c,strref_MaleBody_1b9524,string_reference,function references string(s): MaleBody
+0x001BA014,0x2456,strref_default_cic_1ba014,string_reference,function references string(s): default.cic | special.cic
+0x001BD2E4,0x1e5c,strref_TheQuickBrownCTRJumpsOverTheLazyTWL_1bd2e4,string_reference,function references string(s): TheQuickBrownCTRJumpsOverTheLazyTWL
+0x001D2CE8,0xaaa,strref_P_OwnCard_00_1d2ce8,string_reference,function references string(s): P_OwnCard_00 | P_OwnCard_01
+0x001D31EC,0xc8,strref_P_OwnCard_00_1d31ec,string_reference,function references string(s): P_OwnCard_00 | P_OwnCard_01
+0x001D32C0,0x98,strref_P_BllnDir_01_1d32c0,string_reference,function references string(s): P_BllnDir_01 | P_Blln_01
+0x001D339C,0x1ac,strref_T_NoComment_00_1d339c,string_reference,function references string(s): T_NoComment_00 | T_TmpCard_00
+0x001D39D8,0x1022,strref_T_OnNum_00_1d39d8,string_reference,function references string(s): T_OnNum_00
+0x001D3D70,0x2626,strref_T_OnNum_00_1d3d70,string_reference,function references string(s): T_OnNum_00
+0x001D54D4,0x34c,strref_T_Title_00_1d54d4,string_reference,function references string(s): P_Icon_00 | T_Title_00
+0x001DBC68,0x192a,strref_N_FrdNum_00_1dbc68,string_reference,function references string(s): N_FrdNum_00
+0x001DD324,0x994,strref_N_CardBaseP_00_1dd324,string_reference,function references string(s): N_CardBaseP_00 | W_Card_00
+0x001DEF1C,0x6ee,strref_T_FavName_00_1def1c,string_reference,function references string(s): T_FavName_00
+0x001DF354,0xc8e,strref_T_FrdLogin_00_1df354,string_reference,function references string(s): T_FavName_00 | T_FrdCode_00 | T_FrdLogin_00

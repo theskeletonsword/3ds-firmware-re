@@ -1,0 +1,25 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00101694,0x4c,socket_ipc_client_cmd_0004_101694,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00101AA0,0x18,socket_svc_0x21_CreateAddressArbiter_101aa0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101AB8,0x18,socket_svc_0x1A_CreateTimer_101ab8,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101FEC,0x1c,socket_svc_0x2B_GetProcessInfo_101fec,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001125B0,0xc,socket_svc_0x28_GetSystemTick_1125b0,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00115624,0xc,socket_svc_0x0A_SleepThread_115624,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001169F0,0x18,socket_svc_0x22_ArbitrateAddress_1169f0,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00122A90,0x18,socket_svc_0x0B_GetThreadPriority_122a90,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00127974,0x488,socket_ipc_handler_cmd_0001_127974,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x0001000D
+0x0012B78C,0xc,socket_func_ptr_table_12b78c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0012DC80,0x248,socket_ipc_handler_cmd_0001_0002_0003_etc_12dc80,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030080, 0x00060080"
+0x0012F664,0xc,socket_func_ptr_table_12f664,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00131000,0x6,socket_str_service_soc_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soc:U"""
+0x00131006,0x6,socket_str_service_soc_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soc:P"""
+0x0013108C,0x9,socket_str_service_nwm__SOC,service_name_string,"client of (in ExHeader service-access list): ""nwm::SOC"""
+0x001310BC,0x5,socket_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001310C1,0x7,socket_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00131224,0xc,socket_func_ptr_table_131224,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001312F9,0x6,socket_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001312FF,0x9,socket_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x00131308,0x6,socket_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x0013130E,0x9,socket_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x00131317,0x6,socket_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0013131D,0x9,socket_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""

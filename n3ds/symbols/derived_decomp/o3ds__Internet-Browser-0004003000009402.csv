@@ -1,0 +1,13 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001003EC,0x18,internet_svc_0x21_CreateAddressArbiter_1003ec,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x21) (CreateAddressArbiter); 5 C lines
+0x0010ADE4,0x18,internet_svc_0x3C_Break_10ade4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00115934,0xc,internet_get_tls_115934,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00118CF4,0x24,internet_svc_0x08_CreateThread_118cf4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0012C334,0x10,internet_svc_0x3C_Break_12c334,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0013A590,0x10,internet_svc_0x3C_Break_13a590,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00144628,0x24,internet_svc_0x01_ControlMemory_144628,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0022C748,0x4,internet_svc_0x28_GetSystemTick_22c748,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x28) (GetSystemTick); 5 C lines
+0x00242918,0xc,internet_svc_0x3C_Break_242918,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x002447C0,0x24,internet_svc_0x25_WaitSynchronizationN_2447c0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00244874,0x4,internet_svc_0x3C_Break_244874,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00244878,0x10,internet_svc_0x3C_Break_244878,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines

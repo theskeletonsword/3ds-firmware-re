@@ -1,0 +1,59 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001463FC,0x61,str_srcpath_pkey_pk_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\key\pkey_pk.c
+0x00146460,0x65,str_srcpath_lib_ctx_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\library\lib_ctx.c
+0x001464C8,0x6c,str_srcpath_cry_dgst_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_dgst.c
+0x00146534,0x6b,str_srcpath_cry_enc_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_enc.c
+0x001465A0,0x6c,str_srcpath_cry_init_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_init.c
+0x0014660C,0x6a,str_srcpath_cry_ke_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_ke.c
+0x00146678,0x6c,str_srcpath_cry_kgen_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_kgen.c
+0x001466E4,0x6b,str_srcpath_cry_mac_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_mac.c
+0x00146750,0x6c,str_srcpath_cry_pgen_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_pgen.c
+0x001467BC,0x6a,str_srcpath_cry_pk_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_pk.c
+0x00146828,0x6c,str_srcpath_cry_rand_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_rand.c
+0x00146894,0x6c,str_srcpath_cry_sign_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_sign.c
+0x00146900,0x6c,str_srcpath_ctx_init_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\ctx_init.c
+0x00146DBC,0x6a,str_srcpath_mem_dmem_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\dmem\mem_dmem.c
+0x00146E28,0x64,str_srcpath_r_lock_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\os\lock\r_lock.c
+0x00146E8C,0x5f,str_srcpath_r_verify_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\verify\r_verify.c
+0x00146FDC,0x59,str_srcpath_ssl_lib_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x001470F4,0x5a,str_srcpath_ssl_sess_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x00147474,0x62,str_srcpath_pkey_ctx_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\key\pkey_ctx.c
+0x00147580,0x74,str_srcpath_ck_rand_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\nat_meth\ck_rand.c
+0x00147870,0x5b,str_srcpath_bio_lib_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\bio\bio_lib.c
+0x001478CC,0x60,str_srcpath_ri_cert_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\cert\src\ri_cert.c
+0x0014792C,0x6f,str_srcpath_ri_crt_stor_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\ri_crt_stor.c
+0x0014799C,0x73,str_srcpath_ri_crt_stor_ctx_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\ri_crt_stor_ctx.c
+0x00147A10,0x6d,str_srcpath_ri_sc_lck_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\ri_sc_lck.c
+0x00147A80,0x6e,str_srcpath_small_stor_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\small_stor.c
+0x00147AF0,0x5a,str_srcpath_ssl_cert_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_cert.c
+0x00148464,0x66,str_srcpath_lib_getm_c,source_path_string,d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\library\lib_getm.c
+0x00101F64,0x126,srcref_ssl_lib_c_101f64,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x00102E00,0x56,srcref_bio_lib_c_102e00,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\bio\bio_lib.c
+0x00102EA8,0x7a,srcref_ssl_sess_c_102ea8,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x00102F30,0x3a,srcref_ssl_sess_c_102f30,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x0010371C,0x56,srcref_ssl_lib_c_10371c,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x0010D640,0xa6,srcref_ssl_sess_c_10d640,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x0010DC90,0x158,srcref_ssl_lib_c_10dc90,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x0010EDE8,0x1e,srcref_r_verify_c_10ede8,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\verify\r_verify.c
+0x0010F7E6,0x176,srcref_mem_dmem_c_10f7e6,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\dmem\mem_dmem.c
+0x0010F908,0x30,srcref_r_lock_c_10f908,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\os\lock\r_lock.c
+0x0010F940,0xa4,srcref_r_lock_c_10f940,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\os\lock\r_lock.c
+0x0011E0AC,0x18,srcref_ri_cert_c_11e0ac,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\cert\src\ri_cert.c
+0x0011E348,0x4a,srcref_ri_cert_c_11e348,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\cert\src\ri_cert.c
+0x0011E630,0xc8,srcref_lib_getm_c_11e630,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\library\lib_getm.c
+0x001263A4,0x48,srcref_r_verify_c_1263a4,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\verify\r_verify.c
+0x0012693C,0x26,srcref_lib_ctx_c_12693c,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\library\lib_ctx.c
+0x00128854,0x14,srcref_ssl_sess_c_128854,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x0012A2D8,0x8e,srcref_ssl_cert_c_12a2d8,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_cert.c
+0x0012A540,0x80,srcref_ssl_sess_c_12a540,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c
+0x0012AF60,0x60,srcref_lib_ctx_c_12af60,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\library\lib_ctx.c
+0x0012AFC8,0x8c,srcref_ssl_lib_c_12afc8,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x001307F4,0x6e,srcref_cry_enc_c_1307f4,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_enc.c
+0x001308F4,0x50,srcref_ctx_init_c_1308f4,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\ctx_init.c
+0x00130A20,0x34,srcref_cry_init_c_130a20,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_init.c
+0x00130E10,0x7e,srcref_cry_init_c_130e10,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\CRYPTOCME\common\module\crypto\cry_init.c
+0x00134D8C,0x8e,srcref_ssl_lib_c_134d8c,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_lib.c
+0x00135E78,0x6c,srcref_ri_cert_c_135e78,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\cert\src\ri_cert.c
+0x00138F58,0x62,srcref_ri_crt_stor_ctx_c_138f58,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\ri_crt_stor_ctx.c
+0x00139108,0x50,srcref_small_stor_c_139108,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\common\module\crt_stor\src\small_stor.c
+0x0013ED4C,0x152,srcref_ssl_sess_c_13ed4c,source_file_reference,function references source path(s): d:\home\jenkins\workspace\SystemUpdater-11_5\CTR\Addins\RSA\BSAFE\MES\sslc\ssl\ssl_sess.c

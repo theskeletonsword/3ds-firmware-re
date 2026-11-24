@@ -1,0 +1,14 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100618,0x24,i2c_svc_0x25_WaitSynchronizationN_100618,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00100C34,0x24,i2c_svc_0x01_ControlMemory_100c34,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00100C58,0x24,i2c_svc_0x08_CreateThread_100c58,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00100E00,0x10,i2c_get_tls_100e00,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00100E14,0x34,i2c_svc_0x32_SendSyncRequest_100e14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100E50,0x38,i2c_svc_0x32_SendSyncRequest_100e50,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100E8C,0x38,i2c_svc_0x32_SendSyncRequest_100e8c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00101634,0xc,i2c_get_tls_101634,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00101D74,0x28,i2c_svc_0x23_CloseHandle_101d74,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00101E50,0x2c,i2c_svc_0x23_CloseHandle_101e50,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x001034F8,0x4,i2c_svc_0x3C_Break_1034f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00103838,0x38,i2c_svc_0x24_WaitSynchronization1_103838,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x00102678,0xc0,i2c_ipc_server_loop_102678,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10188c

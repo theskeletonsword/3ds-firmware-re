@@ -1,0 +1,354 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00106A08,0x18,CARDBOAR_svc_0x21_CreateAddressArbiter_106a08,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A994,0x18,CARDBOAR_svc_0x23_CloseHandle_10a994,svc_wrapper,"function body is a single `svc #0x23` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A9D0,0x1c,CARDBOAR_svc_0x2B_GetProcessInfo_10a9d0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B15C,0x5,CARDBOAR_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010B3F4,0x6,CARDBOAR_str_service_act_a,service_name_string,"client of (in ExHeader service-access list): ""act:a"""
+0x0010D930,0x6,CARDBOAR_str_service_cver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cver:"""
+0x0010D95C,0x6,CARDBOAR_str_service_nver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nver:"""
+0x00114098,0xca4,CARDBOAR_ipc_handler_cmd_0007_0008_0040_etc_114098,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x001150F0,0x5d8,CARDBOAR_ipc_dispatcher_1150f0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0011E710,0xc,CARDBOAR_svc_0x28_GetSystemTick_11e710,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011E71C,0xc,CARDBOAR_svc_0x0A_SleepThread_11e71c,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012DED0,0x1c,CARDBOAR_svc_0x1E_CreateMemoryBlock_12ded0,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00137370,0x3a04,CARDBOAR_ipc_dispatcher_137370,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x0014BD44,0x1c,CARDBOAR_svc_0x29_GetHandleInfo_14bd44,svc_wrapper,"function body is a single `svc #0x29` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014BD60,0x18,CARDBOAR_svc_0x0B_GetThreadPriority_14bd60,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00164BC8,0xc,CARDBOAR_func_ptr_table_164bc8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00165170,0x30,CARDBOAR_func_ptr_table_165170,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0017E85C,0x24,CARDBOAR_ipc_handler_cmd_002E_17e85c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0348
+0x00182C9C,0x40,CARDBOAR_ipc_handler_cmd_002E_182c9c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0048
+0x00182CE0,0x38,CARDBOAR_ipc_handler_cmd_002E_182ce0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0048
+0x001839E0,0xd4,CARDBOAR_ipc_handler_cmd_002E_1839e0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0088
+0x00183ABC,0x5c,CARDBOAR_ipc_handler_cmd_002E_183abc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0088
+0x00184A54,0x58,CARDBOAR_ipc_handler_cmd_002E_184a54,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0110
+0x00185764,0x40,CARDBOAR_ipc_handler_cmd_002E_185764,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E01C8
+0x001857A8,0x38,CARDBOAR_ipc_handler_cmd_002E_1857a8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E01C8
+0x00185D58,0x24,CARDBOAR_ipc_handler_cmd_002E_185d58,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0290
+0x00186A08,0x78,CARDBOAR_ipc_handler_cmd_002E_186a08,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0380
+0x00186CCC,0x24,CARDBOAR_ipc_handler_cmd_002E_186ccc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E03CC
+0x001C0E7C,0x18,CARDBOAR_svc_0x37_GetThreadId_1c0e7c,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001D6A58,0xc,CARDBOAR_func_ptr_table_1d6a58,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F46FC,0xc,CARDBOAR_func_ptr_table_1f46fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001FFF58,0x18,CARDBOAR_svc_0x22_ArbitrateAddress_1fff58,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0020A3F4,0x18,CARDBOAR_svc_0x35_GetProcessId_20a3f4,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0020AA50,0x18,CARDBOAR_svc_0x13_CreateMutex_20aa50,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0020C27C,0x6c,CARDBOAR_ipc_handler_cmd_002D_20c27c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002D000C
+0x0020D380,0x18,CARDBOAR_svc_0x17_CreateEvent_20d380,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00216D4C,0x526,CARDBOAR_ipc_client_cmd_00A0_216d4c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00A00002
+0x00225310,0xc,CARDBOAR_func_ptr_table_225310,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0023FDFC,0x654,CARDBOAR_ipc_dispatcher_23fdfc,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000A0080, 0x000F02C0, 0x00BF02C1, 0x00FF02C1"
+0x00250BFC,0x720,CARDBOAR_ipc_dispatcher_250bfc,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x0025F5EC,0x190,CARDBOAR_ipc_handler_cmd_002E_25f5ec,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002E0008
+0x00269C14,0xc,CARDBOAR_func_ptr_table_269c14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0026A2B4,0xc,CARDBOAR_func_ptr_table_26a2b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0026EB0C,0x14,CARDBOAR_func_ptr_table_26eb0c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00293A20,0xc,CARDBOAR_func_ptr_table_293a20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00297E20,0xc,CARDBOAR_func_ptr_table_297e20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029B428,0xc,CARDBOAR_func_ptr_table_29b428,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029D0A0,0xc,CARDBOAR_func_ptr_table_29d0a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029F33C,0xc,CARDBOAR_func_ptr_table_29f33c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002A1D30,0xc,CARDBOAR_func_ptr_table_2a1d30,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002B4404,0x9ba,CARDBOAR_ipc_handler_cmd_002D_2b4404,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002D0080
+0x002B5AB0,0x6,CARDBOAR_ipc_handler_cmd_002D_2b5ab0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x002D0004
+0x002C5398,0x6,CARDBOAR_str_service_twls_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twls:"""
+0x002CBE60,0x6,CARDBOAR_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x002CD158,0x6,CARDBOAR_str_service_nim_s,service_name_string,"client of (in ExHeader service-access list): ""nim:s"""
+0x002CFFCC,0x5,CARDBOAR_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x002CFFD8,0x7,CARDBOAR_str_service_am_sys,service_name_string,"client of (in ExHeader service-access list): ""am:sys"""
+0x002D001C,0x9,CARDBOAR_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x002D0068,0x7,CARDBOAR_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x002D006F,0x8,CARDBOAR_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x002D009C,0x7,CARDBOAR_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x002D00A5,0x7,CARDBOAR_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x002D10BC,0x5,CARDBOAR_str_service_mp_u,service_name_string,"client of (in ExHeader service-access list): ""mp:u"""
+0x002D10C1,0x6,CARDBOAR_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x002D10C7,0x5,CARDBOAR_str_service_ns_p,service_name_string,"client of (in ExHeader service-access list): ""ns:p"""
+0x002D10EE,0xa,CARDBOAR_str_service_2nwm__UDS,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""2nwm::UDS"""
+0x002D1FE8,0x5,CARDBOAR_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x002D1FED,0x7,CARDBOAR_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x002DC814,0xc,CARDBOAR_func_ptr_table_2dc814,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DC87C,0xc,CARDBOAR_func_ptr_table_2dc87c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DC8E4,0xc,CARDBOAR_func_ptr_table_2dc8e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DC964,0xc,CARDBOAR_func_ptr_table_2dc964,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DC9F4,0xc,CARDBOAR_func_ptr_table_2dc9f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCAF4,0xc,CARDBOAR_func_ptr_table_2dcaf4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCB74,0xc,CARDBOAR_func_ptr_table_2dcb74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCC78,0xc,CARDBOAR_func_ptr_table_2dcc78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCC88,0xc,CARDBOAR_func_ptr_table_2dcc88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCCEC,0x10,CARDBOAR_func_ptr_table_2dccec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCD10,0xc,CARDBOAR_func_ptr_table_2dcd10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCD40,0x10,CARDBOAR_func_ptr_table_2dcd40,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCDA8,0xc,CARDBOAR_func_ptr_table_2dcda8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCE2C,0x20,CARDBOAR_func_ptr_table_2dce2c,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCE58,0x14,CARDBOAR_func_ptr_table_2dce58,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCE80,0x10,CARDBOAR_func_ptr_table_2dce80,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCF28,0xc,CARDBOAR_func_ptr_table_2dcf28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCF38,0xc,CARDBOAR_func_ptr_table_2dcf38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DCFD0,0xc,CARDBOAR_func_ptr_table_2dcfd0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD038,0xc,CARDBOAR_func_ptr_table_2dd038,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD0A0,0xc,CARDBOAR_func_ptr_table_2dd0a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD1C8,0x20,CARDBOAR_func_ptr_table_2dd1c8,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD218,0x10,CARDBOAR_func_ptr_table_2dd218,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD23C,0xc,CARDBOAR_func_ptr_table_2dd23c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD32C,0x1c,CARDBOAR_func_ptr_table_2dd32c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD378,0xc,CARDBOAR_func_ptr_table_2dd378,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD4B8,0xc,CARDBOAR_func_ptr_table_2dd4b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD4D8,0x14,CARDBOAR_func_ptr_table_2dd4d8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD5E0,0xc,CARDBOAR_func_ptr_table_2dd5e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD6A8,0xc,CARDBOAR_func_ptr_table_2dd6a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD6C8,0xc,CARDBOAR_func_ptr_table_2dd6c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD7AC,0xc,CARDBOAR_func_ptr_table_2dd7ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD7CC,0xc,CARDBOAR_func_ptr_table_2dd7cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD8B0,0xc,CARDBOAR_func_ptr_table_2dd8b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD8D0,0xc,CARDBOAR_func_ptr_table_2dd8d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD9B4,0xc,CARDBOAR_func_ptr_table_2dd9b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD9D4,0xc,CARDBOAR_func_ptr_table_2dd9d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD9EC,0x10,CARDBOAR_func_ptr_table_2dd9ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDA08,0xc,CARDBOAR_func_ptr_table_2dda08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDA98,0xc,CARDBOAR_func_ptr_table_2dda98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDB10,0xc,CARDBOAR_func_ptr_table_2ddb10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDB90,0xc,CARDBOAR_func_ptr_table_2ddb90,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDCF8,0xc,CARDBOAR_func_ptr_table_2ddcf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDD78,0xc,CARDBOAR_func_ptr_table_2ddd78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDDF8,0xc,CARDBOAR_func_ptr_table_2dddf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDE60,0xc,CARDBOAR_func_ptr_table_2dde60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDEE0,0xc,CARDBOAR_func_ptr_table_2ddee0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDF68,0xc,CARDBOAR_func_ptr_table_2ddf68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DDFE4,0xc,CARDBOAR_func_ptr_table_2ddfe4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE004,0xc,CARDBOAR_func_ptr_table_2de004,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE094,0xc,CARDBOAR_func_ptr_table_2de094,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE114,0xc,CARDBOAR_func_ptr_table_2de114,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE20C,0xc,CARDBOAR_func_ptr_table_2de20c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE3D4,0x10,CARDBOAR_func_ptr_table_2de3d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE3F4,0x10,CARDBOAR_func_ptr_table_2de3f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE420,0x14,CARDBOAR_func_ptr_table_2de420,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE4EC,0x10,CARDBOAR_func_ptr_table_2de4ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE500,0xc,CARDBOAR_func_ptr_table_2de500,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE558,0xc,CARDBOAR_func_ptr_table_2de558,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE5C0,0xc,CARDBOAR_func_ptr_table_2de5c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE640,0xc,CARDBOAR_func_ptr_table_2de640,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE6C0,0xc,CARDBOAR_func_ptr_table_2de6c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE8E8,0x10,CARDBOAR_func_ptr_table_2de8e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE908,0x10,CARDBOAR_func_ptr_table_2de908,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE954,0xc,CARDBOAR_func_ptr_table_2de954,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DE9BC,0xc,CARDBOAR_func_ptr_table_2de9bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEB54,0xc,CARDBOAR_func_ptr_table_2deb54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEB74,0xc,CARDBOAR_func_ptr_table_2deb74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEB8C,0xc,CARDBOAR_func_ptr_table_2deb8c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEC54,0xc,CARDBOAR_func_ptr_table_2dec54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEC74,0xc,CARDBOAR_func_ptr_table_2dec74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEC8C,0xc,CARDBOAR_func_ptr_table_2dec8c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DED54,0xc,CARDBOAR_func_ptr_table_2ded54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DED74,0xc,CARDBOAR_func_ptr_table_2ded74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DED8C,0xc,CARDBOAR_func_ptr_table_2ded8c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEDC8,0x10,CARDBOAR_func_ptr_table_2dedc8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEDEC,0xc,CARDBOAR_func_ptr_table_2dedec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEE50,0x10,CARDBOAR_func_ptr_table_2dee50,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEEB8,0xc,CARDBOAR_func_ptr_table_2deeb8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEED8,0x10,CARDBOAR_func_ptr_table_2deed8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEF60,0x10,CARDBOAR_func_ptr_table_2def60,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEF84,0xc,CARDBOAR_func_ptr_table_2def84,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DEFE8,0x10,CARDBOAR_func_ptr_table_2defe8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF048,0x14,CARDBOAR_func_ptr_table_2df048,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF070,0x10,CARDBOAR_func_ptr_table_2df070,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF0FC,0xc,CARDBOAR_func_ptr_table_2df0fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF11C,0x10,CARDBOAR_func_ptr_table_2df11c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF1A4,0x10,CARDBOAR_func_ptr_table_2df1a4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF20C,0xc,CARDBOAR_func_ptr_table_2df20c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF22C,0x10,CARDBOAR_func_ptr_table_2df22c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF290,0x10,CARDBOAR_func_ptr_table_2df290,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF2B4,0x10,CARDBOAR_func_ptr_table_2df2b4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF360,0x10,CARDBOAR_func_ptr_table_2df360,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF3E8,0x10,CARDBOAR_func_ptr_table_2df3e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF40C,0xc,CARDBOAR_func_ptr_table_2df40c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF41C,0xc,CARDBOAR_func_ptr_table_2df41c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF48C,0x10,CARDBOAR_func_ptr_table_2df48c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF4B0,0xc,CARDBOAR_func_ptr_table_2df4b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF5D0,0xc,CARDBOAR_func_ptr_table_2df5d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DF5E0,0xc,CARDBOAR_func_ptr_table_2df5e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFA4C,0xc,CARDBOAR_func_ptr_table_2dfa4c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFC04,0xc,CARDBOAR_func_ptr_table_2dfc04,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFDD0,0xc,CARDBOAR_func_ptr_table_2dfdd0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFDF4,0xc,CARDBOAR_func_ptr_table_2dfdf4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFE14,0xc,CARDBOAR_func_ptr_table_2dfe14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFE4C,0x20,CARDBOAR_func_ptr_table_2dfe4c,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFEE8,0xc,CARDBOAR_func_ptr_table_2dfee8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFF08,0xc,CARDBOAR_func_ptr_table_2dff08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DFF48,0x18,CARDBOAR_func_ptr_table_2dff48,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0050,0xc,CARDBOAR_func_ptr_table_2e0050,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0070,0xc,CARDBOAR_func_ptr_table_2e0070,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E00E0,0xc,CARDBOAR_func_ptr_table_2e00e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E00F4,0x14,CARDBOAR_func_ptr_table_2e00f4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0130,0x10,CARDBOAR_func_ptr_table_2e0130,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E017C,0xc,CARDBOAR_func_ptr_table_2e017c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E01D0,0xc,CARDBOAR_func_ptr_table_2e01d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E01EC,0x10,CARDBOAR_func_ptr_table_2e01ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E02AC,0x10,CARDBOAR_func_ptr_table_2e02ac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E02F4,0x10,CARDBOAR_func_ptr_table_2e02f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0328,0xc,CARDBOAR_func_ptr_table_2e0328,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E03B4,0xc,CARDBOAR_func_ptr_table_2e03b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E03E8,0x10,CARDBOAR_func_ptr_table_2e03e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E043C,0x10,CARDBOAR_func_ptr_table_2e043c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0464,0x10,CARDBOAR_func_ptr_table_2e0464,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E04F4,0xc,CARDBOAR_func_ptr_table_2e04f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0550,0xc,CARDBOAR_func_ptr_table_2e0550,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0560,0xc,CARDBOAR_func_ptr_table_2e0560,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0578,0x10,CARDBOAR_func_ptr_table_2e0578,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E05C4,0x10,CARDBOAR_func_ptr_table_2e05c4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E05EC,0x10,CARDBOAR_func_ptr_table_2e05ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0610,0xc,CARDBOAR_func_ptr_table_2e0610,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0658,0xc,CARDBOAR_func_ptr_table_2e0658,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E06C8,0xc,CARDBOAR_func_ptr_table_2e06c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E06F8,0xc,CARDBOAR_func_ptr_table_2e06f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0718,0xc,CARDBOAR_func_ptr_table_2e0718,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E077C,0x14,CARDBOAR_func_ptr_table_2e077c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E07AC,0x10,CARDBOAR_func_ptr_table_2e07ac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E07CC,0xc,CARDBOAR_func_ptr_table_2e07cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E07E4,0x14,CARDBOAR_func_ptr_table_2e07e4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E081C,0xc,CARDBOAR_func_ptr_table_2e081c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0838,0x10,CARDBOAR_func_ptr_table_2e0838,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0858,0x10,CARDBOAR_func_ptr_table_2e0858,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E087C,0xc,CARDBOAR_func_ptr_table_2e087c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0938,0x14,CARDBOAR_func_ptr_table_2e0938,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E09AC,0xc,CARDBOAR_func_ptr_table_2e09ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E09CC,0x14,CARDBOAR_func_ptr_table_2e09cc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0A70,0xc,CARDBOAR_func_ptr_table_2e0a70,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0AD0,0x10,CARDBOAR_func_ptr_table_2e0ad0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0B28,0x14,CARDBOAR_func_ptr_table_2e0b28,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0B78,0x10,CARDBOAR_func_ptr_table_2e0b78,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0BE4,0xc,CARDBOAR_func_ptr_table_2e0be4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0C14,0xc,CARDBOAR_func_ptr_table_2e0c14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0CD8,0x10,CARDBOAR_func_ptr_table_2e0cd8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0D78,0x14,CARDBOAR_func_ptr_table_2e0d78,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0DA0,0x14,CARDBOAR_func_ptr_table_2e0da0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0DC8,0x14,CARDBOAR_func_ptr_table_2e0dc8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0DF0,0x14,CARDBOAR_func_ptr_table_2e0df0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0E18,0xc,CARDBOAR_func_ptr_table_2e0e18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0E38,0xc,CARDBOAR_func_ptr_table_2e0e38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0E78,0xc,CARDBOAR_func_ptr_table_2e0e78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0E98,0x14,CARDBOAR_func_ptr_table_2e0e98,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0EC0,0x14,CARDBOAR_func_ptr_table_2e0ec0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E0EE8,0xc,CARDBOAR_func_ptr_table_2e0ee8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1838,0xc,CARDBOAR_func_ptr_table_2e1838,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1880,0x10,CARDBOAR_func_ptr_table_2e1880,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1904,0x10,CARDBOAR_func_ptr_table_2e1904,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E197C,0xc,CARDBOAR_func_ptr_table_2e197c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1A00,0x10,CARDBOAR_func_ptr_table_2e1a00,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1A80,0x10,CARDBOAR_func_ptr_table_2e1a80,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1B08,0x10,CARDBOAR_func_ptr_table_2e1b08,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1CC0,0x10,CARDBOAR_func_ptr_table_2e1cc0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1D10,0x10,CARDBOAR_func_ptr_table_2e1d10,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E1DDC,0x10,CARDBOAR_func_ptr_table_2e1ddc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2150,0x10,CARDBOAR_func_ptr_table_2e2150,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E22F0,0xc,CARDBOAR_func_ptr_table_2e22f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2404,0xc,CARDBOAR_func_ptr_table_2e2404,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2490,0x10,CARDBOAR_func_ptr_table_2e2490,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E24C8,0xc,CARDBOAR_func_ptr_table_2e24c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2520,0x10,CARDBOAR_func_ptr_table_2e2520,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2554,0x10,CARDBOAR_func_ptr_table_2e2554,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E257C,0x10,CARDBOAR_func_ptr_table_2e257c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E25A0,0xc,CARDBOAR_func_ptr_table_2e25a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E25B0,0x10,CARDBOAR_func_ptr_table_2e25b0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E25D8,0x10,CARDBOAR_func_ptr_table_2e25d8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2610,0xc,CARDBOAR_func_ptr_table_2e2610,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2634,0x10,CARDBOAR_func_ptr_table_2e2634,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E264C,0xc,CARDBOAR_func_ptr_table_2e264c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E266C,0xc,CARDBOAR_func_ptr_table_2e266c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E26B8,0x10,CARDBOAR_func_ptr_table_2e26b8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E26F0,0xc,CARDBOAR_func_ptr_table_2e26f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2714,0x10,CARDBOAR_func_ptr_table_2e2714,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E272C,0xc,CARDBOAR_func_ptr_table_2e272c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E274C,0xc,CARDBOAR_func_ptr_table_2e274c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2770,0x10,CARDBOAR_func_ptr_table_2e2770,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2788,0xc,CARDBOAR_func_ptr_table_2e2788,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2798,0xc,CARDBOAR_func_ptr_table_2e2798,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E27A8,0xc,CARDBOAR_func_ptr_table_2e27a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E27CC,0x10,CARDBOAR_func_ptr_table_2e27cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E27E4,0x2c,CARDBOAR_func_ptr_table_2e27e4,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2828,0x10,CARDBOAR_func_ptr_table_2e2828,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2860,0xc,CARDBOAR_func_ptr_table_2e2860,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2884,0x10,CARDBOAR_func_ptr_table_2e2884,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E28BC,0xc,CARDBOAR_func_ptr_table_2e28bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E28E0,0x10,CARDBOAR_func_ptr_table_2e28e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2918,0xc,CARDBOAR_func_ptr_table_2e2918,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E293C,0x10,CARDBOAR_func_ptr_table_2e293c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2974,0xc,CARDBOAR_func_ptr_table_2e2974,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2998,0x10,CARDBOAR_func_ptr_table_2e2998,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E29B0,0xc,CARDBOAR_func_ptr_table_2e29b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E29D0,0xc,CARDBOAR_func_ptr_table_2e29d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E29F4,0x10,CARDBOAR_func_ptr_table_2e29f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2A0C,0xc,CARDBOAR_func_ptr_table_2e2a0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2A2C,0xc,CARDBOAR_func_ptr_table_2e2a2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2A50,0x10,CARDBOAR_func_ptr_table_2e2a50,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2A68,0x2c,CARDBOAR_func_ptr_table_2e2a68,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2AAC,0x10,CARDBOAR_func_ptr_table_2e2aac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2AC4,0xc,CARDBOAR_func_ptr_table_2e2ac4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2AE4,0xc,CARDBOAR_func_ptr_table_2e2ae4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2B08,0x10,CARDBOAR_func_ptr_table_2e2b08,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2B20,0xc,CARDBOAR_func_ptr_table_2e2b20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2B40,0xc,CARDBOAR_func_ptr_table_2e2b40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2B9C,0xc,CARDBOAR_func_ptr_table_2e2b9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2BD8,0xc,CARDBOAR_func_ptr_table_2e2bd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2BF8,0xc,CARDBOAR_func_ptr_table_2e2bf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2C54,0xc,CARDBOAR_func_ptr_table_2e2c54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2C90,0xc,CARDBOAR_func_ptr_table_2e2c90,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2CB0,0xc,CARDBOAR_func_ptr_table_2e2cb0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2D0C,0xc,CARDBOAR_func_ptr_table_2e2d0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2D48,0xc,CARDBOAR_func_ptr_table_2e2d48,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2D68,0xc,CARDBOAR_func_ptr_table_2e2d68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2DAC,0x14,CARDBOAR_func_ptr_table_2e2dac,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2F00,0x10,CARDBOAR_func_ptr_table_2e2f00,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2F3C,0x10,CARDBOAR_func_ptr_table_2e2f3c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E2FB8,0x10,CARDBOAR_func_ptr_table_2e2fb8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3010,0x10,CARDBOAR_func_ptr_table_2e3010,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3070,0xc,CARDBOAR_func_ptr_table_2e3070,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E30AC,0x20,CARDBOAR_func_ptr_table_2e30ac,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3128,0x10,CARDBOAR_func_ptr_table_2e3128,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3180,0x10,CARDBOAR_func_ptr_table_2e3180,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E31E0,0x10,CARDBOAR_func_ptr_table_2e31e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3238,0x10,CARDBOAR_func_ptr_table_2e3238,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E32AC,0x10,CARDBOAR_func_ptr_table_2e32ac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E32F0,0xc,CARDBOAR_func_ptr_table_2e32f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3304,0x10,CARDBOAR_func_ptr_table_2e3304,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E33E4,0xc,CARDBOAR_func_ptr_table_2e33e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E349C,0x10,CARDBOAR_func_ptr_table_2e349c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E34FC,0x10,CARDBOAR_func_ptr_table_2e34fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E3554,0x18,CARDBOAR_func_ptr_table_2e3554,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E35B4,0x10,CARDBOAR_func_ptr_table_2e35b4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E360C,0x18,CARDBOAR_func_ptr_table_2e360c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E38B0,0xc,CARDBOAR_func_ptr_table_2e38b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E4178,0xc,CARDBOAR_func_ptr_table_2e4178,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E41CC,0x10,CARDBOAR_func_ptr_table_2e41cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E43A8,0xc,CARDBOAR_func_ptr_table_2e43a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002E6C70,0x6,CARDBOAR_str_service_save_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""save:"""
+0x002E6CC2,0x6,CARDBOAR_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x002E6F78,0x6,CARDBOAR_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x002E6F7E,0x5,CARDBOAR_str_service_pht_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pht:"""
+0x002E6F83,0x6,CARDBOAR_str_service_sext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sext:"""
+0x002E6F89,0x5,CARDBOAR_str_service_snd_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""snd:"""
+0x002E6F8E,0x6,CARDBOAR_str_service_twls_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twls:"""
+0x002E9507,0x8,CARDBOAR_str_service_cfg_nor,service_name_string,"client of (in ExHeader service-access list): ""cfg:nor"""
+0x002E950F,0x6,CARDBOAR_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x002E96A4,0x6,CARDBOAR_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x002E96AA,0x8,CARDBOAR_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x002E96B2,0x8,CARDBOAR_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x002E96BA,0x9,CARDBOAR_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x002E96C3,0x9,CARDBOAR_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x002E96CC,0x9,CARDBOAR_str_service_ptm_sysm,service_name_string,"client of (in ExHeader service-access list): ""ptm:sysm"""
+0x002E96D5,0x6,CARDBOAR_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x002E96DB,0x9,CARDBOAR_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x002E96E4,0x6,CARDBOAR_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x002E96EA,0x9,CARDBOAR_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x002E97DD,0x6,CARDBOAR_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x002E97E3,0x6,CARDBOAR_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x002E97E9,0x6,CARDBOAR_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x002E97EF,0x6,CARDBOAR_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x002E97F5,0x9,CARDBOAR_str_service_gsp__Lcd,service_name_string,"client of (in ExHeader service-access list): ""gsp::Lcd"""
+0x002E97FE,0x9,CARDBOAR_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x002E9818,0x6,CARDBOAR_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x002F5568,0x28,CARDBOAR_func_ptr_table_2f5568,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002F61EC,0x1c,CARDBOAR_func_ptr_table_2f61ec,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002F65AC,0x24,CARDBOAR_func_ptr_table_2f65ac,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002F65D4,0x20,CARDBOAR_func_ptr_table_2f65d4,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002F7028,0xb,CARDBOAR_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00107108,0x3b4,strref_gpio_MCU_107108,string_reference,function references string(s): gpio:MCU

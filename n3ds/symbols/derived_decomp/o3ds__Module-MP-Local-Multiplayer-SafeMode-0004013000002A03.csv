@@ -1,0 +1,24 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001000C8,0x24,mp_svc_0x08_CreateThread_1000c8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00102FC4,0x2c,mp_svc_0x50_BindInterrupt_102fc4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x50) (BindInterrupt); 5 C lines
+0x00107058,0x24,mp_svc_0x51_UnbindInterrupt_107058,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x51) (UnbindInterrupt); 5 C lines
+0x0010D9B0,0x24,mp_svc_0x25_WaitSynchronizationN_10d9b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x0010F19C,0x8,mp_svc_0x3C_Break_10f19c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00119A1C,0x38,mp_svc_0x28_GetSystemTick_119a1c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x28) (GetSystemTick); 10 C lines
+0x0011B9B8,0x28,mp_svc_0x23_CloseHandle_11b9b8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0011B9E0,0x34,mp_svc_0x23_CloseHandle_11b9e0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x0011BA30,0x28,mp_svc_0x23_CloseHandle_11ba30,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0011BBB0,0x30,mp_svc_0x32_SendSyncRequest_11bbb0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011C8F8,0x8,mp_svc_0x3C_Break_11c8f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0011D618,0x24,mp_svc_0x01_ControlMemory_11d618,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0011DD14,0x40,mp_svc_0x23_CloseHandle_11dd14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 12 C lines
+0x0011E6B0,0x2c,mp_svc_0x32_SendSyncRequest_11e6b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011E938,0x38,mp_svc_0x32_SendSyncRequest_11e938,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011E974,0x3c,mp_svc_0x32_SendSyncRequest_11e974,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011EA44,0xc,mp_svc_0x3C_Break_11ea44,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0011F278,0x30,mp_svc_0x32_SendSyncRequest_11f278,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011F2AC,0x24,mp_svc_0x23_CloseHandle_11f2ac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0011F2D0,0x24,mp_svc_0x23_CloseHandle_11f2d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0011F2F4,0x30,mp_svc_0x23_CloseHandle_11f2f4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x0011F880,0x24,mp_svc_0x23_CloseHandle_11f880,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0011D094,0x520,mp_ipc_server_loop_11d094,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x11d63c

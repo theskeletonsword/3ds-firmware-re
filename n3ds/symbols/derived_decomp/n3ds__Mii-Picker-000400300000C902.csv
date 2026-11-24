@@ -1,0 +1,32 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00101FE8,0x10,mii_get_tls_101fe8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00102114,0x34,mii_svc_0x32_SendSyncRequest_102114,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001022F8,0x24,mii_svc_0x23_CloseHandle_1022f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x001025E0,0x34,mii_svc_0x32_SendSyncRequest_1025e0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104584,0x2c,mii_svc_0x32_SendSyncRequest_104584,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104DD8,0x38,mii_svc_0x32_SendSyncRequest_104dd8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001085A8,0x34,mii_svc_0x32_SendSyncRequest_1085a8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001098F4,0x38,mii_svc_0x32_SendSyncRequest_1098f4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010C90C,0x24,mii_svc_0x08_CreateThread_10c90c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0010D81C,0x38,mii_svc_0x32_SendSyncRequest_10d81c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010E3F8,0x28,mii_svc_0x32_SendSyncRequest_10e3f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010E8B0,0x30,mii_svc_0x32_SendSyncRequest_10e8b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010E968,0x3c,mii_svc_0x32_SendSyncRequest_10e968,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010EA38,0x3c,mii_svc_0x32_SendSyncRequest_10ea38,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00114300,0x28,mii_svc_0x32_SendSyncRequest_114300,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001151F8,0x40,mii_svc_0x32_SendSyncRequest_1151f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011549C,0x38,mii_svc_0x32_SendSyncRequest_11549c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001154D8,0x34,mii_svc_0x32_SendSyncRequest_1154d8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00115514,0x38,mii_svc_0x32_SendSyncRequest_115514,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00115550,0x34,mii_svc_0x32_SendSyncRequest_115550,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011E47C,0x34,mii_svc_0x32_SendSyncRequest_11e47c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011EE3C,0x38,mii_svc_0x32_SendSyncRequest_11ee3c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011FE28,0xc,mii_get_tls_11fe28,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00124178,0x28,mii_svc_0x32_SendSyncRequest_124178,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0013E1C4,0x28,mii_svc_0x23_CloseHandle_13e1c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0013E59C,0x2c,mii_svc_0x32_SendSyncRequest_13e59c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0013E65C,0x28,mii_svc_0x32_SendSyncRequest_13e65c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0013F560,0x2c,mii_svc_0x32_SendSyncRequest_13f560,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00161A5C,0x4,mii_svc_0x3C_Break_161a5c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00161CBC,0x30,mii_svc_0x24_WaitSynchronization1_161cbc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 11 C lines
+0x00162F68,0x28,mii_svc_0x32_SendSyncRequest_162f68,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines

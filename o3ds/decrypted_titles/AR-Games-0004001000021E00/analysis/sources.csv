@@ -1,0 +1,37 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001569B0,0x37,str_srcpath_HiddenDoor_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\HiddenDoor.cpp
+0x0015970C,0x37,str_srcpath_RotateDoor_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\RotateDoor.cpp
+0x0015FF90,0x37,str_srcpath_StepArMenu_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepArMenu.cpp
+0x00160770,0x37,str_srcpath_StepArMenu_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepArMenu.cpp
+0x00168054,0x37,str_srcpath_StepDragon_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepDragon.cpp
+0x001692C4,0x37,str_srcpath_StepDragon_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepDragon.cpp
+0x00171724,0x38,str_srcpath_StepDrawing_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepDrawing.cpp
+0x00171B30,0x38,str_srcpath_StepDrawing_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepDrawing.cpp
+0x0018EC64,0x3b,str_srcpath_StepShootingEx_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx.cpp
+0x00195328,0x3c,str_srcpath_StepCuckooClock_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepCuckooClock.cpp
+0x00195FE8,0x3c,str_srcpath_StepCuckooClock_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepCuckooClock.cpp
+0x00198278,0x3c,str_srcpath_StepShootingEx1_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx1.cpp
+0x00198AA4,0x3c,str_srcpath_StepShootingEx1_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx1.cpp
+0x00199D70,0x3c,str_srcpath_StepShootingEx2_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx2.cpp
+0x0019C288,0x3c,str_srcpath_StepShootingEx3_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx3.cpp
+0x0019CAE4,0x3c,str_srcpath_StepShootingEx3_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx3.cpp
+0x0019E9F4,0x3c,str_srcpath_StepShootingEx4_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx4.cpp
+0x0019F4F4,0x3c,str_srcpath_StepShootingEx4_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx4.cpp
+0x0019FF20,0x3c,str_srcpath_StepShootingEx7_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx7.cpp
+0x001A1624,0x3c,str_srcpath_StepShootingEx8_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx8.cpp
+0x001A1D98,0x3c,str_srcpath_StepShootingEx8_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx8.cpp
+0x001D82F8,0x35,str_srcpath_StepGolf_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepGolf.cpp
+0x001F4D28,0x36,str_srcpath_StepReady_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepReady.cpp
+0x00246A80,0x35,str_srcpath_StepGolf_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepGolf.cpp
+0x00247800,0x36,str_srcpath_CommonBox_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\CommonBox.cpp
+0x0024DC14,0x36,str_srcpath_StepEarth_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepEarth.cpp
+0x0024E93C,0x36,str_srcpath_StepEarth_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepEarth.cpp
+0x00250A40,0x36,str_srcpath_StepReady_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepReady.cpp
+0x002D8834,0x3b,str_srcpath_StepShootingEx_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx.cpp
+0x002D899C,0x3c,str_srcpath_StepShootingEx2_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx2.cpp
+0x002D9728,0x3c,str_srcpath_StepShootingEx7_cpp,source_path_string,d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx7.cpp
+0x0018ECDC,0x12c,srcref_StepShootingEx_cpp_18ecdc,source_file_reference,function references source path(s): d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx.cpp
+0x00195CA0,0x124,srcref_StepCuckooClock_cpp_195ca0,source_file_reference,function references source path(s): d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepCuckooClock.cpp
+0x00199F6C,0x10c,srcref_StepShootingEx2_cpp_199f6c,source_file_reference,function references source path(s): d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx2.cpp
+0x001A0528,0x15c,srcref_StepShootingEx7_cpp_1a0528,source_file_reference,function references source path(s): d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepShootingEx7.cpp
+0x0024D83C,0xec0,srcref_StepEarth_cpp_24d83c,source_file_reference,function references source path(s): d:\CTR\AR_ACT_Product\AR_ACT\src\ar_act\StepEarth.cpp

@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001208E0,0xbc,strref_CFLRES_1208e0,string_reference,function references string(s): $CFLRES:
+0x0013BAFC,0x174,strref_CFLDB_CFL_OldDB_dat_13bafc,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x00151FB0,0xf8,strref_s_s_bflan_151fb0,string_reference,function references string(s): %s_%s.bflan
+0x001652E4,0x28c,strref_CornerButton_1652e4,string_reference,function references string(s): ButtonBase | CornerButton
+0x00167ADC,0xc4,strref_CornerButton_167adc,string_reference,function references string(s): ButtonBase | CornerButton
+0x0017DA9C,0x70,strref_s_s_bflan_17da9c,string_reference,function references string(s): %s_%s.bflan
+0x0019E1C8,0x8c,strref_ButtonBase_19e1c8,string_reference,function references string(s): ButtonBase

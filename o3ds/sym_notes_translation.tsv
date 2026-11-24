@@ -1,0 +1,886 @@
+# skeleton (Spanish, numbers/addresses/identifiers replaced by {n})<TAB>English translation (same placeholders)
+C: valida puntero C-string no vacio y compara con constante ({0})	C: validates a non-empty C-string pointer and compares it with a constant ({0})
+Accede KProcess* actual {0}	Accesses current KProcess* {0}
+C: verifica owner TLS (c13,c0,{0}) en {1}+{2} y adquiere lock recursivo	C: checks TLS owner (c13,c0,{0}) at {1}+{2} and acquires the recursive lock
+C verificado: rellena rango [{0}, {1}) con palabra {2}	C verified: fills range [{0}, {1}) with word {2}
+C: liberacion atomica LDREX/STREX de lock ({0})	C: atomic LDREX/STREX lock release ({0})
+C: espera atomica LDREX/STREX + ArbitrateAddress sobre contador	C: atomic LDREX/STREX wait + ArbitrateAddress on a counter
+ASM ARM32: helper switch Thumb {0} (tabla inline {1})	ASM ARM32: Thumb switch helper {0} (inline table {1})
+C verificado: {0} (itera ctor sobre N elementos)	C verified: {0} (iterates the constructor over N elements)
+C verificado: copia de memoria optimizada 32B {0} ({1})	C verified: optimized 32-byte memory copy {0} ({1})
+C verificado: division entera sin signo {0} ({1})	C verified: unsigned integer division {0} ({1})
+Lee {0}	Reads {0}
+C+SWI {0}: envia comando IPC por canal pxi:mc	C+SWI {0}: sends IPC command over channel pxi:mc
+C verificado: division entera sin signo {0}	C verified: unsigned integer division {0}
+C: guarda estatica de inicializacion {0}	C: static initialization guard {0}
+C: compara argumentos iniciales de entorno	C: compares initial environment arguments
+C: inicializa AddressArbiter y escanea memoria (QueryMemory)	C: initializes AddressArbiter and scans memory (QueryMemory)
+.rodata: strings 'srv:' y 'srv:pm'	.rodata: strings 'srv:' and 'srv:pm'
+Accede KThread* actual {0}	Accesses current KThread* {0}
+Escribe GIC Dist {0}	Writes GIC Distributor {0}
+C: bucle sobre caracteres/buffer ({0})	C: loop over characters/buffer ({0})
+Retorna código Result {0}	Returns Result code {0}
+C: bloquea mutex ({0}) o aborta si Result < {1}	C: locks mutex ({0}) or aborts if Result < {1}
+C+SWI: registra servicios cecd:u(max={0}), cecd:s(max={1}), cecd:ndm(max={2}) de {3} y despacha via {4}	C+SWI: registers services cecd:u(max={0}), cecd:s(max={1}), cecd:ndm(max={2}) from {3} and dispatches via {4}
+C: abre sesion fs:USER para gestion de buzones y eventlog.dat / ubl_:/	C: opens fs:USER session for mailbox management and eventlog.dat / ubl_:/
+C: abre {0} sesiones hacia nwm::CEC para beacon/frames WiFi StreetPass	C: opens {0} sessions to nwm::CEC for StreetPass WiFi beacons/frames
+C: extrae {0} de cabecera IPC en dispatchers CECD	C: extracts {0} from the IPC header in the CECD dispatchers
+C: escribe cabecera respuesta IPC en TLS+{0}	C: writes the IPC reply header at TLS+{0}
+C: lee MRC CP15 TLS TPIDRURO	C: reads MRC CP15 TLS TPIDRURO
+C verificado: rutina formateo cadenas stdlib (%x/%X/%s/%p)	C verified: stdlib string formatting routine (%x/%X/%s/%p)
+C+SVC: mapea VRAM {0}..{1} y buffers LCD/GPU	C+SVC: maps VRAM {0}..{1} and LCD/GPU buffers
+C+SWI {0}/{1}: registra gsp::Gpu(max={2}) y gsp::Lcd(max={3}), atiende IRQ({4})/Lcd({5})/Gpu({6})	C+SWI {0}/{1}: registers gsp::Gpu(max={2}) and gsp::Lcd(max={3}), serves IRQ({4})/Lcd({5})/Gpu({6})
+C+SWI {0}: wrapper svc {1} con asignacion handle	C+SWI {0}: svc {1} wrapper with handle assignment
+C+SWI {0}: registra servicio gsp::Gpu / gsp::Lcd en srv:	C+SWI {0}: registers service gsp::Gpu / gsp::Lcd in srv:
+C+TLS: dispatcher IPC gsp::Lcd ({0} comandos {1}..{2}, llamado en handle idx {3})	C+TLS: IPC dispatcher of gsp::Lcd ({0} commands {1}..{2}, called on handle idx {3})
+C: configura buffer estatico TLS+{0} para gsp::Lcd	C: configures static buffer TLS+{0} for gsp::Lcd
+C: bucle IPC por sesion gsp::Gpu (spawned por slot {0}..{1} -> llama {2})	C: per-session IPC loop of gsp::Gpu (spawned per slot {0}..{1} -> calls {2})
+C: procesa cola GX de comandos GPU (switch {0} casos: DMA/Fill/DisplayTransfer/TextureCopy/CacheFlush)	C: processes the GPU command GX queue (switch of {0} cases: DMA/Fill/DisplayTransfer/TextureCopy/CacheFlush)
+C+MMIO+SWI {0}: limpia/invalida cache D x4 y habilita flags en {1} |= {2}	C+MMIO+SWI {0}: cleans/invalidates D-cache x4 and enables flags at {1} |= {2}
+C+MMIO+SVC {0}: configura proteccion GPU (SetGpuProt) e inicializa regs LCD/GPU	C+MMIO+SVC {0}: configures GPU protection (SetGpuProt) and initializes LCD/GPU registers
+C: interpolacion de tablas LUT gamma RGB para pantallas superior/inferior	C: interpolation of RGB gamma LUT tables for the upper/lower screens
+C: dispara GX DMA ({0}) al vaciar/actualizar slot GX	C: fires GX DMA ({0}) when flushing/updating a GX slot
+C: switch de {0} casos (calls={1}, callers={2}; {3})	C: switch of {0} cases (calls={1}, callers={2}; {3})
+C: convierte direccion virtual VRAM {0}xxxxxx (+{1} -> PA {2}xxxxxx) para DMA HW	C: converts VRAM virtual address {0}xxxxxx (+{1} -> PA {2}xxxxxx) for HW DMA
+C+MMIO: ejecuta DMA/MemoryFill/DisplayTransfer sobre regs {0}xxxxx / {1}xxx	C+MMIO: runs DMA/MemoryFill/DisplayTransfer on registers {0}xxxxx / {1}xxx
+.data: {0} punteros tabla registro srv:	.data: {0} pointers, srv: registration table
+C: registra servicios {0}, inicializa HW ({1}) y bucle accept	C: registers services {0}, initializes HW ({1}) and accept loop
+C: conecta ptm/cfg/i2c::HID/mcu::HID/gpio/cdc, inicializa muestreo keypad/touch/accel/gyro	C: connects ptm/cfg/i2c::HID/mcu::HID/gpio/cdc, initializes keypad/touch/accel/gyro sampling
+C: asigna slot sesion (max {0}), crea {1} eventos (Pad/Touch/Gyro/Accel/Debug) y lanza hilo {2}	C: allocates a session slot (max {0}), creates {1} events (Pad/Touch/Gyro/Accel/Debug) and starts thread {2}
+C: punto entrada hilo sesion HID; llama bucle IPC {0}	C: HID session thread entry point; calls IPC loop {0}
+C+SWI {0}: peticion IPC de tamano/setup ({1}) durante inicializacion HID	C+SWI {0}: size/setup IPC request ({1}) during HID initialization
+C+MMIO: lee {0} {1} XOR {2} e inicializa estado botones	C+MMIO: reads {0} {1} XOR {2} and initializes the button state
+C: muestrea PAD {0}, touch/accel/gyro y publica ringbuffers en sharedmem HID	C: samples PAD {0}, touch/accel/gyro and publishes ring buffers in HID shared memory
+C: dispatcher IPC hid:{SPVR,USER,QTM,NFC} ({0} casos {1}..{2}; *({3}+{4})=={5} valida SPVR)	C: IPC dispatcher of hid:{SPVR,USER,QTM,NFC} ({0} cases {1}..{2}; *({3}+{4})=={5} validates SPVR)
+C verificado: division entera {0}-bit con signo {1}	C verified: signed {0}-bit integer division {1}
+C verificado: division entera {0}-bit sin signo {1}	C verified: unsigned {0}-bit integer division {1}
+C: inicializa locks/cfg y consulta sysclock/config en arranque HID	C: initializes locks/cfg and queries sysclock/config at HID start-up
+C+MMIO: lee {0} ^ {1} y remapea bits {2}/{3} -> ZL/ZR ({4}/{5})	C+MMIO: reads {0} ^ {1} and remaps bits {2}/{3} -> ZL/ZR ({4}/{5})
+C verificado: rutina runtime softfloat AEABI (mascaras exponente {0})	C verified: AEABI softfloat runtime routine (exponent masks {0})
+C+MMIO: escribe byte I2C con STOP bit (reg+{0} |= {1}) y espera busy bit7	C+MMIO: writes an I2C byte with STOP bit (reg+{0} |= {1}) and waits for busy bit7
+C+MMIO: selecciona direccion esclavo I2C (reg+{0} = {1} / reg+{2} = dev) y espera ACK	C+MMIO: selects the I2C slave address (reg+{0} = {1} / reg+{2} = dev) and waits for ACK
+C+MMIO: envia byte por FIFO I2C (reg+{0} = {1}) y retorna bit ACK (&{2} >> {3})	C+MMIO: sends a byte through the I2C FIFO (reg+{0} = {1}) and returns the ACK bit (&{2} >> {3})
+C+MMIO: lee byte de bus I2C (reg+{0} = {1}) con espera de transferencia	C+MMIO: reads a byte from the I2C bus (reg+{0} = {1}) waiting for the transfer
+C+MMIO: escribe byte con bandera reg+{0} = {1} y espera IRQ/flag	C+MMIO: writes a byte with flag reg+{0} = {1} and waits for IRQ/flag
+C+SWI {0}: mapea/inicializa los {1} controladores I2C ({2}/1EC44000/1EC48000) e IRQs {3}/{4}/{5}	C+SWI {0}: maps/initializes the {1} I2C controllers ({2}/1EC44000/1EC48000) and IRQs {3}/{4}/{5}
+C+MMIO: transaccion maestro I2C completa sobre dispositivo {0}<{1} en tabla {2}	C+MMIO: complete I2C master transaction on device {0}<{1} from table {2}
+C: valida que servicio I2C ({0}..{1}) tenga permiso sobre {2} (ej. svc {3}->dev {4}/{5}; svc {6}->{7}/{8}/{9})	C: checks that I2C service ({0}..{1}) has permission on {2} (e.g. svc {3}->dev {4}/{5}; svc {6}->{7}/{8}/{9})
+C: valida permiso I2C y habilita bus ({0})	C: checks I2C permission and enables the bus ({0})
+C: lee registro {0}-bit de dispositivo I2C autorizado ({1})	C: reads {0}-bit register of an authorized I2C device ({1})
+C: conecta i2c::MCU/gpio:MCU/ptm:s, resetea mascaras IRQ MCU e inicializa eventos HW	C: connects i2c::MCU/gpio:MCU/ptm:s, resets the MCU IRQ masks and initializes HW events
+C: lee {0} bytes RTC desde registro MCU {1} via i2c::MCU	C: reads {0} RTC bytes from MCU register {1} via i2c::MCU
+C: envia comando i2c::MCU ReadBuffer ({0}/equiv)	C: sends i2c::MCU ReadBuffer command ({0}/equivalent)
+C: envia comando i2c::MCU WriteBuffer	C: sends i2c::MCU WriteBuffer command
+C: servidor IPC principal MCU; registra {0} servicios mcu::{CAM..CDC} y lanza workers	C: main MCU IPC server; registers {0} services mcu::{CAM..CDC} and starts workers
+C: registra {0} servicios nwm::{UDS,INF,SOC,SAP,CEC,EXT,TST} ({1}), acepta sesiones y despacha via {2}/{3}	C: registers {0} services nwm::{UDS,INF,SOC,SAP,CEC,EXT,TST} ({1}), accepts sessions and dispatches via {2}/{3}
+C: dispara/notifica cola de sesion interna para UDS/INF/SOC/SAP	C: triggers/notifies the internal session queue for UDS/INF/SOC/SAP
+C: punto entrada hilo dedicado nwm::EXT (index {0}) -> llama bucle {1}	C: dedicated nwm::EXT thread entry point (index {0}) -> calls loop {1}
+C: busca slot libre (max {0}) en tabla de sesiones nwm::EXT (+{1})	C: looks for a free slot (max {0}) in the nwm::EXT session table (+{1})
+C: configura TLS+{0}/+{1} static buffer para nwm::UDS (tabla {2}{3})	C: configures TLS+{0}/+{1} static buffer for nwm::UDS (table {2}{3})
+C: bucle ReplyAndReceive dedicado para nwm::EXT (llama {0} y {1})	C: dedicated ReplyAndReceive loop for nwm::EXT (calls {0} and {1})
+C: configura buffer estatico TLS+{0} ({1} bytes) para sesiones nwm::EXT	C: configures static buffer TLS+{0} ({1} bytes) for nwm::EXT sessions
+C+MMIO: escribe par regs SDIO/AR6014 en {0}/{1}	C+MMIO: writes the SDIO/AR6014 register pair at {0}/{1}
+C+MMIO: lee par regs SDIO/AR6014	C+MMIO: reads the SDIO/AR6014 register pair
+C: extrae bitfield ({0}) de palabra cabecera IPC	C: extracts bitfield ({0}) from the IPC header word
+C: escribe descriptor static-buf IPC	C: writes IPC static-buffer descriptor
+ASM Thumb+uqi: tabla jump {0}..{1} -> dispatcher IPC (UDS/INF/SOC/SAP/CEC/NULL/TST)	ASM Thumb+uqi: jump table {0}..{1} -> IPC dispatcher (UDS/INF/SOC/SAP/CEC/NULL/TST)
+ASM Thumb+uqi: tabla jump {0}..{1} -> rutina on-connect static-buf	ASM Thumb+uqi: jump table {0}..{1} -> static-buffer on-connect routine
+C: registra IRQ hardware {0} ({1}, SDIO2 WLAN) / {2} + eventos DMA AR6014	C: registers hardware IRQ {0} ({1}, SDIO2 WLAN) / {2} + AR6014 DMA events
+C+MMIO: prepara y envia comando SDIO al controlador AR6014	C+MMIO: prepares and sends an SDIO command to the AR6014 controller
+C+MMIO: transferencia bloques {0}/{1} bytes por SDIO DATA/DMA	C+MMIO: {0}/{1}-byte block transfer over SDIO DATA/DMA
+C+SWI: registra {0} servicios ptm:{u,s,sysm,sets,play,gets} ({1}) y despacha via tabla {2}	C+SWI: registers {0} services ptm:{u,s,sysm,sets,play,gets} ({1}) and dispatches via table {2}
+C: conecta servicio FIRM pxi:mc ({0}) y lanza hilo worker {1}	C: connects FIRM service pxi:mc ({0}) and starts worker thread {1}
+C: punto entrada hilo pxi:mc PTM (llama {0})	C: PTM pxi:mc thread entry point (calls {0})
+C: gestiona transiciones sleep/wake/reboot y peticion pxi:mc ARM9	C: handles sleep/wake/reboot transitions and the ARM9 pxi:mc request
+C: valida cabecera IPC recibida contra descriptor esperado ({0})	C: validates the received IPC header against the expected descriptor ({0})
+C: extrae campo de bits ({0}) de palabra cabecera IPC	C: extracts bit field ({0}) from the IPC header word
+C: escribe cabecera respuesta IPC en TLS+{0} via {1}	C: writes the IPC reply header at TLS+{0} via {1}
+C: lee MRC CP15 TLS TPIDRURO (c13,c0,{0})	C: reads MRC CP15 TLS TPIDRURO (c13,c0,{0})
+ASM Thumb: dispatcher IPC compartido ptm:u y ptm:s ({0}{1}; switches {2}..{3}, {4}..{5}, {6}..{7})	ASM Thumb: IPC dispatcher shared by ptm:u and ptm:s ({0}{1}; switches {2}..{3}, {4}..{5}, {6}..{7})
+ASM Thumb: dispatcher IPC ptm:play ({0}{1}; historial de juego / GetPlayHistory {2}..{3})	ASM Thumb: IPC dispatcher of ptm:play ({0}{1}; play history / GetPlayHistory {2}..{3})
+C+SWI {0}: registra puerto fs:USER/LDR/REG en srv:	C+SWI {0}: registers port fs:USER/LDR/REG in srv:
+C: inicializa estado SHA11 y procesa hash completo via {0} + {1}	C: initializes SHA11 state and processes a complete hash via {0} + {1}
+C: inicializa {0} bytes {1} en estructura de sincronizacion/nodo	C: initializes {0} bytes {1} in a synchronization/node structure
+C: decrementa profundidad de lock recursivo {0}{1} y libera mutex subyacente	C: decrements the recursive lock depth {0}{1} and releases the underlying mutex
+C verificado: copia de bytes general {0}	C verified: general byte copy {0}
+C: destructor RAII que invoca {0} ({1})	C: RAII destructor that invokes {0} ({1})
+C: verifica hilo propietario TLS (c13,c0,{0}) e incrementa profundidad o bloquea	C: checks the TLS owner thread (c13,c0,{0}) and increments the depth or blocks
+C: inicializa lock recursivo ({0} + owner={1}, count={2})	C: initializes a recursive lock ({0} + owner={1}, count={2})
+C+SWI {0}/{1}: inicializa canales PxiFS0/{2}/B/R, puertos fs:USER/LDR/REG y bucle IPC	C+SWI {0}/{1}: initializes channels PxiFS0/{2}/B/R, ports fs:USER/LDR/REG and the IPC loop
+C: registra servicios fs:USER, fs:LDR, fs:REG y abre sesiones PxiFS0/{0}/B/R	C: registers services fs:USER, fs:LDR, fs:REG and opens sessions PxiFS0/{0}/B/R
+C+SWI {0}: envia cmd srv: {1} RegisterClient	C+SWI {0}: sends srv: cmd {1} RegisterClient
+C+SWI {0}: vuelca cache datos y alimenta bloques 64B a FIFO SHA11 via DMA	C+SWI {0}: flushes the data cache and feeds 64-byte blocks to the SHA11 FIFO via DMA
+C: driver hardware SHA11 ({0}/{1}/{2}); buffering 64B y hash incremental	C: SHA11 hardware driver ({0}/{1}/{2}); 64-byte buffering and incremental hash
+C: driver hardware SHA11 ({0}/{1}/{2}); finaliza bloques y lee digest SHA-{3}/{4}/{5}	C: SHA11 hardware driver ({0}/{1}/{2}); finalizes blocks and reads the SHA-{3}/{4}/{5} digest
+C: registra puerto 'Loader' en srv, ReplyAndReceive + {0} ({1})	C: registers port 'Loader' in srv, ReplyAndReceive + {0} ({1})
+C: conecta a servicios 'PxiPM', 'fs:LDR' y 'fs:USER'	C: connects to services 'PxiPM', 'fs:LDR' and 'fs:USER'
+C: Loader cmd {0}; valida coincidencia info y delega a PxiPM:RegisterProgram ({1})	C: Loader cmd {0}; validates matching info and delegates to PxiPM:RegisterProgram ({1})
+C: abre archivo ExeFS/fs:LDR, lee datos via {0} y cierra handle	C: opens the ExeFS file/fs:LDR, reads data via {0} and closes the handle
+C+SWI {0}: delay con GetSystemTick + PRNG	C+SWI {0}: delay using GetSystemTick + PRNG
+C: abre archivo ExeFS o reutiliza handle cacheado	C: opens the ExeFS file or reuses a cached handle
+C: consulta tamano de archivo ExeFS abierto ({0})	C: queries the size of the open ExeFS file ({0})
+C+SWI {0}: mezcla GetSystemTick y PRNG para randomizar carga ASLR	C+SWI {0}: mixes GetSystemTick and PRNG to randomize the load (ASLR)
+C+SWI {0}: envia cmd IPC {1} via TLS+{2}  ⟨sig⟩	C+SWI {0}: sends IPC cmd {1} via TLS+{2}
+C+SWI {0}: PxiPM cmd {1} GetProgramInfo (o fsreg {2} si handle/fallback)	C+SWI {0}: PxiPM cmd {1} GetProgramInfo (or fsreg {2} if handle/fallback)
+C: Loader cmd {0}; delega a PxiPM:UnregisterProgram ({1}) o fs:REG {2}	C: Loader cmd {0}; delegates to PxiPM:UnregisterProgram ({1}) or fs:REG {2}
+C+SWI {0}/{1}/{2}: Loader cmd {3}; obtiene ExHeader (PxiPM), valida limites, reserva/mapea segmentos, svcCreateCodeSet + svcCreateProcess	C+SWI {0}/{1}/{2}: Loader cmd {3}; obtains the ExHeader (PxiPM), validates limits, reserves/maps segments, svcCreateCodeSet + svcCreateProcess
+C: invoca ControlMemory para desmapear buffer temporal	C: invokes ControlMemory to unmap the temporary buffer
+C: alinea a paginas 4KB .text/.ro/.data+.bss y asigna via {0}	C: aligns .text/.ro/.data+.bss to 4 KB pages and allocates via {0}
+C: reserva memoria de proceso (svcControlMemory {0}) con entropia PRNG ({1})	C: reserves process memory (svcControlMemory {0}) with PRNG entropy ({1})
+C: lee seccion .code ExeFS y aplica BLZ decompress in-place ({0}) si bit compressed activo	C: reads the ExeFS .code section and applies in-place BLZ decompression ({0}) if the compressed bit is set
+C: inicializa estado PRNG multiplicativo {0}-bit	C: initializes the {0}-bit multiplicative PRNG state
+C: avanza LCG/PRNG {0}-bit y devuelve palabras aleatorias	C: advances the {0}-bit LCG/PRNG and returns random words
+C: valida alineacion y rangos ExHeader	C: validates ExHeader alignment and ranges
+C: construye arreglo descriptores ARM11 KernelCaps para svcCreateCodeSet/CreateProcess	C: builds the ARM11 KernelCaps descriptor array for svcCreateCodeSet/CreateProcess
+C: DuplicateHandle de proceso/recurso actual	C: DuplicateHandle of the current process/resource
+C: libera bloque temporal de memoria bajo lock	C: frees a temporary memory block under lock
+C: inicializa layout memoria APPMEMALLOC ({0}), registra pm:app y pm:dbg, ReplyAndReceive	C: initializes the APPMEMALLOC memory layout ({0}), registers pm:app and pm:dbg, ReplyAndReceive
+C: compara argumentos de entorno	C: compares environment arguments
+C+SWI {0}/{1}/{2}/{3}: lee APPMEMALLOC (GetSystemInfo), crea/fija ResourceLimits, KernelSetState y lanza sysmodules iniciales	C+SWI {0}/{1}/{2}/{3}: reads APPMEMALLOC (GetSystemInfo), creates/sets ResourceLimits, KernelSetState and launches the initial sysmodules
+C: comprueba trabajo pendiente y coordina relanzamiento	C: checks pending work and coordinates relaunch
+C: inicia monitoreo de notificaciones srv:	C: starts monitoring srv: notifications
+C: reserva stack y lanza thread con svcCreateThread ({0})	C: reserves a stack and starts a thread with svcCreateThread ({0})
+C: conecta a srv: y registra eventos/clientes	C: connects to srv: and registers events/clients
+ASM r2: recopila PIDs active bajo lock para apagado/terminacion	ASM r2: collects active PIDs under lock for shutdown/termination
+C+SWI {0}: prepara dependencias, valida limites, lanza titulo con Loader y registra proceso	C+SWI {0}: prepares dependencies, validates limits, launches the title with Loader and registers the process
+C: construye lista de TitleIDs dependientes desde ExHeader	C: builds the list of dependent TitleIDs from the ExHeader
+C+SWI {0}/{1}/{2}/{3}: aplica KernelSetState ({4}), srv:pm y lanza/registra proceso en SM	C+SWI {0}/{1}/{2}/{3}: applies KernelSetState ({4}), srv:pm and launches/registers the process in SM
+C: pm:app cmd {0} ({1}); lanza titulo por ProgramInfo + flags	C: pm:app cmd {0} ({1}); launches a title from ProgramInfo + flags
+C+SWI {0}/{1}: espera WaitSynchronization1 o fuerza svcTerminateProcess	C+SWI {0}/{1}: waits with WaitSynchronization1 or forces svcTerminateProcess
+C: desenlaza entrada de proceso de tabla SM/PM	C: unlinks a process entry from the SM/PM table
+C+SWI {0}: variante lanzamiento proceso sistema/aplicacion con dependencias	C+SWI {0}: system/application process launch variant with dependencies
+C+SWI {0}/{1}/{2}: configura affinity mask, ideal processor y resource limit del proceso	C+SWI {0}/{1}/{2}: configures affinity mask, ideal processor and resource limit of the process
+C+SWI {0}: termina procesos que coinciden con mascara/criterio	C+SWI {0}: terminates the processes matching the mask/criterion
+C+SWI {0}: srv:pm cmd {1} RegisterProcess con ACLs (handle {2})	C+SWI {0}: srv:pm cmd {1} RegisterProcess with ACLs (handle {2})
+C+SWI {0}: ejecuta svcKernelSetState para reinicio FIRM y espera evento	C+SWI {0}: runs svcKernelSetState for a FIRM reboot and waits for the event
+C: pm:app cmd {0}; copia <={1} bytes desde buffer chainload {2} a buffer cliente	C: pm:app cmd {0}; copies <={1} bytes from chainload buffer {2} to the client buffer
+C: pm:app cmd {0}; copia <={1} bytes al buffer chainload {2} y limpia resto a cero	C: pm:app cmd {0}; copies <={1} bytes to chainload buffer {2} and zeroes the rest
+C+SWI {0}: pm:dbg cmd {1}; lanza aplicacion en modo debug o RunQueuedProcess	C+SWI {0}: pm:dbg cmd {1}; launches the application in debug mode or RunQueuedProcess
+C: pm:app cmd {0}; obtiene TitleID y media/version de aplicacion activa via fs:REG	C: pm:app cmd {0}; gets TitleID and media/version of the active application via fs:REG
+C+SWI {0}/{1}: coordina apagado ordenado de procesos por prioridad y timeout	C+SWI {0}/{1}: coordinates the orderly shutdown of processes by priority and timeout
+C+SWI {0}: pm:app cmd {1}; termina aplicacion/sistema y prepara salto a FIRM	C+SWI {0}: pm:app cmd {1}; terminates the application/system and prepares the jump to FIRM
+ASM r2: recorre lista procesos limpiando handles y notificando {0}	ASM r2: walks the process list clearing handles and notifying {0}
+C+SWI {0}: termina procesos active segun bandera de apagado/reboot	C+SWI {0}: terminates active processes according to the shutdown/reboot flag
+C+SWI {0}: pm:dbg cmd {1}; lanza app con flags|{2}	C+SWI {0}: pm:dbg cmd {1}; launches an app with flags|{2}
+C+SWI {0}: pm:app cmd {1}; termina proceso del TitleID dado	C+SWI {0}: pm:app cmd {1}; terminates the process of the given TitleID
+C+SWI {0}: pm:dbg cmd {1}; libera/ejecuta proceso debug en espera con DebugActiveProcess + svcRunProcess	C+SWI {0}: pm:dbg cmd {1}; releases/runs a waiting debug process with DebugActiveProcess + svcRunProcess
+C: pm:app cmd {0}; marca shutdown pending (+{1}={2}), guarda TID y senaliza evento NS	C: pm:app cmd {0}; marks shutdown pending (+{1}={2}), saves the TID and signals the NS event
+C: pm:app cmd {0}; lanza titulo de actualizacion validando flags&{1}/{2}	C: pm:app cmd {0}; launches an update title validating flags&{1}/{2}
+C: pm:app cmd {0}; copia <={1} flags desde {2}/ExHeader del PID	C: pm:app cmd {0}; copies <={1} flags from {2}/ExHeader of the PID
+C+SWI {0}: pm:app cmd {1}; obtiene GetResourceLimitLimitValues y ajusta offset	C+SWI {0}: pm:app cmd {1}; obtains GetResourceLimitLimitValues and adjusts the offset
+C+SWI {0}: pm:app cmd {1}; establece limite de memoria de aplicacion	C+SWI {0}: pm:app cmd {1}; sets the application memory limit
+ASM r2: inicializa estructura principal PM + vtable {0}	ASM r2: initializes the main PM structure + vtable {0}
+ASM r2: destruye eventos/handles de manager PM (vtable {0})	ASM r2: destroys the PM manager events/handles (vtable {0})
+ASM r2: .{0} ctor principal estado PM y tablas estaticas	ASM r2: .{0} main constructor of the PM state and static tables
+.rodata: strings 'pm:app' y 'pm:dbg'	.rodata: strings 'pm:app' and 'pm:dbg'
+C: itera array {0} de N elementos {1} stride {2} ejecutando callback {3}	C: iterates array {0} of N elements {1} stride {2} running callback {3}
+C: invocacion auxiliar CRT antes de salir	C: auxiliary CRT call before exit
+C: registra {0} servicios PXI ({1}), crea {2} hilos worker ({3}/{4}/{5}), bucle AcceptSession + worker	C: registers {0} PXI services ({1}), creates {2} worker threads ({3}/{4}/{5}), AcceptSession loop + worker
+C: itera tabla destructores estaticos CRT	C: iterates the CRT static destructor table
+C: configura handles base svc/srv y compara limites de entorno	C: configures the base svc/srv handles and compares environment limits
+C: devuelve puntero global configuracion runtime {0}	C: returns the global runtime configuration pointer {0}
+C: strlen palabra-alineado usado al registrar servicios PXI	C: word-aligned strlen used when registering PXI services
+C: llama {0} (srv: EnableNotification {1}) y devuelve semaphore handle	C: calls {0} (srv: EnableNotification {1}) and returns the semaphore handle
+C: adquiere lock y llama {0} (srv: ReceiveNotification {1})	C: acquires the lock and calls {0} (srv: ReceiveNotification {1})
+C: asocia objeto de sesion con puerto/indice bajo lock	C: associates a session object with a port/index under lock
+C+SWI {0}: envia srv: cmd {1} RegisterService con nombre servicio y {2}	C+SWI {0}: sends srv: cmd {1} RegisterService with the service name and {2}
+C+SWI {0}: cierra handles y libera slot de sesion	C+SWI {0}: closes handles and frees the session slot
+C+SWI {0}/{1}: inicializa mutex/eventos IRQ {2}/{3}/{4}, enlaza HW PXI ({5}), atiende cola TX/RX	C+SWI {0}/{1}: initializes mutex/events IRQ {2}/{3}/{4}, binds the PXI HW ({5}), serves the TX/RX queue
+C+SWI {0}: desenlaza IRQs PXI ({1}) y cierra mutex/eventos	C+SWI {0}: unbinds the PXI IRQs ({1}) and closes mutex/events
+Entry hilo worker RX lanzado desde {0}	RX worker thread entry launched from {0}
+Entry hilo worker IPC {0} lanzado desde {1}	IPC worker thread entry {0} launched from {1}
+C: valida y compara argumento string de entorno {0}	C: validates and compares the environment string argument {0}
+C: inicializa AddressArbiter y escanea memoria (QueryMemory) para heap/TLS	C: initializes AddressArbiter and scans memory (QueryMemory) for heap/TLS
+C: inicializa puntero/estado base MMIO PXI {0}	C: initializes the PXI MMIO base pointer/state {0}
+C: sondea FIFO PXI {0} y devuelve palabra disponible	C: polls PXI FIFO {0} and returns the available word
+C: deshabilita bit de interrupcion/control en {0} {1}	C: disables the interrupt/control bit at {0} {1}
+C: bucle hilo RX esperando evento IRQ FIFO y despachando via {0}	C: RX thread loop waiting for the FIFO IRQ event and dispatching via {0}
+C+SWI {0}: ReplyAndReceive sesion IPC; envia a ARM9 por {1}/{2}; maneja cmd {3} pxi:mc sleep lock	C+SWI {0}: IPC session ReplyAndReceive; sends to the ARM9 via {1}/{2}; handles cmd {3} pxi:mc sleep lock
+C: inicializa descriptor de canal/slot de sesion PXI	C: initializes a PXI channel/session slot descriptor
+C: lee/actualiza estado de slot	C: reads/updates the slot state
+C: decrementa semaforo de usuario y espera por ArbitrateAddress ({0})	C: decrements the user semaphore and waits with ArbitrateAddress ({0})
+C: lee flag FIFO SEND full en {0} {1}	C: reads the SEND FIFO full flag at {0} {1}
+C: inicializa LightLock a estado desbloqueado	C: initializes a LightLock to the unlocked state
+C: entrada principal de envio ARM11->ARM9 (escribe {0}, {1}, payload al SEND FIFO + sync IRQ)	C: main ARM11->ARM9 send entry (writes {0}, {1}, payload to the SEND FIFO + sync IRQ)
+C: lee palabra de RECV FIFO {0}	C: reads a word from the RECV FIFO {0}
+C: escribe palabra a SEND FIFO {0}	C: writes a word to the SEND FIFO {0}
+C+SWI {0}: limpia {1} y desenlaza IRQs {2}/{3}/{4}	C+SWI {0}: clears {1} and unbinds IRQs {2}/{3}/{4}
+C+SWI {0}: WaitSynchronization1 sobre evento HW PXI	C+SWI {0}: WaitSynchronization1 on the PXI HW event
+C+SWI {0}/{1}: enlaza IRQs {2} (SYNC), {3} (SEND empty), {4} (RECV not-empty) y habilita bits {5} {6}/{7}	C+SWI {0}/{1}: binds IRQs {2} (SYNC), {3} (SEND empty), {4} (RECV not-empty) and enables bits {5} {6}/{7}
+C: reserva pila y lanza hilo worker con svc {0} (CreateThread)	C: reserves a stack and starts a worker thread with svc {0} (CreateThread)
+C: conecta a srv: (con reintento nintendo -{0} loop SleepThread) y llama RegisterClient	C: connects to srv: (with retry, nintendo -{0} loop SleepThread) and calls RegisterClient
+C: segunda entrada conexion srv: y RegisterClient	C: second srv: connection entry and RegisterClient
+C: verifica Result < {0} y llama {1}	C: checks Result < {0} and calls {1}
+C: copia palabras entre TLS buffer e buffers de respuesta PXI	C: copies words between the TLS buffer and the PXI reply buffers
+C: lee {0} ({1}..{2}) y {3} desde RECV FIFO, valida (hdr&{4})+((hdr&{5})>>{6}) <= {7}, lee payload y despacha al cliente/cola	C: reads {0} ({1}..{2}) and {3} from the RECV FIFO, validates (hdr&{4})+((hdr&{5})>>{6}) <= {7}, reads the payload and dispatches to the client/queue
+C: extrae N palabras desde RECV FIFO {0} al buffer	C: extracts N words from the RECV FIFO {0} into the buffer
+C+SWI {0}: verifica {1} <= {2}, marca reply recibido y SignalEvent al cliente	C+SWI {0}: checks {1} <= {2}, marks the reply as received and SignalEvent to the client
+C+SWI {0}: destructor vtable {1}; cierra handle de sesion	C+SWI {0}: vtable {1} destructor; closes the session handle
+C: inicializador de estructura de {0} campos ({1})	C: structure initializer of {0} fields ({1})
+ASM r2: .{0} ctor de los {1} canales PXI ({2}..), {3} {4}, eventos y buffers {5}	ASM r2: .{0} constructor of the {1} PXI channels ({2}..), {3} {4}, events and buffers {5}
+.rodata: table of de {0} servicios PXI <-> {1} {2}..{3} (mc,FS0/{4}/B/R,PM,dev,am9,ps9)	.rodata: table of {0} PXI services <-> {1} {2}..{3} (mc,FS0/{4}/B/R,PM,dev,am9,ps9)
+C: crea puertos 'srv:' y 'srv:pm' via {0}, inicializa tabla ACL, bucle AcceptSession + ReplyAndReceive	C: creates ports 'srv:' and 'srv:pm' via {0}, initializes the ACL table, AcceptSession + ReplyAndReceive loop
+C: inicializa AddressArbiter y escanea RAM (QueryMemory)	C: initializes AddressArbiter and scans RAM (QueryMemory)
+C: consulta GetSystemInfo ({0}) e inicializa semaforo global ({1})	C: queries GetSystemInfo ({0}) and initializes the global semaphore ({1})
+C: despierta procesos esperando disponibilidad de servicio/puerto	C: wakes processes waiting for service/port availability
+C: recorre tabla de procesos/sesiones cerrando entradas huerfanas	C: walks the process/session table closing orphaned entries
+C: inicializa locks y configuracion inicial de procesos built-in FIRM	C: initializes locks and the initial configuration of the built-in FIRM processes
+C: valida y parsea tabla de permisos de servicios (ACLs) desde blob	C: validates and parses the service-permission table (ACLs) from the blob
+C: inserta entrada de servicio permitido en nodo de proceso	C: inserts an allowed-service entry into the process node
+C: busca entrada ACL en lista del proceso	C: looks up an ACL entry in the process list
+C: inicializa cabecera de entrada ACL	C: initializes an ACL entry header
+C: inicializa estructura de eventos por proceso	C: initializes the per-process event structure
+C: constructor entrada de proceso (PID, semaforo {0}, ring buffer notifs)	C: process entry constructor (PID, semaphore {0}, notification ring buffer)
+C: verifica si caller PID posee permiso (ACL) para acceder al servicio u64 ({0}, {1})	C: checks whether the caller PID has permission (ACL) to access the u64 service ({0}, {1})
+C: inserta {0} en cola circular ({1} slots +{2}/+{3}/+{4}) y llama ReleaseSemaphore	C: inserts {0} into the circular queue ({1} slots +{2}/+{3}/+{4}) and calls ReleaseSemaphore
+C: inserta/busca entradas ordenadas en arbol/slab de procesos/ACLs	C: inserts/looks up sorted entries in the process/ACL tree/slab
+C: busca servicio (type={0}) o puerto (type={1}) por nombre u64 (<={2} chars) en tabla global (max {3})	C: looks up a service (type={0}) or port (type={1}) by u64 name (<={2} chars) in the global table (max {3})
+C: valida {0} <= len <= {1} y sin nulos internos ({2})	C: validates {0} <= len <= {1} and no embedded NULs ({2})
+C: srv: cmd {0}; valida nombre/ACL, crea puerto (svc {1} CreatePort, max {2}) y despierta waiters	C: srv: cmd {0}; validates name/ACL, creates the port (svc {1} CreatePort, max {2}) and wakes waiters
+C: inicializa pool/slab de bloques fijos	C: initializes a fixed-block pool/slab
+C: libera nodo en slab/tabla binaria	C: frees a node in the slab/binary table
+C: asigna slot del slab de notificaciones/ACLs	C: allocates a slot of the notification/ACL slab
+C: srv: cmd {0}; elimina {1} de tabla de suscripcion del PID	C: srv: cmd {0}; removes {1} from the PID's subscription table
+C: srv:pm cmd {0}; difunde notificacion {1} a todos los procesos suscritos	C: srv:pm cmd {0}; broadcasts notification {1} to all subscribed processes
+C: srv: cmd {0}; busca puerto registrado (type={1}) tras validar ACL y devuelve handle (sin CreateSessionToPort si check)	C: srv: cmd {0}; looks up a registered port (type={1}) after validating the ACL and returns the handle (no CreateSessionToPort if check)
+C: srv: cmd {0}; registra puerto con nombre <={1} chars tras validar ACL	C: srv: cmd {0}; registers a port with name <={1} chars after validating the ACL
+C: srv:pm cmd {0}; registra PID con lista de ACLs (max {1} servicios)	C: srv:pm cmd {0}; registers a PID with an ACL list (max {1} services)
+C: srv: cmd {0}; verifica ACL ({1}), busca servicio ({2}) y llama CreateSessionToPort ({3})	C: srv: cmd {0}; checks the ACL ({1}), looks up the service ({2}) and calls CreateSessionToPort ({3})
+C: srv:pm cmd {0}; resuelve Handle->PID (svc {1} GetProcessId) y entrega notificacion al proceso	C: srv:pm cmd {0}; resolves Handle->PID (svc {1} GetProcessId) and delivers the notification to the process
+C: srv: cmd {0}; elimina puerto registrado de tabla y cierra handle (svc {1})	C: srv: cmd {0}; removes the registered port from the table and closes the handle (svc {1})
+C: srv:pm cmd {0}; desvincula y destruye entrada de proceso por PID	C: srv:pm cmd {0}; unlinks and destroys the process entry by PID
+C: srv: cmd {0}; elimina servicio de tabla y cierra handle de puerto (svc {1})	C: srv: cmd {0}; removes the service from the table and closes the port handle (svc {1})
+C: srv: cmd {0}; registra/busca entrada de proceso por PID y devuelve handle de semaforo	C: srv: cmd {0}; registers/looks up a process entry by PID and returns the semaphore handle
+C: srv: cmd {0}; comprueba ACL y devuelve bool si servicio esta registrado en tabla	C: srv: cmd {0}; checks the ACL and returns a bool saying whether the service is registered in the table
+C: srv: cmd {0}; extrae {1} del ring buffer circular del proceso	C: srv: cmd {0}; extracts {1} from the process's circular ring buffer
+C: srv: cmd {0}; difunde notificacion y rellena array de PIDs suscritos	C: srv: cmd {0}; broadcasts the notification and fills the array of subscribed PIDs
+C: srv: cmd {0}; agrega {1} a tabla de suscripciones del proceso	C: srv: cmd {0}; adds {1} to the process subscription table
+ASM r2: .{0} ctor tabla de {1} servicios/puertos {2}	ASM r2: .{0} constructor of the table of {1} services/ports {2}
+Tabla de vectores ARM11 mapeada en {0}	ARM11 vector table mapped at {0}
+Entry point del header FIRM (Sección {0})	FIRM header entry point (Section {0})
+Inicialización por núcleo MPIDR y limpieza BSS	Per-core initialization (MPIDR) and BSS clearing
+Activa MMU (TTBR0/TTBR1/DACR), SCU y cachés	Enables the MMU (TTBR0/TTBR1/DACR), SCU and caches
+Destino de {0} tras activar MMU	Target of {0} after enabling the MMU
+Vector FIQ: marca flag {0} y dispara IPI {1}	FIQ vector: sets flag {0} and fires IPI {1}
+Trampolín vector Undef -> {0}	Undef vector trampoline -> {0}
+Trampolín vector SVC -> {0}	SVC vector trampoline -> {0}
+Trampolín vector Prefetch Abort -> {0}	Prefetch Abort vector trampoline -> {0}
+Trampolín vector Data Abort -> {0}	Data Abort vector trampoline -> {0}
+Trampolín vector IRQ -> {0}	IRQ vector trampoline -> {0}
+C verificado: enlaza KThread idle a KScheduler por CPU {0}	C verified: links the idle KThread to the per-CPU KScheduler {0}
+cpsid i; ldrex/strex decremento atómico	cpsid i; ldrex/strex atomic decrement
+C verificado: limpia flags atómicos por core (ldrex/strex) y resetea CDMA	C verified: clears the per-core atomic flags (ldrex/strex) and resets CDMA
+C verificado: construye tablas MMU L1/L2 iniciales desde {0}	C verified: builds the initial L1/L2 MMU tables from {0}
+C: inicializa kernel en core {0} (KThread/KScheduler/sync)	C: initializes the kernel on core {0} (KThread/KScheduler/sync)
+C: aloca nodo slab, inicializa KSynchronizationObject y crea hilo idle	C: allocates a slab node, initializes a KSynchronizationObject and creates the idle thread
+C verificado: itera contenedores NCCH de FIRM {0}	C verified: iterates the FIRM NCCH containers {0}
+Verifica CRC-{0} de [{1}..{2})	Verifies CRC-{0} of [{1}..{2})
+C: barrera/lock con {0} y page pool durante arranque	C: barrier/lock with {0} and page pool during boot
+C: inicializa estructura per-core (+{0}) y cola de prioridades	C: initializes the per-core structure (+{0}) and priority queue
+C: reserva/asigna páginas del pool boot con lock global	C: reserves/allocates boot-pool pages with the global lock
+C: configura regiones iniciales de memoria del kernel	C: configures the initial kernel memory regions
+C: inicializa IRQs por defecto vía GIC bind	C: initializes the default IRQs through GIC bind
+C: inicialización de core secundario (MPIDR, scheduler y thread)	C: secondary core initialization (MPIDR, scheduler and thread)
+C: prepara byte cero ({0}) para limpiar área BSS/boot	C: prepares a zero byte ({0}) to clear the BSS/boot area
+C: fija prioridad {0} (idle) y libera página asociada	C: sets priority {0} (idle) and frees the associated page
+Handler Data Abort con fixup seguro	Data Abort handler with safe fixup
+Tabla de {0} punteros SVC active ({1}..{2})	Table of {0} active SVC pointers ({1}..{2})
+C: valida NCCH/ExHeader, crea KCodeSet y lanza proceso built-in	C: validates NCCH/ExHeader, creates the KCodeSet and launches a built-in process
+C: constructor de KScheduler (array ctor + vtable {0})	C: KScheduler constructor (array ctor + vtable {0})
+C: registra {0} timers/IRQs periódicos y configura tick	C: registers {0} periodic timers/IRQs and configures the tick
+C: reserva memoria/pila y lanza KThread inicial	C: reserves memory/stack and launches the initial KThread
+C: adquiere klock global y señaliza SGI/IPI en arranque	C: acquires the global klock and signals SGI/IPI at boot
+CP15 + C verificado: invalidación completa I-Cache + BTAC + DSB + ISB	CP15 + C verified: full invalidation of I-Cache + BTAC + DSB + ISB
+C: extrae bits de capacidad/prioridad y ejecuta {0}	C: extracts capability/priority bits and runs {0}
+Panic de abort en modo kernel	Abort panic in kernel mode
+C verificado: busca par PC/fixup ordenado para recuperación Data Abort	C verified: searches the sorted PC/fixup pair for Data Abort recovery
+C: asigna páginas y mapea segmento de KCodeSet	C: allocates pages and maps a KCodeSet segment
+C verificado: filtra máscara de afinidad CPU (SetProcessAffinityMask)	C verified: filters the CPU affinity mask (SetProcessAffinityMask)
+Replanificación al salir de SVC	Rescheduling on SVC exit
+Manejador SVC inválido o denegado	Invalid or denied SVC handler
+Dispatcher de interrupciones GIC	GIC interrupt dispatcher
+C: inicializa KProcess con KCodeSet y limpia cachés	C: initializes the KProcess with its KCodeSet and cleans the caches
+C: copia descriptor nombre/PID y capacidades del KProcess	C: copies the name/PID descriptor and capabilities of the KProcess
+C: inicializa a cero campos de cabecera/rango	C: zero-initializes header/range fields
+Validación de memoria (err {0}/{1})	Memory validation (err {0}/{1})
+C: implementación de UnmapMemoryBlock (desmapea y libera flag)	C: UnmapMemoryBlock implementation (unmaps and frees the flag)
+C: limpia estado de espera del KThread y reencola con lock	C: clears the KThread wait state and re-queues it with lock
+C: implementación WaitSynchronization (con timeout y ticks)	C: WaitSynchronization implementation (with timeout and ticks)
+C: compara KThread activo de {0} contra MPIDR	C: compares the active KThread of {0} against MPIDR
+Dispatcher PMU de {0} casos (SVC {1})	PMU dispatcher of {0} cases (SVC {1})
+Helper caché para SVCs {0}..{1}	Cache helper for SVCs {0}..{1}
+C: implementación MapProcessMemory (remapea páginas entre procesos)	C: MapProcessMemory implementation (remaps pages between processes)
+C: mapea páginas de KSharedMemory iterando lista de bloques	C: maps KSharedMemory pages iterating over the block list
+C: adquiere lock global y comprueba estado/sincronización	C: acquires the global lock and checks state/synchronization
+C: toma lock y despierta waiters en lista del proceso	C: takes the lock and wakes the waiters in the process list
+C: desactiva flag pendiente de timer y limpia HW timer si activo	C: clears the pending timer flag and clears the HW timer if active
+C: implementación de BreakDebugProcess (suspende hilos y evento)	C: BreakDebugProcess implementation (suspends threads and event)
+C: implementación de ContinueDebugEvent	C: ContinueDebugEvent implementation
+C: vacía cola de eventos KDebug liberando nodos al slab	C: empties the KDebug event queue releasing the nodes to the slab
+C: libera nodo temporal si el hilo finalizó o canceló espera	C: frees a temporary node if the thread finished or cancelled the wait
+C: inicializa espacio de direcciones MMU L1/L2 del KProcess	C: initializes the L1/L2 MMU address space of the KProcess
+Lee {0} (llamado por {1})	Reads {0} (called by {1})
+C: reserva cuota KResourceLimit, asigna pila/TLS y arranca KThread	C: reserves KResourceLimit quota, allocates stack/TLS and starts the KThread
+C: reserva cuota tipo {0} (Thread) en KResourceLimit e inicializa KThread	C: reserves quota of type {0} (Thread) in the KResourceLimit and initializes the KThread
+C: implementación de TerminateProcess (notifica KDebug y cierra hilos)	C: TerminateProcess implementation (notifies KDebug and closes threads)
+C verificado: replica byte a uint32 ({0} * byte) para memset	C verified: replicates a byte into a uint32 ({0} * byte) for memset
+ldrexb/strexb store byte atómico	ldrexb/strexb atomic byte store
+C: retira KThread terminado del KScheduler bajo critical section	C: removes the terminated KThread from the KScheduler under a critical section
+C: valida que KProcess coincide con contexto actual bajo lock	C: checks that the KProcess matches the current context under lock
+C: limpia entradas pendientes de tabla de handles bajo critical section	C: clears the pending entries of the handle table under a critical section
+C: asigna core destino a KThread y envía IPI si corresponde	C: assigns the target core to a KThread and sends an IPI if needed
+C: inicializa contador, máximo y KResourceLimit de KSemaphore	C: initializes counter, maximum and KResourceLimit of a KSemaphore
+C: incrementa atómicamente contador (ldrex/strex) y despierta waiters	C: atomically increments the counter (ldrex/strex) and wakes the waiters
+C: inicializa tabla fija de slots/objetos (stride {0})	C: initializes a fixed table of slots/objects (stride {0})
+C: retorna Result fijo {0}	C: returns fixed Result {0}
+C: enlaza tabla/límite al KProcess bajo lock con {0}	C: links the table/limit to the KProcess under lock with {0}
+C: asigna slot de hilo en KProcess desde slab {0}	C: allocates a thread slot in the KProcess from slab {0}
+C: recorre y libera nodos de lista de memoria bajo critical section	C: walks and frees the nodes of a memory list under a critical section
+C verificado: flush D-Cache + invalidate I-Cache sobre rango	C verified: flush D-Cache + invalidate I-Cache over a range
+C: inicializa listas de segmentos .text/.rodata/.data de KCodeSet	C: initializes the .text/.rodata/.data segment lists of a KCodeSet
+C: asigna y mapea páginas de memoria virtual en KProcess	C: allocates and maps virtual-memory pages in the KProcess
+C: comprueba estado/enlace de nodo en lista de espera	C: checks the state/link of a node in a wait list
+C verificado: fija estado {0} (exited) en descriptor de hilo	C verified: sets state {0} (exited) in a thread descriptor
+C: verifica límite/permiso {0} del proceso bajo lock	C: checks limit/permission {0} of the process under lock
+C: saca hilo de espera y reactiva estado en KScheduler	C: takes a thread out of the wait list and re-enables its state in the KScheduler
+C: inicializa KAddressArbiter y registra KResourceLimit	C: initializes a KAddressArbiter and registers the KResourceLimit
+C: ajusta prioridad y estado de KThread bajo critical section	C: adjusts the priority and state of a KThread under a critical section
+C: reserva página TLS {0} y mapea KThread TLS slot	C: reserves TLS page {0} and maps the KThread TLS slot
+C: valida alineamiento de página ({0}) y rango de usuario	C: validates page alignment ({0}) and user range
+C: valida alineamiento y crea KCodeSet con segmentos .text/.rodata/.data	C: validates alignment and creates a KCodeSet with .text/.rodata/.data segments
+C: lee campos de proceso/exheader bajo lock	C: reads process/exheader fields under lock
+C: configura transferencia DMA/CDMA con lock en proceso+{0}	C: configures a DMA/CDMA transfer with lock at process+{0}
+C verificado: inicializa KEvent (resetType y KResourceLimit)	C verified: initializes a KEvent (resetType and KResourceLimit)
+C verificado: inicializa KMutex (owner inicial y KResourceLimit)	C verified: initializes a KMutex (initial owner and KResourceLimit)
+C verificado: libera KMutex y recalcula prioridad al terminar KThread	C verified: releases a KMutex and recomputes the priority when a KThread ends
+C verificado: inicializa KTimer (resetType y KResourceLimit)	C verified: initializes a KTimer (resetType and KResourceLimit)
+C: programa KTimer con GetSystemTick, KResourceLimit y cola de timers	C: programs a KTimer with GetSystemTick, KResourceLimit and the timer queue
+C: inicializa L1 TTBR0 ({0}), ASID y contexto del KProcess	C: initializes the L1 TTBR0 ({0}), ASID and context of the KProcess
+C: mapea región {0}+ en espacio de usuario del KProcess	C: maps region {0}+ into the user space of the KProcess
+C: implementación ControlProcessMemory (permisos/rango << {0})	C: ControlProcessMemory implementation (permissions/range << {0})
+C: desvincula KEvent de IRQ hardware bajo lock +{0} y deshabilita IRQ	C: unlinks a KEvent from a hardware IRQ under lock +{0} and disables the IRQ
+MMIO GIC + C verificado: escribe prioridad ICDIPR (-{0})	MMIO GIC + C verified: writes priority ICDIPR (-{0})
+Resetea PMU y acumuladores SCU	Resets the PMU and the SCU accumulators
+Lee CCNT/PMN0/PMN1 c15,c12	Reads CCNT/PMN0/PMN1 c15,c12
+C: gestor central L1/L2 de mapeo, desmapeo y permisos de páginas	C: central L1/L2 manager for mapping, unmapping and page permissions
+C verificado: enlaza KDebug <-> KProcess+{0} y encola eventos iniciales	C verified: links KDebug <-> KProcess+{0} and queues the initial events
+C verificado: marca flag KDebug+{0} al cerrar KProcess	C verified: sets flag KDebug+{0} when the KProcess is closed
+C: lee contexto de KThread para depuración	C: reads KThread context for debugging
+C: marca flag cierre +{0}, detiene timers y recorre lista +{1}	C: sets close flag +{0}, stops timers and walks list +{1}
+C: gestión handles/KAutoObject ({0})	C: handle/KAutoObject management ({0})
+C verificado: asigna prioridad base (+{0}) y dinámica (+{1})	C verified: assigns base (+{0}) and dynamic (+{1}) priority
+C verificado: retorna *(char *)(kdebug + {0}) == {1}	C verified: returns *(char *)(kdebug + {0}) == {1}
+C: finaliza un KThread individual bajo klock y envía IPI	C: finalizes a single KThread under klock and sends an IPI
+C: termina todos los hilos del KProcess y actualiza debug/handles	C: terminates all threads of the KProcess and updates debug/handles
+C: busca proceso y crea handle en tabla con {0}	C: looks up the process and creates a handle in the table with {0}
+C: verifica límite de memoria disponible en KResourceLimit	C: checks the available memory limit in the KResourceLimit
+C: incremento atómico ldrex/strex de contador en offset +{0}	C: atomic ldrex/strex increment of a counter at offset +{0}
+C: itera lista de hilos en KProcess+{0} bajo lock global	C: iterates the thread list in KProcess+{0} under the global lock
+C: empaqueta ID/núcleo/prioridad IRQ en palabra de {0} bits	C: packs IRQ ID/core/priority into a {0}-bit word
+C: valida que estado *(short *)({0} + {1}) < {2}	C: validates that state *(short *)({0} + {1}) < {2}
+C: consulta estado hardware de canal CDMA bajo klock	C: queries the hardware state of a CDMA channel under klock
+C: suma bloques de memoria asignados iterando lista del proceso	C: sums the allocated memory blocks iterating the process list
+C: suma regiones de memoria asociadas	C: sums the associated memory regions
+C: recorre bloques de memoria mapeados en KProcess	C: walks the memory blocks mapped in the KProcess
+C verificado: devuelve PID de {0} o -{1} en hilo kernel	C verified: returns the PID of {0} or -{1} in a kernel thread
+Prepara byte repetido y salta a memset {0}	Prepares the repeated byte and jumps to memset {0}
+C: libera pila/TLS de usuario del KThread	C: frees the user stack/TLS of a KThread
+C: asigna bloques de páginas del pool de memoria	C: allocates page blocks from the memory pool
+C: inicializa contadores y cuotas de KResourceLimit bajo lock	C: initializes the counters and quotas of a KResourceLimit under lock
+C: inicializa KServerPort/KClientPort con límite y nombre	C: initializes KServerPort/KClientPort with limit and name
+C: inicializa rango/permisos en descriptor KMemoryBlock con ldrex	C: initializes range/permissions in a KMemoryBlock descriptor with ldrex
+C: registra evento timer con GetSystemTick	C: registers a timer event with GetSystemTick
+Excepción de usuario (modo {0})	User exception (mode {0})
+Decrementa refcount de KAutoObject	Decrements the refcount of a KAutoObject
+C: suma páginas libres disponibles en descriptor de pool de memoria	C: sums the free pages available in a memory-pool descriptor
+Lookup de KThread* por handle	KThread* lookup by handle
+Lookup de KDebug* por handle ({0})	KDebug* lookup by handle ({0})
+Liberación de contexto KDebug	Releases a KDebug context
+Lookup de KResourceLimit*	KResourceLimit* lookup
+Lookup de KProcess* por handle	KProcess* lookup by handle
+C: procesa evento de reanudación en KDebug y libera al slab	C: processes a resume event in KDebug and frees it to the slab
+C: comprueba flag de proceso ((flags & {0}) == {1} o <= {2})	C: checks a process flag ((flags & {0}) == {1} or <= {2})
+C: desvincula hilo bajo lock y notifica por IPI	C: unlinks a thread under lock and notifies by IPI
+C: arranca KThread recién creado y notifica KDebug AttachThread	C: starts a newly created KThread and notifies KDebug AttachThread
+C: prepara registros r0/pc/sp/cpsr iniciales del KThread	C: prepares the initial r0/pc/sp/cpsr registers of a KThread
+C verificado: {0} en bloques de {1} bytes	C verified: {0} in blocks of {1} bytes
+Inicio copia segura protegida por DAbort	Start of a safe copy protected by DAbort
+ldrt/str dentro del rango fixup DAbort (llamado por SVC {0})	ldrt/str inside the DAbort fixup range (called by SVC {0})
+C: lectura simple de cuota/límite de recurso	C: simple read of a resource quota/limit
+C verificado: copia string acotada y devuelve longitud	C verified: bounded string copy that returns the length
+ldrb/strbt dentro del rango fixup DAbort (llamado por SVC {0}/{1})	ldrb/strbt inside the DAbort fixup range (called by SVC {0}/{1})
+ldr/strt dentro del rango fixup DAbort	ldr/strt inside the DAbort fixup range
+C: valida dirección/tamaño de copia de usuario	C: validates the address/size of a user copy
+C + ldrex verificado: reserva cuota de recurso bajo lock +{0}	C + ldrex verified: reserves resource quota under lock +{0}
+C: valida alineamiento/tamaño de petición DMA	C: validates the alignment/size of a DMA request
+C: consulta {0} para validar buffer DMA	C: queries {0} to validate a DMA buffer
+C: libera páginas con klock global y actualiza refcounts	C: frees pages with the global klock and updates the refcounts
+C: valida región de memoria del proceso y asigna descriptor	C: validates a process memory region and allocates a descriptor
+C: asigna páginas físicas vía {0}	C: allocates physical pages via {0}
+C: consulta dirección física vía {0}	C: queries the physical address via {0}
+C: copia/traduce buffers y descriptores estáticos IPC ({0})	C: copies/translates IPC buffers and static descriptors ({0})
+C: ejecuta copia de chunks DMA en transferencia activa	C: runs the chunk copy of an active DMA transfer
+C: consulta bloque de memoria y valida estado/permisos ({0})	C: queries a memory block and validates state/permissions ({0})
+C: divide o cambia atributos de región en mapa virtual del KProcess ({0})	C: splits or changes attributes of a region in the KProcess virtual map ({0})
+C: trampoline hacia función boot/helper {0}	C: trampoline to boot/helper function {0}
+C: busca hueco de direcciones virtuales libres de tamaño requerido	C: looks for a free virtual address hole of the required size
+C: desmapea o recorta bloque de memoria en espacio del proceso ({0})	C: unmaps or trims a memory block in the process address space ({0})
+C: busca región contigua libre en pool de memoria física	C: looks for a free contiguous region in the physical memory pool
+C: mapea bloques físicos/virtuales con {0} ({1})	C: maps physical/virtual blocks with {0} ({1})
+C: divide o actualiza entradas PTE L1/L2 en rango ({0})	C: splits or updates L1/L2 PTE entries in a range ({0})
+MMIO GIC + C verificado: escribe GIC ICDICER (+{0})	MMIO GIC + C verified: writes GIC ICDICER (+{0})
+MMIO GIC + C verificado: escribe GIC ICDISER (+{0})	MMIO GIC + C verified: writes GIC ICDISER (+{0})
+C: comprueba solapamiento de rangos alineados a página (4KB)	C: checks overlap of page-aligned (4 KB) ranges
+C: elimina entrada en tabla de interrupciones y deshabilita IRQ	C: removes an entry from the interrupt table and disables the IRQ
+C: registra handler IRQ en tabla core*{0} + id*{1} bajo lock +{2}	C: registers an IRQ handler in table core*{0} + id*{1} under lock +{2}
+C: recolecta contexto de hilos/estado KDebug bajo lock ({0})	C: collects thread context/KDebug state under lock ({0})
+C: dispara replanificación inmediata en KScheduler	C: triggers an immediate reschedule in the KScheduler
+C: gestiona cola de timers de scheduler con slab {0}	C: manages the scheduler timer queue with slab {0}
+ldrex/strex + C verificado: {0}({1}) y retorna this	ldrex/strex + C verified: {0}({1}) and returns this
+C: busca bloque coincidente en lista enlazada de memoria	C: looks for a matching block in the linked memory list
+C: recorre nodos de lista copiando descriptores de {0} bytes	C: walks list nodes copying {0}-byte descriptors
+C + DMB verificado: limpia bit de prioridad y desenlaza KThread	C + DMB verified: clears the priority bit and unlinks the KThread
+MMIO + C verificado: dispara SGI #{0} vía {1} al otro core	MMIO + C verified: fires SGI #{0} via {1} to the other core
+C: constructor de objeto evento KDebug (vtable {0})	C: constructor of a KDebug event object (vtable {0})
+C: configura registro SCU/CP15 de los núcleos MPCore	C: configures the SCU/CP15 registers of the MPCore cores
+C: lee ID CP15 y ajusta bits SCU por core	C: reads the CP15 ID and adjusts per-core SCU bits
+ldrex/strex + C verificado: {0}({1}) con check overflow	ldrex/strex + C verified: {0}({1}) with overflow check
+C: asigna slot libre en tabla de handles bajo lock ({0})	C: allocates a free slot in the handle table under lock ({0})
+C: consulta {0} y valida alineación	C: queries {0} and validates alignment
+MMIO CDMA + C verificado: lee bit {0} de {1}	MMIO CDMA + C verified: reads bit {0} of {1}
+MMIO CDMA + C verificado: lee bit de canal en {0}	MMIO CDMA + C verified: reads a channel bit at {0}
+MMIO CDMA + C verificado: lee estado de canal en {0}+ch*{1}	MMIO CDMA + C verified: reads the channel state at {0}+ch*{1}
+C: invoca {0} para desmapear rango	C: invokes {0} to unmap the range
+C: asigna bloque de páginas del pool bajo klock global	C: allocates a page block from the pool under the global klock
+C: busca páginas libres en bitmap/lista de pool de memoria física	C: looks for free pages in the bitmap/list of the physical memory pool
+C: incrementa refcount por página (>> {0}) en array del pool	C: increments the per-page refcount (>> {0}) in the pool array
+C: recorre tablas L1/L2 del proceso para traducir VA -> PA ({0})	C: walks the process L1/L2 tables to translate VA -> PA ({0})
+C: detiene/resetea canal CDMA hardware y limpia estado	C: stops/resets the hardware CDMA channel and clears the state
+C: espera/sincroniza transferencia CDMA sobre canal activo	C: waits/synchronizes a CDMA transfer on the active channel
+C: inserta región alineada a página ({0}*{1}) bajo critical section	C: inserts a page-aligned region ({0}*{1}) under a critical section
+C: toma lock de memoria y copia descriptor KMemoryBlock de 16B	C: takes the memory lock and copies a 16-byte KMemoryBlock descriptor
+C: encola KThread en bitmap de prioridad y cola ready del KScheduler	C: enqueues a KThread in the priority bitmap and ready queue of the KScheduler
+C: marca flag reschedule={0} y ejecuta cambio de contexto	C: sets flag reschedule={0} and runs the context switch
+C: si flag reschedule activo, ejecuta cambio de contexto	C: if the reschedule flag is set, runs the context switch
+C: actualiza bits de permisos AP/XN en entradas L2	C: updates the AP/XN permission bits in L2 entries
+C: copia rápida de memoria alineada con desenrollado ({0})	C: fast aligned memory copy with unrolling ({0})
+C: libera página física alineada a 4KB de vuelta al pool	C: frees a 4 KB-aligned physical page back to the pool
+Lee Private Timer {0}	Reads the Private Timer {0}
+C verificado: inicializa cabecera de lista circular intrusiva	C verified: initializes the header of an intrusive circular list
+C: inserta/actualiza rango en lista de bloques de memoria bajo lock	C: inserts/updates a range in the memory-block list under lock
+C: recorre lista enlazada llamando destructor/callback por nodo	C: walks a linked list calling a destructor/callback per node
+C verificado: aísla bit activo de menor peso (x & -x)	C verified: isolates the lowest set bit (x & -x)
+C verificado: limpia bit {0} en +{1} y fija +{2}	C verified: clears bit {0} at +{1} and sets +{2}
+C verificado: configura punteros de pila (+{0}/+{1}) de KThread	C verified: configures the stack pointers (+{0}/+{1}) of a KThread
+C verificado: devuelve iterador inicial de espera del KMutex	C verified: returns the initial wait iterator of a KMutex
+C verificado: devuelve sentinela final de espera del KMutex	C verified: returns the end wait sentinel of a KMutex
+C: desenlaza nodo +{0} de lista de prioridades de KThread	C: unlinks node +{0} from a KThread priority list
+C: inserta nodo ordenado por prioridad en lista de KThread	C: inserts a node sorted by priority in a KThread list
+C: recorre cola de timers active para inserción ordenada	C: walks the active timer queue for sorted insertion
+C: obtiene punteros a entrada L1 y PTE L2 para VA dada	C: obtains pointers to the L1 entry and L2 PTE for a given VA
+C: actualiza entrada PTE L2 y mantiene alineación de tabla	C: updates an L2 PTE entry and keeps the table alignment
+C: recorre lista de bloques de memoria del proceso y libera entradas	C: walks the process memory-block list and frees entries
+MMIO GIC + C verificado: escribe byte prioridad en ICDIPR (-{0})	MMIO GIC + C verified: writes a priority byte in ICDIPR (-{0})
+C verificado: cambia estado KThread+{0} y actualiza KScheduler	C verified: changes the state KThread+{0} and updates the KScheduler
+C verificado: conmuta bit {0} en KThread+{1} y actualiza KScheduler	C verified: toggles bit {0} in KThread+{1} and updates the KScheduler
+C: programa registro load/control del timer privado del core bajo critical section	C: programs the load/control register of the per-core private timer under a critical section
+C + ldrex verificado: limpia hilo activo por core en +{0}	C + ldrex verified: clears the active thread per core at +{0}
+ldrex/strex + C verificado: pop atómico desde slab free-list	ldrex/strex + C verified: atomic pop from the slab free-list
+C verificado: inserción al final en lista circular doblemente enlazada	C verified: insertion at the end of a doubly linked circular list
+ldrex/strex + C verificado: push atómico hacia slab free-list	ldrex/strex + C verified: atomic push onto the slab free-list
+C: detiene sistema/núcleos si falla aserción crítica del kernel	C: halts the system/cores if a critical kernel assertion fails
+C: comprueba KResourceLimit+{0} y libera cuota	C: checks KResourceLimit+{0} and releases quota
+C verificado: desenlaza nodo de lista circular doblemente enlazada	C verified: unlinks a node from a doubly linked circular list
+C: mapea rango virtual->físico completo en tablas L1/L2 ({0})	C: maps a complete virtual->physical range in the L1/L2 tables ({0})
+C + ldrex verificado: libera cuota bajo lock +{0} y despierta waiters	C + ldrex verified: releases quota under lock +{0} and wakes the waiters
+C verificado: traduce entrada L1/L2 en tabla MMU del proceso	C verified: translates an L1/L2 entry in the process MMU table
+C verificado: count trailing zeros en entero de {0} bits	C verified: count trailing zeros of a {0}-bit integer
+C verificado: emite bloque DMALP/vcall/DMALPEND de microcódigo PL330	C verified: emits a DMALP/vcall/DMALPEND block of PL330 microcode
+C verificado: empaqueta parámetros de canal CDMA hacia emit PL330 {0}	C verified: packs the CDMA channel parameters for PL330 emit {0}
+C verificado: división/módulo entero de {0} bits ({1})	C verified: {0}-bit integer division/modulo ({1})
+C + ldrex verificado: ruta lenta de lock con espera en KScheduler	C + ldrex verified: slow lock path waiting in the KScheduler
+MMIO + C verificado: envía SGI IPI para despertar núcleos esperando lock	MMIO + C verified: sends an SGI IPI to wake the cores waiting for the lock
+C + ldrex verificado: entra en sección crítica recursiva global	C + ldrex verified: enters the global recursive critical section
+C verificado: encola/desencola KThread en KScheduler según estado	C verified: enqueues/dequeues a KThread in the KScheduler according to its state
+C + DMB verificado: sale de sección crítica y replanifica si pendiente	C + DMB verified: leaves the critical section and reschedules if pending
+C: mantenimiento caché CP15 ({0})	C: CP15 cache maintenance ({0})
+Desregistro RTTI llamado por ~K*	RTTI deregistration called by ~K*
+C: manipulación de lista/slab ({0})	C: list/slab manipulation ({0})
+C: adquiere lock +{0} del KProcess y limpia estado pendiente	C: acquires lock +{0} of the KProcess and clears the pending state
+C: realiza transferencia IPC entre cliente/servidor y traduce buffers	C: performs the IPC transfer between client/server and translates buffers
+C: valida rango de destino para DMA/usuario ({0})	C: validates the destination range for DMA/user ({0})
+C: valida rango de origen para DMA/usuario ({0})	C: validates the source range for DMA/user ({0})
+C: desmapea bloque de KSharedMemory y valida permisos ({0})	C: unmaps a KSharedMemory block and validates permissions ({0})
+C: asigna páginas físicas y las mapea en el KProcess	C: allocates physical pages and maps them in the KProcess
+C: verifica rango, desmapea páginas y libera bloques del proceso	C: checks the range, unmaps pages and frees the process blocks
+C: comprueba estado señalizado en array de objetos	C: checks the signaled state in an object array
+C: libera/deshabilita IRQs enlazadas al cerrar proceso	C: releases/disables the IRQs bound when a process is closed
+C: reasigna/limpia tabla de IRQs asociadas a KEvent	C: reassigns/clears the IRQ table associated with a KEvent
+C: encola evento de depuración en KDebug usando slab {0}	C: enqueues a debug event in KDebug using slab {0}
+C: genera y encola evento Attach/ExitThread en KDebug bajo lock	C: generates and enqueues an Attach/ExitThread event in KDebug under lock
+C: procesa interrupción de timer y dispara replanificación	C: processes a timer interrupt and triggers a reschedule
+C: acceso atómico/locked a KThread actual ({0})	C: atomic/locked access to the current KThread ({0})
+C: retira proceso de lista global bajo lock	C: removes a process from the global list under lock
+C: inicializa objetos cliente/servidor de KSession con {0}	C: initializes the client/server objects of a KSession with {0}
+C: marca KThread/KProcess terminado y libera mapeos bajo klock	C: marks a KThread/KProcess as terminated and frees the mappings under klock
+C: implementación de WaitSynchronizationN con lista de timers y nodos slab	C: WaitSynchronizationN implementation with timer list and slab nodes
+C: construye descriptores de los {0} tipos de evento KDebug	C: builds the descriptors of the {0} KDebug event types
+C: asigna un nodo de lista desde slab global {0}	C: allocates a list node from the global slab {0}
+C: devuelve nodo de lista al slab global {0}	C: returns a list node to the global slab {0}
+C: ensambla microcódigo DMA PL330 y configura canales CDMA ({0})	C: assembles PL330 DMA microcode and configures the CDMA channels ({0})
+C: recorre lista de mutexes y recalcula prioridad heredada del KThread	C: walks the mutex list and recomputes the inherited priority of the KThread
+C: limpia mapeo temporal en memoria del kernel y actualiza TLB	C: clears a temporary mapping in kernel memory and updates the TLB
+CP15 + C verificado: limpieza/invalidación D-Cache alineada a 32B	CP15 + C verified: 32-byte-aligned D-Cache clean/invalidate
+C: compara dos listas de descriptores de memoria KMemoryBlock	C: compares two lists of KMemoryBlock memory descriptors
+C: extrae bit activo (CTZ) y despacha interrupciones pendientes	C: extracts the active bit (CTZ) and dispatches the pending interrupts
+Accede CDMA {0}	Accesses CDMA {0}
+MMIO CDMA + C verificado: lee registro PC canal CDMA (+{0})	MMIO CDMA + C verified: reads the PC register of a CDMA channel (+{0})
+Accede CDMA {0}/{1}	Accesses CDMA {0}/{1}
+CP15 + C verificado: escribe TTBR0/CONTEXTIDR e invalida TLB por ASID	CP15 + C verified: writes TTBR0/CONTEXTIDR and invalidates the TLB by ASID
+C verificado: decodifica PTE L2 64KB ({0}) / 4KB en tabla MMU	C verified: decodes a 64 KB ({0}) / 4 KB L2 PTE in the MMU table
+C: asigna bloques de páginas del pool de memoria física ({0})	C: allocates page blocks from the physical memory pool ({0})
+Slot {0} vtable KSemaphore: libera recursos y KResourceLimit (C verificado)	KSemaphore vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KCodeSet: libera recursos y KResourceLimit (C verificado)	KCodeSet vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KSharedMemory: libera recursos y KResourceLimit (C verificado)	KSharedMemory vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KResourceLimit: libera recursos y KResourceLimit (C verificado)	KResourceLimit vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KAddressArbiter: libera recursos y KResourceLimit (C verificado)	KAddressArbiter vtable slot {0}: releases resources and KResourceLimit (C verified)
+Método virtual base compartido	Shared base virtual method
+Slot {0} vtable KThread: libera recursos y KResourceLimit (C verificado)	KThread vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KDmaObject: operación signal/unlock (C verificado)	KDmaObject vtable slot {0}: signal/unlock operation (C verified)
+Slot {0} vtable KDmaObject: operación wait/lock (C verificado)	KDmaObject vtable slot {0}: wait/lock operation (C verified)
+C verificado: escribe instrucción PL330 {0} (CCR empaquetado de {1} bytes)	C verified: writes PL330 instruction {0} (packed {1}-byte CCR)
+C verificado: escribe instrucción PL330 DMALP ({0} | lc<<{1})	C verified: writes PL330 instruction DMALP ({0} | lc<<{1})
+C verificado: escribe instrucción PL330 DMALPEND ({0} | lc<<{1})	C verified: writes PL330 instruction DMALPEND ({0} | lc<<{1})
+Slot {0} vtable KEvent: libera recursos y KResourceLimit (C verificado)	KEvent vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KMutex: libera recursos y KResourceLimit (C verificado)	KMutex vtable slot {0}: releases resources and KResourceLimit (C verified)
+C verificado: libera KMutex de KThread y recalcula prioridad heredada	C verified: releases a KMutex of a KThread and recomputes the inherited priority
+C verificado: adquiere KMutex y aplica priority inheritance al owner	C verified: acquires a KMutex and applies priority inheritance to the owner
+Slot {0} vtable KTimer: libera recursos y KResourceLimit (C verificado)	KTimer vtable slot {0}: releases resources and KResourceLimit (C verified)
+Escribe {0}	Writes {0}
+CP15 + C verificado: invalida I-Cache, BTAC y TLB + DSB/ISB	CP15 + C verified: invalidates I-Cache, BTAC and TLB + DSB/ISB
+MMIO GIC + C verificado: inicializa {0} ICDDCR/ICDICTR y todas las IRQs	MMIO GIC + C verified: initializes {0} ICDDCR/ICDICTR and all IRQs
+CP15 + C verificado: clean/inval D-Cache + inval I-Cache por rango o total	CP15 + C verified: clean/invalidate D-Cache + invalidate I-Cache by range or entire
+C: inserta KMutex en lista de mutexes poseídos (+{0}/{1})	C: inserts a KMutex into the owned-mutex list (+{0}/{1})
+C: elimina KMutex de lista de mutexes poseídos y libera nodo	C: removes a KMutex from the owned-mutex list and frees the node
+C: depuración KDebug ({0}, calls {1})	C: KDebug debugging ({0}, calls {1})
+Slot {0} vtable KProcess: libera recursos y KResourceLimit (C verificado)	KProcess vtable slot {0}: releases resources and KResourceLimit (C verified)
+C verificado: transición de estado KSession +{0} ({1} -> {2})	C verified: KSession state transition +{0} ({1} -> {2})
+C verificado: transición KSession +{0} ({1} -> {2}) e invocación vtable{3}	C verified: KSession transition +{0} ({1} -> {2}) and vtable{3} invocation
+Slot {0} vtable KSession: libera recursos y KResourceLimit (C verificado)	KSession vtable slot {0}: releases resources and KResourceLimit (C verified)
+Slot {0} vtable KDmaObject: escribe KTypeObj descriptor (ASM verificado)	KDmaObject vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KSemaphore: escribe KTypeObj descriptor (ASM verificado)	KSemaphore vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KAutoObject: escribe KTypeObj descriptor (ASM verificado)	KAutoObject vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KClientPort: escribe KTypeObj descriptor (ASM verificado)	KClientPort vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KServerPort: escribe KTypeObj descriptor (ASM verificado)	KServerPort vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+C verificado: prepara parámetros y genera microcódigo CDMA 1D	C verified: prepares parameters and generates 1D CDMA microcode
+C verificado: genera bucles PL330 para transferencia DMA 2D/stride	C verified: generates PL330 loops for 2D/stride DMA transfers
+C verificado: compilador completo de microprograma DMA PL330 ({0})	C verified: complete PL330 DMA microprogram compiler ({0})
+Slot {0} vtable KSharedMemory: escribe KTypeObj descriptor (ASM verificado)	KSharedMemory vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KClientSession: escribe KTypeObj descriptor (ASM verificado)	KClientSession vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KResourceLimit: escribe KTypeObj descriptor (ASM verificado)	KResourceLimit vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KServerSession: escribe KTypeObj descriptor (ASM verificado)	KServerSession vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KAddressArbiter: escribe KTypeObj descriptor (ASM verificado)	KAddressArbiter vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+C verificado: selecciona emisión 1D vs compilación completa PL330	C verified: selects 1D emission vs full PL330 compilation
+Slot {0} vtable KSynchronizationObject: escribe KTypeObj descriptor (ASM verificado)	KSynchronizationObject vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KPort: escribe KTypeObj descriptor (ASM verificado)	KPort vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KEvent: escribe KTypeObj descriptor (ASM verificado)	KEvent vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KMutex: escribe KTypeObj descriptor (ASM verificado)	KMutex vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KTimer: escribe KTypeObj descriptor (ASM verificado)	KTimer vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KDebug: escribe KTypeObj descriptor (ASM verificado)	KDebug vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KThread: escribe KTypeObj descriptor (ASM verificado)	KThread vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KCodeSet: escribe KTypeObj descriptor (ASM verificado)	KCodeSet vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KProcess: escribe KTypeObj descriptor (ASM verificado)	KProcess vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+Slot {0} vtable KSession: escribe KTypeObj descriptor (ASM verificado)	KSession vtable slot {0}: writes the KTypeObj descriptor (verified ASM)
+CP15 + C verificado: lee Data Fault Status Register (DFSR)	CP15 + C verified: reads the Data Fault Status Register (DFSR)
+Tabla virtual C++ de KDmaObject	C++ vtable of KDmaObject
+Tabla virtual C++ de KSemaphore	C++ vtable of KSemaphore
+CP15 + C verificado: lee Instruction Fault Status Register (IFSR)	CP15 + C verified: reads the Instruction Fault Status Register (IFSR)
+Tabla virtual C++ de KAutoObject	C++ vtable of KAutoObject
+Tabla virtual C++ de KClientPort	C++ vtable of KClientPort
+Tabla virtual C++ de KServerPort	C++ vtable of KServerPort
+Tabla virtual C++ de KSharedMemory	C++ vtable of KSharedMemory
+Tabla virtual C++ de KClientSession	C++ vtable of KClientSession
+Tabla virtual C++ de KResourceLimit	C++ vtable of KResourceLimit
+Tabla virtual C++ de KServerSession	C++ vtable of KServerSession
+Tabla virtual C++ de KAddressArbiter	C++ vtable of KAddressArbiter
+Tabla virtual C++ de KSynchronizationObject	C++ vtable of KSynchronizationObject
+Tabla virtual C++ de KPort	C++ vtable of KPort
+Tabla virtual C++ de KEvent	C++ vtable of KEvent
+Tabla virtual C++ de KMutex	C++ vtable of KMutex
+Tabla virtual C++ de KTimer	C++ vtable of KTimer
+Tabla virtual C++ de KDebug	C++ vtable of KDebug
+Tabla virtual C++ de KThread	C++ vtable of KThread
+Tabla virtual C++ de KCodeSet	C++ vtable of KCodeSet
+Tabla virtual C++ de KProcess	C++ vtable of KProcess
+Tabla virtual C++ de KSession	C++ vtable of KSession
+CP15 + C verificado: configura CPACR para habilitar VFP	CP15 + C verified: configures CPACR to enable the VFP
+Stub CRT inicial antes de {0}	Initial CRT stub before {0}
+Destino de {0}	Target of {0}
+Tabla de {0} punteros SWI active	Table of {0} active SWI pointers
+Cierre de handle SWI {0}	SWI handle close {0}
+Llamado por {0}	Called by {0}
+Stub Thumb-{0} {1} antes de vectores	Thumb-{0} stub {1} before the vectors
+Tabla de vectores ARM9 ({0})	ARM9 vector table ({0})
+C: desregistro RTTI/tabla llamado por ~K*	C: RTTI/table deregistration called by ~K*
+C: asigna slot libre en tabla de handles del proceso	C: allocates a free slot in the process handle table
+C: resuelve Handle -> KAutoObject* en tabla del proceso	C: resolves Handle -> KAutoObject* in the process table
+C: incrementa refcount {0} y verifica overflow	C: increments refcount {0} and checks overflow
+Espera de hilo SWI {0}	SWI thread wait {0}
+C: inserta waiter en lista de espera bajo lock +{0}	C: inserts a waiter in the wait list under lock +{0}
+C: libera bloque al slab free-list	C: frees a block to the slab free-list
+C: división y módulo enteros de {0} bits ({1})	C: {0}-bit integer division and modulo ({1})
+C: incrementa refcount {0} y retorna objeto	C: increments refcount {0} and returns the object
+C: lee registro contador TIMER9 (SWI {0})	C: reads the TIMER9 counter register (SWI {0})
+C: operación aritmética de {0} bits	C: {0}-bit arithmetic operation
+C: despierta hilos en cola de sincronización	C: wakes the threads in the synchronization queue
+C: actualiza nibble de estado en KThread+{0} y replanifica	C: updates the state nibble in KThread+{0} and reschedules
+Terminación de hilo SWI {0}	SWI thread termination {0}
+C: asigna bloque libre del slab free-list	C: allocates a free block from the slab free-list
+C: invoca rutina de fallo/aborto de Kernel9	C: invokes the Kernel9 fault/abort routine
+C: entra en sección crítica recursiva Kernel9 ({0})	C: enters the Kernel9 recursive critical section ({0})
+C: sale de sección crítica recursiva y replanifica si pendiente	C: leaves the recursive critical section and reschedules if pending
+Tabla virtual C++ Kernel9 de KDmaObject	Kernel9 C++ vtable of KDmaObject
+Tabla virtual C++ Kernel9 de KSemaphore	Kernel9 C++ vtable of KSemaphore
+Tabla virtual C++ Kernel9 de KAutoObject	Kernel9 C++ vtable of KAutoObject
+Tabla virtual C++ Kernel9 de KAddressArbiter	Kernel9 C++ vtable of KAddressArbiter
+Tabla virtual C++ Kernel9 de KSynchronizationObject	Kernel9 C++ vtable of KSynchronizationObject
+Tabla virtual C++ Kernel9 de KEvent	Kernel9 C++ vtable of KEvent
+Tabla virtual C++ Kernel9 de KMutex	Kernel9 C++ vtable of KMutex
+Tabla virtual C++ Kernel9 de KTimer	Kernel9 C++ vtable of KTimer
+Tabla virtual C++ Kernel9 de KThread	Kernel9 C++ vtable of KThread
+Tabla virtual C++ Kernel9 de KCodeSet	Kernel9 C++ vtable of KCodeSet
+Tabla virtual C++ Kernel9 de KProcess	Kernel9 C++ vtable of KProcess
+Entry point del header FIRM	FIRM header entry point
+Setup MPU/AES/CFG9 desde entry	MPU/AES/CFG9 setup from the entry
+Llamado por {0} @ {1}	Called by {0} @ {1}
+Constante algorítmica {0}	Algorithmic constant {0}
+C: selecciona string ASCII NANDTDB o NANDIDB según tipo	C: selects the ASCII string NANDTDB or NANDIDB depending on the type
+C: avanza puntero al terminador NUL de cadena UTF-16LE	C: advances the pointer to the NUL terminator of a UTF-16LE string
+C: busca carácter byte en string ASCII (strchr)	C: looks for a character byte in an ASCII string (strchr)
+C: lee palabras de semilla aleatoria desde HW PRNG/OTP {0}	C: reads random-seed words from the HW PRNG/OTP {0}
+C: busca subcadena ASCII dentro de cadena (strstr)	C: looks for an ASCII substring inside a string (strstr)
+C: configura registros comando/argumento SDMMC vía {0}	C: configures the SDMMC command/argument registers via {0}
+C: lee uint32 little-endian desde buffer no alineado	C: reads a little-endian uint32 from an unaligned buffer
+C: convierte byte ASCII a-z a mayúscula	C: converts an ASCII byte a-z to upper case
+C: parsea dígitos hexadecimales UTF-{0} a entero	C: parses UTF-{0} hexadecimal digits into an integer
+C: desplazamiento lógico derecha {0} bits ({1})	C: {0}-bit logical shift right ({1})
+C: limpia y reinicia buffer de cadena UTF-16LE	C: clears and resets a UTF-16LE string buffer
+C: desplazamiento lógico izquierda {0} bits ({1})	C: {0}-bit logical shift left ({1})
+C: escribe terminador NUL de {0} o {1} bytes según encoding	C: writes a {0}- or {1}-byte NUL terminator depending on the encoding
+C: avanza {0} bytes si UTF-16LE ({1}=={2}) o {3} byte si ASCII	C: advances {0} bytes if UTF-16LE ({1}=={2}) or {3} byte if ASCII
+C: devuelve dirección base SDMMC1 ({0}) o SDMMC2 ({1}) + offset	C: returns the base address of SDMMC1 ({0}) or SDMMC2 ({1}) + offset
+C: comparación/ajuste de enteros con signo {0} bits	C: signed {0}-bit integer compare/adjust
+C: calcula longitud de cadena UTF-16LE (wcslen)	C: computes the length of a UTF-16LE string (wcslen)
+C: decrementa {0} y destruye objeto si llega a {1}	C: decrements {0} and destroys the object when it reaches {1}
+C: multiplicación entera {0} bits ({1})	C: {0}-bit integer multiplication ({1})
+C: limpia campos {0}={1} y {2}={3} y retorna this	C: clears fields {0}={1} and {2}={3} and returns this
+C: relleno/limpieza de memoria corta ({0})	C: short memory fill/clear ({0})
+C: obtiene puntero de error/estado desde slot TLS+{0}	C: gets the error/state pointer from TLS slot +{0}
+C: espera sincronización ({0}) o aborta si Result < {1}	C: waits for synchronization ({0}) or aborts if Result < {1}
+C: guarda puntero de error/estado en slot TLS+{0}	C: stores the error/state pointer in TLS slot +{0}
+C: sección crítica/lock ({0}) o aborta si Result < {1}	C: critical section/lock ({0}) or aborts if Result < {1}
+C: registra objeto en contexto TLS/mutex actual	C: registers an object in the current TLS/mutex context
+C: constructor de array C++ ({0})	C: C++ array constructor ({0})
+C: invoca vtable{0} sobre stream añadiendo offset64 de vista	C: invokes vtable{0} on the stream adding the view's 64-bit offset
+C: asigna puntero y registra lock/referencia en {0}	C: assigns a pointer and registers a lock/reference in {0}
+C: llamada fatal a {0}({1}) ante error crítico	C: fatal call to {0}({1}) on a critical error
+C: decrementa refcount de smart-pointer (*{0}) via {1}	C: decrements the refcount of a smart pointer (*{0}) via {1}
+C: copia rápida en bloques de {0} bytes ({1})	C: fast copy in blocks of {0} bytes ({1})
+C: comparación de memoria byte a byte (memcmp)	C: byte-by-byte memory comparison (memcmp)
+C: inicializa {0} bytes/flags de descriptor de resultado	C: initializes {0} bytes/flags of a result descriptor
+C: limpieza rápida en bloques de {0} bytes ({1})	C: fast clear in blocks of {0} bytes ({1})
+C: memcpy / {0} alineado y tail ({1} callers)	C: memcpy / {0} aligned and tail ({1} callers)
+C: división y resto sin signo {0} bits ({1})	C: {0}-bit unsigned division and remainder ({1})
+C: verifica firma ASCII "NCCH" de contenedor	C: checks the ASCII signature "NCCH" of a container
+C: actualiza/escribe archivo UTF-{0} "nand:/rw/sys/{1}"	C: updates/writes the UTF-{0} file "nand:/rw/sys/{1}"
+C: getter/predicado directo ({0})	C: direct getter/predicate ({0})
+C: metodo virtual vtable .rodata {0}{1}  ⟨sig⟩	C: virtual method of .rodata vtable {0}{1} ⟨sig⟩
+C: parser rutas UTF16 / pool handles / sesiones ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: UTF-16 path parser / handle pool / sessions ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C+MMIO {0}: acceso directo registros HW  ⟨sig⟩	C+MMIO {0}: direct access to HW registers ⟨sig⟩
+C: getter/setter/constante directa ({0})	C: direct getter/setter/constant ({0})
+C: primitiva atomica hasExclusiveAccess (LDREX/STREX)	C: atomic primitive hasExclusiveAccess (LDREX/STREX)
+C: runtime kernel/DMA/hilos/IPC FS ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: kernel/DMA/threads/IPC runtime of FS ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C: primitiva runtime/memoria/locks/SM ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: runtime/memory/locks/SM primitive ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+Referencia a {0}	Reference to {0}
+C: operaciones archivo/stream virtual ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: virtual file/stream operations ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C: inicializacion temprana FS ({0}xxx) (calls={1}, callers={2}; {3})	C: early FS initialization ({0}xxx) (calls={1}, callers={2}; {3})
+C: helper cuota/notificacion/limite recursos ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: quota/notification/resource-limit helper ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C: metodo virtual vtable {0}{1} en submodulo final/crypto  ⟨sig⟩	C: virtual method of vtable {0}{1} in the final/crypto submodule ⟨sig⟩
+C: funcion interna PXI (calls={0}, callers={1}) ({2})	C: internal PXI function (calls={0}, callers={1}) ({2})
+C: accessor/getter breve ({0})	C: short accessor/getter ({0})
+Thunk/offset adjuster tras {0}	Thunk/offset adjuster after {0}
+C: cola peticiones/sesion servidor FS ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: FS server request/session queue ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C: asigna vtable .rodata {0}  ⟨sig⟩	C: assigns .rodata vtable {0} ⟨sig⟩
+C: capa SHA11/crypto/CTR FS ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: SHA11/crypto/CTR layer of FS ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+Caso {0} PMU dispatch	PMU dispatch case {0}
+C: transferencia/estado CDMA ({0})	C: CDMA transfer/state ({0})
+Dispara IPI {0}	Fires IPI {0}
+C verified: limpiado a cero {0} ({1})	C verified: zero-fill {0} ({1})
+C: handler IPC alto nivel fs:USER/LDR/REG ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})	C: high-level IPC handler of fs:USER/LDR/REG ({0}xxx..{1}xxx) (calls={2}, callers={3}; {4})
+C+MMIO: manipulacion directa registros SDIO WLAN {0}/{1}	C+MMIO: direct manipulation of the WLAN SDIO registers {0}/{1}
+C: adquisicion atomica LDREX/STREX + ArbitrateAddress	C: atomic LDREX/STREX acquire + ArbitrateAddress
+C verified: strlen palabra-alineado ({0})	C verified: word-aligned strlen ({0})
+Bloque boot {0}..{1}	Boot block {0}..{1}
+C: enlaza IRQ tipo {0} mediante {1}	C: binds an IRQ of type {0} through {1}
+C: itera destructores estaticos CRT	C: iterates the CRT static destructors
+Enlace KEvent↔IRQ SWIs {0}/{1}	KEvent↔IRQ link, SWIs {0}/{1}
+C: libera cuota en KResourceLimit bajo lock +{0}	C: releases quota in the KResourceLimit under lock +{0}
+C: reserva cuota en KResourceLimit bajo lock +{0}	C: reserves quota in the KResourceLimit under lock +{0}
+C: adquiere lock Kernel9 bajo contexto actual	C: acquires the Kernel9 lock under the current context
+Slot2 compartido Kernel9 K*	Shared slot 2 of Kernel9 K* objects
+Slot1 compartido KAutoObject Kernel9	Shared slot 1 of Kernel9 KAutoObject
+Slot1 compartido KDmaObject/KSync Kernel9	Shared slot 1 of Kernel9 KDmaObject/KSync
+Setup temprano AES/CFG9	Early AES/CFG9 setup
+Process9 rt={0} | UTF16 XREF "wnand","firm0","firm1","twls"	Process9 rt={0} | UTF16 XREF "wnand","firm0","firm1","twls"
+Process9 rt={0} | UTF16 XREF "/private/movable.sed"	Process9 rt={0} | UTF16 XREF "/private/movable.sed"
+Process9 rt={0} | XREF "{1} failed"	Process9 rt={0} | XREF "{1} failed"
+Process9 rt={0} | XREF "Volume is dirty/clean"	Process9 rt={0} | XREF "Volume is dirty/clean"
+Process9 rt={0} | XREF "nand:/title/.../content"	Process9 rt={0} | XREF "nand:/title/.../content"
+C: referencia ruta UTF-{0} "nand:/rw/sys/{1}"	C: reference to the UTF-{0} path "nand:/rw/sys/{1}"
+C: producto signed 32x32->{0} bits	C: signed 32x32->{0}-bit product
+C: relleno byte a byte (memset loop)	C: byte-by-byte fill (memset loop)
+C: producto unsigned 32x32->{0} bits	C: unsigned 32x32->{0}-bit product
+C: limpia slot TLS+{0} a NULL	C: clears TLS slot +{0} to NULL
+C: wrapper fatal hacia {0}	C: fatal wrapper towards {0}
+Process9 rt={0} | UTF16 XREF "/dbs/title.db","/dbs/import.db"	Process9 rt={0} | UTF16 XREF "/dbs/title.db","/dbs/import.db"
+Process9 rt={0} | UTF16 XREF "/dbs/ticket.db","/dbs/certs.db"	Process9 rt={0} | UTF16 XREF "/dbs/ticket.db","/dbs/certs.db"
+Process9 rt={0} | UTF16 XREF "cardspi"	Process9 rt={0} | UTF16 XREF "cardspi"
+Referencias TitleID {0} (ns)	References TitleID {0} (ns)
+Handler Undef + lazy VFP switch	Undef handler + lazy VFP switch
+Configura GIC {0}/{1}/{2}/C00	Configures GIC {0}/{1}/{2}/C00
+Configura SCU {0} + GIC {1}	Configures SCU {0} + GIC {1}
+Polinomio CRC-{0} IEEE {1}	CRC-{0} IEEE polynomial {1}
+strb r1={0} en {1}; bx lr	strb r1={0} at {1}; bx lr
+ldrexb/strexb compare-and-swap byte	ldrexb/strexb byte compare-and-swap
+Enlace KEvent↔IRQ hardware (SVCs {0}/{1})	KEvent↔hardware IRQ link (SVCs {0}/{1})
+vldmia d0-d15 + vmsr fpscr	vldmia d0-d15 + vmsr fpscr
+C: construye par KClientSession/KServerSession vinculado a KPort	C: builds the KClientSession/KServerSession pair linked to a KPort
+C: consulta cuota usada actual en KResourceLimit	C: queries the quota currently used in the KResourceLimit
+C: comprueba estado bajo klock global (err {0})	C: checks the state under the global klock (err {0})
+C: comprueba flag global en {0}+{1}	C: checks the global flag at {0}+{1}
+C: vincula KEvent a IRQ hardware bajo lock +{0}	C: binds a KEvent to a hardware IRQ under lock +{0}
+C: emite evento debug AttachThread si KProcess tiene KDebug	C: emits a debug AttachThread event if the KProcess has a KDebug
+C: emite evento debug ExitThread si KProcess tiene KDebug	C: emits a debug ExitThread event if the KProcess has a KDebug
+C verified: marca flag KDebug+{0} en evento KProcess	C verified: marks flag KDebug+{0} on a KProcess event
+C verified: pone core activo +{0} = -{1}	C verified: sets the active core +{0} = -{1}
+Fin copia segura / KAutoObject::init	End of safe copy / KAutoObject::init
+C + ldrex verified: encola waiter bajo lock +{0} usando slab	C + ldrex verified: enqueues a waiter under lock +{0} using the slab
+C: despachador ControlMemory (Allocate/Free/Commit/Map/Protect)	C: ControlMemory dispatcher (Allocate/Free/Commit/Map/Protect)
+C: suspende KThread usando {0}	C: suspends a KThread using {0}
+C + ldrex verified: resuelve Handle -> KAutoObject*	C + ldrex verified: resolves Handle -> KAutoObject*
+C verified: copia exactamente {0} bytes ({1} uint32)	C verified: copies exactly {0} bytes ({1} uint32)
+vmrs/vmsr fpexc bit {0} (enable VFP)	vmrs/vmsr fpexc bit {0} (enable VFP)
+Configura Private Timer {0}/{1}	Configures the Private Timer {0}/{1}
+C: despierta hilos esperando en KSynchronizationObject bajo critical section	C: wakes the threads waiting on a KSynchronizationObject under a critical section
+Configura canales CDMA	Configures the CDMA channels
+ldrb + ands r0, r0, ({0}<<r1)	ldrb + ands r0, r0, ({0}<<r1)
+C: configura e inicia transferencia en canal CDMA hardware	C: configures and starts a transfer on a hardware CDMA channel
+MMIO GIC + C verified: configura ICDIPR (-{0}) e ICDIPTR (-{1})	MMIO GIC + C verified: configures ICDIPR (-{0}) and ICDIPTR (-{1})
+MMIO GIC + C verified: configura bits edge/level en ICDICFR	MMIO GIC + C verified: configures the edge/level bits in ICDICFR
+Slot {0} vtable KDmaObject (C/ASM verificado)	KDmaObject vtable slot {0} (C/ASM verified)
+Slot1 compartido K*	Shared slot 1 of K* objects
+ASM + C verificado: compara count < max (ldrsh +{0} < +{1})	ASM + C verified: compares count < max (ldrsh +{0} < +{1})
+Slot compartido K*	Shared slot of K* objects
+GIC Dist {0}/{1}	GIC Distributor {0}/{1}
+CP15 c7 completo	Complete CP15 c7 sequence
+Slot2 compartido (mov r0, {0}; bx lr)	Shared slot 2 (mov r0, {0}; bx lr)
+C: construye palabra cabecera IPC CTR (cmd<<{0} | ...)	C: builds a CTR IPC header word (cmd<<{0} | ...)
+C+SWI {0}: IPC client towards nwm::CEC ({1}..{2})	C+SWI {0}: IPC client towards nwm::CEC ({1}..{2})
+ASM Thumb: IPC dispatcher of cecd:ndm ({0}{1}; {2} cases {3}..{4} control estado CEC/NDM)	ASM Thumb: IPC dispatcher of cecd:ndm ({0}{1}; {2} cases {3}..{4} CEC/NDM state control)
+ASM Thumb: IPC dispatcher of cecd:s ({0}{1}; {2} active cases + privilegios {3}/{4}+)	ASM Thumb: IPC dispatcher of cecd:s ({0}{1}; {2} active cases + privileges {3}/{4}+)
+C verified: nucleo printf/snprintf (%n/%p/%f/%s/%x)	C verified: printf/snprintf core (%n/%p/%f/%s/%x)
+C: despacho eventos IRQ hardware LCD/GPU en bucle principal	C: dispatches the LCD/GPU hardware IRQ events in the main loop
+C: dispatcher IPC principal gsp::Gpu ({0} comandos {1}..{2}: regs, GX, events, VRAM, CaptureInfo)	C: main IPC dispatcher of gsp::Gpu ({0} commands {1}..{2}: regs, GX, events, VRAM, CaptureInfo)
+C: manejador IRQs HW {0}..{1} (PSC0/PSC1/PDC0/PDC1/PPF/P3D, {2} sub-casos)	C: HW IRQ handler {0}..{1} (PSC0/PSC1/PDC0/PDC1/PPF/P3D, {2} sub-cases)
+C: walks the PC-relative .{0} table of C++ constructors	C: walks the PC-relative .{0} table of C++ constructors
+C: carga configuracion/calibracion giroscopio (fallback {0} / {1}xxxx si cfg falla)	C: loads the gyroscope configuration/calibration (fallback {0} / {1}xxxx if cfg fails)
+C: bucle ReplyAndReceive sesion HID (dispatcher {0} -> {1})	C: HID session ReplyAndReceive loop (dispatcher {0} -> {1})
+C verified: helper matematico/softfloat {0}-bit runtime AEABI	C verified: {0}-bit math/softfloat helper of the AEABI runtime
+C: main IPC dispatcher of i2c::* ({0} cases {1}..{2}: read/write regs, multi-byte, bus lock)	C: main IPC dispatcher of i2c::* ({0} cases {1}..{2}: read/write regs, multi-byte, bus lock)
+C: generic per-session ReplyAndReceive loop for I2C (dispatches to {0})	C: generic per-session ReplyAndReceive loop for I2C (dispatches to {0})
+.rodata: bases MMIO I2C buses {0}	.rodata: MMIO bases of the I2C buses {0}
+.rodata: device table I2C ({0} + addr {1}/{2}-bit: {3}, {4}, {5}, {6}, {7}, {8}, {9}...)	.rodata: I2C device table ({0} + {1}/{2}-bit address: {3}, {4}, {5}, {6}, {7}, {8}, {9}...)
+.data: name pointers, {0} servicios {1}	.data: name pointers, {0} services {1}
+.data: pointers, {0} hilos worker {1}	.data: pointers, {0} worker threads {1}
+ASM Thumb: IPC dispatcher of nwm::SAP (table {0}{1}; {2} active cmds {3}..{4})	ASM Thumb: IPC dispatcher of nwm::SAP (table {0}{1}; {2} active cmds {3}..{4})
+ASM Thumb: IPC dispatcher of nwm::CEC (table {0}{1}; {2} cmds {3}..{4} StreetPass radio)	ASM Thumb: IPC dispatcher of nwm::CEC (table {0}{1}; {2} cmds {3}..{4} StreetPass radio)
+ASM Thumb: IPC dispatcher of nwm::SOC (table {0}{1}; {2} cmds {3}..{4} loopback/soc)	ASM Thumb: IPC dispatcher of nwm::SOC (table {0}{1}; {2} cmds {3}..{4} loopback/soc)
+ASM Thumb: IPC dispatcher of nwm::UDS (table {0}{1}; {2} cmds {3}..{4} local multiplayer)	ASM Thumb: IPC dispatcher of nwm::UDS (table {0}{1}; {2} cmds {3}..{4} local multiplayer)
+ASM Thumb: IPC dispatcher of nwm::INF (table {0}{1}; {2} cmds {3}..{4} infrastructure WiFi)	ASM Thumb: IPC dispatcher of nwm::INF (table {0}{1}; {2} cmds {3}..{4} infrastructure WiFi)
+ASM Thumb: IPC dispatcher of nwm::TST (table {0}{1}; {2} cmds {3}..{4} RF tests/diagnostics)	ASM Thumb: IPC dispatcher of nwm::TST (table {0}{1}; {2} cmds {3}..{4} RF tests/diagnostics)
+ASM Thumb: IPC dispatcher of nwm::EXT ({0} active cmds {1}..{2} WiFi HW on/off/config)	ASM Thumb: IPC dispatcher of nwm::EXT ({0} active cmds {1}..{2} WiFi HW on/off/config)
+C verified: motor formateo printf/snprintf (cases %s/%p/%x/%X/%n) ({0})	C verified: printf/snprintf formatting engine (cases %s/%p/%x/%X/%n) ({0})
+C+MMIO: acceso DMA/FIFO DATA32 AR6014 en ventana SDIO {0}	C+MMIO: AR6014 DMA/FIFO DATA32 access in the SDIO window {0}
+C: {0} strs='IE in {1}/{2} msg does not match with IE in Beacon/ProbeResp (no IE?' (calls={3}, callers={4}; {5})	C: {0} strs='IE in {1}/{2} msg does not match with IE in Beacon/ProbeResp (no IE?' (calls={3}, callers={4}; {5})
+C verified: motor printf/snprintf (casos %s/%p/%x/%X/%n)	C verified: printf/snprintf engine (cases %s/%p/%x/%X/%n)
+.rodata: configuracion flags + {0} {1} servicios NWM	.rodata: configuration flags + {0} {1} NWM services
+.rodata: '{0} v0.{1}.{2}-Devicescape'	.rodata: '{0} v0.{1}.{2}-Devicescape'
+C: remapea memoria compartida / paginas iniciales {0}	C: remaps shared memory / initial pages {0}
+C: IPC dispatcher of mcu::GPU ({0} cases {1}..{2}: power/LCD/3D-LED/IRQ)	C: IPC dispatcher of mcu::GPU ({0} cases {1}..{2}: power/LCD/3D-LED/IRQ)
+C: IPC dispatcher of mcu::HID ({0} cases {1}..{2}: acelerometro, botones HW, slider, eventos)	C: IPC dispatcher of mcu::HID ({0} cases {1}..{2}: accelerometer, HW buttons, slider, events)
+C: transaccion lectura registro MCU via i2c::MCU	C: MCU register read transaction via i2c::MCU
+C: helper lectura {0} byte registro MCU via i2c::MCU	C: helper that reads {0} byte(s) of an MCU register via i2c::MCU
+C: helper escritura {0} byte registro MCU via i2c::MCU	C: helper that writes {0} byte(s) of an MCU register via i2c::MCU
+C: escritura buffer registros MCU via i2c::MCU	C: MCU register buffer write via i2c::MCU
+C: IPC dispatcher of mcu::NWM ({0} cases {1}..{2}: control LED WiFi / radio)	C: IPC dispatcher of mcu::NWM ({0} cases {1}..{2}: WiFi LED / radio control)
+C: IPC dispatcher of mcu::RTC ({0} cases {1}..{2}: RTC, bateria, FW, LED, NVRAM, debug/system)	C: IPC dispatcher of mcu::RTC ({0} cases {1}..{2}: RTC, battery, FW, LED, NVRAM, debug/system)
+C: IPC dispatcher of mcu::SND ({0} cases {1}..{2}: control audio MCU)	C: IPC dispatcher of mcu::SND ({0} cases {1}..{2}: MCU audio control)
+C: IPC dispatcher of mcu::HWC ({0} cases {1}..{2}: bateria, FW MCU, hardware info/reboot)	C: IPC dispatcher of mcu::HWC ({0} cases {1}..{2}: battery, MCU FW, hardware info/reboot)
+C: IPC dispatcher of mcu::PLS ({0} cases {1}..{2}: patrones RGB LED notificacion/reposo)	C: IPC dispatcher of mcu::PLS ({0} cases {1}..{2}: notification/idle RGB LED patterns)
+ASM ARM32: worker thread mcu::GPU (activa/limpia bit IRQ en {0}) -> {1}	ASM ARM32: worker thread mcu::GPU (sets/clears the IRQ bit at {0}) -> {1}
+ASM ARM32: worker thread mcu::HID (mascara {0} en MCU IRQ) -> {1}	ASM ARM32: worker thread mcu::HID (mask {0} in the MCU IRQ) -> {1}
+ASM ARM32: worker thread mcu::RTC (mascara IRQ +{0}) -> {1}	ASM ARM32: worker thread mcu::RTC (IRQ mask +{0}) -> {1}
+.data: {0} punteros nombres servicios MCU	.data: {0} MCU service-name pointers
+.data: {0} punteros workers ARM32 {1}	.data: {0} ARM32 worker pointers {1}
+C: conecta fs:USER/pdn:s/mcu::RTC/cfg:s, abre archivo ptmdb: en SYS NAND	C: connects fs:USER/pdn:s/mcu::RTC/cfg:s, opens the ptmdb: file in SysNAND
+C: solicita apagado/sleep/reset Hardware via sesion pxi:mc ({0} / {1})	C: requests hardware shutdown/sleep/reset through the pxi:mc session ({0} / {1})
+C+SVC {0}: invoca syscall kernel {1}	C+SVC {0}: invokes kernel syscall {1}
+C: calcula ano bisiesto (%{0}, %{1}, %{2}) via {3} {4}	C: computes the leap year (%{0}, %{1}, %{2}) via {3} {4}
+C: construye palabra cabecera IPC CTR (cmd<<{0} | n<<{1} | t | etc)	C: builds a CTR IPC header word (cmd<<{0} | n<<{1} | t | etc)
+ASM Thumb: IPC dispatcher of ptm:sysm ({0}{1}; {2} cmds {3}..{4}: Shutdown, Reboot, Battery, Sleep)	ASM Thumb: IPC dispatcher of ptm:sysm ({0}{1}; {2} cmds {3}..{4}: Shutdown, Reboot, Battery, Sleep)
+ASM Thumb: IPC dispatcher of ptm:gets ({0}{1}; cmds {2}..{3} + {4}+)	ASM Thumb: IPC dispatcher of ptm:gets ({0}{1}; cmds {2}..{3} + {4}+)
+C: limpia seccion .bss a cero	C: zero-fills the .bss section
+C: itera destructores/constructores estaticos .{0}	C: iterates the static .{0} destructors/constructors
+C verified: limpiado a cero alineado 4B {0}/{1}	C verified: 4-byte-aligned zero-fill {0}/{1}
+C verified: limpiado a cero bloques 32B/8B	C verified: zero-fill of 32-byte/8-byte blocks
+C verified: copia rapida 32B/4B {0}	C verified: fast 32-byte/4-byte copy {0}
+C: dispara handler global abort/Break {0}	C: fires the global abort/Break handler {0}
+C: cuerpo handler abort/Break	C: abort/Break handler body
+C: obtiene sesion servicio SM (PxiFS0/{0}/B/R) via {1}/{2}	C: gets the SM service session (PxiFS0/{0}/B/R) via {1}/{2}
+C+SWI {0}: peticion SM/srv cmd {1}	C+SWI {0}: SM/srv request cmd {1}
+C+SWI {0}: PxiFS cmd {1} (1W), caller {2} -> P9 apagado	C+SWI {0}: PxiFS cmd {1} (1W), caller {2} -> P9 shutdown
+C+SWI {0}/{1}: dispatcher IPC principal fs:{USER,LDR,REG} ({2} casos: {3}, {4}, {5}..{6})	C+SWI {0}/{1}: main IPC dispatcher of fs:{USER,LDR,REG} ({2} cases: {3}, {4}, {5}..{6})
+.rodata: UTF-{0} '/updated.dat'	.rodata: UTF-{0} '/updated.dat'
+C: cierra sesion PxiPM/fs	C: closes the PxiPM/fs session
+C verified: descompresor Nintendo BLZ (footer -{0}/-{1}/-{2}) en memoria	C verified: Nintendo BLZ decompressor (footer -{0}/-{1}/-{2}) in memory
+C+SWI {0}: fs: cmd {1} (OpenFileDirectly / transferencia archivo)	C+SWI {0}: fs: cmd {1} (OpenFileDirectly / file transfer)
+C: conecta a srv: (loop retry -{0}) + RegisterClient	C: connects to srv: (retry loop -{0}) + RegisterClient
+C: reconexion srv: + RegisterClient	C: reconnects to srv: + RegisterClient
+C: IPC dispatcher of 'Loader' cmds {0}..{1} (LoadProcess, RegisterProgram, UnregisterProgram, GetProgramInfo)	C: IPC dispatcher of 'Loader' cmds {0}..{1} (LoadProcess, RegisterProgram, UnregisterProgram, GetProgramInfo)
+ASM r2: .{0} constructor of handles globales {1}	ASM r2: .{0} constructor of the global handles {1}
+ASM r2: .{0} constructor of pool sesiones {1}	ASM r2: .{0} constructor of the session pool {1}
+ASM r2: .{0} constructor of punteros {1}/{2}	ASM r2: .{0} constructor of pointers {1}/{2}
+ASM r2: .{0} constructor of principales estructuras ExHeader/fs/PxiPM	ASM r2: .{0} constructor of the main ExHeader/fs/PxiPM structures
+C+SWI {0}: cierra handles srv	C+SWI {0}: closes the srv handles
+C: verifica dependencias ya activas e invoca carga via Loader/fs:REG	C: checks the dependencies that are already active and invokes loading via Loader/fs:REG
+C+SWI {0}: secuencia completa Loader::LoadProcess + srv:pm::RegisterProcess + svcRunProcess ({1})	C+SWI {0}: complete sequence Loader::LoadProcess + srv:pm::RegisterProcess + svcRunProcess ({1})
+C: helper estado / notificacion via {0} + check Result	C: state/notification helper via {0} + Result check
+C+SWI {0}: pm:app cmd {1}; desenlaza/cierra proceso bajo lock	C+SWI {0}: pm:app cmd {1}; unlinks/closes a process under lock
+C+SWI {0}: pm:app cmd {1}; termina aplicacion en primer plano	C+SWI {0}: pm:app cmd {1}; terminates the foreground application
+C: IPC dispatcher of 'pm:dbg' cmds {0}..{1} (LaunchAppDebug, LaunchApp, RunQueuedProcess)	C: IPC dispatcher of 'pm:dbg' cmds {0}..{1} (LaunchAppDebug, LaunchApp, RunQueuedProcess)
+C: reserva memoria alineada a 4KB mediante svcControlMemory ({0})	C: reserves 4 KB-aligned memory through svcControlMemory ({0})
+C+SWI {0}: destructor objeto sesion srv:pm	C+SWI {0}: srv:pm session object destructor
+C: srv: cmd {0}; difunde notificacion a procesos suscritos a {1}	C: srv: cmd {0}; broadcasts the notification to the processes subscribed to {1}
+C: IPC dispatcher of 'srv:pm' cmds {0}..{1} (PublishToProcess, PublishToAll, RegisterProcess, UnregisterProcess)	C: IPC dispatcher of 'srv:pm' cmds {0}..{1} (PublishToProcess, PublishToAll, RegisterProcess, UnregisterProcess)
+C+SWI {0}: duplica handle inicial srv:pm/boot	C+SWI {0}: duplicates the initial srv:pm/boot handle
+ASM r2: .{0} constructor of manager sesiones {1}	ASM r2: .{0} constructor of the session manager {1}
+ASM r2: .{0} constructor of puertos {1}	ASM r2: .{0} constructor of the ports {1}
+ASM r2: .{0} constructor of slab/notif globals {1}/{2}	ASM r2: .{0} constructor of the slab/notification globals {1}/{2}
+C: comprueba *{0} + {1} > {2}	C: checks *{0} + {1} > {2}
+C+SWI {0}: resetea {1} {2}	C+SWI {0}: resets {1} {2}
+C: configura/limpia registros {0}/CNT en {1}	C: configures/clears the {0}/CNT registers at {1}
+Branch target destructores estaticos CRT en {0}	Branch target of the CRT static destructors at {0}
+C: configura/dispara bit en {0} {1}	C: configures/fires a bit at {0} {1}
+C+SWI {0}/{1}: cuerpo mutex-protegido TX FIFO + ReleaseMutex	C+SWI {0}/{1}: mutex-protected TX FIFO body + ReleaseMutex
+C: comprueba bit empty en {0} {1}	C: checks the empty bit at {0} {1}
+ASM r2: .{0} constructor of handles globales {1}/{2}	ASM r2: .{0} constructor of the global handles {1}/{2}

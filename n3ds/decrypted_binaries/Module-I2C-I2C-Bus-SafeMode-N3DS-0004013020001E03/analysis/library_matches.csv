@@ -1,0 +1,13 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100578,0x2c,lib_crt_fini_array_100578,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x00103910,0x22,lib_crt_aeabi_vec_ctor_103910,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x00102740 ""pxi_crt_aeabi_vec_ctor_00102740"" (o3ds_semantic)"
+0x00100648,0x5c,lib_crt_strlen_100648,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:fs @0x0011E1FC ""fs_crt_strlen_0011e1fc"" (o3ds_semantic)"
+0x00100A2C,0x54,lib_srv_RegisterService_100a2c,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:Module-GSP-GPU-Service-0004013000001C02 @0x00100E04 ""gsp_srv_RegisterService"" (o3ds_semantic)"
+0x00100980,0x8c,lib_session_table_find_or_bind_100980,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x001008E8 ""pxi_session_table_find_or_bind"" (o3ds_semantic)"
+0x001035D8,0x38,lib_i2c_bus_1035d8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x00102DC8 ""i2c_i2c_bus_102dc8"" (o3ds_semantic)"
+0x001012FC,0xe0,lib_i2c_bus_1012fc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x001013C0 ""i2c_i2c_bus_1013c0"" (o3ds_semantic)"
+0x00100890,0x34,lib_srv_enable_notification_client_100890,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x001007F8 ""pxi_srv_enable_notification_client"" (o3ds_semantic)"
+0x00103748,0xe4,lib_thread_create_and_start_103748,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:pm @0x00100FB4 ""pm_thread_create_and_start"" (o3ds_semantic)"
+0x001008C4,0xb8,lib_srv_receive_notification_client_1008c4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x0010082C ""pxi_srv_receive_notification_client"" (o3ds_semantic)"
+0x001014AC,0x148,lib_slab_alloc_entry_1014ac,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x0010270C ""sm_slab_alloc_entry"" (o3ds_semantic)"
+0x00103420,0x24,lib_ipc_hw_thumb_103420,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x00102C78 ""i2c_ipc_hw_thumb_102c78"" (o3ds_semantic)"

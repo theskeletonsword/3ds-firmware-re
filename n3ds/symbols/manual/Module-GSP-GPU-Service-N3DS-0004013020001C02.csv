@@ -1,0 +1,4 @@
+binary,ea,symbol_name,evidence
+Module-GSP-GPU-Service-N3DS-0004013020001C02,0x00103B18,gsp_gx_command_queue_proc,decompiled/00103b18.c vs O3DS 00103a4c: identical control skeleton (loop on *(param_1+0x28), queue index *(param_1+0x24) < 4, locals local_48..local_2c) but refactored; N3DS body is 552 B vs 752 B and calls gsp_gx_dma_* helpers
+Module-GSP-GPU-Service-N3DS-0004013020001C02,0x001053F8,gsp_gpu_cache_inv_and_ctrl,decompiled-C token similarity 0.83 (margin 0.79) with O3DS 0x1050e0; no other unclaimed candidate above 0.1
+Module-GSP-GPU-Service-N3DS-0004013020001C02,0x00104CD4,maybe_gsp_irq_handler_0_to_F,decompiled-C similarity 0.43 (margin 0.30) with O3DS 0x104ce4; address shift -0x10 equals the shift of gsp_gpu_ipc_dispatcher (0x103F24 -> 0x103F14)

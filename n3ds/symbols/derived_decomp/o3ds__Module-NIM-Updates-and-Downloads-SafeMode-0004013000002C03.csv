@@ -1,0 +1,29 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001003D0,0x40,nim_svc_0x32_SendSyncRequest_1003d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001005FC,0x4,nim_svc_0x32_SendSyncRequest_1005fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100600,0x2c,nim_svc_0x32_SendSyncRequest_100600,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001006C0,0x30,nim_svc_0x32_SendSyncRequest_1006c0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100738,0x30,nim_svc_0x32_SendSyncRequest_100738,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001007FC,0x30,nim_svc_0x32_SendSyncRequest_1007fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100A1C,0x40,nim_svc_0x32_SendSyncRequest_100a1c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100CE4,0x28,nim_svc_0x23_CloseHandle_100ce4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100D0C,0x28,nim_svc_0x32_SendSyncRequest_100d0c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001013A0,0x34,nim_svc_0x23_CloseHandle_1013a0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00101418,0x28,nim_svc_0x23_CloseHandle_101418,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00108824,0x3c,nim_svc_0x23_CloseHandle_108824,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00108940,0x10,nim_get_tls_108940,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x001094F0,0x24,nim_svc_0x01_ControlMemory_1094f0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0010A404,0x38,nim_svc_0x32_SendSyncRequest_10a404,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010A440,0x3c,nim_svc_0x32_SendSyncRequest_10a440,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010A728,0x24,nim_svc_0x08_CreateThread_10a728,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0010A754,0x30,nim_svc_0x32_SendSyncRequest_10a754,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010B440,0x8,nim_svc_0x3C_Break_10b440,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0010FC18,0x38,nim_svc_0x32_SendSyncRequest_10fc18,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011E89C,0x4,nim_svc_0x3C_Break_11e89c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00122CA4,0x24,nim_svc_0x25_WaitSynchronizationN_122ca4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00124720,0x38,nim_svc_0x32_SendSyncRequest_124720,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00128498,0x40,nim_svc_0x32_SendSyncRequest_128498,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0012BD90,0x40,nim_svc_0x23_CloseHandle_12bd90,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 12 C lines
+0x0010B670,0xa4,nim_ipc_server_loop_10b670,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x11ddc4
+0x0010B720,0x114,nim_ipc_server_loop_10b720,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x11ddc4
+0x0010B844,0xa4,nim_ipc_server_loop_10b844,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x11ddc4

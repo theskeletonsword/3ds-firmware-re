@@ -1,0 +1,843 @@
+# Symbol table for ARM11 Kernel11 (arm11_section1.bin) - Audited C + Binary Evidence
+# Load addr: 0x1FF80000 | Runtime MMU base: 0xFFF00000 | Vectors: 0xFFFF0000
+# Total: 838 | CONFIRMED: 287 | EVIDENCE_BASED: 551 | HYPOTHESIS: 0
+Address         Size    Confidence      Name                                                    Notes
+----------------------------------------------------------------------------------------------------------------------------------
+0x1FFAD000  0x0000  CONFIRMED       kernel11_exception_vectors                              Tabla de vectores ARM11 mapeada en 0xFFFF0000
+0x1FFAE034  0x0000  CONFIRMED       arm11_firm_entry_point                                  Entry point del header FIRM (Sección 1)
+0x1FFAE138  0x0000  CONFIRMED       arm11_core_bringup_init                                 Inicialización por núcleo MPIDR y limpieza BSS
+0x1FFAE9DC  0x0000  CONFIRMED       arm11_mmu_and_scu_enable                                Activa MMU (TTBR0/TTBR1/DACR), SCU y cachés
+0xFFF00004  0x0008  CONFIRMED       k11_thumb_interwork_stub                                add ip, pc, 1; bx ip
+0xFFF00030  0x0000  CONFIRMED       kernel11_main_init                                      Destino de arm11_firm_entry_point tras activar MMU
+0xFFF005D0  0x0000  CONFIRMED       kernel11_fiq_handler                                    Vector FIQ: marca flag 0xFFFCA104 y dispara IPI 0xFFFEFF00
+0xFFF005FC  0x0000  CONFIRMED       kernel11_undef_trampoline                               Trampolín vector Undef -> 0xFFF02520
+0xFFF00608  0x0000  CONFIRMED       kernel11_svc_trampoline                                 Trampolín vector SVC -> 0xFFF0220C
+0xFFF00614  0x0000  CONFIRMED       kernel11_pabort_trampoline                              Trampolín vector Prefetch Abort -> 0xFFF02084
+0xFFF00620  0x0000  CONFIRMED       kernel11_dabort_trampoline                              Trampolín vector Data Abort -> 0xFFF020CC
+0xFFF0062C  0x0000  CONFIRMED       kernel11_irq_trampoline                                 Trampolín vector IRQ -> 0xFFF02144
+0xFFF00638  0x00B4  CONFIRMED       k11_core_bind_idle_thread_and_sched                     C verificado: enlaza KThread idle a KScheduler por CPU core_id
+0xFFF006F8  0x0040  EVIDENCE_BASED  k11_atomic_dec_irqsafe                                  cpsid i; ldrex/strex decremento atómico
+0xFFF00738  0x00C8  CONFIRMED       k11_core_clear_sync_flags_and_cdma_init                 C verificado: limpia flags atómicos por core (ldrex/strex) y resetea CDMA
+0xFFF00808  0x02A4  CONFIRMED       kernel11_init_mmu_page_tables                           C verificado: construye tablas MMU L1/L2 iniciales desde 0x1FF80000
+0xFFF00B08  0x02A0  EVIDENCE_BASED  k11_kernel_primary_core_init                            C: inicializa kernel en core 0 (KThread/KScheduler/sync)
+0xFFF00DC4  0x00D4  EVIDENCE_BASED  k11_idle_thread_spawn_on_core                           C: aloca nodo slab, inicializa KSynchronizationObject y crea hilo idle
+0xFFF00EAC  0x020C  CONFIRMED       kernel11_launch_firm_sysmodules                         C verificado: itera contenedores NCCH de FIRM [0xDFF00000..0xDFF355FC]
+0xFFF010D8  0x0148  EVIDENCE_BASED  k11_kernel_text_crc32_verify                            Verifica CRC-32 de [0xFFF00000..0xFFF2D000)
+0xFFF01230  0x01E8  EVIDENCE_BASED  k11_kernel_sync_barrier_on_boot                         C: barrera/lock con _DAT_ffff9000 y page pool durante arranque
+0xFFF01430  0x01C8  EVIDENCE_BASED  k11_ns_module_check_or_launch                           Referencias TitleID 0x0004013000008002 (ns)
+0xFFF0160C  0x0198  EVIDENCE_BASED  k11_scheduler_init_core_context                         C: inicializa estructura per-core (+0x9000) y cola de prioridades
+0xFFF017B4  0x00FC  EVIDENCE_BASED  k11_kernel_alloc_boot_pages                             C: reserva/asigna páginas del pool boot con lock global
+0xFFF018C0  0x0208  EVIDENCE_BASED  k11_kernel_boot_memory_setup                            C: configura regiones iniciales de memoria del kernel
+0xFFF01ADC  0x0138  EVIDENCE_BASED  k11_priv_timer_tick_setup                               Private Timer 0xFFFEE820/28
+0xFFF01C2C  0x00B0  EVIDENCE_BASED  k11_mmu_flush_btac_and_tlb                              CP15 c7,c5,4/6 + c8,c7,0
+0xFFF01C8C  0x0080  EVIDENCE_BASED  k11_gic_init_default_irqs                               C: inicializa IRQs por defecto vía GIC bind
+0xFFF01CDC  0x0344  EVIDENCE_BASED  k11_kernel_secondary_core_init                          C: inicialización de core secundario (MPIDR, scheduler y thread)
+0xFFF0201C  0x0018  EVIDENCE_BASED  k11_kernel_init_zero_memory                             C: prepara byte cero (0xFFF0D49C) para limpiar área BSS/boot
+0xFFF02038  0x0044  EVIDENCE_BASED  k11_idle_thread_set_lowest_priority                     C: fija prioridad 0x40 (idle) y libera página asociada
+0xFFF02084  0x0000  CONFIRMED       kernel11_prefetch_abort_handler                         Handler Prefetch Abort
+0xFFF020CC  0x0000  CONFIRMED       kernel11_data_abort_handler                             Handler Data Abort con fixup seguro
+0xFFF02144  0x0000  CONFIRMED       kernel11_irq_handler                                    Handler IRQ -> GIC dispatch
+0xFFF0220C  0x0000  CONFIRMED       kernel11_svc_dispatcher                                 Dispatcher SVC Kernel11
+0xFFF02328  0x0000  CONFIRMED       kernel11_svc_table                                      Tabla de 109 punteros SVC activos (0x01..0x7D)
+0xFFF02520  0x0000  CONFIRMED       kernel11_undef_handler                                  Handler Undef + lazy VFP switch
+0xFFF025C4  0x0290  EVIDENCE_BASED  k11_ncch_exheader_parse_and_spawn                       C: valida NCCH/ExHeader, crea KCodeSet y lanza proceso built-in
+0xFFF02858  0x0064  EVIDENCE_BASED  k11_scheduler_ctor                                      C: constructor de KScheduler (array ctor + vtable 0xFFF2D2D4)
+0xFFF028C4  0x0330  EVIDENCE_BASED  k11_kernel_setup_core_timer_interrupts                  C: registra 3 timers/IRQs periódicos y configura tick
+0xFFF02A7C  0x01F8  EVIDENCE_BASED  k11_kernel_spawn_user_thread                            C: reserva memoria/pila y lanza KThread inicial
+0xFFF02C84  0x012C  EVIDENCE_BASED  k11_cdma_hw_reset_or_init                               CDMA/XDMA 0xFFFCC000/0xFFFCCD00
+0xFFF02DC4  0x0070  EVIDENCE_BASED  k11_core_sync_checkpoint                                C: adquiere klock global y señaliza SGI/IPI en arranque
+0xFFF02E3C  0x0000  EVIDENCE_BASED  k11_gic_bind_irq_slot9                                  C: enlaza IRQ tipo 9 mediante k11_gic_bind_irq_handler
+0xFFF02ED4  0x0038  EVIDENCE_BASED  k11_gic_bind_irq_slot10                                 C: enlaza IRQ tipo 10 mediante k11_gic_bind_irq_handler
+0xFFF02F14  0x0248  EVIDENCE_BASED  k11_gic_init_or_reconfig                                Configura GIC 0xFFFEF000/401/420/C00
+0xFFF02F94  0x0000  EVIDENCE_BASED  k11_scu_gic_hw_init                                     Configura SCU 0xFFFEE000 + GIC 0xFFFEF000
+0xFFF0318C  0x0000  EVIDENCE_BASED  k11_cache_maint_all_ops                                 CP15 c7 I-cache/D-cache
+0xFFF033E4  0x0018  CONFIRMED       k11_icache_btac_invalidate_all                          CP15 + C verificado: invalidación completa I-Cache + BTAC + DSB + ISB
+0xFFF033FC  0x00CC  EVIDENCE_BASED  k11_crc32_compute                                       Polinomio CRC-32 IEEE 0xEDB88320
+0xFFF034CC  0x003C  EVIDENCE_BASED  k11_process_flags_unpack_helper                         C: extrae bits de capacidad/prioridad y ejecuta __aeabi_llsr
+0xFFF03508  0x0000  EVIDENCE_BASED  kernel11_kernel_abort_panic                             Panic de abort en modo kernel
+0xFFF03558  0x0094  CONFIRMED       k11_dabort_fixup_table_lookup                           C verificado: busca par PC/fixup ordenado para recuperación Data Abort
+0xFFF035EC  0x0000  CONFIRMED       svc_0x4A_AcceptSession                                  Tabla SVC 0xFFF02328[74]
+0xFFF03608  0x0000  CONFIRMED       svc_0x22_ArbitrateAddress                               Tabla SVC 0xFFF02328[34]
+0xFFF03624  0x0000  CONFIRMED       svc_0x2D_ConnectToPort                                  Tabla SVC 0xFFF02328[45]
+0xFFF03640  0x0000  CONFIRMED       svc_0x01_ControlMemory                                  Tabla SVC 0xFFF02328[1]
+0xFFF03664  0x0000  CONFIRMED       svc_0x3E_ControlPerformanceCounter                      Tabla SVC 0xFFF02328[62]
+0xFFF0368C  0x0000  CONFIRMED       svc_0x70_ControlProcessMemory                           Tabla SVC 0xFFF02328[112]
+0xFFF036A8  0x0000  CONFIRMED       svc_0x21_CreateAddressArbiter                           Tabla SVC 0xFFF02328[33]
+0xFFF036C4  0x0000  CONFIRMED       svc_0x73_CreateCodeSet                                  Tabla SVC 0xFFF02328[115]
+0xFFF036E4  0x0000  CONFIRMED       svc_0x17_CreateEvent                                    Tabla SVC 0xFFF02328[23]
+0xFFF03700  0x0000  CONFIRMED       svc_0x1E_CreateMemoryBlock                              Tabla SVC 0xFFF02328[30]
+0xFFF03720  0x0000  CONFIRMED       svc_0x13_CreateMutex                                    Tabla SVC 0xFFF02328[19]
+0xFFF0373C  0x0000  CONFIRMED       svc_0x47_CreatePort                                     Tabla SVC 0xFFF02328[71]
+0xFFF03760  0x0000  CONFIRMED       svc_0x75_CreateProcess                                  Tabla SVC 0xFFF02328[117]
+0xFFF0377C  0x0000  CONFIRMED       svc_0x78_CreateResourceLimit                            Tabla SVC 0xFFF02328[120]
+0xFFF03798  0x0000  CONFIRMED       svc_0x15_CreateSemaphore                                Tabla SVC 0xFFF02328[21]
+0xFFF037B4  0x0000  CONFIRMED       svc_0x49_CreateSession                                  Tabla SVC 0xFFF02328[73]
+0xFFF037D8  0x0000  CONFIRMED       svc_0x48_CreateSessionToPort                            Tabla SVC 0xFFF02328[72]
+0xFFF037F4  0x0000  CONFIRMED       svc_0x08_CreateThread                                   Tabla SVC 0xFFF02328[8]
+0xFFF03818  0x0000  CONFIRMED       svc_0x1A_CreateTimer                                    Tabla SVC 0xFFF02328[26]
+0xFFF03834  0x0000  CONFIRMED       svc_0x60_DebugActiveProcess                             Tabla SVC 0xFFF02328[96]
+0xFFF03850  0x0000  CONFIRMED       svc_0x27_DuplicateHandle                                Tabla SVC 0xFFF02328[39]
+0xFFF0386C  0x0000  CONFIRMED       svc_0x6D_GetDebugThreadParam                            Tabla SVC 0xFFF02328[109]
+0xFFF03898  0x0000  CONFIRMED       svc_0x57_GetDmaState                                    Tabla SVC 0xFFF02328[87]
+0xFFF038B4  0x0000  CONFIRMED       svc_0x29_GetHandleInfo                                  Tabla SVC 0xFFF02328[41]
+0xFFF038D4  0x0000  CONFIRMED       svc_0x35_GetProcessId                                   Tabla SVC 0xFFF02328[53]
+0xFFF038F0  0x0000  CONFIRMED       svc_0x36_GetProcessIdOfThread                           Tabla SVC 0xFFF02328[54]
+0xFFF0390C  0x0000  CONFIRMED       svc_0x06_GetProcessIdealProcessor                       Tabla SVC 0xFFF02328[6]
+0xFFF03928  0x0000  CONFIRMED       svc_0x2B_GetProcessInfo                                 Tabla SVC 0xFFF02328[43]
+0xFFF03948  0x0000  CONFIRMED       svc_0x65_GetProcessList                                 Tabla SVC 0xFFF02328[101]
+0xFFF03964  0x0000  CONFIRMED       svc_0x38_GetResourceLimit                               Tabla SVC 0xFFF02328[56]
+0xFFF03980  0x0000  CONFIRMED       svc_0x2A_GetSystemInfo                                  Tabla SVC 0xFFF02328[42]
+0xFFF039A0  0x0000  CONFIRMED       svc_0x37_GetThreadId                                    Tabla SVC 0xFFF02328[55]
+0xFFF039BC  0x0000  CONFIRMED       svc_0x0F_GetThreadIdealProcessor                        Tabla SVC 0xFFF02328[15]
+0xFFF039D8  0x0000  CONFIRMED       svc_0x2C_GetThreadInfo                                  Tabla SVC 0xFFF02328[44]
+0xFFF039F8  0x0000  CONFIRMED       svc_0x66_GetThreadList                                  Tabla SVC 0xFFF02328[102]
+0xFFF03A14  0x0000  CONFIRMED       svc_0x0B_GetThreadPriority                              Tabla SVC 0xFFF02328[11]
+0xFFF03A30  0x0000  CONFIRMED       svc_0x74_svc74_process_op                               Tabla SVC 0xFFF02328[116]
+0xFFF03A4C  0x0000  CONFIRMED       svc_0x33_OpenProcess                                    Tabla SVC 0xFFF02328[51]
+0xFFF03A68  0x0000  CONFIRMED       svc_0x34_OpenThread                                     Tabla SVC 0xFFF02328[52]
+0xFFF03A84  0x0000  CONFIRMED       svc_0x69_QueryDebugProcessMemory                        Tabla SVC 0xFFF02328[105]
+0xFFF03AB4  0x0000  CONFIRMED       svc_0x02_QueryMemory                                    Tabla SVC 0xFFF02328[2]
+0xFFF03AE4  0x0000  CONFIRMED       svc_0x7D_svc7D_ro_op                                    Tabla SVC 0xFFF02328[125]
+0xFFF03B14  0x0000  CONFIRMED       svc_0x16_ReleaseSemaphore                               Tabla SVC 0xFFF02328[22]
+0xFFF03B30  0x0000  CONFIRMED       svc_0x4F_ReplyAndReceive                                Tabla SVC 0xFFF02328[79]
+0xFFF03B4C  0x0000  CONFIRMED       svc_0x4B_ReplyAndReceive1                               Tabla SVC 0xFFF02328[75]
+0xFFF03B68  0x0000  CONFIRMED       svc_0x4C_ReplyAndReceive2                               Tabla SVC 0xFFF02328[76]
+0xFFF03B84  0x0000  CONFIRMED       svc_0x4D_ReplyAndReceive3                               Tabla SVC 0xFFF02328[77]
+0xFFF03BA0  0x0000  CONFIRMED       svc_0x4E_ReplyAndReceive4                               Tabla SVC 0xFFF02328[78]
+0xFFF03BBC  0x0000  CONFIRMED       svc_0x58_RestartDma                                     Tabla SVC 0xFFF02328[88]
+0xFFF03BD4  0x0000  CONFIRMED       svc_0x12_RunProcess                                     Tabla SVC 0xFFF02328[18]
+0xFFF03C00  0x0000  CONFIRMED       svc_0x1B_SetTimer                                       Tabla SVC 0xFFF02328[27]
+0xFFF03C1C  0x0000  CONFIRMED       svc_0x26_SignalAndWait                                  Tabla SVC 0xFFF02328[38]
+0xFFF03C44  0x0000  CONFIRMED       svc_0x55_StartInterProcessDma                           Tabla SVC 0xFFF02328[85]
+0xFFF03C6C  0x0000  CONFIRMED       svc_0x25_WaitSynchronizationN                           Tabla SVC 0xFFF02328[37]
+0xFFF03C90  0x00A4  EVIDENCE_BASED  k11_codeset_map_memory_segment                          C: asigna páginas y mapea segmento de KCodeSet
+0xFFF04008  0x0014  CONFIRMED       k11_affinity_mask_sanitize                              C verificado: filtra máscara de afinidad CPU (SetProcessAffinityMask)
+0xFFF0401C  0x0148  EVIDENCE_BASED  k11_sched_reschedule_on_svc_exit                        Replanificación al salir de SVC
+0xFFF0402C  0x0000  CONFIRMED       svc_0x56_StopDma                                        Tabla SVC 0xFFF02328[86]
+0xFFF0411C  0x0000  CONFIRMED       svc_0x19_ClearEvent                                     Tabla SVC 0xFFF02328[25]
+0xFFF041F4  0x0000  CONFIRMED       svc_0x1D_ClearTimer                                     Tabla SVC 0xFFF02328[29]
+0xFFF042CC  0x0000  CONFIRMED       svc_0x09_ExitThread                                     Tabla SVC 0xFFF02328[9]
+0xFFF042E8  0x0000  CONFIRMED       svc_0x1C_CancelTimer                                    Tabla SVC 0xFFF02328[28]
+0xFFF043C0  0x0000  CONFIRMED       svc_0x23_CloseHandle                                    Tabla SVC 0xFFF02328[35]
+0xFFF043F0  0x0000  CONFIRMED       svc_0x03_ExitProcess                                    Tabla SVC 0xFFF02328[3]
+0xFFF0440C  0x0000  CONFIRMED       svc_0x18_SignalEvent                                    Tabla SVC 0xFFF02328[24]
+0xFFF044E4  0x0000  CONFIRMED       svc_0x0A_SleepThread                                    Tabla SVC 0xFFF02328[10]
+0xFFF04528  0x0000  CONFIRMED       svc_0x14_ReleaseMutex                                   Tabla SVC 0xFFF02328[20]
+0xFFF0460C  0x0000  CONFIRMED       svc_0x50_BindInterrupt                                  Tabla SVC 0xFFF02328[80]
+0xFFF04850  0x0000  CONFIRMED       svc_0x28_GetSystemTick                                  Tabla SVC 0xFFF02328[40]
+0xFFF0485C  0x0000  CONFIRMED       svc_0x5A_SetWifiEnabled                                 Tabla SVC 0xFFF02328[90]
+0xFFF0486C  0x0000  CONFIRMED       svc_0x1F_MapMemoryBlock                                 Tabla SVC 0xFFF02328[31]
+0xFFF048F0  0x0000  EVIDENCE_BASED  KSharedMemory_map_impl                                  Implementación llamada por svc_0x1F_MapMemoryBlock
+0xFFF04A08  0x0000  CONFIRMED       svc_0x71_MapProcessMemory                               Tabla SVC 0xFFF02328[113]
+0xFFF04B78  0x0000  CONFIRMED       svc_0x32_SendSyncRequest                                Tabla SVC 0xFFF02328[50]
+0xFFF04C78  0x0000  CONFIRMED       svc_0x51_UnbindInterrupt                                Tabla SVC 0xFFF02328[81]
+0xFFF04DE4  0x0070  EVIDENCE_BASED  k11_svc_access_denied_or_invalid                        Manejador SVC inválido o denegado
+0xFFF04E54  0x0000  CONFIRMED       svc_0x3B_GetThreadContext_stub_0xF8C007F4               Tabla SVC 0xFFF02328[59]
+0xFFF04E60  0x0000  CONFIRMED       svc_0x7A_svc7A_stub_0xF8C007F4                          Tabla SVC 0xFFF02328[122]
+0xFFF04E6C  0x0000  CONFIRMED       svc_0x2E_SendSyncRequest1_stub_0xF8C007F4               Tabla SVC 0xFFF02328[46]
+0xFFF04E78  0x0000  CONFIRMED       svc_0x2F_SendSyncRequest2_stub_0xF8C007F4               Tabla SVC 0xFFF02328[47]
+0xFFF04E84  0x0000  CONFIRMED       svc_0x30_SendSyncRequest3_stub_0xF8C007F4               Tabla SVC 0xFFF02328[48]
+0xFFF04E90  0x0000  CONFIRMED       svc_0x31_SendSyncRequest4_stub_0xF8C007F4               Tabla SVC 0xFFF02328[49]
+0xFFF04E9C  0x0000  CONFIRMED       svc_0x76_TerminateProcess                               Tabla SVC 0xFFF02328[118]
+0xFFF04F14  0x0000  CONFIRMED       svc_0x20_UnmapMemoryBlock                               Tabla SVC 0xFFF02328[32]
+0xFFF05030  0x0000  CONFIRMED       svc_0x72_UnmapProcessMemory                             Tabla SVC 0xFFF02328[114]
+0xFFF050E4  0x0000  CONFIRMED       svc_0x61_BreakDebugProcess                              Tabla SVC 0xFFF02328[97]
+0xFFF05178  0x0000  CONFIRMED       svc_0x3D_OutputDebugString                              Tabla SVC 0xFFF02328[61]
+0xFFF0529C  0x0000  CONFIRMED       svc_0x6A_ReadProcessMemory                              Tabla SVC 0xFFF02328[106]
+0xFFF0539C  0x0000  CONFIRMED       svc_0x0C_SetThreadPriority                              Tabla SVC 0xFFF02328[12]
+0xFFF05464  0x0000  CONFIRMED       svc_0x64_ContinueDebugEvent                             Tabla SVC 0xFFF02328[100]
+0xFFF05508  0x0000  CONFIRMED       svc_0x6B_WriteProcessMemory                             Tabla SVC 0xFFF02328[107]
+0xFFF055F8  0x0000  CONFIRMED       svc_0x77_SetProcessResourceLimits                       Tabla SVC 0xFFF02328[119]
+0xFFF05718  0x0000  CONFIRMED       svc_0x63_GetProcessDebugEvent                           Tabla SVC 0xFFF02328[99]
+0xFFF059B0  0x0000  CONFIRMED       svc_0x24_WaitSynchronization1                           Tabla SVC 0xFFF02328[36]
+0xFFF05AD0  0x0000  CONFIRMED       svc_0x59_SetGpuProt                                     Tabla SVC 0xFFF02328[89]
+0xFFF05AE0  0x0000  CONFIRMED       svc_0x54_FlushProcessDataCache                          Tabla SVC 0xFFF02328[84]
+0xFFF05B0C  0x0000  CONFIRMED       svc_0x67_GetDebugThreadContext                          Tabla SVC 0xFFF02328[103]
+0xFFF05C00  0x0000  CONFIRMED       svc_0x0D_GetThreadAffinityMask                          Tabla SVC 0xFFF02328[13]
+0xFFF05CC0  0x0000  CONFIRMED       svc_0x68_SetDebugThreadContext                          Tabla SVC 0xFFF02328[104]
+0xFFF05DAC  0x0000  CONFIRMED       svc_0x6C_SetHardwareBreakPoint                          Tabla SVC 0xFFF02328[108]
+0xFFF05DF4  0x0000  EVIDENCE_BASED  KDebug_set_hw_breakpoint                                Implementación llamada por svc_0x6C_SetHardwareBreakPoint
+0xFFF05E10  0x0000  CONFIRMED       svc_0x0E_SetThreadAffinityMask_stub_0xF8C007F4          Tabla SVC 0xFFF02328[14]
+0xFFF05E1C  0x0000  CONFIRMED       svc_0x53_StoreProcessDataCache                          Tabla SVC 0xFFF02328[83]
+0xFFF05E48  0x0000  CONFIRMED       svc_0x62_TerminateDebugProcess                          Tabla SVC 0xFFF02328[98]
+0xFFF05E98  0x0000  CONFIRMED       svc_0x04_GetProcessAffinityMask                         Tabla SVC 0xFFF02328[4]
+0xFFF05F3C  0x0000  CONFIRMED       svc_0x05_SetProcessAffinityMask                         Tabla SVC 0xFFF02328[5]
+0xFFF05FF4  0x0000  CONFIRMED       svc_0x10_SetThreadIdealProcessor_stub_0xF8C007F4        Tabla SVC 0xFFF02328[16]
+0xFFF06000  0x0000  CONFIRMED       svc_0x07_SetProcessIdealProcessor                       Tabla SVC 0xFFF02328[7]
+0xFFF06058  0x0000  CONFIRMED       svc_0x11_GetCurrentProcessorNumber                      Tabla SVC 0xFFF02328[17]
+0xFFF06064  0x0000  CONFIRMED       svc_0x52_InvalidateProcessDataCache                     Tabla SVC 0xFFF02328[82]
+0xFFF06090  0x0000  CONFIRMED       svc_0x39_GetResourceLimitLimitValues                    Tabla SVC 0xFFF02328[57]
+0xFFF061AC  0x0000  CONFIRMED       svc_0x79_svc79_pm_op                                    Tabla SVC 0xFFF02328[121]
+0xFFF06224  0x0000  CONFIRMED       svc_0x3A_GetResourceLimitCurrentValues                  Tabla SVC 0xFFF02328[58]
+0xFFF06340  0x0000  CONFIRMED       svc_0x3C_Break                                          Tabla SVC 0xFFF02328[60]
+0xFFF06450  0x0000  EVIDENCE_BASED  k11_gic_irq_dispatch                                    Dispatcher de interrupciones GIC
+0xFFF064AC  0x0088  EVIDENCE_BASED  k11_process_create_from_codeset                         C: inicializa KProcess con KCodeSet y limpia cachés
+0xFFF06558  0x0030  EVIDENCE_BASED  k11_gic_impl_h1_0xFFF06558                              Llamado (hop 1) desde k11_gic_irq_dispatch
+0xFFF06588  0x0048  EVIDENCE_BASED  k11_process_copy_name_and_caps                          C: copia descriptor nombre/PID y capacidades del KProcess
+0xFFF065D0  0x0020  EVIDENCE_BASED  k11_list_or_region_fields_zero                          C: inicializa a cero campos de cabecera/rango
+0xFFF065F0  0x02F4  EVIDENCE_BASED  k11_mem_validate_or_map_region                          Validación de memoria (err 0xE0E01BEE/0xD900182C)
+0xFFF068F8  0x0060  EVIDENCE_BASED  k11_unmap_memory_block_impl                             C: implementación de UnmapMemoryBlock (desmapea y libera flag)
+0xFFF06958  0x007C  EVIDENCE_BASED  k11_wait_sync_timeout_enqueue                           C: limpia estado de espera del KThread y reencola con lock
+0xFFF069E0  0x02B8  EVIDENCE_BASED  k11_wait_synchronization_impl                           C: implementación WaitSynchronization (con timeout y ticks)
+0xFFF06CEC  0x009C  EVIDENCE_BASED  k11_scheduler_check_active_core                         C: compara KThread activo de core_id contra MPIDR
+0xFFF06CF4  0x0000  EVIDENCE_BASED  k11_ipi_send_sgi_and_cfg11                              IPI 0xFFFEFF00 + CFG11 0xFFFCA140/80
+0xFFF06D94  0x001C  EVIDENCE_BASED  k11_hw_set_wifi_enabled                                 Implementación llamada por svc_0x5A_SetWifiEnabled
+0xFFF06DB4  0x0064  EVIDENCE_BASED  k11_hw_set_gpu_prot                                     Implementación llamada por svc_0x59_SetGpuProt
+0xFFF06E20  0x00F4  EVIDENCE_BASED  KTimer_set                                              Implementación llamada por svc_0x1B_SetTimer
+0xFFF06F20  0x01B4  EVIDENCE_BASED  KPort_create                                            Implementación llamada por svc_0x47_CreatePort
+0xFFF070F0  0x0288  EVIDENCE_BASED  KThread_open_handle                                     Implementación llamada por svc_0x34_OpenThread
+0xFFF0738C  0x0130  EVIDENCE_BASED  KDmaObject_restart_dma                                  Implementación llamada por svc_0x58_RestartDma
+0xFFF074D4  0x015C  EVIDENCE_BASED  KEvent_create_or_init                                   XREF a vtbl_KEvent
+0xFFF0764C  0x0154  EVIDENCE_BASED  KMutex_create_or_init                                   XREF a vtbl_KMutex
+0xFFF077BC  0x0154  EVIDENCE_BASED  KTimer_create_or_init                                   XREF a vtbl_KTimer
+0xFFF0792C  0x00E8  EVIDENCE_BASED  KDmaObject_get_state                                    Implementación llamada por svc_0x57_GetDmaState
+0xFFF07A20  0x004C  EVIDENCE_BASED  KThread_get_tid                                         Implementación llamada por svc_0x37_GetThreadId
+0xFFF07A74  0x0014  EVIDENCE_BASED  k11_svc74_impl                                          Implementación llamada por svc_0x74_svc74_process_op
+0xFFF07A90  0x0084  EVIDENCE_BASED  KProcess_open_handle                                    Implementación llamada por svc_0x33_OpenProcess
+0xFFF07B20  0x0090  EVIDENCE_BASED  k11_mem_query_memory                                    Implementación llamada por svc_0x02_QueryMemory
+0xFFF07BB8  0x02C4  EVIDENCE_BASED  KThread_create_or_init                                  XREF a vtbl_KThread
+0xFFF07EA8  0x0048  EVIDENCE_BASED  KProcess_get_pid                                        Implementación llamada por svc_0x35_GetProcessId
+0xFFF07EF8  0x0140  EVIDENCE_BASED  KServerPort_accept_session                              Implementación llamada por svc_0x4A_AcceptSession
+0xFFF08048  0x0180  EVIDENCE_BASED  KClientPort_connect_by_name                             Implementación llamada por svc_0x2D_ConnectToPort
+0xFFF081DC  0x0374  EVIDENCE_BASED  k11_mem_control_memory                                  Implementación llamada por svc_0x01_ControlMemory
+0xFFF08588  0x0128  EVIDENCE_BASED  KCodeSet_create                                         Implementación llamada por svc_0x73_CreateCodeSet
+0xFFF086CC  0x026C  EVIDENCE_BASED  KProcess_create_or_init                                 XREF a vtbl_KProcess
+0xFFF0895C  0x015C  EVIDENCE_BASED  KSession_create_or_init                                 XREF a vtbl_KSession
+0xFFF08AD8  0x0160  EVIDENCE_BASED  k11_handle_get_info                                     Implementación llamada por svc_0x29_GetHandleInfo
+0xFFF08C50  0x0110  EVIDENCE_BASED  k11_system_get_info                                     Implementación llamada por svc_0x2A_GetSystemInfo
+0xFFF08D64  0x00F8  EVIDENCE_BASED  KThread_get_info                                        Implementación llamada por svc_0x2C_GetThreadInfo
+0xFFF08E6C  0x0068  EVIDENCE_BASED  k11_debug_get_thread_list                               Implementación llamada por svc_0x66_GetThreadList
+0xFFF08EE8  0x0010  EVIDENCE_BASED  KSynchronizationObject_signal_and_wait                  Implementación llamada por svc_0x26_SignalAndWait
+0xFFF08EFC  0x0350  EVIDENCE_BASED  KProcess_get_info                                       Implementación llamada por svc_0x2B_GetProcessInfo
+0xFFF092C4  0x0068  EVIDENCE_BASED  k11_debug_get_process_list                              Implementación llamada por svc_0x65_GetProcessList
+0xFFF09340  0x0194  EVIDENCE_BASED  KSemaphore_create_or_init                               XREF a vtbl_KSemaphore
+0xFFF094F8  0x00CC  EVIDENCE_BASED  k11_handle_table_duplicate                              Implementación llamada por svc_0x27_DuplicateHandle
+0xFFF095D4  0x0068  EVIDENCE_BASED  k11_ipc_reply_and_receive_n                             Implementación llamada por svc_0x4F_ReplyAndReceive
+0xFFF09650  0x0200  EVIDENCE_BASED  KAddressArbiter_arbitrate                               Implementación llamada por svc_0x22_ArbitrateAddress
+0xFFF09878  0x0150  EVIDENCE_BASED  KProcess_get_resource_limit                             Implementación llamada por svc_0x38_GetResourceLimit
+0xFFF099D8  0x00EC  EVIDENCE_BASED  KSemaphore_release                                      Implementación llamada por svc_0x16_ReleaseSemaphore
+0xFFF09AD0  0x0010  EVIDENCE_BASED  k11_ipc_reply_and_receive_1                             Implementación llamada por svc_0x4B_ReplyAndReceive1
+0xFFF09AE4  0x0010  EVIDENCE_BASED  k11_ipc_reply_and_receive_2                             Implementación llamada por svc_0x4C_ReplyAndReceive2
+0xFFF09AF8  0x0010  EVIDENCE_BASED  k11_ipc_reply_and_receive_3                             Implementación llamada por svc_0x4D_ReplyAndReceive3
+0xFFF09B0C  0x0010  EVIDENCE_BASED  k11_ipc_reply_and_receive_4                             Implementación llamada por svc_0x4E_ReplyAndReceive4
+0xFFF09B20  0x0308  EVIDENCE_BASED  KSharedMemory_create                                    Implementación llamada por svc_0x1E_CreateMemoryBlock
+0xFFF09E58  0x004C  EVIDENCE_BASED  KThread_get_priority                                    Implementación llamada por svc_0x0B_GetThreadPriority
+0xFFF09EAC  0x0234  EVIDENCE_BASED  KDebug_create_or_init                                   XREF a vtbl_KDebug
+0xFFF0A110  0x017C  EVIDENCE_BASED  k11_svc7D_ro_op_impl                                    Implementación llamada por svc_0x7D_svc7D_ro_op
+0xFFF0A29C  0x00F8  EVIDENCE_BASED  KResourceLimit_create_or_init                           XREF a vtbl_KResourceLimit
+0xFFF0A3AC  0x012C  EVIDENCE_BASED  KClientPort_create_session                              Implementación llamada por svc_0x48_CreateSessionToPort
+0xFFF0A4E4  0x00C4  EVIDENCE_BASED  KDebug_get_thread_param                                 Implementación llamada por svc_0x6D_GetDebugThreadParam
+0xFFF0A5B4  0x0178  EVIDENCE_BASED  KAddressArbiter_create_or_init                          XREF a vtbl_KAddressArbiter
+0xFFF0A748  0x0054  EVIDENCE_BASED  KThread_get_owner_pid                                   Implementación llamada por svc_0x36_GetProcessIdOfThread
+0xFFF0A7A4  0x00A0  EVIDENCE_BASED  KSynchronizationObject_wait_n                           Implementación llamada por svc_0x25_WaitSynchronizationN
+0xFFF0A85C  0x0048  EVIDENCE_BASED  KThread_get_ideal_cpu                                   Implementación llamada por svc_0x0F_GetThreadIdealProcessor
+0xFFF0A8AC  0x00AC  EVIDENCE_BASED  KDebug_query_memory                                     Implementación llamada por svc_0x69_QueryDebugProcessMemory
+0xFFF0A964  0x0268  EVIDENCE_BASED  k11_mem_control_process_memory                          Implementación llamada por svc_0x70_ControlProcessMemory
+0xFFF0ABF4  0x0048  EVIDENCE_BASED  k11_process_get_ideal_cpu                               Implementación llamada por svc_0x06_GetProcessIdealProcessor
+0xFFF0AC44  0x01C8  EVIDENCE_BASED  k11_pmu_control_dispatch                                Dispatcher PMU de 9 casos (SVC 0x3E)
+0xFFF0AE48  0x0310  EVIDENCE_BASED  k11_process_dcache_op_dispatch                          Helper caché para SVCs 0x52..0x54
+0xFFF0B170  0x00A4  EVIDENCE_BASED  k11_mem_unmap_process_memory                            Implementación llamada por svc_0x72_UnmapProcessMemory
+0xFFF0B21C  0x01BC  EVIDENCE_BASED  k11_map_process_memory_impl                             C: implementación MapProcessMemory (remapea páginas entre procesos)
+0xFFF0B3E4  0x0000  EVIDENCE_BASED  k11_shared_mem_map_pages_loop                           C: mapea páginas de KSharedMemory iterando lista de bloques
+0xFFF0B56C  0x0050  EVIDENCE_BASED  KProcess_run                                            Implementación llamada por svc_0x12_RunProcess
+0xFFF0B5C4  0x00AC  EVIDENCE_BASED  k11_process_wait_ready_lock                             C: adquiere lock global y comprueba estado/sincronización
+0xFFF0B678  0x0088  EVIDENCE_BASED  k11_process_wake_waiters_lock                           C: toma lock y despierta waiters en lista del proceso
+0xFFF0B708  0x0094  EVIDENCE_BASED  k11_result_check_op_0xFFF0B708                          Retorna Result kernel
+0xFFF0B7A8  0x0010  EVIDENCE_BASED  k11_obj_clear_flag_0x24                                 strb r1=0 en [r0+0x24]; bx lr
+0xFFF0B7B8  0x0040  EVIDENCE_BASED  k11_timer_cancel_and_clear_pending                      C: desactiva flag pendiente de timer y limpia HW timer si activo
+0xFFF0B7FC  0x0110  EVIDENCE_BASED  k11_curr_thread_op_0xFFF0B7FC                           Accede KThread* actual 0xFFFF9000
+0xFFF0BAF8  0x0210  EVIDENCE_BASED  k11_curr_proc_op_0xFFF0BAF8                             Accede KProcess* actual 0xFFFF9004
+0xFFF0BD0C  0x021C  EVIDENCE_BASED  k11_curr_proc_op_0xFFF0BD0C                             Accede KProcess* actual 0xFFFF9004
+0xFFF0BF2C  0x01EC  EVIDENCE_BASED  k11_break_debug_process_impl                            C: implementación de BreakDebugProcess (suspende hilos y evento)
+0xFFF0C120  0x0450  EVIDENCE_BASED  k11_continue_debug_event_impl                           C: implementación de ContinueDebugEvent
+0xFFF0C580  0x0044  EVIDENCE_BASED  k11_debug_drain_pending_events                          C: vacía cola de eventos KDebug liberando nodos al slab
+0xFFF0C5CC  0x00F0  EVIDENCE_BASED  k11_result_check_op_0xFFF0C5CC                          Retorna Result kernel
+0xFFF0C6C8  0x0010  EVIDENCE_BASED  KDebug_continue_event                                   Implementación llamada por svc_0x64_ContinueDebugEvent
+0xFFF0C6D8  0x00F0  EVIDENCE_BASED  k11_result_check_op_0xFFF0C6D8                          Retorna Result kernel
+0xFFF0C7D4  0x0048  EVIDENCE_BASED  KDebug_terminate_process                                Implementación llamada por svc_0x62_TerminateDebugProcess
+0xFFF0C820  0x027C  EVIDENCE_BASED  k11_curr_proc_op_0xFFF0C820                             Accede KProcess* actual 0xFFFF9004
+0xFFF0C978  0x0030  EVIDENCE_BASED  k11_thread_cleanup_wait_node                            C: libera nodo temporal si el hilo finalizó o canceló espera
+0xFFF0C9AC  0x0054  EVIDENCE_BASED  KDebug_get_event                                        Implementación llamada por svc_0x63_GetProcessDebugEvent
+0xFFF0CB4C  0x003C  EVIDENCE_BASED  KCodeSet_create_or_init                                 XREF a vtbl_KCodeSet
+0xFFF0CB8C  0x0288  EVIDENCE_BASED  k11_kprocess_setup_address_space                        C: inicializa espacio de direcciones MMU L1/L2 del KProcess
+0xFFF0CE1C  0x0090  EVIDENCE_BASED  k11_irq_unbind_impl                                     Implementación llamada por svc_0x51_UnbindInterrupt
+0xFFF0CEB4  0x0010  EVIDENCE_BASED  KProcess_has_debug_attached                             Lee [r0+0x78] (llamado por svc_0x3C_Break)
+0xFFF0CEC4  0x01F0  EVIDENCE_BASED  k11_kthread_create_and_start                            C: reserva cuota KResourceLimit, asigna pila/TLS y arranca KThread
+0xFFF0D0D8  0x0260  EVIDENCE_BASED  KThread_alloc_and_init                                  C: reserva cuota tipo 2 (Thread) en KResourceLimit e inicializa KThread
+0xFFF0D358  0x00D0  EVIDENCE_BASED  k11_result_check_op_0xFFF0D358                          Retorna Result kernel
+0xFFF0D43C  0x0060  EVIDENCE_BASED  k11_terminate_process_impl                              C: implementación de TerminateProcess (notifica KDebug y cierra hilos)
+0xFFF0D49C  0x0018  CONFIRMED       k11_memset_prepare_byte                                 C verificado: replica byte a uint32 (0x01010101 * byte) para memset
+0xFFF0D4B4  0x0068  CONFIRMED       k11_atomic_cas_byte                                     ldrexb/strexb compare-and-swap byte
+0xFFF0D51C  0x0028  CONFIRMED       k11_atomic_store_byte                                   ldrexb/strexb store byte atómico
+0xFFF0D544  0x0088  EVIDENCE_BASED  k11_irq_bind_helper                                     Enlace KEvent↔IRQ hardware (SVCs 0x50/0x51)
+0xFFF0D5CC  0x0014  CONFIRMED       k11_vfp_restore_context                                 vldmia d0-d15 + vmsr fpscr
+0xFFF0D5E0  0x004C  EVIDENCE_BASED  KThread_exit_unlink_scheduler                           C: retira KThread terminado del KScheduler bajo critical section
+0xFFF0D630  0x0000  EVIDENCE_BASED  k11_kprocess_check_owner_and_state                      C: valida que KProcess coincide con contexto actual bajo lock
+0xFFF0D6A4  0x0174  EVIDENCE_BASED  k11_handle_table_cleanup_on_close                       C: limpia entradas pendientes de tabla de handles bajo critical section
+0xFFF0D824  0x0000  EVIDENCE_BASED  k11_kthread_bind_core_and_signal                        C: asigna core destino a KThread y envía IPI si corresponde
+0xFFF0D8E4  0x003C  EVIDENCE_BASED  KSemaphore_init                                         C: inicializa contador, máximo y KResourceLimit de KSemaphore
+0xFFF0D920  0x004C  EVIDENCE_BASED  KSemaphore_atomic_release_count                         C: incrementa atómicamente contador (ldrex/strex) y despierta waiters
+0xFFF0D970  0x0144  EVIDENCE_BASED  KSession_ctor_and_connect                               C: construye par KClientSession/KServerSession vinculado a KPort
+0xFFF0DAD0  0x0000  EVIDENCE_BASED  k11_ipc_init_all_process_slots                          C: inicializa tabla fija de slots/objetos (stride 0x528)
+0xFFF0DB10  0x0028  EVIDENCE_BASED  k11_result_not_implemented_or_stub                      C: retorna Result fijo 0xD04007F0
+0xFFF0DB40  0x00DC  EVIDENCE_BASED  KProcess_attach_handle_table                            C: enlaza tabla/límite al KProcess bajo lock con add_ref
+0xFFF0DC24  0x010C  EVIDENCE_BASED  KProcess_alloc_thread_slot                              C: asigna slot de hilo en KProcess desde slab 0xFFF31470
+0xFFF0DD48  0x0060  EVIDENCE_BASED  KProcess_free_mem_list                                  C: recorre y libera nodos de lista de memoria bajo critical section
+0xFFF0DDB0  0x004C  CONFIRMED       k11_cache_flush_d_and_inval_i_range                     C verificado: flush D-Cache + invalidate I-Cache sobre rango
+0xFFF0DDFC  0x0020  EVIDENCE_BASED  KCodeSet_init_sections_lists                            C: inicializa listas de segmentos .text/.rodata/.data de KCodeSet
+0xFFF0DE1C  0x023C  EVIDENCE_BASED  KProcess_map_kernel_or_user_region                      C: asigna y mapea páginas de memoria virtual en KProcess
+0xFFF0E064  0x0020  EVIDENCE_BASED  k11_list_node_is_linked                                 C: comprueba estado/enlace de nodo en lista de espera
+0xFFF0E084  0x0000  CONFIRMED       k11_thread_mark_exited                                  C verificado: fija estado 3 (exited) en descriptor de hilo
+0xFFF0E090  0x0578  EVIDENCE_BASED  k11_curr_proc_op_0xFFF0E090                             Accede KProcess* actual 0xFFFF9004
+0xFFF0E620  0x0034  EVIDENCE_BASED  KSharedMemory_create_or_init                            XREF a vtbl_KSharedMemory
+0xFFF0E658  0x000C  EVIDENCE_BASED  k11_resourcelimit_get_current                           C: consulta cuota usada actual en KResourceLimit
+0xFFF0E664  0x0000  EVIDENCE_BASED  k11_kprocess_check_cap_flag_1000                        C: verifica límite/permiso 1000 del proceso bajo lock
+0xFFF0E6C4  0x00B8  EVIDENCE_BASED  k11_thread_wakeup_from_wait                             C: saca hilo de espera y reactiva estado en KScheduler
+0xFFF0E784  0x001C  EVIDENCE_BASED  KAddressArbiter_init                                    C: inicializa KAddressArbiter y registra KResourceLimit
+0xFFF0E7A0  0x01CC  EVIDENCE_BASED  k11_mmu_va_to_pa_1                                      CP15 c7,c8,3 + c7,c4,0 PAR
+0xFFF0E974  0x03B0  EVIDENCE_BASED  k11_mmu_va_to_pa_2                                      CP15 c7,c8,3 + c7,c4,0 PAR
+0xFFF0ED38  0x018C  EVIDENCE_BASED  KThread_reschedule_and_set_prio                         C: ajusta prioridad y estado de KThread bajo critical section
+0xFFF0EED0  0x00E4  EVIDENCE_BASED  k11_klock_try_release_or_wake                           C: comprueba estado bajo klock global (err 0xD8E007FD)
+0xFFF0EEE0  0x002C  EVIDENCE_BASED  k11_curr_thread_op_0xFFF0EEE0                           Accede KThread* actual 0xFFFF9000
+0xFFF0EF10  0x00B8  EVIDENCE_BASED  KThread_allocate_tls_page                               C: reserva página TLS 0xFF400000 y mapea KThread TLS slot
+0xFFF0EFD8  0x0000  EVIDENCE_BASED  k11_mem_validate_align_and_range                        C: valida alineamiento de página (0xFFF) y rango de usuario
+0xFFF0F0C0  0x002C  EVIDENCE_BASED  k11_sys_check_kernel_mode_flag                          C: comprueba flag global en DAT_fff0f0ec+0x34
+0xFFF0F0F0  0x03EC  EVIDENCE_BASED  KDmaObject_start_inter_process_dma                      Implementación llamada por svc_0x55_StartInterProcessDma
+0xFFF0F0F4  0x0000  EVIDENCE_BASED  KCodeSet_create_with_segments                           C: valida alineamiento y crea KCodeSet con segmentos .text/.rodata/.data
+0xFFF0F4F8  0x0000  EVIDENCE_BASED  KProcess_copy_process_info_fields                       C: lee campos de proceso/exheader bajo lock
+0xFFF0F684  0x0380  EVIDENCE_BASED  k11_tls_read_tpidr                                      mrc p15, 0, Rd, c13, c0, 3
+0xFFF0FC3C  0x0084  EVIDENCE_BASED  k11_result_check_op_0xFFF0FC3C                          Retorna Result kernel
+0xFFF0FCC4  0x04AC  EVIDENCE_BASED  KDmaObject_setup_and_start_impl                         C: configura transferencia DMA/CDMA con lock en proceso+0x520
+0xFFF10184  0x0050  EVIDENCE_BASED  KPort_create_or_init                                    XREF a vtbl_KPort
+0xFFF101E0  0x0030  CONFIRMED       KEvent_init                                             C verificado: inicializa KEvent (resetType y KResourceLimit)
+0xFFF10210  0x0060  CONFIRMED       KMutex_init                                             C verificado: inicializa KMutex (owner inicial y KResourceLimit)
+0xFFF10274  0x0050  CONFIRMED       KMutex_unlock_all_on_thread_exit                        C verificado: libera KMutex y recalcula prioridad al terminar KThread
+0xFFF102C8  0x0030  CONFIRMED       KTimer_init                                             C verificado: inicializa KTimer (resetType y KResourceLimit)
+0xFFF102F8  0x03A4  EVIDENCE_BASED  KTimer_arm_with_tick                                    C: programa KTimer con GetSystemTick, KResourceLimit y cola de timers
+0xFFF106AC  0x0204  EVIDENCE_BASED  k11_kprocess_init_page_tables_and_asid                  C: inicializa L1 TTBR0 (0x40000000), ASID y contexto del KProcess
+0xFFF108C4  0x0314  EVIDENCE_BASED  k11_result_check_op_0xFFF108C4                          Retorna Result kernel
+0xFFF10BFC  0x00D8  EVIDENCE_BASED  k11_kprocess_map_trampoline_and_stack                   C: mapea región 0x40000000+ en espacio de usuario del KProcess
+0xFFF10CF0  0x0070  EVIDENCE_BASED  k11_control_process_memory_impl                         C: implementación ControlProcessMemory (permisos/rango << 0xc)
+0xFFF10D64  0x00F0  EVIDENCE_BASED  k11_irq_unbind_impl_0xFFF10D64                          C: desvincula KEvent de IRQ hardware bajo lock +0x500 y deshabilita IRQ
+0xFFF10E60  0x00F4  EVIDENCE_BASED  k11_irq_bind_event_impl                                 C: vincula KEvent a IRQ hardware bajo lock +0x500
+0xFFF10F5C  0x00A0  EVIDENCE_BASED  k11_pmu_scu_gic_setup                                   PMNC + SCU + GIC
+0xFFF11004  0x0000  CONFIRMED       k11_gic_set_irq_priority                                MMIO GIC + C verificado: escribe prioridad ICDIPR (-0x10c00)
+0xFFF1104C  0x0020  EVIDENCE_BASED  k11_KThread_impl_h1_0xFFF1104C                          Llamado (hop 1) desde k11_curr_thread_op_0xFFF0B7FC
+0xFFF11070  0x0024  CONFIRMED       k11_pmu_read_pmnc                                       mrc p15, 0, r1, c15, c12, 0
+0xFFF11094  0x00A4  EVIDENCE_BASED  k11_pmu_reset_counters                                  Resetea PMU y acumuladores SCU
+0xFFF1113C  0x0114  CONFIRMED       k11_pmu_write_pmnc                                      mcr p15, 0, ..., c15, c12, 0
+0xFFF11258  0x00BC  EVIDENCE_BASED  k11_pmu_start                                           Caso 0 PMU dispatch
+0xFFF11330  0x00A8  EVIDENCE_BASED  k11_pmu_stop                                            Caso 1 PMU dispatch
+0xFFF113F4  0x009C  EVIDENCE_BASED  k11_pmu_get_ctrl_bits                                   Caso 6 PMU dispatch
+0xFFF11498  0x00F0  CONFIRMED       k11_pmu_read_counter                                    Lee CCNT/PMN0/PMN1 c15,c12
+0xFFF1158C  0x00D8  EVIDENCE_BASED  k11_pmu_read_raw_counter                                Caso 7 PMU dispatch
+0xFFF11668  0x0108  EVIDENCE_BASED  k11_pmu_write_counter                                   Caso 3 PMU dispatch
+0xFFF11734  0x0000  CONFIRMED       k11_pmu_write_ccnt                                      mcr p15, 0, rX, c15, c12, 1
+0xFFF11768  0x0000  CONFIRMED       k11_pmu_write_pmn0                                      mcr p15, 0, rX, c15, c12, 2
+0xFFF11774  0x0030  EVIDENCE_BASED  k11_icache_invalidate_all                               CP15 c7,c5,0/4/6
+0xFFF117A4  0x0938  EVIDENCE_BASED  k11_mmu_map_or_protect_pages                            C: gestor central L1/L2 de mapeo, desmapeo y permisos de páginas
+0xFFF120E4  0x0084  CONFIRMED       KDebug_attach_to_process                                C verificado: enlaza KDebug <-> KProcess+0x78 y encola eventos iniciales
+0xFFF1216C  0x0000  EVIDENCE_BASED  KDebug_emit_attach_thread_event                         C: emite evento debug AttachThread si KProcess tiene KDebug
+0xFFF12208  0x0074  EVIDENCE_BASED  k11_curr_proc_op_0xFFF12208                             Accede KProcess* actual 0xFFFF9004
+0xFFF12280  0x001C  CONFIRMED       KDebug_notify_process_exit                              C verificado: marca flag KDebug+0x85 al cerrar KProcess
+0xFFF1229C  0x0000  EVIDENCE_BASED  KDebug_emit_exit_thread_event                           C: emite evento debug ExitThread si KProcess tiene KDebug
+0xFFF12340  0x0054  EVIDENCE_BASED  k11_KThread_caller_h1_0xFFF12340                        Llama (hop 1) a k11_curr_thread_op_0xFFF19B60
+0xFFF12394  0x001C  CONFIRMED       KDebug_notify_debug_event                               C verificado: marca flag KDebug+0x86 en evento KProcess
+0xFFF123B0  0x0000  EVIDENCE_BASED  KDebug_get_thread_context_check                         C: lee contexto de KThread para depuración
+0xFFF124EC  0x046C  EVIDENCE_BASED  k11_cdma_op_0xFFF124EC                                  C: transferencia/estado CDMA (196L)
+0xFFF12784  0x043C  EVIDENCE_BASED  k11_cdma_op_0xFFF12784                                  C: transferencia/estado CDMA (179L)
+0xFFF12B1C  0x01D8  EVIDENCE_BASED  k11_kprocess_shutdown_or_cleanup                        C: marca flag cierre +0x1c, detiene timers y recorre lista +0x60
+0xFFF12CF8  0x0044  EVIDENCE_BASED  k11_kernel_routine_0xFFF12CF8                           C: rutina analizada en Ghidra (13L)
+0xFFF12D3C  0x00B0  EVIDENCE_BASED  k11_handle_kobj_op_0xFFF12D3C                           C: gestión handles/KAutoObject (54L)
+0xFFF12DF4  0x0000  CONFIRMED       KThread_set_base_and_dyn_priority                       C verificado: asigna prioridad base (+0x6c) y dinámica (+0x3c)
+0xFFF12E28  0x0000  CONFIRMED       KThread_clear_running_core                              C verificado: pone core activo +0xac = -1
+0xFFF12E88  0x00C0  EVIDENCE_BASED  KThread_exit_cleanup                                    Implementación llamada por svc_0x09_ExitThread
+0xFFF12F54  0x0094  EVIDENCE_BASED  k11_kernel_routine_0xFFF12F54                           C: rutina analizada en Ghidra (22L)
+0xFFF12FE8  0x014C  EVIDENCE_BASED  k11_result_check_op_0xFFF12FE8                          Retorna Result kernel
+0xFFF13144  0x0014  CONFIRMED       KDebug_is_terminated                                    C verificado: retorna *(char *)(kdebug + 0x80) == 3
+0xFFF13158  0x00B0  EVIDENCE_BASED  KThread_terminate_single                                C: finaliza un KThread individual bajo klock y envía IPI
+0xFFF13210  0x0094  EVIDENCE_BASED  KProcess_terminate_all_threads                          C: termina todos los hilos del KProcess y actualiza debug/handles
+0xFFF132AC  0x00BC  EVIDENCE_BASED  KProcess_open_by_pid_or_create_handle                   C: busca proceso y crea handle en tabla con KAutoObject_add_ref
+0xFFF13370  0x0024  EVIDENCE_BASED  k11_mem_check_process_resource_limit                    C: verifica límite de memoria disponible en KResourceLimit
+0xFFF13394  0x0030  EVIDENCE_BASED  KThread_set_priority                                    Implementación llamada por svc_0x0C_SetThreadPriority
+0xFFF133C4  0x0000  EVIDENCE_BASED  k11_atomic_inc_wait_count                               C: incremento atómico ldrex/strex de contador en offset +0x84
+0xFFF13400  0x0000  EVIDENCE_BASED  KProcess_detach_or_terminate_threads                    C: itera lista de hilos en KProcess+0x68 bajo lock global
+0xFFF136D4  0x0030  EVIDENCE_BASED  k11_encode_irq_bitfield_id                              C: empaqueta ID/núcleo/prioridad IRQ en palabra de 32 bits
+0xFFF13704  0x0024  EVIDENCE_BASED  KCodeSet_check_state_lt_41                              C: valida que estado *(short *)(param_1 + 4) < 0x29
+0xFFF1372C  0x0234  EVIDENCE_BASED  KDmaObject_query_cdma_state_impl                        C: consulta estado hardware de canal CDMA bajo klock
+0xFFF13964  0x0054  EVIDENCE_BASED  KProcess_sum_allocated_pages                            C: suma bloques de memoria asignados iterando lista del proceso
+0xFFF139B8  0x0064  EVIDENCE_BASED  k11_kthread_sum_stack_or_regions                        C: suma regiones de memoria asociadas
+0xFFF13A1C  0x0054  EVIDENCE_BASED  KProcess_sum_mapped_memory                              C: recorre bloques de memoria mapeados en KProcess
+0xFFF13A70  0x0014  CONFIRMED       KThread_get_owner_pid_safe                              C verificado: devuelve PID de [kthread+0x80] o -1 en hilo kernel
+0xFFF13AA8  0x0020  CONFIRMED       k11_stack_probe_alloca                                  C verificado: __alloca_probe (SVC 0x79)
+0xFFF13AC8  0x0010  EVIDENCE_BASED  k11_crt_memset_byte                                     Prepara byte repetido y salta a memset 0xFFF1AD58
+0xFFF13AD8  0x0068  EVIDENCE_BASED  KThread_free_stack_or_tls                               C: libera pila/TLS de usuario del KThread
+0xFFF13B44  0x0030  EVIDENCE_BASED  k11_mem_alloc_aligned_pages                             C: asigna bloques de páginas del pool de memoria
+0xFFF13B74  0x0088  EVIDENCE_BASED  KResourceLimit_init                                     C: inicializa contadores y cuotas de KResourceLimit bajo lock
+0xFFF13C04  0x032C  EVIDENCE_BASED  k11_result_check_op_0xFFF13C04                          Retorna Result kernel
+0xFFF13F50  0x0070  EVIDENCE_BASED  KPort_init                                              C: inicializa KServerPort/KClientPort con límite y nombre
+0xFFF13FC0  0x0338  EVIDENCE_BASED  k11_result_check_op_0xFFF13FC0                          Retorna Result kernel
+0xFFF14310  0x0064  EVIDENCE_BASED  KMemoryBlock_init_with_lock                             C: inicializa rango/permisos en descriptor KMemoryBlock con ldrex
+0xFFF14374  0x00E8  EVIDENCE_BASED  k11_timer_schedule_irq_callback                         C: registra evento timer con GetSystemTick
+0xFFF14460  0x0022  CONFIRMED       k11_aeabi_vec_ctor_nocookie                             C verificado: __aeabi_vec_ctor_nocookie
+0xFFF14484  0x0028  CONFIRMED       k11_aeabi_llsr                                          C verificado: __aeabi_llsr (64-bit shift right)
+0xFFF144AC  0x0000  EVIDENCE_BASED  kernel11_user_exception_dispatch                        Excepción de usuario (modo 0x10)
+0xFFF144DC  0x0088  EVIDENCE_BASED  k11_curr_proc_op_0xFFF144DC                             Accede KProcess* actual 0xFFFF9004
+0xFFF1456C  0x0150  EVIDENCE_BASED  k11_curr_proc_op_0xFFF1456C                             Accede KProcess* actual 0xFFFF9004
+0xFFF146C4  0x0060  EVIDENCE_BASED  k11_kobject_release_ref                                 Decrementa refcount de KAutoObject
+0xFFF14728  0x0044  EVIDENCE_BASED  k11_mem_pool_query_free_bytes                           C: suma páginas libres disponibles en descriptor de pool de memoria
+0xFFF1476C  0x0038  EVIDENCE_BASED  k11_svc79_impl                                          Implementación llamada por svc_0x79_svc79_pm_op
+0xFFF147A4  0x00B8  EVIDENCE_BASED  k11_kthread_lookup_handle                               Lookup de KThread* por handle
+0xFFF14864  0x009C  EVIDENCE_BASED  k11_kdebug_lookup_handle                                Lookup de KDebug* por handle (0xD9002002)
+0xFFF14904  0x0024  EVIDENCE_BASED  k11_kdebug_unlock_or_release                            Liberación de contexto KDebug
+0xFFF14928  0x0088  EVIDENCE_BASED  k11_kresourcelimit_lookup_handle                        Lookup de KResourceLimit*
+0xFFF149B0  0x00B8  EVIDENCE_BASED  k11_kprocess_lookup_handle                              Lookup de KProcess* por handle
+0xFFF14A70  0x0010  EVIDENCE_BASED  k11_KThread_impl_h1_0xFFF14A70                          Llamado (hop 1) desde k11_curr_thread_op_0xFFF0B7FC
+0xFFF14A84  0x0140  EVIDENCE_BASED  KDebug_process_continue_event                           C: procesa evento de reanudación en KDebug y libera al slab
+0xFFF14BC8  0x0028  EVIDENCE_BASED  KProcess_has_high_mem_or_kernel_flag                    C: comprueba flag de proceso ((flags & 0xf00) == 0x300 o <= 0x22b)
+0xFFF14BF0  0x009C  EVIDENCE_BASED  KThread_detach_from_process_list                        C: desvincula hilo bajo lock y notifica por IPI
+0xFFF14C90  0x004C  EVIDENCE_BASED  KThread_start_execution                                 C: arranca KThread recién creado y notifica KDebug AttachThread
+0xFFF14CE4  0x03EC  EVIDENCE_BASED  KThread_setup_entry_context                             C: prepara registros r0/pc/sp/cpsr iniciales del KThread
+0xFFF150F0  0x0054  CONFIRMED       k11_memzero32_aligned                                   C verificado: __aeabi_memclr4 en bloques de 32 bytes
+0xFFF15144  0x0030  EVIDENCE_BASED  k11_user_copy_safe_begin                                Inicio copia segura protegida por DAbort
+0xFFF15174  0x0030  EVIDENCE_BASED  k11_copy_from_user_words                                ldrt/str dentro del rango fixup DAbort (llamado por SVC 0x68)
+0xFFF151A4  0x0018  EVIDENCE_BASED  KResourceLimit_get_peak_or_limit                        C: lectura simple de cuota/límite de recurso
+0xFFF151BC  0x0040  CONFIRMED       k11_strncpy_len                                         C verificado: copia string acotada y devuelve longitud
+0xFFF151FC  0x0030  EVIDENCE_BASED  k11_copy_to_user_bytes                                  ldrb/strbt dentro del rango fixup DAbort (llamado por SVC 0x04/0x0D)
+0xFFF1522C  0x0030  EVIDENCE_BASED  k11_copy_to_user_words                                  ldr/strt dentro del rango fixup DAbort
+0xFFF1525C  0x0018  EVIDENCE_BASED  k11_mem_is_page_aligned_range                           C: valida dirección/tamaño de copia de usuario
+0xFFF1532C  0x00A0  EVIDENCE_BASED  k11_user_copy_safe_end                                  Fin copia segura / KAutoObject::init
+0xFFF153CC  0x0010  CONFIRMED       KAutoObject_ctor                                        C verificado: constructor base KAutoObject (vtable + refcount=0)
+0xFFF153E0  0x0090  EVIDENCE_BASED  k11_result_check_op_0xFFF153E0                          Retorna Result kernel
+0xFFF1553C  0x009C  CONFIRMED       KResourceLimit_try_reserve                              C + ldrex verificado: reserva cuota de recurso bajo lock +0x58
+0xFFF155DC  0x0054  EVIDENCE_BASED  k11_cdma_check_request_bounds                           C: valida alineamiento/tamaño de petición DMA
+0xFFF15630  0x00A8  EVIDENCE_BASED  k11_cdma_validate_user_buffer                           C: consulta KProcess_query_memory_block para validar buffer DMA
+0xFFF156D8  0x0028  CONFIRMED       KSynchronizationObject_ctor                             C verificado: constructor KSynchronizationObject
+0xFFF15704  0x00BC  CONFIRMED       KSynchronizationObject_add_waiter                       C + ldrex verificado: encola waiter bajo lock +0xC usando slab
+0xFFF157C8  0x0088  EVIDENCE_BASED  k11_mem_free_pages_locked                               C: libera páginas con klock global y actualiza refcounts
+0xFFF15854  0x0070  EVIDENCE_BASED  k11_mem_validate_and_lock_range                         C: valida región de memoria del proceso y asigna descriptor
+0xFFF158C4  0x0000  EVIDENCE_BASED  k11_mem_alloc_pages_zeroed                              C: asigna páginas físicas vía k11_mem_pool_alloc_pages
+0xFFF15980  0x0000  CONFIRMED       svc_0x7C_KernelSetState                                 Tabla SVC 0xFFF02328[124]
+0xFFF15984  0x0394  EVIDENCE_BASED  k11_curr_proc_op_0xFFF15984                             Accede KProcess* actual 0xFFFF9004
+0xFFF15D80  0x0028  EVIDENCE_BASED  k11_mmu_va_to_pa_wrapper                                C: consulta dirección física vía k11_mmu_walk_l1_l2
+0xFFF15DA8  0x0448  EVIDENCE_BASED  k11_ipc_translate_buffers                               C: copia/traduce buffers y descriptores estáticos IPC (286L)
+0xFFF161F0  0x003C  EVIDENCE_BASED  k11_cdma_transfer_chunks                                C: ejecuta copia de chunks DMA en transferencia activa
+0xFFF1622C  0x007C  EVIDENCE_BASED  k11_mem_verify_user_range_state                         C: consulta bloque de memoria y valida estado/permisos (0xE0A01BF5)
+0xFFF162AC  0x0000  EVIDENCE_BASED  k11_mmu_control_memory_split_or_protect                 C: divide o cambia atributos de región en mapa virtual del KProcess (284L)
+0xFFF16810  0x0004  EVIDENCE_BASED  k11_crt_long_branch_stub                                C: trampoline hacia función boot/helper 0x1FFAEC08
+0xFFF16820  0x0000  EVIDENCE_BASED  k11_mmu_find_free_va_range                              C: busca hueco de direcciones virtuales libres de tamaño requerido
+0xFFF1692C  0x0000  EVIDENCE_BASED  k11_mmu_unmap_or_shrink_region                          C: desmapea o recorta bloque de memoria en espacio del proceso (204L)
+0xFFF16D24  0x033C  EVIDENCE_BASED  k11_mmu_control_memory_dispatch                         C: despachador ControlMemory (Allocate/Free/Commit/Map/Protect)
+0xFFF1706C  0x0000  EVIDENCE_BASED  k11_mem_pool_find_largest_gap                           C: busca región contigua libre en pool de memoria física
+0xFFF17198  0x06E8  EVIDENCE_BASED  k11_mmu_map_code_and_data_segments                      C: mapea bloques físicos/virtuales con k11_copy_16bytes_4words (269L)
+0xFFF17888  0x0000  EVIDENCE_BASED  k11_mmu_remap_or_split_l2_pages                         C: divide o actualiza entradas PTE L1/L2 en rango (202L)
+0xFFF17D1C  0x002C  CONFIRMED       k11_gic_disable_irq                                     MMIO GIC + C verificado: escribe GIC ICDICER (+0x280)
+0xFFF17D34  0x0000  EVIDENCE_BASED  k11_gic_enable_irq                                      Escribe GIC Dist 0xFFFEF000
+0xFFF17D4C  0x002C  CONFIRMED       k11_gic_enable_irq_0xFFF17D4C                           MMIO GIC + C verificado: escribe GIC ICDISER (+0x180)
+0xFFF17D64  0x0000  EVIDENCE_BASED  k11_gic_disable_irq_0xFFF17D64                          Escribe GIC Dist 0xFFFEF000
+0xFFF17D7C  0x0000  EVIDENCE_BASED  k11_mem_range_overlaps                                  C: comprueba solapamiento de rangos alineados a página (4KB)
+0xFFF17DE4  0x0104  EVIDENCE_BASED  k11_gic_unbind_interrupt_slot                           C: elimina entrada en tabla de interrupciones y deshabilita IRQ
+0xFFF17EF4  0x0140  EVIDENCE_BASED  k11_gic_bind_irq_handler                                C: registra handler IRQ en tabla core*0x100 + id*8 bajo lock +0x500
+0xFFF18040  0x0568  EVIDENCE_BASED  k11_debug_collect_exception_or_stop_info                C: recolecta contexto de hilos/estado KDebug bajo lock (246L)
+0xFFF18478  0x0000  CONFIRMED       k11_abort_read_dfar                                     mrc p15, 0, rX, c6, c0, 0
+0xFFF184C8  0x0000  CONFIRMED       k11_abort_read_ifsr                                     mrc p15, 0, rX, c5, c0, 1
+0xFFF184E0  0x0000  CONFIRMED       k11_abort_read_dfsr                                     mrc p15, 0, rX, c5, c0, 0
+0xFFF1864C  0x0020  EVIDENCE_BASED  k11_sched_trigger_reschedule                            C: dispara replanificación inmediata en KScheduler
+0xFFF1866C  0x0148  EVIDENCE_BASED  k11_sched_timer_tick_queue_check                        C: gestiona cola de timers de scheduler con slab 0xFFF31460
+0xFFF187BC  0x007C  EVIDENCE_BASED  k11_kthread_suspend_with_lock                           C: suspende KThread usando KThread_set_suspended_flag
+0xFFF18900  0x0038  CONFIRMED       KAutoObject_add_ref_ret                                 ldrex/strex + C verificado: atomic_inc([this+4]) y retorna this
+0xFFF18938  0x0000  EVIDENCE_BASED  k11_mem_list_find_block                                 C: busca bloque coincidente en lista enlazada de memoria
+0xFFF1897C  0x0000  EVIDENCE_BASED  k11_mem_list_copy_or_scan                               C: recorre nodos de lista copiando descriptores de 16 bytes
+0xFFF189B4  0x00B4  CONFIRMED       KScheduler_dequeue_thread                               C + DMB verificado: limpia bit de prioridad y desenlaza KThread
+0xFFF18A6C  0x004C  CONFIRMED       KScheduler_trigger_core_ipi                             MMIO + C verificado: dispara SGI #8 vía 0xFFFEFF00 al otro core
+0xFFF18AC0  0x006C  EVIDENCE_BASED  k11_kdebug_event_ctor                                   C: constructor de objeto evento KDebug (vtable 0xFFF2D430)
+0xFFF18B30  0x0000  EVIDENCE_BASED  k11_scu_init_all_cores_config                           C: configura registro SCU/CP15 de los núcleos MPCore
+0xFFF18B68  0x0000  EVIDENCE_BASED  k11_scu_config_core_flags                               C: lee ID CP15 y ajusta bits SCU por core
+0xFFF18BFC  0x003C  CONFIRMED       KAutoObject_add_ref                                     ldrex/strex + C verificado: atomic_inc([this+4]) con check overflow
+0xFFF18C38  0x00FC  CONFIRMED       k11_handle_table_lookup                                 C + ldrex verificado: resuelve Handle -> KAutoObject*
+0xFFF18D38  0x0120  EVIDENCE_BASED  k11_handle_table_new_handle                             C: asigna slot libre en tabla de handles bajo lock (0xD8600413)
+0xFFF18E60  0x00B0  EVIDENCE_BASED  k11_mem_query_process_block_aligned                     C: consulta KProcess_query_memory_block y valida alineación
+0xFFF18F14  0x0014  CONFIRMED       k11_cdma_is_busy                                        MMIO CDMA + C verificado: lee bit 0 de 0xFFFCC030
+0xFFF18F2C  0x0018  CONFIRMED       k11_cdma_is_channel_active                              MMIO CDMA + C verificado: lee bit de canal en 0xFFFCC034
+0xFFF18F48  0x0014  CONFIRMED       k11_cdma_get_channel_status                             MMIO CDMA + C verificado: lee estado de canal en 0xFFFCC100+ch*8
+0xFFF18F60  0x0080  EVIDENCE_BASED  k11_mmu_unmap_range_wrapper                             C: invoca k11_mmu_map_virtual_range para desmapear rango
+0xFFF18FE4  0x014C  EVIDENCE_BASED  k11_mem_pool_alloc_single_block                         C: asigna bloque de páginas del pool bajo klock global
+0xFFF19134  0x0244  EVIDENCE_BASED  k11_mem_pool_search_free_pages                          C: busca páginas libres en bitmap/lista de pool de memoria física
+0xFFF19378  0x00C8  EVIDENCE_BASED  k11_mem_pool_inc_page_refcounts                         C: incrementa refcount por página (>> 0xc) en array del pool
+0xFFF19440  0x0000  EVIDENCE_BASED  k11_mmu_va_to_pa_walk                                   C: recorre tablas L1/L2 del proceso para traducir VA -> PA (225L)
+0xFFF198F4  0x0188  EVIDENCE_BASED  k11_tlb_flush_and_ipi                                   TLB flush + IPI
+0xFFF19A88  0x0018  CONFIRMED       k11_copy_16bytes_4words                                 C verificado: copia exactamente 16 bytes (4 uint32)
+0xFFF19AA0  0x0000  EVIDENCE_BASED  k11_cdma_stop_or_reset_channel                          C: detiene/resetea canal CDMA hardware y limpia estado
+0xFFF19AA8  0x0000  EVIDENCE_BASED  k11_ipi_send_resched                                    Dispara IPI 0xFFFEFF00
+0xFFF19B60  0x0064  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF19B60                           C: sección crítica/atómica ldrex/strex (19L)
+0xFFF19BCC  0x0188  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF19BCC                           C: sección crítica/atómica ldrex/strex (49L)
+0xFFF19D60  0x0114  EVIDENCE_BASED  k11_sched_thread_op_0xFFF19D60                          C: planificación KThread/KScheduler (44L)
+0xFFF19E7C  0x0164  EVIDENCE_BASED  k11_sched_thread_op_0xFFF19E7C                          C: planificación KThread/KScheduler (70L)
+0xFFF19FE8  0x00B8  EVIDENCE_BASED  k11_sched_thread_op_0xFFF19FE8                          C: planificación KThread/KScheduler (37L)
+0xFFF1A0AC  0x000C  CONFIRMED       k11_array_get_word_at_8                                 C verificado: getter *(uint32 *)(base + idx*4 + 8)
+0xFFF1A0B8  0x0000  EVIDENCE_BASED  k11_cdma_poll_and_wait_channel                          C: espera/sincroniza transferencia CDMA sobre canal activo
+0xFFF1A2C4  0x00F0  EVIDENCE_BASED  k11_mem_block_add_region                                C: inserta región alineada a página (param_3*0x1000) bajo critical section
+0xFFF1A3C0  0x00AC  EVIDENCE_BASED  KProcess_query_memory_block                             C: toma lock de memoria y copia descriptor KMemoryBlock de 16B
+0xFFF1A474  0x00CC  EVIDENCE_BASED  KScheduler_enqueue_thread                               C: encola KThread en bitmap de prioridad y cola ready del KScheduler
+0xFFF1A548  0x000C  EVIDENCE_BASED  KScheduler_force_reschedule                             C: marca flag reschedule=1 y ejecuta cambio de contexto
+0xFFF1A554  0x007C  EVIDENCE_BASED  KScheduler_reschedule_if_pending                        C: si flag reschedule activo, ejecuta cambio de contexto
+0xFFF1A5D0  0x0000  EVIDENCE_BASED  k11_mmu_update_page_permissions                         C: actualiza bits de permisos AP/XN en entradas L2
+0xFFF1A760  0x0088  EVIDENCE_BASED  k11_memcpy_aligned_fast                                 C: copia rápida de memoria alineada con desenrollado (198L)
+0xFFF1A7E8  0x0000  EVIDENCE_BASED  k11_ipi_send_broadcast                                  Dispara IPI 0xFFFEFF00
+0xFFF1A954  0x0060  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1A954                          C: planificación KThread/KScheduler (19L)
+0xFFF1A9B4  0x0000  EVIDENCE_BASED  k11_mem_pool_free_page                                  C: libera página física alineada a 4KB de vuelta al pool
+0xFFF1AB00  0x0098  EVIDENCE_BASED  k11_kernel_routine_0xFFF1AB00                           C: rutina analizada en Ghidra (38L)
+0xFFF1AB9C  0x0000  EVIDENCE_BASED  k11_priv_timer_read_counter                             Lee Private Timer 0xFFFEE824
+0xFFF1AC50  0x008C  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1AC50                           C: sección crítica/atómica ldrex/strex (28L)
+0xFFF1ACE0  0x0070  EVIDENCE_BASED  k11_timer_get_system_tick                               Implementación llamada por svc_0x28_GetSystemTick
+0xFFF1AD54  0x0040  CONFIRMED       k11_aeabi_memclr                                        C verificado: __aeabi_memclr
+0xFFF1AD94  0x0018  CONFIRMED       k11_list_init                                           C verificado: inicializa cabecera de lista circular intrusiva
+0xFFF1ADAC  0x01D0  EVIDENCE_BASED  k11_mem_block_map_list_insert                           C: inserta/actualiza rango en lista de bloques de memoria bajo lock
+0xFFF1AF84  0x00E0  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF1AF84                               C: gestión MMU/memoria (35L, llama ['k11_KSharedMemory_impl_h1_0xFFF1B06C', 'k11_mem_query_process_block_aligned'])
+0xFFF1B06C  0x0030  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B06C                           C: rutina analizada en Ghidra (11L)
+0xFFF1B09C  0x0080  EVIDENCE_BASED  k11_list_clear_and_invoke                               C: recorre lista enlazada llamando destructor/callback por nodo
+0xFFF1B124  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B124                           C: rutina analizada en Ghidra (29L)
+0xFFF1B180  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B180                           C: rutina analizada en Ghidra (20L)
+0xFFF1B1F0  0x0000  CONFIRMED       k11_lowest_set_bit_mask                                 C verificado: aísla bit activo de menor peso (x & -x)
+0xFFF1B214  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B214                           C: rutina analizada en Ghidra (60L)
+0xFFF1B2E8  0x0010  CONFIRMED       k11_vfp_enable                                          vmrs/vmsr fpexc bit 0x40000000 (enable VFP)
+0xFFF1B2F8  0x0020  CONFIRMED       KThread_clear_core_and_wait_flags                       C verificado: limpia bit 30 en +0xa8 y fija +0xac
+0xFFF1B318  0x0054  CONFIRMED       KThread_init_stack_and_svc_frame                        C verificado: configura punteros de pila (+0x100/+0x200) de KThread
+0xFFF1B36C  0x0074  CONFIRMED       k11_memcpy                                              C verificado: memcpy / __aeabi_memcpy
+0xFFF1B3E0  0x005C  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1B3E0                          C: planificación KThread/KScheduler (19L)
+0xFFF1B444  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B444                           C: rutina analizada en Ghidra (18L)
+0xFFF1B488  0x001C  EVIDENCE_BASED  k11_kernel_routine_0xFFF1B488                           C: rutina analizada en Ghidra (9L)
+0xFFF1B4A4  0x0000  CONFIRMED       KMutex_waitlist_begin                                   C verificado: devuelve iterador inicial de espera del KMutex
+0xFFF1B4B0  0x0000  CONFIRMED       KMutex_waitlist_end                                     C verificado: devuelve sentinela final de espera del KMutex
+0xFFF1B4BC  0x00A8  EVIDENCE_BASED  KThread_remove_sync_priority_node                       C: desenlaza nodo +0x14 de lista de prioridades de KThread
+0xFFF1B56C  0x01C4  EVIDENCE_BASED  KThread_insert_priority_node                            C: inserta nodo ordenado por prioridad en lista de KThread
+0xFFF1B738  0x00A4  EVIDENCE_BASED  k11_timer_queue_find_slot                               C: recorre cola de timers activos para inserción ordenada
+0xFFF1B7DC  0x00A0  EVIDENCE_BASED  k11_mmu_get_l1_l2_pte                                   C: obtiene punteros a entrada L1 y PTE L2 para VA dada
+0xFFF1B87C  0x00B0  EVIDENCE_BASED  k11_mmu_set_l2_entry_and_tlb                            C: actualiza entrada PTE L2 y mantiene alineación de tabla
+0xFFF1B92C  0x01A8  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1B92C                           C: sección crítica/atómica ldrex/strex (84L)
+0xFFF1BAD4  0x0000  EVIDENCE_BASED  k11_priv_timer_control                                  Configura Private Timer 0xFFFEE804/08
+0xFFF1BBCC  0x007C  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1BBCC                          C: planificación KThread/KScheduler (66L)
+0xFFF1BC48  0x00A4  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1BC48                          C: planificación KThread/KScheduler (44L)
+0xFFF1BCEC  0x0010  CONFIRMED       k11_dcache_invalidate_all                               CP15 + C verificado: MCR c7,c6,0 + DSB
+0xFFF1BCFC  0x0050  EVIDENCE_BASED  KProcess_cleanup_all_mem_blocks                         C: recorre lista de bloques de memoria del proceso y libera entradas
+0xFFF1BD00  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1BD00                           C: rutina analizada en Ghidra (21L)
+0xFFF1BD4C  0x0010  CONFIRMED       k11_gic_set_irq_priority_raw                            MMIO GIC + C verificado: escribe byte prioridad en ICDIPR (-0x10c00)
+0xFFF1BD68  0x0044  CONFIRMED       KThread_set_sched_state                                 C verificado: cambia estado KThread+0x34 y actualiza KScheduler
+0xFFF1BDB4  0x0150  EVIDENCE_BASED  k11_ipi_send_sync                                       Dispara IPI 0xFFFEFF00
+0xFFF1BF14  0x0104  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1BF14                          C: planificación KThread/KScheduler (53L)
+0xFFF1C024  0x004C  CONFIRMED       KThread_set_suspended_flag                              C verificado: conmuta bit 0x80 en KThread+0x34 y actualiza KScheduler
+0xFFF1C078  0x008C  EVIDENCE_BASED  k11_core_timer_arm_next_tick                            C: programa registro load/control del timer privado del core bajo critical section
+0xFFF1C10C  0x0048  CONFIRMED       k11_core_clear_running_thread_atomic                    C + ldrex verificado: limpia hilo activo por core en +0x10
+0xFFF1C158  0x0034  CONFIRMED       k11_slab_alloc                                          ldrex/strex + C verificado: pop atómico desde slab free-list
+0xFFF1C18C  0x0024  CONFIRMED       k11_list_push_back                                      C verificado: inserción al final en lista circular doblemente enlazada
+0xFFF1C1B0  0x0028  CONFIRMED       k11_slab_free                                           ldrex/strex + C verificado: push atómico hacia slab free-list
+0xFFF1C1D8  0x00C8  EVIDENCE_BASED  k11_kernel_fatal_panic                                  C: detiene sistema/núcleos si falla aserción crítica del kernel
+0xFFF1C2B8  0x0014  EVIDENCE_BASED  KResourceLimit_release_if_nonzero                       C: comprueba KResourceLimit+0x7c y libera cuota
+0xFFF1C2CC  0x0050  CONFIRMED       k11_list_erase_node                                     C verificado: desenlaza nodo de lista circular doblemente enlazada
+0xFFF1C31C  0x07F8  EVIDENCE_BASED  k11_mmu_map_virtual_range                               C: mapea rango virtual->físico completo en tablas L1/L2 (403L)
+0xFFF1CB48  0x0098  CONFIRMED       KResourceLimit_release_resource                         C + ldrex verificado: libera cuota bajo lock +0x58 y despierta waiters
+0xFFF1CBE4  0x00A0  CONFIRMED       k11_mmu_walk_l1_l2                                      C verificado: traduce entrada L1/L2 en tabla MMU del proceso
+0xFFF1CC84  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CC84                           C: rutina analizada en Ghidra (23L)
+0xFFF1CD2C  0x0000  CONFIRMED       k11_ctz_u32                                             C verificado: count trailing zeros en entero de 32 bits
+0xFFF1CD58  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CD58                           C: rutina analizada en Ghidra (18L)
+0xFFF1CD8C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CD8C                           C: rutina analizada en Ghidra (25L)
+0xFFF1CDCC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CDCC                           C: rutina analizada en Ghidra (26L)
+0xFFF1CE14  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CE14                           C: rutina analizada en Ghidra (15L)
+0xFFF1CE40  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CE40                           C: rutina analizada en Ghidra (17L)
+0xFFF1CEA4  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CEA4                           C: rutina analizada en Ghidra (24L)
+0xFFF1CF04  0x0000  EVIDENCE_BASED  k11_cdma_emit_loop_block                                C verificado: emite bloque DMALP/vcall/DMALPEND de microcódigo PL330
+0xFFF1CFE8  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1CFE8                           C: rutina analizada en Ghidra (18L)
+0xFFF1D02C  0x0020  EVIDENCE_BASED  k11_kernel_routine_0xFFF1D02C                           C: rutina analizada en Ghidra (16L)
+0xFFF1D04C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1D04C                           C: rutina analizada en Ghidra (27L)
+0xFFF1D094  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF1D094                           C: rutina analizada en Ghidra (7L)
+0xFFF1D0B0  0x0000  EVIDENCE_BASED  k11_cdma_emit_channel_cfg_inst                          C verificado: empaqueta parámetros de canal CDMA hacia emit PL330 0xBC
+0xFFF1D170  0x022C  CONFIRMED       k11_aeabi_ldivmod                                       C verificado: división/módulo entero de 64 bits (__aeabi_ldivmod)
+0xFFF1D39C  0x0188  CONFIRMED       k11_klock_acquire_slow                                  C + ldrex verificado: ruta lenta de lock con espera en KScheduler
+0xFFF1D528  0x0044  CONFIRMED       k11_klock_unlock_wake                                   MMIO + C verificado: envía SGI IPI para despertar núcleos esperando lock
+0xFFF1D574  0x0110  CONFIRMED       k11_critical_section_enter                              C + ldrex verificado: entra en sección crítica recursiva global
+0xFFF1D688  0x002C  CONFIRMED       KScheduler_on_thread_state_change                       C verificado: encola/desencola KThread en KScheduler según estado
+0xFFF1D6B4  0x00B0  CONFIRMED       k11_critical_section_leave                              C + DMB verificado: sale de sección crítica y replanifica si pendiente
+0xFFF1D764  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF1D764                          C: planificación KThread/KScheduler (99L)
+0xFFF1D7B4  0x021C  EVIDENCE_BASED  KSynchronizationObject_signal_and_wake                  C: despierta hilos esperando en KSynchronizationObject bajo critical section
+0xFFF1D7D4  0x007C  EVIDENCE_BASED  k11_dcache_flush_range                                  Implementación llamada por svc_0x54_FlushProcessDataCache
+0xFFF1D850  0x01B8  EVIDENCE_BASED  k11_cache_cp15_op_0xFFF1D850                            C: mantenimiento caché CP15 (98L)
+0xFFF1DA08  0x0028  EVIDENCE_BASED  k11_dcache_clean_inv_all                                CP15 c7,c14,0
+0xFFF1DA3C  0x007C  EVIDENCE_BASED  k11_dcache_store_range                                  Implementación llamada por svc_0x53_StoreProcessDataCache
+0xFFF1DAB8  0x0000  EVIDENCE_BASED  k11_kobject_untrack_rtti                                Desregistro RTTI llamado por ~K*
+0xFFF1DB94  0x01BC  EVIDENCE_BASED  KDmaObject_create_or_init                               XREF a vtbl_KDmaObject
+0xFFF1DD70  0x0020  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1DD70                           C: sección crítica/atómica ldrex/strex (10L)
+0xFFF1DD90  0x0088  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1DD90                           C: sección crítica/atómica ldrex/strex (18L)
+0xFFF1DE20  0x0074  EVIDENCE_BASED  k11_slab_list_op_0xFFF1DE20                             C: manipulación de lista/slab (12L)
+0xFFF1DE94  0x0024  EVIDENCE_BASED  k11_kernel_routine_0xFFF1DE94                           C: rutina analizada en Ghidra (5L)
+0xFFF1DEB8  0x0118  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1DEB8                           C: sección crítica/atómica ldrex/strex (95L)
+0xFFF1DFDC  0x0078  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1DFDC                           C: sección crítica/atómica ldrex/strex (38L)
+0xFFF1E058  0x013C  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF1E058                               C: gestión MMU/memoria (72L, llama ['k11_klock_acquire_slow', 'k11_mem_pool_find_largest_gap'])
+0xFFF1E198  0x0208  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1E198                           C: sección crítica/atómica ldrex/strex (141L)
+0xFFF1E3BC  0x0108  EVIDENCE_BASED  k11_kernel_routine_0xFFF1E3BC                           C: rutina analizada en Ghidra (55L)
+0xFFF1E4D0  0x0040  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1E4D0                           C: sección crítica/atómica ldrex/strex (30L)
+0xFFF1E514  0x0074  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF1E514                           C: sección crítica/atómica ldrex/strex (45L)
+0xFFF1E51C  0x0000  EVIDENCE_BASED  k11_cdma_xfer_setup                                     Configura canales CDMA
+0xFFF1E594  0x0018  EVIDENCE_BASED  k11_kernel_routine_0xFFF1E594                           C: rutina analizada en Ghidra (11L)
+0xFFF1E5C8  0x000C  EVIDENCE_BASED  k11_accessor_helper_0xFFF1E5C8                          C: accessor/getter breve (4L)
+0xFFF1E5D8  0x000C  EVIDENCE_BASED  k11_accessor_helper_0xFFF1E5D8                          C: accessor/getter breve (4L)
+0xFFF1E5E8  0x002C  EVIDENCE_BASED  k11_kernel_routine_0xFFF1E5E8                           C: rutina analizada en Ghidra (14L)
+0xFFF1E614  0x0074  EVIDENCE_BASED  k11_kernel_routine_0xFFF1E614                           C: rutina analizada en Ghidra (20L)
+0xFFF1E688  0x00E0  EVIDENCE_BASED  k11_handle_kobj_op_0xFFF1E688                           C: gestión handles/KAutoObject (59L)
+0xFFF1E770  0x007C  EVIDENCE_BASED  k11_process_wait_lock_cleanup                           C: adquiere lock +0x520 del KProcess y limpia estado pendiente
+0xFFF1E7F0  0x0130  EVIDENCE_BASED  k11_cdma_op_0xFFF1E7F0                                  C: transferencia/estado CDMA (78L)
+0xFFF1E924  0x02FC  EVIDENCE_BASED  k11_ipc_dispatch_sync_request                           C: realiza transferencia IPC entre cliente/servidor y traduce buffers
+0xFFF1EC34  0x0058  EVIDENCE_BASED  k11_mem_verify_dma_dst                                  C: valida rango de destino para DMA/usuario (0xE0A01BF5)
+0xFFF1EC90  0x0064  EVIDENCE_BASED  k11_mem_verify_dma_src                                  C: valida rango de origen para DMA/usuario (0xE0A01BF5)
+0xFFF1ECF8  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF1ECF8                               C: gestión MMU/memoria (126L, llama ['k11_mmu_get_l1_l2_pte', 'k11_mmu_va_to_pa_walk'])
+0xFFF1F068  0x00A8  EVIDENCE_BASED  k11_shared_mem_unmap_block                              C: desmapea bloque de KSharedMemory y valida permisos (0xE0A01835)
+0xFFF1F114  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF1F114                               C: gestión MMU/memoria (219L, llama ['k11_mmu_control_memory_split_or_protect', 'k11_mmu_unmap_or_shrink_region'])
+0xFFF1F6C8  0x0130  EVIDENCE_BASED  k11_kprocess_alloc_and_map_pages                        C: asigna páginas físicas y las mapea en el KProcess
+0xFFF1F804  0x0108  EVIDENCE_BASED  k11_mmu_unmap_process_region                            C: verifica rango, desmapea páginas y libera bloques del proceso
+0xFFF1F910  0x01CC  EVIDENCE_BASED  k11_result_check_op_0xFFF1F910                          Retorna Result kernel
+0xFFF1FAE4  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF1FAE4                               C: gestión MMU/memoria (56L, llama ['k11_list_init', 'k11_mmu_remap_or_split_l2_pages'])
+0xFFF1FBF4  0x002C  EVIDENCE_BASED  k11_sync_check_signaled_objects                         C: comprueba estado señalizado en array de objetos
+0xFFF1FC20  0x0080  EVIDENCE_BASED  k11_result_check_op_0xFFF1FC20                          Retorna Result kernel
+0xFFF1FD88  0x00CC  EVIDENCE_BASED  k11_gic_release_process_irqs                            C: libera/deshabilita IRQs enlazadas al cerrar proceso
+0xFFF1FE58  0x00D8  EVIDENCE_BASED  k11_gic_cleanup_all_irqs                                C: reasigna/limpia tabla de IRQs asociadas a KEvent
+0xFFF1FF34  0x007C  EVIDENCE_BASED  k11_icache_invalidate_range                             CP15 c7,c5,0/1/4/6
+0xFFF1FFB0  0x0000  EVIDENCE_BASED  k11_cdma_op_0xFFF1FFB0                                  C: transferencia/estado CDMA (26L)
+0xFFF20098  0x00D8  EVIDENCE_BASED  k11_kdebug_enqueue_event                                C: encola evento de depuración en KDebug usando slab 0xFFF31460
+0xFFF2017C  0x0000  EVIDENCE_BASED  k11_slab_list_op_0xFFF2017C                             C: manipulación de lista/slab (18L)
+0xFFF20218  0x018C  EVIDENCE_BASED  k11_kdebug_enqueue_thread_event                         C: genera y encola evento Attach/ExitThread en KDebug bajo lock
+0xFFF203B8  0x0134  EVIDENCE_BASED  k11_timer_irq_handler_tick                              C: procesa interrupción de timer y dispara replanificación
+0xFFF204F4  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF204F4                           C: sección crítica/atómica ldrex/strex (41L)
+0xFFF20770  0x0000  EVIDENCE_BASED  k11_kthread_locked_op_0xFFF20770                        C: acceso atómico/locked a KThread actual (37L)
+0xFFF2092C  0x0000  EVIDENCE_BASED  KThread_sleep                                           Implementación llamada por svc_0x0A_SleepThread
+0xFFF20AE4  0x00A4  EVIDENCE_BASED  k11_process_remove_from_global_list                     C: retira proceso de lista global bajo lock
+0xFFF20B90  0x004C  EVIDENCE_BASED  KSession_init_objects                                   C: inicializa objetos cliente/servidor de KSession con add_ref
+0xFFF20BDC  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF20BDC                               C: gestión MMU/memoria (45L, llama ['k11_mem_pool_free_page', 'k11_kernel_fatal_panic'])
+0xFFF20CD8  0x0014  CONFIRMED       k11_bitmap_test_bit                                     ldrb + ands r0, r0, (1<<r1)
+0xFFF20CEC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF20CEC                           C: rutina analizada en Ghidra (38L)
+0xFFF20D70  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF20D70                           C: rutina analizada en Ghidra (5L)
+0xFFF20D88  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF20D88                               C: gestión MMU/memoria (285L, llama ['KThread_set_sched_state', 'k11_ipi_send_cache_sync'])
+0xFFF21348  0x0000  EVIDENCE_BASED  k11_tls_get_user_ptr                                    mrc p15, 0, rX, c13, c0, 3
+0xFFF2137C  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF2137C                          C: planificación KThread/KScheduler (87L)
+0xFFF215BC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF215BC                           C: rutina analizada en Ghidra (48L)
+0xFFF21670  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF21670                           C: rutina analizada en Ghidra (22L)
+0xFFF216E4  0x0160  EVIDENCE_BASED  k11_result_check_op_0xFFF216E4                          Retorna Result kernel
+0xFFF2184C  0x00E8  EVIDENCE_BASED  k11_handle_table_close                                  Implementación llamada por svc_0x23_CloseHandle
+0xFFF21938  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF21938                           C: rutina analizada en Ghidra (15L)
+0xFFF21998  0x02B0  EVIDENCE_BASED  KProcess_terminate_and_release                          C: marca KThread/KProcess terminado y libera mapeos bajo klock
+0xFFF21C78  0x0518  EVIDENCE_BASED  k11_wait_synchronization_n_impl                         C: implementación de WaitSynchronizationN con lista de timers y nodos slab
+0xFFF221A8  0x01F4  EVIDENCE_BASED  k11_kdebug_init_event_vtables                           C: construye descriptores de los 5 tipos de evento KDebug
+0xFFF223B4  0x0078  EVIDENCE_BASED  k11_list_node_alloc                                     C: asigna un nodo de lista desde slab global 0xFFF31460
+0xFFF22430  0x0084  EVIDENCE_BASED  k11_list_node_free                                      C: devuelve nodo de lista al slab global 0xFFF31460
+0xFFF224B8  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF224B8                           C: sección crítica/atómica ldrex/strex (52L)
+0xFFF224BC  0x0000  EVIDENCE_BASED  k11_cdma_cfg11_channel_op                               CDMA + CFG11
+0xFFF2258C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2258C                           C: rutina analizada en Ghidra (18L)
+0xFFF225D0  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF225D0                           C: rutina analizada en Ghidra (16L)
+0xFFF225FC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF225FC                           C: rutina analizada en Ghidra (19L)
+0xFFF22664  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF22664                               C: gestión MMU/memoria (519L, llama ['k11_klock_acquire_slow', 'k11_klock_unlock_wake'])
+0xFFF23150  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF23150                               C: gestión MMU/memoria (433L, llama ['KAutoObject_add_ref', 'k11_handle_table_lookup'])
+0xFFF23B0C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF23B0C                           C: rutina analizada en Ghidra (6L)
+0xFFF23B18  0x0000  EVIDENCE_BASED  k11_cdma_op_0xFFF23B18                                  C: transferencia/estado CDMA (62L)
+0xFFF23CCC  0x00E4  EVIDENCE_BASED  KDmaObject_start_cdma_transfer                          C: configura e inicia transferencia en canal CDMA hardware
+0xFFF23DB0  0x0498  EVIDENCE_BASED  KDmaObject_configure_cdma_microcode                     C: ensambla microcódigo DMA PL330 y configura canales CDMA (187L)
+0xFFF24248  0x0090  EVIDENCE_BASED  KThread_recalc_inherited_priority                       C: recorre lista de mutexes y recalcula prioridad heredada del KThread
+0xFFF242D8  0x009C  EVIDENCE_BASED  k11_mmu_unmap_temp_kernel_alias                         C: limpia mapeo temporal en memoria del kernel y actualiza TLB
+0xFFF24374  0x0000  EVIDENCE_BASED  k11_tlb_inv_asid_and_ipi                                CP15 c8,c7,3 + IPI
+0xFFF2442C  0x0084  EVIDENCE_BASED  k11_result_check_op_0xFFF2442C                          Retorna Result kernel
+0xFFF244BC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF244BC                           C: rutina analizada en Ghidra (26L)
+0xFFF24510  0x0000  EVIDENCE_BASED  k11_gic_and_dcache_sync                                 GIC + D-cache sync
+0xFFF245FC  0x0048  CONFIRMED       k11_gic_config_irq_priority_and_target                  MMIO GIC + C verificado: configura ICDIPR (-0x10c00) e ICDIPTR (-0x10800)
+0xFFF24648  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF24648                           C: rutina analizada en Ghidra (8L)
+0xFFF24684  0x0044  CONFIRMED       k11_gic_set_irq_trigger_mode                            MMIO GIC + C verificado: configura bits edge/level en ICDICFR
+0xFFF246CC  0x0088  CONFIRMED       k11_dcache_clean_or_flush_aligned                       CP15 + C verificado: limpieza/invalidación D-Cache alineada a 32B
+0xFFF24754  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF24754                           C: sección crítica/atómica ldrex/strex (44L)
+0xFFF24874  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF24874                           C: rutina analizada en Ghidra (99L)
+0xFFF24AA0  0x0000  EVIDENCE_BASED  k11_ipi_send_tlb_shootdown                              Dispara IPI 0xFFFEFF00
+0xFFF24D38  0x0068  EVIDENCE_BASED  k11_mem_list_equals                                     C: compara dos listas de descriptores de memoria KMemoryBlock
+0xFFF24DA0  0x0044  EVIDENCE_BASED  k11_gic_dispatch_pending_bitmask                        C: extrae bit activo (CTZ) y despacha interrupciones pendientes
+0xFFF24DE4  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF24DE4                           C: rutina analizada en Ghidra (17L)
+0xFFF24E10  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF24E10                           C: rutina analizada en Ghidra (15L)
+0xFFF24E34  0x0000  EVIDENCE_BASED  k11_accessor_helper_0xFFF24E34                          C: accessor/getter breve (5L)
+0xFFF24E44  0x0000  EVIDENCE_BASED  k11_ipi_send_cache_sync                                 Dispara IPI 0xFFFEFF00
+0xFFF24FAC  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF24FAC                               C: gestión MMU/memoria (11L, llama ['k11_mmu_walk_l1_l2'])
+0xFFF25200  0x0000  EVIDENCE_BASED  k11_cdma_status_read                                    Accede CDMA 0xFFFCC000
+0xFFF2523C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2523C                           C: rutina analizada en Ghidra (5L)
+0xFFF25254  0x0010  CONFIRMED       k11_cdma_get_channel_pc                                 MMIO CDMA + C verificado: lee registro PC canal CDMA (+0x104)
+0xFFF25268  0x0000  EVIDENCE_BASED  k11_accessor_helper_0xFFF25268                          C: accessor/getter breve (4L)
+0xFFF25280  0x0000  EVIDENCE_BASED  k11_cdma_irq_ack                                        Accede CDMA 0xFFFCCD00/08
+0xFFF25394  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF25394                           C: rutina analizada en Ghidra (15L)
+0xFFF253FC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF253FC                           C: rutina analizada en Ghidra (14L)
+0xFFF2544C  0x0000  EVIDENCE_BASED  k11_mmu_switch_ttbr0_asid                               CP15 c13,c0,1 + c2,c0,0 + c8,c7,2
+0xFFF25660  0x0000  CONFIRMED       k11_mmu_switch_ttbr0_and_inval_asid                     CP15 + C verificado: escribe TTBR0/CONTEXTIDR e invalida TLB por ASID
+0xFFF256C8  0x0000  CONFIRMED       k11_mmu_decode_l2_pte                                   C verificado: decodifica PTE L2 64KB (0x10) / 4KB en tabla MMU
+0xFFF257BC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF257BC                           C: rutina analizada en Ghidra (6L)
+0xFFF257EC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF257EC                           C: rutina analizada en Ghidra (19L)
+0xFFF2584C  0x0000  EVIDENCE_BASED  k11_dcache_invalidate_range                             Implementación llamada por svc_0x52_InvalidateProcessDataCache
+0xFFF2592C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2592C                           C: rutina analizada en Ghidra (49L)
+0xFFF25A28  0x0000  EVIDENCE_BASED  k11_mem_pool_alloc_pages                                C: asigna bloques de páginas del pool de memoria física (165L)
+0xFFF25E20  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF25E20                           C: sección crítica/atómica ldrex/strex (21L)
+0xFFF25E84  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF25E84                           C: rutina analizada en Ghidra (24L)
+0xFFF25ED4  0x0000  EVIDENCE_BASED  k11_slab_list_op_0xFFF25ED4                             C: manipulación de lista/slab (17L)
+0xFFF25F40  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF25F40                           C: rutina analizada en Ghidra (169L)
+0xFFF26230  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26230                           C: rutina analizada en Ghidra (4L)
+0xFFF26234  0x0000  EVIDENCE_BASED  k11_accessor_helper_0xFFF26234                          C: accessor/getter breve (4L)
+0xFFF26238  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26238                           C: rutina analizada en Ghidra (4L)
+0xFFF26244  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF26244                               C: gestión MMU/memoria (26L, llama ['k11_mmu_read_write_ttbr'])
+0xFFF2626C  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF2626C                               C: gestión MMU/memoria (22L, llama ['k11_atomic_sync_op_0xFFF1AC50', 'k11_mmu_flush_icache_btac_tlb'])
+0xFFF26304  0x0000  EVIDENCE_BASED  k11_kthread_locked_op_0xFFF26304                        C: acceso atómico/locked a KThread actual (42L)
+0xFFF26394  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF26394                           C: sección crítica/atómica ldrex/strex (11L)
+0xFFF263FC  0x0000  EVIDENCE_BASED  k11_priv_timer_read_1                                   Lee 0xFFFEE824
+0xFFF26604  0x0000  EVIDENCE_BASED  k11_priv_timer_read_2                                   Lee 0xFFFEE824
+0xFFF267AC  0x0000  EVIDENCE_BASED  KSemaphore_finalize                                     Slot 1 vtable KSemaphore: libera recursos y KResourceLimit (C verificado)
+0xFFF26814  0x0000  EVIDENCE_BASED  KDmaObject_on_wait_or_sync_op                           Slot 2 vtable KDmaObject (C/ASM verificado)
+0xFFF26858  0x0000  CONFIRMED       KAutoObject_base_destructor                             Destructor base KAutoObject
+0xFFF2685C  0x0000  EVIDENCE_BASED  KAutoObject_default_get_sync_obj                        Slot1 compartido K*
+0xFFF26860  0x0000  CONFIRMED       KSemaphore_is_signaled                                  ASM + C verificado: compara count < max (ldrsh +0x14 < +0x16)
+0xFFF26878  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF26878                           C: sección crítica/atómica ldrex/strex (24L)
+0xFFF26920  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26920                           C: rutina analizada en Ghidra (14L)
+0xFFF26978  0x0000  EVIDENCE_BASED  k11_slab_list_op_0xFFF26978                             C: manipulación de lista/slab (15L)
+0xFFF269D0  0x0000  EVIDENCE_BASED  KCodeSet_finalize                                       Slot 1 vtable KCodeSet: libera recursos y KResourceLimit (C verificado)
+0xFFF269F4  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF269F4                          C: planificación KThread/KScheduler (6L)
+0xFFF26BF0  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26BF0                           C: rutina analizada en Ghidra (136L)
+0xFFF26E70  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26E70                           C: rutina analizada en Ghidra (137L)
+0xFFF26EA4  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF26EA4                           C: rutina analizada en Ghidra (135L)
+0xFFF2715C  0x0000  EVIDENCE_BASED  KSharedMemory_finalize                                  Slot 1 vtable KSharedMemory: libera recursos y KResourceLimit (C verificado)
+0xFFF27314  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF27314                           C: rutina analizada en Ghidra (45L)
+0xFFF273EC  0x0000  EVIDENCE_BASED  KResourceLimit_finalize                                 Slot 1 vtable KResourceLimit: libera recursos y KResourceLimit (C verificado)
+0xFFF27428  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF27428                          C: planificación KThread/KScheduler (77L)
+0xFFF2755C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2755C                           C: rutina analizada en Ghidra (6L)
+0xFFF27614  0x0000  EVIDENCE_BASED  KAddressArbiter_finalize                                Slot 1 vtable KAddressArbiter: libera recursos y KResourceLimit (C verificado)
+0xFFF27670  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF27670                          C: planificación KThread/KScheduler (19L)
+0xFFF27704  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF27704                           C: rutina analizada en Ghidra (67L)
+0xFFF277D8  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF277D8                           C: rutina analizada en Ghidra (286L)
+0xFFF27BB4  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF27BB4                           C: rutina analizada en Ghidra (198L)
+0xFFF27FFC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF27FFC                           C: rutina analizada en Ghidra (45L)
+0xFFF282B8  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF282B8                               C: gestión MMU/memoria (16L, llama ['k11_mmu_map_virtual_range'])
+0xFFF28338  0x0000  EVIDENCE_BASED  KAutoObject_virtual_base_stub                           Método virtual base compartido
+0xFFF2833C  0x0000  EVIDENCE_BASED  KThread_finalize                                        Slot 1 vtable KThread: libera recursos y KResourceLimit (C verificado)
+0xFFF283A4  0x0000  EVIDENCE_BASED  KAutoObject_default_noop_true                           Slot compartido K*
+0xFFF283D8  0x0000  EVIDENCE_BASED  KDmaObject_wait_release_op                              Slot 7 vtable KDmaObject: operación signal/unlock (C verificado)
+0xFFF283DC  0x0000  EVIDENCE_BASED  KDmaObject_wait_acquire_op                              Slot 6 vtable KDmaObject: operación wait/lock (C verificado)
+0xFFF283E0  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF283E0                           C: rutina analizada en Ghidra (9L)
+0xFFF28404  0x0000  EVIDENCE_BASED  k11_accessor_helper_0xFFF28404                          C: accessor/getter breve (4L)
+0xFFF2841C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2841C                           C: rutina analizada en Ghidra (5L)
+0xFFF285D8  0x0000  CONFIRMED       k11_cdma_emit_pl330_ccr_0xbc                            C verificado: escribe instrucción PL330 0xBC (CCR empaquetado de 6 bytes)
+0xFFF286F8  0x0000  CONFIRMED       k11_cdma_emit_pl330_dmalp                               C verificado: escribe instrucción PL330 DMALP (0x20 | lc<<1)
+0xFFF287E0  0x0000  CONFIRMED       k11_cdma_emit_pl330_dmalpend                            C verificado: escribe instrucción PL330 DMALPEND (0x38 | lc<<2)
+0xFFF28870  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF28870                           C: sección crítica/atómica ldrex/strex (28L)
+0xFFF288EC  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF288EC                           C: rutina analizada en Ghidra (5L)
+0xFFF28900  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF28900                               C: gestión MMU/memoria (40L, llama ['k11_mmu_mem_op_0xFFF26244'])
+0xFFF289E4  0x0000  EVIDENCE_BASED  k11_mmu_read_write_ttbr                                 CP15 c2,c0,0/1
+0xFFF28AB0  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF28AB0                           C: rutina analizada en Ghidra (8L)
+0xFFF28AC4  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF28AC4                          C: planificación KThread/KScheduler (70L)
+0xFFF28BEC  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF28BEC                          C: planificación KThread/KScheduler (51L)
+0xFFF28D10  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF28D10                           C: rutina analizada en Ghidra (13L)
+0xFFF28FE8  0x0000  CONFIRMED       KClientPort_destructor                                  Slot 0 de vtbl_KClientPort
+0xFFF28FFC  0x0000  CONFIRMED       KServerPort_destructor                                  Slot 0 de vtbl_KServerPort
+0xFFF29024  0x0000  EVIDENCE_BASED  KEvent_finalize                                         Slot 1 vtable KEvent: libera recursos y KResourceLimit (C verificado)
+0xFFF290B0  0x0000  EVIDENCE_BASED  KMutex_finalize                                         Slot 1 vtable KMutex: libera recursos y KResourceLimit (C verificado)
+0xFFF290DC  0x0000  CONFIRMED       KMutex_release_and_restore_priority                     C verificado: libera KMutex de KThread y recalcula prioridad heredada
+0xFFF2917C  0x0000  CONFIRMED       KMutex_acquire_and_inherit_priority                     C verificado: adquiere KMutex y aplica priority inheritance al owner
+0xFFF29480  0x0000  EVIDENCE_BASED  KTimer_finalize                                         Slot 1 vtable KTimer: libera recursos y KResourceLimit (C verificado)
+0xFFF294D4  0x0000  EVIDENCE_BASED  k11_mmu_set_contextidr_ttbr0                            CP15 c13,c0,1 + c2,c0,0
+0xFFF29A6C  0x0000  EVIDENCE_BASED  k11_priv_timer_read_reg2c                               Lee 0xFFFEE82C
+0xFFF29A8C  0x0000  EVIDENCE_BASED  k11_priv_timer_read_reg24                               Lee 0xFFFEE824
+0xFFF29B94  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF29B94                           C: rutina analizada en Ghidra (39L)
+0xFFF29B9C  0x0000  EVIDENCE_BASED  k11_priv_timer_write_reg08                              Escribe 0xFFFEE808
+0xFFF29C94  0x0000  CONFIRMED       k11_mmu_flush_icache_btac_tlb                           CP15 + C verificado: invalida I-Cache, BTAC y TLB + DSB/ISB
+0xFFF29C9C  0x0000  EVIDENCE_BASED  k11_tlb_invalidate_all                                  CP15 c8,c7,0
+0xFFF29CE0  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF29CE0                           C: sección crítica/atómica ldrex/strex (74L)
+0xFFF29E00  0x0000  EVIDENCE_BASED  k11_gic_dist_config                                     GIC Dist 0xFFFEF000/400
+0xFFF29F94  0x0000  CONFIRMED       k11_gic_distributor_init_hw                             MMIO GIC + C verificado: inicializa 0xFFFEF000 ICDDCR/ICDICTR y todas las IRQs
+0xFFF29F9C  0x0000  EVIDENCE_BASED  k11_gic_scu_pmu_init                                    PMNC + SCU + GIC
+0xFFF2A1B0  0x0000  EVIDENCE_BASED  k11_cache_flush_all_levels                              CP15 c7 completo
+0xFFF2A244  0x0000  CONFIRMED       k11_cache_clean_inval_d_and_i_range                     CP15 + C verificado: clean/inval D-Cache + inval I-Cache por rango o total
+0xFFF2A3A4  0x0000  EVIDENCE_BASED  k11_mmu_full_context_tlb_flush                          CP15 c13,c0,1 + c2,c0,0 + c8,c7
+0xFFF2A4BC  0x0000  CONFIRMED       k11_dcache_clean_entire_dsb                             CP15 + C verificado: Clean Entire Data Cache + DSB
+0xFFF2A4C0  0x0000  EVIDENCE_BASED  k11_pmu_and_dcache_maint                                CP15 c15,c12,0 + D-cache
+0xFFF2A5A4  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF2A5A4                           C: sección crítica/atómica ldrex/strex (12L)
+0xFFF2A5F0  0x0000  EVIDENCE_BASED  k11_slab_list_op_0xFFF2A5F0                             C: manipulación de lista/slab (26L)
+0xFFF2A6A8  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF2A6A8                          C: planificación KThread/KScheduler (12L)
+0xFFF2A6D0  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF2A6D0                          C: planificación KThread/KScheduler (73L)
+0xFFF2A8BC  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF2A8BC                               C: gestión MMU/memoria (39L, llama ['k11_core_timer_arm_next_tick', 'k11_critical_section_enter'])
+0xFFF2A9C0  0x0000  EVIDENCE_BASED  KThread_add_owned_mutex                                 C: inserta KMutex en lista de mutexes poseídos (+0x60/0x64)
+0xFFF2AA20  0x0000  EVIDENCE_BASED  KThread_remove_owned_mutex                              C: elimina KMutex de lista de mutexes poseídos y libera nodo
+0xFFF2AAAC  0x0000  EVIDENCE_BASED  k11_kdebug_op_0xFFF2AAAC                                C: depuración KDebug (27L, llama ['KDebug_notify_debug_event'])
+0xFFF2AB60  0x0000  EVIDENCE_BASED  k11_mmu_mem_op_0xFFF2AB60                               C: gestión MMU/memoria (53L, llama ['k11_critical_section_enter', 'k11_critical_section_leave'])
+0xFFF2ACE0  0x0000  EVIDENCE_BASED  KProcess_finalize                                       Slot 1 vtable KProcess: libera recursos y KResourceLimit (C verificado)
+0xFFF2AD80  0x0000  CONFIRMED       KClientSession_destructor                               Slot 0 de vtbl_KClientSession
+0xFFF2AD88  0x0000  EVIDENCE_BASED  KSession_mark_closing_2                                 C verificado: transición de estado KSession +0x44 (1 -> 2)
+0xFFF2ADC0  0x0000  CONFIRMED       KServerSession_destructor                               Slot 0 de vtbl_KServerSession
+0xFFF2ADD8  0x0000  EVIDENCE_BASED  KSession_mark_closing_3_vcall                           C verificado: transición KSession +0x44 (1 -> 3) e invocación vtable[2]
+0xFFF2AE10  0x0000  EVIDENCE_BASED  KSession_finalize                                       Slot 1 vtable KSession: libera recursos y KResourceLimit (C verificado)
+0xFFF2AE44  0x0000  CONFIRMED       KDmaObject_GetTypeObj                                   Slot 4 vtable KDmaObject: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2AE60  0x0000  CONFIRMED       KSemaphore_GetTypeObj                                   Slot 4 vtable KSemaphore: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2AE7C  0x0000  EVIDENCE_BASED  KSemaphore_vtable_adjuster_thunk                        Thunk/offset adjuster tras KSemaphore_GetTypeObj
+0xFFF2AE84  0x0000  CONFIRMED       KAutoObject_GetTypeObj                                  Slot 4 vtable KAutoObject: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2AEA0  0x0000  EVIDENCE_BASED  KAutoObject_default_return_zero                         Slot2 compartido (mov r0, 0; bx lr)
+0xFFF2AEA8  0x0000  CONFIRMED       KClientPort_GetTypeObj                                  Slot 4 vtable KClientPort: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2AEF4  0x0000  CONFIRMED       KServerPort_GetTypeObj                                  Slot 4 vtable KServerPort: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2B174  0x0000  EVIDENCE_BASED  k11_cdma_build_1d_transfer                              C verificado: prepara parámetros y genera microcódigo CDMA 1D
+0xFFF2B2D8  0x0000  EVIDENCE_BASED  k11_cdma_build_2d_stride_transfer                       C verificado: genera bucles PL330 para transferencia DMA 2D/stride
+0xFFF2B48C  0x0000  EVIDENCE_BASED  k11_cdma_compile_pl330_program                          C verificado: compilador completo de microprograma DMA PL330 (392L)
+0xFFF2BFEC  0x0000  CONFIRMED       KSharedMemory_GetTypeObj                                Slot 4 vtable KSharedMemory: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C008  0x0000  EVIDENCE_BASED  KSharedMemory_vtable_adjuster_thunk                     Thunk/offset adjuster tras KSharedMemory_GetTypeObj
+0xFFF2C010  0x0000  CONFIRMED       KClientSession_GetTypeObj                               Slot 4 vtable KClientSession: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C02C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2C02C                           C: rutina analizada en Ghidra (12L)
+0xFFF2C058  0x0000  CONFIRMED       KResourceLimit_GetTypeObj                               Slot 4 vtable KResourceLimit: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C074  0x0000  CONFIRMED       KServerSession_GetTypeObj                               Slot 4 vtable KServerSession: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C090  0x0000  CONFIRMED       KAddressArbiter_GetTypeObj                              Slot 4 vtable KAddressArbiter: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C0AC  0x0000  EVIDENCE_BASED  KAddressArbiter_vtable_adjuster_thunk                   Thunk/offset adjuster tras KAddressArbiter_GetTypeObj
+0xFFF2C0B4  0x0000  EVIDENCE_BASED  k11_cdma_compile_dispatch                               C verificado: selecciona emisión 1D vs compilación completa PL330
+0xFFF2C124  0x0000  CONFIRMED       KSynchronizationObject_GetTypeObj                       Slot 4 vtable KSynchronizationObject: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C140  0x0000  CONFIRMED       KPort_GetTypeObj                                        Slot 4 vtable KPort: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C15C  0x0000  CONFIRMED       KEvent_GetTypeObj                                       Slot 4 vtable KEvent: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C178  0x0000  EVIDENCE_BASED  KEvent_vtable_adjuster_thunk                            Thunk/offset adjuster tras KEvent_GetTypeObj
+0xFFF2C180  0x0000  CONFIRMED       KMutex_GetTypeObj                                       Slot 4 vtable KMutex: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C19C  0x0000  EVIDENCE_BASED  KMutex_vtable_adjuster_thunk                            Thunk/offset adjuster tras KMutex_GetTypeObj
+0xFFF2C1A4  0x0000  CONFIRMED       KTimer_GetTypeObj                                       Slot 4 vtable KTimer: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C1C0  0x0000  EVIDENCE_BASED  KTimer_vtable_adjuster_thunk                            Thunk/offset adjuster tras KTimer_GetTypeObj
+0xFFF2C1C8  0x0000  CONFIRMED       KDebug_GetTypeObj                                       Slot 4 vtable KDebug: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C1E4  0x0000  CONFIRMED       KThread_GetTypeObj                                      Slot 4 vtable KThread: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C200  0x0000  CONFIRMED       KCodeSet_GetTypeObj                                     Slot 4 vtable KCodeSet: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C21C  0x0000  EVIDENCE_BASED  k11_kernel_routine_0xFFF2C21C                           C: rutina analizada en Ghidra (72L)
+0xFFF2C31C  0x0000  CONFIRMED       KProcess_GetTypeObj                                     Slot 4 vtable KProcess: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C338  0x0000  CONFIRMED       KSession_GetTypeObj                                     Slot 4 vtable KSession: escribe KTypeObj descriptor (ASM verificado)
+0xFFF2C358  0x0000  EVIDENCE_BASED  k11_atomic_sync_op_0xFFF2C358                           C: sección crítica/atómica ldrex/strex (46L)
+0xFFF2C40C  0x0000  EVIDENCE_BASED  k11_sched_thread_op_0xFFF2C40C                          C: planificación KThread/KScheduler (43L)
+0xFFF2C538  0x0000  EVIDENCE_BASED  k11_kdebug_op_0xFFF2C538                                C: depuración KDebug (20L, llama ['k11_kdebug_op_0xFFF2AAAC'])
+0xFFF2C604  0x0000  CONFIRMED       KDmaObject_destructor                                   Slot 0 de vtbl_KDmaObject
+0xFFF2C640  0x0000  CONFIRMED       KSemaphore_destructor                                   Slot 0 de vtbl_KSemaphore
+0xFFF2C67C  0x0000  CONFIRMED       KSharedMemory_destructor                                Slot 0 de vtbl_KSharedMemory
+0xFFF2C6B8  0x0000  CONFIRMED       KResourceLimit_destructor                               Slot 0 de vtbl_KResourceLimit
+0xFFF2C6F4  0x0000  CONFIRMED       KAddressArbiter_destructor                              Slot 0 de vtbl_KAddressArbiter
+0xFFF2C730  0x0000  CONFIRMED       KPort_destructor                                        Slot 0 de vtbl_KPort
+0xFFF2C76C  0x0000  CONFIRMED       KEvent_destructor                                       Slot 0 de vtbl_KEvent
+0xFFF2C7A8  0x0000  CONFIRMED       KMutex_destructor                                       Slot 0 de vtbl_KMutex
+0xFFF2C7E4  0x0000  CONFIRMED       KTimer_destructor                                       Slot 0 de vtbl_KTimer
+0xFFF2C820  0x0000  CONFIRMED       KDebug_destructor                                       Slot 0 de vtbl_KDebug
+0xFFF2C85C  0x0000  CONFIRMED       KThread_destructor                                      Slot 0 de vtbl_KThread
+0xFFF2C898  0x0000  CONFIRMED       KCodeSet_destructor                                     Slot 0 de vtbl_KCodeSet
+0xFFF2C8D4  0x0000  CONFIRMED       KProcess_destructor                                     Slot 0 de vtbl_KProcess
+0xFFF2C910  0x0000  CONFIRMED       KSession_destructor                                     Slot 0 de vtbl_KSession
+0xFFF2D260  0x0000  CONFIRMED       k11_cp15_read_dfsr                                      CP15 + C verificado: lee Data Fault Status Register (DFSR)
+0xFFF2D294  0x0000  CONFIRMED       vtbl_KDmaObject                                         Tabla virtual C++ de KDmaObject
+0xFFF2D2EC  0x0000  CONFIRMED       vtbl_KSemaphore                                         Tabla virtual C++ de KSemaphore
+0xFFF2D338  0x0000  CONFIRMED       k11_cp15_read_ifsr                                      CP15 + C verificado: lee Instruction Fault Status Register (IFSR)
+0xFFF2D344  0x0000  CONFIRMED       vtbl_KAutoObject                                        Tabla virtual C++ de KAutoObject
+0xFFF2D36C  0x0000  CONFIRMED       vtbl_KClientPort                                        Tabla virtual C++ de KClientPort
+0xFFF2D3D4  0x0000  CONFIRMED       vtbl_KServerPort                                        Tabla virtual C++ de KServerPort
+0xFFF2D44C  0x0000  CONFIRMED       vtbl_KSharedMemory                                      Tabla virtual C++ de KSharedMemory
+0xFFF2D474  0x0000  CONFIRMED       vtbl_KClientSession                                     Tabla virtual C++ de KClientSession
+0xFFF2D4EC  0x0000  CONFIRMED       vtbl_KResourceLimit                                     Tabla virtual C++ de KResourceLimit
+0xFFF2D514  0x0000  CONFIRMED       vtbl_KServerSession                                     Tabla virtual C++ de KServerSession
+0xFFF2D554  0x0000  CONFIRMED       vtbl_KAddressArbiter                                    Tabla virtual C++ de KAddressArbiter
+0xFFF2D5F0  0x0000  CONFIRMED       vtbl_KSynchronizationObject                             Tabla virtual C++ de KSynchronizationObject
+0xFFF2D664  0x0000  CONFIRMED       vtbl_KPort                                              Tabla virtual C++ de KPort
+0xFFF2D68C  0x0000  CONFIRMED       vtbl_KEvent                                             Tabla virtual C++ de KEvent
+0xFFF2D6E4  0x0000  CONFIRMED       vtbl_KMutex                                             Tabla virtual C++ de KMutex
+0xFFF2D724  0x0000  CONFIRMED       vtbl_KTimer                                             Tabla virtual C++ de KTimer
+0xFFF2D7A8  0x0000  CONFIRMED       vtbl_KDebug                                             Tabla virtual C++ de KDebug
+0xFFF2D7FC  0x0000  CONFIRMED       vtbl_KThread                                            Tabla virtual C++ de KThread
+0xFFF2D878  0x0000  CONFIRMED       vtbl_KCodeSet                                           Tabla virtual C++ de KCodeSet
+0xFFF2D8A0  0x0000  CONFIRMED       vtbl_KProcess                                           Tabla virtual C++ de KProcess
+0xFFF2D8F0  0x0000  CONFIRMED       vtbl_KSession                                           Tabla virtual C++ de KSession
+0xFFF2E414  0x0000  CONFIRMED       k11_boot_enable_cpacr_vfp                               CP15 + C verificado: configura CPACR para habilitar VFP

@@ -1,0 +1,5 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00133A04,0xcc,strref_csnd_SND_133a04,string_reference,function references string(s): csnd:SND
+0x0014A4B0,0x150,strref_rom_message_s_RI_mstl_LZ_bin_14a4b0,string_reference,function references string(s): msg:/%s/%d_msbt_LZ.bin | rom:/message/%s/RI_mstl_LZ.bin
+0x0014AED0,0xba4,strref_Group_Scene_14aed0,string_reference,function references string(s): Group_Scene
+0x0014E094,0x488,strref_TextArea_00_14e094,string_reference,function references string(s): TextArea_00

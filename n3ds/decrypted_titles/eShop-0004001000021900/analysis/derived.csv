@@ -1,0 +1,135 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00103DD4,0x6,tiger_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x0010401C,0x5,tiger_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00105470,0x18,tiger_svc_0x38_GetResourceLimit_105470,svc_wrapper,"function body is a single `svc #0x38` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00109170,0x18,tiger_svc_0x21_CreateAddressArbiter_109170,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010E828,0x1c,tiger_svc_0x2B_GetProcessInfo_10e828,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011222C,0xb9d4,tiger_ipc_dispatcher_11222c,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0200, 0x000F028B, 0x000F028C"
+0x00113430,0x2d78,tiger_ipc_dispatcher_113430,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C5, 0x000F028B, 0x000F028C"
+0x0011BBD4,0x5d8,tiger_ipc_dispatcher_11bbd4,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x00120FF0,0xc,tiger_svc_0x0A_SleepThread_120ff0,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00122600,0x1c,tiger_svc_0x1E_CreateMemoryBlock_122600,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012261C,0x18,tiger_svc_0x13_CreateMutex_12261c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00122634,0x18,tiger_svc_0x27_DuplicateHandle_122634,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001E6654,0x6,tiger_str_service_act_u,service_name_string,"client of (in ExHeader service-access list): ""act:u"""
+0x001E9718,0x50,tiger_ipc_client_cmd_0048_1e9718,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00480002
+0x0020C970,0x6,tiger_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
+0x0020CB9C,0x258,tiger_ipc_client_cmd_004B_20cb9c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x004B0002
+0x0029C500,0x18,tiger_svc_0x22_ArbitrateAddress_29c500,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029EE6C,0x18,tiger_svc_0x17_CreateEvent_29ee6c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002EC2A8,0x6,tiger_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x002EC2B0,0x5,tiger_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00302F1C,0x10,tiger_func_ptr_table_302f1c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00315DF8,0x6,tiger_str_service_area_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""area:"""
+0x00323844,0xc,tiger_func_ptr_table_323844,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003835C8,0x31fc,tiger_ipc_dispatcher_3835c8,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C3, 0x000F01C5, 0x000F0200"
+0x00386938,0x10,tiger_func_ptr_table_386938,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003B3354,0x6,tiger_str_service_nim_s,service_name_string,"client of (in ExHeader service-access list): ""nim:s"""
+0x003B42DE,0x6,tiger_str_service_exsv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""exsv:"""
+0x003B5074,0x6,tiger_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x003B50D4,0x6,tiger_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x003B50DA,0x6,tiger_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x003B8908,0x6,tiger_str_service_strg_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""strg:"""
+0x003B8938,0x5,tiger_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x003B8944,0x7,tiger_str_service_am_sys,service_name_string,"client of (in ExHeader service-access list): ""am:sys"""
+0x003B89AC,0x9,tiger_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x003B89C8,0x7,tiger_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x003B89CF,0x8,tiger_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x003B89E8,0x7,tiger_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x003B89F1,0x7,tiger_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x003BAAC0,0x6,tiger_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x003BDA44,0x5,tiger_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x003BDA49,0x7,tiger_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x003C704C,0x7,tiger_str_service_boss_U,service_name_string,"client of (in ExHeader service-access list): ""boss:U"""
+0x003C7053,0x7,tiger_str_service_boss_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:P"""
+0x003C705A,0x7,tiger_str_service_boss_M,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:M"""
+0x003C994E,0x9,tiger_str_service_std__cin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cin"""
+0x003C9959,0xa,tiger_str_service_std__cout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cout"""
+0x003C9964,0xa,tiger_str_service_std__cerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cerr"""
+0x003C996F,0xa,tiger_str_service_std__clog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::clog"""
+0x003C997A,0xa,tiger_str_service_std__wcin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcin"""
+0x003C9985,0xb,tiger_str_service_std__wcout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcout"""
+0x003C9990,0xb,tiger_str_service_std__wcerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcerr"""
+0x003C999B,0xb,tiger_str_service_std__wclog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wclog"""
+0x003C9C70,0x10,tiger_func_ptr_table_3c9c70,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003C9E50,0xc,tiger_func_ptr_table_3c9e50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA044,0x10,tiger_func_ptr_table_3ca044,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA078,0x10,tiger_func_ptr_table_3ca078,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA218,0xc,tiger_func_ptr_table_3ca218,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA3D4,0x10,tiger_func_ptr_table_3ca3d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA52C,0x10,tiger_func_ptr_table_3ca52c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA574,0x10,tiger_func_ptr_table_3ca574,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA64C,0x10,tiger_func_ptr_table_3ca64c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA694,0x10,tiger_func_ptr_table_3ca694,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA754,0x10,tiger_func_ptr_table_3ca754,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA844,0x10,tiger_func_ptr_table_3ca844,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA890,0xc,tiger_func_ptr_table_3ca890,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA8D8,0xc,tiger_func_ptr_table_3ca8d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA904,0x10,tiger_func_ptr_table_3ca904,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA94C,0x10,tiger_func_ptr_table_3ca94c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA968,0xc,tiger_func_ptr_table_3ca968,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CAA58,0x10,tiger_func_ptr_table_3caa58,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CAB70,0xc,tiger_func_ptr_table_3cab70,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CAC38,0x10,tiger_func_ptr_table_3cac38,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB3C0,0x14,tiger_func_ptr_table_3cb3c0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB3F0,0x10,tiger_func_ptr_table_3cb3f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB418,0x14,tiger_func_ptr_table_3cb418,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB444,0x14,tiger_func_ptr_table_3cb444,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB470,0xc,tiger_func_ptr_table_3cb470,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB49C,0x14,tiger_func_ptr_table_3cb49c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB4C8,0x14,tiger_func_ptr_table_3cb4c8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB550,0x14,tiger_func_ptr_table_3cb550,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB64C,0x14,tiger_func_ptr_table_3cb64c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB8B0,0x24,tiger_func_ptr_table_3cb8b0,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB9A4,0x30,tiger_func_ptr_table_3cb9a4,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBE28,0x14,tiger_func_ptr_table_3cbe28,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBEA4,0xc,tiger_func_ptr_table_3cbea4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBEEC,0xc,tiger_func_ptr_table_3cbeec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBF74,0x10,tiger_func_ptr_table_3cbf74,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC06C,0xc,tiger_func_ptr_table_3cc06c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC0EC,0xc,tiger_func_ptr_table_3cc0ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC12C,0xc,tiger_func_ptr_table_3cc12c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC174,0xc,tiger_func_ptr_table_3cc174,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC424,0x10,tiger_func_ptr_table_3cc424,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CCC30,0x10,tiger_func_ptr_table_3ccc30,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD088,0xc,tiger_func_ptr_table_3cd088,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD464,0x10,tiger_func_ptr_table_3cd464,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD4BC,0xc,tiger_func_ptr_table_3cd4bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD4F0,0x10,tiger_func_ptr_table_3cd4f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD564,0xc,tiger_func_ptr_table_3cd564,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD5B4,0xc,tiger_func_ptr_table_3cd5b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD5EC,0xc,tiger_func_ptr_table_3cd5ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD8D4,0xc,tiger_func_ptr_table_3cd8d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD920,0x10,tiger_func_ptr_table_3cd920,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD950,0xc,tiger_func_ptr_table_3cd950,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDB18,0x34,tiger_func_ptr_table_3cdb18,pointer_table,13 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDE88,0xc,tiger_func_ptr_table_3cde88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF1C,0x14,tiger_func_ptr_table_3cdf1c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF84,0xc,tiger_func_ptr_table_3cdf84,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE040,0xc,tiger_func_ptr_table_3ce040,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE064,0x20,tiger_func_ptr_table_3ce064,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE3EC,0x5,tiger_str_service_pld_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pld:"""
+0x003D5521,0x6,tiger_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x003D5527,0x6,tiger_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x003D552D,0x6,tiger_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x003D5552,0x6,tiger_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x003D5558,0x9,tiger_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x003D5561,0x6,tiger_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x003D5567,0x9,tiger_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x003D5570,0x6,tiger_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x003D5576,0x9,tiger_str_service_ptm_play,service_name_string,"client of (in ExHeader service-access list): ""ptm:play"""
+0x003D7479,0x6,tiger_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x003D747F,0x6,tiger_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x003D7485,0x9,tiger_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x003D748E,0x9,tiger_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x003D7497,0x8,tiger_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x003D749F,0x8,tiger_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x003D74A7,0x9,tiger_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x003D74B0,0x9,tiger_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x003D7C5B,0x6,tiger_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x003EF0C4,0x14,tiger_func_ptr_table_3ef0c4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EF0EC,0xc,tiger_func_ptr_table_3ef0ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EF4B8,0x18,tiger_func_ptr_table_3ef4b8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EF4D4,0x1c,tiger_func_ptr_table_3ef4d4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EF4F4,0x1c,tiger_func_ptr_table_3ef4f4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EF9EC,0xb,tiger_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

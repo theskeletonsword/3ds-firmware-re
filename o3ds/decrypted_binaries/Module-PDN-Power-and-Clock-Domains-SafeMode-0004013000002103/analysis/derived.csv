@@ -1,0 +1,21 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,pdn_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100120,0x58,pdn_ipc_handler_cmd_0001_100120,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x00100184,0x58,pdn_ipc_handler_cmd_0001_100184,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x001010D0,0x18,pdn_svc_0x2D_ConnectToPort_1010d0,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001012EC,0x18,pdn_svc_0x35_GetProcessId_1012ec,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101314,0x10,pdn_svc_0x3C_Break_101314,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001013BC,0x18,pdn_svc_0x4A_AcceptSession_1013bc,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001013D4,0x18,pdn_svc_0x4F_ReplyAndReceive_1013d4,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101698,0x54,pdn_ipc_client_cmd_0003_101698,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x001016F4,0x48,pdn_ipc_client_cmd_0004_1016f4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00101B50,0x34,pdn_ipc_client_cmd_0001_101b50,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00101C38,0x18,pdn_svc_0x21_CreateAddressArbiter_101c38,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102064,0x6,pdn_str_service_pdn_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:s"""
+0x0010206A,0x6,pdn_str_service_pdn_d,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:d"""
+0x00102070,0x6,pdn_str_service_pdn_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:i"""
+0x00102076,0x6,pdn_str_service_pdn_g,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:g"""
+0x0010207C,0x6,pdn_str_service_pdn_c,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pdn:c"""
+0x00102090,0x5,pdn_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00102095,0x7,pdn_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001020D0,0x6,pdn_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

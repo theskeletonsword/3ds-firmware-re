@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010153C,0x30,mcu_svc_0x02_QueryMemory_10153c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines

@@ -1,0 +1,39 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100B14,0x24,gsp_svc_0x01_ControlMemory_100b14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00100D7C,0x10,gsp_get_tls_100d7c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00100D90,0x34,gsp_svc_0x32_SendSyncRequest_100d90,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100E7C,0x38,gsp_svc_0x32_SendSyncRequest_100e7c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102440,0x38,gsp_svc_0x32_SendSyncRequest_102440,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001035F0,0x24,gsp_svc_0x08_CreateThread_1035f0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0010390C,0x8,gsp_svc_0x23_CloseHandle_10390c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x00105938,0x3c,gsp_svc_0x32_SendSyncRequest_105938,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105AB0,0x34,gsp_svc_0x32_SendSyncRequest_105ab0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105AE4,0x34,gsp_svc_0x32_SendSyncRequest_105ae4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105B18,0x34,gsp_svc_0x32_SendSyncRequest_105b18,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00105B64,0x40,gsp_svc_0x32_SendSyncRequest_105b64,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001061FC,0x34,gsp_svc_0x32_SendSyncRequest_1061fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00106E50,0x10,gsp_get_tls_106e50,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00107628,0x30,gsp_svc_0x24_WaitSynchronization1_107628,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 11 C lines
+0x00107788,0x10,gsp_get_tls_107788,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00108758,0x38,gsp_svc_0x24_WaitSynchronization1_108758,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x00108800,0x24,gsp_svc_0x25_WaitSynchronizationN_108800,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x001088D0,0x30,gsp_svc_0x32_SendSyncRequest_1088d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00108A24,0x4,gsp_svc_0x3C_Break_108a24,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x001090EC,0x8,gsp_svc_0x23_CloseHandle_1090ec,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x001091F4,0x8,gsp_svc_0x23_CloseHandle_1091f4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x0010A9FC,0x28,gsp_svc_0x56_StopDma_10a9fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x56) (StopDma); 11 C lines
+0x0010AD78,0x34,gsp_svc_0x32_SendSyncRequest_10ad78,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010ADAC,0x34,gsp_svc_0x32_SendSyncRequest_10adac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010ADE0,0x3c,gsp_svc_0x32_SendSyncRequest_10ade0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010AE20,0x40,gsp_svc_0x32_SendSyncRequest_10ae20,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010AE60,0x34,gsp_svc_0x32_SendSyncRequest_10ae60,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010AF2C,0x34,gsp_svc_0x32_SendSyncRequest_10af2c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010C930,0x28,gsp_svc_0x55_StartInterProcessDma_10c930,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x55) (StartInterProcessDma); 8 C lines
+0x0010CD2C,0x2c,gsp_svc_0x32_SendSyncRequest_10cd2c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010CE88,0x20,gsp_svc_0x18_SignalEvent_10ce88,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x18) (SignalEvent); 9 C lines
+0x0010CF3C,0xc,gsp_get_tls_10cf3c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0010D2C0,0x28,gsp_svc_0x23_CloseHandle_10d2c0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0010D2FC,0x2c,gsp_svc_0x23_CloseHandle_10d2fc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x0010D328,0x28,gsp_svc_0x23_CloseHandle_10d328,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0010D414,0x28,gsp_svc_0x23_CloseHandle_10d414,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0010D43C,0x30,gsp_svc_0x23_CloseHandle_10d43c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines

@@ -1,0 +1,4 @@
+o3ds_symbol,o3ds_ea,rank,n3ds_candidate_ea,score,margin_to_rank2,note
+mcu_svc_0x3C_Break_1019dc,0x1019dc,1,0x103acc,0.956,0.899,
+mcu_svc_0x3C_Break_1019dc,0x1019dc,2,0x10170c,0.057,0.057,
+mcu_svc_0x3C_Break_1019dc,0x1019dc,3,0x10153c,0.049,0.049,

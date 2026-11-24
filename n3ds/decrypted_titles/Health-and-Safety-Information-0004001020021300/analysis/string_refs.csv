@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0014FA14,0x29c,strref_IsLocationRect_14fa14,string_reference,function references string(s): IsAreaRect | IsLocationRect
+0x00159168,0x4f0,strref_Lang_03d_159168,string_reference,function references string(s): Lang_%03d | RegionNum
+0x001598F0,0x98,strref_Lang_03d_1598f0,string_reference,function references string(s): Lang_%03d
+0x00159C18,0x118,strref_Lang_03d_159c18,string_reference,function references string(s): Lang_%03d
+0x0019FA50,0x48,strref_possix_C_get_mode_not_supported_19fa50,string_reference,function references string(s): possix _C_get_mode not supported

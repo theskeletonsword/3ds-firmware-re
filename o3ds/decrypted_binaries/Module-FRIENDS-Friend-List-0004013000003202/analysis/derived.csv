@@ -1,0 +1,88 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00109220,0x12,friends_ipc_handler_cmd_0016_109220,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160104
+0x00109ABB,0x6,friends_str_service_h_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""h:F1F"""
+0x00125230,0x8,friends_svc_0x03_ExitProcess_125230,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00128C1C,0x56,friends_ipc_handler_cmd_0016_128c1c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
+0x0012F9A0,0x18,friends_ipc_handler_cmd_0001_12f9a0,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
+0x0012FF14,0xa,friends_ipc_handler_cmd_0016_12ff14,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001603CC
+0x00131764,0x18,friends_svc_0x37_GetThreadId_131764,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00131DB8,0x8,friends_svc_0x28_GetSystemTick_131db8,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00132694,0x8,friends_svc_0x0A_SleepThread_132694,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00132C08,0x8,friends_svc_0x24_WaitSynchronization1_132c08,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00134070,0x18,friends_svc_0x35_GetProcessId_134070,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00135100,0x18,friends_svc_0x17_CreateEvent_135100,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00135430,0x1c,friends_ipc_handler_cmd_0016_135430,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x0016000C
+0x00135680,0x8,friends_svc_0x32_SendSyncRequest_135680,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00135830,0x8,friends_svc_0x23_CloseHandle_135830,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00136450,0x2e,friends_ipc_handler_cmd_0016_136450,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001600D0
+0x00136494,0x22,friends_ipc_handler_cmd_0016_136494,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001600D0
+0x00136778,0x10,friends_ipc_handler_cmd_0016_136778,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160150
+0x00136B18,0x24,friends_ipc_handler_cmd_0016_136b18,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160184
+0x00137744,0x34,friends_ipc_handler_cmd_0016_137744,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001601CC
+0x00137788,0x16,friends_ipc_handler_cmd_0016_137788,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001601CC
+0x00137E78,0x4a,friends_ipc_handler_cmd_0016_137e78,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001602D0
+0x00137ED8,0x14,friends_ipc_handler_cmd_0016_137ed8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001602D0
+0x0013851C,0xec,friends_ipc_handler_cmd_0016_13851c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160308
+0x0013861C,0xce,friends_ipc_handler_cmd_0016_13861c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160308
+0x00138A68,0xa,friends_ipc_handler_cmd_0016_138a68,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160340
+0x00139D70,0xc,friends_func_ptr_table_139d70,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00139E00,0xc,friends_func_ptr_table_139e00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0013A604,0xc,friends_func_ptr_table_13a604,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0013B7C0,0x14,friends_func_ptr_table_13b7c0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0013CEC4,0x18,friends_ipc_handler_cmd_0001_13cec4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
+0x0014123A,0x5,friends_str_service_h0_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""h0:F"""
+0x0014AED8,0x84,friends_ipc_handler_cmd_0016_14aed8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
+0x00153D30,0x3e,friends_ipc_handler_cmd_0016_153d30,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160204
+0x00153F44,0x68,friends_ipc_handler_cmd_0016_153f44,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160184
+0x00153FB4,0x5c,friends_ipc_handler_cmd_0016_153fb4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160184
+0x00154018,0x3e,friends_ipc_handler_cmd_0016_154018,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160184
+0x00155574,0x18,friends_svc_0x4A_AcceptSession_155574,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015558C,0x18,friends_svc_0x4F_ReplyAndReceive_15558c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001555A4,0x18,friends_svc_0x21_CreateAddressArbiter_1555a4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001555C8,0x1c,friends_svc_0x2B_GetProcessInfo_1555c8,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001555E4,0x1c,friends_svc_0x1E_CreateMemoryBlock_1555e4,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155624,0x8,friends_svc_0x20_UnmapMemoryBlock_155624,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155744,0x8,friends_svc_0x3C_Break_155744,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015574C,0x8,friends_svc_0x19_ClearEvent_15574c,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001557F8,0x18,friends_svc_0x22_ArbitrateAddress_1557f8,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155810,0x8,friends_svc_0x09_ExitThread_155810,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155818,0x8,friends_svc_0x18_SignalEvent_155818,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155908,0x8,friends_svc_0x14_ReleaseMutex_155908,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00155AFC,0x8,friends_svc_0x0C_SetThreadPriority_155afc,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00156650,0x18,friends_svc_0x13_CreateMutex_156650,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00156668,0x18,friends_svc_0x27_DuplicateHandle_156668,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00157000,0x6,friends_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x00158834,0x6,friends_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x00158844,0x6,friends_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x00158850,0x5,friends_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x001588B8,0x7,friends_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001588BF,0x8,friends_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001588D4,0x7,friends_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x001588DB,0x7,friends_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x001588E2,0x9,friends_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x00158914,0x5,friends_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00158919,0x7,friends_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00158B6C,0x6,friends_str_service_ndm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ndm:u"""
+0x00158B78,0x6,friends_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x0015EB10,0xc,friends_func_ptr_table_15eb10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015EEA8,0xc,friends_func_ptr_table_15eea8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015F5C0,0xc,friends_func_ptr_table_15f5c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00161220,0x6,friends_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00161226,0x6,friends_str_service_frd_a,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:a"""
+0x0016122C,0x6,friends_str_service_frd_n,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:n"""
+0x00161232,0x6,friends_str_service_frd_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:u"""
+0x001612E5,0x6,friends_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x001612EB,0x6,friends_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001612F1,0x9,friends_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x001612FA,0x6,friends_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x00161300,0x9,friends_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x00161309,0x6,friends_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0016130F,0x9,friends_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x00161318,0x9,friends_str_service_ptm_sets,service_name_string,"client of (in ExHeader service-access list): ""ptm:sets"""
+0x00161321,0x6,friends_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x00161327,0x6,friends_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x0016132D,0x6,friends_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x00161333,0x6,friends_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x00161339,0x9,friends_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x00161342,0x9,friends_str_service_gsp__Gpu,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Gpu"""
+0x001649BC,0xb,friends_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

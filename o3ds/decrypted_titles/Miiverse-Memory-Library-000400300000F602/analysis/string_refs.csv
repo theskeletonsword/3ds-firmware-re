@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00106930,0x15c,strref_P_MemoStamp_106930,string_reference,function references string(s): P_MemoStamp
+0x00106A9C,0x120,strref_MoveSlidebar_106a9c,string_reference,function references string(s): MoveSlidebar | ReturnCanvas | T_CommentB
+0x0010D488,0x910,strref_G_BtnCursorL_10d488,string_reference,function references string(s): G_BtnCursorL | G_BtnCursorR
+0x0010DE24,0x108,strref_P_MemoStamp_10de24,string_reference,function references string(s): P_MemoStamp
+0x0010E294,0xef0,strref_G_BtnUndo_10e294,string_reference,function references string(s): G_BtnUndo
+0x00119728,0x114,strref_B_BtnCursorL_119728,string_reference,function references string(s): B_BtnCursorL | B_BtnCursorR
+0x00119844,0x1b8,strref_G_BtnSlideBar_119844,string_reference,function references string(s): G_BtnSlideBar
+0x00119FF4,0x9c,strref_G_ScrollMemo_119ff4,string_reference,function references string(s): G_ScrollMemo | G_SlideBar
+0x0011A098,0xc0,strref_G_BtnSlideBar_11a098,string_reference,function references string(s): G_BtnSlideBar
+0x00133328,0xcc,strref_csnd_SND_133328,string_reference,function references string(s): csnd:SND

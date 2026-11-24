@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0011DFA4,0x8,nwm_svc_0x28_GetSystemTick_11dfa4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x28) (GetSystemTick); 5 C lines
+0x0011F200,0x8,nwm_get_tls_11f200,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0011F364,0x8,nwm_get_tls_11f364,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0011F384,0x18,nwm_svc_0x17_CreateEvent_11f384,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x17) (CreateEvent); 5 C lines
+0x001200B4,0x24,nwm_svc_0x25_WaitSynchronizationN_1200b4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x001368C4,0x28,nwm_svc_0x55_StartInterProcessDma_1368c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x55) (StartInterProcessDma); 8 C lines
+0x00136A7C,0x24,nwm_svc_0x01_ControlMemory_136a7c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00136AF8,0x24,nwm_svc_0x08_CreateThread_136af8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00119E4C,0x1c4,nwm_ipc_server_loop_119e4c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x119c88
+0x00125C44,0x35c,nwm_ipc_server_loop_125c44,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x119c88

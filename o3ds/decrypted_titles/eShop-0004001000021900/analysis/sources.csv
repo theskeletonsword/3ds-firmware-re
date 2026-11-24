@@ -1,0 +1,46 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001FAD88,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FB024,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FB20C,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FB2DC,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FB718,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FB83C,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FBCE0,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FDF0C,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001FE778,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x001FF964,0x3a,str_srcpath_ExiCoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiCoder.cpp
+0x0020014C,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00200420,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00200FD0,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00201474,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00201D7C,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00201F84,0x38,str_srcpath_ExiCoder_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x00201FBC,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x002021E0,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00202B34,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x00202F54,0x40,str_srcpath_XmlStreamReaderInline_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/XmlStreamReaderInline.h
+0x0025821C,0x38,str_srcpath_ExiCoder_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x002584B8,0x3b,str_srcpath_ExiString_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiString.cpp
+0x00258C60,0x3b,str_srcpath_ExiString_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiString.cpp
+0x00259E00,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x00259E3C,0x38,str_srcpath_ExiCoder_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/ExiCoder.h
+0x0025A9E8,0x3f,str_srcpath_StringDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\StringDecoder.cpp
+0x003BDA80,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003BDAC4,0x44,str_srcpath_XmlExiStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\XmlExiStreamReader.cpp
+0x003BDB38,0x45,str_srcpath_XmlTextStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\XmlTextStreamReader.cpp
+0x003C70A0,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C70E4,0x45,str_srcpath_BitByteStreamReader_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x003C712C,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x003C7170,0x3c,str_srcpath_ExiDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x003C71AC,0x3d,str_srcpath_TextDecoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x003C8B8C,0x3a,str_srcpath_ExiCoder_cpp,source_path_string,d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiCoder.cpp
+0x003C8BC8,0x43,str_srcpath_BitByteStreamReader_h,source_path_string,d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x001FB064,0xfc,srcref_ExiDecoder_cpp_1fb064,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiDecoder.cpp
+0x001FF3FC,0x100,srcref_ExiCoder_cpp_1ff3fc,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\ExiCoder.cpp
+0x001FFE64,0x144,srcref_TextDecoder_cpp_1ffe64,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\TextDecoder.cpp
+0x00202B74,0x110,srcref_XmlTextStreamReader_cpp_202b74,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\text\XmlTextStreamReader.cpp
+0x00258964,0xbc,srcref_BitByteStreamReader_h_258964,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x002591B8,0x94,srcref_BitByteStreamReader_cpp_2591b8,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x0025A570,0x470,srcref_BitByteStreamReader_h_25a570,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h
+0x0025ADE4,0x21c,srcref_BitByteStreamReader_cpp_25ade4,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn\nlib\exi\core\BitByteStreamReader.cpp
+0x0025B468,0xe0,srcref_BitByteStreamReader_h_25b468,source_file_reference,function references source path(s): d:\cibuild\nlib\exi\sources\nn/nlib/exi/core/BitByteStreamReader.h

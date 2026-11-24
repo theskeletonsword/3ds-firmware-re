@@ -1,0 +1,378 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100440,0x18,olv_svc_0x21_CreateAddressArbiter_100440,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010060C,0x1c,olv_svc_0x2B_GetProcessInfo_10060c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101BAC,0x18,olv_svc_0x13_CreateMutex_101bac,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101BC4,0x18,olv_svc_0x1A_CreateTimer_101bc4,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101BDC,0x18,olv_svc_0x1B_SetTimer_101bdc,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102A00,0x18,olv_svc_0x2D_ConnectToPort_102a00,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103DF8,0x6,olv_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
+0x00104B7C,0x48,olv_ipc_handler_cmd_0019_104b7c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00190002
+0x00104CC8,0x48,olv_ipc_handler_cmd_0008_104cc8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x00104D18,0x48,olv_ipc_handler_cmd_0008_104d18,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x001055CC,0x48,olv_ipc_handler_cmd_004B_1055cc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0002
+0x00106A08,0x8,olv_svc_0x0A_SleepThread_106a08,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011D130,0x17d4,olv_ipc_dispatcher_11d130,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0200, 0x000F028B, 0x000F028C"
+0x0011E964,0x2250,olv_ipc_dispatcher_11e964,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C5, 0x000F0290, 0x000F02C0"
+0x00121718,0x5d8,olv_ipc_dispatcher_121718,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x00136EA0,0x6,olv_str_service_act_u,service_name_string,"client of (in ExHeader service-access list): ""act:u"""
+0x0013E810,0x1c,olv_svc_0x1E_CreateMemoryBlock_13e810,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0013E82C,0x8,olv_svc_0x14_ReleaseMutex_13e82c,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00150A40,0x8,olv_svc_0x03_ExitProcess_150a40,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001538D8,0x60,olv_ipc_handler_cmd_003D_1538d8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D038C
+0x00157838,0x9,olv_str_service_olvconf_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""olvconf:"""
+0x0015FA94,0x8,olv_svc_0x19_ClearEvent_15fa94,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015FA9C,0x18,olv_svc_0x35_GetProcessId_15fa9c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00164104,0xa4,olv_ipc_handler_cmd_003D_164104,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D03C0
+0x0016C8E0,0x1d4,olv_ipc_dispatcher_16c8e0,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x00030100, 0x00030104, 0x000F0040, 0x000F0101"
+0x00175D50,0x998,olv_ipc_dispatcher_175d50,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000B0289, 0x000F004F, 0x000F028A, 0x01000002"
+0x0017E61C,0x170,olv_ipc_dispatcher_17e61c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010100, 0x000F008B, 0x00200080, 0x00E40103"
+0x0017E7AC,0x258,olv_ipc_dispatcher_17e7ac,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F008F, 0x000F01C0, 0x000F01C2, 0x000F01C3"
+0x00181644,0x8,olv_svc_0x20_UnmapMemoryBlock_181644,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0018441C,0xc,olv_func_ptr_table_18441c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0018F8E8,0xca4,olv_ipc_handler_cmd_0007_0008_0040_etc_18f8e8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x00195418,0x84,olv_ipc_dispatcher_195418,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010040, 0x00010104, 0x000F0101, 0x000F0107"
+0x001972BF,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x0019E38C,0x3e0,olv_ipc_handler_cmd_0001_19e38c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010107, 0x00010105"
+0x0019EAD4,0x7,olv_str_service_ldr_ro,service_name_string,"client of (in ExHeader service-access list): ""ldr:ro"""
+0x0019F2E0,0x8,olv_svc_0x1F_MapMemoryBlock_19f2e0,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001A4BA7,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x001B2B18,0x5,olv_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001BDEA0,0x18,olv_svc_0x27_DuplicateHandle_1bdea0,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BDEB8,0x18,olv_svc_0x06_GetProcessIdealProcessor_1bdeb8,svc_wrapper,"function body is a single `svc #0x06` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BDED0,0x18,olv_svc_0x0B_GetThreadPriority_1bded0,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BDF18,0x8,olv_svc_0x0C_SetThreadPriority_1bdf18,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001D7F6C,0x9,olv_str_service_content_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""content:"""
+0x001D7F7C,0x5,olv_str_service_dll_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dll:"""
+0x001D7F90,0x5,olv_str_service_msg_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""msg:"""
+0x001D8194,0x5,olv_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001D819C,0x6,olv_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001D91DB,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x001DD44B,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x001DD948,0x9,olv_str_service_Subject_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Subject:"""
+0x001DD970,0x8,olv_str_service_Issuer_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Issuer:"""
+0x001DFD9C,0x6,olv_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001DFDC8,0x6,olv_str_service_http_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:"""
+0x001DFDD0,0x7,olv_str_service_https_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""https:"""
+0x001E01CC,0xc,olv_str_service_about_blank,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""about:blank"""
+0x001E371C,0x8,olv_str_service_Issuer_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Issuer:"""
+0x001FCB10,0xc,olv_str_service_about_blank,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""about:blank"""
+0x00205A68,0x114,olv_ipc_handler_cmd_003D_205a68,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D0148
+0x00205B7C,0x3c,olv_ipc_handler_cmd_003D_205b7c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D0148
+0x00211C98,0x2250,olv_ipc_dispatcher_211c98,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x0021004C, 0x0021008C, 0x002100C4, 0x00210104"
+0x00249D74,0x8,olv_svc_0x18_SignalEvent_249d74,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00249D7C,0x18,olv_svc_0x17_CreateEvent_249d7c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00249D94,0x18,olv_svc_0x22_ArbitrateAddress_249d94,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0024A008,0x8,olv_svc_0x28_GetSystemTick_24a008,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0024A010,0x18,olv_svc_0x37_GetThreadId_24a010,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0024A070,0x8,olv_svc_0x23_CloseHandle_24a070,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0024ED84,0x8,olv_svc_0x24_WaitSynchronization1_24ed84,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0024ED8C,0x8,olv_svc_0x32_SendSyncRequest_24ed8c,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00276718,0x48,olv_ipc_handler_cmd_0008_276718,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x0028AA38,0x6,olv_str_service_act_a,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""act:a"""
+0x0029CC7C,0x54,olv_ipc_handler_cmd_0003_29cc7c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030100
+0x0029CCD8,0x4c,olv_ipc_handler_cmd_0007_29ccd8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000700C0
+0x0029CD2C,0x4c,olv_ipc_handler_cmd_0004_29cd2c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000400C0
+0x0029CD80,0x50,olv_ipc_handler_cmd_000E_29cd80,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000E00C0
+0x002AADDF,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x002AEE78,0x1240,olv_ipc_dispatcher_2aee78,ipc_dispatcher,"16 distinct header-shaped literals (command-id compare table), e.g. 0x00010040, 0x00020040, 0x00040040, 0x00070102"
+0x002BA3DC,0x6,olv_str_service_frd_a,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:a"""
+0x002BDB78,0x48,olv_ipc_handler_cmd_0080_2bdb78,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00800002
+0x002C6373,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x002D21A8,0x654,olv_ipc_dispatcher_2d21a8,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000A0080, 0x000F02C0, 0x00BF02C1, 0x00FF02C1"
+0x002EA454,0x720,olv_ipc_dispatcher_2ea454,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x0033B59B,0x5,olv_str_service_GtS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""GtS:"""
+0x00346A94,0x3a04,olv_ipc_dispatcher_346a94,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x0035CADC,0xc,olv_func_ptr_table_35cadc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00374CE4,0xc,olv_func_ptr_table_374ce4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0037A5B0,0xc,olv_func_ptr_table_37a5b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00399198,0x10,olv_func_ptr_table_399198,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00399208,0x7,olv_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0039920F,0x8,olv_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x0039922C,0x5,olv_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00399231,0x7,olv_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00399238,0x6,olv_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x003A0814,0x6,olv_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x003A098C,0x6,olv_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x003A09BC,0x6,olv_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x003A4ABC,0xc,olv_func_ptr_table_3a4abc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A4AE8,0xc,olv_func_ptr_table_3a4ae8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A7D4C,0x9,olv_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x003A7D55,0x5,olv_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x003A7D5C,0x7,olv_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x003A86D0,0x18,olv_func_ptr_table_3a86d0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A87C8,0x10,olv_func_ptr_table_3a87c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A87F8,0x18,olv_func_ptr_table_3a87f8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A881C,0xc,olv_func_ptr_table_3a881c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8838,0x10,olv_func_ptr_table_3a8838,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8858,0x10,olv_func_ptr_table_3a8858,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A88F4,0x4c,olv_func_ptr_table_3a88f4,pointer_table,19 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A8A38,0x80,olv_func_ptr_table_3a8a38,pointer_table,32 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AB468,0x7,olv_str_service_ir_rst,service_name_string,"client of (in ExHeader service-access list): ""ir:rst"""
+0x003AB46F,0x5,olv_str_service_ac_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ac:i"""
+0x003AB490,0x7,olv_str_service_cecd_u,service_name_string,"client of (in ExHeader service-access list): ""cecd:u"""
+0x003AB497,0x7,olv_str_service_cecd_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cecd:s"""
+0x003B139E,0x7,olv_str_service_boss_U,service_name_string,"client of (in ExHeader service-access list): ""boss:U"""
+0x003B13A5,0x7,olv_str_service_boss_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:P"""
+0x003B13AC,0x7,olv_str_service_boss_M,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:M"""
+0x003B90C6,0x8,olv_str_service_ir_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ir:USER"""
+0x003CA3C8,0x10,olv_func_ptr_table_3ca3c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA3DC,0xc,olv_func_ptr_table_3ca3dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA450,0x18,olv_func_ptr_table_3ca450,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA50C,0xc,olv_func_ptr_table_3ca50c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA588,0xc,olv_func_ptr_table_3ca588,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA5CC,0xc,olv_func_ptr_table_3ca5cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA7FC,0x1c,olv_func_ptr_table_3ca7fc,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA844,0xc,olv_func_ptr_table_3ca844,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA868,0xc,olv_func_ptr_table_3ca868,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA888,0x14,olv_func_ptr_table_3ca888,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CA9B0,0x10,olv_func_ptr_table_3ca9b0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CAA98,0x14,olv_func_ptr_table_3caa98,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CAE00,0xc,olv_func_ptr_table_3cae00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB0D8,0x14,olv_func_ptr_table_3cb0d8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB17C,0xc,olv_func_ptr_table_3cb17c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB1A0,0xc,olv_func_ptr_table_3cb1a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB1E8,0x10,olv_func_ptr_table_3cb1e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB20C,0x14,olv_func_ptr_table_3cb20c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB270,0x10,olv_func_ptr_table_3cb270,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB2E4,0xc,olv_func_ptr_table_3cb2e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB304,0x20,olv_func_ptr_table_3cb304,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB368,0x10,olv_func_ptr_table_3cb368,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB38C,0x24,olv_func_ptr_table_3cb38c,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB3E8,0x10,olv_func_ptr_table_3cb3e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB40C,0x14,olv_func_ptr_table_3cb40c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB470,0x10,olv_func_ptr_table_3cb470,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB494,0x14,olv_func_ptr_table_3cb494,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB5D8,0x10,olv_func_ptr_table_3cb5d8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB628,0x10,olv_func_ptr_table_3cb628,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB6F4,0x10,olv_func_ptr_table_3cb6f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CB958,0xc,olv_func_ptr_table_3cb958,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBA88,0x10,olv_func_ptr_table_3cba88,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBC28,0x10,olv_func_ptr_table_3cbc28,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBD3C,0x10,olv_func_ptr_table_3cbd3c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBD94,0x10,olv_func_ptr_table_3cbd94,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBDA8,0x14,olv_func_ptr_table_3cbda8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CBDC4,0x10,olv_func_ptr_table_3cbdc4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC200,0xc,olv_func_ptr_table_3cc200,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC240,0xc,olv_func_ptr_table_3cc240,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC458,0xc,olv_func_ptr_table_3cc458,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CC468,0x18,olv_func_ptr_table_3cc468,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD0E4,0x1c,olv_func_ptr_table_3cd0e4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CD8B4,0xc,olv_func_ptr_table_3cd8b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDA0C,0xc,olv_func_ptr_table_3cda0c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDAEC,0x30,olv_func_ptr_table_3cdaec,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDB3C,0x10,olv_func_ptr_table_3cdb3c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDBC8,0xc,olv_func_ptr_table_3cdbc8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDC20,0x14,olv_func_ptr_table_3cdc20,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDC74,0x20,olv_func_ptr_table_3cdc74,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDD04,0x14,olv_func_ptr_table_3cdd04,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDD58,0x20,olv_func_ptr_table_3cdd58,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDDD8,0x14,olv_func_ptr_table_3cddd8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDE28,0x14,olv_func_ptr_table_3cde28,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDE78,0x14,olv_func_ptr_table_3cde78,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDEC8,0x14,olv_func_ptr_table_3cdec8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF08,0xc,olv_func_ptr_table_3cdf08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF28,0xc,olv_func_ptr_table_3cdf28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF5C,0x14,olv_func_ptr_table_3cdf5c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDFB0,0x20,olv_func_ptr_table_3cdfb0,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE010,0xc,olv_func_ptr_table_3ce010,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE054,0x14,olv_func_ptr_table_3ce054,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE07C,0xc,olv_func_ptr_table_3ce07c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE0DC,0xc,olv_func_ptr_table_3ce0dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE190,0x10,olv_func_ptr_table_3ce190,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE1C0,0xc,olv_func_ptr_table_3ce1c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE1D4,0xc,olv_func_ptr_table_3ce1d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE1FC,0xc,olv_func_ptr_table_3ce1fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE270,0xc,olv_func_ptr_table_3ce270,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE368,0xc,olv_func_ptr_table_3ce368,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE588,0xc,olv_func_ptr_table_3ce588,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE614,0x10,olv_func_ptr_table_3ce614,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE9B8,0x10,olv_func_ptr_table_3ce9b8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE9D0,0xc,olv_func_ptr_table_3ce9d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE9E4,0xec,olv_func_ptr_table_3ce9e4,pointer_table,59 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CECD8,0xc,olv_func_ptr_table_3cecd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CECF0,0xc,olv_func_ptr_table_3cecf0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED08,0xc,olv_func_ptr_table_3ced08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED20,0xc,olv_func_ptr_table_3ced20,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED38,0xc,olv_func_ptr_table_3ced38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED50,0xc,olv_func_ptr_table_3ced50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED68,0xc,olv_func_ptr_table_3ced68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED80,0xc,olv_func_ptr_table_3ced80,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CED98,0xc,olv_func_ptr_table_3ced98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEDB0,0xc,olv_func_ptr_table_3cedb0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEDC8,0xc,olv_func_ptr_table_3cedc8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEDE0,0xc,olv_func_ptr_table_3cede0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEDF8,0xc,olv_func_ptr_table_3cedf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE10,0xc,olv_func_ptr_table_3cee10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE28,0xc,olv_func_ptr_table_3cee28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE40,0xc,olv_func_ptr_table_3cee40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE58,0xc,olv_func_ptr_table_3cee58,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE70,0xc,olv_func_ptr_table_3cee70,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE88,0xc,olv_func_ptr_table_3cee88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEEA0,0xc,olv_func_ptr_table_3ceea0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEEB8,0xc,olv_func_ptr_table_3ceeb8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEED0,0xc,olv_func_ptr_table_3ceed0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEEE8,0xc,olv_func_ptr_table_3ceee8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF00,0xc,olv_func_ptr_table_3cef00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF18,0xc,olv_func_ptr_table_3cef18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF30,0xc,olv_func_ptr_table_3cef30,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF48,0xc,olv_func_ptr_table_3cef48,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF60,0xc,olv_func_ptr_table_3cef60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF78,0xc,olv_func_ptr_table_3cef78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF90,0xc,olv_func_ptr_table_3cef90,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEFA8,0xc,olv_func_ptr_table_3cefa8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEFC0,0xc,olv_func_ptr_table_3cefc0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEFD8,0xc,olv_func_ptr_table_3cefd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEFF0,0xc,olv_func_ptr_table_3ceff0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF008,0xc,olv_func_ptr_table_3cf008,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF020,0xc,olv_func_ptr_table_3cf020,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF038,0xc,olv_func_ptr_table_3cf038,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF050,0xc,olv_func_ptr_table_3cf050,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF068,0xc,olv_func_ptr_table_3cf068,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF080,0xc,olv_func_ptr_table_3cf080,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF098,0xc,olv_func_ptr_table_3cf098,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF0B0,0xc,olv_func_ptr_table_3cf0b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF0C8,0xc,olv_func_ptr_table_3cf0c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF0E0,0xc,olv_func_ptr_table_3cf0e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF0F8,0xc,olv_func_ptr_table_3cf0f8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF110,0xc,olv_func_ptr_table_3cf110,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF444,0x10,olv_func_ptr_table_3cf444,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF4D4,0x10,olv_func_ptr_table_3cf4d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF52C,0x10,olv_func_ptr_table_3cf52c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF6E4,0x10,olv_func_ptr_table_3cf6e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF708,0x14,olv_func_ptr_table_3cf708,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF72C,0xc,olv_func_ptr_table_3cf72c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF7AC,0xc,olv_func_ptr_table_3cf7ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF7F0,0x10,olv_func_ptr_table_3cf7f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF818,0x10,olv_func_ptr_table_3cf818,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF878,0x10,olv_func_ptr_table_3cf878,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF8E4,0x10,olv_func_ptr_table_3cf8e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF97C,0xc,olv_func_ptr_table_3cf97c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF9B8,0xc,olv_func_ptr_table_3cf9b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFA68,0x10,olv_func_ptr_table_3cfa68,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFA8C,0x14,olv_func_ptr_table_3cfa8c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFAD0,0xc,olv_func_ptr_table_3cfad0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFB00,0xc,olv_func_ptr_table_3cfb00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFD68,0x10,olv_func_ptr_table_3cfd68,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFEBC,0x10,olv_func_ptr_table_3cfebc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CFED0,0xec,olv_func_ptr_table_3cfed0,pointer_table,59 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0148,0x28,olv_func_ptr_table_3d0148,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D01DC,0xc,olv_func_ptr_table_3d01dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D01FC,0x10,olv_func_ptr_table_3d01fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D027C,0x10,olv_func_ptr_table_3d027c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D02FC,0x24,olv_func_ptr_table_3d02fc,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0328,0x1c,olv_func_ptr_table_3d0328,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0348,0x14,olv_func_ptr_table_3d0348,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0360,0x10,olv_func_ptr_table_3d0360,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0374,0xc,olv_func_ptr_table_3d0374,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D04CC,0x38,olv_func_ptr_table_3d04cc,pointer_table,14 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D052C,0x30,olv_func_ptr_table_3d052c,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D05A0,0x18,olv_func_ptr_table_3d05a0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D05D4,0x20,olv_func_ptr_table_3d05d4,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D05F8,0x14,olv_func_ptr_table_3d05f8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0614,0x10,olv_func_ptr_table_3d0614,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0630,0xc,olv_func_ptr_table_3d0630,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D065C,0x14,olv_func_ptr_table_3d065c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0694,0x18,olv_func_ptr_table_3d0694,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D06BC,0x14,olv_func_ptr_table_3d06bc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D06D4,0x10,olv_func_ptr_table_3d06d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0714,0xc,olv_func_ptr_table_3d0714,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0740,0x20,olv_func_ptr_table_3d0740,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D07C8,0x10,olv_func_ptr_table_3d07c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0ADC,0x1c,olv_func_ptr_table_3d0adc,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0B40,0xc,olv_func_ptr_table_3d0b40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0B60,0x18,olv_func_ptr_table_3d0b60,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0BA4,0xc,olv_func_ptr_table_3d0ba4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0BD0,0x1c,olv_func_ptr_table_3d0bd0,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0BF8,0xc,olv_func_ptr_table_3d0bf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0C34,0xc,olv_func_ptr_table_3d0c34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0C74,0xc,olv_func_ptr_table_3d0c74,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0CD8,0xc,olv_func_ptr_table_3d0cd8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0CFC,0xc,olv_func_ptr_table_3d0cfc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0D2C,0xc,olv_func_ptr_table_3d0d2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0DA8,0x1c,olv_func_ptr_table_3d0da8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0DC8,0x1c,olv_func_ptr_table_3d0dc8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0E38,0xc,olv_func_ptr_table_3d0e38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0E94,0xc,olv_func_ptr_table_3d0e94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0EB8,0x1c,olv_func_ptr_table_3d0eb8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0ED8,0x1c,olv_func_ptr_table_3d0ed8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0F2C,0xc,olv_func_ptr_table_3d0f2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0F40,0x1c,olv_func_ptr_table_3d0f40,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0F60,0x18,olv_func_ptr_table_3d0f60,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0FB4,0x18,olv_func_ptr_table_3d0fb4,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0FDC,0x1c,olv_func_ptr_table_3d0fdc,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1020,0x18,olv_func_ptr_table_3d1020,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D10F0,0xc,olv_func_ptr_table_3d10f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1144,0x1c,olv_func_ptr_table_3d1144,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1164,0x18,olv_func_ptr_table_3d1164,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D11A8,0x18,olv_func_ptr_table_3d11a8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D11C8,0x18,olv_func_ptr_table_3d11c8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1274,0x10,olv_func_ptr_table_3d1274,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D12A4,0x1c,olv_func_ptr_table_3d12a4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D12D4,0x10,olv_func_ptr_table_3d12d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1304,0xc,olv_func_ptr_table_3d1304,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1334,0x1c,olv_func_ptr_table_3d1334,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1370,0x10,olv_func_ptr_table_3d1370,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1394,0xc,olv_func_ptr_table_3d1394,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D13C4,0xc,olv_func_ptr_table_3d13c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D13F4,0xc,olv_func_ptr_table_3d13f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1434,0xc,olv_func_ptr_table_3d1434,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D14EC,0xc,olv_func_ptr_table_3d14ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1808,0x10,olv_func_ptr_table_3d1808,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D181C,0x18,olv_func_ptr_table_3d181c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D186C,0x10,olv_func_ptr_table_3d186c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1880,0x18,olv_func_ptr_table_3d1880,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D18EC,0x1c,olv_func_ptr_table_3d18ec,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D190C,0x18,olv_func_ptr_table_3d190c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1958,0x1c,olv_func_ptr_table_3d1958,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1978,0x18,olv_func_ptr_table_3d1978,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D19C4,0x1c,olv_func_ptr_table_3d19c4,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D19EC,0x10,olv_func_ptr_table_3d19ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1A28,0x1c,olv_func_ptr_table_3d1a28,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1A48,0x18,olv_func_ptr_table_3d1a48,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1A94,0x1c,olv_func_ptr_table_3d1a94,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1AB4,0x18,olv_func_ptr_table_3d1ab4,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1B00,0x1c,olv_func_ptr_table_3d1b00,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1B20,0x18,olv_func_ptr_table_3d1b20,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1B6C,0x1c,olv_func_ptr_table_3d1b6c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1B8C,0x18,olv_func_ptr_table_3d1b8c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1BD8,0x1c,olv_func_ptr_table_3d1bd8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1BF8,0x18,olv_func_ptr_table_3d1bf8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1C44,0x1c,olv_func_ptr_table_3d1c44,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1C64,0x18,olv_func_ptr_table_3d1c64,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1CB0,0x1c,olv_func_ptr_table_3d1cb0,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1CD0,0x18,olv_func_ptr_table_3d1cd0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1D1C,0x1c,olv_func_ptr_table_3d1d1c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1D3C,0x18,olv_func_ptr_table_3d1d3c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1D98,0xc,olv_func_ptr_table_3d1d98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1DA8,0xc,olv_func_ptr_table_3d1da8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1DB8,0x1c,olv_func_ptr_table_3d1db8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1EA8,0x10,olv_func_ptr_table_3d1ea8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1F78,0xc,olv_func_ptr_table_3d1f78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1FE0,0x10,olv_func_ptr_table_3d1fe0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D201C,0xc,olv_func_ptr_table_3d201c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D2A27,0x6,olv_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x003D2C02,0x9,olv_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x003D2C0B,0x6,olv_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x003D2C11,0x9,olv_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x003D2C1A,0x6,olv_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x003D2C20,0x9,olv_str_service_ptm_play,service_name_string,"client of (in ExHeader service-access list): ""ptm:play"""
+0x003D2C29,0x6,olv_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x003D56C5,0x9,olv_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x003D56CE,0x9,olv_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x003D56D7,0x8,olv_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x003D56DF,0x9,olv_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x003D56E8,0x9,olv_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x003D56F1,0x6,olv_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x003D56F7,0x6,olv_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x003D5844,0x6,olv_str_service_APT_S,service_name_string,"client of (in ExHeader service-access list): ""APT:S"""
+0x003D584A,0x6,olv_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x003D5850,0x6,olv_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x003D58F2,0x5,olv_str_service_pld_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pld:"""
+0x003D5C02,0x6,olv_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x003D60A8,0x6,olv_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x003FFD00,0xc,olv_func_ptr_table_3ffd00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0040E2CC,0x2c,olv_func_ptr_table_40e2cc,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0040E2FC,0x20,olv_func_ptr_table_40e2fc,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0040E73C,0x14,olv_func_ptr_table_40e73c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0040E798,0x1c,olv_func_ptr_table_40e798,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0040E904,0xb,olv_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

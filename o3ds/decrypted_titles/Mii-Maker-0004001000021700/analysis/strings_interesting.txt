@@ -1,0 +1,178 @@
+0x00102D08	RWSTDERR
+0x00102E74	Exception: %s.
+0x001053B0	StartBg_Up.bclyt
+0x001053C4	StartBg.bclyt
+0x0010547C	CmnBg_Up.bclyt
+0x0010548C	CmnBg.bclyt
+0x001056EC	HomeNixSign.bclyt
+0x00105714	%s_%s.bclan
+0x00106D0C	rom:/sound/EditSound.bcsar
+0x00113A90	nw::lyt::Layout::Animate
+0x0011CAF4	nw::lyt::Layout::Draw
+0x00144108	$CFLRES:/CFL_Res.dat
+0x0014460C	$CFLRES:/CFL_Res.dat
+0x00146000	$CFLDB:/CFL_DB.dat
+0x00146118	$CFLRES:/CFL_Res.dat
+0x001463D8	$CFLDB:/CFL_OldDB.dat
+0x001463F0	$CFLDB:/CFL_DB.dat
+0x001544D4	$CFLDB:/CFL_OldDB.dat
+0x0015ADE8	BtnBase00.bclyt
+0x0015ADF8	BtnBase01.bclyt
+0x0015AE08	BtnBase02Select.bclyt
+0x0015B490	Icon%s%2.2d.bclim
+0x0015D91C	varEye.dat
+0x0015D928	varEyebrow.dat
+0x0015D938	varNose.dat
+0x0015DAA0	varMouth.dat
+0x0015E834	DialogBtnCommon01.bclyt
+0x0015EB34	DialogBtnCommon02.bclyt
+0x0015EEDC	DialogBtnCommon03.bclyt
+0x00161AE4	EditorCommon.bclyt
+0x00163550	DialogText.bclyt
+0x0016369C	DialogText.bclyt
+0x00166744	%s.bclyt
+0x00167278	EditBG.bclyt
+0x0016BCC8	PlazaTop.bclyt
+0x0016C8F8	gmitIcon%s%2.2d.bclim
+0x0016CA70	Edit%s.bclyt
+0x0016F80C	DialogBtnPhoto02.bclyt
+0x0016FA88	DialogWaitText.bclyt
+0x00170714	DialogCommonFilter_Up.bclyt
+0x00170784	DialogCommonFilter.bclyt
+0x00170A20	DialogColor.bclyt
+0x00170FF0	%s.bclyt
+0x00170FFC	%s_DialogIn.bclan
+0x00171014	%s_DialogOut.bclan
+0x00171028	%s_DialogOutUp.bclan
+0x00172B98	%s.bclyt
+0x00174218	BlackListBG.bclyt
+0x001769D8	EditAutoPhoto_Up.bclyt
+0x0017763C	DialogGender.bclyt
+0x00177A78	DialogOperation.bclyt
+0x0017A1BC	Edit_up.bclyt
+0x0017F238	%s_%02d
+0x0017F278	%s%02d
+0x0017F2A8	%s%s%02d
+0x00181490	DialogBtnCommon02LongText.bclyt
+0x00182060	DialogBirthday.bclyt
+0x00182A28	DialogEyeColor.bclyt
+0x00182F34	EditAutoSelect.bclyt
+0x0018AD7C	QREncode.bclyt
+0x0018C264	DialogPhotoOperation.bclyt
+0x0018C4FC	DialogHairColor.bclyt
+0x0018C9A4	DialogSkinColor.bclyt
+0x0018CF40	BtnEditSupSelect.bclyt
+0x00190F28	EditBG.bclyt
+0x00190F3C	BtnBase%02d.bclyt
+0x00190FC0	BtnBase02Select.bclyt
+0x00191210	CmnText.bclyt
+0x00191EE0	%s%02d
+0x00191F78	%s%02d
+0x001928EC	PlazaBG_Up.bclyt
+0x00192900	PlazaTop_Up.bclyt
+0x00192B3C	EditPhotoPos.bclyt
+0x00193ACC	DialogFirstGender.bclyt
+0x00193DE8	DialogPhotoSelect.bclyt
+0x00194228	QRDialog_Up.bclyt
+0x001950D8	%s%02d.bclan
+0x001953BC	BtnCommon01.bclyt
+0x00195710	BtnCommon02.bclyt
+0x00195A98	BtnCommon03.bclyt
+0x00195D14	DialogWaitLongText.bclyt
+0x0019634C	DialogOpen.bclyt
+0x00198150	DialogPhotoPoint_Up.bclyt
+0x001986D4	NetAtn_Up.bclyt
+0x001986F8	%s_%s.bclan
+0x001A127C	%03d%s
+0x001A12C8	%s%04d
+0x001A5A5C	nw::lyt::internal::DrawQuad
+0x001BA0F0	Fade_Up.bclyt
+0x001BA100	Fade.bclyt
+0x001C024C	WaitIcon.bclyt
+0x001CABFC	$CFLDB:/CFL_OldDB.dat
+0x001E9E50	nw::lyt::Layout::CalculateMtx
+0x001F9224	%d %d //size
+0x001F9234	%d //faceNum
+0x001F9244	%d //ptsGroupNum
+0x001F9258	%d //faceIdx
+0x001F926C	%d //points%d
+0x001F927C	%d %d %d
+0x001F9288	%d //numberOfDeformeParams
+0x001FAEA8	%d %d //size
+0x001FAEB8	%d //faceNum
+0x001FAEC8	%d //ptsGroupNum
+0x001FAEDC	%d //faceIdx
+0x001FAEF0	%d //points%d
+0x001FAF00	%d %d %d
+0x001FAF0C	%d //numberOfDeformeParams
+0x00204D08	paramBoostInherit/face/0_20
+0x00204D24	paramBoostInherit/face/0
+0x00204D40	paramBoostInherit/face/20
+0x0020E47C	getRecogPts %d
+0x0020E48C	use face num %d
+0x0020E4A0	face %d check feature points
+0x0020E4C0	No isEnoughPts face %d
+0x0020E4D8	face, eye detection failed
+0x002595F4	nw::lyt::Window::DrawFrame4
+0x00259868	nw::lyt::Window::DrawFrame8
+0x00259C08	nw::lyt::Window::DrawSelf
+0x00259F1C	nw::lyt::Window::DrawFrame
+0x0025A4A8	nw::lyt::Picture::DrawSelf
+0x0025ACD8	nw::lyt::TextBox::DrawSelf
+0x0025B774	nw::lyt::Material::SetupGraphics
+0x0025CE20	nw::lyt::internal::DrawQuad_Repeat
+0x00266720	%s_%s.bclan
+0x002770DC	edit.msbt
+0x00280CCC	DialogText.bclyt
+0x00280E34	DialogBtnCommon01LongText.bclyt
+0x00281154	DialogBtnCommon02.bclyt
+0x00281454	DialogBtnCommon03.bclyt
+0x00281BAC	%s.bclyt
+0x00281BBC	%s_Select.bclan
+0x00281BCC	%s_UnSelect.bclan
+0x00281BE0	%s_Decide.bclan
+0x00281BF0	%s_DialogIn.bclan
+0x00281C08	%s_DialogOut.bclan
+0x00281C1C	%s_DialogOutUp.bclan
+0x00281D84	DialogWaitText.bclyt
+0x002828D0	gmitIcon%s%3.3d.bclim
+0x002AD410	DialogAdmission.bclyt
+0x002AF9B3	B%s_%s.bclan
+0x002AFB5C	QRPhotoText.bclyt
+0x002AFB70	%s_%s.bclan
+0x002AFBEC	BtnQR.bclyt
+0x002AFFB8	%s_%s.bclan
+0x002AFFFC	%s_%s.bclan
+0x002B0138	%s_%s.bclan
+0x002B1BED	 type    : %d
+0x002B1EA4	dsp::DSP
+0x002B2FD2	2nwm::UDS
+0x002B32A4	$CFLDB:/CFL_OldDB.dat
+0x002B32BC	$CFLDB:/CFL_DB.dat
+0x0032A780	/17h/>BS
+0x0036911C	data:/editSaveData.bin
+0x0036B69D	gsp::Lcd
+0x0036B6A6	gsp::Gpu
+0x0036B780	photo/Nintendo 3DS/Private/00020400
+0x0036B820	%s: bad locale name: "%s"
+0x0036B83A	%s: range error: invalid range [%d, %d)
+0x0036B862	%s: argument value %u out of range [0, %u)
+0x0036B88D	%s: conversion failed
+0x0036B8A3	%s: facet %u not found in "%s" locale
+0x0036B8C9	%s: failed to construct locale name
+0x0036B8ED	%s: exception
+0x0036B8FB	%s: unexpected exception
+0x0036B914	%s: invalid pointer %p
+0x0036B92B	%s: logic error
+0x0036B93B	%s: unspecified error
+0x0036B951	%s: runtime error
+0x0036B963	%s: underflow error
+0x0036B977	%s: overflow error
+0x0036B98A	%s: stream object has set %s
+0x0036B9A7	%s: stream object has set ios::badbit
+0x0036B9CD	%s: stream object has set ios::eofbit
+0x0036B9F3	%s: stream object has set ios::failbit
+0x0036BA1A	%s: bad cast
+0x0036BA27	%s: length error: %u > %u
+0x0036BA41	%s: bad_alloc: out of memory
+0x0036BA5E	%s: out of memory

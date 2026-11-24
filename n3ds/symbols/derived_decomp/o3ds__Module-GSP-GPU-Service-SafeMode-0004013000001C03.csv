@@ -1,0 +1,30 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001000E8,0x28,gsp_svc_0x23_CloseHandle_1000e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100124,0x34,gsp_svc_0x23_CloseHandle_100124,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00100158,0x28,gsp_svc_0x23_CloseHandle_100158,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x001001B0,0x34,gsp_svc_0x23_CloseHandle_1001b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x001001F0,0x30,gsp_svc_0x23_CloseHandle_1001f0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00100260,0x28,gsp_svc_0x23_CloseHandle_100260,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100288,0x30,gsp_svc_0x23_CloseHandle_100288,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x001002B8,0x30,gsp_svc_0x23_CloseHandle_1002b8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x001014D4,0x24,gsp_svc_0x01_ControlMemory_1014d4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x001019E4,0x38,gsp_svc_0x32_SendSyncRequest_1019e4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00103364,0x3c,gsp_svc_0x32_SendSyncRequest_103364,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104480,0x24,gsp_svc_0x08_CreateThread_104480,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00105F18,0x38,gsp_svc_0x32_SendSyncRequest_105f18,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00106834,0x10,gsp_svc_0x23_CloseHandle_106834,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x00106E4C,0x34,gsp_svc_0x23_CloseHandle_106e4c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 12 C lines
+0x00107F90,0x24,gsp_svc_0x25_WaitSynchronizationN_107f90,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00108264,0x4,gsp_svc_0x3C_Break_108264,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00108BAC,0x38,gsp_svc_0x32_SendSyncRequest_108bac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00108BE4,0x38,gsp_svc_0x32_SendSyncRequest_108be4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001091EC,0x8,gsp_svc_0x23_CloseHandle_1091ec,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x00109338,0x8,gsp_svc_0x23_CloseHandle_109338,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x0010A2B4,0x8,gsp_svc_0x3C_Break_10a2b4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x0010A30C,0x3c,gsp_svc_0x56_StopDma_10a30c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x56) (StopDma); 11 C lines
+0x0010A5A4,0x34,gsp_svc_0x32_SendSyncRequest_10a5a4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010A5D8,0x38,gsp_svc_0x32_SendSyncRequest_10a5d8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010A6F8,0x3c,gsp_svc_0x32_SendSyncRequest_10a6f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010BEFC,0x28,gsp_svc_0x55_StartInterProcessDma_10befc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x55) (StartInterProcessDma); 8 C lines
+0x00100E68,0x594,gsp_ipc_server_loop_100e68,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x102f4c
+0x00103770,0xc0,gsp_ipc_server_loop_103770,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x102f4c

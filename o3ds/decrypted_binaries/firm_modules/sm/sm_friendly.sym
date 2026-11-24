@@ -1,0 +1,112 @@
+# Symbol table for FIRM built-in module 'sm' (TitleID 0x0004013000001002)
+# Load .text: 0x00100000 (+0x4190) | .rodata: 0x00105000 (+0x248) | .data: 0x00106000 (+0x50) | .bss: 0x5148
+# Total: 107 | CONFIRMED: 67 | EVIDENCE_BASED: 40 | HYPOTHESIS: 0
+Address         Size    Confidence      Name                                                    Notes
+----------------------------------------------------------------------------------------------------------------------------------
+0x00100000  0x002C  CONFIRMED       sm_entry                                                Entry point: init BSS (0x100024), init_array (0x100048), heap (0x100a40), ports/cfg (0x100d84), loop (0x1000a0)
+0x00100024  0x001C  CONFIRMED       sm_crt0_bss_zero_init                                   C: .bss zero-fill loop (10L)
+0x00100048  0x001A  EVIDENCE_BASED  sm_sub_00100048                                         C: helper SM (void FUN_00100048(void); calls=[], callers=[0x100000]) (10L)
+0x001000A0  0x0830  CONFIRMED       sm_server_main_loop                                     C: creates ports 'srv:' and 'srv:pm' via 0x102434, initializes the ACL table, AcceptSession + ReplyAndReceive loop
+0x0010091C  0x002C  CONFIRMED       sm_crt_fini_array                                       C: iterates the CRT static destructors
+0x00100950  0x004C  CONFIRMED       sm_os_init_args                                         C: compares initial environment arguments
+0x001009A4  0x0018  CONFIRMED       sm_svc_0x4A_AcceptSession_001009a4                      Direct wrapper/stub for svc 0x4A (AcceptSession) (6L)
+0x001009BC  0x0018  CONFIRMED       sm_svc_0x4F_ReplyAndReceive_001009bc                    Direct wrapper/stub for svc 0x4F (ReplyAndReceive) (6L)
+0x001009D4  0x0008  EVIDENCE_BASED  sm_getter_setter_stub_001009d4                          C: direct getter/setter/constant (4L)
+0x001009E0  0x005C  CONFIRMED       sm_crt_strlen_001009e0                                  C verified: word-aligned strlen (40L)
+0x00100A40  0x0064  CONFIRMED       sm_runtime_heap_and_arbiter_init                        C: initializes AddressArbiter and scans RAM (QueryMemory)
+0x00100A64  0x0090  CONFIRMED       sm_heap_alloc_pages_ctrlmem                             C: reserves 4 KB-aligned memory through svcControlMemory (0x10222c)
+0x00100AFC  0x00A0  CONFIRMED       sm_system_config_and_sema_init                          C: queries GetSystemInfo (0x100ee8) and initializes the global semaphore (0x1021f8)
+0x00100BA4  0x00BC  CONFIRMED       sm_srv_notify_waiters_on_port                           C: wakes processes waiting for service/port availability
+0x00100C64  0x00A8  CONFIRMED       sm_process_table_cleanup_scan                           C: walks the process/session table closing orphaned entries
+0x00100D10  0x0020  EVIDENCE_BASED  sm_sub_00100d10                                         C: helper SM (void FUN_00100d10(undefined4 param_1,undefine; calls=[], callers=[0x1000a0]) (11L)
+0x00100D34  0x002C  EVIDENCE_BASED  sm_sub_00100d34                                         C: helper SM (void FUN_00100d34(undefined4 param_1,undefine; calls=[], callers=[0x1000a0]) (12L)
+0x00100D64  0x0018  EVIDENCE_BASED  sm_sub_00100d64                                         C: helper SM (void FUN_00100d64(void); calls=[], callers=[0x1000a0]) (8L)
+0x00100D84  0x00C4  CONFIRMED       sm_init_builtin_service_acls                            C: initializes locks and the initial configuration of the built-in FIRM processes
+0x00100E58  0x0040  EVIDENCE_BASED  sm_match_cstr_helper_00100e58                           C: validates a non-empty C-string pointer and compares it with a constant (9L)
+0x00100EA0  0x0040  EVIDENCE_BASED  sm_match_cstr_helper_00100ea0                           C: validates a non-empty C-string pointer and compares it with a constant (9L)
+0x00100EE8  0x001C  CONFIRMED       sm_svc_0x2A_GetSystemInfo_00100ee8                      Direct wrapper/stub for svc 0x2A (GetSystemInfo) (7L)
+0x00100F04  0x00B8  EVIDENCE_BASED  sm_sub_00100f04                                         C: helper SM (uint FUN_00100f04(uint *param_1,uint *param_2; calls=[], callers=[0x100e58,0x100ea0]) (78L)
+0x00100FC0  0x0038  EVIDENCE_BASED  sm_sub_00100fc0                                         C: helper SM (void FUN_00100fc0(void); calls=[0x1010b4], callers=[0x100a40]) (15L)
+0x00100FFC  0x0064  EVIDENCE_BASED  sm_sub_00100ffc                                         C: helper SM (void FUN_00100ffc(void); calls=[0x1010cc,0x102210], callers=[0x100a40]) (40L)
+0x00101064  0x0074  EVIDENCE_BASED  sm_sub_00101064                                         C: helper SM (void FUN_00101064(void); calls=[0x102210], callers=[0x100a40]) (26L)
+0x00101078  0x0010  EVIDENCE_BASED  sm_sub_00101078                                         C: helper SM (void FUN_00101078(void); calls=[], callers=[0x100a40]) (7L)
+0x0010108C  0x0028  EVIDENCE_BASED  sm_sub_0010108c                                         C: helper SM (void FUN_0010108c(int param_1,undefined4 para; calls=[0x101204,0x102458], callers=[0x100d84]) (10L)
+0x001010B4  0x0018  CONFIRMED       sm_svc_0x21_CreateAddressArbiter_001010b4               Direct wrapper/stub for svc 0x21 (CreateAddressArbiter) (6L)
+0x001010CC  0x0030  CONFIRMED       sm_svc_0x02_QueryMemory_001010cc                        Direct wrapper/stub for svc 0x02 (QueryMemory) (12L)
+0x001010FC  0x0074  CONFIRMED       sm_crt_aeabi_memcpy_001010fc                            C verified: optimized 32-byte memory copy __aeabi_memcpy (114L)
+0x00101170  0x004C  EVIDENCE_BASED  sm_sub_00101170                                         C: helper SM (void FUN_00101170(void); calls=[], callers=[0x1012fc]) (22L)
+0x00101204  0x008C  CONFIRMED       sm_exheader_acl_table_parse                             C: validates and parses the service-permission table (ACLs) from the blob
+0x001012FC  0x0020  EVIDENCE_BASED  sm_getter_setter_stub_001012fc                          C: direct getter/setter/constant (5L)
+0x0010131C  0x001C  CONFIRMED       sm_svc_0x2B_GetProcessInfo_0010131c                     Direct wrapper/stub for svc 0x2B (GetProcessInfo) (7L)
+0x00101338  0x00E0  EVIDENCE_BASED  sm_sync_lock_acquire_00101338                           C: atomic LDREX/STREX acquire + ArbitrateAddress
+0x0010141C  0x011C  EVIDENCE_BASED  sm_acl_node_insert                                      C: inserts an allowed-service entry into the process node
+0x001014E0  0x0058  EVIDENCE_BASED  sm_acl_list_find_slot                                   C: looks up an ACL entry in the process list
+0x001015A0  0x0018  EVIDENCE_BASED  sm_acl_node_init                                        C: initializes an ACL entry header
+0x001015B8  0x0008  EVIDENCE_BASED  sm_getter_setter_stub_001015b8                          C: direct getter/setter/constant (4L)
+0x001015C4  0x0018  EVIDENCE_BASED  sm_sub_001015c4                                         C: helper SM (undefined4 FUN_001015c4(undefined4 *param_1,i; calls=[], callers=[0x10141c,0x1014e0]) (11L)
+0x001015DC  0x0018  CONFIRMED       sm_svc_0x48_CreateSessionToPort_001015dc                Direct wrapper/stub for svc 0x48 (CreateSessionToPort) (6L)
+0x001015F4  0x0018  CONFIRMED       sm_svc_0x27_DuplicateHandle_001015f4                    Direct wrapper/stub for svc 0x27 (DuplicateHandle) (6L)
+0x0010160C  0x0034  CONFIRMED       sm_process_event_init                                   C: initializes the per-process event structure
+0x00101640  0x0104  EVIDENCE_BASED  sm_sync_event_or_arbiter_wait_00101640                  C: atomic LDREX/STREX wait + ArbitrateAddress on a counter
+0x0010172C  0x0058  CONFIRMED       sm_session_obj_dtor_0x10172C                            C+SWI 0x23: srv:pm session object destructor
+0x001017E0  0x00BC  CONFIRMED       sm_process_entry_ctor                                   C: process entry constructor (PID, semaphore 0x1021f8, notification ring buffer)
+0x0010189C  0x00F8  CONFIRMED       sm_check_process_service_acl                            C: checks whether the caller PID has permission (ACL) to access the u64 service (param_4, param_5)
+0x00101994  0x00A4  CONFIRMED       sm_notif_ring_push                                      C: inserts notif_id into the circular queue (16 slots +0x20/+0x24/+0x28) and calls ReleaseSemaphore
+0x00101A38  0x01DC  CONFIRMED       sm_slab_or_acl_tree_lookup                              C: inserts/looks up sorted entries in the process/ACL tree/slab
+0x00101C1C  0x0018  EVIDENCE_BASED  sm_sync_unlock_or_signal_00101c1c                       C: atomic LDREX/STREX lock release (9L)
+0x00101C34  0x0018  CONFIRMED       sm_svc_0x22_ArbitrateAddress_00101c34                   Direct wrapper/stub for svc 0x22 (ArbitrateAddress) (5L)
+0x00101C4C  0x0130  CONFIRMED       sm_crt_aeabi_uidivmod_00101c4c                          C verified: unsigned integer division __aeabi_uidivmod (112L)
+0x00101EFC  0x0020  EVIDENCE_BASED  sm_sync_atomic_op_00101efc                              C: atomic primitive hasExclusiveAccess (LDREX/STREX)
+0x00101F1C  0x0018  CONFIRMED       sm_svc_0x16_ReleaseSemaphore_00101f1c                   Direct wrapper/stub for svc 0x16 (ReleaseSemaphore) (6L)
+0x00101F34  0x0074  EVIDENCE_BASED  sm_sub_00101f34                                         C: helper SM (int FUN_00101f34(uint *param_1,uint *param_2,; calls=[], callers=[0x10189c,0x102030,0x102280]) (50L)
+0x00101FA8  0x0088  EVIDENCE_BASED  sm_sub_00101fa8                                         C: helper SM (undefined8 FUN_00101fa8(uint *param_1,uint *p; calls=[], callers=[0x102280,0x102b78]) (198L)
+0x00102030  0x00CC  CONFIRMED       sm_find_registered_service_or_port                      C: looks up a service (type=0) or port (type=1) by u64 name (<=8 chars) in the global table (max 0xA0)
+0x00102104  0x0038  EVIDENCE_BASED  sm_reclock_lock_00102104                                C: checks TLS owner (c13,c0,3) at param_1+4 and acquires the recursive lock
+0x0010213C  0x0044  CONFIRMED       sm_validate_service_name_len                            C: validates 1 <= len <= 8 and no embedded NULs (0x10213c)
+0x00102188  0x0070  EVIDENCE_BASED  sm_sub_00102188                                         C: helper SM (void FUN_00102188(uint param_1); calls=[0x102454,0x102458], callers=[0x100a40,0x100afc,0x1017e0]) (21L)
+0x001021F8  0x0018  CONFIRMED       sm_svc_0x15_CreateSemaphore_001021f8                    Direct wrapper/stub for svc 0x15 (CreateSemaphore) (6L)
+0x00102210  0x001C  EVIDENCE_BASED  sm_sub_00102210                                         C: helper SM (void FUN_00102210(int param_1); calls=[0x101c1c], callers=[0x100afc,0x100d84,0x100ffc]) (7L)
+0x0010222C  0x0024  CONFIRMED       sm_svc_0x01_ControlMemory_0010222c                      Direct wrapper/stub for svc 0x01 (ControlMemory) (8L)
+0x00102250  0x0030  CONFIRMED       sm_crt_fill_words_00102250                              C verified: fills range [param_1, param_2) with word param_3
+0x00102280  0x018C  CONFIRMED       sm_srv_RegisterService                                  C: srv: cmd 3; validates name/ACL, creates the port (svc 0x47 CreatePort, max 0xA0) and wakes waiters
+0x0010241C  0x0018  CONFIRMED       sm_svc_0x35_GetProcessId_0010241c                       Direct wrapper/stub for svc 0x35 (GetProcessId) (6L)
+0x00102434  0x0020  CONFIRMED       sm_svc_0x47_CreatePort_00102434                         Direct wrapper/stub for svc 0x47 (CreatePort) (7L)
+0x00102454  0x0004  CONFIRMED       sm_svc_0x3C_Break_00102454                              Direct wrapper/stub for svc 0x3C (Break) (11L)
+0x00102458  0x0050  CONFIRMED       sm_svc_0x3C_Break_00102458                              Direct wrapper/stub for svc 0x3C (Break) (11L)
+0x001024AC  0x00A0  EVIDENCE_BASED  sm_slab_allocator_init                                  C: initializes a fixed-block pool/slab
+0x0010254C  0x0020  EVIDENCE_BASED  sm_sub_0010254c                                         C: helper SM (void FUN_0010254c(int param_1); calls=[0x1025d0], callers=[0x1040bc]) (6L)
+0x0010256C  0x0064  EVIDENCE_BASED  sm_sub_0010256c                                         C: helper SM (void FUN_0010256c(int param_1,undefined4 para; calls=[0x10270c,0x102854,0x102864], callers=[0x104100]) (13L)
+0x001025D0  0x0138  CONFIRMED       sm_slab_free_or_reclaim                                 C: frees a node in the slab/binary table
+0x0010270C  0x0148  EVIDENCE_BASED  sm_slab_alloc_entry                                     C: allocates a slot of the notification/ACL slab
+0x00102854  0x0010  EVIDENCE_BASED  sm_sub_00102854                                         C: helper SM (undefined2 FUN_00102854(int param_1,undefined; calls=[], callers=[0x10256c]) (7L)
+0x00102864  0x0020  EVIDENCE_BASED  sm_sub_00102864                                         C: helper SM (ushort FUN_00102864(int param_1,ushort param_; calls=[], callers=[0x10256c]) (7L)
+0x00102884  0x0010  EVIDENCE_BASED  sm_sub_00102884                                         C: helper SM (int FUN_00102884(int param_1,undefined1 param; calls=[], callers=[0x10256c]) (7L)
+0x00102894  0x005C  EVIDENCE_BASED  sm_sub_00102894                                         C: helper SM (undefined4 * FUN_00102894(undefined4 *param_1; calls=[0x102458], callers=[]) (23L)
+0x00102900  0x0118  CONFIRMED       sm_srv_Unsubscribe                                      C: srv: cmd 0xA; removes notif_id from the PID's subscription table
+0x00102A1C  0x0088  CONFIRMED       sm_srv_pm_PublishToAll                                  C: srv:pm cmd 2; broadcasts notification notif_id to all subscribed processes
+0x00102AA8  0x00C0  CONFIRMED       sm_srv_GetPort_0x8                                      C: srv: cmd 8; looks up a registered port (type=1) after validating the ACL and returns the handle (no CreateSessionToPort if check)
+0x00102B78  0x0154  CONFIRMED       sm_srv_RegisterPort_0x6                                 C: srv: cmd 6; registers a port with name <=8 chars after validating the ACL
+0x00102CDC  0x0114  CONFIRMED       sm_srv_pm_RegisterProcess                               C: srv:pm cmd 3; registers a PID with an ACL list (max 0x44 services)
+0x00102DFC  0x00D8  CONFIRMED       sm_srv_GetServiceHandle                                 C: srv: cmd 5; checks the ACL (0x10189c), looks up the service (0x102030) and calls CreateSessionToPort (0x1015dc)
+0x00102EEC  0x00BC  CONFIRMED       sm_srv_pm_PublishToProcess                              C: srv:pm cmd 1; resolves Handle->PID (svc 0x35 GetProcessId) and delivers the notification to the process
+0x00102FB0  0x00D4  CONFIRMED       sm_srv_UnregisterPort_0x7                               C: srv: cmd 7; removes the registered port from the table and closes the handle (svc 0x23)
+0x00103090  0x019C  CONFIRMED       sm_srv_pm_UnregisterProcess                             C: srv:pm cmd 4; unlinks and destroys the process entry by PID
+0x00103238  0x00D4  CONFIRMED       sm_srv_UnregisterService                                C: srv: cmd 4; removes the service from the table and closes the port handle (svc 0x23)
+0x00103318  0x0128  CONFIRMED       sm_srv_EnableNotification                               C: srv: cmd 2; registers/looks up a process entry by PID and returns the semaphore handle
+0x00103448  0x008C  CONFIRMED       sm_srv_IsServiceRegistered_0xE                          C: srv: cmd 0xE; checks the ACL and returns a bool saying whether the service is registered in the table
+0x001034D8  0x00F4  CONFIRMED       sm_srv_PublishToAll                                     C: srv: cmd 0xC; broadcasts the notification to the processes subscribed to notif_id
+0x001035D0  0x00D4  CONFIRMED       sm_srv_ReceiveNotification                              C: srv: cmd 0xB; extracts notif_id from the process's circular ring buffer
+0x001036A8  0x011C  CONFIRMED       sm_srv_PublishAndGetSubscriber                          C: srv: cmd 0xD; broadcasts the notification and fills the array of subscribed PIDs
+0x001037C8  0x010C  CONFIRMED       sm_srv_Subscribe                                        C: srv: cmd 9; adds notif_id to the process subscription table
+0x00103930  0x00F4  CONFIRMED       sm_srv_pm_ipc_dispatcher                                C: IPC dispatcher of 'srv:pm' cmds 1..4 (PublishToProcess, PublishToAll, RegisterProcess, UnregisterProcess)
+0x00103A44  0x03B4  CONFIRMED       sm_srv_ipc_dispatcher                                   ASM r2: IPC dispatcher of 'srv:', ARM jump table 0x103a64 (15 cases 0..0xE)
+0x00103E54  0x0010  EVIDENCE_BASED  sm_sub_00103e54                                         C: helper SM (void FUN_00103e54(undefined4 param_1,undefine; calls=[0x104100], callers=[0x1017e0]) (7L)
+0x00103E64  0x0054  CONFIRMED       sm_srv_pm_duplicate_handle_check                        C+SWI 0x27: duplicates the initial srv:pm/boot handle
+0x00103EC4  0x0034  CONFIRMED       sm_static_init_session_mgr                              ASM r2: .init_array constructor of the session manager 0x10af38
+0x00103F00  0x0038  CONFIRMED       sm_static_init_port_mgr                                 ASM r2: .init_array constructor of the ports 0x10af28
+0x00103F38  0x009C  CONFIRMED       sm_static_init_service_table                            ASM r2: .init_array constructor of the table of 0xA0 services/ports 0x109f68
+0x00103FD4  0x0038  CONFIRMED       sm_static_init_handles                                  ASM r2: .init_array constructor of handles 0x106044/0x106048
+0x0010400C  0x00AC  CONFIRMED       sm_static_init_globals                                  ASM r2: .init_array constructor of the slab/notification globals 0x106050/0x106c80
+0x001040BC  0x0040  EVIDENCE_BASED  sm_sub_001040bc                                         C: helper SM (void FUN_001040bc(int param_1); calls=[0x101efc,0x102104,0x10254c], callers=[0x103090]) (14L)
+0x00104100  0x0064  EVIDENCE_BASED  sm_sub_00104100                                         C: helper SM (undefined4 FUN_00104100(undefined4 param_1); calls=[0x101efc,0x102104,0x10256c], callers=[0x103e54]) (12L)
+0x00105008  0x0010  CONFIRMED       sm_ro_str_srv_ports                                     .rodata: strings 'srv:' and 'srv:pm'

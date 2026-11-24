@@ -1,0 +1,10 @@
+binary,ea,symbol_name,evidence
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x0010104C,spi_ipc_command_dispatcher,decompiled/0010104c.c: reads TLS cmdbuf, switch(cmdbuf[0] >> 16) with cases 1-9, writes reply header + result at cmdbuf[0..1]; default writes header 0x40 (invalid command)
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x001012E8,spi_ipc_cmd01_handler,case 1 of 0x10104c: called with (session, byte cmdbuf[1], byte cmdbuf[2]) result stored to cmdbuf[1]
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x00101510,spi_ipc_cmd03_handler,case 3 of 0x10104c: (session, byte cmdbuf[1], &cmdbuf[2], cmdbuf[3], &cmdbuf[2], cmdbuf[4])
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x0010153C,spi_ipc_cmd04_handler,case 4 of 0x10104c: (session, byte cmdbuf[1], &cmdbuf[2], cmdbuf[3], &cmdbuf[4], cmdbuf[0x24])
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x00101308,spi_ipc_cmd05_handler,case 5 of 0x10104c: (session, byte cmdbuf[1], &cmdbuf[2], cmdbuf[3])
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x0010143C,spi_ipc_cmd06_handler,case 6 of 0x10104c: only runs if translate descriptor (cmdbuf[5] & 0xF) == 0xC; buffer pointer cmdbuf[6]; reply echoes descriptor
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x0010141C,spi_ipc_cmd07_handler,case 7 of 0x10104c: only runs if translate descriptor (cmdbuf[5] & 0xF) == 0xA; buffer pointer cmdbuf[6]; reply echoes descriptor
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x0010145C,spi_ipc_cmd08_handler,case 8 of 0x10104c: (session, byte cmdbuf[1], byte cmdbuf[2], byte cmdbuf[3])
+Module-SPI-SPI-Bus-N3DS-0004013020002302,0x001014EC,spi_ipc_cmd09_handler,case 9 of 0x10104c: (session, signed byte cmdbuf[1])

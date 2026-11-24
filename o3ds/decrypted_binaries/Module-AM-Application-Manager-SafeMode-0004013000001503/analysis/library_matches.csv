@@ -1,0 +1,3 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00107602,0x22,lib_crt_aeabi_vec_ctor_107602,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:fs @0x0011D4E2 ""fs_crt_aeabi_vec_ctor_0011d4e2"" (o3ds_semantic)"
+0x00104AA6,0x20,lib_ipc_validate_hdr_or_size_104aa6,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-PTM-Battery-and-Pedometer-0004013000002202 @0x00104D76 ""ptm_ipc_validate_hdr_or_size"" (o3ds_semantic)"

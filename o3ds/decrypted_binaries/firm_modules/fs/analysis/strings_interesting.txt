@@ -1,0 +1,2 @@
+0x00106ED8	/Quota.dat
+0x00106FBC	/Quota.dat

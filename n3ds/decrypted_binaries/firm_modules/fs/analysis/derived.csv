@@ -1,0 +1,25 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0011703D,0x6,fs_str_service_F_FhF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""F:FhF"""
+0x0011D1EE,0x5,fs_str_service_80_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""80:F"""
+0x0011DAA0,0x18,fs_svc_0x22_ArbitrateAddress_11daa0,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00124320,0x18,fs_svc_0x21_CreateAddressArbiter_124320,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00124D94,0x1c,fs_svc_0x2B_GetProcessInfo_124d94,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00124DB0,0x18,fs_svc_0x0B_GetThreadPriority_124db0,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00125F7C,0x8,fs_svc_0x54_FlushProcessDataCache_125f7c,svc_wrapper,"function body is a single `svc #0x54` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00125F84,0x18,fs_svc_0x57_GetDmaState_125f84,svc_wrapper,"function body is a single `svc #0x57` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00125F9C,0x8,fs_svc_0x28_GetSystemTick_125f9c,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00125FA4,0x8,fs_svc_0x0C_SetThreadPriority_125fa4,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00133FBC,0x7,fs_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x00133FC3,0x7,fs_str_service_fs_REG,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:REG"""
+0x00133FCA,0x8,fs_str_service_fs_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:USER"""
+0x00134224,0x5,fs_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00134229,0x7,fs_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00134428,0x10,fs_func_ptr_table_134428,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00134A34,0xc,fs_func_ptr_table_134a34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00134BF0,0x10,fs_func_ptr_table_134bf0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00134E54,0xc,fs_func_ptr_table_134e54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00134EB4,0xc,fs_func_ptr_table_134eb4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00134F98,0xc,fs_func_ptr_table_134f98,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00135038,0xc,fs_func_ptr_table_135038,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001353E8,0x1c,fs_func_ptr_table_1353e8,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00135408,0xc,fs_func_ptr_table_135408,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)

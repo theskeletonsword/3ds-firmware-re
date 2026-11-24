@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x003477D0,0x52,str_srcpath_nmjRecorder_cpp,source_path_string,c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp
+0x001DED6C,0x5e2,srcref_nmjRecorder_cpp_1ded6c,source_file_reference,function references source path(s): c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp
+0x001DF34E,0x1f2,srcref_nmjRecorder_cpp_1df34e,source_file_reference,function references source path(s): c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp
+0x001DF580,0x5a8,srcref_nmjRecorder_cpp_1df580,source_file_reference,function references source path(s): c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp
+0x001DF98A,0x27a,srcref_nmjRecorder_cpp_1df98a,source_file_reference,function references source path(s): c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp
+0x0022CDC4,0x488,srcref_nmjRecorder_cpp_22cdc4,source_file_reference,function references source path(s): c:\MyProjects\CTR\CIA\cia\Sources\trunk\NOTES_LIB\src\PNOTE\Movie\nmjRecorder.cpp

@@ -1,0 +1,115 @@
+# Ghidra script: importar símbolos verificados en el programa actual
+# Uso: File -> Run Script... -> symbols_ghidra.py
+# Asegurate de que el image base coincida con la direccion de carga del .code
+
+from ghidra.program.model.address import Address
+
+symbols = [
+    (0x00000000, 0x002C, 'fcn.00000000', 'FUNC'),
+    (0x00000024, 0x001C, 'fcn.00000024', 'FUNC'),
+    (0x00000070, 0x0008, 'fcn.00000070', 'FUNC'),
+    (0x00000110, 0x001A, 'fcn.00000110', 'FUNC'),
+    (0x00000164, 0x0390, 'fcn.00000164', 'FUNC'),
+    (0x00000528, 0x002C, 'fcn.00000528', 'FUNC'),
+    (0x0000055C, 0x004C, 'fcn.0000055c', 'FUNC'),
+    (0x000005C4, 0x0004, 'fcn.000005c4', 'FUNC'),
+    (0x000005DC, 0x0004, 'fcn.000005dc', 'FUNC'),
+    (0x000005E0, 0x0008, 'fcn.000005e0', 'FUNC'),
+    (0x00000644, 0x0004, 'fcn.00000644', 'FUNC'),
+    (0x00000828, 0x004C, 'fcn.00000828', 'FUNC'),
+    (0x00000880, 0x0084, 'fcn.00000880', 'FUNC'),
+    (0x00000918, 0x0040, 'fcn.00000918', 'FUNC'),
+    (0x00000960, 0x0040, 'fcn.00000960', 'FUNC'),
+    (0x000009A8, 0x00B8, 'fcn.000009a8', 'FUNC'),
+    (0x00000A64, 0x0038, 'fcn.00000a64', 'FUNC'),
+    (0x00000AA0, 0x0060, 'fcn.00000aa0', 'FUNC'),
+    (0x00000AC4, 0x0010, 'fcn.00000ac4', 'FUNC'),
+    (0x00000AD8, 0x0074, 'fcn.00000ad8', 'FUNC'),
+    (0x00000AEC, 0x0010, 'fcn.00000aec', 'FUNC'),
+    (0x00000B00, 0x0034, 'fcn.00000b00', 'FUNC'),
+    (0x00000B3C, 0x0038, 'fcn.00000b3c', 'FUNC'),
+    (0x00000B78, 0x0038, 'fcn.00000b78', 'FUNC'),
+    (0x00000BB4, 0x0018, 'fcn.00000bb4', 'FUNC'),
+    (0x00000BCC, 0x004C, 'fcn.00000bcc', 'FUNC'),
+    (0x00000C18, 0x0054, 'fcn.00000c18', 'FUNC'),
+    (0x00000CBC, 0x0020, 'fcn.00000cbc', 'FUNC'),
+    (0x00000CDC, 0x001C, 'fcn.00000cdc', 'FUNC'),
+    (0x00000D10, 0x0004, 'fcn.00000d10', 'FUNC'),
+    (0x00000D14, 0x0034, 'fcn.00000d14', 'FUNC'),
+    (0x00000D48, 0x00C4, 'fcn.00000d48', 'FUNC'),
+    (0x00000E3C, 0x0004, 'fcn.00000e3c', 'FUNC'),
+    (0x00000E60, 0x0010, 'fcn.00000e60', 'FUNC'),
+    (0x00000E70, 0x0018, 'fcn.00000e70', 'FUNC'),
+    (0x00000EC0, 0x01F8, 'fcn.00000ec0', 'FUNC'),
+    (0x00000F30, 0x0018, 'fcn.00000f30', 'FUNC'),
+    (0x00001004, 0x0014, 'fcn.00001004', 'FUNC'),
+    (0x0000102C, 0x0004, 'fcn.0000102c', 'FUNC'),
+    (0x00001030, 0x0020, 'fcn.00001030', 'FUNC'),
+    (0x00001050, 0x0038, 'fcn.00001050', 'FUNC'),
+    (0x00001088, 0x001C, 'fcn.00001088', 'FUNC'),
+    (0x000011D4, 0x0004, 'fcn.000011d4', 'FUNC'),
+    (0x0000120C, 0x0118, 'fcn.0000120c', 'FUNC'),
+    (0x00001348, 0x0060, 'fcn.00001348', 'FUNC'),
+    (0x000013AC, 0x0050, 'fcn.000013ac', 'FUNC'),
+    (0x00001400, 0x0038, 'fcn.00001400', 'FUNC'),
+    (0x00001440, 0x0004, 'fcn.00001440', 'FUNC'),
+    (0x00001444, 0x0074, 'fcn.00001444', 'FUNC'),
+    (0x000014B8, 0x00E0, 'fcn.000014b8', 'FUNC'),
+    (0x0000159C, 0x0064, 'fcn.0000159c', 'FUNC'),
+    (0x00001608, 0x0004, 'fcn.00001608', 'FUNC'),
+    (0x0000160C, 0x0148, 'fcn.0000160c', 'FUNC'),
+    (0x00001754, 0x0010, 'fcn.00001754', 'FUNC'),
+    (0x00001764, 0x0020, 'fcn.00001764', 'FUNC'),
+    (0x00001784, 0x0010, 'fcn.00001784', 'FUNC'),
+    (0x0000179C, 0x0004, 'fcn.0000179c', 'FUNC'),
+    (0x00001978, 0x0004, 'fcn.00001978', 'FUNC'),
+    (0x00001998, 0x0004, 'fcn.00001998', 'FUNC'),
+    (0x0000199C, 0x0004, 'fcn.0000199c', 'FUNC'),
+    (0x000019CC, 0x0004, 'fcn.000019cc', 'FUNC'),
+    (0x000019D4, 0x0058, 'fcn.000019d4', 'FUNC'),
+    (0x00001A30, 0x0054, 'fcn.00001a30', 'FUNC'),
+    (0x00001A84, 0x0028, 'fcn.00001a84', 'FUNC'),
+    (0x00001AAC, 0x0058, 'fcn.00001aac', 'FUNC'),
+    (0x00001B10, 0x0058, 'fcn.00001b10', 'FUNC'),
+    (0x00001BA8, 0x0004, 'fcn.00001ba8', 'FUNC'),
+    (0x00001BC8, 0x0004, 'fcn.00001bc8', 'FUNC'),
+    (0x00001BE8, 0x0004, 'fcn.00001be8', 'FUNC'),
+    (0x00001C40, 0x0004, 'fcn.00001c40', 'FUNC'),
+    (0x00001C60, 0x0004, 'fcn.00001c60', 'FUNC'),
+    (0x00001C88, 0x0004, 'fcn.00001c88', 'FUNC'),
+    (0x00001CA0, 0x0004, 'fcn.00001ca0', 'FUNC'),
+    (0x00001CEC, 0x0004, 'fcn.00001cec', 'FUNC'),
+    (0x00001D0C, 0x0004, 'fcn.00001d0c', 'FUNC'),
+    (0x00001D28, 0x0004, 'fcn.00001d28', 'FUNC'),
+    (0x00001D3C, 0x0004, 'fcn.00001d3c', 'FUNC'),
+    (0x00001D48, 0x0004, 'fcn.00001d48', 'FUNC'),
+    (0x00001D4C, 0x0048, 'fcn.00001d4c', 'FUNC'),
+    (0x00001D98, 0x0070, 'fcn.00001d98', 'FUNC'),
+    (0x00001E10, 0x0004, 'fcn.00001e10', 'FUNC'),
+    (0x00001E18, 0x003C, 'fcn.00001e18', 'FUNC'),
+    (0x00001E68, 0x02F4, 'fcn.00001e68', 'FUNC'),
+    (0x00002250, 0x0004, 'fcn.00002250', 'FUNC'),
+    (0x00002254, 0x0004, 'fcn.00002254', 'FUNC'),
+    (0x0000229C, 0x0004, 'fcn.0000229c', 'FUNC'),
+    (0x000022A4, 0x002C, 'fcn.000022a4', 'FUNC'),
+    (0x000022E8, 0x001C, 'fcn.000022e8', 'FUNC'),
+    (0x00002320, 0x0004, 'fcn.00002320', 'FUNC'),
+    (0x00002334, 0x0004, 'fcn.00002334', 'FUNC'),
+    (0x0000233C, 0x0028, 'fcn.0000233c', 'FUNC'),
+    (0x0000006C, 0x0004, 'svc_0x9EF000', 'INSN'),
+    (0x000000BC, 0x0004, 'svc_0x76F000', 'INSN'),
+]
+
+for addr, size, name, typ in symbols:
+    try:
+        a = currentProgram.getAddressFactory().getAddress(hex(addr))
+        if typ == 'FUNC':
+            func = currentProgram.getFunctionManager().createFunction(name, a)
+            func.setEntryPoint(a)
+        else:
+            currentProgram.getSymbolTable().createSymbol(name, currentProgram.getSymbolTable().getGlobalNamespace(), a, None)
+        print('Creado: {} @ {}'.format(name, a))
+    except Exception as e:
+        print('Error {}: {}'.format(name, e))
+
+print('Importacion de simbolos terminada.')

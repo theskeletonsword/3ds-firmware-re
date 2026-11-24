@@ -1,0 +1,4 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001045F0,0x8,cfg_get_tls_1045f0,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x001052C0,0x8,cfg_get_tls_1052c0,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0010388C,0x1de,cfg_ipc_server_loop_10388c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x107700

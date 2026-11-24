@@ -1,0 +1,36 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00164480,0x70,strref_Mozilla_5_0_Nintendo_3DS_d_AppleWebKit_s_KHTML_l_164480,string_reference,"function references string(s): Mozilla/5.0 (Nintendo 3DS/%d) AppleWebKit/%s (KHTML, like Gecko) NX/%s %s/%.1f.prod.%s"
+0x00166D00,0x1cc,strref_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv_166d00,string_reference,function references string(s): ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x00172FE0,0x58,strref_TextBoxB_172fe0,string_reference,function references string(s): TextBoxB
+0x00173038,0x54,strref_TextBoxB_173038,string_reference,function references string(s): TextBoxB
+0x00174A04,0xbc,strref_CFLRES_174a04,string_reference,function references string(s): $CFLRES:
+0x0017A6A4,0x2f8,strref_Nintendo_17a6a4,string_reference,function references string(s): Nintendo
+0x0018404C,0x174,strref_CFLDB_CFL_OldDB_dat_18404c,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x001A1D58,0x358,strref_NintendoDS_1a1d58,string_reference,function references string(s): NintendoDS
+0x001CB5CC,0xae0,strref_ScrollAreaRct_1cb5cc,string_reference,function references string(s): ScrollAreaRct
+0x001E0B2C,0x8c,strref_http_content_1e0b2c,string_reference,function references string(s): http:/content:/
+0x001E71E0,0x8ec,strref_Keyboard_InputDefault_1e71e0,string_reference,function references string(s): Dialog_Decide | Keyboard_InputDefault
+0x001FCF3C,0x7c,strref_about_blank_1fcf3c,string_reference,function references string(s): about:blank
+0x0021FEC4,0x320,strref_TitleTxb_21fec4,string_reference,function references string(s): TitleTxb
+0x00220214,0x240,strref_TitleTxb_220214,string_reference,function references string(s): TitleTxb
+0x0022A10C,0xcc,strref_SE_CTR_SPIDER_LINK_22a10c,string_reference,function references string(s): SE_CTR_SPIDER_LINK
+0x002348DC,0xb4,strref_Bounding_2348dc,string_reference,function references string(s): Bounding
+0x00234F34,0xc0,strref_BottomFrameFPct_234f34,string_reference,function references string(s): BottomFrameFPct
+0x00234FF4,0xc0,strref_BottomFrameF2Pct_234ff4,string_reference,function references string(s): BottomFrameF2Pct
+0x002350B4,0xd4,strref_SE_CTR_COMMON_CANCEL_2350b4,string_reference,function references string(s): BottomBtnLRct | BottomFrameHPct | SE_CTR_COMMON_CANCEL
+0x00235188,0xf4,strref_BottomFrameHPct_235188,string_reference,function references string(s): BottomFrameHPct
+0x00237484,0x5c,strref_FocusedOnOff_237484,string_reference,function references string(s): FocusedOnOff
+0x00237508,0xb8,strref_InvalidatedOnOff_237508,string_reference,function references string(s): InvalidatedOnOff
+0x00237A5C,0xac,strref_FocusedOnOff_237a5c,string_reference,function references string(s): DecidedOn | FocusedOnOff
+0x00237E20,0x98,strref_FocusedOnOff_237e20,string_reference,function references string(s): FocusedOnOff
+0x00237EB8,0xbc,strref_FocusedOnOff_237eb8,string_reference,function references string(s): FocusedOnOff
+0x00237F74,0xb0,strref_FocusedOnOff_237f74,string_reference,function references string(s): FocusedOnOff
+0x00238024,0xf4,strref_DecidedOn_238024,string_reference,function references string(s): DecidedOn
+0x00241DE0,0xf8,strref_GROUP_BGM_INIT_241de0,string_reference,function references string(s): GROUP_BGM_INIT | GROUP_BGM_MAIN
+0x0025FCA0,0x8c,strref_CFLDB_CFL_OldDB_dat_25fca0,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x0027B68C,0xc0,strref_1_2_7_f_NINTENDO_CTR_SDK_v1_27b68c,string_reference,function references string(s): 1.2.7.f-NINTENDO-CTR-SDK-v1
+0x0027B758,0xc0,strref_1_2_7_f_NINTENDO_CTR_SDK_v1_27b758,string_reference,function references string(s): 1.2.7.f-NINTENDO-CTR-SDK-v1
+0x0027B824,0x100,strref_1_2_7_f_NINTENDO_CTR_SDK_v1_27b824,string_reference,function references string(s): 1.2.7.f-NINTENDO-CTR-SDK-v1
+0x002879E4,0x1a4,strref_MainThread_2879e4,string_reference,function references string(s): MainThread
+0x00287CC0,0xe8,strref_MainThread_287cc0,string_reference,function references string(s): MainThread
+0x0028B488,0x4cf8,strref_person_gender_c_gender_region_u_region_tz_name_s_28b488,string_reference,function references string(s): <person><gender>%c</gender><region>%u</region><tz_name>%s</tz_name></person>

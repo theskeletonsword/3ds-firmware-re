@@ -1,0 +1,285 @@
+0x0010682C	layout/dialogheader/WirelessSwitchOff
+0x00106854	layout/dialogheader/DialogHeaderBaseNormal
+0x00106F30	layout/dialog/Dialog
+0x00109564	layout/error/DialogError
+0x001095A4	SE_CTR_COMMON_ERROR
+0x001097BC	layout/error/DialogError
+0x001097E0	SE_CTR_COMMON_ERROR
+0x00110AEC	RWSTDERR
+0x00112CC4	/%s.arc
+0x00112CD4	font.bcfnt
+0x00112CE0	cbf_std.bcfnt
+0x00112CF0	Hud.bcfnt
+0x0013F110	layout/touchcursor/TextSelectCursor
+0x0013F134	layout/touchcursor/ImageSelectCursor
+0x0013F15C	layout/touchcursor/DragCursor
+0x0013FCF8	browser/wkci18ndat.dat
+0x00145344	%s%04d
+0x00145678	https://%s/v1/users/%u/notifications
+0x001499B0	/%d.bin
+0x001499BC	/%s/%d_msbt_LZ.bin
+0x0014A758	https://
+0x001514CC	layout/toucheffect/TouchEffectS
+0x00151D40	layout/browse/BasicAuthDialog
+0x00152414	layout/dialog/DialogNormalNT
+0x00152E4C	layout/dialog/DialogNormalNT
+0x00154750	layout/browse/pageinfo/PageInfoItem
+0x001548E0	layout/browse/pageinfo/IconSecurity
+0x001558D4	browser/UserCss.dat
+0x001570D0	%s\%u\
+0x0015748C	https://discovery.olv.nintendo.net/v1/endpoint
+0x00157E74	/communities/%u
+0x00157E84	/titles/show
+0x00157E94	%ssrc=lib
+0x00157EA0	%stopic_tag=
+0x00157EB0	/posts/
+0x00157EB8	/users/show?pid=%u
+0x00157ECC	%ssrc=menu
+0x001582F0	%s\%u\
+0x0015CA3C	%03d%s
+0x001641E8	browser/effective_tld_names.dat
+0x001643FC	browser/Skin.dat
+0x00165914	$CFLRES:/CFL_Res.dat
+0x00165D94	$CFLRES:/CFL_Res.dat
+0x00172AE8	BasePctH.bclim
+0x00172AF8	BasePctC.bclim
+0x001730B8	layout/button/ButtonSelect
+0x00181B8C	cave.msbt
+0x00181B98	hud.msbt
+0x00181C74	/%s/%s/%s
+0x001843E8	$CFLDB:/CFL_OldDB.dat
+0x00184680	$CFLDB:/CFL_DB.dat
+0x00184768	$CFLRES:/CFL_Res.dat
+0x00184968	$CFLDB:/CFL_OldDB.dat
+0x00184980	$CFLDB:/CFL_DB.dat
+0x001A0320	$CFLDB:/CFL_OldDB.dat
+0x001AA368	/font/Hud.bcfnt
+0x001C07FC	layout/photo/Canvas
+0x001C0C87	Alayout/dialog/DialogNormalNT
+0x001C1700	layout/dialog/DialogNormalNT
+0x001C2A48	layout/test/Test00
+0x001C2A5C	layout/test/Test01
+0x001C2A70	layout/test/Test02
+0x001C3B7C	layout/dialog/DialogNormalNT
+0x001C4CFC	layout/sceneinfo/SceneInfo
+0x001C4D38	layout/sceneinfo/SceneInfoText
+0x001C4D7C	layout/sceneinfo/icon/IconFavorite
+0x001C4F70	layout/sceneinfo/icon/IconOption
+0x001C54E4	layout/dialog/DialogNormalNT
+0x001C5A30	layout/dialog/DialogNormalNT
+0x001C5F24	layout/dialogheader/IconHelp
+0x001CB9AC	layout/option/ProxyDialog
+0x001CBA14	layout/dialog/DialogNormalNT
+0x001CBA54	layout/option/ProxyItem
+0x001CCD90	layout/dialog/DialogNormalNT
+0x001CD390	layout/option/HelpButton
+0x001CDE9C	layout/dialogheader/DialogHeaderNormal
+0x001CDEC4	layout/dialogheader/DialogHeaderBaseNormal
+0x001CE24C	layout/option/item/1Button
+0x001CE9B8	layout/option/item/2Button
+0x001D0610	layout/dialog/DialogNormalNT
+0x001D4C20	layout/toolbar/ImageBackButton
+0x001D4C74	layout/toolbar/ImageSaveButton
+0x001D50CC	/layout/loading/LoadingIcon.arc
+0x001D7F98	Mount Msg Failed
+0x001D7FC0	Mount Rom Failed
+0x001DE190	ErrorMsg_AC_Connection_Failed
+0x001E1FC8	file:///lls/
+0x001E3B04	layout/browse/dropdownlist/DropDownListItem
+0x001E3B44	layout/browse/dropdownlist/ButtonSelectNoEmboss
+0x001E4548	layout/loading/LoadingIconW
+0x001E4564	layout/loading/LoadingIcon
+0x001E5390	CommFavicon.bclim
+0x001E5BA4	%s/%05x/%s
+0x001E5BB0	http://cgi2.nintendo.co.jp/favorites/3ds.php?r=%s&l=%s&c=%s
+0x001E5BF0	http://www.yahoo.co.jp/
+0x001E5C08	https://offdevice-j1.miiverse.nintendo.net/
+0x001E5E5C	http://
+0x001E5E64	https://
+0x001E8514	layout/sysinfo/SystemInfo
+0x001E8568	layout/sysinfo/NetAntenna
+0x001E85A4	layout/sysinfo/NetMode
+0x001E85DC	layout/sysinfo/Calendar
+0x001E89DC	layout/sysinfo/Battery
+0x001E9388	/model/Male.bcres
+0x001EA398	data:image/png;base64,
+0x001EC300	layout/scrollbar/ScrollBar
+0x001ECFFC	layout/scrollbar/ButtonU
+0x001ED018	layout/scrollbar/ButtonD
+0x001EF350	layout/browse/dropdownlist/DropDownListDialog
+0x001EF7D8	layout/dialog/DialogNormalNT
+0x001F0D64	layout/dialog/DialogNotice
+0x001F235C	month_%d
+0x001F236C	day_%d
+0x001F2CA4	layout/browse/pageinfo/PageInfoDialog
+0x001F2D30	layout/browse/InvalidSSLText
+0x001F3590	layout/browse/Canvas
+0x001F4F1C	layout/toolbar/ToolBar
+0x001F565C	layout/toolbar/BackButton
+0x002051D0	%s/%s/%s
+0x00209994	layout/toolbar/NoFixationBG
+0x002099BC	layout/toolbar/OliveBack
+0x002099F8	layout/toolbar/TextButton
+0x00209E40	layout/toolbar/OliveManualButton
+0x00209E6C	layout/toolbar/CommunityShortButton
+0x00209E98	layout/toolbar/RegistButton
+0x0020A268	layout/toolbar/MyMenuButton
+0x0020A2A0	layout/toolbar/ActivityButton
+0x0020A548	layout/toolbar/CommunityButton
+0x0020A570	layout/toolbar/NotificationButton
+0x0020BE58	%s.bclyt
+0x0020FA5C	{"IDs": [%s]}
+0x00211AB4	%d-%d-%d %d:%d:%d
+0x00211B04	{"error_code": %d, "error_kind": "%s", "result": "%s"}
+0x0021F18C	layout/dialog/DialogNormalNT
+0x00220BD8	layout/dialog/AccountDelDialog
+0x00220EB4	layout/dialogheader/DialogHeaderNormal
+0x00220F00	layout/dialogheader/IconHelp
+0x00222C98	layout/dialog/DialogProgress
+0x002233D4	layout/browse/FocusFrame
+0x00224194	layout/browse/jsdialog/BaseDialog
+0x002241CC	layout/dialog/DialogProgress
+0x0023044C	data:image/jpg;base64,
+0x00232C9C	Failure
+0x00234218	layout/dialog/Dialog
+0x00234C58	layout/dialog/BottomButtonF
+0x002355F0	layout/dialog/AccountDelButton
+0x002398D4	%s:/%s
+0x002398E0	%s:%s%s
+0x002398E8	%s%s%s
+0x0023AB68	$_sdmc:
+0x00241380	rom:/sound/CAVE_olive.bcsar
+0x00249180	layout/dialog/DialogNormalNT
+0x00249410	layout/dialog/DialogNormal
+0x002494DC	SE_CTR_COMMON_ERROR
+0x00249888	/%s/%s/%s
+0x0024A994	%s:%08X%s
+0x0024A9BC	THREAD: %u
+0x0024B2B8	 %08X%s
+0x0024C9E8	Exception Occured. type=%d
+0x0024CA34	r%d = 0x%08x
+0x0024DE50	SetDevMemSize Failed
+0x0024EC25	MSG=%s
+0x0024F810	layout/option/item/NetworkInfo
+0x0024FADC	layout/option/item/Separator
+0x0024FD38	layout/option/item/VersionInfo
+0x0024FFF4	layout/button/ButtonNormal
+0x002502E8	layout/button/ButtonSelectH
+0x00251350	%m/%d/%y
+0x00251360	%Y-%m-%d
+0x0025FD68	$CFLDB:/CFL_OldDB.dat
+0x0025FDA8	$CFLDB:/CFL_OldDB.dat
+0x0025FDE8	$CFLDB:/CFL_DB.dat
+0x002603E0	$CFLDB:/CFL_OldDB.dat
+0x00260428	$CFLDB:/CFL_OldDB.dat
+0x00260470	$CFLDB:/CFL_DB.dat
+0x002604B4	$CFLDB:/CFL_DB.dat
+0x0026070C	$CFLDB:/CFL_DB.dat
+0x00260744	$CFLDB:/CFL_OldDB.dat
+0x0026080C	$CFLDB:/CFL_DB.dat
+0x00261C50	$CFLDB:/CFL_DB.dat
+0x00263AC4	$CFLDB:/CFL_DB.dat
+0x002E2DFB	C%s [%2lld]
+0x00358CE4	bpp of %d unsupported
+0x00378F3C	/dev/wkcrandom
+0x0037C118	/rom:/
+0x0037C120	/sdmc:/
+0x0037C2A4	/rom:/
+0x0037C2AC	/sdmc:/
+0x0037CCCC	/rom:/
+0x0037CCD4	/sdmc:/
+0x0037D27C	sdmc:/
+0x0039BB35	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039BD35	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039C735	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039C935	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039CB35	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039CD35	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039CF35	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0039E714	b%c%d%e%f%g%h%i%j%k%l%
+0x003A49EC	http://searcher.wii.com/search/search?r=%s&k=&l=%s&c=%s&n=2&a=y&p=3ds
+0x003A52A8	Exception Type: %s
+0x003A7D4C	dsp::DSP
+0x003A8AF4	$CFLDB:/CFL_OldDB.dat
+0x003A8B0C	$CFLDB:/CFL_DB.dat
+0x003AB24B	Alayout/window/WindowIconData
+0x003AB4A8	<person><gender>%c</gender><region>%u</region><tz_name>%s</tz_name></person>
+0x003B07D4	\%s\%llu\%s\%u\%s\%u\%s\%d\%s\%d\%s\%d\%s\%d\%s\%d\%s\%d\%s\%u\%s\%d\%s\%llu\%s\%s\%s\%lld\
+0x003B0830	3DS/%s-%d.%d.%d/%05X
+0x003B8C80	Mozilla/5.0 (Nintendo 3DS/%d) AppleWebKit/%s (KHTML, like Gecko) NX/%s %s/%.1f.prod.%s
+0x003C871A	N7WebCore9SETJMPERRE
+0x003C9D21	NSt8ios_base11failbit_setE
+0x003C9D3C	NSt8ios_base7failureE
+0x003D2968	layout/dialog/BottomButtonF2
+0x003D2985	layout/dialog/BottomButtonH
+0x003D29A1	layout/dialog/BottomButtonF2Black
+0x003D29C3	layout/dialog/BottomButtonHBlack
+0x003D29E4	layout/dialog/DialogBaseNormalBlack
+0x003D2A08	layout/dialog/DialogBaseNormal
+0x003D2A6D	/shader/MiiIcon.shbin
+0x003D2B77	/cro2/oss.cro
+0x003D2B85	/cro2/webkit.cro
+0x003D2BA7	/cro/static.crs
+0x003D2BFB	/s.bin
+0x003D2C2F	file:///lls/
+0x003D2C3C	http:///lls/
+0x003D2C49	file:/lls/
+0x003D2C54	http:/lls/
+0x003D2C5F	/largeStorage.bin
+0x003D2C71	file:///sdmc:/
+0x003D2D2C	ErrorMsg_Brs_SSLMOD_CERT_SIGNATURE_FAILURE
+0x003D2E0C	ErrorMsg_Brs_SSL_CONNECT_ERROR
+0x003D2EDE	ErrorMsg_AC_Connection_Failed
+0x003D56C5	gsp::Lcd
+0x003D56CE	gsp::Gpu
+0x003D58F7	/layout/BG.arc
+0x003D5906	/layout/toucheffect/TouchEffectS.arc
+0x003D592B	/layout/loading/LoadingIconW.arc
+0x003D594C	/layout/dialog/DialogScrollArea.arc
+0x003D5970	/layout/window/WindowIconData.arc
+0x003D5992	/layout/TextField.arc
+0x003D59A8	/layout/Desk.arc
+0x003D59B9	/layout/dialogheader/DialogHeaderBaseNormal.arc
+0x003D59E9	/layout/dialogheader/DialogHeaderNormal.arc
+0x003D5A15	/layout/loading/LoadingIcon.arc
+0x003D5A35	/layout/sysinfo/SystemInfo.arc
+0x003D5A54	/layout/scrollbar/ScrollBar.arc
+0x003D5A74	/layout/toolbar/ToolBar.arc
+0x003D5A90	/layout/Ticker.arc
+0x003D5AA3	/layout/ScrollIndicator.arc
+0x003D5ABF	/layout/toucheffect/TouchEffect.arc
+0x003D5AE3	/layout/Shadow.arc
+0x003D5AF6	/layout/CheckBox.arc
+0x003D5B0B	layout/browse/jsdialog/BaseDialog
+0x003D5B2D	layout/browse/jsdialog/BaseDialogBlack
+0x003D5B54	layout/browse/jsdialog/ContentBlack
+0x003D5B78	layout/browse/jsdialog/Content
+0x003D5B97	http://
+0x003D5B9F	layout/historyguide/ProgressBar
+0x003D5C87	layout/dialog/DialogScrollArea
+0x003D5CA6	layout/dialog/DialogScrollAreaBlack
+0x003D5F9F	Issuer:C=US; ST=UT; L=Salt Lake City; O=The USERTRUST Network; OU=http://www.usertrust.com; CN=UTN-USERFirst-Hardware
+0x003D60AE	photo/Nintendo 3DS/Private/00020400
+0x003D6101	%s: bad locale name: "%s"
+0x003D611B	%s: range error: invalid range [%d, %d)
+0x003D6143	%s: argument value %u out of range [0, %u)
+0x003D616E	%s: conversion failed
+0x003D6184	%s: facet %u not found in "%s" locale
+0x003D61AA	%s: failed to construct locale name
+0x003D61CE	%s: exception
+0x003D61DC	%s: unexpected exception
+0x003D61F5	%s: invalid pointer %p
+0x003D620C	%s: logic error
+0x003D621C	%s: unspecified error
+0x003D6232	%s: runtime error
+0x003D6244	%s: underflow error
+0x003D6258	%s: overflow error
+0x003D626B	%s: stream object has set %s
+0x003D6288	%s: stream object has set ios::badbit
+0x003D62AE	%s: stream object has set ios::eofbit
+0x003D62D4	%s: stream object has set ios::failbit
+0x003D62FB	%s: bad cast
+0x003D6308	%s: length error: %u > %u
+0x003D6322	%s: bad_alloc: out of memory
+0x003D633F	%s: out of memory
+0x003DC294	%d %b %Y

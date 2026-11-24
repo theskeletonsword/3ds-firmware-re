@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00108C8C,0x5a,strref_HrHscracerr_108c8c,string_reference,function references string(s): HrHscracerr
+0x00108D10,0xa6,strref_HrHscracerr_108d10,string_reference,function references string(s): HrHscracerr
+0x00109424,0x34,strref_HrHsHccracerr_109424,string_reference,function references string(s): HrHsHccracerr
+0x0010A2C8,0x64,strref_HrHscracerr_10a2c8,string_reference,function references string(s): HrHscracerr
+0x0010A5FC,0x64,strref_HrHscracerr_10a5fc,string_reference,function references string(s): HrHscracerr
+0x00114660,0xa0,strref_unfixed_infos_114660,string_reference,function references string(s): unfixed infos
+0x00114C50,0x18,strref_nfp_backup_dat_114c50,string_reference,function references string(s): nfp_backup.dat
+0x0011957C,0x5e,strref_HrHscracerr_11957c,string_reference,function references string(s): HrHscracerr
+0x0011DCE4,0xbc,strref_gpio_NFC_11dce4,string_reference,function references string(s): gpio:NFC

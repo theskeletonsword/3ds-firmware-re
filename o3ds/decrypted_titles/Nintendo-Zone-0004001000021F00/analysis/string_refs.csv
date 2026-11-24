@@ -1,0 +1,22 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010421C,0x2af0,strref_ESSID_AOSS_10421c,string_reference,function references string(s): ESSID-AOSS
+0x00159DD8,0x10c,strref_net_new_raku1_159dd8,string_reference,function references string(s): net_new_aoss | net_new_raku1
+0x00167558,0xfc,strref_NetInit_D_02_167558,string_reference,function references string(s): NetInit_D_02 | Null_Obj | TextBox_00
+0x0016A4C0,0x100,strref_Invalid_02d_16a4c0,string_reference,function references string(s): Invalid%02d
+0x0016ABC8,0xac,strref_TextPageAll_16abc8,string_reference,function references string(s): TextPageAll | TextPageBar | TextPageNow
+0x0016FAFC,0xd8,strref_TextNum_00_16fafc,string_reference,function references string(s): TextNum_00
+0x00171C8C,0x180,strref_net_fact_change1_171c8c,string_reference,function references string(s): net_fact_change | net_fact_change1 | net_proxy
+0x00178CB0,0x1bc,strref_TextBoxTitle_00_178cb0,string_reference,function references string(s): TextBoxTitle_00 | TextBox_00
+0x00178E80,0xd4,strref_TextBoxTitle_00_178e80,string_reference,function references string(s): Null_Title | TextBoxTitle_00
+0x0017A1A0,0xd8,strref_dm_dlg_sd_nowr_17a1a0,string_reference,function references string(s): dm_dlg_sd_nowr
+0x0017CF8C,0x894,strref_start_net_eula_17cf8c,string_reference,function references string(s): start_net_eula
+0x0017FA80,0x14c,strref_area_none_17fa80,string_reference,function references string(s): area_none
+0x00180BC0,0x184,strref_s_UnDecide_bclan_180bc0,string_reference,function references string(s): %s_Decide.bclan | %s_Select.bclan | %s_UnDecide.bclan
+0x00181DF0,0xcd8,strref_pare_new_set_181df0,string_reference,function references string(s): datamng_top | pare_change | pare_new_set
+0x00182B44,0x94,strref_basic_top4_182b44,string_reference,function references string(s): basic_top4
+0x0018B6D4,0xb4,strref_WaitIcon_bclyt_18b6d4,string_reference,function references string(s): N_WaitIcon_00 | WaitIcon.bclyt
+0x00192C60,0x78,strref_DSAHCFG_192c60,string_reference,function references string(s): DSAHCFG-
+0x00193E2C,0x94,strref_ctx_digest_md_size_EVP_MAX_MD_SIZE_193e2c,string_reference,function references string(s): ctx->digest->md_size <= EVP_MAX_MD_SIZE
+0x001C682C,0x56c,strref_R_UpSmall_1c682c,string_reference,function references string(s): R_UpSmall
+0x001F7574,0x3e40,strref_hid_SPVR_1f7574,string_reference,function references string(s): hid:SPVR
+0x001F75FC,0x68,strref_ptm_sysm_1f75fc,string_reference,function references string(s): ptm:sysm

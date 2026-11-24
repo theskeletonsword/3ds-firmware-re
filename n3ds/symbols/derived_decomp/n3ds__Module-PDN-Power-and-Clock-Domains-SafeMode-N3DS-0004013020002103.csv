@@ -1,0 +1,14 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001005B0,0x18,pdn_svc_0x4A_AcceptSession_1005b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4A) (AcceptSession); 5 C lines
+0x001005C8,0x18,pdn_svc_0x4F_ReplyAndReceive_1005c8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4F) (ReplyAndReceive); 5 C lines
+0x00100AEC,0x10,pdn_get_tls_100aec,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00100B00,0x34,pdn_svc_0x32_SendSyncRequest_100b00,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100B3C,0x38,pdn_svc_0x32_SendSyncRequest_100b3c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100B78,0x38,pdn_svc_0x32_SendSyncRequest_100b78,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100CFC,0x18,pdn_svc_0x35_GetProcessId_100cfc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x35) (GetProcessId); 5 C lines
+0x00100FAC,0x4,pdn_svc_0x3C_Break_100fac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00101018,0x18,pdn_svc_0x2D_ConnectToPort_101018,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x2D) (ConnectToPort); 5 C lines
+0x00101438,0xc,pdn_svc_0x0A_SleepThread_101438,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x00101794,0xc,pdn_get_tls_101794,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00101A84,0x28,pdn_svc_0x23_CloseHandle_101a84,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100164,0x390,pdn_ipc_server_loop_100164,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x1005c8

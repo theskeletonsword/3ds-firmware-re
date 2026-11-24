@@ -1,0 +1,26 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,ps_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100244,0x428,ps_ipc_handler_cmd_0001_0002_0003_etc_100244,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020042, 0x00030040, 0x00060140"
+0x001011B0,0x40,ps_ipc_client_cmd_000D_1011b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D0042
+0x001011F4,0x74,ps_ipc_client_cmd_0002_1011f4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020284
+0x001012A4,0x74,ps_ipc_client_cmd_0003_1012a4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030284
+0x001013B0,0x40,ps_ipc_client_cmd_000E_1013b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E0042
+0x001014E4,0x44,ps_ipc_client_cmd_0004_1014e4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040140
+0x00101AF8,0x18,ps_svc_0x2D_ConnectToPort_101af8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101FD8,0x18,ps_svc_0x35_GetProcessId_101fd8,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102144,0x10,ps_svc_0x3C_Break_102144,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102F14,0x18,ps_svc_0x4A_AcceptSession_102f14,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102F2C,0x18,ps_svc_0x4F_ReplyAndReceive_102f2c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010327C,0x54,ps_ipc_client_cmd_0003_10327c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x001032D8,0x48,ps_ipc_client_cmd_0004_1032d8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00103848,0x34,ps_ipc_client_cmd_0001_103848,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00103910,0x10,ps_svc_0x23_CloseHandle_103910,svc_wrapper,"function body is a single `svc #0x23` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103920,0x18,ps_svc_0x21_CreateAddressArbiter_103920,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104024,0x6,ps_str_service_ps_ps,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ps:ps"""
+0x00104030,0x9,ps_str_service_mcu__PLS,service_name_string,"client of (in ExHeader service-access list): ""mcu::PLS"""
+0x0010404C,0x7,ps_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x00104053,0x8,ps_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x00104060,0x8,ps_str_service_pxi_ps9,service_name_string,"client of (in ExHeader service-access list): ""pxi:ps9"""
+0x0010406C,0x5,ps_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00104071,0x7,ps_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00104120,0x6,ps_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

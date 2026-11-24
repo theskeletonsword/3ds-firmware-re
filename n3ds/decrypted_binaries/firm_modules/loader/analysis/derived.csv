@@ -1,0 +1,18 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x14000468,0x18,loader_svc_0x4A_AcceptSession_14000468,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000480,0x18,loader_svc_0x4F_ReplyAndReceive_14000480,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000738,0x54,loader_ipc_client_cmd_0003_14000738,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x14000794,0x4c,loader_ipc_client_cmd_0004_14000794,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x14000914,0x18,loader_svc_0x2D_ConnectToPort_14000914,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000B70,0x18,loader_svc_0x21_CreateAddressArbiter_14000b70,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000BB8,0xc,loader_svc_0x0A_SleepThread_14000bb8,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000D08,0x1c,loader_svc_0x2B_GetProcessInfo_14000d08,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000EBC,0x1c,loader_svc_0x73_CreateCodeSet_14000ebc,svc_wrapper,"function body is a single `svc #0x73` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000ED8,0x18,loader_svc_0x75_CreateProcess_14000ed8,svc_wrapper,"function body is a single `svc #0x75` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14000EF0,0x18,loader_svc_0x27_DuplicateHandle_14000ef0,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x14001BE8,0x18,loader_svc_0x22_ArbitrateAddress_14001be8,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x1400389E,0x7,loader_str_service_fs_REG,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:REG"""
+0x1400393C,0x7,loader_str_service_fs_LDR,service_name_string,"client of (in ExHeader service-access list): ""fs:LDR"""
+0x14003943,0x8,loader_str_service_fs_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:USER"""
+0x1400395C,0x5,loader_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x14003961,0x7,loader_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""

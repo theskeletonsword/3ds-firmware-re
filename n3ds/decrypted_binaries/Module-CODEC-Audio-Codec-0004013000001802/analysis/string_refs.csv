@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100B54,0x1c8,strref_gpio_CDC_100b54,string_reference,function references string(s): gpio:CDC

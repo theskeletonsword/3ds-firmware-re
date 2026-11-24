@@ -1,0 +1,46 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001088E4,0xd8,strref_LayoutTexture_1088e4,string_reference,function references string(s): LayoutTexture
+0x0010EFC8,0x620,strref_rom_shaders_nwgfx_DefaultShader_bcsdr_10efc8,string_reference,function references string(s): rom:/shaders/nwgfx_DefaultShader.bcsdr
+0x00188E94,0x128,strref_ERROR_Singleton_must_be_created_between_BeginSet_188e94,string_reference,function references string(s): [ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x0018905C,0x1e0,strref_UpdatePayloadSize_failed_mtuSize_d_is_too_big_fo_18905c,string_reference,function references string(s): UpdatePayloadSize() failed.  mtuSize(%d) is too big for data size limit of ChunkOld. | UpdatePayloadSize() failed.  mtuSize(%d) is too big for payload of PacketOld.
+0x00195100,0x18c,strref_SyncClockProtocol_response_PacketHandler_instanc_195100,string_reference,function references string(s): SyncClockProtocol::response() PacketHandler instance is not ready. | SyncClockProtocol::response() SyncClock basetime is not set. | SyncClockProtocol::response() failed.  Invalid destId.
+0x0019E0CC,0x4b8,strref_Mesh_Initialize_CreateProtocol_session_SyncClock_19e0cc,string_reference,function references string(s): Mesh::Initialize:CreateProtocol<session::MeshProtocol>() failed. | Mesh::Initialize:CreateProtocol<session::SyncClockProtocol>() failed.
+0x0019F080,0x310,strref_maxSilenceTime_greater_than_Session_NN_PIA_SESSI_19f080,string_reference,function references string(s): maxSilenceTime greater than Session::NN_PIA_SESSION_MAX_SILENCE_TIME_MAX. | maxSilenceTime less than Session::NN_PIA_SESSION_MAX_SILENCE_TIME_MIN.
+0x001A17B8,0x10c,strref_StationIndex_d_is_invalid_argument_1a17b8,string_reference,function references string(s): My StationIndex is invalid? | StationIndex %d is invalid argument.
+0x001A3B9C,0x110,strref_ERROR_Singleton_must_be_created_between_BeginSet_1a3b9c,string_reference,function references string(s): [ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x001A4490,0x1a0,strref_You_must_call_LatencyEmulator_SetInput_before_La_1a4490,string_reference,function references string(s): You must call LatencyEmulator::SetInput() before LatencyEmulator::Read().
+0x001A4758,0x170,strref_LatencyEmulator_buffer_is_full_Please_increase_S_1a4758,string_reference,function references string(s): LatencyEmulator buffer is full.  Please increase Setting::sendThreadLatencyEmulationPacketNum value.
+0x001A9BFC,0x1a8,strref_ERROR_Singleton_must_be_created_between_BeginSet_1a9bfc,string_reference,function references string(s): [ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x001AA5D0,0x184,strref_ConnectionAnalyzer_UpdateConnectionAnalysisData__1aa5d0,string_reference,"function references string(s): ConnectionAnalyzer::UpdateConnectionAnalysisData() called, but StationManager is not ready."
+0x001ACFC0,0x224,strref_StationProtocolManager_Initialize_CreateProtocol_1acfc0,string_reference,function references string(s): StationProtocolManager::Initialize:CreateProtocol<RttProtocol>() failed. | StationProtocolManager::Initialize:CreateProtocol<StationProtocol>() failed. | StationProtocolManager::Initialize:CreateProtocol<StationProtocolReliable>() failed.
+0x001AD204,0x120,strref_ERROR_Singleton_must_be_created_between_BeginSet_1ad204,string_reference,function references string(s): [ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x001B1934,0x1ec,strref_ERROR_Singleton_must_be_created_between_BeginSet_1b1934,string_reference,function references string(s): [ERROR] Singleton must be created between BeginSetup() ~ EndSetup().
+0x001B1F4C,0x208,strref_TransportAnalyzer_Update_failed_1b1f4c,string_reference,function references string(s): TransportAnalyzer::Update() failed.
+0x001C1E34,0xcc,strref_CARDBOARD_d_d_1c1e34,string_reference,function references string(s): CARDBOARD-%d.%d | User-Agent
+0x001C2C78,0x39c,strref_MoveAccountMaxTimes_1c2c78,string_reference,function references string(s): MoveAccountMaxTimes | MoveAccountMinDays
+0x001CACBC,0x58,strref_TitleName_1cacbc,string_reference,function references string(s): TitleName
+0x001E0588,0x214,strref_Matchmake_session_is_open_but_joining_P2P_is_den_1e0588,string_reference,"function references string(s): Matchmake session is open, but joining P2P is denied. Close matchmake session before deny by approval callback."
+0x001E07BC,0x300,strref_Matchmake_session_is_open_but_joining_P2P_is_den_1e07bc,string_reference,"function references string(s): Matchmake session is open, but joining P2P is denied. Close matchmake session before deny by approval callback."
+0x001E2424,0xac,strref_SyncClock_GetTime_is_called_but_INVALID_TIME_wil_1e2424,string_reference,"function references string(s): SyncClock::GetTime() is called, but INVALID_TIME will be returned."
+0x001E35C4,0x1bc,strref_ReliableSlidingWindow_PopData_Received_too_large_1e35c4,string_reference,function references string(s): ReliableSlidingWindow::PopData: Received too large data. Please restart.
+0x001E5288,0x98,strref_RelayRouteManager_SetRelayRoute_invalid_relaySta_1e5288,string_reference,"function references string(s): RelayRouteManager::SetRelayRoute: invalid relayStationIndex : srcId:%d,destId:%d,relayStationIndex:%d,stationNum:%d"
+0x001E7B68,0x80,strref_LocalMessage_LocalMessage_misaligned_08x_1e7b68,string_reference,function references string(s): LocalMessage::LocalMessage:misaligned:%08x
+0x001F3E2C,0x24c,strref_JSESSIONID_1f3e2c,string_reference,function references string(s): JSESSIONID=
+0x0021ADF8,0x358,strref_NintendoDS_21adf8,string_reference,function references string(s): NintendoDS
+0x00220218,0x2f8,strref_Nintendo_220218,string_reference,function references string(s): Nintendo
+0x00274B2C,0xd4,strref_TitleName_274b2c,string_reference,function references string(s): TitleName
+0x00278CBC,0x224,strref_JSESSIONID_278cbc,string_reference,function references string(s): JSESSIONID=
+0x0027AA20,0xb8,strref_NAMESPACE_NAME_MainThread_27aa20,string_reference,function references string(s): NAMESPACE_NAME::MainThread
+0x0027BCAC,0x6c,strref_RootHeap_27bcac,string_reference,function references string(s): RootHeap
+0x00292138,0x84,strref_N_textBox_D_00_292138,string_reference,function references string(s): N_textBox_D_00
+0x002934AC,0x218,strref_listBtn_D_00_2934ac,string_reference,function references string(s): listBtn_D_00
+0x00296B3C,0x154,strref_B_button_00_296b3c,string_reference,function references string(s): B_button_00
+0x00299054,0x154,strref_B_button_00_299054,string_reference,function references string(s): B_button_00
+0x0029BCDC,0x18c,strref_dialog_D_07_29bcdc,string_reference,function references string(s): dialog_D_07
+0x0029D960,0x174,strref_B_button_00_29d960,string_reference,function references string(s): B_button_00
+0x0029E100,0x110,strref_N_textBox_D_00_29e100,string_reference,function references string(s): N_textBox_D_00
+0x002A0FF4,0x148,strref_T_title_00_2a0ff4,string_reference,function references string(s): T_title_00
+0x002A1254,0xb8,strref_N_icon_00_2a1254,string_reference,function references string(s): N_icon_00 | P_icon_00
+0x002A182C,0x31c,strref_lau_minutes_2a182c,string_reference,function references string(s): lau_date | lau_hours | lau_minutes
+0x002A5978,0x384,strref_Analysis_END_2a5978,string_reference,"function references string(s): [Analysis] ---------------------------- END ---------------------------- | [Analysis] ProtocolId, TotalNum, TotalSize, AverageSize, Protocol(port)"
+0x002A5FD0,0xf8,strref_Analysis_BEGIN_Pia_Connection_info_d_03d_sec_pas_2a5fd0,string_reference,"function references string(s): [Analysis] ------ BEGIN(Pia Connection info, %d.%03d sec. passed) ------ | [Analysis] ---------------------------- END ----------------------------"

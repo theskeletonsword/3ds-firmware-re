@@ -1,0 +1,120 @@
+# Symbol table for FIRM built-in module 'loader' (TitleID 0x0004013000001302)
+# Load .text: 0x14000000 (+0x3898) | .rodata: 0x14004000 (+0x364) | .data: 0x14005000 (+0x340) | .bss: 0x1104
+# Total: 115 | CONFIRMED: 78 | EVIDENCE_BASED: 37 | HYPOTHESIS: 0
+Address         Size    Confidence      Name                                                    Notes
+----------------------------------------------------------------------------------------------------------------------------------
+0x14000000  0x002C  CONFIRMED       ldr_entry                                               Entry point: init BSS, init_array, connect srv (0x14001984), main loop (0x14000054)
+0x14000024  0x001C  CONFIRMED       ldr_crt0_bss_zero_init                                  C: bucle limpiado a cero de seccion .bss (10L)
+0x14000054  0x035C  CONFIRMED       ldr_server_main_loop                                    C: registra puerto 'Loader' en srv, ReplyAndReceive + ldr_ipc_dispatcher (0x14002c5c)
+0x140003E0  0x002C  CONFIRMED       ldr_crt_fini_array                                      C: itera destructores estaticos CRT
+0x14000414  0x004C  CONFIRMED       ldr_os_init_args                                        C: compara argumentos iniciales de entorno
+0x14000468  0x0018  CONFIRMED       ldr_svc_0x4A_AcceptSession_14000468                     Wrapper/stub directo svc 0x4A (AcceptSession) (6L)
+0x14000480  0x0018  CONFIRMED       ldr_svc_0x4F_ReplyAndReceive_14000480                   Wrapper/stub directo svc 0x4F (ReplyAndReceive) (6L)
+0x14000498  0x0008  EVIDENCE_BASED  ldr_getter_setter_stub_14000498                         C: getter/setter/constante directa (4L)
+0x140004A4  0x008C  CONFIRMED       ldr_init_pxipm_and_fsldr                                C: conecta a servicios 'PxiPM', 'fs:LDR' y 'fs:USER'
+0x14000540  0x0070  CONFIRMED       ldr_pxipm_uninit_or_close                               C: cierra sesion PxiPM/fs
+0x140005B8  0x0034  EVIDENCE_BASED  ldr_sub_140005b8                                        C: helper Loader (int FUN_140005b8(undefined4 *param_1); calls=[0x14000af8], callers=[0x14000054]) (11L)
+0x140005EC  0x00B8  EVIDENCE_BASED  ldr_sub_140005ec                                        C: helper Loader (int FUN_140005ec(void); calls=[0x14000b34,0x14001d80,0x14001db8], callers=[0x14000054]) (53L)
+0x140006A8  0x008C  EVIDENCE_BASED  ldr_sub_140006a8                                        C: helper Loader (undefined4 FUN_140006a8(int param_1,undefined; calls=[0x14001d80,0x14001db8], callers=[0x14000054]) (44L)
+0x14000738  0x0054  CONFIRMED       ldr_srv_RegisterService_0x30100                         C+SWI 0x32: srv: cmd 0x00030100 RegisterService ('Loader')
+0x14000794  0x004C  CONFIRMED       ldr_srv_UnregisterService_0x400C0                       C+SWI 0x32: srv: cmd 0x000400C0 UnregisterService
+0x140007E8  0x0088  CONFIRMED       ldr_svc_0x23_CloseHandle_140007e8                       Wrapper/stub directo svc 0x23 (CloseHandle) (28L)
+0x14000884  0x0040  EVIDENCE_BASED  ldr_match_cstr_helper_14000884                          C: valida puntero C-string no vacio y compara con constante (9L)
+0x140008CC  0x0040  EVIDENCE_BASED  ldr_match_cstr_helper_140008cc                          C: valida puntero C-string no vacio y compara con constante (9L)
+0x14000914  0x0018  CONFIRMED       ldr_svc_0x2D_ConnectToPort_14000914                     Wrapper/stub directo svc 0x2D (ConnectToPort) (6L)
+0x1400092C  0x0024  EVIDENCE_BASED  ldr_sub_1400092c                                        C: helper Loader (undefined4 FUN_1400092c(undefined4 param_1); calls=[0x14000bc4], callers=[0x140004a4]) (8L)
+0x14000958  0x002C  CONFIRMED       ldr_fs_cmd_0x0862_0x08620040                            C+SWI 0x32: fs: cmd 0x08620040
+0x14000988  0x0028  EVIDENCE_BASED  ldr_sub_14000988                                        C: helper Loader (undefined4 FUN_14000988(void); calls=[], callers=[0x140004a4]) (7L)
+0x140009BC  0x000C  EVIDENCE_BASED  ldr_sub_140009bc                                        C: helper Loader (void FUN_140009bc(undefined4 param_1); calls=[], callers=[0x140004a4]) (5L)
+0x140009CC  0x0038  EVIDENCE_BASED  ldr_sub_140009cc                                        C: helper Loader (void FUN_140009cc(void); calls=[0x14000b70], callers=[0x14000a08]) (15L)
+0x14000A08  0x0060  CONFIRMED       ldr_runtime_heap_and_arbiter_init                       C: inicializa AddressArbiter y escanea memoria (QueryMemory)
+0x14000A2C  0x0064  EVIDENCE_BASED  ldr_sub_14000a2c                                        C: helper Loader (void FUN_14000a2c(void); calls=[0x14000b88,0x14001d64], callers=[0x14000a08]) (40L)
+0x14000A94  0x0074  EVIDENCE_BASED  ldr_sub_14000a94                                        C: helper Loader (void FUN_14000a94(void); calls=[0x14001d64], callers=[0x14000a08]) (26L)
+0x14000AA8  0x0010  EVIDENCE_BASED  ldr_sub_14000aa8                                        C: helper Loader (void FUN_14000aa8(void); calls=[], callers=[0x14000a08]) (7L)
+0x14000ABC  0x0034  CONFIRMED       ldr_srv_RegisterClient_0x10002                          C+SWI 0x32: srv: cmd 0x00010002 RegisterClient
+0x14000AF8  0x0038  CONFIRMED       ldr_srv_EnableNotification_0x20000                      C+SWI 0x32: srv: cmd 0x00020000 EnableNotification
+0x14000B34  0x0038  CONFIRMED       ldr_srv_ReceiveNotification_0xB0000                     C+SWI 0x32: srv: cmd 0x000B0000 ReceiveNotification
+0x14000B70  0x0018  CONFIRMED       ldr_svc_0x21_CreateAddressArbiter_14000b70              Wrapper/stub directo svc 0x21 (CreateAddressArbiter) (6L)
+0x14000B88  0x0030  CONFIRMED       ldr_svc_0x02_QueryMemory_14000b88                       Wrapper/stub directo svc 0x02 (QueryMemory) (12L)
+0x14000BB8  0x000C  CONFIRMED       ldr_svc_0x0A_SleepThread_14000bb8                       Wrapper/stub directo svc 0x0A (SleepThread) (5L)
+0x14000BC4  0x0034  CONFIRMED       ldr_fs_cmd_0x0861_0x08610042                            C+SWI 0x32: fs: cmd 0x08610042
+0x14000BFC  0x004C  EVIDENCE_BASED  ldr_sub_14000bfc                                        C: helper Loader (void FUN_14000bfc(void); calls=[], callers=[0x14000ce8]) (22L)
+0x14000CE8  0x0020  EVIDENCE_BASED  ldr_getter_setter_stub_14000ce8                         C: getter/setter/constante directa (5L)
+0x14000D08  0x001C  CONFIRMED       ldr_svc_0x2B_GetProcessInfo_14000d08                    Wrapper/stub directo svc 0x2B (GetProcessInfo) (7L)
+0x14000D24  0x0018  EVIDENCE_BASED  ldr_sync_unlock_or_signal_14000d24                      C: liberacion atomica LDREX/STREX de lock (9L)
+0x14000D3C  0x00E0  EVIDENCE_BASED  ldr_sync_lock_acquire_14000d3c                          C: adquisicion atomica LDREX/STREX + ArbitrateAddress
+0x14000E28  0x0094  CONFIRMED       ldr_blz_decompress_in_place                             C verificado: descompresor Nintendo BLZ (footer -4/-8/-12) en memoria
+0x14000EBC  0x001C  CONFIRMED       ldr_svc_0x73_CreateCodeSet_14000ebc                     Wrapper/stub directo svc 0x73 (CreateCodeSet) (8L)
+0x14000ED8  0x0018  CONFIRMED       ldr_svc_0x75_CreateProcess_14000ed8                     Wrapper/stub directo svc 0x75 (CreateProcess) (6L)
+0x14000EF0  0x0018  CONFIRMED       ldr_svc_0x27_DuplicateHandle_14000ef0                   Wrapper/stub directo svc 0x27 (DuplicateHandle) (6L)
+0x14000F0C  0x0074  CONFIRMED       ldr_crt_aeabi_memcpy_14000f0c                           C verificado: copia de memoria optimizada 32B __aeabi_memcpy (114L)
+0x14000F80  0x011C  CONFIRMED       ldr_RegisterProgram                                     C: Loader cmd 2; valida coincidencia info y delega a PxiPM:RegisterProgram (0x14002e48)
+0x140010B0  0x005C  EVIDENCE_BASED  ldr_sub_140010b0                                        C: helper Loader (FUN_140010b0(undefined4 param_1,undefined4 *p; calls=[0x140011f0], callers=[0x14001fd0]) (14L)
+0x14001110  0x0028  EVIDENCE_BASED  ldr_sub_14001110                                        C: helper Loader (void FUN_14001110(int param_1,int *param_2); calls=[], callers=[0x14002fe0]) (10L)
+0x1400113C  0x00A4  CONFIRMED       ldr_fs_read_exefs_section                               C: abre archivo ExeFS/fs:LDR, lee datos via 0x1400136c y cierra handle
+0x140011F0  0x0088  CONFIRMED       ldr_prng_seed_step_delay                                C+SWI 0x28: delay con GetSystemTick + PRNG
+0x14001294  0x006C  CONFIRMED       ldr_exefs_open_file_cached                              C: abre archivo ExeFS o reutiliza handle cacheado
+0x14001304  0x0040  CONFIRMED       ldr_exefs_get_size                                      C: consulta tamano de archivo ExeFS abierto (0x14001f14)
+0x14001344  0x0028  CONFIRMED       ldr_svc_0x23_CloseHandle_14001344                       Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x1400136C  0x009C  CONFIRMED       ldr_fs_OpenFileDirectly_or_Read_0x08030204              C+SWI 0x32: fs: cmd 0x08030204 (OpenFileDirectly / transferencia archivo)
+0x1400169C  0x00B8  EVIDENCE_BASED  ldr_sub_1400169c                                        C: helper Loader (uint FUN_1400169c(uint *param_1,uint *param_2; calls=[], callers=[0x14000884,0x140008cc]) (78L)
+0x14001758  0x00A0  EVIDENCE_BASED  ldr_sub_14001758                                        C: helper Loader (void FUN_14001758(int param_1,int param_2,int; calls=[0x14001b40], callers=[]) (33L)
+0x140017F8  0x0078  CONFIRMED       ldr_aslr_get_random_va                                  C+SWI 0x28: mezcla GetSystemTick y PRNG para randomizar carga ASLR
+0x1400187C  0x007C  CONFIRMED       ldr_ipc_send_cmd_0x05_1400187c                          C+SWI 0x32: envia cmd IPC 0x00050100 via TLS+0x80 (sig: int FUN_1400187c(undefined4 *param_1,undefine)
+0x140018B0  0x0018  EVIDENCE_BASED  ldr_sub_140018b0                                        C: helper Loader (void FUN_140018b0(int *param_1); calls=[], callers=[0x14002a70]) (10L)
+0x140018C8  0x0018  EVIDENCE_BASED  ldr_sub_140018c8                                        C: helper Loader (bool FUN_140018c8(void); calls=[], callers=[0x14000054]) (4L)
+0x140018E4  0x002C  CONFIRMED       ldr_fsreg_cmd_0x0406_0x04060080                         C+SWI 0x32: fs:REG cmd 0x04060080
+0x14001914  0x0030  EVIDENCE_BASED  ldr_sub_14001914                                        C: helper Loader (void FUN_14001914(undefined4 *param_1); calls=[], callers=[0x1400314c]) (14L)
+0x1400194C  0x0012  EVIDENCE_BASED  ldr_atexit_guard_acquire_1400194c                       C: guarda estatica de inicializacion __cxa_guard_acquire
+0x14001960  0x0024  CONFIRMED       ldr_svc_0x01_ControlMemory_14001960                     Wrapper/stub directo svc 0x01 (ControlMemory) (8L)
+0x14001984  0x0010  CONFIRMED       ldr_srv_connect_initial                                 C: conecta a srv: (loop retry -5) + RegisterClient
+0x14001994  0x0108  CONFIRMED       ldr_srv_connect_retry                                   C: reconexion srv: + RegisterClient
+0x14001AB8  0x0022  CONFIRMED       ldr_crt_aeabi_vec_ctor_14001ab8                         C verificado: __aeabi_vec_ctor_nocookie (itera ctor sobre N elementos)
+0x14001ADC  0x005C  CONFIRMED       ldr_crt_strlen_14001adc                                 C verificado: strlen palabra-alineado (40L)
+0x14001B40  0x0130  CONFIRMED       ldr_crt_aeabi_uidivmod_14001b40                         C verificado: division entera sin signo __aeabi_uidivmod (112L)
+0x14001B70  0x00B0  CONFIRMED       ldr_pxipm_GetProgramInfo_0x10082                        C+SWI 0x32: PxiPM cmd 0x00010082 GetProgramInfo (o fsreg 0x0403 si handle/fallback)
+0x14001BE8  0x0018  CONFIRMED       ldr_svc_0x22_ArbitrateAddress_14001be8                  Wrapper/stub directo svc 0x22 (ArbitrateAddress) (5L)
+0x14001C54  0x0024  EVIDENCE_BASED  ldr_sub_14001c54                                        C: helper Loader (undefined4 FUN_14001c54(int param_1); calls=[], callers=[0x14001294,0x14001304,0x14002fc0]) (7L)
+0x14001C7C  0x0014  EVIDENCE_BASED  ldr_sub_14001c7c                                        C: helper Loader (void FUN_14001c7c(undefined4 *param_1,undefin; calls=[], callers=[0x14000738,0x14000794,0x1400187c]) (8L)
+0x14001C90  0x0068  EVIDENCE_BASED  ldr_sub_14001c90                                        C: helper Loader (void FUN_14001c90(uint param_1); calls=[0x14001d04,0x14001d08], callers=[0x14000a08,0x140034b4]) (21L)
+0x14001D00  0x0004  CONFIRMED       ldr_svc_0x3C_Break_14001d00                             Wrapper/stub directo svc 0x3C (Break) (11L)
+0x14001D04  0x0004  CONFIRMED       ldr_svc_0x3C_Break_14001d04                             Wrapper/stub directo svc 0x3C (Break) (11L)
+0x14001D08  0x0058  CONFIRMED       ldr_svc_0x3C_Break_14001d08                             Wrapper/stub directo svc 0x3C (Break) (11L)
+0x14001D64  0x001C  EVIDENCE_BASED  ldr_sub_14001d64                                        C: helper Loader (void FUN_14001d64(int param_1); calls=[0x14000d24], callers=[0x14000a2c,0x14000a94,0x14001984]) (7L)
+0x14001D80  0x0038  EVIDENCE_BASED  ldr_reclock_lock_14001d80                               C: verifica owner TLS (c13,c0,3) en param_1+4 y adquiere lock recursivo
+0x14001DB8  0x0070  EVIDENCE_BASED  ldr_sync_atomic_op_14001db8                             C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x14001DD8  0x004C  CONFIRMED       ldr_fsreg_CheckAuthority_0x04040100                     C+SWI 0x32: fs:REG cmd 0x04040100
+0x14001E28  0x005C  CONFIRMED       ldr_UnregisterProgram                                   C: Loader cmd 3; delega a PxiPM:UnregisterProgram (0x14002eb0) o fs:REG 0x04050080
+0x14001E84  0x002C  CONFIRMED       ldr_fsreg_UnloadProgram_0x04050080                      C+SWI 0x32: fs:REG cmd 0x04050080
+0x14001EB4  0x005C  CONFIRMED       ldr_fsreg_GetProgramInfo_0x040300C0                     C+SWI 0x32: fs:REG cmd 0x040300C0
+0x14001F14  0x0054  CONFIRMED       ldr_fs_OpenFile_or_Read_0x080200C2                      C+SWI 0x32: fs: cmd 0x080200C2
+0x14001F6C  0x0028  CONFIRMED       ldr_fs_CloseFile_0x08080000                             C+SWI 0x32: fs: cmd 0x08080000 CloseFile
+0x14001F98  0x0034  CONFIRMED       ldr_fs_GetFileSize_0x08040000                           C+SWI 0x32: fs: cmd 0x08040000 GetFileSize
+0x14001FD0  0x0088  EVIDENCE_BASED  ldr_sub_14001fd0                                        C: helper Loader (int FUN_14001fd0(uint *param_1,int *param_2,i; calls=[0x140010b0], callers=[0x14002a70]) (26L)
+0x14002060  0x00B4  EVIDENCE_BASED  ldr_sync_event_or_arbiter_wait_14002060                 C: espera atomica LDREX/STREX + ArbitrateAddress sobre contador
+0x14002150  0x0058  CONFIRMED       ldr_svc_0x23_CloseHandle_14002150                       Wrapper/stub directo svc 0x23 (CloseHandle) (16L)
+0x14002200  0x0028  CONFIRMED       ldr_svc_0x23_CloseHandle_14002200                       Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x14002228  0x0030  CONFIRMED       ldr_crt_fill_words_14002228                             C verificado: rellena rango [param_1, param_2) con palabra param_3
+0x14002258  0x005C  EVIDENCE_BASED  ldr_sub_14002258                                        C: helper Loader (undefined4 * FUN_14002258(undefined4 *param_1; calls=[0x14001d08], callers=[]) (23L)
+0x140022B8  0x0488  CONFIRMED       ldr_LoadProcess                                         C+SWI 0x23/0x73/0x75: Loader cmd 1; obtiene ExHeader (PxiPM), valida limites, reserva/mapea segmentos, svcCreateCodeSet + svcCreateProcess
+0x1400276C  0x002C  CONFIRMED       ldr_mem_unmap_helper                                    C: invoca ControlMemory para desmapear buffer temporal
+0x14002798  0x0080  CONFIRMED       ldr_map_code_ro_data_segments                           C: alinea a paginas 4KB .text/.ro/.data+.bss y asigna via 0x14002818
+0x14002818  0x0258  CONFIRMED       ldr_alloc_pages_with_aslr                               C: reserva memoria de proceso (svcControlMemory 0x14001960) con entropia PRNG (0x140017f8)
+0x14002A70  0x01DC  CONFIRMED       ldr_load_and_decompress_exefs_code                      C: lee seccion .code ExeFS y aplica BLZ decompress in-place (0x14000e28) si bit compressed activo
+0x14002C5C  0x01C4  CONFIRMED       ldr_ipc_dispatcher                                      C: dispatcher IPC 'Loader' cmds 1..4 (LoadProcess, RegisterProgram, UnregisterProgram, GetProgramInfo)
+0x14002E48  0x0064  CONFIRMED       ldr_pxipm_RegisterProgram_0x20200                       C+SWI 0x32: PxiPM cmd 0x00020200 RegisterProgram
+0x14002EB0  0x002C  CONFIRMED       ldr_pxipm_UnregisterProgram_0x30080                     C+SWI 0x32: PxiPM cmd 0x00030080 UnregisterProgram
+0x14002F28  0x0030  CONFIRMED       ldr_prng_init_constants                                 C: inicializa estado PRNG multiplicativo 64-bit
+0x14002F64  0x0048  CONFIRMED       ldr_prng_next                                           C: avanza LCG/PRNG 64-bit y devuelve palabras aleatorias
+0x14002FC0  0x0020  EVIDENCE_BASED  ldr_sub_14002fc0                                        C: helper Loader (void FUN_14002fc0(undefined4 param_1,undefine; calls=[0x14001c54,0x14001f98], callers=[]) (8L)
+0x14002FE0  0x0058  CONFIRMED       ldr_validate_exheader_limits                            C: valida alineacion y rangos ExHeader
+0x14003038  0x0008  EVIDENCE_BASED  ldr_getter_setter_stub_14003038                         C: getter/setter/constante directa (4L)
+0x1400314C  0x0306  CONFIRMED       ldr_exheader_parse_and_build_caps                       C: construye arreglo descriptores ARM11 KernelCaps para svcCreateCodeSet/CreateProcess
+0x140034B4  0x0054  CONFIRMED       ldr_self_process_dup_handle                             C: DuplicateHandle de proceso/recurso actual
+0x14003514  0x0038  CONFIRMED       ldr_static_init_handles                                 ASM r2: .init_array ctor handles globales 0x14006118
+0x14003550  0x0038  CONFIRMED       ldr_static_init_session_pool                            ASM r2: .init_array ctor pool sesiones 0x140060d8
+0x14003588  0x0028  CONFIRMED       ldr_static_init_ptrs                                    ASM r2: .init_array ctor punteros 0x140052e8/0x140052ec
+0x140035C0  0x01C8  CONFIRMED       ldr_static_init_exheader_and_pxipm                      ASM r2: .init_array ctor principales estructuras ExHeader/fs/PxiPM
+0x140037A0  0x0064  CONFIRMED       ldr_free_temp_buffer_lock                               C: libera bloque temporal de memoria bajo lock
+0x1400384C  0x001A  EVIDENCE_BASED  ldr_sub_1400384c                                        C: helper Loader (void FUN_1400384c(void); calls=[], callers=[0x14000000]) (10L)
+0x14004000  0x00D8  CONFIRMED       ldr_ro_str_services                                     .rodata: strings 'PxiPM', 'fs:REG', 'Loader', 'fs:LDR', 'fs:USER', 'srv:', 'srv:pm'

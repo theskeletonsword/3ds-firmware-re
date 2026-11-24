@@ -1,0 +1,261 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00101268,0x5,Nintendo_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00103BE4,0x18,Nintendo_svc_0x38_GetResourceLimit_103be4,svc_wrapper,"function body is a single `svc #0x38` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001082D8,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x001082E0,0x6,Nintendo_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00109C7C,0xc24,Nintendo_ipc_handler_cmd_0007_0008_0040_etc_109c7c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0010AD7C,0x18,Nintendo_svc_0x21_CreateAddressArbiter_10ad7c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00123AFC,0x870,Nintendo_ipc_handler_cmd_0001_123afc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010140
+0x0012BAD0,0x18,Nintendo_svc_0x2D_ConnectToPort_12bad0,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012D0E0,0xc,Nintendo_func_ptr_table_12d0e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00131238,0x54,Nintendo_ipc_client_cmd_0005_131238,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050100
+0x0013EBE0,0x39ec,Nintendo_ipc_dispatcher_13ebe0,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x001425E4,0x39c0,Nintendo_ipc_dispatcher_1425e4,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x00146DB0,0x5d8,Nintendo_ipc_dispatcher_146db0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0016FBF4,0x1c,Nintendo_svc_0x1E_CreateMemoryBlock_16fbf4,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016FC10,0x18,Nintendo_svc_0x27_DuplicateHandle_16fc10,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00186BB4,0x6,Nintendo_str_service_http_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:"""
+0x00186BBC,0x7,Nintendo_str_service_https_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""https:"""
+0x001A9CB0,0xc,Nintendo_func_ptr_table_1a9cb0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AA300,0xc,Nintendo_func_ptr_table_1aa300,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABA44,0xc,Nintendo_func_ptr_table_1aba44,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC128,0xc,Nintendo_func_ptr_table_1ac128,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BC138,0x5,Nintendo_str_service_nzv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:"""
+0x001BC4F8,0x22c,Nintendo_ipc_dispatcher_1bc4f8,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x01000047, 0x01000048, 0x01000049, 0x0100004A"
+0x001C7390,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x001C7398,0x6,Nintendo_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001CA04C,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001CEFA4,0x48700,Nintendo_ipc_handler_cmd_0004_000B_1cefa4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x001EB620,0xd,Nintendo_str_service_Task__Cancel,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Task::Cancel"""
+0x001EB648,0xf,Nintendo_str_service_NsData__Delete,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""NsData::Delete"""
+0x001EBAF8,0xc,Nintendo_str_service_Task__Start,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""Task::Start"""
+0x001EDE60,0x5,Nintendo_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001EDE68,0x6,Nintendo_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001EDE70,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001EDE78,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x001EDE80,0x5,Nintendo_str_service_nzv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:"""
+0x001EDE88,0x6,Nintendo_str_service_http_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""http:"""
+0x001EDE90,0x7,Nintendo_str_service_https_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""https:"""
+0x001EE3F0,0x5,Nintendo_str_service_nzv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:"""
+0x001EF2B4,0x18,Nintendo_svc_0x22_ArbitrateAddress_1ef2b4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001F4CA0,0x5,Nintendo_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001F4CA8,0x6,Nintendo_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001F4CB0,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001F4CB8,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x001F5530,0x5,Nintendo_str_service_nzv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:"""
+0x001F5EE4,0x6e4,Nintendo_ipc_dispatcher_1f5ee4,ipc_dispatcher,"20 distinct header-shaped literals (command-id compare table), e.g. 0x01000001, 0x01000002, 0x01000003, 0x01000004"
+0x001FB4D8,0x18,Nintendo_svc_0x35_GetProcessId_1fb4d8,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001FF474,0x18,Nintendo_svc_0x17_CreateEvent_1ff474,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002176B4,0x694,Nintendo_ipc_dispatcher_2176b4,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x0021ABAC,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0021DAA4,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0021E734,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0021F944,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0021FE68,0x34,Nintendo_func_ptr_table_21fe68,pointer_table,13 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0021FEA8,0x10,Nintendo_func_ptr_table_21fea8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00225AB8,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00225AC0,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x0022DCD4,0x28,Nintendo_func_ptr_table_22dcd4,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0022DD04,0xc,Nintendo_func_ptr_table_22dd04,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0022DF30,0xc,Nintendo_func_ptr_table_22df30,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0023C054,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x0023C05C,0x6,Nintendo_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x002452A0,0x18,Nintendo_func_ptr_table_2452a0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0024964C,0xc,Nintendo_func_ptr_table_24964c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0025DD1C,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0025E004,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00262FA0,0x5,Nintendo_str_service_ext_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ext:"""
+0x00262FA8,0x6,Nintendo_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00281E14,0xc,Nintendo_str_service_nzv_startup,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:startup"""
+0x00281E20,0xd,Nintendo_str_service_nzv_home_top,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:home_top"""
+0x00281E30,0x9,Nintendo_str_service_nzv_home,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:home"""
+0x00281E4C,0xc,Nintendo_str_service_nzv_offline,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:offline"""
+0x00281E58,0xd,Nintendo_str_service_nzv_main_top,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:main_top"""
+0x00281E68,0x9,Nintendo_str_service_nzv_main,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:main"""
+0x00281E74,0xd,Nintendo_str_service_nzv_info_top,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:info_top"""
+0x00281E84,0x9,Nintendo_str_service_nzv_info,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:info"""
+0x00281E90,0xd,Nintendo_str_service_nzv_news_top,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:news_top"""
+0x00281EA0,0x9,Nintendo_str_service_nzv_news,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:news"""
+0x00281ECC,0xd,Nintendo_str_service_nzv_gameinfo,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:gameinfo"""
+0x00281EDC,0xd,Nintendo_str_service_nzv_gameicon,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:gameicon"""
+0x00281EEC,0xd,Nintendo_str_service_nzv_3dbanner,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nzv:3dbanner"""
+0x002C44AC,0x6,Nintendo_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x002C44BC,0x18,Nintendo_func_ptr_table_2c44bc,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002C4CDA,0x6,Nintendo_str_service_nim_s,service_name_string,"client of (in ExHeader service-access list): ""nim:s"""
+0x002C6C44,0x5,Nintendo_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x002C6C49,0x7,Nintendo_str_service_am_sys,service_name_string,"client of (in ExHeader service-access list): ""am:sys"""
+0x002C6C70,0x9,Nintendo_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x002C6CC0,0x7,Nintendo_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x002C6CC7,0x8,Nintendo_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x002C6CE0,0x7,Nintendo_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x002C6CE9,0x7,Nintendo_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x002CB814,0x6,Nintendo_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x002CB84C,0x6,Nintendo_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x002CC270,0x5,Nintendo_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x002CC275,0x7,Nintendo_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x002D4B85,0x7,Nintendo_str_service_boss_U,service_name_string,"client of (in ExHeader service-access list): ""boss:U"""
+0x002D4B8C,0x7,Nintendo_str_service_boss_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:P"""
+0x002D4B93,0x7,Nintendo_str_service_boss_M,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:M"""
+0x002D5148,0x9,Nintendo_str_service_std__cin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cin"""
+0x002D5153,0xa,Nintendo_str_service_std__cout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cout"""
+0x002D515E,0xa,Nintendo_str_service_std__cerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cerr"""
+0x002D5169,0xa,Nintendo_str_service_std__clog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::clog"""
+0x002D5174,0xa,Nintendo_str_service_std__wcin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcin"""
+0x002D517F,0xb,Nintendo_str_service_std__wcout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcout"""
+0x002D518A,0xb,Nintendo_str_service_std__wcerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcerr"""
+0x002D5195,0xb,Nintendo_str_service_std__wclog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wclog"""
+0x002D542C,0xc,Nintendo_func_ptr_table_2d542c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5450,0x18,Nintendo_func_ptr_table_2d5450,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D546C,0x10,Nintendo_func_ptr_table_2d546c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D54C0,0x20,Nintendo_func_ptr_table_2d54c0,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D54E4,0x10,Nintendo_func_ptr_table_2d54e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5500,0x28,Nintendo_func_ptr_table_2d5500,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5568,0x24,Nintendo_func_ptr_table_2d5568,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5590,0x10,Nintendo_func_ptr_table_2d5590,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D55A8,0x18,Nintendo_func_ptr_table_2d55a8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D55C4,0x10,Nintendo_func_ptr_table_2d55c4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D55DC,0x14,Nintendo_func_ptr_table_2d55dc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5614,0x10,Nintendo_func_ptr_table_2d5614,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D563C,0x10,Nintendo_func_ptr_table_2d563c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5654,0x2c,Nintendo_func_ptr_table_2d5654,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D56C0,0xc,Nintendo_func_ptr_table_2d56c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D56D0,0x14,Nintendo_func_ptr_table_2d56d0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D56E8,0x10,Nintendo_func_ptr_table_2d56e8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5700,0x2c,Nintendo_func_ptr_table_2d5700,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5750,0x14,Nintendo_func_ptr_table_2d5750,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D576C,0x24,Nintendo_func_ptr_table_2d576c,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5794,0x10,Nintendo_func_ptr_table_2d5794,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D57AC,0x2c,Nintendo_func_ptr_table_2d57ac,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D57FC,0x14,Nintendo_func_ptr_table_2d57fc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5818,0x24,Nintendo_func_ptr_table_2d5818,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5840,0x10,Nintendo_func_ptr_table_2d5840,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5858,0x1c,Nintendo_func_ptr_table_2d5858,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5878,0xc,Nintendo_func_ptr_table_2d5878,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D58A8,0x14,Nintendo_func_ptr_table_2d58a8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D58C8,0x20,Nintendo_func_ptr_table_2d58c8,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D58EC,0x10,Nintendo_func_ptr_table_2d58ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D594C,0x2c,Nintendo_func_ptr_table_2d594c,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D599C,0x14,Nintendo_func_ptr_table_2d599c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D59B8,0x24,Nintendo_func_ptr_table_2d59b8,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D59E0,0x10,Nintendo_func_ptr_table_2d59e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D59F8,0x2c,Nintendo_func_ptr_table_2d59f8,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5A48,0x14,Nintendo_func_ptr_table_2d5a48,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5A64,0x24,Nintendo_func_ptr_table_2d5a64,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5A8C,0x10,Nintendo_func_ptr_table_2d5a8c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5B40,0x10,Nintendo_func_ptr_table_2d5b40,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5BF8,0x2c,Nintendo_func_ptr_table_2d5bf8,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5C48,0x14,Nintendo_func_ptr_table_2d5c48,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5C64,0x24,Nintendo_func_ptr_table_2d5c64,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5C8C,0x10,Nintendo_func_ptr_table_2d5c8c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5CA4,0x2c,Nintendo_func_ptr_table_2d5ca4,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5D10,0x14,Nintendo_func_ptr_table_2d5d10,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5D28,0xc,Nintendo_func_ptr_table_2d5d28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5D38,0x10,Nintendo_func_ptr_table_2d5d38,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5D5C,0xc,Nintendo_func_ptr_table_2d5d5c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5D80,0x14,Nintendo_func_ptr_table_2d5d80,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5DB4,0xc,Nintendo_func_ptr_table_2d5db4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5E54,0xc,Nintendo_func_ptr_table_2d5e54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D5FFC,0xc,Nintendo_func_ptr_table_2d5ffc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D623C,0xc,Nintendo_func_ptr_table_2d623c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D62C0,0xc,Nintendo_func_ptr_table_2d62c0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6308,0x10,Nintendo_func_ptr_table_2d6308,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D63FC,0xc,Nintendo_func_ptr_table_2d63fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6480,0x10,Nintendo_func_ptr_table_2d6480,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D64FC,0x10,Nintendo_func_ptr_table_2d64fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6584,0x10,Nintendo_func_ptr_table_2d6584,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6770,0xc,Nintendo_func_ptr_table_2d6770,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D67BC,0xc,Nintendo_func_ptr_table_2d67bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6808,0xc,Nintendo_func_ptr_table_2d6808,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D691C,0x10,Nintendo_func_ptr_table_2d691c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6A28,0xc,Nintendo_func_ptr_table_2d6a28,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6AFC,0xc,Nintendo_func_ptr_table_2d6afc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6B64,0xc,Nintendo_func_ptr_table_2d6b64,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6C08,0xc,Nintendo_func_ptr_table_2d6c08,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6C80,0x10,Nintendo_func_ptr_table_2d6c80,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6CBC,0x10,Nintendo_func_ptr_table_2d6cbc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6D14,0x20,Nintendo_func_ptr_table_2d6d14,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6D54,0x10,Nintendo_func_ptr_table_2d6d54,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6D84,0x14,Nintendo_func_ptr_table_2d6d84,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6DE4,0x10,Nintendo_func_ptr_table_2d6de4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6E20,0x10,Nintendo_func_ptr_table_2d6e20,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6E34,0xc,Nintendo_func_ptr_table_2d6e34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6EA0,0x10,Nintendo_func_ptr_table_2d6ea0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6ED8,0x10,Nintendo_func_ptr_table_2d6ed8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6EEC,0xc,Nintendo_func_ptr_table_2d6eec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6F10,0x10,Nintendo_func_ptr_table_2d6f10,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6F48,0x14,Nintendo_func_ptr_table_2d6f48,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6F64,0x2c,Nintendo_func_ptr_table_2d6f64,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6FB4,0x14,Nintendo_func_ptr_table_2d6fb4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6FD0,0x24,Nintendo_func_ptr_table_2d6fd0,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D6FF8,0x10,Nintendo_func_ptr_table_2d6ff8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D701C,0xc,Nintendo_func_ptr_table_2d701c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D702C,0x10,Nintendo_func_ptr_table_2d702c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7040,0xc,Nintendo_func_ptr_table_2d7040,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7050,0x18,Nintendo_func_ptr_table_2d7050,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7070,0xc,Nintendo_func_ptr_table_2d7070,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7108,0xc,Nintendo_func_ptr_table_2d7108,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7144,0x2c,Nintendo_func_ptr_table_2d7144,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7194,0x14,Nintendo_func_ptr_table_2d7194,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D71B4,0x20,Nintendo_func_ptr_table_2d71b4,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D71D8,0x10,Nintendo_func_ptr_table_2d71d8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7234,0xc,Nintendo_func_ptr_table_2d7234,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7284,0x10,Nintendo_func_ptr_table_2d7284,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D72B0,0x2c,Nintendo_func_ptr_table_2d72b0,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7300,0x14,Nintendo_func_ptr_table_2d7300,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D731C,0x24,Nintendo_func_ptr_table_2d731c,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7344,0x10,Nintendo_func_ptr_table_2d7344,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D735C,0x2c,Nintendo_func_ptr_table_2d735c,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D73AC,0x14,Nintendo_func_ptr_table_2d73ac,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D73C8,0x24,Nintendo_func_ptr_table_2d73c8,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D73F0,0x10,Nintendo_func_ptr_table_2d73f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7408,0x2c,Nintendo_func_ptr_table_2d7408,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7458,0x14,Nintendo_func_ptr_table_2d7458,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7474,0x24,Nintendo_func_ptr_table_2d7474,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D749C,0x10,Nintendo_func_ptr_table_2d749c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D74B4,0x2c,Nintendo_func_ptr_table_2d74b4,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7504,0x14,Nintendo_func_ptr_table_2d7504,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7520,0x24,Nintendo_func_ptr_table_2d7520,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7548,0x10,Nintendo_func_ptr_table_2d7548,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D756C,0x18,Nintendo_func_ptr_table_2d756c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D75E0,0x10,Nintendo_func_ptr_table_2d75e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7634,0x2c,Nintendo_func_ptr_table_2d7634,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7684,0x14,Nintendo_func_ptr_table_2d7684,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D76A0,0x24,Nintendo_func_ptr_table_2d76a0,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D76C8,0x10,Nintendo_func_ptr_table_2d76c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D76EC,0x18,Nintendo_func_ptr_table_2d76ec,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7724,0x18,Nintendo_func_ptr_table_2d7724,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7764,0xc,Nintendo_func_ptr_table_2d7764,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7784,0x10,Nintendo_func_ptr_table_2d7784,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D77B0,0xc,Nintendo_func_ptr_table_2d77b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D77E4,0x14,Nintendo_func_ptr_table_2d77e4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D780C,0x10,Nintendo_func_ptr_table_2d780c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7850,0xc,Nintendo_func_ptr_table_2d7850,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D787C,0x14,Nintendo_func_ptr_table_2d787c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D78A4,0x10,Nintendo_func_ptr_table_2d78a4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D78F0,0xc,Nintendo_func_ptr_table_2d78f0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7920,0xc,Nintendo_func_ptr_table_2d7920,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7940,0xc,Nintendo_func_ptr_table_2d7940,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7980,0x10,Nintendo_func_ptr_table_2d7980,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D79AC,0x2c,Nintendo_func_ptr_table_2d79ac,pointer_table,11 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D79FC,0x14,Nintendo_func_ptr_table_2d79fc,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7A18,0x24,Nintendo_func_ptr_table_2d7a18,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7A40,0x10,Nintendo_func_ptr_table_2d7a40,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7AB4,0x10,Nintendo_func_ptr_table_2d7ab4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7AD0,0xc,Nintendo_func_ptr_table_2d7ad0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7B04,0x10,Nintendo_func_ptr_table_2d7b04,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7B50,0xc,Nintendo_func_ptr_table_2d7b50,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002D7F6C,0xc,Nintendo_func_ptr_table_2d7f6c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DD9BD,0x6,Nintendo_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x002DD9C3,0x9,Nintendo_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x002DD9CC,0x9,Nintendo_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x002DD9D5,0x9,Nintendo_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x002DD9DE,0x6,Nintendo_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x002DD9E4,0x9,Nintendo_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x002DD9ED,0x6,Nintendo_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x002DD9F3,0x9,Nintendo_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x002DDA98,0x6,Nintendo_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x002DDA9E,0x6,Nintendo_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x002DDAA4,0x6,Nintendo_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x002DDAAA,0x9,Nintendo_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x002DDAB3,0x9,Nintendo_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x002F4E10,0xb,Nintendo_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

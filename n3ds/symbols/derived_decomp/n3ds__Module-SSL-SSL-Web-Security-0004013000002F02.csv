@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0012A094,0x8,ssl_get_tls_12a094,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0012B144,0x18,ssl_svc_0x37_GetThreadId_12b144,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x37) (GetThreadId); 5 C lines
+0x0012B3A8,0x8,ssl_get_tls_12b3a8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00141428,0x24,ssl_svc_0x01_ControlMemory_141428,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00141464,0x30,ssl_svc_0x02_QueryMemory_141464,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x001414BC,0x24,ssl_svc_0x08_CreateThread_1414bc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x001016CC,0x208,ssl_ipc_server_loop_1016cc,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x141618

@@ -1,0 +1,2759 @@
+0x001007B8	Pointer Assertion Failed:
+0x001007E8	%s(=0x%08X) is invalid pointer
+0x001009B4	Singleton::ctor
+0x001009E8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00100A18	Singleton::Instance
+0x00100FE8	spider.msbt
+0x00100FF4	hud.msbt
+0x00101010	Singleton::ctor
+0x0010107C	WARNING! Panic: %s:%d
+0x001010AC	Failed assertion exp:%s
+0x00101548	Pointer Assertion Failed:
+0x00101574	%s(=0x%08X) is invalid pointer
+0x001018DC	Singleton::ctor
+0x00101900	Pointer Assertion Failed:
+0x00101930	%s(=0x%08X) is invalid pointer
+0x00101D9C	No Function is assigned to type:%d
+0x00101FC0	Failed assertion exp:%s
+0x00101FDC	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00102274	Singleton::ctor
+0x001022A0	unknown load st:%d
+0x001022DC	/font/Hud.bcfnt
+0x001022F0	Failed assertion exp:%s
+0x0010230C	[ERROR] Can't read font/Hud.bcfnt
+0x00102330	shared font loading failed! st:%d
+0x00102354	invalid loading st:%d(NULL)
+0x00102550	invalid loading st:%d(MAX_BIT)
+0x00102570	[ERROR] Can't set font resource
+0x001027B4	Singleton::ctor
+0x001027CC	Pointer Assertion Failed:
+0x001027F4	%s(=0x%08X) is invalid pointer
+0x00102A58	Failed assertion exp:%s
+0x00102A74	Container already has content:%p with key:%s
+0x00102CF0	WARNING! Panic: %s:%d
+0x00102D14	Singleton::ctor
+0x00102F6C	Instance_(Singleton of %s):%p is invalid ptr.
+0x00102F9C	Singleton::Instance
+0x00102FB8	Singleton::ctor
+0x00103E70	Instance_(Singleton of %s):%p is invalid ptr.
+0x00103EA0	Singleton::Instance
+0x00103F10	Instance_(Singleton of %s):%p is invalid ptr.
+0x00103F40	Singleton::Instance
+0x00103FB0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00103FE0	Singleton::Instance
+0x00104050	Instance_(Singleton of %s):%p is invalid ptr.
+0x00104080	Singleton::Instance
+0x00104140	Pointer Assertion Failed:
+0x00104170	%s(=0x%08X) is invalid pointer
+0x00104324	Singleton::ctor
+0x001043E0	Singleton::ctor
+0x00104700	Failed assertion exp:%s
+0x0010475C	..\..\..\..\..\..\src\www/util/RingArray.hpp
+0x001047AC	Instance_(Singleton of %s):%p is invalid ptr.
+0x001047DC	Singleton::Instance
+0x00104CD8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00104D08	Singleton::Instance
+0x00104D40	Failed assertion exp:%s
+0x00105078	$_sdmc:
+0x001053B4	Failed assertion exp:%s
+0x001053D0	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001093C0	Failed assertion exp:%s
+0x001093DC	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001094B8	Failed assertion exp:%s
+0x001094D4	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001095B0	Failed assertion exp:%s
+0x001095CC	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001096D4	Failed assertion exp:%s
+0x00109738	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001097EC	Failed assertion exp:%s
+0x00109808	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001098EC	Failed assertion exp:%s
+0x00109908	count():%d < SIZE:%d failed.
+0x00109C2C	Failed assertion exp:%s
+0x00109CD0	Failed assertion exp:%s
+0x00109E18	Failed assertion exp:%s
+0x00109FA0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00109FD0	Singleton::Instance
+0x0010A128	Instance_(Singleton of %s):%p is invalid ptr.
+0x0010A158	Singleton::Instance
+0x0010A1F0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0010A220	Singleton::Instance
+0x0010A56C	Pointer Assertion Failed:
+0x0010A5A8	%s(=0x%08X) is invalid pointer
+0x0010A5CC	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x0010A6B4	Failed assertion exp:%s
+0x0010A6D0	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0010A7AC	Failed assertion exp:%s
+0x0010A7C8	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0010A8A4	Failed assertion exp:%s
+0x0010A8C0	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0010A9DC	Failed assertion exp:%s
+0x0010AA40	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0010AB30	Pointer Assertion Failed:
+0x0010AB60	%s(=0x%08X) is invalid pointer
+0x0010AC48	Pointer Assertion Failed:
+0x0010AC78	%s(=0x%08X) is invalid pointer
+0x0010AD58	Pointer Assertion Failed:
+0x0010AD88	%s(=0x%08X) is invalid pointer
+0x0010B114	Singleton::ctor
+0x0010B65C	RESULT FAILURE: result = %s
+0x0010B67C	Unexpected Result Failure.
+0x0010B6AC	Failed assertion exp:%s
+0x0010BA20	Failed assertion exp:%s
+0x0010BA3C	count():%d < SIZE:%d failed.
+0x0010BAE4	WARNING! Panic: %s:%d
+0x0010BAFC	failed to add heap info: thID:%u heap:%p
+0x0010BD64	failed to add heap info: thID:%u align:%p
+0x0010BFAC	HeapRoot::allocate called
+0x0010BFC8	HeapRoot::free called
+0x0010BFE0	HeapRoot::fillByMagicNumber called
+0x0010C004	HeapRoot::tryResizeBlock called
+0x0010FDAC	Failed assertion exp:%s
+0x0010FDC8	count():%d < SIZE:%d failed.
+0x0010FE84	Failed assertion exp:%s
+0x0010FF78	Failed assertion exp:%s
+0x0010FF94	count():%d < SIZE:%d failed.
+0x00110158	Pointer Assertion Failed:
+0x0011018C	%s(=0x%08X) is invalid pointer
+0x00110338	Pointer Assertion Failed:
+0x00110364	%s(=0x%08X) is invalid pointer
+0x0011044C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011047C	Singleton::Instance
+0x001104EC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011051C	Singleton::Instance
+0x00110794	Pointer Assertion Failed:
+0x001107D0	%s(=0x%08X) is invalid pointer
+0x001107F4	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x00110A40	Pointer Assertion Failed:
+0x00110A7C	%s(=0x%08X) is invalid pointer
+0x00110AA0	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x00110D7C	Pointer Assertion Failed:
+0x00110DB8	%s(=0x%08X) is invalid pointer
+0x00110DDC	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x00110F34	Failed assertion exp:%s
+0x00110F50	..\..\..\..\..\..\src\www/util/RingArray.hpp
+0x00111048	Pointer Assertion Failed:
+0x00111078	%s(=0x%08X) is invalid pointer
+0x0011115C	Pointer Assertion Failed:
+0x0011118C	%s(=0x%08X) is invalid pointer
+0x0011126C	Pointer Assertion Failed:
+0x0011129C	%s(=0x%08X) is invalid pointer
+0x00111360	Pointer Assertion Failed:
+0x0011138C	%s(=0x%08X) is invalid pointer
+0x0011149C	Pointer Assertion Failed:
+0x001114DC	%s(=0x%08X) is invalid pointer
+0x001114FC	..\..\..\..\..\..\src\sys/spec/AdditionalSaveLoader.hpp
+0x001115E8	Pointer Assertion Failed:
+0x00111628	%s(=0x%08X) is invalid pointer
+0x00111648	..\..\..\..\..\..\src\sys/spec/AdditionalSaveLoader.hpp
+0x00112264	RESULT FAILURE: result = %s
+0x00112284	Unexpected Result Failure.
+0x001122D0	Failed assertion exp:%s
+0x00112308	BUFSIZE:%d >= Size:%d failed
+0x0011278C	BUFSIZE:%d >= Size:(%d+%d) failed
+0x001127B4	Pointer Assertion Failed:
+0x001127E0	%s(=0x%08X) is invalid pointer
+0x00112B28	Singleton::ctor
+0x00112E84	num:%d > 0 failed
+0x00112EB8	stSize:%d >= 0 failed
+0x001133B0	modified align:%d must be greater than 0
+0x00113410	invalid align:%d
+0x001135D8	Failed assertion exp:%s
+0x001135F4	currentHead_:%p <= currentTail_:%p failed
+0x00113874	Failed assertion exp:%s
+0x00113890	count():%d < SIZE:%d failed.
+0x00113B2C	WARNING! Panic: %s:%d
+0x00113B44	unknown mode:%d
+0x001140B4	Singleton::ctor
+0x001140C8	(EngineThread::IsNotCurrentThread())
+0x001140F0	Failed assertion exp:%s
+0x00114350	(EngineThread::IsCurrentThread())
+0x001166E4	Failed assertion exp:%s
+0x00116704	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00116798	Failed assertion exp:%s
+0x001167B4	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001168B8	Failed assertion exp:%s
+0x001168D4	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001169FC	Failed assertion exp:%s
+0x00116A18	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00116BA4	Failed assertion exp:%s
+0x00116BC0	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00116DDC	WARNING! Panic: %s:%d
+0x00116E08	dstPos:%d beyonds the CAPACITY:%d
+0x00116F3C	Failed assertion exp:%s
+0x001170EC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011711C	Singleton::Instance
+0x0011718C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001171BC	Singleton::Instance
+0x0011724C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011727C	Singleton::Instance
+0x001173A8	Failed assertion exp:%s
+0x001173C4	count():%d < SIZE:%d failed.
+0x001174CC	Failed assertion exp:%s
+0x001174E8	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001175F0	Failed assertion exp:%s
+0x0011760C	count():%d < SIZE:%d failed.
+0x00117714	Failed assertion exp:%s
+0x00117730	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00117818	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x001178E8	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x001179B8	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x00117A94	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x00117B78	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x00117CE8	Failed assertion exp:%s
+0x00117D28	..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x00117F14	Failed assertion exp:%s
+0x00117F30	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00118018	Pointer Assertion Failed:
+0x00118048	%s(=0x%08X) is invalid pointer
+0x00118130	Pointer Assertion Failed:
+0x00118160	%s(=0x%08X) is invalid pointer
+0x00118244	Pointer Assertion Failed:
+0x00118274	%s(=0x%08X) is invalid pointer
+0x00118354	Pointer Assertion Failed:
+0x00118384	%s(=0x%08X) is invalid pointer
+0x00118504	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x001185C0	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x001186E0	Failed assertion exp:%s
+0x001186FC	No tickets are allocated as id:%d
+0x00118720	..\..\..\..\..\..\src\sys/ticket/TicketBodyTable.hpp
+0x00118838	Failed assertion exp:%s
+0x00118854	..\..\..\..\..\src\www/util/RingArray.hpp
+0x00119090	Failed assertion exp:%s
+0x00119118	Pointer Assertion Failed:
+0x00119148	%s(=0x%08X) is invalid pointer
+0x00119348	WARNING! Panic: %s:%d
+0x0011958C	Singleton::ctor
+0x001195D4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00119604	Singleton::Instance
+0x00119DA4	Singleton::ctor
+0x0011A194	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011A1C4	Singleton::Instance
+0x0011A764	Singleton::ctor
+0x0011B310	Singleton::ctor
+0x0011B858	Singleton::ctor
+0x0011BAD0	Singleton::ctor
+0x0011BB04	Failed assertion exp:%s
+0x0011BD7C	Failed assertion exp:%s
+0x0011BDC4	browser/wkci18ndat.dat
+0x0011BE08	Singleton::ctor
+0x0011C284	Singleton::ctor
+0x0011C2F0	Failed assertion exp:%s
+0x0011C660	Pointer Assertion Failed:
+0x0011C68C	%s(=0x%08X) is invalid pointer
+0x0011C6EC	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x0011CABC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0011CAEC	Singleton::Instance
+0x0011F124	Pointer Assertion Failed:
+0x0011F154	%s(=0x%08X) is invalid pointer
+0x0011FAAC	Failed assertion exp:%s
+0x0011FAC8	invalid alignment:%d ( must <= %d )
+0x0011FAF0	..\..\..\..\..\..\src\lib/math/Math.hpp
+0x0011FB30	alignment:%d is not power of 2 (e.g. 1,2,4,8,...)
+0x00120168	Pointer Assertion Failed:
+0x0012019C	%s(=0x%08X) is invalid pointer
+0x00120284	Failed assertion exp:%s
+0x0012032C	Failed assertion exp:%s
+0x0012042C	Failed assertion exp:%s
+0x001204D0	Failed assertion exp:%s
+0x001205AC	Failed assertion exp:%s
+0x001209A4	Failed assertion exp:%s
+0x00120AEC	Instance_(Singleton of %s):%p is invalid ptr.
+0x00120B1C	Singleton::Instance
+0x00120BAC	Instance_(Singleton of %s):%p is invalid ptr.
+0x00120BDC	Singleton::Instance
+0x00120FE0	..\..\..\..\..\..\src\sys/ticket/TicketServer.hpp
+0x00121014	WARNING! Panic: %s:%d
+0x0012102C	id:%d is differed from dequeued ticket's id:%d
+0x00121078	ticket:%p for id:%d has been already freed
+0x00121C0C	Pointer Assertion Failed:
+0x00121C3C	%s(=0x%08X) is invalid pointer
+0x00121D20	Pointer Assertion Failed:
+0x00121D50	%s(=0x%08X) is invalid pointer
+0x00121E38	Pointer Assertion Failed:
+0x00121E68	%s(=0x%08X) is invalid pointer
+0x00121F4C	Pointer Assertion Failed:
+0x00121F7C	%s(=0x%08X) is invalid pointer
+0x00122080	Pointer Assertion Failed:
+0x001220B0	%s(=0x%08X) is invalid pointer
+0x00122194	Pointer Assertion Failed:
+0x001221C4	%s(=0x%08X) is invalid pointer
+0x001222A8	Pointer Assertion Failed:
+0x001222D8	%s(=0x%08X) is invalid pointer
+0x001223BC	Pointer Assertion Failed:
+0x001223EC	%s(=0x%08X) is invalid pointer
+0x001224D0	Pointer Assertion Failed:
+0x00122500	%s(=0x%08X) is invalid pointer
+0x001225E4	Pointer Assertion Failed:
+0x00122614	%s(=0x%08X) is invalid pointer
+0x001226FC	Pointer Assertion Failed:
+0x0012272C	%s(=0x%08X) is invalid pointer
+0x00122814	Pointer Assertion Failed:
+0x00122844	%s(=0x%08X) is invalid pointer
+0x0012292C	Pointer Assertion Failed:
+0x0012295C	%s(=0x%08X) is invalid pointer
+0x00122A44	Pointer Assertion Failed:
+0x00122A74	%s(=0x%08X) is invalid pointer
+0x00122B5C	Pointer Assertion Failed:
+0x00122B8C	%s(=0x%08X) is invalid pointer
+0x00122C58	Pointer Assertion Failed:
+0x00122C84	%s(=0x%08X) is invalid pointer
+0x00122DC0	Pointer Assertion Failed:
+0x00122DF0	%s(=0x%08X) is invalid pointer
+0x00122E54	Failed assertion exp:%s
+0x00122F30	Pointer Assertion Failed:
+0x00122F5C	%s(=0x%08X) is invalid pointer
+0x00123084	Pointer Assertion Failed:
+0x001230B4	%s(=0x%08X) is invalid pointer
+0x00123114	Failed assertion exp:%s
+0x0012324C	Pointer Assertion Failed:
+0x0012327C	%s(=0x%08X) is invalid pointer
+0x001232DC	Failed assertion exp:%s
+0x001233A8	..\..\..\..\..\..\src\sys/spec/DirectSaveHolder.hpp
+0x00123EB4	WARNING! Panic: %s:%d
+0x00124290	Singleton::ctor
+0x001242D8	Failed assertion exp:%s
+0x0012431C	(nn::friends::IsInitialized())
+0x001248A4	Singleton::ctor
+0x001248F0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00124920	Singleton::Instance
+0x0012510C	layout/browse/BasicAuthDialog
+0x0012545C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012548C	Singleton::Instance
+0x00125870	layout/dialog/DialogNormalNT
+0x001258D0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00125900	Singleton::Instance
+0x00125D6C	layout/browse/pageinfo/PageInfoDialog
+0x00125DF8	layout/browse/InvalidSSLText
+0x00126218	Pointer Assertion Failed:
+0x00126244	%s(=0x%08X) is invalid pointer
+0x00126348	Instance_(Singleton of %s):%p is invalid ptr.
+0x00126378	Singleton::Instance
+0x001268B4	layout/browse/jsdialog/BaseDialog
+0x001268FC	Pointer Assertion Failed:
+0x00126928	%s(=0x%08X) is invalid pointer
+0x001269A0	layout/browse/jsdialog/Content
+0x00127A28	layout/browse/dropdownlist/DropDownListDialog
+0x00127A94	Pointer Assertion Failed:
+0x00127AC0	%s(=0x%08X) is invalid pointer
+0x0012808C	layout/dialog/DialogNormalNT
+0x0012850C	WARNING! Panic: %s:%d
+0x00128C78	Failed assertion exp:%s
+0x00129020	Failed assertion exp:%s
+0x00129280	Singleton::ctor
+0x001295A4	Failed assertion exp:%s
+0x0012960C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012963C	Singleton::Instance
+0x0012988C	Singleton::ctor
+0x00129B0C	Pointer Assertion Failed:
+0x00129B38	%s(=0x%08X) is invalid pointer
+0x00129BE8	WARNING! Panic: %s:%d
+0x0012A018	Failed assertion exp:%s
+0x0012A064	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012A094	Singleton::Instance
+0x0012A364	(EngineThread::IsCurrentThread())
+0x0012A388	Failed assertion exp:%s
+0x0012A610	Singleton::ctor
+0x0012A89C	Singleton::ctor
+0x0012A8D0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012A900	Singleton::Instance
+0x0012AB74	Failed assertion exp:%s
+0x0012AD14	Failed assertion exp:%s
+0x0012AE8C	Singleton::ctor
+0x0012AEA8	browser/UserCss.dat
+0x0012AFD4	Singleton::ctor
+0x0012D0DC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012D10C	Singleton::Instance
+0x0012D130	Pointer Assertion Failed:
+0x0012D160	%s(=0x%08X) is invalid pointer
+0x0012D208	WARNING! Panic: %s:%d
+0x0012D4FC	layout/dialogheader/DialogHeaderNormal
+0x0012D524	layout/dialogheader/DialogHeaderBaseNormal
+0x0012D7F4	RWSTDERR
+0x0012E9E4	Pointer Assertion Failed:
+0x0012EA14	%s(=0x%08X) is invalid pointer
+0x0012F104	Failed assertion exp:%s
+0x0012F124	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0012F264	Failed assertion exp:%s
+0x0012F280	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0012F2D8	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x0012F398	Failed assertion exp:%s
+0x0012F3B4	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0012F584	WARNING! Panic: %s:%d
+0x0012F5BC	dstPos:%d beyonds the CAPACITY:%d
+0x0012F63C	Instance_(InstanceHoldable of %s):%p is invalid ptr.
+0x0012F674	InstanceHoldable::Instance
+0x0012FA1C	Pointer Assertion Failed:
+0x0012FA50	%s(=0x%08X) is invalid pointer
+0x0012FCC0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012FCF0	Singleton::Instance
+0x0012FD60	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012FD90	Singleton::Instance
+0x0012FE00	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012FE30	Singleton::Instance
+0x0012FF10	Instance_(Singleton of %s):%p is invalid ptr.
+0x0012FF40	Singleton::Instance
+0x0012FFD0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00130000	Singleton::Instance
+0x00130254	Failed assertion exp:%s
+0x00130270	..\..\..\..\..\..\src\sys/ticket/TicketBody.hpp
+0x001303CC	..\..\..\..\..\..\src\sys/ticket/TicketBodyTable.hpp
+0x00130404	WARNING! Panic: %s:%d
+0x0013053C	Failed assertion exp:%s
+0x00130558	emptyIndex:%d >= 0  failed
+0x00130574	..\..\..\..\..\..\src\sys/ticket/TicketBodyTable.hpp
+0x001307A8	WARNING! Panic: %s:%d
+0x001307D4	dstPos:%d beyonds the CAPACITY:%d
+0x001308F8	Pointer Assertion Failed:
+0x00130928	%s(=0x%08X) is invalid pointer
+0x00130A74	Pointer Assertion Failed:
+0x00130AA4	%s(=0x%08X) is invalid pointer
+0x00130B8C	Pointer Assertion Failed:
+0x00130BBC	%s(=0x%08X) is invalid pointer
+0x00130CA4	Pointer Assertion Failed:
+0x00130CD4	%s(=0x%08X) is invalid pointer
+0x00130DBC	Pointer Assertion Failed:
+0x00130DEC	%s(=0x%08X) is invalid pointer
+0x001312D4	Singleton::ctor
+0x001315E4	Failed assertion exp:%s
+0x00131684	Instance_(Singleton of %s):%p is invalid ptr.
+0x001316B4	Singleton::Instance
+0x00131A4C	WARNING! Panic: %s:%d
+0x00132100	unknown scene type:%d
+0x0013260C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0013263C	Singleton::Instance
+0x00132D58	Failed assertion exp:%s
+0x001330B0	unknown invoker type:%d
+0x001330E4	..\..\..\..\..\..\src\hel/common/StateChanger.hpp
+0x0013311C	FlowInvoker:%s is not a member of MainSequence
+0x00133150	unknown hist-act-type:%d
+0x00133CF8	Failed assertion exp:%s
+0x00133FA8	layout/browse/FocusFrame
+0x00133FD4	Failed assertion exp:%s
+0x001344F8	unknown scheme:%d
+0x00134538	Writer for rom scheme:%d is not supported
+0x00134E60	Singleton::ctor
+0x00134ED0	Failed assertion exp:%s
+0x00134F18	Pointer Assertion Failed:
+0x00134F40	%s(=0x%08X) is invalid pointer
+0x001351B0	nn::util::Base64::FromBase64String failed (Result:0x%08x)
+0x00135410	nn::http::Initialize() Failed: Result(0x%08x)
+0x0013562C	Failed to read rootca.pem
+0x001358E0	Singleton::ctor
+0x001358FC	Failed assertion exp:%s
+0x001369A0	WARNING! Panic: %s:%d
+0x00136E6C	Singleton::ctor
+0x00136EA4	Failed assertion exp:%s
+0x001377F0	Failed assertion exp:%s
+0x00137860	Instance_(Singleton of %s):%p is invalid ptr.
+0x00137890	Singleton::Instance
+0x001382B8	Pointer Assertion Failed:
+0x001382E8	%s(=0x%08X) is invalid pointer
+0x001387CC	Failed to read %s
+0x0013880C	Failed to register root certificates
+0x00138854	Instance_(Singleton of %s):%p is invalid ptr.
+0x00138884	Singleton::Instance
+0x00138EA4	Singleton::ctor
+0x00138EC8	Pointer Assertion Failed:
+0x00138EF4	%s(=0x%08X) is invalid pointer
+0x00139178	Failed assertion exp:%s
+0x00139444	browser/Skin.dat
+0x00139458	Pointer Assertion Failed:
+0x00139484	%s(=0x%08X) is invalid pointer
+0x001395B8	Singleton::ctor
+0x001395D4	Mozilla/5.0 (Nintendo 3DS; U; ; %s) Version/1.%d.%s
+0x00139844	Failed assertion exp:%s
+0x00139B60	Instance_(Singleton of %s):%p is invalid ptr.
+0x00139B90	Singleton::Instance
+0x0013CD90	(sequence::main::browse::BrowseScene::IsConstructed())
+0x0013CDC8	Failed assertion exp:%s
+0x0013D0A0	layout/error/DialogError
+0x0013D0D0	SE_CTR_COMMON_ERROR
+0x0013D100	Pointer Assertion Failed:
+0x0013D12C	%s(=0x%08X) is invalid pointer
+0x0013EF30	Failed assertion exp:%s
+0x0013EF4C	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x0013F01C	Pointer Assertion Failed:
+0x0013F04C	%s(=0x%08X) is invalid pointer
+0x00140164	Failed assertion exp:%s
+0x00140180	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00140228	Failed assertion exp:%s
+0x00140244	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00140308	Failed assertion exp:%s
+0x00140324	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001405B0	WARNING! Panic: %s:%d
+0x001405DC	dstPos:%d beyonds the CAPACITY:%d
+0x0014073C	WARNING! Panic: %s:%d
+0x00140768	dstPos:%d beyonds the CAPACITY:%d
+0x00140978	WARNING! Panic: %s:%d
+0x00140990	isEmpty():%d == false failed
+0x00140BC0	WARNING! Panic: %s:%d
+0x00140BD8	isFull:%d == false failed
+0x00140C04	Failed assertion exp:%s
+0x00140C20	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001414DC	Failed assertion exp:%s
+0x001419E8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00141A18	Singleton::Instance
+0x00141A88	Instance_(Singleton of %s):%p is invalid ptr.
+0x00141AB8	Singleton::Instance
+0x00141B28	Instance_(Singleton of %s):%p is invalid ptr.
+0x00141B58	Singleton::Instance
+0x00141BC8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00141BF8	Singleton::Instance
+0x00141C68	Instance_(Singleton of %s):%p is invalid ptr.
+0x00141C98	Singleton::Instance
+0x00141F34	WARNING! Panic: %s:%d
+0x00141F70	dstPos:%d beyonds the CAPACITY:%d
+0x00142158	Pointer Assertion Failed:
+0x00142188	%s(=0x%08X) is invalid pointer
+0x0014228C	Pointer Assertion Failed:
+0x001422BC	%s(=0x%08X) is invalid pointer
+0x001423A0	Pointer Assertion Failed:
+0x001423D0	%s(=0x%08X) is invalid pointer
+0x001424B4	Pointer Assertion Failed:
+0x001424E4	%s(=0x%08X) is invalid pointer
+0x001425C4	Pointer Assertion Failed:
+0x001425F4	%s(=0x%08X) is invalid pointer
+0x001426DC	Pointer Assertion Failed:
+0x0014270C	%s(=0x%08X) is invalid pointer
+0x001427F0	Pointer Assertion Failed:
+0x00142820	%s(=0x%08X) is invalid pointer
+0x00142904	Pointer Assertion Failed:
+0x00142934	%s(=0x%08X) is invalid pointer
+0x00142A18	Pointer Assertion Failed:
+0x00142A48	%s(=0x%08X) is invalid pointer
+0x00142B2C	Pointer Assertion Failed:
+0x00142B5C	%s(=0x%08X) is invalid pointer
+0x00142C40	Pointer Assertion Failed:
+0x00142C70	%s(=0x%08X) is invalid pointer
+0x00142D54	Pointer Assertion Failed:
+0x00142D84	%s(=0x%08X) is invalid pointer
+0x00142E68	Pointer Assertion Failed:
+0x00142E98	%s(=0x%08X) is invalid pointer
+0x00142F7C	Pointer Assertion Failed:
+0x00142FAC	%s(=0x%08X) is invalid pointer
+0x00143090	Pointer Assertion Failed:
+0x001430C0	%s(=0x%08X) is invalid pointer
+0x001431A8	Pointer Assertion Failed:
+0x001431D8	%s(=0x%08X) is invalid pointer
+0x001432C0	Pointer Assertion Failed:
+0x001432F0	%s(=0x%08X) is invalid pointer
+0x001433D8	Pointer Assertion Failed:
+0x00143408	%s(=0x%08X) is invalid pointer
+0x001434F0	Pointer Assertion Failed:
+0x00143520	%s(=0x%08X) is invalid pointer
+0x00143608	Pointer Assertion Failed:
+0x00143638	%s(=0x%08X) is invalid pointer
+0x00143770	Pointer Assertion Failed:
+0x001437A0	%s(=0x%08X) is invalid pointer
+0x00143804	Failed assertion exp:%s
+0x00143920	Pointer Assertion Failed:
+0x00143950	%s(=0x%08X) is invalid pointer
+0x001439AC	Failed assertion exp:%s
+0x001447CC	Singleton::ctor
+0x001447F0	Failed assertion exp:%s
+0x00144854	Instance_(Singleton of %s):%p is invalid ptr.
+0x00144884	Singleton::Instance
+0x00144A4C	Mount Rom Failed
+0x00144A90	Singleton::ctor
+0x00144D54	Singleton::ctor
+0x00144D78	layout/touchcursor/TextSelectCursor
+0x00144D9C	layout/touchcursor/ImageSelectCursor
+0x00144DC8	Failed assertion exp:%s
+0x00144E28	Instance_(Singleton of %s):%p is invalid ptr.
+0x00144E58	Singleton::Instance
+0x00145238	layout/touchcursor/DragCursor
+0x00145630	Pointer Assertion Failed:
+0x0014565C	%s(=0x%08X) is invalid pointer
+0x001459B4	WARNING! Panic: %s:%d
+0x001459D0	month_%d
+0x001459DC	day_%d
+0x00145EB8	Failed assertion exp:%s
+0x0014669C	Pointer Assertion Failed:
+0x001466CC	%s(=0x%08X) is invalid pointer
+0x0014693C	Singleton::ctor
+0x00146CD8	layout/dialog/Dialog
+0x00146D10	Instance_(Singleton of %s):%p is invalid ptr.
+0x00146D40	Singleton::Instance
+0x0014732C	Singleton::ctor
+0x001477C0	Singleton::ctor
+0x001477F4	Failed assertion exp:%s
+0x00147840	Pointer Assertion Failed:
+0x00147870	%s(=0x%08X) is invalid pointer
+0x001481F8	Singleton::ctor
+0x0014822C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0014825C	Singleton::Instance
+0x0014827C	layout/toucheffect/TouchEffect
+0x0014829C	layout/toucheffect/TouchEffectS
+0x001486BC	Failed assertion exp:%s
+0x0014873C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0014876C	Singleton::Instance
+0x00148C38	layout/dialog/DialogNormalNT
+0x00149050	WARNING! Panic: %s:%d
+0x001490A8	Pointer Assertion Failed:
+0x001490D0	%s(=0x%08X) is invalid pointer
+0x001494F4	(BrowseScene::IsConstructed())
+0x00149514	Failed assertion exp:%s
+0x00149550	..\..\..\..\..\..\..\src\www/event/ErrorContext.hpp
+0x00149CA4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00149CD4	Singleton::Instance
+0x0014A380	Pointer Assertion Failed:
+0x0014A3B0	%s(=0x%08X) is invalid pointer
+0x0014A5F0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0014A620	Singleton::Instance
+0x0014AA40	layout/browse/dropdownlist/DropDownListItem
+0x0014AA80	layout/browse/dropdownlist/ButtonSelectNoEmboss
+0x0014AF0C	Failed assertion exp:%s
+0x0014B378	Failed assertion exp:%s
+0x0014B44C	WARNING! Panic: %s:%d
+0x0014B464	unsupported operation:%d
+0x0014B810	unknown op:%d with buff:%ls
+0x0014BA6C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0014BA9C	Singleton::Instance
+0x0014C008	WARNING! Panic: %s:%d
+0x0014C718	Pointer Assertion Failed:
+0x0014C748	%s(=0x%08X) is invalid pointer
+0x0014D0AC	Failed assertion exp:%s
+0x0014D0C8	count():%d < SIZE:%d failed.
+0x0014D170	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0014D7F0	Pointer Assertion Failed:
+0x0014D820	%s(=0x%08X) is invalid pointer
+0x0014DC88	Pointer Assertion Failed:
+0x0014DCB8	%s(=0x%08X) is invalid pointer
+0x0014DF70	Failed assertion exp:%s
+0x0014EB34	Failed assertion exp:%s
+0x0014EF24	Failed assertion exp:%s
+0x0014F020	Failed assertion exp:%s
+0x0014F218	Pointer Assertion Failed:
+0x0014F248	%s(=0x%08X) is invalid pointer
+0x0014F494	Failed assertion exp:%s
+0x0014F504	Instance_(Singleton of %s):%p is invalid ptr.
+0x0014F534	Singleton::Instance
+0x0014F548	Pointer Assertion Failed:
+0x0014F574	%s(=0x%08X) is invalid pointer
+0x0014F734	Failed assertion exp:%s
+0x0014FD5C	Failed assertion exp:%s
+0x00158088	Pointer Assertion Failed:
+0x001580B8	%s(=0x%08X) is invalid pointer
+0x0015815C	Failed assertion exp:%s
+0x00158240	Pointer Assertion Failed:
+0x00158270	%s(=0x%08X) is invalid pointer
+0x00158438	Pointer Assertion Failed:
+0x0015846C	%s(=0x%08X) is invalid pointer
+0x0015857C	Pointer Assertion Failed:
+0x001585B0	%s(=0x%08X) is invalid pointer
+0x001585D0	..\..\..\..\..\..\..\src\sequence/main/Desk.hpp
+0x00158728	Pointer Assertion Failed:
+0x00158760	%s(=0x%08X) is invalid pointer
+0x001588E4	Pointer Assertion Failed:
+0x00158924	%s(=0x%08X) is invalid pointer
+0x00158944	..\..\..\..\..\..\..\src\sequence/main/browse/EventUIHolder.hpp
+0x00158D34	Failed assertion exp:%s
+0x00158D50	..\..\..\..\..\..\..\src\www/event/ScrollChangedContext.hpp
+0x00158DEC	Failed assertion exp:%s
+0x00158E08	..\..\..\..\..\..\..\src\www/event/ScrollChangedContext.hpp
+0x00159464	Pointer Assertion Failed:
+0x00159494	%s(=0x%08X) is invalid pointer
+0x00159FB8	Failed assertion exp:%s
+0x00159FD4	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A0BC	Failed assertion exp:%s
+0x0015A0DC	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A1CC	Failed assertion exp:%s
+0x0015A1E8	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A2C8	Failed assertion exp:%s
+0x0015A2E8	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A428	Failed assertion exp:%s
+0x0015A444	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A4A0	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x0015A548	Failed assertion exp:%s
+0x0015A564	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A648	Failed assertion exp:%s
+0x0015A668	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A7B0	Failed assertion exp:%s
+0x0015A7CC	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A828	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x0015A8EC	Failed assertion exp:%s
+0x0015A908	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015A9E0	Failed assertion exp:%s
+0x0015AA00	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015AA94	Failed assertion exp:%s
+0x0015AAB0	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015ABE0	Failed assertion exp:%s
+0x0015ABFC	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015AC54	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x0015AD24	Failed assertion exp:%s
+0x0015AD40	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015AE04	Failed assertion exp:%s
+0x0015AEC8	Failed assertion exp:%s
+0x0015AEE4	count():%d < SIZE:%d failed.
+0x0015B10C	WARNING! Panic: %s:%d
+0x0015B138	dstPos:%d beyonds the CAPACITY:%d
+0x0015B21C	Failed assertion exp:%s
+0x0015B52C	WARNING! Panic: %s:%d
+0x0015B544	isEmpty():%d == false failed
+0x0015B778	WARNING! Panic: %s:%d
+0x0015B790	isFull:%d == false failed
+0x0015B7BC	Failed assertion exp:%s
+0x0015B7D8	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015B8E4	Failed assertion exp:%s
+0x0015B900	invalid alignment:%d ( must <= %d )
+0x0015B928	..\..\..\..\src\lib/math/Math.hpp
+0x0015B964	alignment:%d is not power of 2 (e.g. 1,2,4,8,...)
+0x0015BE1C	Pointer Assertion Failed:
+0x0015BE50	%s(=0x%08X) is invalid pointer
+0x0015BFB0	Failed assertion exp:%s
+0x0015C710	Pointer Assertion Failed:
+0x0015C73C	%s(=0x%08X) is invalid pointer
+0x0015C808	Pointer Assertion Failed:
+0x0015C834	%s(=0x%08X) is invalid pointer
+0x0015C9C8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015C9F8	Singleton::Instance
+0x0015CA68	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CA98	Singleton::Instance
+0x0015CB08	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CB38	Singleton::Instance
+0x0015CBA8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CBD8	Singleton::Instance
+0x0015CC48	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CC78	Singleton::Instance
+0x0015CCE8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CD18	Singleton::Instance
+0x0015CD88	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CDB8	Singleton::Instance
+0x0015CE50	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CE80	Singleton::Instance
+0x0015CF30	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015CF60	Singleton::Instance
+0x0015D080	Failed assertion exp:%s
+0x0015D0C0	..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x0015D2D4	Failed assertion exp:%s
+0x0015D2F4	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015D3EC	Failed assertion exp:%s
+0x0015D40C	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0015D514	Failed assertion exp:%s
+0x0015D588	WARNING! Panic: %s:%d
+0x0015D6B8	Pointer Assertion Failed:
+0x0015D6E8	%s(=0x%08X) is invalid pointer
+0x0015D7CC	Pointer Assertion Failed:
+0x0015D7FC	%s(=0x%08X) is invalid pointer
+0x0015D8DC	Pointer Assertion Failed:
+0x0015D90C	%s(=0x%08X) is invalid pointer
+0x0015D9F0	Pointer Assertion Failed:
+0x0015DA20	%s(=0x%08X) is invalid pointer
+0x0015DB04	Pointer Assertion Failed:
+0x0015DB34	%s(=0x%08X) is invalid pointer
+0x0015DC1C	Pointer Assertion Failed:
+0x0015DC4C	%s(=0x%08X) is invalid pointer
+0x0015DD34	Pointer Assertion Failed:
+0x0015DD64	%s(=0x%08X) is invalid pointer
+0x0015DE44	Pointer Assertion Failed:
+0x0015DE74	%s(=0x%08X) is invalid pointer
+0x0015DF54	Pointer Assertion Failed:
+0x0015DF84	%s(=0x%08X) is invalid pointer
+0x0015E06C	Pointer Assertion Failed:
+0x0015E09C	%s(=0x%08X) is invalid pointer
+0x0015E180	Pointer Assertion Failed:
+0x0015E1B0	%s(=0x%08X) is invalid pointer
+0x0015E298	Pointer Assertion Failed:
+0x0015E2C8	%s(=0x%08X) is invalid pointer
+0x0015E3B0	Pointer Assertion Failed:
+0x0015E3E0	%s(=0x%08X) is invalid pointer
+0x0015E4C8	Pointer Assertion Failed:
+0x0015E4F8	%s(=0x%08X) is invalid pointer
+0x0015E5E0	Pointer Assertion Failed:
+0x0015E610	%s(=0x%08X) is invalid pointer
+0x0015E6F8	Pointer Assertion Failed:
+0x0015E728	%s(=0x%08X) is invalid pointer
+0x0015E810	Pointer Assertion Failed:
+0x0015E840	%s(=0x%08X) is invalid pointer
+0x0015E928	Pointer Assertion Failed:
+0x0015E958	%s(=0x%08X) is invalid pointer
+0x0015EA40	Pointer Assertion Failed:
+0x0015EA70	%s(=0x%08X) is invalid pointer
+0x0015EB58	Pointer Assertion Failed:
+0x0015EB88	%s(=0x%08X) is invalid pointer
+0x0015EC70	Pointer Assertion Failed:
+0x0015ECA0	%s(=0x%08X) is invalid pointer
+0x0015ED88	Pointer Assertion Failed:
+0x0015EDB8	%s(=0x%08X) is invalid pointer
+0x0015EE9C	Pointer Assertion Failed:
+0x0015EECC	%s(=0x%08X) is invalid pointer
+0x0015F058	Failed assertion exp:%s
+0x0015F0A0	Pointer Assertion Failed:
+0x0015F0CC	%s(=0x%08X) is invalid pointer
+0x0015F8D0	Singleton::ctor
+0x0015F8EC	layout/dialog/DialogNormalNT
+0x0015FB58	Failed assertion exp:%s
+0x0015FBC8	WARNING! Panic: %s:%d
+0x0015FCE4	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015FD14	Singleton::Instance
+0x0015FEFC	Singleton::ctor
+0x0015FF18	(sequence::main::browse::BrowseScene::IsConstructed())
+0x0015FF50	Failed assertion exp:%s
+0x0015FFB8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0015FFE8	Singleton::Instance
+0x00160410	Singleton::ctor
+0x00160694	Failed assertion exp:%s
+0x00160700	Instance_(Singleton of %s):%p is invalid ptr.
+0x00160730	Singleton::Instance
+0x0016076C	WARNING! Panic: %s:%d
+0x00160AC0	Failed assertion exp:%s
+0x00160D18	%s/%05x/%s
+0x00160D24	http://cgi2.nintendo.co.jp/favorites/3ds.php?r=%s&l=%s&c=%s
+0x00160D64	http://www.yahoo.co.jp/
+0x00160D7C	http://
+0x00160D84	https://
+0x0016119C	Singleton::ctor
+0x001611D4	Failed assertion exp:%s
+0x0016141C	count():%d < SIZE:%d failed.
+0x001616A4	unknown scheme:%d
+0x00161948	Singleton::ctor
+0x00161984	Instance_(Singleton of %s):%p is invalid ptr.
+0x001619B4	Singleton::Instance
+0x00161C1C	Singleton::ctor
+0x00161C40	Failed assertion exp:%s
+0x00161EC4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00161EF4	Singleton::Instance
+0x00161F0C	Failed assertion exp:%s
+0x001620F8	Pointer Assertion Failed:
+0x00162124	%s(=0x%08X) is invalid pointer
+0x0016226C	Singleton::ctor
+0x001624D0	Singleton::ctor
+0x001624EC	Pointer Assertion Failed:
+0x00162518	%s(=0x%08X) is invalid pointer
+0x0016275C	Failed assertion exp:%s
+0x00162AB8	Failed assertion exp:%s
+0x00162C24	Instance_(Singleton of %s):%p is invalid ptr.
+0x00162C54	Singleton::Instance
+0x00162DF4	Singleton::ctor
+0x00162E30	Instance_(Singleton of %s):%p is invalid ptr.
+0x00162E60	Singleton::Instance
+0x00162E74	Pointer Assertion Failed:
+0x00162EA0	%s(=0x%08X) is invalid pointer
+0x001630B8	Instance_(Singleton of %s):%p is invalid ptr.
+0x001630E8	Singleton::Instance
+0x0016331C	Singleton::ctor
+0x0016349C	Failed assertion exp:%s
+0x00163B28	Failed assertion exp:%s
+0x00163F98	Failed assertion exp:%s
+0x00164A8C	Instance_(Singleton of %s):%p is invalid ptr.
+0x00164ABC	Singleton::Instance
+0x00164D80	WARNING! Panic: %s:%d
+0x00165574	ErrorMsg_AC_Connection_Failed
+0x001655B4	Instance_(Singleton of %s):%p is invalid ptr.
+0x001655E4	Singleton::Instance
+0x00165BE8	WARNING! Panic: %s:%d
+0x00165C00	unknown error:%d
+0x00166298	BasePctH.bclim
+0x001662C0	Failed assertion exp:%s
+0x00166304	BasePctC.bclim
+0x00166928	layout/button/ButtonSelect
+0x00167198	Instance_(Singleton of %s):%p is invalid ptr.
+0x001671C8	Singleton::Instance
+0x00167440	WARNING! Panic: %s:%d
+0x00167458	No pair found for errorCode:%d
+0x0016772C	Failed assertion exp:%s
+0x0016F2F4	%s%04d
+0x0016F430	%03d%s
+0x0016F588	Pointer Assertion Failed:
+0x0016F5B8	%s(=0x%08X) is invalid pointer
+0x0016F6A0	Pointer Assertion Failed:
+0x0016F6D0	%s(=0x%08X) is invalid pointer
+0x0016F880	Pointer Assertion Failed:
+0x0016F8B4	%s(=0x%08X) is invalid pointer
+0x0016FAF0	Pointer Assertion Failed:
+0x0016FB20	%s(=0x%08X) is invalid pointer
+0x0016FC44	Pointer Assertion Failed:
+0x0016FC74	%s(=0x%08X) is invalid pointer
+0x0016FD58	Pointer Assertion Failed:
+0x0016FD88	%s(=0x%08X) is invalid pointer
+0x0016FEFC	Pointer Assertion Failed:
+0x0016FF30	%s(=0x%08X) is invalid pointer
+0x0016FF50	..\..\..\..\..\..\src\sequence/main/browse/BrowseScene.hpp
+0x001700E8	Pointer Assertion Failed:
+0x0017011C	%s(=0x%08X) is invalid pointer
+0x00170B90	Pointer Assertion Failed:
+0x00170BCC	%s(=0x%08X) is invalid pointer
+0x00170BEC	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x00170CB8	Pointer Assertion Failed:
+0x00170CE8	%s(=0x%08X) is invalid pointer
+0x001728B0	Failed assertion exp:%s
+0x001728CC	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001729B8	Failed assertion exp:%s
+0x001729DC	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172A74	Failed assertion exp:%s
+0x00172A90	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172B50	Failed assertion exp:%s
+0x00172B6C	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172C0C	Failed assertion exp:%s
+0x00172C28	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172D08	Failed assertion exp:%s
+0x00172D28	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172DB8	Failed assertion exp:%s
+0x00172DD4	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172E78	Failed assertion exp:%s
+0x00172E94	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00172F68	Failed assertion exp:%s
+0x00172F88	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001730BC	Failed assertion exp:%s
+0x001730D8	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00173134	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x001731E0	Failed assertion exp:%s
+0x001731FC	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001732A8	Failed assertion exp:%s
+0x001732C4	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001733A0	Failed assertion exp:%s
+0x001733C0	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00173458	Failed assertion exp:%s
+0x00173474	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001735A8	Failed assertion exp:%s
+0x001735C4	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00173620	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x00173808	Failed assertion exp:%s
+0x001738BC	Failed assertion exp:%s
+0x00173984	Failed assertion exp:%s
+0x001739A0	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00173AEC	Pointer Assertion Failed:
+0x00173B1C	%s(=0x%08X) is invalid pointer
+0x00173D0C	WARNING! Panic: %s:%d
+0x00173D38	dstPos:%d beyonds the CAPACITY:%d
+0x00174030	WARNING! Panic: %s:%d
+0x00174048	isEmpty():%d == false failed
+0x001741C4	WARNING! Panic: %s:%d
+0x001741DC	unusedIndex_.count():%d == pool_.size():%d failed
+0x001750EC	Pointer Assertion Failed:
+0x00175118	%s(=0x%08X) is invalid pointer
+0x00175230	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175260	Singleton::Instance
+0x001752D0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175300	Singleton::Instance
+0x00175398	Instance_(Singleton of %s):%p is invalid ptr.
+0x001753C8	Singleton::Instance
+0x00175458	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175488	Singleton::Instance
+0x001754F8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175528	Singleton::Instance
+0x001755F8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175628	Singleton::Instance
+0x001756B8	Instance_(Singleton of %s):%p is invalid ptr.
+0x001756E8	Singleton::Instance
+0x00175758	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175788	Singleton::Instance
+0x001757F8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175828	Singleton::Instance
+0x001758B8	Instance_(Singleton of %s):%p is invalid ptr.
+0x001758E8	Singleton::Instance
+0x00175978	Instance_(Singleton of %s):%p is invalid ptr.
+0x001759A8	Singleton::Instance
+0x00175A18	Instance_(Singleton of %s):%p is invalid ptr.
+0x00175A48	Singleton::Instance
+0x00175BA0	Failed assertion exp:%s
+0x00175BBC	unsealing before ERR construction is forbidden!
+0x00175BEC	..\..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x00176098	Failed assertion exp:%s
+0x001760BC	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00176260	Failed assertion exp:%s
+0x00176280	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001763B4	Pointer Assertion Failed:
+0x001763E0	%s(=0x%08X) is invalid pointer
+0x00176534	Pointer Assertion Failed:
+0x00176560	%s(=0x%08X) is invalid pointer
+0x001766B4	Pointer Assertion Failed:
+0x001766E0	%s(=0x%08X) is invalid pointer
+0x00176834	Pointer Assertion Failed:
+0x00176860	%s(=0x%08X) is invalid pointer
+0x001769B4	Pointer Assertion Failed:
+0x001769E0	%s(=0x%08X) is invalid pointer
+0x00176B34	Pointer Assertion Failed:
+0x00176B60	%s(=0x%08X) is invalid pointer
+0x00176CB4	Pointer Assertion Failed:
+0x00176CE0	%s(=0x%08X) is invalid pointer
+0x00176E34	Pointer Assertion Failed:
+0x00176E60	%s(=0x%08X) is invalid pointer
+0x00177058	Pointer Assertion Failed:
+0x00177088	%s(=0x%08X) is invalid pointer
+0x00177188	Pointer Assertion Failed:
+0x001771B8	%s(=0x%08X) is invalid pointer
+0x0017729C	Pointer Assertion Failed:
+0x001772CC	%s(=0x%08X) is invalid pointer
+0x001773B0	Pointer Assertion Failed:
+0x001773E0	%s(=0x%08X) is invalid pointer
+0x001774E4	Pointer Assertion Failed:
+0x00177514	%s(=0x%08X) is invalid pointer
+0x001775F8	Pointer Assertion Failed:
+0x00177628	%s(=0x%08X) is invalid pointer
+0x0017770C	Pointer Assertion Failed:
+0x0017773C	%s(=0x%08X) is invalid pointer
+0x00177824	Pointer Assertion Failed:
+0x00177854	%s(=0x%08X) is invalid pointer
+0x0017793C	Pointer Assertion Failed:
+0x0017796C	%s(=0x%08X) is invalid pointer
+0x00177A74	Pointer Assertion Failed:
+0x00177AA4	%s(=0x%08X) is invalid pointer
+0x00177B88	Pointer Assertion Failed:
+0x00177BB8	%s(=0x%08X) is invalid pointer
+0x00177C9C	Pointer Assertion Failed:
+0x00177CCC	%s(=0x%08X) is invalid pointer
+0x00177DAC	Pointer Assertion Failed:
+0x00177DDC	%s(=0x%08X) is invalid pointer
+0x00177EC4	Pointer Assertion Failed:
+0x00177EF4	%s(=0x%08X) is invalid pointer
+0x00177FD4	Pointer Assertion Failed:
+0x00178004	%s(=0x%08X) is invalid pointer
+0x001780EC	Pointer Assertion Failed:
+0x0017811C	%s(=0x%08X) is invalid pointer
+0x001781FC	Pointer Assertion Failed:
+0x0017822C	%s(=0x%08X) is invalid pointer
+0x00178310	Pointer Assertion Failed:
+0x00178340	%s(=0x%08X) is invalid pointer
+0x00178424	Pointer Assertion Failed:
+0x00178454	%s(=0x%08X) is invalid pointer
+0x00178538	Pointer Assertion Failed:
+0x00178568	%s(=0x%08X) is invalid pointer
+0x0017864C	Pointer Assertion Failed:
+0x0017867C	%s(=0x%08X) is invalid pointer
+0x00178764	Pointer Assertion Failed:
+0x00178794	%s(=0x%08X) is invalid pointer
+0x0017887C	Pointer Assertion Failed:
+0x001788AC	%s(=0x%08X) is invalid pointer
+0x001789E4	Pointer Assertion Failed:
+0x00178A14	%s(=0x%08X) is invalid pointer
+0x00178A78	Failed assertion exp:%s
+0x00178BB4	Pointer Assertion Failed:
+0x00178BE4	%s(=0x%08X) is invalid pointer
+0x00178C44	Failed assertion exp:%s
+0x00178CF0	Failed assertion exp:%s
+0x00178E30	Pointer Assertion Failed:
+0x00178E60	%s(=0x%08X) is invalid pointer
+0x00178EBC	Failed assertion exp:%s
+0x00178F58	Failed assertion exp:%s
+0x00178F98	..\..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x0017AE08	Singleton::ctor
+0x0017AE4C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0017AE7C	Singleton::Instance
+0x0017B1D4	Singleton::ctor
+0x0017B1F4	Failed assertion exp:%s
+0x0017B264	Instance_(Singleton of %s):%p is invalid ptr.
+0x0017B294	Singleton::Instance
+0x0017B60C	Singleton::ctor
+0x0017B648	Instance_(Singleton of %s):%p is invalid ptr.
+0x0017B678	Singleton::Instance
+0x0017BB4C	Singleton::ctor
+0x0017BDCC	Failed assertion exp:%s
+0x0017BE60	WARNING! Panic: %s:%d
+0x0017BE78	unknown mode:%d
+0x0017C2F4	WARNING! Panic: %s:%d
+0x0017CA08	(LayoutManager::Instance().searchResource(name) == 0)
+0x0017CA40	Failed assertion exp:%s
+0x0017CA88	/%s.arc
+0x0017CA98	font.bcfnt
+0x0017CAA4	cbf_std.bcfnt
+0x0017CAB4	Hud.bcfnt
+0x0017CF08	(ti.GetTextureObject() != nw::lyt::TextureInfo::INVALID)
+0x0017D12C	Failed assertion exp:%s
+0x0017D208	(0 <= format && format < nw::lyt::TEXFORMAT_MAX)
+0x0017D23C	Failed assertion exp:%s
+0x0017D4F0	Singleton::ctor
+0x0017D514	layout/dialog/DialogNormalNT
+0x0017D538	SE_CTR_COMMON_ERROR
+0x0017D8E8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0017D918	Singleton::Instance
+0x0017DEC0	layout/toolbar/NoFixationBG
+0x0017DEE8	layout/toolbar/ExitButton
+0x0017DF38	layout/toolbar/ManualButton
+0x0017DF8C	layout/toolbar/CloseMenuButton
+0x0017E62C	Failed assertion exp:%s
+0x0017ECAC	Failed assertion exp:%s
+0x0017F284	Failed assertion exp:%s
+0x0017F320	Instance_(Singleton of %s):%p is invalid ptr.
+0x0017F350	Singleton::Instance
+0x0017F794	WARNING! Panic: %s:%d
+0x00184940	Failed assertion exp:%s
+0x00184A24	Pointer Assertion Failed:
+0x00184A54	%s(=0x%08X) is invalid pointer
+0x00184BB8	Pointer Assertion Failed:
+0x00184BEC	%s(=0x%08X) is invalid pointer
+0x00184D38	Pointer Assertion Failed:
+0x00184D70	%s(=0x%08X) is invalid pointer
+0x00184D90	..\..\..\..\..\..\..\src\sequence/main/search/Search.hpp
+0x00185800	Pointer Assertion Failed:
+0x00185830	%s(=0x%08X) is invalid pointer
+0x00185910	Pointer Assertion Failed:
+0x00185940	%s(=0x%08X) is invalid pointer
+0x001859E0	Failed assertion exp:%s
+0x00185AC4	Pointer Assertion Failed:
+0x00185AF4	%s(=0x%08X) is invalid pointer
+0x0018BD24	Failed assertion exp:%s
+0x0018BD40	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0018BDFC	Failed assertion exp:%s
+0x0018BE18	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0018BEB0	Failed assertion exp:%s
+0x0018BECC	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0018BF78	Failed assertion exp:%s
+0x0018BF94	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0018C034	Failed assertion exp:%s
+0x0018C2C8	WARNING! Panic: %s:%d
+0x0018C300	dstPos:%d beyonds the CAPACITY:%d
+0x0018C548	WARNING! Panic: %s:%d
+0x0018C560	isEmpty():%d == false failed
+0x0018C790	WARNING! Panic: %s:%d
+0x0018C7A8	isFull:%d == false failed
+0x0018C7D4	Failed assertion exp:%s
+0x0018C7F0	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0018C9D4	WARNING! Panic: %s:%d
+0x0018C9EC	isFull:%d == false failed
+0x0018CDEC	Failed assertion exp:%s
+0x0018CEC4	Failed assertion exp:%s
+0x0018CFF0	Failed assertion exp:%s
+0x0018D090	Failed assertion exp:%s
+0x0018D590	Instance_(Singleton of %s):%p is invalid ptr.
+0x0018D5C0	Singleton::Instance
+0x0018D670	Instance_(Singleton of %s):%p is invalid ptr.
+0x0018D6A0	Singleton::Instance
+0x0018D710	Instance_(Singleton of %s):%p is invalid ptr.
+0x0018D740	Singleton::Instance
+0x0018D7F0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0018D820	Singleton::Instance
+0x0018D8B0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0018D8E0	Singleton::Instance
+0x0018E128	Pointer Assertion Failed:
+0x0018E158	%s(=0x%08X) is invalid pointer
+0x0018E290	Pointer Assertion Failed:
+0x0018E2C0	%s(=0x%08X) is invalid pointer
+0x0018E3A0	Pointer Assertion Failed:
+0x0018E3D0	%s(=0x%08X) is invalid pointer
+0x0018E4B0	Pointer Assertion Failed:
+0x0018E4E0	%s(=0x%08X) is invalid pointer
+0x0018E5C0	Pointer Assertion Failed:
+0x0018E5F0	%s(=0x%08X) is invalid pointer
+0x0018E6D0	Pointer Assertion Failed:
+0x0018E700	%s(=0x%08X) is invalid pointer
+0x0018E7E0	Pointer Assertion Failed:
+0x0018E810	%s(=0x%08X) is invalid pointer
+0x0018E8F0	Pointer Assertion Failed:
+0x0018E920	%s(=0x%08X) is invalid pointer
+0x0018EA00	Pointer Assertion Failed:
+0x0018EA30	%s(=0x%08X) is invalid pointer
+0x0018EB10	Pointer Assertion Failed:
+0x0018EB40	%s(=0x%08X) is invalid pointer
+0x0018EC28	Pointer Assertion Failed:
+0x0018EC58	%s(=0x%08X) is invalid pointer
+0x0018EE04	isValid() failed. parent_:%p id_.isInit():%d
+0x00190298	Singleton::ctor
+0x00190720	WARNING! Panic: %s:%d
+0x0019075C	Pointer Assertion Failed:
+0x00190790	%s(=0x%08X) is invalid pointer
+0x001907B4	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x001947E4	Failed assertion exp:%s
+0x00194894	Failed assertion exp:%s
+0x0019497C	Pointer Assertion Failed:
+0x001949AC	%s(=0x%08X) is invalid pointer
+0x0019555C	Pointer Assertion Failed:
+0x0019559C	%s(=0x%08X) is invalid pointer
+0x001955BC	..\..\..\..\..\..\src\layout/culling/Target.hpp
+0x0019B978	Failed assertion exp:%s
+0x0019B994	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0019BA6C	Failed assertion exp:%s
+0x0019BA8C	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0019BB20	Failed assertion exp:%s
+0x0019BB3C	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0019BC6C	Failed assertion exp:%s
+0x0019BC88	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x0019BCE0	rawIndexCopyBegin:%d <= rawIndexCopyEnd:%d failed.
+0x0019BDD8	Failed assertion exp:%s
+0x0019BDF4	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0019C1D4	Pointer Assertion Failed:
+0x0019C208	%s(=0x%08X) is invalid pointer
+0x0019C378	Failed assertion exp:%s
+0x0019C4C0	Failed assertion exp:%s
+0x0019C738	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019C768	Singleton::Instance
+0x0019C7D8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019C808	Singleton::Instance
+0x0019C878	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019C8A8	Singleton::Instance
+0x0019C918	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019C948	Singleton::Instance
+0x0019CA18	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019CA48	Singleton::Instance
+0x0019CB30	Instance_(Singleton of %s):%p is invalid ptr.
+0x0019CB60	Singleton::Instance
+0x0019CC68	Failed assertion exp:%s
+0x0019CC84	No tickets are allocated as id:%d
+0x0019CCA8	..\..\..\..\..\..\src\sys/ticket/TicketBodyTable.hpp
+0x0019CFB4	Pointer Assertion Failed:
+0x0019CFE4	%s(=0x%08X) is invalid pointer
+0x001AA664	Failed assertion exp:%s
+0x001AA680	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001AA770	Failed assertion exp:%s
+0x001AA78C	count():%d < SIZE:%d failed.
+0x001AA9E8	Pointer Assertion Failed:
+0x001AAA1C	%s(=0x%08X) is invalid pointer
+0x001AB294	Pointer Assertion Failed:
+0x001AB2C4	%s(=0x%08X) is invalid pointer
+0x001AB2E4	..\..\..\..\..\..\src\sys/memory/STLAllocator.hpp
+0x001B1548	Pointer Assertion Failed:
+0x001B1578	%s(=0x%08X) is invalid pointer
+0x001B1598	..\..\..\..\..\..\src\sys/memory/STLAllocator.hpp
+0x001B16A8	Pointer Assertion Failed:
+0x001B16D8	%s(=0x%08X) is invalid pointer
+0x001B16F8	..\..\..\..\..\..\src\sys/memory/STLAllocator.hpp
+0x001BD52C	Failed assertion exp:%s
+0x001BD974	Pointer Assertion Failed:
+0x001BD9A0	%s(=0x%08X) is invalid pointer
+0x001BDD84	Instance_(Singleton of %s):%p is invalid ptr.
+0x001BDDB4	Singleton::Instance
+0x001BDDD4	Pointer Assertion Failed:
+0x001BDE10	%s(=0x%08X) is invalid pointer
+0x001BDE5C	/layout/loading/LoadingIcon.arc
+0x001BE104	Failed assertion exp:%s
+0x001BE120	state_:%d == State_AllDone:%d failed
+0x001BE168	state_:%d == State_FilePreload:%d failed
+0x001BE1D4	state_:%d == State_NetworkInit:%d failed
+0x001BE478	state_:%d == State_BeforeStart:%d failed
+0x001BE4E4	unknown state_:%d
+0x001BE648	isWorkerThreadJoined_:%d failed
+0x001BE8BC	Instance_(Singleton of %s):%p is invalid ptr.
+0x001BE8EC	Singleton::Instance
+0x001BEB20	WARNING! Panic: %s:%d
+0x001BEB38	unknown:%d
+0x001BEFC4	Pointer Assertion Failed:
+0x001BF000	%s(=0x%08X) is invalid pointer
+0x001BF020	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x001BF078	Instance_(Singleton of %s):%p is invalid ptr.
+0x001BF0A8	Singleton::Instance
+0x001BF0C8	Singleton::ctor
+0x001BFF2C	WARNING! Panic: %s:%d
+0x001C01E4	Failed assertion exp:%s
+0x001C0800	Singleton::ctor
+0x001C0854	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C0884	Singleton::Instance
+0x001C0898	Pointer Assertion Failed:
+0x001C08C8	%s(=0x%08X) is invalid pointer
+0x001C0D6C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C0D9C	Singleton::Instance
+0x001C119C	Singleton::ctor
+0x001C11F0	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C1220	Singleton::Instance
+0x001C1234	Pointer Assertion Failed:
+0x001C1264	%s(=0x%08X) is invalid pointer
+0x001C3130	Failed assertion exp:%s
+0x001C34C0	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C34F0	Singleton::Instance
+0x001C3A5C	Pointer Assertion Failed:
+0x001C3A8C	%s(=0x%08X) is invalid pointer
+0x001C3DD4	Pointer Assertion Failed:
+0x001C3E04	%s(=0x%08X) is invalid pointer
+0x001C41DC	layout/option/item/1Button
+0x001C46C0	Failed assertion exp:%s
+0x001C4734	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C4764	Singleton::Instance
+0x001C4778	Pointer Assertion Failed:
+0x001C47A8	%s(=0x%08X) is invalid pointer
+0x001C48CC	Pointer Assertion Failed:
+0x001C48FC	%s(=0x%08X) is invalid pointer
+0x001C4D9C	layout/option/item/2Button
+0x001C5390	WARNING! Panic: %s:%d
+0x001C558C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C55BC	Singleton::Instance
+0x001C5678	Pointer Assertion Failed:
+0x001C56A8	%s(=0x%08X) is invalid pointer
+0x001C595C	Pointer Assertion Failed:
+0x001C5994	%s(=0x%08X) is invalid pointer
+0x001C6578	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C65A8	Singleton::Instance
+0x001C71BC	WARNING! Panic: %s:%d
+0x001C71D4	unknown state:%d
+0x001C75C4	Pointer Assertion Failed:
+0x001C75EC	%s(=0x%08X) is invalid pointer
+0x001C766C	unknown subEv:%d
+0x001C776C	invalid dir:%d
+0x001C7AC8	layout/dialog/DialogNormalNT
+0x001C7CE8	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C7D18	Singleton::Instance
+0x001C7D30	ImageSaver Initialize Failed.
+0x001C8064	WARNING! Panic: %s:%d
+0x001C8A10	Pointer Assertion Failed:
+0x001C8A44	%s(=0x%08X) is invalid pointer
+0x001C8A64	..\..\..\..\..\..\..\src\sequence/main/option/Option.hpp
+0x001C9084	Instance_(Singleton of %s):%p is invalid ptr.
+0x001C90B4	Singleton::Instance
+0x001C9978	Pointer Assertion Failed:
+0x001C99B4	%s(=0x%08X) is invalid pointer
+0x001C99D8	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x001CA5EC	Instance_(Singleton of %s):%p is invalid ptr.
+0x001CA61C	Singleton::Instance
+0x001CB4C4	Pointer Assertion Failed:
+0x001CB4F4	%s(=0x%08X) is invalid pointer
+0x001CB86C	Failed assertion exp:%s
+0x001CB898	## Test Failure! expect = %s but result is %s
+0x001CBCE0	Instance_(Singleton of %s):%p is invalid ptr.
+0x001CBD10	Singleton::Instance
+0x001CBD34	RESULT FAILURE: result = %s
+0x001CBD54	Unexpected Result Failure.
+0x001CBFFC	Instance_(Singleton of %s):%p is invalid ptr.
+0x001CC02C	Singleton::Instance
+0x001CC0E8	Pointer Assertion Failed:
+0x001CC118	%s(=0x%08X) is invalid pointer
+0x001CC60C	Failed assertion exp:%s
+0x001CC6B8	layout/favorite/Container
+0x001CCAF0	layout/favorite/TargetPlaceCursor
+0x001CCB4C	layout/favorite/EmptyMessage
+0x001CCE1C	layout/dialog/DialogNormalNT
+0x001CCEB0	Singleton::ctor
+0x001CD11C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001CD14C	Singleton::Instance
+0x001CD854	WARNING! Panic: %s:%d
+0x001CDE7F	?Pointer Assertion Failed:
+0x001CDEAC	%s(=0x%08X) is invalid pointer
+0x001D1A6C	Singleton::ctor
+0x001D23C0	WARNING! Panic: %s:%d
+0x001D26C4	Instance_(Singleton of %s):%p is invalid ptr.
+0x001D26F4	Singleton::Instance
+0x001D2CC8	Failed assertion exp:%s
+0x001D30C8	Singleton::ctor
+0x001D30E0	browser/effective_tld_names.dat
+0x001D3110	RESULT FAILURE: result = %s
+0x001D3130	Unexpected Result Failure.
+0x001D3818	Failed assertion exp:%s
+0x001D3AD0	isValid() failed. parent_:%p id_.isInit():%d
+0x001D3D34	Singleton::ctor
+0x001D4544	Instance_(Singleton of %s):%p is invalid ptr.
+0x001D4574	Singleton::Instance
+0x001D4594	layout/start/dialog/StartDialog
+0x001D4A88	layout/start/dialog/FavoriteAddButton
+0x001D4AD4	layout/start/dialog/FavoriteButton
+0x001D4B0C	layout/start/dialog/SearchButton
+0x001D4F5C	layout/start/dialog/OptionButton
+0x001D4F80	layout/start/dialog/PageInfoButton
+0x001D4FA4	layout/start/dialog/AddressButton
+0x001D5808	WARNING! Panic: %s:%d
+0x001D5888	Failed assertion exp:%s
+0x001D5E4C	Pointer Assertion Failed:
+0x001D5E78	%s(=0x%08X) is invalid pointer
+0x001D6E64	Pointer Assertion Failed:
+0x001D6E94	%s(=0x%08X) is invalid pointer
+0x001D6F7C	Pointer Assertion Failed:
+0x001D6FAC	%s(=0x%08X) is invalid pointer
+0x001D72D0	WARNING! Panic: %s:%d
+0x001D72F0	Pointer Assertion Failed:
+0x001D7318	%s(=0x%08X) is invalid pointer
+0x001D76D4	Singleton::ctor
+0x001D772C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001D775C	Singleton::Instance
+0x001D79B0	Failed assertion exp:%s
+0x001D8274	Singleton::ctor
+0x001D86BC	Failed assertion exp:%s
+0x001D86D8	Pointer Assertion Failed:
+0x001D8704	%s(=0x%08X) is invalid pointer
+0x001D8764	unsealing before ERR construction is forbidden!
+0x001D8794	..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x001D8C58	WARNING! Panic: %s:%d
+0x001D954C	Failed assertion exp:%s
+0x001D9924	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x001DA1B8	Pointer Assertion Failed:
+0x001DA1E4	%s(=0x%08X) is invalid pointer
+0x001DAFD0	WARNING! Panic: %s:%d
+0x001DBCCC	Instance_(Singleton of %s):%p is invalid ptr.
+0x001DBCFC	Singleton::Instance
+0x001DCCE0	Pointer Assertion Failed:
+0x001DCD0C	%s(=0x%08X) is invalid pointer
+0x001DD630	WARNING! Panic: %s:%d
+0x001DDA84	Pointer Assertion Failed:
+0x001DDAB4	%s(=0x%08X) is invalid pointer
+0x001DDB5C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001DDB8C	Singleton::Instance
+0x001DDC3C	Pointer Assertion Failed:
+0x001DDC6C	%s(=0x%08X) is invalid pointer
+0x001DE2D0	Failed assertion exp:%s
+0x001DE810	Pointer Assertion Failed:
+0x001DE83C	%s(=0x%08X) is invalid pointer
+0x001DE948	Pointer Assertion Failed:
+0x001DE978	%s(=0x%08X) is invalid pointer
+0x001DEFB8	layout/dialogheader/IconHelp
+0x001DF028	layout/toolbar/NoFixationBG
+0x001DF050	layout/toolbar/2ButtonBG
+0x001DF084	layout/toolbar/PrevButton
+0x001DF560	layout/toolbar/NextButton
+0x001DF584	layout/toolbar/UpdateButton
+0x001DF624	layout/toolbar/StartMenuButton
+0x001DF658	layout/toolbar/ModeCancelButton
+0x001DF970	layout/toolbar/WordSearchButton
+0x001DFDA4	Pointer Assertion Failed:
+0x001DFDE0	%s(=0x%08X) is invalid pointer
+0x001DFE54	Instance_(Singleton of %s):%p is invalid ptr.
+0x001DFE84	Singleton::Instance
+0x001E0840	WARNING! Panic: %s:%d
+0x001E1F0C	layout/toolbar/ToolBar
+0x001E2404	Failed assertion exp:%s
+0x001E281C	Pointer Assertion Failed:
+0x001E2848	%s(=0x%08X) is invalid pointer
+0x001E2898	layout/toolbar/BackButton
+0x001E2CE0	Pointer Assertion Failed:
+0x001E2D10	%s(=0x%08X) is invalid pointer
+0x001E2DF8	Pointer Assertion Failed:
+0x001E2E28	%s(=0x%08X) is invalid pointer
+0x001E3164	unknown type:%d:%d
+0x001E31A8	CommFavicon.bclim
+0x001E31E0	WARNING! Panic: %s:%d
+0x001E3404	unknown titleState:%d
+0x001E3664	Failed assertion exp:%s
+0x001E3AE0	WARNING! Panic: %s:%d
+0x001E3B44	Instance_(Singleton of %s):%p is invalid ptr.
+0x001E3B74	Singleton::Instance
+0x001E3EC8	Pointer Assertion Failed:
+0x001E3EF8	%s(=0x%08X) is invalid pointer
+0x001E418C	Failed assertion exp:%s
+0x001E44D8	Pointer Assertion Failed:
+0x001E4508	%s(=0x%08X) is invalid pointer
+0x001E4818	Singleton::ctor
+0x001E5120	Singleton::ctor
+0x001E59F8	Instance_(Singleton of %s):%p is invalid ptr.
+0x001E5A28	Singleton::Instance
+0x001E5D60	(!(isCanceled && isFailed))
+0x001E5D7C	Failed assertion exp:%s
+0x001E6568	Pointer Assertion Failed:
+0x001E6598	%s(=0x%08X) is invalid pointer
+0x001E7214	count():%d < SIZE:%d failed.
+0x001E74C8	WARNING! Panic: %s:%d
+0x001E7EC4	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001E816C	(EngineImpl::Instance().isFinishing())
+0x001E8730	Instance_(Singleton of %s):%p is invalid ptr.
+0x001E8760	Singleton::Instance
+0x001E8774	Pointer Assertion Failed:
+0x001E87A4	%s(=0x%08X) is invalid pointer
+0x001E8D50	WARNING! Panic: %s:%d
+0x001E8D78	Failed assertion exp:%s
+0x001E97C4	Pointer Assertion Failed:
+0x001E97F4	%s(=0x%08X) is invalid pointer
+0x001E9C00	layout/scrollbar/ScrollBar
+0x001E9C94	Pointer Assertion Failed:
+0x001E9CC0	%s(=0x%08X) is invalid pointer
+0x001EA3F4	Failed assertion exp:%s
+0x001EAAE0	layout/scrollbar/ButtonU
+0x001EAAFC	layout/scrollbar/ButtonD
+0x001EAD6C	Pointer Assertion Failed:
+0x001EAD9C	%s(=0x%08X) is invalid pointer
+0x001EB240	Pointer Assertion Failed:
+0x001EB274	%s(=0x%08X) is invalid pointer
+0x001EB6F4	(EngineThread::IsCurrentThread())
+0x001EB718	Failed assertion exp:%s
+0x001EDB33	?Pointer Assertion Failed:
+0x001EDB64	%s(=0x%08X) is invalid pointer
+0x001EDE88	Instance_(Singleton of %s):%p is invalid ptr.
+0x001EDEB8	Singleton::Instance
+0x001EE26C	WARNING! Panic: %s:%d
+0x001EECA4	Failed assertion exp:%s
+0x001EEF58	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001EEF88	(totalSize_ <= www::MAX_VISITED_LINK_DATA_SIZE)
+0x001EEFB8	Pointer Assertion Failed:
+0x001EEFE4	%s(=0x%08X) is invalid pointer
+0x001EF4E4	Failed assertion exp:%s
+0x001EF870	RESULT FAILURE: result = %s
+0x001EF890	Unexpected Result Failure.
+0x001EF8E4	Failed assertion exp:%s
+0x001EFD9C	WARNING! Panic: %s:%d
+0x001EFDE0	Browse.bclim
+0x001F0E10	unknown operation:%d
+0x001F0E6C	Instance_(Singleton of %s):%p is invalid ptr.
+0x001F0E9C	Singleton::Instance
+0x001F0ED0	Failed assertion exp:%s
+0x001F0F90	IconPos_%d
+0x001F0FAC	count():%d < SIZE:%d failed.
+0x001F11F8	Pointer Assertion Failed:
+0x001F1220	%s(=0x%08X) is invalid pointer
+0x001F1548	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001F1AAC	Failed assertion exp:%s
+0x001F21EC	Failed assertion exp:%s
+0x001F2208	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x001F25FC	WARNING! Panic: %s:%d
+0x001F2614	unknown netMode:%d
+0x001F2A28	Singleton::ctor
+0x001F2A64	Instance_(Singleton of %s):%p is invalid ptr.
+0x001F2A94	Singleton::Instance
+0x001F2AB8	layout/sysinfo/SystemInfo
+0x001F2B0C	layout/sysinfo/NetAntenna
+0x001F2B48	layout/sysinfo/NetMode
+0x001F2B80	layout/sysinfo/Calendar
+0x001F2F40	layout/sysinfo/Battery
+0x001F2F78	unknown battery level:%d
+0x001F3714	layout/loading/LoadingIconW
+0x001F3730	layout/loading/LoadingIcon
+0x001F398C	Failed assertion exp:%s
+0x001F39A8	!isEndSoundForbidden_:!(%d) || !isPlayEndSound:!(%d) failed
+0x001F3F58	WARNING! Panic: %s:%d
+0x001F3F70	isClosable() == true failed. state_:%d
+0x001F4554	strength:%d > 0 failed.
+0x001F4D58	unknown state_:%d
+0x001F4E74	Pointer Assertion Failed:
+0x001F4EA4	%s(=0x%08X) is invalid pointer
+0x001F531C	Singleton::ctor
+0x001F5344	layout/browse/Canvas
+0x001F536C	Failed assertion exp:%s
+0x001F61A4	Pointer Assertion Failed:
+0x001F61D4	%s(=0x%08X) is invalid pointer
+0x001F6458	Singleton::ctor
+0x001F6480	layout/toolbar/ZoomMinusButton
+0x001F64C0	layout/toolbar/ZoomPlusButton
+0x001F6948	Pointer Assertion Failed:
+0x001F697C	%s(=0x%08X) is invalid pointer
+0x001F6D54	Failed assertion exp:%s
+0x001F6EE4	Pointer Assertion Failed:
+0x001F6F14	%s(=0x%08X) is invalid pointer
+0x001F739C	Failed assertion exp:%s
+0x001F8410	Pointer Assertion Failed:
+0x001F8440	%s(=0x%08X) is invalid pointer
+0x001F8728	Pointer Assertion Failed:
+0x001F875C	%s(=0x%08X) is invalid pointer
+0x001F87BC	waiters are still waiting. count:%d
+0x001F8BA0	Failed assertion exp:%s
+0x001F8BBC	refCount must be 0. refCount_:%d
+0x001F8F88	buffer allocation failed: buffer_:%p
+0x001F8FB4	buffer allocation failed: compDataBuffer_:%p
+0x001F8FE8	the size(%d) of read header must be ==%d
+0x001F9018	the size(%d) of compressed file must be >= %d
+0x001F9440	state must be State_Invalid(%d). state_:%d
+0x001F997C	Reference Count must be 0 or 1. refCount_:%d
+0x001F9E0C	Failed assertion exp:%s
+0x001F9E28	responder_:%p == 0 failed
+0x001F9E88	Pointer Assertion Failed:
+0x001F9EB8	%s(=0x%08X) is invalid pointer
+0x001F9EFC	WARNING! Panic: %s:%d
+0x001FA5E0	unsupported scene:%d
+0x001FA8C8	SceneType_BEGIN:%d <= current:%d < SceneType_END:%d failed.
+0x001FA90C	SceneType_BEGIN:%d <= target:%d < SceneType_END:%d failed.
+0x001FAD64	isLocked_:%d == false failed.
+0x001FB1E4	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x001FB220	(getHistoryNum() <= model::HISTORY_NUM_MAX)
+0x001FB29C	(i < model::HISTORY_NUM_MAX)
+0x001FB780	Pointer Assertion Failed:
+0x001FB7B0	%s(=0x%08X) is invalid pointer
+0x001FB898	Pointer Assertion Failed:
+0x001FB8C8	%s(=0x%08X) is invalid pointer
+0x001FBE0C	Failed assertion exp:%s
+0x001FBE28	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001FBE84	elm.getSceneType():%d == SceneType_Browse:%d failed
+0x001FC2A4	WARNING! Panic: %s:%d
+0x001FC2BC	0 <= pos:%d && pos < getHistoryNum():%d failed
+0x001FC30C	too wide backward: step:%d afterCursor:%d limit+1:%d
+0x001FC368	no backward element: count:%d cursor:%d step:%d
+0x001FC608	too wide forward: step:%d cursor:%d
+0x001FC64C	no forward element: count:%d cursor:%d
+0x001FCD5C	no elements are assigned for elementID:%d
+0x001FD628	Instance_(Singleton of %s):%p is invalid ptr.
+0x001FD658	Singleton::Instance
+0x001FD814	Singleton::ctor
+0x001FD83C	Pointer Assertion Failed:
+0x001FD868	%s(=0x%08X) is invalid pointer
+0x001FDCA0	Pointer Assertion Failed:
+0x001FDCD0	%s(=0x%08X) is invalid pointer
+0x001FE178	Singleton::ctor
+0x001FE898	Failed assertion exp:%s
+0x001FE8E0	Pointer Assertion Failed:
+0x001FE90C	%s(=0x%08X) is invalid pointer
+0x001FEF74	Instance_(Singleton of %s):%p is invalid ptr.
+0x001FEFA4	Singleton::Instance
+0x001FF35C	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x001FF644	Failed assertion exp:%s
+0x001FF8F4	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x001FF924	(totalSize_ <= www::MAX_COOKIE_DATA_SIZE)
+0x001FF950	Pointer Assertion Failed:
+0x001FF97C	%s(=0x%08X) is invalid pointer
+0x00200084	layout/browse/pageinfo/PageInfoDialog
+0x002000D8	Pointer Assertion Failed:
+0x00200104	%s(=0x%08X) is invalid pointer
+0x00200650	Instance_(Singleton of %s):%p is invalid ptr.
+0x00200680	Singleton::Instance
+0x00200718	WARNING! Panic: %s:%d
+0x0020112C	layout/dialog/DialogScrollArea
+0x00201574	Pointer Assertion Failed:
+0x002015A0	%s(=0x%08X) is invalid pointer
+0x00201604	Instance_(Singleton of %s):%p is invalid ptr.
+0x00201634	Singleton::Instance
+0x002017E0	Failed assertion exp:%s
+0x002017FC	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x00201AC4	layout/dialog/DialogNotice
+0x00201D40	Instance_(Singleton of %s):%p is invalid ptr.
+0x00201D70	Singleton::Instance
+0x00201E30	Pointer Assertion Failed:
+0x00201E60	%s(=0x%08X) is invalid pointer
+0x002022E0	layout/dialog/Dialog
+0x00202318	Instance_(Singleton of %s):%p is invalid ptr.
+0x00202348	Singleton::Instance
+0x00202378	Failed assertion exp:%s
+0x00202C20	Pointer Assertion Failed:
+0x00202C50	%s(=0x%08X) is invalid pointer
+0x002030A4	layout/dialog/DialogBaseNormal
+0x0020310C	layout/dialog/BottomButtonF
+0x00203168	layout/dialog/BottomButtonF2
+0x002033F0	layout/dialog/BottomButtonH
+0x00203BD0	((KeyInput::Instance().getCurrentPtr()))
+0x00203C04	(!KeyInput::Instance().isEqualCurrent(*kid_))
+0x00204564	Failed assertion exp:%s
+0x00204CB8	(pane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)
+0x00204CF8	(pane.GetBasePositionV() == nw::lyt::VERTICALPOSITION_CENTER)
+0x002050A0	Pointer Assertion Failed:
+0x002050D0	%s(=0x%08X) is invalid pointer
+0x002051B0	Pointer Assertion Failed:
+0x002051E0	%s(=0x%08X) is invalid pointer
+0x00205498	Pointer Assertion Failed:
+0x002054C8	%s(=0x%08X) is invalid pointer
+0x0020551C	layout/browse/pageinfo/PageInfoItem
+0x002058A0	Instance_(Singleton of %s):%p is invalid ptr.
+0x002058D0	Singleton::Instance
+0x00205B14	layout/browse/pageinfo/IconSecurity
+0x00205C78	Pointer Assertion Failed:
+0x00205CA8	%s(=0x%08X) is invalid pointer
+0x00205E28	Pointer Assertion Failed:
+0x00205E60	%s(=0x%08X) is invalid pointer
+0x00205F84	Pointer Assertion Failed:
+0x00205FB4	%s(=0x%08X) is invalid pointer
+0x002060A0	Pointer Assertion Failed:
+0x002060D4	%s(=0x%08X) is invalid pointer
+0x00206198	Failed assertion exp:%s
+0x00206420	WARNING! Panic: %s:%d
+0x0020679C	%s:/%s
+0x002067D4	buffSize:%d >= 1 failed
+0x0020681C	%s:%s%s
+0x00206A50	path:%s(%p) is too short
+0x00206A9C	buffSize:%d >= 2 failed.
+0x00206D98	Failed assertion exp:%s
+0x00206DB4	maxLenRaw:%d < MAX_LEN:%d failed.
+0x00206DD8	lastSlash:%u < buffSize:%u - 1 failed. couldn't add null-char.
+0x00206FFC	Pointer Assertion Failed:
+0x00207024	%s(=0x%08X) is invalid pointer
+0x0020705C	unknown scheme:%p(%s)
+0x00207088	unknown type:%d
+0x002071DC	Pointer Assertion Failed:
+0x00207210	%s(=0x%08X) is invalid pointer
+0x002072BC	Failed assertion exp:%s
+0x00207B7C	WARNING! Panic: %s:%d
+0x00207B94	unknown state:%d
+0x00207F54	Instance_(Singleton of %s):%p is invalid ptr.
+0x00207F84	Singleton::Instance
+0x00208CB4	Pointer Assertion Failed:
+0x00208CDC	%s(=0x%08X) is invalid pointer
+0x002091EC	Failed assertion exp:%s
+0x00209208	..\..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x002095D0	cannot scene change to browse(type:%d)
+0x00209600	curSc.isVld:%d && curScPd.isVld:%d is failed
+0x00209CFC	unsupported scene:%d
+0x0020AAC4	unknown input:%d
+0x0020AAE8	unknown fin_:%d
+0x0020AEE4	Failed alignment check for p:%p as align:%d
+0x0020AF70	Failed assertion exp:%s
+0x0020AF8C	type_:%d == SceneType_Option:%d is failed.
+0x0020AFD8	type_:%d == SceneType_Favorite:%d is failed.
+0x0020B2A8	type_:%d == SceneType_Browse:%d is failed.
+0x0020B2F0	unkown type:%d with winID:%d
+0x0020B310	type:%d must not be TERM:%d
+0x0020B908	unkown type:%d
+0x0020BBCC	Failed assertion exp:%s
+0x0020BC5C	SequenceStack count(%d) must be over 0
+0x0020BC84	Pointer Assertion Failed:
+0x0020BCC0	%s(=0x%08X) is invalid pointer
+0x0020BFE8	count():%d < SIZE:%d failed.
+0x0020C3AC	invalid type[%d]
+0x0020C7EC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0020C81C	Singleton::Instance
+0x0020CAD0	CurrentScene(%s) must be ready to end.
+0x0020CB18	Memory leak detected at Class:%s.
+0x0020D148	Failed assertion exp:%s
+0x0020D1A4	Singleton::ctor
+0x0020D4E4	Pointer Assertion Failed:
+0x0020D51C	%s(=0x%08X) is invalid pointer
+0x0020D53C	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0020D83C	Pointer Assertion Failed:
+0x0020D868	%s(=0x%08X) is invalid pointer
+0x0020D8B8	Failed assertion exp:%s
+0x0020DDA0	WARNING! Panic: %s:%d
+0x0020E264	layout/dialog/DialogProgress
+0x0020E6F8	Pointer Assertion Failed:
+0x0020E72C	%s(=0x%08X) is invalid pointer
+0x0020E79C	WARNING! Panic: %s:%d
+0x0020F158	Pointer Assertion Failed:
+0x0020F184	%s(=0x%08X) is invalid pointer
+0x0020F1E0	Failed assertion exp:%s
+0x0020F3DC	Failed assertion exp:%s
+0x0020F828	WARNING! Panic: %s:%d
+0x0020FCEC	Singleton::ctor
+0x0020FD30	Failed assertion exp:%s
+0x002101AC	Pointer Assertion Failed:
+0x002101D4	%s(=0x%08X) is invalid pointer
+0x002107E8	Pointer Assertion Failed:
+0x00210818	%s(=0x%08X) is invalid pointer
+0x00210A84	layout/dialogheader/DialogHeaderNormal
+0x00210AAC	layout/dialogheader/DialogHeaderBaseNormal
+0x00210C54	Pointer Assertion Failed:
+0x00210C84	%s(=0x%08X) is invalid pointer
+0x00210ED0	Singleton::ctor
+0x00210EF4	Pointer Assertion Failed:
+0x00210F20	%s(=0x%08X) is invalid pointer
+0x00211550	Instance_(Singleton of %s):%p is invalid ptr.
+0x00211580	Singleton::Instance
+0x0021166C	Pointer Assertion Failed:
+0x0021169C	%s(=0x%08X) is invalid pointer
+0x002117A4	Pointer Assertion Failed:
+0x002117D4	%s(=0x%08X) is invalid pointer
+0x00211A64	Pointer Assertion Failed:
+0x00211A90	%s(=0x%08X) is invalid pointer
+0x00211AF0	Failed assertion exp:%s
+0x00212850	WARNING! Panic: %s:%d
+0x002129B8	Pointer Assertion Failed:
+0x002129E8	%s(=0x%08X) is invalid pointer
+0x00212B9C	Pointer Assertion Failed:
+0x00212BCC	%s(=0x%08X) is invalid pointer
+0x00212CB4	Pointer Assertion Failed:
+0x00212CE4	%s(=0x%08X) is invalid pointer
+0x00212DD4	Pointer Assertion Failed:
+0x00212E04	%s(=0x%08X) is invalid pointer
+0x00213160	Singleton::ctor
+0x00213174	rom:/sound/Main.bcsar
+0x002131A8	[ERROR] cannot open bcsar(%s)
+0x0021345C	[ERROR] cannot load infoBlock(%s)
+0x00213480	[ERROR] cannot load stringBlock(%s)
+0x00213BEC	Failed assertion exp:%s
+0x00213C48	%s.bclyt
+0x00215980	Singleton::ctor
+0x00215D3C	Failed assertion exp:%s
+0x00215D58	..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00215DA4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00215DD4	Singleton::Instance
+0x00216410	Pointer Assertion Failed:
+0x00216440	%s(=0x%08X) is invalid pointer
+0x00216954	..\..\..\..\..\..\src\sys/ticket/TicketServer.hpp
+0x00216990	Failed assertion exp:%s
+0x00216A28	WARNING! Panic: %s:%d
+0x00216A40	unknown order:%d
+0x00216D14	WARNING! Panic: %s:%d
+0x00216DEC	Pointer Assertion Failed:
+0x00216E1C	%s(=0x%08X) is invalid pointer
+0x0021708C	Singleton::ctor
+0x002170D0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00217100	Singleton::Instance
+0x0021747C	WARNING! Panic: %s:%d
+0x00217494	unknown mode:%d
+0x002174AC	invalid anim id:%d
+0x002178B4	Failed assertion exp:%s
+0x00217A88	Failed assertion exp:%s
+0x00217BE0	Pointer Assertion Failed:
+0x00217C10	%s(=0x%08X) is invalid pointer
+0x00217CF4	Pointer Assertion Failed:
+0x00217D24	%s(=0x%08X) is invalid pointer
+0x00217E08	Pointer Assertion Failed:
+0x00217E38	%s(=0x%08X) is invalid pointer
+0x00217F1C	Pointer Assertion Failed:
+0x00217F4C	%s(=0x%08X) is invalid pointer
+0x00218030	Pointer Assertion Failed:
+0x00218060	%s(=0x%08X) is invalid pointer
+0x0021846C	Singleton::ctor
+0x00218494	Failed assertion exp:%s
+0x002184B0	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00218824	Instance_(Singleton of %s):%p is invalid ptr.
+0x00218854	Singleton::Instance
+0x00218DF8	Failed assertion exp:%s
+0x00218E58	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x002192E4	Pointer Assertion Failed:
+0x00219310	%s(=0x%08X) is invalid pointer
+0x00219680	Instance_(Singleton of %s):%p is invalid ptr.
+0x002196B0	Singleton::Instance
+0x00219C88	WARNING! Panic: %s:%d
+0x0021A288	Pointer Assertion Failed:
+0x0021A2B4	%s(=0x%08X) is invalid pointer
+0x0021A930	Pointer Assertion Failed:
+0x0021A95C	%s(=0x%08X) is invalid pointer
+0x0021ACC8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0021ACF8	Singleton::Instance
+0x0021AF98	Singleton::ctor
+0x0021B7BC	WARNING! Panic: %s:%d
+0x0021BAE0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0021BB10	Singleton::Instance
+0x0021C1DC	layout/dialog/DialogNormalNT
+0x0021C558	layout/dialog/DialogNormal
+0x0021C618	SE_CTR_COMMON_ERROR
+0x0021C85C	Pointer Assertion Failed:
+0x0021C88C	%s(=0x%08X) is invalid pointer
+0x0021C970	Pointer Assertion Failed:
+0x0021C9A0	%s(=0x%08X) is invalid pointer
+0x0021CC14	Failed assertion exp:%s
+0x0021D08C	Singleton::ctor
+0x0021D0AC	Failed assertion exp:%s
+0x0021D8FC	Singleton::ctor
+0x0021DD80	Instance_(Singleton of %s):%p is invalid ptr.
+0x0021DDB0	Singleton::Instance
+0x0021DDD4	Failed assertion exp:%s
+0x0021F878	(!sys::IsNan(pos_.x) && !sys::IsNan(pos_.y))
+0x0021F8B4	Pointer Assertion Failed:
+0x0021F8E0	%s(=0x%08X) is invalid pointer
+0x00220128	Instance_(Singleton of %s):%p is invalid ptr.
+0x00220158	Singleton::Instance
+0x00220468	WARNING! Panic: %s:%d
+0x00220480	invalid frameSize_:%d
+0x002204A4	Failed assertion exp:%s
+0x00220564	Pointer Assertion Failed:
+0x00220594	%s(=0x%08X) is invalid pointer
+0x00220844	Failed assertion exp:%s
+0x00220C7C	Pointer Assertion Failed:
+0x00220CA8	%s(=0x%08X) is invalid pointer
+0x00220CFC	Singleton::ctor
+0x00221210	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x00221B34	Instance_(Singleton of %s):%p is invalid ptr.
+0x00221B64	Singleton::Instance
+0x0022218C	layout/dialogheader/IconHelp
+0x00223920	WARNING! Panic: %s:%d
+0x00223938	GetUrl Failed!!
+0x00224024	..\..\..\..\..\..\..\src\sequence/main/Desk.hpp
+0x00225974	WARNING! Panic: %s:%d
+0x00225D24	Pointer Assertion Failed:
+0x00225D60	%s(=0x%08X) is invalid pointer
+0x002264D8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00226508	Singleton::Instance
+0x00226574	WARNING! Panic: %s:%d
+0x00226E3C	Failed assertion exp:%s
+0x00226E58	..\..\..\..\..\..\src\browser/wkc/EngineImpl.hpp
+0x00227148	Singleton::ctor
+0x0022716C	Pointer Assertion Failed:
+0x00227198	%s(=0x%08X) is invalid pointer
+0x00227700	Failed assertion exp:%s
+0x00227730	zero-sized heap is forbidden. size:%u name:%s(%p)
+0x002277A0	number of %d memoryblocks still exist in this heap:%s
+0x002277FC	WARNING! Panic: %s:%d
+0x00227EE4	Util::CompareScheme( uri, getScheme(), getSchemeLength() ) == 0
+0x00227F24	Failed assertion exp:%s
+0x00227F40	Scheme of uri:%s must be "%s"(len:%d).
+0x00228760	Failed assertion exp:%s
+0x002287A4	Failure
+0x00229150	Failed assertion exp:%s
+0x0022916C	..\..\..\..\..\..\src\hel/common/RingArray.hpp
+0x00229D8C	WARNING! Panic: %s:%d
+0x00229DA8	Favicon%d.bclim
+0x0022A04C	layout/favorite/favicondata/%s
+0x0022A528	Pointer Assertion Failed:
+0x0022A55C	%s(=0x%08X) is invalid pointer
+0x0022A580	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0022A9DC	Pointer Assertion Failed:
+0x0022AA08	%s(=0x%08X) is invalid pointer
+0x0022ACA0	Failed assertion exp:%s
+0x0022ACE8	Pointer Assertion Failed:
+0x0022AD14	%s(=0x%08X) is invalid pointer
+0x0022B1B0	WARNING! Panic: %s:%d
+0x0022B1C8	invalid buff:%p(size:%u)
+0x0022B890	WARNING! Panic: %s:%d
+0x0022B928	invalid mount result:%d
+0x0022BC98	RESULT FAILURE: result = %s
+0x0022BCB8	Unexpected Result Failure.
+0x0022BCF0	Failed assertion exp:%s
+0x0022C1A0	Util::CompareScheme( uri, getScheme(), getSchemeLength() ) == 0
+0x0022C1E0	Failed assertion exp:%s
+0x0022C1FC	Scheme of uri:%s must be "%s"(len:%d).
+0x0022CAB8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0022CAE8	Singleton::Instance
+0x0022CAFC	Pointer Assertion Failed:
+0x0022CB34	%s(=0x%08X) is invalid pointer
+0x0022CDB0	Failed assertion exp:%s
+0x0022CDCC	Auto leak check failed.
+0x0022D0EC	WARNING! Panic: %s:%d
+0x0022D104	invalid next state:%d
+0x0022D138	Failed assertion exp:%s
+0x0022D154	state_:%d == State_Started:%d failed
+0x0022D180	Pointer Assertion Failed:
+0x0022D1A4	%s(=0x%08X) is invalid pointer
+0x0022D64C	this thread is not in creatable state:%d
+0x0022D6C4	state_:%d == State_Created:%d failed
+0x0022D764	RESULT FAILURE: result = %s
+0x0022D784	Unexpected Result Failure.
+0x0022D9DC	state_:%d == State_Joined:%d failed
+0x0022DA10	isJoinable() failed. current state:%d
+0x0022DB80	thread info is uavailable at state:%d
+0x0022DE0C	Failed assertion exp:%s
+0x0022DE58	Pointer Assertion Failed:
+0x0022DE88	%s(=0x%08X) is invalid pointer
+0x0022E674	defaultHeap_:%p == 0 failed.
+0x0022F0C8	Pointer Assertion Failed:
+0x0022F0F8	%s(=0x%08X) is invalid pointer
+0x0022F3F0	Failed assertion exp:%s
+0x0022F66C	WARNING! Panic: %s:%d
+0x0022FF30	num:%u must be equal or less than buffMaxLen:%u
+0x0022FF64	buffMaxLen:%u > 0 failed.
+0x002303DC	Failed assertion exp:%s
+0x00231010	Failed assertion exp:%s
+0x002310EC	(GetType() == EVENT_ERROR)
+0x00233560	Failed assertion exp:%s
+0x002343FC	Singleton::ctor
+0x002348C0	Pointer Assertion Failed:
+0x002348EC	%s(=0x%08X) is invalid pointer
+0x00234F94	WARNING! Panic: %s:%d
+0x00235440	invalid bmode:%d
+0x00235484	Failed assertion exp:%s
+0x002354A0	unsealing before ERR construction is forbidden!
+0x002354D0	..\..\..\..\..\..\src\sys/spec/error/SpecErrorHolder.hpp
+0x00235B14	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x00236990	unknown mountresult:%d
+0x002369B0	SaveDataCreation Failed!!
+0x00237098	Singleton::ctor
+0x002370CC	State_BEGIN:%d <= state:%d < State_END:%d failed
+0x002373F4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00237424	Singleton::Instance
+0x00237438	invalid state_:%d
+0x002377D8	Failed assertion exp:%s
+0x002377F4	Hid Queue Remainings:%d must be 1 or more.
+0x00237844	state_:%d == State_Initialized:%d failed
+0x00237CE8	invalid target fps:%d
+0x00237D48	RESULT FAILURE: result = %s
+0x00237D68	Unexpected Result Failure.
+0x0023856C	fps:%d must be less than TargetFPS_END(%d)
+0x00238628	PPF * FPS == Application::PROCESS_PER_SEC
+0x0023886C	Singleton::ctor
+0x00238D08	Instance_(Singleton of %s):%p is invalid ptr.
+0x00238D38	Singleton::Instance
+0x00238D50	Pointer Assertion Failed:
+0x00238D78	%s(=0x%08X) is invalid pointer
+0x00238E1C	WARNING! Panic: %s:%d
+0x00238E34	Unknown Style:%d
+0x00239248	/%s/%s/%s
+0x00239258	Failed assertion exp:%s
+0x00239274	[ERROR] Can't read %s
+0x002392BC	Pointer Assertion Failed:
+0x002392E8	%s(=0x%08X) is invalid pointer
+0x00239310	[ERROR] Illegal label or No message data: label:%s
+0x00239770	Failed assertion exp:%s
+0x00239B78	Singleton::ctor
+0x00239BF8	Pointer Assertion Failed:
+0x00239C24	%s(=0x%08X) is invalid pointer
+0x0023A130	Instance_(Singleton of %s):%p is invalid ptr.
+0x0023A160	Singleton::Instance
+0x0023A198	WARNING! Panic: %s:%d
+0x0023A5D4	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0023BC28	Pointer Assertion Failed:
+0x0023BC58	%s(=0x%08X) is invalid pointer
+0x0023BE1C	RESULT FAILURE [%x]: 
+0x0023BE34	 (process_id:%d) (%s:%d)
+0x0023C158	Singleton::ctor
+0x0023C174	Pointer Assertion Failed:
+0x0023C1A8	%s(=0x%08X) is invalid pointer
+0x0023C5AC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0023C5DC	Singleton::Instance
+0x0023C694	Instance_(Singleton of %s):%p is invalid ptr.
+0x0023C6C4	Singleton::Instance
+0x0023C77C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0023C7AC	Singleton::Instance
+0x0023CF30	Failed assertion exp:%s
+0x0023CF90	Instance_(Singleton of %s):%p is invalid ptr.
+0x0023CFC0	Singleton::Instance
+0x0023CFD8	Singleton::ctor
+0x0023D480	nngxInitialize failed. res::%d
+0x0023DB34	WARNING! Panic: %s:%d
+0x0023DE30	Pointer Assertion Failed:
+0x0023DE60	%s(=0x%08X) is invalid pointer
+0x0023E340	startPos:%u beyonds the limit:%u
+0x0023E38C	startPos:%u + len:%u beyonds the limit:%u
+0x0023E3B8	invalid size():%u
+0x0023E3D0	Pointer Assertion Failed:
+0x0023E3FC	%s(=0x%08X) is invalid pointer
+0x0023E970	Failed assertion exp:%s
+0x0023F61C	Failed alignment check for p:%p as align:%d
+0x0023F6B4	Pointer Assertion Failed:
+0x0023F6DC	%s(=0x%08X) is invalid pointer
+0x0023F938	Failed assertion exp:%s
+0x0023F954	impl_.CheckHeap():%d Failed.
+0x0023F98C	number of %d memoryblocks still exist in this heap:%s
+0x0023FA74	Failed assertion exp:%s
+0x0023FA90	0 <= index:%u( as signed:%d ) < count():%d failed.
+0x0023FBC4	Failed assertion exp:%s
+0x0023FBE0	count():%d < SIZE:%d failed.
+0x0023FD94	invalid IFlowElement::Type(%d)
+0x0024021C	Failed assertion exp:%s
+0x0024080C	unknown cont:%d
+0x0024084C	unknown aim:%d
+0x00240884	unknown area:%d
+0x002408B0	currentAC_:%d should be term:%d
+0x002408F0	Failed assertion exp:%s
+0x00240E0C	Singleton::ctor
+0x00240E4C	WARNING! Panic: %s:%d
+0x00240E64	currentAC_:%d == AllocContext_TERM failed
+0x0024164C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024167C	Singleton::Instance
+0x002416AC	%s:%08X%s
+0x002418E8	THREAD: %u
+0x002420A4	 %08X%s
+0x00243248	SetDevMemSize Failed
+0x00243290	Pointer Assertion Failed:
+0x002432BC	%s(=0x%08X) is invalid pointer
+0x0024366C	ThrowFatalAll: %s:%d
+0x00243684	Panic: %s:%d
+0x00243694	Assert: %s:%d
+0x002436A4	Assert(nn::Result): %s:%d
+0x00243798	Failed assertion module:%s
+0x002437D1	MSG=%s
+0x00243A64	!!! sys::logger::Logger::FlushLog Start !!!
+0x00243D44	Singleton::ctor
+0x00244130	WARNING! Panic: %s:%d
+0x00244190	Pointer Assertion Failed:
+0x002441C4	%s(=0x%08X) is invalid pointer
+0x002444C0	Failed assertion exp:%s
+0x00244D20	Singleton::ctor
+0x00244D7C	Pointer Assertion Failed:
+0x00244DB4	%s(=0x%08X) is invalid pointer
+0x00244E5C	layout/photo/Canvas
+0x002455B3	Alayout/dialog/DialogNormalNT
+0x00245AF8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00245B28	Singleton::Instance
+0x0024643C	Singleton::ctor
+0x00246478	Instance_(Singleton of %s):%p is invalid ptr.
+0x002464A8	Singleton::Instance
+0x002464BC	layout/dialog/DialogNormalNT
+0x0024677C	Pointer Assertion Failed:
+0x002467B8	%s(=0x%08X) is invalid pointer
+0x00246EB0	Pointer Assertion Failed:
+0x00246EE0	%s(=0x%08X) is invalid pointer
+0x002472C8	Pointer Assertion Failed:
+0x002472F8	%s(=0x%08X) is invalid pointer
+0x00247724	Instance_(Singleton of %s):%p is invalid ptr.
+0x00247754	Singleton::Instance
+0x00247B8C	Singleton::ctor
+0x00247BA0	layout/test/Test00
+0x00247BB4	layout/test/Test01
+0x00247BC8	layout/test/Test02
+0x00247BFC	Instance_(Singleton of %s):%p is invalid ptr.
+0x00247C2C	Singleton::Instance
+0x00247C40	Pointer Assertion Failed:
+0x00247C6C	%s(=0x%08X) is invalid pointer
+0x00247CD4	Failed assertion exp:%s
+0x002482F4	Failed assertion exp:%s
+0x00248A1C	Instance_(Singleton of %s):%p is invalid ptr.
+0x00248A4C	Singleton::Instance
+0x00248D9C	layout/dialogheader/DialogHeaderNormal
+0x00248DC4	layout/dialogheader/StartScreenManual
+0x00248E14	layout/dialogheader/StartScreenTouchslide
+0x00248E5C	layout/dialog/DialogNormalNT
+0x002491BC	WARNING! Panic: %s:%d
+0x002493F8	Pointer Assertion Failed:
+0x0024942C	%s(=0x%08X) is invalid pointer
+0x00249450	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0024973C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024976C	Singleton::Instance
+0x00249D58	Instance_(Singleton of %s):%p is invalid ptr.
+0x00249D88	Singleton::Instance
+0x0024A674	layout/toolbar/ImageBackButton
+0x0024A6C4	layout/toolbar/ImageSaveButton
+0x0024A9C8	Pointer Assertion Failed:
+0x0024AA04	%s(=0x%08X) is invalid pointer
+0x0024AF24	Pointer Assertion Failed:
+0x0024AF50	%s(=0x%08X) is invalid pointer
+0x0024AFC8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024AFF8	Singleton::Instance
+0x0024B268	Failed assertion exp:%s
+0x0024B2E8	WARNING! Panic: %s:%d
+0x0024B300	unknown state:%d
+0x0024BBD8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024BC08	Singleton::Instance
+0x0024BDA0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024BDD0	Singleton::Instance
+0x0024C2C4	layout/sceneinfo/SceneInfo
+0x0024C310	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024C340	Singleton::Instance
+0x0024C35C	layout/sceneinfo/SceneInfoText
+0x0024C3D4	WARNING! Panic: %s:%d
+0x0024C6B0	layout/sceneinfo/icon/IconFavorite
+0x0024C700	layout/sceneinfo/icon/IconOption
+0x0024CFDC	Singleton::ctor
+0x0024D14C	WARNING! Panic: %s:%d
+0x0024D3B8	layout/favorite/MoveThumb
+0x0024D414	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024D444	Singleton::Instance
+0x0024D59C	Failed assertion exp:%s
+0x0024D8A0	Pointer Assertion Failed:
+0x0024D8DC	%s(=0x%08X) is invalid pointer
+0x0024D8FC	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0024DE10	layout/dialog/DialogNormalNT
+0x0024E0CC	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024E0FC	Singleton::Instance
+0x0024E4FC	layout/dialog/DialogNormalNT
+0x0024E7E0	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024E810	Singleton::Instance
+0x0024EB78	layout/dialogheader/IconHelp
+0x0024ECFC	WARNING! Panic: %s:%d
+0x0024ED38	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024ED68	Singleton::Instance
+0x0024F160	layout/option/HelpButton
+0x0024F7E8	layout/dialog/DialogNormalNT
+0x0024FB5C	Instance_(Singleton of %s):%p is invalid ptr.
+0x0024FB8C	Singleton::Instance
+0x00250058	WARNING! Panic: %s:%d
+0x00250070	Unknown apType [%d]
+0x00250478	Unknown securityMode [%d]
+0x002504A8	layout/option/item/NetworkInfo
+0x002506D8	Pointer Assertion Failed:
+0x00250704	%s(=0x%08X) is invalid pointer
+0x00250B50	Pointer Assertion Failed:
+0x00250B88	%s(=0x%08X) is invalid pointer
+0x00250BA8	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x00250ED8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00250F08	Singleton::Instance
+0x002517E8	layout/option/ProxyDialog
+0x00251850	layout/dialog/DialogNormalNT
+0x00251C8C	layout/option/ProxyItem
+0x00252BC0	Pointer Assertion Failed:
+0x00252BFC	%s(=0x%08X) is invalid pointer
+0x00252C1C	..\..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x00252ECC	layout/option/item/Separator
+0x0025319C	layout/option/item/VersionInfo
+0x002531F0	Pointer Assertion Failed:
+0x00253220	%s(=0x%08X) is invalid pointer
+0x00253628	Instance_(Singleton of %s):%p is invalid ptr.
+0x00253658	Singleton::Instance
+0x00253A00	WARNING! Panic: %s:%d
+0x00253A38	Failed assertion exp:%s
+0x00253A54	Pointer Assertion Failed:
+0x00253A7C	%s(=0x%08X) is invalid pointer
+0x002542B8	layout/favorite/EditDialog
+0x002545C4	layout/button/ButtonNormal
+0x002545FC	layout/button/IconDelete
+0x00254828	Instance_(Singleton of %s):%p is invalid ptr.
+0x00254858	Singleton::Instance
+0x00254E58	layout/favorite/Item
+0x00254F24	layout/favorite/EditButton
+0x00255184	Failed assertion exp:%s
+0x002558E4	Failed assertion exp:%s
+0x00255DA4	layout/dialog/DialogSelect2H
+0x00255DFC	Pointer Assertion Failed:
+0x00255E28	%s(=0x%08X) is invalid pointer
+0x0025617C	Failed assertion exp:%s
+0x00256910	Failed assertion exp:%s
+0x00257384	layout/button/ButtonNormal
+0x002573E8	Failed assertion exp:%s
+0x002578F8	layout/button/ButtonSelectH
+0x00257984	Failed assertion exp:%s
+0x00257ED4	layout/button/ButtonSelectHSearch
+0x002590E0	%m/%d/%y
+0x002590F0	%Y-%m-%d
+0x002BB9F4	%s [%2lld]
+0x002FD4E8	Failed assertion exp:%s
+0x002FD568	Failed assertion exp:%s
+0x002FD5E8	Failed assertion exp:%s
+0x002FD66C	Failed assertion exp:%s
+0x002FD6F0	Failed assertion exp:%s
+0x002FD774	Failed assertion exp:%s
+0x002FD7F8	Failed assertion exp:%s
+0x002FD87C	Failed assertion exp:%s
+0x002FD900	Failed assertion exp:%s
+0x002FD984	Failed assertion exp:%s
+0x002FDA08	Failed assertion exp:%s
+0x002FDA8C	Failed assertion exp:%s
+0x002FDB60	Failed assertion exp:%s
+0x002FDBE4	Failed assertion exp:%s
+0x002FDC68	Failed assertion exp:%s
+0x002FDD0C	Failed assertion exp:%s
+0x002FDD90	Failed assertion exp:%s
+0x002FDE14	Failed assertion exp:%s
+0x002FDE98	Failed assertion exp:%s
+0x002FDF1C	Failed assertion exp:%s
+0x002FDFA0	Failed assertion exp:%s
+0x002FE024	Failed assertion exp:%s
+0x002FE0A8	Failed assertion exp:%s
+0x002FE12C	Failed assertion exp:%s
+0x002FE1B0	Failed assertion exp:%s
+0x002FE234	Failed assertion exp:%s
+0x002FE2B8	Failed assertion exp:%s
+0x002FE34C	Failed assertion exp:%s
+0x002FE3D0	Failed assertion exp:%s
+0x002FE454	Failed assertion exp:%s
+0x002FE4D8	Failed assertion exp:%s
+0x002FE55C	Failed assertion exp:%s
+0x002FE5E0	Failed assertion exp:%s
+0x002FE664	Failed assertion exp:%s
+0x002FE6F8	Failed assertion exp:%s
+0x002FE77C	Failed assertion exp:%s
+0x002FE800	Failed assertion exp:%s
+0x002FE884	Failed assertion exp:%s
+0x002FE908	Failed assertion exp:%s
+0x002FE98C	Failed assertion exp:%s
+0x002FEA14	Failed assertion exp:%s
+0x002FEA9C	Failed assertion exp:%s
+0x002FEB24	Failed assertion exp:%s
+0x002FEBAC	Failed assertion exp:%s
+0x002FEC34	Failed assertion exp:%s
+0x002FECBC	Failed assertion exp:%s
+0x002FED44	Failed assertion exp:%s
+0x002FEDCC	Failed assertion exp:%s
+0x002FEE54	Failed assertion exp:%s
+0x002FEEDC	Failed assertion exp:%s
+0x002FEF64	Failed assertion exp:%s
+0x002FEFEC	Failed assertion exp:%s
+0x002FF074	Failed assertion exp:%s
+0x002FF0FC	Failed assertion exp:%s
+0x002FF184	Failed assertion exp:%s
+0x002FF20C	Failed assertion exp:%s
+0x002FF294	Failed assertion exp:%s
+0x002FF320	Failed assertion exp:%s
+0x002FF3AC	Failed assertion exp:%s
+0x002FF438	Failed assertion exp:%s
+0x002FF4C4	Failed assertion exp:%s
+0x002FF54C	Failed assertion exp:%s
+0x002FF5D4	Failed assertion exp:%s
+0x002FF65C	Failed assertion exp:%s
+0x002FF6E4	Failed assertion exp:%s
+0x002FF76C	Failed assertion exp:%s
+0x002FF7F4	Failed assertion exp:%s
+0x002FF87C	Failed assertion exp:%s
+0x002FF904	Failed assertion exp:%s
+0x002FF98C	Failed assertion exp:%s
+0x002FFA24	Failed assertion exp:%s
+0x002FFAAC	Failed assertion exp:%s
+0x002FFB34	Failed assertion exp:%s
+0x002FFBCC	Failed assertion exp:%s
+0x002FFC58	Failed assertion exp:%s
+0x002FFCE0	Failed assertion exp:%s
+0x002FFD68	Failed assertion exp:%s
+0x002FFDF0	Failed assertion exp:%s
+0x002FFE78	Failed assertion exp:%s
+0x002FFF00	Failed assertion exp:%s
+0x002FFF88	Failed assertion exp:%s
+0x00300010	Failed assertion exp:%s
+0x00300098	Failed assertion exp:%s
+0x00300120	Failed assertion exp:%s
+0x003001A8	Failed assertion exp:%s
+0x00300230	Failed assertion exp:%s
+0x003002B8	Failed assertion exp:%s
+0x00300340	Failed assertion exp:%s
+0x003003C8	Failed assertion exp:%s
+0x00300450	Failed assertion exp:%s
+0x003004D8	Failed assertion exp:%s
+0x00300560	Failed assertion exp:%s
+0x003005E8	Failed assertion exp:%s
+0x00300670	Failed assertion exp:%s
+0x003006F8	Failed assertion exp:%s
+0x00300780	Failed assertion exp:%s
+0x00300808	Failed assertion exp:%s
+0x00300890	Failed assertion exp:%s
+0x00300918	Failed assertion exp:%s
+0x003009A0	Failed assertion exp:%s
+0x00300A24	Failed assertion exp:%s
+0x00300AAC	Failed assertion exp:%s
+0x00300B34	Failed assertion exp:%s
+0x00300BBC	Failed assertion exp:%s
+0x00300C44	Failed assertion exp:%s
+0x00300CCC	Failed assertion exp:%s
+0x00300D54	Failed assertion exp:%s
+0x00300DE0	Failed assertion exp:%s
+0x00300E6C	Failed assertion exp:%s
+0x00300EF8	Failed assertion exp:%s
+0x00300F84	Failed assertion exp:%s
+0x00301010	Failed assertion exp:%s
+0x0030109C	Failed assertion exp:%s
+0x00301128	Failed assertion exp:%s
+0x003011B4	Failed assertion exp:%s
+0x0030123C	Failed assertion exp:%s
+0x003012C4	Failed assertion exp:%s
+0x0030134C	Failed assertion exp:%s
+0x003013D4	Failed assertion exp:%s
+0x0030145C	Failed assertion exp:%s
+0x003014E4	Failed assertion exp:%s
+0x0030156C	Failed assertion exp:%s
+0x003015F4	Failed assertion exp:%s
+0x0030167C	Failed assertion exp:%s
+0x00301704	Failed assertion exp:%s
+0x0030178C	Failed assertion exp:%s
+0x00301814	Failed assertion exp:%s
+0x0030189C	Failed assertion exp:%s
+0x00301924	Failed assertion exp:%s
+0x003019AC	Failed assertion exp:%s
+0x00301A34	Failed assertion exp:%s
+0x00301C74	Pointer Assertion Failed:
+0x00301CB0	%s(=0x%08X) is invalid pointer
+0x00301CD0	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x00301DE0	Pointer Assertion Failed:
+0x00301E1C	%s(=0x%08X) is invalid pointer
+0x00301E40	..\..\..\..\..\..\src\sys/spec/SaveManager.hpp
+0x00301F90	WARNING! Panic: %s:%d
+0x00301FA8	the err msg len:%d <= T_PROGRESS_MSG_LEN_MAX:%d failed
+0x003024B8	WARNING! Panic: %s:%d
+0x003024D0	the err msg len:%d <= T_MSG_LEN_MAX:%d failed
+0x00302508	Pointer Assertion Failed:
+0x00302538	%s(=0x%08X) is invalid pointer
+0x00302698	WARNING! Panic: %s:%d
+0x003026B0	the err msg len:%d <= T_TITLE_LEN_MAX:%d failed
+0x00302880	WARNING! Panic: %s:%d
+0x00302898	the err msg len:%d <= T_MSG_LEN_MAX:%d failed
+0x00302A30	WARNING! Panic: %s:%d
+0x00302A48	the err msg len:%d <= T_TITLE_LEN_MAX:%d failed
+0x0030D388	Pointer Assertion Failed:
+0x0030D3C4	%s(=0x%08X) is invalid pointer
+0x0030D3E8	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0030D4B4	Pointer Assertion Failed:
+0x0030D4F8	%s(=0x%08X) is invalid pointer
+0x0030D51C	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0030D6A8	Pointer Assertion Failed:
+0x0030D6DC	%s(=0x%08X) is invalid pointer
+0x0030D880	Pointer Assertion Failed:
+0x0030D8B8	%s(=0x%08X) is invalid pointer
+0x0030DA5C	Pointer Assertion Failed:
+0x0030DA90	%s(=0x%08X) is invalid pointer
+0x0030DC80	Pointer Assertion Failed:
+0x0030DCB4	%s(=0x%08X) is invalid pointer
+0x0030DE5C	Pointer Assertion Failed:
+0x0030DE94	%s(=0x%08X) is invalid pointer
+0x0030E034	Pointer Assertion Failed:
+0x0030E068	%s(=0x%08X) is invalid pointer
+0x0030E18C	Pointer Assertion Failed:
+0x0030E1BC	%s(=0x%08X) is invalid pointer
+0x0030E2B0	Failed assertion exp:%s
+0x0030E344	Failed assertion exp:%s
+0x0030E3CC	Failed assertion exp:%s
+0x0030EAF8	Pointer Assertion Failed:
+0x0030EB2C	%s(=0x%08X) is invalid pointer
+0x0030EB4C	..\..\..\..\..\..\..\src\sequence/main/option/OneButtonItem.hpp
+0x0030EC2C	Pointer Assertion Failed:
+0x0030EC60	%s(=0x%08X) is invalid pointer
+0x0030EC80	..\..\..\..\..\..\..\src\sequence/main/option/TwoButtonItem.hpp
+0x0030ED30	..\..\..\..\..\..\..\src\sequence/main/option/Item.hpp
+0x0030EE04	..\..\..\..\..\..\..\src\sequence/main/option/Item.hpp
+0x0030EF68	Pointer Assertion Failed:
+0x0030EFA8	%s(=0x%08X) is invalid pointer
+0x0030EFC8	..\..\..\..\..\..\..\src\sequence/main/option/Option.hpp
+0x0030F1BC	Pointer Assertion Failed:
+0x0030F1EC	%s(=0x%08X) is invalid pointer
+0x0030F370	Pointer Assertion Failed:
+0x0030F3A8	%s(=0x%08X) is invalid pointer
+0x0030F4A0	Pointer Assertion Failed:
+0x0030F4D0	%s(=0x%08X) is invalid pointer
+0x0030F5BC	Pointer Assertion Failed:
+0x0030F5FC	%s(=0x%08X) is invalid pointer
+0x0030F6BC	Pointer Assertion Failed:
+0x0030F6EC	%s(=0x%08X) is invalid pointer
+0x0030FAC8	Pointer Assertion Failed:
+0x0030FB08	%s(=0x%08X) is invalid pointer
+0x0030FC54	Pointer Assertion Failed:
+0x0030FC94	%s(=0x%08X) is invalid pointer
+0x0030FCB4	..\..\..\..\..\..\..\src\sequence/main/favorite/Thumb.hpp
+0x0030FE50	Pointer Assertion Failed:
+0x0030FE88	%s(=0x%08X) is invalid pointer
+0x0030FEA8	..\..\..\..\..\..\..\src\sequence/main/favorite/Thumb.hpp
+0x0031903C	Failed assertion exp:%s
+0x00319058	..\..\..\..\..\..\..\src\www/event/FileSelectContext.hpp
+0x0031AE7C	Pointer Assertion Failed:
+0x0031AEB8	%s(=0x%08X) is invalid pointer
+0x0031AED8	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0031AFA4	Pointer Assertion Failed:
+0x0031AFE8	%s(=0x%08X) is invalid pointer
+0x0031B00C	..\..\..\..\..\..\src\model/savedata/SaveDataStruct.hpp
+0x0031B0A4	Failed assertion exp:%s
+0x0031B160	Failed assertion exp:%s
+0x0031B258	Pointer Assertion Failed:
+0x0031B288	%s(=0x%08X) is invalid pointer
+0x0031B66C	Pointer Assertion Failed:
+0x0031B69C	%s(=0x%08X) is invalid pointer
+0x00333F28	bpp of %d unsupported
+0x00355870	/dev/wkcrandom
+0x00358AA4	/rom:/
+0x00358AAC	/sdmc:/
+0x00358C84	/rom:/
+0x00358C8C	/sdmc:/
+0x003596D8	/rom:/
+0x003596E0	/sdmc:/
+0x00359C3C	sdmc:/
+0x0035BDDC	Failed assertion exp:%s
+0x0035BDF8	&elm:%p == me_:&p failed
+0x0035BF54	Pointer Assertion Failed:
+0x0035BF84	%s(=0x%08X) is invalid pointer
+0x0035C058	Failed assertion exp:%s
+0x0035C074	&elm:%p == me_:&p failed
+0x0035C1D0	Pointer Assertion Failed:
+0x0035C200	%s(=0x%08X) is invalid pointer
+0x0035C2D4	Failed assertion exp:%s
+0x0035C2F0	&elm:%p == me_:&p failed
+0x0035C444	Pointer Assertion Failed:
+0x0035C474	%s(=0x%08X) is invalid pointer
+0x0035C540	Failed assertion exp:%s
+0x0035C55C	&elm:%p == me_:&p failed
+0x0035C6C0	Pointer Assertion Failed:
+0x0035C6F0	%s(=0x%08X) is invalid pointer
+0x0035C7D8	Failed assertion exp:%s
+0x0035C7F4	&elm:%p == me_:&p failed
+0x0035C958	Pointer Assertion Failed:
+0x0035C988	%s(=0x%08X) is invalid pointer
+0x0035CA70	Failed assertion exp:%s
+0x0035CA8C	&elm:%p == me_:&p failed
+0x0035CBF0	Pointer Assertion Failed:
+0x0035CC20	%s(=0x%08X) is invalid pointer
+0x0035CD40	Pointer Assertion Failed:
+0x0035CD78	%s(=0x%08X) is invalid pointer
+0x0035CE78	Pointer Assertion Failed:
+0x0035CEB0	%s(=0x%08X) is invalid pointer
+0x0035CF7C	Failed assertion exp:%s
+0x0035CF98	&elm:%p == me_:&p failed
+0x0035D11C	Pointer Assertion Failed:
+0x0035D14C	%s(=0x%08X) is invalid pointer
+0x0035D214	Failed assertion exp:%s
+0x0035D230	&elm:%p == me_:&p failed
+0x0035D394	Pointer Assertion Failed:
+0x0035D3C4	%s(=0x%08X) is invalid pointer
+0x0035D4F4	Pointer Assertion Failed:
+0x0035D52C	%s(=0x%08X) is invalid pointer
+0x0035D62C	Pointer Assertion Failed:
+0x0035D664	%s(=0x%08X) is invalid pointer
+0x0035D728	Failed assertion exp:%s
+0x0035D744	&elm:%p == me_:&p failed
+0x0035D8B4	Pointer Assertion Failed:
+0x0035D8E4	%s(=0x%08X) is invalid pointer
+0x0035D9AC	Failed assertion exp:%s
+0x0035D9C8	&elm:%p == me_:&p failed
+0x0035DB2C	Pointer Assertion Failed:
+0x0035DB5C	%s(=0x%08X) is invalid pointer
+0x0035DC7C	Pointer Assertion Failed:
+0x0035DCB4	%s(=0x%08X) is invalid pointer
+0x0035DDB4	Pointer Assertion Failed:
+0x0035DDEC	%s(=0x%08X) is invalid pointer
+0x0035DEB0	Failed assertion exp:%s
+0x0035DECC	&elm:%p == me_:&p failed
+0x0035E03C	Pointer Assertion Failed:
+0x0035E06C	%s(=0x%08X) is invalid pointer
+0x0035E134	Failed assertion exp:%s
+0x0035E150	&elm:%p == me_:&p failed
+0x0035E2A8	Pointer Assertion Failed:
+0x0035E2D8	%s(=0x%08X) is invalid pointer
+0x0035E3A8	Failed assertion exp:%s
+0x0035E3C4	&elm:%p == me_:&p failed
+0x0035E51C	Pointer Assertion Failed:
+0x0035E54C	%s(=0x%08X) is invalid pointer
+0x0035E61C	Failed assertion exp:%s
+0x0035E638	&elm:%p == me_:&p failed
+0x0035E78C	Pointer Assertion Failed:
+0x0035E7BC	%s(=0x%08X) is invalid pointer
+0x0035E888	Failed assertion exp:%s
+0x0035E8A4	&elm:%p == me_:&p failed
+0x0035E9FC	Pointer Assertion Failed:
+0x0035EA2C	%s(=0x%08X) is invalid pointer
+0x0035EAFC	Failed assertion exp:%s
+0x0035EB18	&elm:%p == me_:&p failed
+0x0035EC70	Pointer Assertion Failed:
+0x0035ECA0	%s(=0x%08X) is invalid pointer
+0x0035ED70	Failed assertion exp:%s
+0x0035ED8C	&elm:%p == me_:&p failed
+0x0035EEE4	Pointer Assertion Failed:
+0x0035EF14	%s(=0x%08X) is invalid pointer
+0x0035EFE4	Failed assertion exp:%s
+0x0035F000	&elm:%p == me_:&p failed
+0x0035F158	Pointer Assertion Failed:
+0x0035F188	%s(=0x%08X) is invalid pointer
+0x0035F258	Failed assertion exp:%s
+0x0035F274	&elm:%p == me_:&p failed
+0x0035F3CC	Pointer Assertion Failed:
+0x0035F3FC	%s(=0x%08X) is invalid pointer
+0x0035F4CC	Failed assertion exp:%s
+0x0035F4E8	&elm:%p == me_:&p failed
+0x0035F640	Pointer Assertion Failed:
+0x0035F670	%s(=0x%08X) is invalid pointer
+0x0035F740	Failed assertion exp:%s
+0x0035F75C	&elm:%p == me_:&p failed
+0x0035F8B4	Pointer Assertion Failed:
+0x0035F8E4	%s(=0x%08X) is invalid pointer
+0x0035F9B4	Failed assertion exp:%s
+0x0035F9D0	&elm:%p == me_:&p failed
+0x0035FB24	Pointer Assertion Failed:
+0x0035FB54	%s(=0x%08X) is invalid pointer
+0x0035FC28	Failed assertion exp:%s
+0x0035FCE0	Failed assertion exp:%s
+0x0035FD98	Failed assertion exp:%s
+0x0035FFC0	WARNING! Panic: %s:%d
+0x0035FFF8	dstPos:%d beyonds the CAPACITY:%d
+0x00362CC4	Pointer Assertion Failed:
+0x00362CF8	%s(=0x%08X) is invalid pointer
+0x00362E88	Pointer Assertion Failed:
+0x00362EBC	%s(=0x%08X) is invalid pointer
+0x00362FBC	Pointer Assertion Failed:
+0x00362FF0	%s(=0x%08X) is invalid pointer
+0x00363108	Pointer Assertion Failed:
+0x0036313C	%s(=0x%08X) is invalid pointer
+0x00363288	Failed assertion exp:%s
+0x00363398	Failed assertion exp:%s
+0x00363470	Failed assertion exp:%s
+0x003635CC	Failed assertion exp:%s
+0x00363784	Failed assertion exp:%s
+0x00365024	Instance_(Singleton of %s):%p is invalid ptr.
+0x00365054	Singleton::Instance
+0x00365104	Instance_(Singleton of %s):%p is invalid ptr.
+0x00365134	Singleton::Instance
+0x003651D4	Instance_(Singleton of %s):%p is invalid ptr.
+0x00365204	Singleton::Instance
+0x003652A4	Instance_(Singleton of %s):%p is invalid ptr.
+0x003652D4	Singleton::Instance
+0x003655D0	Failed assertion exp:%s
+0x003655EC	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003656AC	Failed assertion exp:%s
+0x003656C8	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365788	Failed assertion exp:%s
+0x003657A4	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365864	Failed assertion exp:%s
+0x00365880	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365940	Failed assertion exp:%s
+0x0036595C	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365A1C	Failed assertion exp:%s
+0x00365A38	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365AF8	Failed assertion exp:%s
+0x00365B14	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365BD4	Failed assertion exp:%s
+0x00365BF0	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365CB0	Failed assertion exp:%s
+0x00365CCC	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365D8C	Failed assertion exp:%s
+0x00365DA8	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365E68	Failed assertion exp:%s
+0x00365E84	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00365F44	Failed assertion exp:%s
+0x00365F60	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366020	Failed assertion exp:%s
+0x0036603C	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003660FC	Failed assertion exp:%s
+0x00366118	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003661D8	Failed assertion exp:%s
+0x003661F4	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003662B4	Failed assertion exp:%s
+0x003662D0	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366390	Failed assertion exp:%s
+0x003663AC	..\..\..\..\..\src\www/util/IClonable.hpp
+0x0036646C	Failed assertion exp:%s
+0x00366488	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366548	Failed assertion exp:%s
+0x00366564	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366624	Failed assertion exp:%s
+0x00366640	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366700	Failed assertion exp:%s
+0x0036671C	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003667DC	Failed assertion exp:%s
+0x003667F8	..\..\..\..\..\src\www/util/IClonable.hpp
+0x003668B8	Failed assertion exp:%s
+0x003668D4	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366994	Failed assertion exp:%s
+0x003669B0	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366A70	Failed assertion exp:%s
+0x00366A8C	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366B4C	Failed assertion exp:%s
+0x00366B68	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366C28	Failed assertion exp:%s
+0x00366C44	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366D04	Failed assertion exp:%s
+0x00366D20	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366DE0	Failed assertion exp:%s
+0x00366DFC	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366EBC	Failed assertion exp:%s
+0x00366ED8	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00366F98	Failed assertion exp:%s
+0x00366FB4	..\..\..\..\..\src\www/util/IClonable.hpp
+0x00368F80	Pointer Assertion Failed:
+0x00368FB0	%s(=0x%08X) is invalid pointer
+0x0036B0B0	Pointer Assertion Failed:
+0x0036B0E0	%s(=0x%08X) is invalid pointer
+0x0036B1C8	Pointer Assertion Failed:
+0x0036B1F8	%s(=0x%08X) is invalid pointer
+0x0036B300	Pointer Assertion Failed:
+0x0036B330	%s(=0x%08X) is invalid pointer
+0x0036B418	Pointer Assertion Failed:
+0x0036B448	%s(=0x%08X) is invalid pointer
+0x0036B530	Pointer Assertion Failed:
+0x0036B560	%s(=0x%08X) is invalid pointer
+0x0036B648	Pointer Assertion Failed:
+0x0036B678	%s(=0x%08X) is invalid pointer
+0x0036B760	Pointer Assertion Failed:
+0x0036B790	%s(=0x%08X) is invalid pointer
+0x0036B878	Pointer Assertion Failed:
+0x0036B8A8	%s(=0x%08X) is invalid pointer
+0x0036B990	Pointer Assertion Failed:
+0x0036B9C0	%s(=0x%08X) is invalid pointer
+0x0036BAA8	Pointer Assertion Failed:
+0x0036BAD8	%s(=0x%08X) is invalid pointer
+0x0036BBC0	Pointer Assertion Failed:
+0x0036BBF0	%s(=0x%08X) is invalid pointer
+0x0036BCD8	Pointer Assertion Failed:
+0x0036BD08	%s(=0x%08X) is invalid pointer
+0x0036BDF0	Pointer Assertion Failed:
+0x0036BE20	%s(=0x%08X) is invalid pointer
+0x0036BF08	Pointer Assertion Failed:
+0x0036BF38	%s(=0x%08X) is invalid pointer
+0x0036C020	Pointer Assertion Failed:
+0x0036C050	%s(=0x%08X) is invalid pointer
+0x0036C138	Pointer Assertion Failed:
+0x0036C168	%s(=0x%08X) is invalid pointer
+0x0036C250	Pointer Assertion Failed:
+0x0036C280	%s(=0x%08X) is invalid pointer
+0x0036C368	Pointer Assertion Failed:
+0x0036C398	%s(=0x%08X) is invalid pointer
+0x0036C480	Pointer Assertion Failed:
+0x0036C4B0	%s(=0x%08X) is invalid pointer
+0x0036C598	Pointer Assertion Failed:
+0x0036C5C8	%s(=0x%08X) is invalid pointer
+0x0036C6B0	Pointer Assertion Failed:
+0x0036C6E0	%s(=0x%08X) is invalid pointer
+0x0036C7D0	Pointer Assertion Failed:
+0x0036C7FC	%s(=0x%08X) is invalid pointer
+0x0037AFE4	Singleton::Instance
+0x0037AFF8	Instance_(Singleton of %s):%p is invalid ptr.
+0x0037B040	FPS:%d( derived from TargetFPS:%d ) must divide PROCESS_PER_SEC:%d
+0x0037B084	invalid state_:%d. You can call initialize() in only State_NotInitialized:%d.
+0x0037B0E8	Priority_Highest:%d <= pri:%d && pri:%d <= Priority_Lowest:%d failed.
+0x0037DACD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037DCCD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037E6CD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037E8CD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037EACD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037ECCD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x0037EECD	%<%^%_%Z%T%i%f%`%P%l%g%h%d%e%Y%X%R%S%k%j%
+0x003806AC	b%c%d%e%f%g%h%i%j%k%l%
+0x0038244C	RootSequence's type(%d) must be lib::IFlowElement::Type_InnerElement(%d)
+0x00382498	SequenceStack(Count:%d) must be empty before adding RootSequence
+0x003824E4	Singleton::Instance
+0x003824F8	Instance_(Singleton of %s):%p is invalid ptr.
+0x00382544	Singleton::Instance
+0x00382558	Instance_(Singleton of %s):%p is invalid ptr.
+0x003825CC	Singleton::Instance
+0x003825E0	Instance_(Singleton of %s):%p is invalid ptr.
+0x00382678	the operation to this heap:%s was denied. the heap is sealed:%d.
+0x003826BC	cannot free p:%p because nothing is in this heap:%s (allocCount_:%d)
+0x00382708	AllocationFailed p:%p size:%u algn:%d at heap:%s totalFree:%d/%d allocatableMax:%d/%d
+0x00382798	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x00386673	C(pictureL.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_RIGHT && pictureR.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_LEFT)
+0x003866FC	(pictureU.GetBasePositionV() == nw::lyt::VERTICALPOSITION_BOTTOM && pictureD.GetBasePositionV() == nw::lyt::VERTICALPOSITION_TOP)
+0x00386794	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x00386BDF	-http://searcher.wii.com/search/search?r=%s&k=&l=%s&c=%s&n=2&a=y&p=3ds
+0x00386FD0	Singleton::Instance
+0x00386FE4	Instance_(Singleton of %s):%p is invalid ptr.
+0x0038702C	Singleton::Instance
+0x00387040	Instance_(Singleton of %s):%p is invalid ptr.
+0x003870F8	Singleton::Instance
+0x0038710C	Instance_(Singleton of %s):%p is invalid ptr.
+0x00387154	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x00387244	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x00387288	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x00387448	This PreLoader is specialized for Heap:%p(%s). Cannot associate with other heap:%p(%s).
+0x003874A8	(content_.content().allocAndReadAsync( Util::isCompressFile(fileName) , reader_->reader() , heap , lib::Bind( &TempFile::reactReadAsyncDone, this ) , callbackAr
+0x00387550	TempFile::createForWriterImpl faild to open writer:%p for "%s:%s"
+0x003875B8	Exception Type: %s
+0x0038763C	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x00387684	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u -> Head:%u]
+0x003876D4	out of memory: size:%u align:%d fromHead:%d
+0x00387735	               freeSize:%u/%u
+0x00387758	Singleton::Instance
+0x0038776C	Instance_(Singleton of %s):%p is invalid ptr.
+0x003877E4	Failed assertion exp:%s
+0x0038921C	dsp::DSP
+0x0038A984	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x0038A9D0	(!sys::IsNan(rect.bottom) && !sys::IsNan(rect.right) && !sys::IsNan(rect.top) && !sys::IsNan(rect.left))
+0x0038AAFC	Singleton::Instance
+0x0038AB10	Instance_(Singleton of %s):%p is invalid ptr.
+0x0038AB5A	0@0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x0038ABC7	Alayout/window/WindowIconData
+0x0038AD04	Singleton::Instance
+0x0038AD18	Instance_(Singleton of %s):%p is invalid ptr.
+0x0038ADF4	..\..\..\..\..\..\..\..\src\sequence/main/browse/dropdownlist/ItemUI.hpp
+0x0038AE40	..\..\..\..\..\..\..\..\src\sequence/main/browse/dropdownlist/Item.hpp
+0x0038AEC4	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x0038AF08	(favoriteModel->getType() == model::IFavoriteModel::Type_Favorite)
+0x0038AF4C	..\..\..\..\..\..\..\src\sequence/main/favorite/ListItemContainer.hpp
+0x0038AF94	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x0038B0D8	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x0038B15C	..\..\..\..\..\..\..\src\sequence/main/SceneKeyInputDetector.hpp
+0x0038B1F0	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x0038B280	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u -> Head:%u]
+0x0038B2CC	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x0038FA34	Singleton::Instance
+0x0038FA48	Instance_(Singleton of %s):%p is invalid ptr.
+0x0038FAF0	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x0038FE14	..\..\..\..\..\..\..\..\src\sequence/main/browse/dropdownlist/DropDownListDialog.hpp
+0x0038FE74	..\..\..\..\..\..\..\..\src\sequence/main/browse/dropdownlist/DropDownListDialog.hpp
+0x0038FECC	..\..\..\..\..\..\..\..\src\sequence/main/browse/dropdownlist/Item.hpp
+0x0038FF84	Singleton::Instance
+0x0038FF98	Instance_(Singleton of %s):%p is invalid ptr.
+0x0038FFE0	..\..\..\..\..\..\..\src\sequence/main/favorite/ListItemContainer.hpp
+0x00390028	..\..\..\..\..\..\..\src\sequence/main/favorite/FavoriteScene.hpp
+0x0039006C	(favoriteModel.getType() == model::IFavoriteModel::Type_Favorite)
+0x00390168	http://searcher.wii.com/search/search?p=3ds&r=%s&l=%s&c=%s&n=%d&a=%s&k=%s
+0x00391FB0	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x00391FF8	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u -> Head:%u]
+0x00392048	0 < www::Settings::InstanceMain().GetEngineBufferSize() && ( www::Settings::InstanceMain().GetEngineBufferSize() <= sys::memory::AllocatorSetupConstant::DEVICE_
+0x003920E8	BROWSER_ENGINE_PRIVATE_MEMORY_SIZE SYS_INFO_FDOP_ADD(sys::memory::AllocatorSetupConstant::PROGRAM_DEBUGGER_SIZE) )
+0x0039215C	0 < www::Settings::InstMain().GetEngineBufSize():%u <= DEVICE_BROWSER_ENGINE_PRIVATE_MEMORY_SIZE:%u is failed
+0x00392284	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u Head:%u]
+0x003922CC	0 <= index:%u( as signed:%d ) < count():%d failed. [Tail:%u -> Head:%u]
+0x00392444	..\..\..\..\..\..\..\src\sequence/main/favorite/FavoriteScene.hpp
+0x0039615C	Unexpected SSL error code at FLC::sslFailed(): peerResult=0 && hostResult=0
+0x00396218	..\..\..\..\..\..\..\src\sequence/main/favorite/FavoriteScene.hpp
+0x0039625E	L>..\..\..\..\..\..\..\src\sequence/main/favorite/ListItemView.hpp
+0x003967C4	(parentPane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)
+0x0039680C	(parentPane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)
+0x00396854	(parentPane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)
+0x003A3A03	N7WebCore9SETJMPERRE
+0x003A4F02	NSt8ios_base11failbit_setE
+0x003A4F1D	NSt8ios_base7failureE
+0x003ACC95	/cro/oss.cro
+0x003ACCA2	/cro/webkit.cro
+0x003ACCC3	/cro/static.crs
+0x003ACD01	/s.bin
+0x003ACD0E	layout/browse/icon/IconSecurity
+0x003ACD2E	file:///sdmc:/
+0x003ACDE9	ErrorMsg_Brs_SSLMOD_CERT_SIGNATURE_FAILURE
+0x003ACEC9	ErrorMsg_Brs_SSL_CONNECT_ERROR
+0x003ACF9B	ErrorMsg_AC_Connection_Failed
+0x003AF78E	gsp::Lcd
+0x003AF797	gsp::Gpu
+0x003AF9ED	/layout/BG.arc
+0x003AF9FC	/layout/toucheffect/TouchEffectS.arc
+0x003AFA21	/layout/loading/LoadingIconW.arc
+0x003AFA42	/layout/dialog/DialogScrollArea.arc
+0x003AFA66	/layout/window/WindowIconData.arc
+0x003AFA88	/layout/TextField.arc
+0x003AFA9E	/layout/historyguide/Base.arc
+0x003AFABC	/layout/start/dialog/StartDialog.arc
+0x003AFAE1	/layout/Desk.arc
+0x003AFAF2	/layout/dialogheader/DialogHeaderBaseNormal.arc
+0x003AFB22	/layout/dialogheader/DialogHeaderNormal.arc
+0x003AFB4E	/layout/historyguide/Icon.arc
+0x003AFB6C	/layout/loading/LoadingIcon.arc
+0x003AFB8C	/layout/start/dialog/FavoriteButton.arc
+0x003AFBB4	/layout/start/dialog/SearchButton.arc
+0x003AFBDA	/layout/start/dialog/OptionButton.arc
+0x003AFC00	/layout/start/dialog/AddressButton.arc
+0x003AFC27	/layout/toolbar/NextButton.arc
+0x003AFC46	/layout/toolbar/StartMenuButton.arc
+0x003AFC6A	/layout/toolbar/PrevButton.arc
+0x003AFC89	/layout/sysinfo/SystemInfo.arc
+0x003AFCA8	/layout/scrollbar/ScrollBar.arc
+0x003AFCC8	/layout/toolbar/ToolBar.arc
+0x003AFCE4	/layout/Ticker.arc
+0x003AFCF7	/layout/ScrollIndicator.arc
+0x003AFD13	/layout/toucheffect/TouchEffect.arc
+0x003AFD37	/layout/Shadow.arc
+0x003AFD4A	/layout/CheckBox.arc
+0x003AFD5F	http://
+0x003AFD67	layout/historyguide/BalloonBase
+0x003AFD87	layout/historyguide/Balloon
+0x003AFDA3	layout/historyguide/ProgressBar
+0x003AFDC3	layout/historyguide/Base
+0x003AFDF7	https://cbvc.cdn.nintendo.net/CTR/%d/%s
+0x003AFE2B	layout/historyguide/BalloonText
+0x003AFE4B	layout/historyguide/Icon
+0x003AFE64	layout/historyguide/IconFrame
+0x003AFE99	photo/Nintendo 3DS/Private/00020400
+0x003B01DD	Issuer:C=US; ST=UT; L=Salt Lake City; O=The USERTRUST Network; OU=http://www.usertrust.com; CN=UTN-USERFirst-Hardware
+0x003B0311	%s: bad locale name: "%s"
+0x003B032B	%s: range error: invalid range [%d, %d)
+0x003B0353	%s: argument value %u out of range [0, %u)
+0x003B037E	%s: conversion failed
+0x003B0394	%s: facet %u not found in "%s" locale
+0x003B03BA	%s: failed to construct locale name
+0x003B03DE	%s: exception
+0x003B03EC	%s: unexpected exception
+0x003B0405	%s: invalid pointer %p
+0x003B041C	%s: logic error
+0x003B042C	%s: unspecified error
+0x003B0442	%s: runtime error
+0x003B0454	%s: underflow error
+0x003B0468	%s: overflow error
+0x003B047B	%s: stream object has set %s
+0x003B0498	%s: stream object has set ios::badbit
+0x003B04BE	%s: stream object has set ios::eofbit
+0x003B04E4	%s: stream object has set ios::failbit
+0x003B050B	%s: bad cast
+0x003B0518	%s: length error: %u > %u
+0x003B0532	%s: bad_alloc: out of memory
+0x003B054F	%s: out of memory
+0x003B646C	%d %b %Y

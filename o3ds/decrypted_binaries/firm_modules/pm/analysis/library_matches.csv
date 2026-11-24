@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00102E3C,0x22,lib_crt_aeabi_vec_ctor_102e3c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x00102740 ""pxi_crt_aeabi_vec_ctor_00102740"" (o3ds_semantic)"

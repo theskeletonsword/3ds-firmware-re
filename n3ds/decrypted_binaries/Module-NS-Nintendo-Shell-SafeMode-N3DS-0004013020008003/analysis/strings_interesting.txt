@@ -1,0 +1,9 @@
+0x00117A08	/SNAKE/
+0x0011E2E5	nwm::EXT
+0x0011E80F	;d22Vt::N
+0x0011F23A	font:/cbf_zh-Hans-CN.bcfnt.lz
+0x0011F258	font:/cbf_ko-Hang-KR.bcfnt.lz
+0x0011F276	font:/cbf_zh-Hant-TW.bcfnt.lz
+0x0011F294	font:/cbf_std.bcfnt.lz
+0x0011F2ED	gsp::Lcd
+0x0011F2F6	gsp::Gpu

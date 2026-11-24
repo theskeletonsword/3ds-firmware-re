@@ -1,0 +1,48 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001013F0,0x24,nim_svc_0x25_WaitSynchronizationN_1013f0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00102514,0x38,nim_svc_0x32_SendSyncRequest_102514,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00102580,0x2c,nim_svc_0x32_SendSyncRequest_102580,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001026A8,0x10,nim_get_tls_1026a8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x001031AC,0x34,nim_svc_0x32_SendSyncRequest_1031ac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001031E8,0x38,nim_svc_0x32_SendSyncRequest_1031e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00103224,0x38,nim_svc_0x32_SendSyncRequest_103224,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00103260,0x28,nim_svc_0x32_SendSyncRequest_103260,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001034F8,0x24,nim_svc_0x08_CreateThread_1034f8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0010351C,0x34,nim_svc_0x32_SendSyncRequest_10351c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00103B0C,0x40,nim_svc_0x32_SendSyncRequest_103b0c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00104288,0x38,nim_svc_0x32_SendSyncRequest_104288,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0011527C,0x34,nim_svc_0x32_SendSyncRequest_11527c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001152B0,0x38,nim_svc_0x32_SendSyncRequest_1152b0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00119A00,0xc,nim_get_tls_119a00,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0011A2CC,0x28,nim_svc_0x32_SendSyncRequest_11a2cc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001279C4,0x40,nim_svc_0x32_SendSyncRequest_1279c4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00139838,0xc,nim_svc_0x3C_Break_139838,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x001399F4,0x38,nim_svc_0x24_WaitSynchronization1_1399f4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x24) (WaitSynchronization1); 10 C lines
+0x00139E40,0x30,nim_svc_0x32_SendSyncRequest_139e40,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0013E79C,0x4,nim_svc_0x32_SendSyncRequest_13e79c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0013E7E8,0x34,nim_svc_0x32_SendSyncRequest_13e7e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00143618,0x3c,nim_svc_0x32_SendSyncRequest_143618,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00143768,0x38,nim_svc_0x32_SendSyncRequest_143768,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00143A18,0x3c,nim_svc_0x32_SendSyncRequest_143a18,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0014404C,0x2c,nim_svc_0x32_SendSyncRequest_14404c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00147708,0x30,nim_svc_0x32_SendSyncRequest_147708,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0014A464,0x38,nim_svc_0x32_SendSyncRequest_14a464,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0014EA9C,0x2c,nim_svc_0x32_SendSyncRequest_14ea9c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0014ED14,0x34,nim_svc_0x32_SendSyncRequest_14ed14,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00151B54,0x34,nim_svc_0x32_SendSyncRequest_151b54,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00151B90,0x34,nim_svc_0x32_SendSyncRequest_151b90,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00152198,0x30,nim_svc_0x32_SendSyncRequest_152198,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00152710,0x3c,nim_svc_0x32_SendSyncRequest_152710,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00152A68,0x28,nim_svc_0x23_CloseHandle_152a68,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00152D20,0x28,nim_svc_0x32_SendSyncRequest_152d20,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0015310C,0x28,nim_svc_0x23_CloseHandle_15310c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x001532D0,0x3c,nim_svc_0x32_SendSyncRequest_1532d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00153314,0x38,nim_svc_0x32_SendSyncRequest_153314,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00157BB8,0x8,nim_svc_0x32_SendSyncRequest_157bb8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00157BC0,0x8,nim_svc_0x32_SendSyncRequest_157bc0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00157DA8,0x2c,nim_svc_0x32_SendSyncRequest_157da8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00157DD8,0x2c,nim_svc_0x32_SendSyncRequest_157dd8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x001047FC,0xa8,nim_ipc_server_loop_1047fc,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x138608
+0x001048B0,0xa0,nim_ipc_server_loop_1048b0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x138608
+0x0010495C,0xa8,nim_ipc_server_loop_10495c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x138608
+0x00104A10,0xa0,nim_ipc_server_loop_104a10,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x138608

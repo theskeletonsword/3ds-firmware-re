@@ -1,0 +1,82 @@
+o3ds_symbol,o3ds_ea,rank,n3ds_candidate_ea,score,margin_to_rank2,note
+k9_struct_init_or_set_0x08006800,0x8006800,0,,0,0,no decompiled O3DS function at that address
+k9_arm_epilogue_0x08007D8C,0x8007d8c,0,,0,0,no decompiled O3DS function at that address
+k9_cfg9_drv_02_0x0801B144,0x801b144,1,0x8089218,0.096,0.005,
+k9_cfg9_drv_02_0x0801B144,0x801b144,2,0x8089278,0.092,0.092,
+k9_cfg9_drv_02_0x0801B144,0x801b144,3,0x8022d2c,0.076,0.076,
+k9_aes_drv_01_0x0801B1C0,0x801b1c0,1,0x803287c,0.125,0.002,
+k9_aes_drv_01_0x0801B1C0,0x801b1c0,2,0x8050e96,0.123,0.123,
+k9_aes_drv_01_0x0801B1C0,0x801b1c0,3,0x807b790,0.109,0.109,
+arm9_mpu_and_aes_cfg_init,0x801b1f8,1,0x808911c,0.082,0.038,
+arm9_mpu_and_aes_cfg_init,0x801b1f8,2,0x80892f0,0.043,0.043,
+arm9_mpu_and_aes_cfg_init,0x801b1f8,3,0x808946c,0.035,0.035,
+p9_vobj_method_v1_s4,0x801d838,0,,0,0,no decompiled O3DS function at that address
+p9_struct_init_or_set_0x080273B0,0x80273b0,1,0x8027174,0.818,0.411,
+p9_struct_init_or_set_0x080273B0,0x80273b0,2,0x8027178,0.407,0.407,
+p9_struct_init_or_set_0x080273B0,0x80273b0,3,0x8088ef0,0.133,0.133,
+p9_vobj_method_v43_s7,0x803ea3c,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v43_s1,0x803ea40,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v43_s6,0x803ea44,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v43_s2,0x803ea50,0,,0,0,no decompiled O3DS function at that address
+p9_thumb_interwork_stub_0x08055B50,0x8055b50,1,0x80568f4,0.25,0.0,
+p9_thumb_interwork_stub_0x08055B50,0x8055b50,2,0x805680c,0.25,0.25,
+p9_thumb_interwork_stub_0x08055B50,0x8055b50,3,0x800e820,0.211,0.211,
+p9_thumb_interwork_stub_0x08056A0C,0x8056a0c,1,0x805680c,0.667,0.417,
+p9_thumb_interwork_stub_0x08056A0C,0x8056a0c,2,0x80568f4,0.25,0.25,
+p9_thumb_interwork_stub_0x08056A0C,0x8056a0c,3,0x800e820,0.211,0.211,
+p9_thumb_interwork_stub_0x08056AF4,0x8056af4,1,0x80568f4,0.667,0.417,
+p9_thumb_interwork_stub_0x08056AF4,0x8056af4,2,0x805680c,0.25,0.25,
+p9_thumb_interwork_stub_0x08056AF4,0x8056af4,3,0x800e820,0.211,0.211,
+p9_vobj_method_v52_s2,0x8059bd4,1,0x807b790,0.135,0.033,
+p9_vobj_method_v52_s2,0x8059bd4,2,0x804f308,0.102,0.102,
+p9_vobj_method_v52_s2,0x8059bd4,3,0x802f340,0.093,0.093,
+p9_vobj_method_v52_s3,0x8059bd8,1,0x807b790,0.135,0.033,
+p9_vobj_method_v52_s3,0x8059bd8,2,0x804f308,0.102,0.102,
+p9_vobj_method_v52_s3,0x8059bd8,3,0x802f340,0.093,0.093,
+p9_vobj_method_v60_s2,0x805a30a,1,0x80893f8,0.153,0.059,
+p9_vobj_method_v60_s2,0x805a30a,2,0x8028b76,0.093,0.093,
+p9_vobj_method_v60_s2,0x805a30a,3,0x803a778,0.083,0.083,
+p9_vobj_method_v60_s3,0x805a30e,1,0x80893f8,0.153,0.059,
+p9_vobj_method_v60_s3,0x805a30e,2,0x8028b76,0.093,0.093,
+p9_vobj_method_v60_s3,0x805a30e,3,0x803a778,0.083,0.083,
+p9_vobj_method_v178_s3,0x805a766,0,,0,0,no decompiled O3DS function at that address
+p9_vtbl_dbs_t154_s5,0x805af60,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v90_s5,0x805f2b4,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v107_s15,0x8060200,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v102_s0,0x8060900,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v107_s17,0x806091c,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v191_s5,0x8060ccc,0,,0,0,no decompiled O3DS function at that address
+p9_vtbl_quota_t174_s0,0x8070d90,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v144_s6,0x8070e34,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v177_s0,0x80711dc,1,0x807b8d0,0.071,0.006,
+p9_vobj_method_v177_s0,0x80711dc,2,0x80388a0,0.065,0.065,
+p9_vobj_method_v177_s0,0x80711dc,3,0x8071a38,0.063,0.063,
+p9_vobj_method_v26_s3,0x80717e0,1,0x800928c,0.152,0.067,
+p9_vobj_method_v26_s3,0x80717e0,2,0x8081a00,0.085,0.085,
+p9_vobj_method_v26_s3,0x80717e0,3,0x8056094,0.082,0.082,
+p9_vobj_method_v26_s2,0x80717ea,1,0x80893f8,0.19,0.066,
+p9_vobj_method_v26_s2,0x80717ea,2,0x807b790,0.123,0.123,
+p9_vobj_method_v26_s2,0x80717ea,3,0x8028b76,0.107,0.107,
+p9_vtbl_swi_t193_s1,0x8071d34,0,,0,0,no decompiled O3DS function at that address
+p9_vobj_method_v156_s3,0x8078fee,1,0x800928c,0.181,0.082,
+p9_vobj_method_v156_s3,0x8078fee,2,0x8009bac,0.099,0.099,
+p9_vobj_method_v156_s3,0x8078fee,3,0x802f77a,0.092,0.092,
+p9_vobj_method_v157_s3,0x80790b2,1,0x800928c,0.203,0.11,
+p9_vobj_method_v157_s3,0x80790b2,2,0x8015958,0.093,0.093,
+p9_vobj_method_v157_s3,0x80790b2,3,0x8081a00,0.09,0.09,
+p9_vobj_method_v157_s4,0x80790b6,1,0x800928c,0.11,0.006,
+p9_vobj_method_v157_s4,0x80790b6,2,0x80893f8,0.104,0.104,
+p9_vobj_method_v157_s4,0x80790b6,3,0x8081a00,0.095,0.095,
+p9_vobj_method_v158_s3,0x8079164,1,0x800928c,0.203,0.109,
+p9_vobj_method_v158_s3,0x8079164,2,0x8015958,0.094,0.094,
+p9_vobj_method_v158_s3,0x8079164,3,0x8029452,0.089,0.089,
+p9_vobj_method_v158_s4,0x8079168,1,0x800928c,0.109,0.0,
+p9_vobj_method_v158_s4,0x8079168,2,0x80893f8,0.109,0.109,
+p9_vobj_method_v158_s4,0x8079168,3,0x8081a00,0.093,0.093,
+p9_vtbl_quota_t174_s1,0x807974e,1,0x800928c,0.257,0.151,
+p9_vtbl_quota_t174_s1,0x807974e,2,0x8018bf4,0.106,0.106,
+p9_vtbl_quota_t174_s1,0x807974e,3,0x8015958,0.102,0.102,
+p9_leaf_ret_0x080797B8,0x80797b8,1,0x80388a0,0.137,0.004,
+p9_leaf_ret_0x080797B8,0x80797b8,2,0x8081bac,0.133,0.133,
+p9_leaf_ret_0x080797B8,0x80797b8,3,0x803287c,0.109,0.109,
+p9_getter_or_pred_0x08079C74,0x8079c74,0,,0,0,no decompiled O3DS function at that address

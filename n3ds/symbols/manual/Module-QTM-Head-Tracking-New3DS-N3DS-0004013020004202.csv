@@ -1,0 +1,8 @@
+binary,ea,symbol_name,evidence
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x00100214,qtm_main_server_loop,decompiled/00100214.c: init, loop of 4 iterations registering ports from a name table (FUN_00101524 = srv RegisterService command), then ReplyAndReceive loop through the svc 0x4F wrapper FUN_00115928
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x00115928,qtm_svc_0x4F_ReplyAndReceive_115928,decompiled/00115928.c: body is software_interrupt(0x4f) followed by storing the result
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x00101524,qtm_srv_register_service_cmd,decompiled/00101524.c: writes an IPC header (DAT_00101578) at TLS+0x80, copies the name from param_2/param_3 into cmdbuf+0x84.. and param_4 (max sessions=3 in the caller) then svc SendSyncRequest to srv:
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x0011378C,qtm_ipc_cmd3_set_active,decompiled/0011378c.c: if state byte (+4) != 1 sets it to 1, calls FUN_001136ac(0) and notifies the object at +0x74 via vtable slot 1
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x00113738,qtm_ipc_cmd4_clear_active,decompiled/00113738.c: mirror of cmd3 - if state byte (+4) != 0 calls FUN_001136ac(0), notifies object +0x74 vtable slot 1, then clears the byte
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x001136AC,maybe_qtm_update_tracking_object,decompiled/001136ac.c: when active (+4 == 1) and the configured flags are set, calls vtable slot 7 (+0x1c) of the object at +4 with param_1; returns an error constant otherwise
+Module-QTM-Head-Tracking-New3DS-N3DS-0004013020004202,0x00113694,qtm_ipc_cmd6_get_state_byte,decompiled/00113694.c: returns byte at +0x11 of the state block through the output pointer

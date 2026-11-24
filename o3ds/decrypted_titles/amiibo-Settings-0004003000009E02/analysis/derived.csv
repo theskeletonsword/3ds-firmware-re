@@ -1,0 +1,149 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100F8C,0x18,Cabinet_svc_0x21_CreateAddressArbiter_100f8c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010254C,0x1c,Cabinet_svc_0x2B_GetProcessInfo_10254c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103F30,0x18,Cabinet_svc_0x2D_ConnectToPort_103f30,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103F6C,0x8,Cabinet_svc_0x14_ReleaseMutex_103f6c,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001076F8,0x8,Cabinet_svc_0x03_ExitProcess_1076f8,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107700,0x18,Cabinet_svc_0x35_GetProcessId_107700,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107718,0x18,Cabinet_svc_0x0B_GetThreadPriority_107718,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00109FF0,0x460,Cabinet_ipc_dispatcher_109ff0,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x000F0081, 0x000F00C3, 0x000F00CB, 0x000F0103"
+0x0010ABDC,0x3c4,Cabinet_ipc_handler_cmd_000F_10abdc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F02C0
+0x00112AD8,0x6,Cabinet_str_service_nfc_m,service_name_string,"client of (in ExHeader service-access list): ""nfc:m"""
+0x00114490,0x258,Cabinet_ipc_dispatcher_114490,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F008F, 0x000F01C0, 0x000F01C2, 0x000F01C3"
+0x00125DE4,0x3a24,Cabinet_ipc_dispatcher_125de4,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x00134F94,0x5d8,Cabinet_ipc_dispatcher_134f94,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0013BECC,0xc,Cabinet_func_ptr_table_13becc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001401B8,0x1f0,Cabinet_ipc_dispatcher_1401b8,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x00030100, 0x00030104, 0x000F0040, 0x000F0101"
+0x00144258,0xca4,Cabinet_ipc_handler_cmd_0007_0008_0040_etc_144258,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0014F848,0x998,Cabinet_ipc_dispatcher_14f848,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000B0289, 0x000F004F, 0x000F028A, 0x01000002"
+0x00152F9C,0x170,Cabinet_ipc_dispatcher_152f9c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010100, 0x000F008B, 0x00200080, 0x00E40103"
+0x0015320C,0x258,Cabinet_ipc_handler_cmd_000F_15320c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F008A
+0x00154CF4,0x3a04,Cabinet_ipc_dispatcher_154cf4,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x001613E8,0x9c,Cabinet_ipc_dispatcher_1613e8,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x0100000C, 0x0100000D, 0x0100000E, 0x0100000F"
+0x00185D3C,0x8,Cabinet_svc_0x23_CloseHandle_185d3c,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00187340,0x8,Cabinet_svc_0x28_GetSystemTick_187340,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00187720,0x8,Cabinet_svc_0x24_WaitSynchronization1_187720,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00189550,0x8,Cabinet_svc_0x32_SendSyncRequest_189550,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001964A0,0x18,Cabinet_svc_0x17_CreateEvent_1964a0,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001964B8,0x1c,Cabinet_svc_0x1E_CreateMemoryBlock_1964b8,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00198D20,0x998,Cabinet_ipc_dispatcher_198d20,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x000B0289, 0x000F004F, 0x000F028A, 0x01000002"
+0x0019E6F0,0x8,Cabinet_svc_0x1F_MapMemoryBlock_19e6f0,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019E6F8,0x8,Cabinet_svc_0x20_UnmapMemoryBlock_19e6f8,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001AB758,0x18,Cabinet_svc_0x22_ArbitrateAddress_1ab758,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001AB770,0x8,Cabinet_svc_0x18_SignalEvent_1ab770,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001B9E9C,0x8,Cabinet_svc_0x19_ClearEvent_1b9e9c,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001C4A94,0x18,Cabinet_svc_0x27_DuplicateHandle_1c4a94,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001DA9E8,0xadc,Cabinet_ipc_dispatcher_1da9e8,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0083, 0x000F0085, 0x000F008E"
+0x001EA010,0x5,Cabinet_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001EA015,0x7,Cabinet_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001EA05C,0x6,Cabinet_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001EBACC,0x9,Cabinet_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x001EBADC,0x7,Cabinet_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001EBAE3,0x8,Cabinet_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001ECD14,0x9,Cabinet_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x001ED594,0xc,Cabinet_func_ptr_table_1ed594,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F2A4A,0x5,Cabinet_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x001F2A50,0x7,Cabinet_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x001F5C02,0x9,Cabinet_str_service_WBhttp_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""WBhttp:C"""
+0x001F7564,0xc,Cabinet_func_ptr_table_1f7564,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F7594,0xc,Cabinet_func_ptr_table_1f7594,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F7604,0xc,Cabinet_func_ptr_table_1f7604,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F765C,0xc,Cabinet_func_ptr_table_1f765c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F768C,0xc,Cabinet_func_ptr_table_1f768c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F77C4,0xc,Cabinet_func_ptr_table_1f77c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F798C,0xc,Cabinet_func_ptr_table_1f798c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F79BC,0xc,Cabinet_func_ptr_table_1f79bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F7B58,0x10,Cabinet_func_ptr_table_1f7b58,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F7BA8,0x10,Cabinet_func_ptr_table_1f7ba8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F7C74,0x10,Cabinet_func_ptr_table_1f7c74,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8008,0x10,Cabinet_func_ptr_table_1f8008,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8098,0xc,Cabinet_func_ptr_table_1f8098,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F811C,0x18,Cabinet_func_ptr_table_1f811c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F81FC,0xc,Cabinet_func_ptr_table_1f81fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F84E8,0xc,Cabinet_func_ptr_table_1f84e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F85EC,0x10,Cabinet_func_ptr_table_1f85ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8604,0xc,Cabinet_func_ptr_table_1f8604,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8644,0x10,Cabinet_func_ptr_table_1f8644,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F865C,0xc,Cabinet_func_ptr_table_1f865c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F86BC,0x18,Cabinet_func_ptr_table_1f86bc,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F86D8,0x18,Cabinet_func_ptr_table_1f86d8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8704,0x10,Cabinet_func_ptr_table_1f8704,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F871C,0xc,Cabinet_func_ptr_table_1f871c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8760,0xc,Cabinet_func_ptr_table_1f8760,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8774,0xc,Cabinet_func_ptr_table_1f8774,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F87B8,0xc,Cabinet_func_ptr_table_1f87b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8810,0xc,Cabinet_func_ptr_table_1f8810,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8824,0xc,Cabinet_func_ptr_table_1f8824,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8864,0x10,Cabinet_func_ptr_table_1f8864,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F887C,0xc,Cabinet_func_ptr_table_1f887c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F88BC,0x10,Cabinet_func_ptr_table_1f88bc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F88D4,0xc,Cabinet_func_ptr_table_1f88d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F892C,0x14,Cabinet_func_ptr_table_1f892c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8974,0xc,Cabinet_func_ptr_table_1f8974,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8988,0xc,Cabinet_func_ptr_table_1f8988,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F89CC,0xc,Cabinet_func_ptr_table_1f89cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F89E0,0xc,Cabinet_func_ptr_table_1f89e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8A64,0x10,Cabinet_func_ptr_table_1f8a64,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8A7C,0xc,Cabinet_func_ptr_table_1f8a7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8AC4,0xc,Cabinet_func_ptr_table_1f8ac4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8AD8,0x14,Cabinet_func_ptr_table_1f8ad8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8AFC,0x20,Cabinet_func_ptr_table_1f8afc,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8B34,0xc,Cabinet_func_ptr_table_1f8b34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8B48,0x10,Cabinet_func_ptr_table_1f8b48,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8B74,0x10,Cabinet_func_ptr_table_1f8b74,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8B94,0xc,Cabinet_func_ptr_table_1f8b94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8BE4,0x10,Cabinet_func_ptr_table_1f8be4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8C54,0xc,Cabinet_func_ptr_table_1f8c54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8C74,0x18,Cabinet_func_ptr_table_1f8c74,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8CA4,0x10,Cabinet_func_ptr_table_1f8ca4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8CC4,0xc,Cabinet_func_ptr_table_1f8cc4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8CD8,0x10,Cabinet_func_ptr_table_1f8cd8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8D2C,0xc,Cabinet_func_ptr_table_1f8d2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8DCC,0xc,Cabinet_func_ptr_table_1f8dcc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8E50,0x28,Cabinet_func_ptr_table_1f8e50,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8EC0,0x10,Cabinet_func_ptr_table_1f8ec0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8EE4,0x24,Cabinet_func_ptr_table_1f8ee4,pointer_table,9 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8F1C,0xc,Cabinet_func_ptr_table_1f8f1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8F60,0x14,Cabinet_func_ptr_table_1f8f60,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8F84,0x28,Cabinet_func_ptr_table_1f8f84,pointer_table,10 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F8FBC,0xc,Cabinet_func_ptr_table_1f8fbc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9000,0xc,Cabinet_func_ptr_table_1f9000,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9024,0x14,Cabinet_func_ptr_table_1f9024,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F903C,0x10,Cabinet_func_ptr_table_1f903c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F905C,0xc,Cabinet_func_ptr_table_1f905c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F908C,0xc,Cabinet_func_ptr_table_1f908c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9118,0x10,Cabinet_func_ptr_table_1f9118,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F91C8,0x10,Cabinet_func_ptr_table_1f91c8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9224,0xc,Cabinet_func_ptr_table_1f9224,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9258,0x10,Cabinet_func_ptr_table_1f9258,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9298,0xc,Cabinet_func_ptr_table_1f9298,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F92B8,0xc,Cabinet_func_ptr_table_1f92b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9308,0xc,Cabinet_func_ptr_table_1f9308,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9388,0x18,Cabinet_func_ptr_table_1f9388,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F93B4,0x18,Cabinet_func_ptr_table_1f93b4,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F93E0,0x18,Cabinet_func_ptr_table_1f93e0,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F940C,0x10,Cabinet_func_ptr_table_1f940c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F942C,0x10,Cabinet_func_ptr_table_1f942c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9458,0xc,Cabinet_func_ptr_table_1f9458,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F947C,0xc,Cabinet_func_ptr_table_1f947c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F94A0,0xc,Cabinet_func_ptr_table_1f94a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F94C4,0xc,Cabinet_func_ptr_table_1f94c4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F94E8,0xc,Cabinet_func_ptr_table_1f94e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F950C,0xc,Cabinet_func_ptr_table_1f950c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001F9617,0x6,Cabinet_str_service_APT_S,service_name_string,"client of (in ExHeader service-access list): ""APT:S"""
+0x001F961D,0x6,Cabinet_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001F9623,0x6,Cabinet_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001F9660,0x5,Cabinet_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001FBB9E,0x6,Cabinet_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x001FBBA4,0x9,Cabinet_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001FBBAD,0x9,Cabinet_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001FBBB6,0x6,Cabinet_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x001FBBC2,0x6,Cabinet_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001FBBC8,0x8,Cabinet_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x001FBBD0,0x8,Cabinet_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x001FBBD8,0x9,Cabinet_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001FBBE1,0x9,Cabinet_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001FBCD6,0x6,Cabinet_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001FBCDC,0x6,Cabinet_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x00212654,0x1c,Cabinet_func_ptr_table_212654,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002126B0,0xc,Cabinet_func_ptr_table_2126b0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)

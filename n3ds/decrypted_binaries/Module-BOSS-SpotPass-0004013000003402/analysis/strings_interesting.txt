@@ -1,0 +1,64 @@
+0x00107464	%s%02x.tmp
+0x001074F0	https://nppl.c.app.nintendowifi.net
+0x00107514	%s/%s/policylist/%s/%s?ap=%s
+0x00107534	%s/%s/policylist/%s/%s
+0x00109AAC	%s/.%s
+0x00109B09	Q%r F%s
+0x00109B80	%s%02x.tmp
+0x00109B8C	%s/%s%02x.tmp
+0x0010A3CC	https://npvk.app.nintendo.net/reports
+0x0010B20C	%snpdl.cdn.nintendowifi.net%s
+0x0010BFFC	%s/%s%02x.up
+0x0010C520	%d.%d.%d-%d%c
+0x0010D648	%d!l F
+0x0010E7C0	slotsize: %d
+0x0010E7D0	spr-slot%02d: %d,%08X,%d
+0x0010E7FC	%s%02d
+0x0010F601	! `%s%aea
+0x0011035C	%c%s=%s
+0x00110364	%c%s=%ld
+0x00110370	%c%s=%lu
+0x0011037C	%c%s=%lld
+0x00110388	%c%s=%llu
+0x00110394	%c%s=%08lx
+0x001103A0	%c%s=%016llx
+0x001135AB	` `%ses
+0x001135BF	t%uhFeu
+0x0011DB48	--------BOUNDARY--------%s
+0x00120148	%c%s=%s
+0x00123E94	%s-8.0/%016llx-%016llx/%s/%d/%d
+0x00129DF8	multipart/form-data; boundary=%s
+0x00135DA4	%s%02x.tmp
+0x00135DB4	%s/%s%02x.tmp
+0x00136760	%s_CA%d
+0x001369D4	%s_CLK
+0x0013ACCC	RWSTDERR
+0x0013AE1C	Exception: %s.
+0x00144048	https://service.spr.app.nintendo.net/relay/0
+0x001441E6	VerA:/version.bin
+0x00144864	%s/%s%02x.up
+0x00144C02	STUa248.e.akamai.net/f/248/103046/10m/npdl.c.app.nintendowifi.net
+0x00147ED8	gsp::Lcd
+0x00147EE1	gsp::Gpu
+0x00147EF0	%s: bad locale name: "%s"
+0x00147F0A	%s: range error: invalid range [%d, %d)
+0x00147F32	%s: argument value %u out of range [0, %u)
+0x00147F5D	%s: conversion failed
+0x00147F73	%s: facet %u not found in "%s" locale
+0x00147F99	%s: failed to construct locale name
+0x00147FBD	%s: exception
+0x00147FCB	%s: unexpected exception
+0x00147FE4	%s: invalid pointer %p
+0x00147FFB	%s: logic error
+0x0014800B	%s: unspecified error
+0x00148021	%s: runtime error
+0x00148033	%s: underflow error
+0x00148047	%s: overflow error
+0x0014805A	%s: stream object has set %s
+0x00148077	%s: stream object has set ios::badbit
+0x0014809D	%s: stream object has set ios::eofbit
+0x001480C3	%s: stream object has set ios::failbit
+0x001480EA	%s: bad cast
+0x001480F7	%s: length error: %u > %u
+0x00148111	%s: bad_alloc: out of memory
+0x0014812E	%s: out of memory

@@ -1,0 +1,38 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001000B0,0x18,mp_svc_0x13_CreateMutex_1000b0,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001000EC,0x18,mp_svc_0x27_DuplicateHandle_1000ec,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100148,0xc,mp_svc_0x28_GetSystemTick_100148,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102CC0,0xc,mp_func_ptr_table_102cc0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0010D338,0x30,mp_ipc_client_cmd_0009_10d338,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x0010D694,0x18,mp_svc_0x1A_CreateTimer_10d694,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010D6AC,0x18,mp_svc_0x17_CreateEvent_10d6ac,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010D884,0x18,mp_svc_0x35_GetProcessId_10d884,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010F530,0x18,mp_svc_0x1B_SetTimer_10f530,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011A6B0,0x4c0,mp_ipc_handler_cmd_0001_0002_0003_etc_11a6b0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020040, 0x00030040, 0x00040040"
+0x0011BBE4,0x38,mp_ipc_client_cmd_0004_11bbe4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040040
+0x0011D600,0x18,mp_svc_0x4A_AcceptSession_11d600,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011D63C,0x18,mp_svc_0x4F_ReplyAndReceive_11d63c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011DEDC,0x54,mp_ipc_client_cmd_0003_11dedc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x0011DF38,0x48,mp_ipc_client_cmd_0004_11df38,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x0011E1C0,0x18,mp_svc_0x21_CreateAddressArbiter_11e1c0,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011E62C,0x34,mp_ipc_client_cmd_0001_11e62c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010040
+0x0011E668,0x40,mp_ipc_client_cmd_0005_11e668,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050082
+0x0011E8FC,0x34,mp_ipc_client_cmd_0001_11e8fc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0011EA50,0x18,mp_svc_0x2D_ConnectToPort_11ea50,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011EA68,0x1c,mp_svc_0x1E_CreateMemoryBlock_11ea68,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011F024,0x38,mp_ipc_client_cmd_0005_11f024,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050002
+0x00120040,0x5,mp_str_service_mp_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mp:u"""
+0x00120054,0xc,mp_func_ptr_table_120054,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00120060,0x8,mp_str_service_cfg_nor,service_name_string,"client of (in ExHeader service-access list): ""cfg:nor"""
+0x00120070,0x9,mp_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x00120088,0x6,mp_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0012008E,0x6,mp_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x00120094,0x9,mp_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x001200A4,0x5,mp_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001200A9,0x7,mp_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001200B4,0x6,mp_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x00120170,0x14,mp_func_ptr_table_120170,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00120198,0xc,mp_func_ptr_table_120198,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001201A8,0xc,mp_func_ptr_table_1201a8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001201B8,0x14,mp_func_ptr_table_1201b8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001207A8,0x6,mp_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

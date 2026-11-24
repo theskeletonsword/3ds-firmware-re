@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00115690,0x8,act_get_tls_115690,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00124D40,0x30,act_svc_0x02_QueryMemory_124d40,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x02) (QueryMemory); 11 C lines
+0x00124FD0,0x24,act_svc_0x08_CreateThread_124fd0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x001250A0,0x8,act_get_tls_1250a0,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0010010C,0x272,act_ipc_server_loop_10010c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x124c70

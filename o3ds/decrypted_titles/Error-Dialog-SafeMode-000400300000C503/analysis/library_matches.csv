@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00117A2C,0x2c,lib_crt_fini_array_117a2c,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x00135554,0x22c,lib_crt_aeabi_ldivmod_135554,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-HID-Buttons-and-Touch-Input-0004013000001D02 @0x00104060 ""hid_crt_aeabi_ldivmod"" (o3ds_semantic)"
+0x00132BDC,0x150,lib_nw_lyt_Pane__vptr_init_132bdc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x00217558 ""nw_lyt_Pane__vptr_init_217558"" (rtti_vptr_init)"
+0x00106744,0x120,lib_nw_lyt_Picture__vptr_init_106744,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x00217430 ""nw_lyt_Picture__vptr_init_217430"" (rtti_vptr_init)"
+0x00106438,0x224,lib_nw_lyt_Window__vptr_init_106438,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Nintendo-3DS-Sound-0004001000021500 @0x0015D724 ""nw_lyt_Window__vptr_init_15d724"" (rtti_vptr_init)"
+0x001317F8,0x38,lib_gui_Widget__vptr_init_1317f8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x002165A8 ""gui_Widget__vptr_init_2165a8"" (rtti_vptr_init)"
+0x001317C4,0x2c,lib_gui_Widget__vptr_init_1317c4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x002165E0 ""gui_Widget__vptr_init_2165e0"" (rtti_vptr_init)"
+0x00126038,0x20,lib_nn_fnd_ExpHeapBase__vslot2_126038,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x00289E90 ""nn_fnd_ExpHeapBase__vslot2_289e90"" (rtti_vslot)"
+0x001042FC,0x30,lib_nw_lyt_AnimTransformBasic__vptr_init_1042fc,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x002AE908 ""nw_lyt_AnimTransformBasic__vptr_init_2ae908"" (rtti_vptr_init)"

@@ -1,0 +1,60 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00101570,0x6,Cherry_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00107D98,0x5,Cherry_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00109FFC,0xca4,Cherry_ipc_handler_cmd_0007_0008_0040_etc_109ffc,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0010AE44,0x18,Cherry_svc_0x21_CreateAddressArbiter_10ae44,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011226C,0x1c,Cherry_svc_0x2B_GetProcessInfo_11226c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00112288,0xc,Cherry_svc_0x28_GetSystemTick_112288,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00117184,0x3740,Cherry_ipc_dispatcher_117184,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C3, 0x000F01C5, 0x000F0200"
+0x0012694C,0xc,Cherry_svc_0x0A_SleepThread_12694c,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00137810,0xc,Cherry_func_ptr_table_137810,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00152270,0x18,Cherry_svc_0x13_CreateMutex_152270,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001549C0,0x18,Cherry_svc_0x22_ArbitrateAddress_1549c0,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00158068,0x18,Cherry_svc_0x17_CreateEvent_158068,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00160240,0x6,Cherry_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001A3CD0,0xc,Cherry_func_ptr_table_1a3cd0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A5246,0x6d6,Cherry_ipc_handler_cmd_0001_1a5246,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010107
+0x001A6A2C,0x5d8,Cherry_ipc_dispatcher_1a6a2c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x001AA240,0x6,Cherry_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001AAD58,0xc,Cherry_func_ptr_table_1aad58,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AAD64,0x5,Cherry_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x001AAD8C,0x9,Cherry_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x001AADD8,0x7,Cherry_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001AADDF,0x8,Cherry_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001ABE18,0x6,Cherry_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001AD804,0x7,Cherry_str_service_cecd_u,service_name_string,"client of (in ExHeader service-access list): ""cecd:u"""
+0x001AD80B,0x7,Cherry_str_service_cecd_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cecd:s"""
+0x001AD858,0x5,Cherry_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001AD85D,0x7,Cherry_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001B6818,0x10,Cherry_func_ptr_table_1b6818,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B68BC,0x10,Cherry_func_ptr_table_1b68bc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B6CF4,0x10,Cherry_func_ptr_table_1b6cf4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B6E2C,0x18,Cherry_func_ptr_table_1b6e2c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B7408,0xc,Cherry_func_ptr_table_1b7408,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B74FC,0x10,Cherry_func_ptr_table_1b74fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B7520,0x10,Cherry_func_ptr_table_1b7520,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B756C,0x10,Cherry_func_ptr_table_1b756c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B7668,0xc,Cherry_func_ptr_table_1b7668,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B76EC,0x10,Cherry_func_ptr_table_1b76ec,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B776C,0x10,Cherry_func_ptr_table_1b776c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B77F4,0x10,Cherry_func_ptr_table_1b77f4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B7EB0,0xc,Cherry_func_ptr_table_1b7eb0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B7FC4,0xc,Cherry_func_ptr_table_1b7fc4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B8D9F,0x6,Cherry_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001B8DA5,0x8,Cherry_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x001B8DAD,0x9,Cherry_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001B8DB6,0x9,Cherry_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001B8DBF,0x9,Cherry_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x001B8DC8,0x6,Cherry_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x001B8DCE,0x9,Cherry_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x001B8DD7,0x6,Cherry_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x001B8DDD,0x9,Cherry_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x001BB31F,0x6,Cherry_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001BB325,0x6,Cherry_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001BB32B,0x6,Cherry_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x001BB331,0x6,Cherry_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001BB337,0x9,Cherry_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001BB340,0x9,Cherry_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001BB35A,0x6,Cherry_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x001BB3FC,0x6,Cherry_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001BB402,0x6,Cherry_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""

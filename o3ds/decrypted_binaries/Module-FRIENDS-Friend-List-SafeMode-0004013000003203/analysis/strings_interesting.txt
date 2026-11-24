@@ -1,0 +1,34 @@
+0x0010D4C9	%dH ``n
+0x0011F930	%d.%d.%d.%d
+0x00133818	Exception: %s.
+0x00147037	` `%ses
+0x00147049	t%uhFeu
+0x0014C1E4	RWSTDERR
+0x00151A01	nwm::EXT
+0x00159A87	https://nasc.nintendowifi.net/ac
+0x00159AA8	https://nasc.test.nintendowifi.net/ac
+0x00159ACE	https://nasc.dev.nintendowifi.net/ac
+0x00159AFF	gsp::Lcd
+0x00159B08	gsp::Gpu
+0x00159BAE	%s: bad locale name: "%s"
+0x00159BC8	%s: range error: invalid range [%d, %d)
+0x00159BF0	%s: argument value %u out of range [0, %u)
+0x00159C1B	%s: conversion failed
+0x00159C31	%s: facet %u not found in "%s" locale
+0x00159C57	%s: failed to construct locale name
+0x00159C7B	%s: exception
+0x00159C89	%s: unexpected exception
+0x00159CA2	%s: invalid pointer %p
+0x00159CB9	%s: logic error
+0x00159CC9	%s: unspecified error
+0x00159CDF	%s: runtime error
+0x00159CF1	%s: underflow error
+0x00159D05	%s: overflow error
+0x00159D18	%s: stream object has set %s
+0x00159D35	%s: stream object has set ios::badbit
+0x00159D5B	%s: stream object has set ios::eofbit
+0x00159D81	%s: stream object has set ios::failbit
+0x00159DA8	%s: bad cast
+0x00159DB5	%s: length error: %u > %u
+0x00159DCF	%s: bad_alloc: out of memory
+0x00159DEC	%s: out of memory

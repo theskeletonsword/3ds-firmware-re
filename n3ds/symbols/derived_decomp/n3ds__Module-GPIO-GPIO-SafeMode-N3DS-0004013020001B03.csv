@@ -1,0 +1,14 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001005D0,0x18,gpio_svc_0x4A_AcceptSession_1005d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4A) (AcceptSession); 5 C lines
+0x001005E8,0x18,gpio_svc_0x4F_ReplyAndReceive_1005e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x4F) (ReplyAndReceive); 5 C lines
+0x00100C24,0x10,gpio_get_tls_100c24,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00100C38,0x34,gpio_svc_0x32_SendSyncRequest_100c38,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100C74,0x38,gpio_svc_0x32_SendSyncRequest_100c74,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100CB0,0x38,gpio_svc_0x32_SendSyncRequest_100cb0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00100E34,0x18,gpio_svc_0x35_GetProcessId_100e34,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x35) (GetProcessId); 5 C lines
+0x00100FD4,0xc,gpio_svc_0x0A_SleepThread_100fd4,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x0A) (SleepThread); 5 C lines
+0x00101828,0x4,gpio_svc_0x3C_Break_101828,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 10 C lines
+0x00101894,0x18,gpio_svc_0x2D_ConnectToPort_101894,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x2D) (ConnectToPort); 5 C lines
+0x00101CA0,0xc,gpio_get_tls_101ca0,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00101DAC,0x28,gpio_svc_0x23_CloseHandle_101dac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x0010016C,0x3a8,gpio_ipc_server_loop_10016c,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x1005e8

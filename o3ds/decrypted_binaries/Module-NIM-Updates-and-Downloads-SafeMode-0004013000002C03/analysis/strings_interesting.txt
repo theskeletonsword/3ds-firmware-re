@@ -1,0 +1,20 @@
+0x001045AC	%s%s%s%s
+0x00105EAC	%s/%016llX/tmd
+0x00105ED0	%caccountId=%s
+0x00105FB0	%s/%016llX/%08X
+0x0010B9E8	%s %s %06X %s
+0x00112124	%s%s%s%s
+0x00120900	%s-%llu-%llu
+0x00130548	%llu%s
+0x001305B0	%llu%s%s
+0x00135000	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x001350D8	https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x00135117	https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x00135393	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+0x001353E1	                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+0x0013542F	                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+0x00135478	                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+0x001354B8	                   xmlns:%s="urn:%s.wsapi.broadon.com">
+0x00135500	<%s:%s xsi:type="%s:%sRequestType">
+0x00135524	  <%s:Version>%s</%s:Version>
+0x00135542	  <%s:MessageId>%s</%s:MessageId>

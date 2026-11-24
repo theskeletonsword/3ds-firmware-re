@@ -1,0 +1,14 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0013A8EC,0x10c,strref_P_NoDataTex_00_13a8ec,string_reference,function references string(s): P_Icon_00 | P_NoDataTex_00
+0x0013AA04,0x60,strref_N_Scroll_00_13aa04,string_reference,function references string(s): N_Scroll_00
+0x0013ABB8,0x90,strref_T_Caption_00_13abb8,string_reference,function references string(s): T_Caption_00
+0x001433C4,0x134,strref_P_NoDataTex_00_1433c4,string_reference,function references string(s): P_Icon_00 | P_NoDataTex_00 | T_NoData_00
+0x0014CB74,0x9c,strref_T_DialToday_00_14cb74,string_reference,function references string(s): T_DialToday_00
+0x00151EA0,0x1ac,strref_T_Title_00_151ea0,string_reference,function references string(s): RootPane | T_Title_00
+0x001547C0,0x1cc,strref_s_start_1547c0,string_reference,function references string(s): %s_start
+0x00159600,0x128,strref_T_InfoTitle_00_159600,string_reference,function references string(s): T_InfoTitle_00 | your_record
+0x00159820,0x100,strref_N_WaitShort_00_159820,string_reference,function references string(s): N_WaitLong_00 | N_WaitShort_00 | wait_dialog3
+0x0015B2F4,0x394,strref_new_dialog_1_pl_15b2f4,string_reference,function references string(s): new_dialog_1_pl | new_dialog_1_sg
+0x0015B698,0x160,strref_B_Touch_00_15b698,string_reference,function references string(s): B_Touch_00
+0x0016BA94,0x78,strref_N_Scroll_00_16ba94,string_reference,function references string(s): N_Scroll_00
+0x001E3020,0x18,strref_dmp_Texture_3_ptTexOffset_1e3020,string_reference,function references string(s): dmp_Texture[3].ptTexOffset

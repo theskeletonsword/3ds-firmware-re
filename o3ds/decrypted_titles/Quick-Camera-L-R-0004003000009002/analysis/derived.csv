@@ -1,0 +1,87 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100364,0x5,CtrApp_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010067C,0x5,CtrApp_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010190C,0x6,CtrApp_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0010195C,0x6,CtrApp_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x00101C21,0x6,CtrApp_str_service_03F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""03F:F"""
+0x001043AC,0x6b2,CtrApp_ipc_dispatcher_1043ac,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x00070100, 0x00080300, 0x00080340, 0x00400004"
+0x0010994C,0x308,CtrApp_ipc_handler_cmd_000F_10994c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0010
+0x00109A2D,0x6,CtrApp_str_service_H_h9F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""H:h9F"""
+0x0010F264,0x388,CtrApp_ipc_handler_cmd_0001_0008_00E4_10f264,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010245, 0x00010245, 0x00080289, 0x00010245"
+0x0010F788,0x6e,CtrApp_ipc_handler_cmd_000D_000F_10f788,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000D0080, 0x000F008C"
+0x00128108,0x5,CtrApp_str_service_3F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""3F:F"""
+0x00140F86,0x5,CtrApp_str_service_3F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""3F:F"""
+0x001428D8,0x24,CtrApp_ipc_handler_cmd_000F_1428d8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F02C0
+0x00164BD7,0x6,CtrApp_str_service_H_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""H:F1F"""
+0x00165A48,0x6,CtrApp_str_service_nver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nver:"""
+0x00165B44,0x6,CtrApp_str_service_cver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cver:"""
+0x00177824,0x8,CtrApp_svc_0x14_ReleaseMutex_177824,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017D5B8,0x8,CtrApp_svc_0x03_ExitProcess_17d5b8,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017D6DC,0x8,CtrApp_svc_0x19_ClearEvent_17d6dc,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017D928,0x18,CtrApp_svc_0x17_CreateEvent_17d928,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017EE04,0x8,CtrApp_svc_0x32_SendSyncRequest_17ee04,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017EE2C,0x8,CtrApp_svc_0x24_WaitSynchronization1_17ee2c,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017F46C,0x8e,CtrApp_ipc_handler_cmd_000F_17f46c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0010
+0x0017FD48,0x8,CtrApp_svc_0x23_CloseHandle_17fd48,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0017FFE4,0x8,CtrApp_svc_0x28_GetSystemTick_17ffe4,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001800C0,0x18,CtrApp_svc_0x37_GetThreadId_1800c0,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00187A4C,0xd6,CtrApp_ipc_handler_cmd_0001_0005_187a4c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00050080"
+0x00187BB8,0x2a2,CtrApp_ipc_handler_cmd_0001_000F_187bb8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0101, 0x000F0101, 0x00010107, 0x00010107"
+0x00188264,0xc6,CtrApp_ipc_handler_cmd_0003_188264,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030101, 0x00030101"
+0x0018894C,0x290,CtrApp_ipc_handler_cmd_0001_18894c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00010080"
+0x00188C14,0x338,CtrApp_ipc_handler_cmd_0001_188c14,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010080, 0x00010245, 0x00010080"
+0x001938D4,0x18,CtrApp_svc_0x21_CreateAddressArbiter_1938d4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00193DD8,0x18,CtrApp_svc_0x13_CreateMutex_193dd8,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00193DF0,0x1c,CtrApp_svc_0x2B_GetProcessInfo_193df0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00193E0C,0x8,CtrApp_svc_0x1F_MapMemoryBlock_193e0c,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001960A4,0x8,CtrApp_svc_0x3C_Break_1960a4,svc_wrapper,"function body is a single `svc #0x3C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001960AC,0x18,CtrApp_svc_0x2D_ConnectToPort_1960ac,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001960C4,0x18,CtrApp_svc_0x35_GetProcessId_1960c4,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001960DC,0x8,CtrApp_svc_0x0C_SetThreadPriority_1960dc,svc_wrapper,"function body is a single `svc #0x0C` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001960E4,0x8,CtrApp_svc_0x0A_SleepThread_1960e4,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019689C,0x18,CtrApp_svc_0x22_ArbitrateAddress_19689c,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001968B4,0x8,CtrApp_svc_0x09_ExitThread_1968b4,svc_wrapper,"function body is a single `svc #0x09` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019722C,0x8,CtrApp_svc_0x18_SignalEvent_19722c,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00197234,0x8,CtrApp_svc_0x20_UnmapMemoryBlock_197234,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00199D20,0x18,CtrApp_svc_0x27_DuplicateHandle_199d20,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001ADF14,0x578,CtrApp_ipc_dispatcher_1adf14,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x001B824C,0x10,CtrApp_func_ptr_table_1b824c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BEFC8,0x381c,CtrApp_ipc_handler_cmd_000F_1befc8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0200
+0x001C2ABA,0x3560,CtrApp_ipc_handler_cmd_000F_1c2aba,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0200
+0x001C8C78,0x600,CtrApp_ipc_dispatcher_1c8c78,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x001CC4E4,0x6,CtrApp_str_service_cam_u,service_name_string,"client of (in ExHeader service-access list): ""cam:u"""
+0x001CC4EA,0x6,CtrApp_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x001CC550,0x6,CtrApp_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x001CC5F4,0x30,CtrApp_func_ptr_table_1cc5f4,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001CC640,0x30,CtrApp_func_ptr_table_1cc640,pointer_table,12 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001CFDE0,0x9,CtrApp_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x001CFE38,0x7,CtrApp_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001CFE3F,0x8,CtrApp_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001D65FE,0x6,CtrApp_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001D6624,0x5,CtrApp_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001D6629,0x7,CtrApp_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0029B5E4,0x10,CtrApp_func_ptr_table_29b5e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029C594,0x10,CtrApp_func_ptr_table_29c594,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029C63C,0x10,CtrApp_func_ptr_table_29c63c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029C6CC,0x10,CtrApp_func_ptr_table_29c6cc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029C76C,0xc,CtrApp_func_ptr_table_29c76c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029CC88,0xc,CtrApp_func_ptr_table_29cc88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0029CE4D,0x6,CtrApp_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x0029E7F6,0x7,CtrApp_str_service_TITLE_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""TITLE:"""
+0x0029E7FD,0x5,CtrApp_str_service_URL_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""URL:"""
+0x0029E802,0x7,CtrApp_str_service_MEBKM_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""MEBKM:"""
+0x002A0F2A,0x6,CtrApp_str_service_APT_S,service_name_string,"client of (in ExHeader service-access list): ""APT:S"""
+0x002A0F30,0x6,CtrApp_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x002A0F36,0x6,CtrApp_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x002A0F3C,0x8,CtrApp_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x002A0F44,0x9,CtrApp_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x002A0F4D,0x9,CtrApp_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x002A0F56,0x6,CtrApp_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x002A0F5C,0x6,CtrApp_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x002A0F62,0x6,CtrApp_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x002A0F68,0x9,CtrApp_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x002A0F71,0x9,CtrApp_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x002A0F7A,0x6,CtrApp_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x002A0F80,0x6,CtrApp_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x002BA480,0xc,CtrApp_func_ptr_table_2ba480,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002DBAB8,0xb,CtrApp_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

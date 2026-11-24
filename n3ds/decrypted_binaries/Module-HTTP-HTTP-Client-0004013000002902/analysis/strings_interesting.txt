@@ -1,0 +1,2 @@
+0x0011C2A4	http://
+0x0011C2AC	https://

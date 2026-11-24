@@ -1,0 +1,124 @@
+0x0010A6D4	font:/cbf_std.bcfnt.lz
+0x00116008	rom:/message/
+0x0011C708	rom:/sound/Main.bcsar
+0x00136A9C	RWSTDERR
+0x0014257C	%s: %s
+0x001427A0	Logger::write buffer size is not enough.
+0x001429A0	%s: %s
+0x001429B4	%s: %c
+0x001429C8	%s: %hhd
+0x001429E0	%s: %hd
+0x001429F4	%s: %d
+0x00142A08	%s: %ld
+0x00142A34	%s: %lld
+0x00142A4C	%s: %hhu
+0x00142A64	%s: %hu
+0x00142A78	%s: %u
+0x00142A8C	%s: %lu
+0x00142AB8	%s: %llu
+0x00142AE8	%s: %f
+0x00142B10	%s: %lf
+0x00142B38	%s: %Lf
+0x00142F40	test %d %d %d
+0x001432C0	HEL_CHECK_POINT(): %s, line %d
+0x0014DC90	%s%03d%s%d%s
+0x0014DD3C	%s%03d%s%s%s
+0x00150294	%s%03d
+0x00154D6C	Texture.arc
+0x00155D00	sdmc:/
+0x001594F4	cbf_std.bcfnt
+0x00159504	BcmaInfo.bclyt
+0x00159518	%s_%s_index.arc
+0x00159528	%s_%s_small.arc
+0x00159538	%s_%s_large.arc
+0x0015965C	%s_index.arc
+0x0015966C	%s_small.arc
+0x0015967C	%s_large.arc
+0x00159730	BcmaInfo.arc
+0x0015ADAC	Failure
+0x0015EA40	rom:/%s
+0x0015EA4C	rom:/%s.%s
+0x0015EA64	cbf_std.bcfnt
+0x0015EA74	%s.bclyt
+0x0018F2C4	(%s , %s, %s)
+0x001966D4	nw::lyt::Layout::CalculateMtx
+0x00196BB8	nw::lyt::Layout::Animate
+0x0019FB8C	Exception: %s.
+0x001ABA44	dsp::DSP
+0x001B3158	std::cin
+0x001B3163	std::cout
+0x001B316E	std::cerr
+0x001B3179	std::clog
+0x001B3184	std::wcin
+0x001B318F	std::wcout
+0x001B319A	std::wcerr
+0x001B31A5	std::wclog
+0x001B61FB	ebird.msbt
+0x001B6206	cbf_std.bcfnt
+0x001B62DC	Index.bclyt
+0x001B6600	rom:/layout/PowBtnFadeD00.arc
+0x001B661E	rom:/layout/ApltBootD00.arc
+0x001B663A	rom:/layout/PowBtnFadeU00.arc
+0x001B6658	rom:/layout/ApltBootU00.arc
+0x001B6674	rom:/layout/BtnTextSizeSafe00.arc
+0x001B6696	rom:/layout/BtnBackSafe00.arc
+0x001B66B4	rom:/layout/BtnLngSelSafe00.arc
+0x001B66D4	rom:/layout/CsrHeadLine00.arc
+0x001B66F2	rom:/layout/IndexBase00.arc
+0x001B670E	rom:/layout/PageBg00.arc
+0x001B6727	rom:/layout/BtnCloseLng00.arc
+0x001B6745	rom:/layout/BtnBackLng00.arc
+0x001B6762	rom:/layout/Dialog00.arc
+0x001B677B	rom:/layout/DialogMask00.arc
+0x001B6798	rom:/layout/PageShdw00.arc
+0x001B67B3	rom:/layout/BtnShdw00.arc
+0x001B67CD	rom:/layout/Dialog01.arc
+0x001B67E6	rom:/layout/Dialog02.arc
+0x001B67FF	rom:/layout/PureLocator2.arc
+0x001B681C	rom:/layout/HeadLineCheckMark.arc
+0x001B683E	rom:/layout/LanguageSelManual.arc
+0x001B6860	rom:/layout/AllNull.arc
+0x001B6878	rom:/layout/MainNull.arc
+0x001B6891	rom:/layout/IndexNull.arc
+0x001B68AB	rom:/layout/PageNum.arc
+0x001B68C3	rom:/layout/HomeNixSign.arc
+0x001B68DF	rom:/layout/WaitIcon.arc
+0x001B68F8	rom:/layout/PageGroup.arc
+0x001B6912	rom:/layout/SoftTitleHeader.arc
+0x001B6932	rom:/layout/LanguageSelHeader.arc
+0x001B6954	rom:/layout/LoadError.arc
+0x001B696E	rom:/layout/ScrollIndicator.arc
+0x001B698E	rom:/layout/PureLocator.arc
+0x001B69AA	rom:/layout/LangSelectorTest.arc
+0x001B69CB	rom:/layout/HLTxt.arc
+0x001B69E1	rom:/layout/BtnHeadLineTxt.arc
+0x001B6A00	rom:/layout/ContentsTxt.arc
+0x001B6A1C	rom:/layout/SideScrollArw.arc
+0x001B6A3A	rom:/shaders/nwlyt_PaneShader.shbin
+0x001B6A5E	rom:/shaders/nwfont_TextWriterShader.shbin
+0x001B6A89	rom:/shaders/nwfont_RectDrawerShader.shbin
+0x001B6AB4	rom:/shaders/nwlyt_ConstColorShader.shbin
+0x001B9195	gsp::Lcd
+0x001B919E	gsp::Gpu
+0x001B91B3	%s: bad locale name: "%s"
+0x001B91CD	%s: range error: invalid range [%d, %d)
+0x001B91F5	%s: argument value %u out of range [0, %u)
+0x001B9220	%s: conversion failed
+0x001B9236	%s: facet %u not found in "%s" locale
+0x001B925C	%s: failed to construct locale name
+0x001B9280	%s: exception
+0x001B928E	%s: unexpected exception
+0x001B92A7	%s: invalid pointer %p
+0x001B92BE	%s: logic error
+0x001B92CE	%s: unspecified error
+0x001B92E4	%s: runtime error
+0x001B92F6	%s: underflow error
+0x001B930A	%s: overflow error
+0x001B931D	%s: stream object has set %s
+0x001B933A	%s: stream object has set ios::badbit
+0x001B9360	%s: stream object has set ios::eofbit
+0x001B9386	%s: stream object has set ios::failbit
+0x001B93AD	%s: bad cast
+0x001B93BA	%s: length error: %u > %u
+0x001B93D4	%s: bad_alloc: out of memory
+0x001B93F1	%s: out of memory

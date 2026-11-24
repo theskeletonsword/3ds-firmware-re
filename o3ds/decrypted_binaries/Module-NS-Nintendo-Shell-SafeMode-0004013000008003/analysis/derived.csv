@@ -1,0 +1,53 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,ns_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100750,0x64,ns_ipc_client_cmd_0003_100750,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030084
+0x001007BC,0x38,ns_ipc_client_cmd_0014_1007bc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00140040
+0x00101A20,0x364,ns_ipc_handler_cmd_0001_0002_0003_etc_101a20,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020080, 0x00030040, 0x00040040"
+0x00102934,0x44,ns_ipc_client_cmd_0009_102934,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090042
+0x00102980,0x34,ns_ipc_client_cmd_0003_102980,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030080
+0x001029BC,0x34,ns_ipc_client_cmd_0005_1029bc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000500C0
+0x00108E20,0x18,ns_svc_0x21_CreateAddressArbiter_108e20,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108E38,0x1c,ns_svc_0x1E_CreateMemoryBlock_108e38,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00109454,0x34,ns_ipc_client_cmd_0001_109454,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010B2BC,0x18,ns_svc_0x2D_ConnectToPort_10b2bc,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B318,0x18,ns_svc_0x17_CreateEvent_10b318,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B4B4,0x48,ns_ipc_client_cmd_0004_10b4b4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x0010B5A8,0x18,ns_svc_0x4A_AcceptSession_10b5a8,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B5C0,0x18,ns_svc_0x4F_ReplyAndReceive_10b5c0,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B6D4,0x54,ns_ipc_client_cmd_0003_10b6d4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x0010BD88,0x18,ns_svc_0x35_GetProcessId_10bd88,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010BE18,0x30,ns_ipc_client_cmd_000C_10be18,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0080
+0x0010E5F4,0x30,ns_ipc_client_cmd_000A_10e5f4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000A0040
+0x0010EAA0,0x18,ns_svc_0x1A_CreateTimer_10eaa0,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010EF44,0x1e8,ns_ipc_dispatcher_10ef44,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00030001, 0x00040001, 0x00050001, 0x00050002"
+0x0010F284,0x30,ns_ipc_client_cmd_0009_10f284,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x0010F4D4,0x44,ns_ipc_client_cmd_0007_10f4d4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00070042
+0x0010F75C,0x1580,ns_ipc_handler_cmd_0001_0002_0003_etc_10f75c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000100C2, 0x00020043, 0x00030040, 0x00040040"
+0x00110E24,0x18,ns_svc_0x13_CreateMutex_110e24,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00110E3C,0x18,ns_svc_0x1B_SetTimer_110e3c,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00111B08,0x54,ns_ipc_client_cmd_0001_111b08,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010140
+0x00116374,0x34,ns_ipc_client_cmd_0004_116374,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040100
+0x00116C0C,0x4c,ns_ipc_client_cmd_0008_116c0c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080100
+0x00118098,0x6,ns_str_service_ps_ps,service_name_string,"client of (in ExHeader service-access list): ""ps:ps"""
+0x001180B8,0x5,ns_str_service_ns_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ns:s"""
+0x00118120,0x6,ns_str_service_font_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""font:"""
+0x00118250,0x5,ns_str_service_am_u,service_name_string,"client of (in ExHeader service-access list): ""am:u"""
+0x00118255,0x7,ns_str_service_am_net,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""am:net"""
+0x0011827C,0x6,ns_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x00118298,0x7,ns_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0011829F,0x8,ns_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001182A7,0x9,ns_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x001182C4,0x7,ns_str_service_pm_app,service_name_string,"client of (in ExHeader service-access list): ""pm:app"""
+0x001182CB,0x7,ns_str_service_pm_dbg,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""pm:dbg"""
+0x001182D8,0x6,ns_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x001182DE,0x6,ns_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x001182E4,0x9,ns_str_service_ptm_sysm,service_name_string,"client of (in ExHeader service-access list): ""ptm:sysm"""
+0x001182F4,0x5,ns_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001182F9,0x7,ns_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00118304,0x6,ns_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x00118474,0xc,ns_func_ptr_table_118474,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0011870B,0x6,ns_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x00118711,0x6,ns_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x00118791,0x6,ns_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001187A0,0x9,ns_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001187A9,0x9,ns_str_service_gsp__Gpu,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Gpu"""

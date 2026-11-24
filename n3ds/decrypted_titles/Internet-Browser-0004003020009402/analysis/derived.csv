@@ -1,0 +1,165 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00164D80,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00168D0C,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001797C0,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x0017FF1C,0x7,SKATER_str_service_phtsh_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""phtsh:"""
+0x0017FF24,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00180730,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x0018FE0F,0x6,SKATER_str_service_F_F0F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""F:F0F"""
+0x0019A23F,0x6,SKATER_str_service_F_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""F:F1F"""
+0x0019A70B,0x8,SKATER_str_service_6_j3jqj,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""6:j3jqj"""
+0x0019B7B8,0x6,SKATER_str_service_data_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""data:"""
+0x0019B888,0x14,SKATER_func_ptr_table_19b888,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001A60F8,0x58,SKATER_ipc_handler_cmd_003D_1a60f8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D0150
+0x001A6164,0x38,SKATER_ipc_handler_cmd_003D_1a6164,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D0150
+0x001BB161,0x6,SKATER_str_service_V_F1F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""V:F1F"""
+0x001C9304,0xee,SKATER_ipc_handler_cmd_0001_1c9304,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010004
+0x001CCCC8,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001D1E78,0xc,SKATER_func_ptr_table_1d1e78,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001D9400,0x1c,SKATER_ipc_handler_cmd_003D_1d9400,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x003D0090
+0x001ED6CC,0x18,SKATER_svc_0x22_ArbitrateAddress_1ed6cc,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001EDEEC,0x8,SKATER_svc_0x32_SendSyncRequest_1edeec,svc_wrapper,"function body is a single `svc #0x32` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001EDEF4,0x60,SKATER_ipc_handler_cmd_0038_1edef4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00380400
+0x001EF570,0x8,SKATER_svc_0x28_GetSystemTick_1ef570,svc_wrapper,"function body is a single `svc #0x28` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00204698,0x5,SKATER_str_service_3F_F,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""3F:F"""
+0x0024F300,0x6,SKATER_str_service_test_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""test:"""
+0x00254034,0x8,SKATER_svc_0x23_CloseHandle_254034,svc_wrapper,"function body is a single `svc #0x23` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0025BA50,0x8,SKATER_svc_0x24_WaitSynchronization1_25ba50,svc_wrapper,"function body is a single `svc #0x24` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00264834,0x18,SKATER_svc_0x21_CreateAddressArbiter_264834,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00264BC8,0x8,SKATER_svc_0x03_ExitProcess_264bc8,svc_wrapper,"function body is a single `svc #0x03` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00264BD0,0x1c,SKATER_svc_0x2B_GetProcessInfo_264bd0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00266350,0x40,SKATER_ipc_handler_cmd_0038_266350,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00380400
+0x00267140,0x18,SKATER_svc_0x27_DuplicateHandle_267140,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0026B1BC,0x8,SKATER_svc_0x14_ReleaseMutex_26b1bc,svc_wrapper,"function body is a single `svc #0x14` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0026FAF8,0x18,SKATER_svc_0x2D_ConnectToPort_26faf8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0026FB3C,0x18,SKATER_svc_0x35_GetProcessId_26fb3c,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002701E8,0x48,SKATER_ipc_handler_cmd_0019_2701e8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00190002
+0x002702EC,0x48,SKATER_ipc_handler_cmd_0008_2702ec,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x0027033C,0x48,SKATER_ipc_handler_cmd_0008_27033c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x00270840,0x5,SKATER_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00272900,0x6,SKATER_str_service_frd_u,service_name_string,"client of (in ExHeader service-access list): ""frd:u"""
+0x0027654C,0x18,SKATER_svc_0x17_CreateEvent_27654c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00276564,0x18,SKATER_svc_0x37_GetThreadId_276564,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00279FF8,0x48,SKATER_ipc_handler_cmd_004B_279ff8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x004B0002
+0x0027F50C,0x18,SKATER_svc_0x1A_CreateTimer_27f50c,svc_wrapper,"function body is a single `svc #0x1A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00286C34,0x18554,SKATER_ipc_dispatcher_286c34,ipc_dispatcher,"8 distinct header-shaped literals (command-id compare table), e.g. 0x00030100, 0x00030104, 0x000F0040, 0x000F0101"
+0x00287694,0x3a24,SKATER_ipc_dispatcher_287694,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x0028B3A4,0x7,SKATER_str_service_ldr_ro,service_name_string,"client of (in ExHeader service-access list): ""ldr:ro"""
+0x0028B5D0,0xca4,SKATER_ipc_handler_cmd_0007_0008_0040_etc_28b5d0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0028C2D0,0x5d8,SKATER_ipc_dispatcher_28c2d0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0028E948,0x8,SKATER_svc_0x19_ClearEvent_28e948,svc_wrapper,"function body is a single `svc #0x19` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029539C,0x170,SKATER_ipc_dispatcher_29539c,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010100, 0x000F008B, 0x00200080, 0x00E40103"
+0x0029AC00,0x1c,SKATER_svc_0x1E_CreateMemoryBlock_29ac00,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0029AC1C,0x8,SKATER_svc_0x18_SignalEvent_29ac1c,svc_wrapper,"function body is a single `svc #0x18` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002A50F8,0x8,SKATER_svc_0x1F_MapMemoryBlock_2a50f8,svc_wrapper,"function body is a single `svc #0x1F` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002A5100,0x8,SKATER_svc_0x20_UnmapMemoryBlock_2a5100,svc_wrapper,"function body is a single `svc #0x20` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002DE664,0x18,SKATER_svc_0x1B_SetTimer_2de664,svc_wrapper,"function body is a single `svc #0x1B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002DE67C,0x8,SKATER_svc_0x0A_SleepThread_2de67c,svc_wrapper,"function body is a single `svc #0x0A` + return (8 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x002F2E28,0x6,SKATER_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x003266AC,0x48,SKATER_ipc_handler_cmd_0008_3266ac,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080002
+0x003361FC,0x18,SKATER_svc_0x13_CreateMutex_3361fc,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00362E80,0xadc,SKATER_ipc_dispatcher_362e80,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0083, 0x000F0085, 0x000F008E"
+0x0037E148,0x6,SKATER_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x0037E454,0x7,SKATER_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0037E45B,0x8,SKATER_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x0037E4C8,0x5,SKATER_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0037E4CD,0x7,SKATER_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0037E4D4,0x6,SKATER_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0037EFE8,0x6,SKATER_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x0037F050,0x10,SKATER_func_ptr_table_37f050,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003803FA,0x5,SKATER_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x003816AC,0x9,SKATER_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x003816D8,0x7,SKATER_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x00381CD4,0xc,SKATER_func_ptr_table_381cd4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0038765C,0x7,SKATER_str_service_cecd_u,service_name_string,"client of (in ExHeader service-access list): ""cecd:u"""
+0x00387663,0x7,SKATER_str_service_cecd_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cecd:s"""
+0x00387674,0x7,SKATER_str_service_ir_rst,service_name_string,"client of (in ExHeader service-access list): ""ir:rst"""
+0x0038767B,0x7,SKATER_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x0038E06A,0x7,SKATER_str_service_boss_U,service_name_string,"client of (in ExHeader service-access list): ""boss:U"""
+0x0038E071,0x7,SKATER_str_service_boss_P,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:P"""
+0x0038E078,0x7,SKATER_str_service_boss_M,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:M"""
+0x0038E07F,0x8,SKATER_str_service_nim_aoc,service_name_string,"client of (in ExHeader service-access list): ""nim:aoc"""
+0x003980BD,0x7,SKATER_str_service_am_app,service_name_string,"client of (in ExHeader service-access list): ""am:app"""
+0x003A2F38,0xc,SKATER_func_ptr_table_3a2f38,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003A3114,0xc,SKATER_func_ptr_table_3a3114,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AF2AC,0xc,SKATER_func_ptr_table_3af2ac,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AF504,0xc,SKATER_func_ptr_table_3af504,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003AF788,0xc,SKATER_func_ptr_table_3af788,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003B4E7C,0xc,SKATER_func_ptr_table_3b4e7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003C0938,0xc,SKATER_func_ptr_table_3c0938,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003C72B8,0x8,SKATER_str_service_mvd_STD,service_name_string,"client of (in ExHeader service-access list): ""mvd:STD"""
+0x003CD378,0xc,SKATER_func_ptr_table_3cd378,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDDC8,0x14,SKATER_func_ptr_table_3cddc8,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDDE0,0xc,SKATER_func_ptr_table_3cdde0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDE00,0xc,SKATER_func_ptr_table_3cde00,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDEE8,0xc,SKATER_func_ptr_table_3cdee8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDF00,0x18,SKATER_func_ptr_table_3cdf00,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CDFCC,0xc,SKATER_func_ptr_table_3cdfcc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE15C,0x10,SKATER_func_ptr_table_3ce15c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE18C,0x1c,SKATER_func_ptr_table_3ce18c,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE21C,0xc,SKATER_func_ptr_table_3ce21c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE23C,0x14,SKATER_func_ptr_table_3ce23c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE3A0,0xc,SKATER_func_ptr_table_3ce3a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE460,0xc,SKATER_func_ptr_table_3ce460,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE490,0xc,SKATER_func_ptr_table_3ce490,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE4D8,0xc,SKATER_func_ptr_table_3ce4d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE508,0xc,SKATER_func_ptr_table_3ce508,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE578,0xc,SKATER_func_ptr_table_3ce578,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE5D0,0xc,SKATER_func_ptr_table_3ce5d0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE600,0xc,SKATER_func_ptr_table_3ce600,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE738,0xc,SKATER_func_ptr_table_3ce738,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE758,0xc,SKATER_func_ptr_table_3ce758,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE778,0x14,SKATER_func_ptr_table_3ce778,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE7CC,0xc,SKATER_func_ptr_table_3ce7cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE8E4,0xc,SKATER_func_ptr_table_3ce8e4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE900,0xc,SKATER_func_ptr_table_3ce900,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CE930,0xc,SKATER_func_ptr_table_3ce930,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEAAC,0x10,SKATER_func_ptr_table_3ceaac,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEAFC,0x10,SKATER_func_ptr_table_3ceafc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEBC8,0x10,SKATER_func_ptr_table_3cebc8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEE2C,0xc,SKATER_func_ptr_table_3cee2c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEF5C,0x10,SKATER_func_ptr_table_3cef5c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CEFE8,0x10,SKATER_func_ptr_table_3cefe8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF04C,0x10,SKATER_func_ptr_table_3cf04c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF070,0x18,SKATER_func_ptr_table_3cf070,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003CF14C,0x10,SKATER_func_ptr_table_3cf14c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D0740,0xc,SKATER_func_ptr_table_3d0740,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1BF4,0xc,SKATER_func_ptr_table_3d1bf4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D1EA4,0x10,SKATER_func_ptr_table_3d1ea4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D2328,0x10,SKATER_func_ptr_table_3d2328,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D25B0,0x10,SKATER_func_ptr_table_3d25b0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D2C38,0x20,SKATER_func_ptr_table_3d2c38,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D2E58,0x20,SKATER_func_ptr_table_3d2e58,pointer_table,8 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D3060,0x14,SKATER_func_ptr_table_3d3060,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D30B8,0xc,SKATER_func_ptr_table_3d30b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D30E8,0xc,SKATER_func_ptr_table_3d30e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D3124,0x10,SKATER_func_ptr_table_3d3124,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D33B8,0xc,SKATER_func_ptr_table_3d33b8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D33F8,0x10,SKATER_func_ptr_table_3d33f8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D4908,0x10,SKATER_func_ptr_table_3d4908,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D4980,0x10,SKATER_func_ptr_table_3d4980,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D49D8,0x10,SKATER_func_ptr_table_3d49d8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003D9CB2,0x6,SKATER_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x003D9E42,0x6,SKATER_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x003D9EDF,0x6,SKATER_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x003D9EE5,0x6,SKATER_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x003D9FBC,0x9,SKATER_str_service_datapub_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""datapub:"""
+0x003D9FC5,0x9,SKATER_str_service_datasub_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""datasub:"""
+0x003DA008,0x6,SKATER_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x003DA00E,0x6,SKATER_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x003DA014,0x6,SKATER_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x003DA16D,0x9,SKATER_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x003DA176,0x9,SKATER_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x003DA17F,0x8,SKATER_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x003DA187,0x8,SKATER_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x003DA18F,0x9,SKATER_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x003DA198,0x9,SKATER_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x003DA863,0x8,SKATER_str_service_mailto_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mailto:"""
+0x003DDD90,0x9,SKATER_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x003DDD99,0x6,SKATER_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x003DDD9F,0x9,SKATER_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x003DDDA8,0x6,SKATER_str_service_ptm_u,service_name_string,"client of (in ExHeader service-access list): ""ptm:u"""
+0x003DDDAE,0x9,SKATER_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x003DE3F4,0x6,SKATER_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x003EA320,0x18,SKATER_func_ptr_table_3ea320,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x003EABD4,0xb,SKATER_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

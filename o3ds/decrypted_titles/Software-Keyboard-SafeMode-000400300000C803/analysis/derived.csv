@@ -1,0 +1,111 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100180,0x18,swkbd_svc_0x27_DuplicateHandle_100180,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011041C,0x63c,swkbd_ipc_dispatcher_11041c,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0083, 0x000F0085, 0x000F008E"
+0x001225E4,0x6,swkbd_str_service_dict_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dict:"""
+0x00126AF0,0x6,swkbd_str_service_dict_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dict:"""
+0x00135E94,0x5,swkbd_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00138E88,0x10,swkbd_func_ptr_table_138e88,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0013A234,0x18,swkbd_svc_0x21_CreateAddressArbiter_13a234,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0013A24C,0x1c,swkbd_svc_0x2B_GetProcessInfo_13a24c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0013A8A4,0x5,swkbd_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0013ADBC,0x34,swkbd_ipc_client_cmd_0001_13adbc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0013BE20,0x4c,swkbd_ipc_client_cmd_0002_13be20,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020080
+0x0013BED0,0x30,swkbd_ipc_client_cmd_0004_13bed0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040040
+0x0013EB0C,0x383c,swkbd_ipc_dispatcher_13eb0c,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x0014271C,0x5a0,swkbd_ipc_dispatcher_14271c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0014515C,0x30,swkbd_ipc_client_cmd_0042_14515c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00420080
+0x00145194,0x6c,swkbd_ipc_client_cmd_0005_145194,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050040
+0x00145208,0x48,swkbd_ipc_client_cmd_0028_145208,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00280044
+0x00154120,0x18,swkbd_svc_0x17_CreateEvent_154120,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00154D9C,0x18,swkbd_svc_0x2D_ConnectToPort_154d9c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00159870,0x18,swkbd_svc_0x35_GetProcessId_159870,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00165970,0x40,swkbd_ipc_client_cmd_000B_165970,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B0040
+0x001659B8,0x68,swkbd_ipc_client_cmd_0041_1659b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00410040
+0x00165A28,0x30,swkbd_ipc_client_cmd_0003_165a28,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030040
+0x00168B10,0xbfc,swkbd_ipc_handler_cmd_0040_168b10,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400050
+0x00169920,0x10,swkbd_svc_0x3C_Break_169920,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00169930,0x1c,swkbd_svc_0x1E_CreateMemoryBlock_169930,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0016A97C,0x14680,swkbd_ipc_client_cmd_000B_16a97c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B0040
+0x0016AEC4,0x48,swkbd_ipc_client_cmd_002C_16aec4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x002C0044
+0x0016AFB4,0x24,swkbd_ipc_client_cmd_0017_16afb4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00170040
+0x0016EC48,0x3804,swkbd_ipc_dispatcher_16ec48,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x0017E9A4,0x5bc8,swkbd_ipc_client_cmd_0009_17e9a4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090082
+0x0017EF68,0x40,swkbd_ipc_client_cmd_0016_17ef68,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00160042
+0x0017F730,0x40,swkbd_ipc_client_cmd_0009_17f730,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x0017F778,0x30,swkbd_ipc_client_cmd_0043_17f778,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00430040
+0x0017F82C,0x50,swkbd_ipc_client_cmd_000C_17f82c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0104
+0x0017F884,0x58,swkbd_ipc_client_cmd_000F_17f884,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000F0100
+0x0017F8E4,0x94,swkbd_ipc_client_cmd_000E_17f8e4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E0080
+0x0017F980,0x3c,swkbd_ipc_client_cmd_003E_17f980,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003E0080
+0x0017F9C4,0x44,swkbd_ipc_client_cmd_001F_17f9c4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001F0084
+0x0017FA44,0x30,swkbd_ipc_client_cmd_0019_17fa44,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00190040
+0x00181734,0x7e0,swkbd_ipc_handler_cmd_0001_00E4_181734,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010140, 0x00E40100"
+0x00183FDC,0x60,swkbd_ipc_client_cmd_0011_183fdc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001100C2
+0x00184FA8,0x58,swkbd_ipc_client_cmd_0002_184fa8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020084
+0x00185004,0x94,swkbd_ipc_client_cmd_000D_185004,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D0080
+0x001850A0,0x44,swkbd_ipc_client_cmd_0040_1850a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00400042
+0x001850EC,0x30,swkbd_ipc_client_cmd_003F_1850ec,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003F0040
+0x00185164,0x34,swkbd_ipc_client_cmd_003D_185164,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x003D0040
+0x001851E0,0x34,swkbd_ipc_client_cmd_0013_1851e0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00130040
+0x0018992C,0x50,swkbd_ipc_client_cmd_0013_18992c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00130042
+0x00191ECC,0x30,swkbd_ipc_client_cmd_0003_191ecc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030040
+0x001A11E4,0x6,swkbd_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001A11F8,0x7,swkbd_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001A11FF,0x8,swkbd_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001A1228,0x5,swkbd_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001A122D,0x7,swkbd_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001A3078,0x6,swkbd_str_service_dict_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""dict:"""
+0x001A3088,0x9,swkbd_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x001A30EC,0x9,swkbd_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001A30F5,0x9,swkbd_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001A4114,0x8,swkbd_str_service_ngword_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ngword:"""
+0x001A80D0,0x6,swkbd_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001A80DC,0x6,swkbd_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x001AB798,0xc,swkbd_func_ptr_table_1ab798,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AB7E0,0x10,swkbd_func_ptr_table_1ab7e0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AB85C,0x10,swkbd_func_ptr_table_1ab85c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AB8D4,0xc,swkbd_func_ptr_table_1ab8d4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AB958,0x10,swkbd_func_ptr_table_1ab958,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AB9D4,0x10,swkbd_func_ptr_table_1ab9d4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABA5C,0x10,swkbd_func_ptr_table_1aba5c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABB3C,0xc,swkbd_func_ptr_table_1abb3c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABBE0,0xc,swkbd_func_ptr_table_1abbe0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABCE8,0xc,swkbd_func_ptr_table_1abce8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABD10,0xc,swkbd_func_ptr_table_1abd10,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABD54,0x14,swkbd_func_ptr_table_1abd54,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABDA0,0x14,swkbd_func_ptr_table_1abda0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABDE4,0x14,swkbd_func_ptr_table_1abde4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABE14,0xc,swkbd_func_ptr_table_1abe14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABEA0,0x14,swkbd_func_ptr_table_1abea0,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABEEC,0xc,swkbd_func_ptr_table_1abeec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABF50,0x14,swkbd_func_ptr_table_1abf50,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001ABFB4,0x14,swkbd_func_ptr_table_1abfb4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC098,0x14,swkbd_func_ptr_table_1ac098,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC0F4,0xc,swkbd_func_ptr_table_1ac0f4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC170,0x14,swkbd_func_ptr_table_1ac170,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC298,0x10,swkbd_func_ptr_table_1ac298,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC320,0xc,swkbd_func_ptr_table_1ac320,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC3CC,0xc,swkbd_func_ptr_table_1ac3cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC4BC,0xc,swkbd_func_ptr_table_1ac4bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC4CC,0xc,swkbd_func_ptr_table_1ac4cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC510,0xc,swkbd_func_ptr_table_1ac510,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC544,0xc,swkbd_func_ptr_table_1ac544,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC614,0xc,swkbd_func_ptr_table_1ac614,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC648,0xc,swkbd_func_ptr_table_1ac648,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC658,0xc,swkbd_func_ptr_table_1ac658,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC688,0xc,swkbd_func_ptr_table_1ac688,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC698,0xc,swkbd_func_ptr_table_1ac698,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC6C8,0xc,swkbd_func_ptr_table_1ac6c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC6D8,0xc,swkbd_func_ptr_table_1ac6d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC708,0xc,swkbd_func_ptr_table_1ac708,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC718,0xc,swkbd_func_ptr_table_1ac718,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC75C,0xc,swkbd_func_ptr_table_1ac75c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC76C,0xc,swkbd_func_ptr_table_1ac76c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC79C,0xc,swkbd_func_ptr_table_1ac79c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC7D8,0xc,swkbd_func_ptr_table_1ac7d8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC7E8,0xc,swkbd_func_ptr_table_1ac7e8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001AC895,0x6,swkbd_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x001AC89B,0x6,swkbd_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001AF4BE,0x6,swkbd_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001AF4C4,0x9,swkbd_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001AF4CD,0x9,swkbd_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""

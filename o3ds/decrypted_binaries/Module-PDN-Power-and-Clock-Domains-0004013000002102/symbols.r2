@@ -1,0 +1,109 @@
+# Radare2 symbol/flag script for SysModule 0004013000002102
+# Uso: r2 -i symbols.r2 code.bin   (o dentro de r2: . symbols.r2)
+# Base address del .code: 0x00000000 (ajustar con -B si se carga en otro VA)
+
+# ==== Flags (funciones detectadas) ====
+f fcn_00000000 @ 0x00000000
+f fcn_00000024 @ 0x00000024
+f fcn_00000070 @ 0x00000070
+f fcn_00000110 @ 0x00000110
+f fcn_00000164 @ 0x00000164
+f fcn_00000528 @ 0x00000528
+f fcn_0000055c @ 0x0000055C
+f fcn_000005c4 @ 0x000005C4
+f fcn_000005dc @ 0x000005DC
+f fcn_000005e0 @ 0x000005E0
+f fcn_00000644 @ 0x00000644
+f fcn_00000828 @ 0x00000828
+f fcn_00000880 @ 0x00000880
+f fcn_00000918 @ 0x00000918
+f fcn_00000960 @ 0x00000960
+f fcn_000009a8 @ 0x000009A8
+f fcn_00000a64 @ 0x00000A64
+f fcn_00000aa0 @ 0x00000AA0
+f fcn_00000ac4 @ 0x00000AC4
+f fcn_00000ad8 @ 0x00000AD8
+f fcn_00000aec @ 0x00000AEC
+f fcn_00000b00 @ 0x00000B00
+f fcn_00000b3c @ 0x00000B3C
+f fcn_00000b78 @ 0x00000B78
+f fcn_00000bb4 @ 0x00000BB4
+f fcn_00000bcc @ 0x00000BCC
+f fcn_00000c18 @ 0x00000C18
+f fcn_00000cbc @ 0x00000CBC
+f fcn_00000cdc @ 0x00000CDC
+f fcn_00000d10 @ 0x00000D10
+f fcn_00000d14 @ 0x00000D14
+f fcn_00000d48 @ 0x00000D48
+f fcn_00000e3c @ 0x00000E3C
+f fcn_00000e60 @ 0x00000E60
+f fcn_00000e70 @ 0x00000E70
+f fcn_00000ec0 @ 0x00000EC0
+f fcn_00000f30 @ 0x00000F30
+f fcn_00001004 @ 0x00001004
+f fcn_0000102c @ 0x0000102C
+f fcn_00001030 @ 0x00001030
+f fcn_00001050 @ 0x00001050
+f fcn_00001088 @ 0x00001088
+f fcn_000011d4 @ 0x000011D4
+f fcn_0000120c @ 0x0000120C
+f fcn_00001348 @ 0x00001348
+f fcn_000013ac @ 0x000013AC
+f fcn_00001400 @ 0x00001400
+f fcn_00001440 @ 0x00001440
+f fcn_00001444 @ 0x00001444
+f fcn_000014b8 @ 0x000014B8
+f fcn_0000159c @ 0x0000159C
+f fcn_00001608 @ 0x00001608
+f fcn_0000160c @ 0x0000160C
+f fcn_00001754 @ 0x00001754
+f fcn_00001764 @ 0x00001764
+f fcn_00001784 @ 0x00001784
+f fcn_0000179c @ 0x0000179C
+f fcn_00001978 @ 0x00001978
+f fcn_00001998 @ 0x00001998
+f fcn_0000199c @ 0x0000199C
+f fcn_000019cc @ 0x000019CC
+f fcn_000019d4 @ 0x000019D4
+f fcn_00001a30 @ 0x00001A30
+f fcn_00001a84 @ 0x00001A84
+f fcn_00001aac @ 0x00001AAC
+f fcn_00001b10 @ 0x00001B10
+f fcn_00001ba8 @ 0x00001BA8
+f fcn_00001bc8 @ 0x00001BC8
+f fcn_00001be8 @ 0x00001BE8
+f fcn_00001c40 @ 0x00001C40
+f fcn_00001c60 @ 0x00001C60
+f fcn_00001c88 @ 0x00001C88
+f fcn_00001ca0 @ 0x00001CA0
+f fcn_00001cec @ 0x00001CEC
+f fcn_00001d0c @ 0x00001D0C
+f fcn_00001d28 @ 0x00001D28
+f fcn_00001d3c @ 0x00001D3C
+f fcn_00001d48 @ 0x00001D48
+f fcn_00001d4c @ 0x00001D4C
+f fcn_00001d98 @ 0x00001D98
+f fcn_00001e10 @ 0x00001E10
+f fcn_00001e18 @ 0x00001E18
+f fcn_00001e68 @ 0x00001E68
+f fcn_00002250 @ 0x00002250
+f fcn_00002254 @ 0x00002254
+f fcn_0000229c @ 0x0000229C
+f fcn_000022a4 @ 0x000022A4
+f fcn_000022e8 @ 0x000022E8
+f fcn_00002320 @ 0x00002320
+f fcn_00002334 @ 0x00002334
+f fcn_0000233c @ 0x0000233C
+
+# ==== SVCs ====
+f svc_0x9EF000 @ 0x0000006C
+f svc_0x76F000 @ 0x000000BC
+
+# ==== Comentarios semánticos (solo lo verificado) ====
+CC code_entry @ 0x00000000
+CC svc_0x9e @ 0x0000006c  ; SVC 0x9e (syscall ARM11)
+CC svc_0x76 @ 0x000000bc  ; SVC 0x76 (syscall ARM11)
+CC fcn_00000164 @ 0x00000164 ; funcion grande (912 B, 37 bloques)
+CC fcn_00001e68 @ 0x00001e68 ; funcion mas grande (756 B, 35 bloques)
+
+# Nota: los nombres fcn_* son syntheticos (radare2). No son nombres semanticos confirmados.

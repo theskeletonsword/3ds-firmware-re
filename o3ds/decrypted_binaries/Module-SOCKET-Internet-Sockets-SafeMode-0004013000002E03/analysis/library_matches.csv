@@ -1,0 +1,3 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010FC64,0x2c,lib_crt_fini_array_10fc64,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x0011CEDC,0x20,lib_nn_fnd_ExpHeapBase__vslot2_11cedc,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x00289E90 ""nn_fnd_ExpHeapBase__vslot2_289e90"" (rtti_vslot)"

@@ -1,0 +1,61 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,nim_svc_0x13_CreateMutex_10004c,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100064,0x18,nim_svc_0x27_DuplicateHandle_100064,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010046C,0x4c,nim_ipc_client_cmd_0001_10046c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010040
+0x00100524,0x64,nim_ipc_client_cmd_0003_100524,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030084
+0x00100590,0x64,nim_ipc_client_cmd_000D_100590,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D0084
+0x00105060,0x2c,nim_ipc_client_cmd_002E_105060,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x002E0040
+0x00105090,0x2c,nim_ipc_client_cmd_0034_105090,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00340040
+0x001086C4,0x18,nim_svc_0x4A_AcceptSession_1086c4,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001091B8,0x54,nim_ipc_client_cmd_0003_1091b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00109214,0x48,nim_ipc_client_cmd_0004_109214,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00109264,0x30,nim_ipc_client_cmd_0009_109264,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090040
+0x0010A3C8,0x34,nim_ipc_client_cmd_0001_10a3c8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010A6F8,0x18,nim_svc_0x2D_ConnectToPort_10a6f8,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A710,0x18,nim_svc_0x21_CreateAddressArbiter_10a710,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010AE14,0x40,nim_ipc_client_cmd_0001_10ae14,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010044
+0x0010B438,0x10,nim_svc_0x3C_Break_10b438,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B448,0x1c,nim_svc_0x1E_CreateMemoryBlock_10b448,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B940,0x54,nim_ipc_client_cmd_0005_10b940,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00050100
+0x0010BF28,0xe0,nim_ipc_handler_cmd_0001_0002_0003_etc_10bf28,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010042, 0x00020040, 0x00030040, 0x00040040"
+0x0010C024,0x1960,nim_ipc_handler_cmd_0001_0002_0003_etc_10c024,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030240, 0x00040040"
+0x0010D9E8,0x188,nim_ipc_handler_cmd_0001_0002_0003_etc_10d9e8,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020340, 0x00030040, 0x00040040"
+0x0010FC50,0x3c,nim_ipc_client_cmd_0033_10fc50,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00330040
+0x0010FC90,0x3c,nim_ipc_client_cmd_0030_10fc90,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00300080
+0x0011DDC4,0x18,nim_svc_0x4F_ReplyAndReceive_11ddc4,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0011E8A0,0x18,nim_svc_0x35_GetProcessId_11e8a0,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00121310,0x5,nim_str_service_urn_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""urn:"""
+0x00122048,0x18,nim_svc_0x17_CreateEvent_122048,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012BBA0,0x38,nim_ipc_client_cmd_0014_12bba0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00140040
+0x0012CF9C,0x11,nim_str_service_soapenv_Envelope,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soapenv:Envelope"""
+0x0012CFB0,0xd,nim_str_service_soapenv_Body,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""soapenv:Body"""
+0x0012F3C8,0x30,nim_ipc_client_cmd_0001_12f3c8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00130504,0x7,nim_str_service_https_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""https:"""
+0x00132D9C,0x7,nim_str_service_https_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""https:"""
+0x00134584,0x2c,nim_ipc_client_cmd_000E_134584,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000E0040
+0x00134614,0x58,nim_ipc_client_cmd_0002_134614,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020082
+0x00134670,0x2c,nim_ipc_client_cmd_0003_134670,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030040
+0x001346A0,0x44,nim_ipc_client_cmd_000C_1346a0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0102
+0x001347C8,0x44,nim_ipc_client_cmd_0023_1347c8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x002300C0
+0x001348B8,0x44,nim_ipc_client_cmd_001B_1348b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001B0102
+0x00134900,0x34,nim_ipc_client_cmd_0008_134900,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080042
+0x001350C0,0x6,nim_str_service_nim_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nim:u"""
+0x001350C6,0x6,nim_str_service_nim_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nim:s"""
+0x001350CC,0x8,nim_str_service_nim_ndm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nim:ndm"""
+0x001351C8,0x7,nim_str_service_nimdb_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nimdb:"""
+0x001352A8,0x5,nim_str_service_am_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""am:u"""
+0x001352AD,0x7,nim_str_service_am_net,service_name_string,"client of (in ExHeader service-access list): ""am:net"""
+0x001352B8,0x6,nim_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x001352F4,0x7,nim_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001352FB,0x8,nim_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x00135304,0x7,nim_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x00135310,0x7,nim_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x00135328,0x6,nim_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0013532E,0x6,nim_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x00135334,0x9,nim_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x00135344,0x5,nim_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00135349,0x7,nim_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00135354,0x6,nim_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x001355F4,0x6,nim_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x0013588C,0x14,nim_func_ptr_table_13588c,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00135C80,0x6,nim_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

@@ -1,0 +1,64 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00102884,0x10,error_func_ptr_table_102884,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00103728,0x18,error_svc_0x21_CreateAddressArbiter_103728,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103C30,0x5,error_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00107268,0x3a24,error_ipc_dispatcher_107268,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x0010B11C,0x5d8,error_ipc_dispatcher_10b11c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0010FE8C,0xca4,error_ipc_handler_cmd_0007_0008_0040_etc_10fe8c,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x00110F68,0x18,error_svc_0x2D_ConnectToPort_110f68,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00110F80,0x1c,error_svc_0x1E_CreateMemoryBlock_110f80,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00114FC0,0x1d64,error_ipc_dispatcher_114fc0,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0200, 0x000F028B, 0x000F028C"
+0x00123F14,0x22000,error_ipc_handler_cmd_0004_000B_123f14,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x00125404,0x18,error_svc_0x22_ArbitrateAddress_125404,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012EE5C,0x18,error_svc_0x17_CreateEvent_12ee5c,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012F9A0,0x1c,error_svc_0x2B_GetProcessInfo_12f9a0,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00133128,0xc,error_svc_0x28_GetSystemTick_133128,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00133134,0xc,error_svc_0x0A_SleepThread_133134,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0013EBE4,0x18,error_svc_0x27_DuplicateHandle_13ebe4,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00145F20,0x648,error_ipc_dispatcher_145f20,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x0014D10C,0x6,error_str_service_save_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""save:"""
+0x0014F268,0x6,error_str_service_save_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""save:"""
+0x0014FCFC,0x5,error_str_service_msg_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""msg:"""
+0x0014FD04,0x6,error_str_service_eula_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""eula:"""
+0x0014FE54,0x5,error_str_service_msg_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""msg:"""
+0x0014FE64,0x6,error_str_service_eula_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""eula:"""
+0x0015807C,0x7,error_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x00158083,0x8,error_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001580B8,0x5,error_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001580BD,0x7,error_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001581CC,0x9,error_str_service_csnd_SND,service_name_string,"client of (in ExHeader service-access list): ""csnd:SND"""
+0x00158240,0x6,error_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x0015A53C,0xc,error_func_ptr_table_15a53c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A584,0x10,error_func_ptr_table_15a584,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A604,0xc,error_func_ptr_table_15a604,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A678,0xc,error_func_ptr_table_15a678,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A6FC,0x10,error_func_ptr_table_15a6fc,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A778,0x10,error_func_ptr_table_15a778,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A800,0x10,error_func_ptr_table_15a800,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A8E0,0xc,error_func_ptr_table_15a8e0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015A984,0xc,error_func_ptr_table_15a984,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AA8C,0x18,error_func_ptr_table_15aa8c,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AB18,0x14,error_func_ptr_table_15ab18,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015ABB0,0x10,error_func_ptr_table_15abb0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015ABF8,0xc,error_func_ptr_table_15abf8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AC1C,0xc,error_func_ptr_table_15ac1c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AC9C,0xc,error_func_ptr_table_15ac9c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AD44,0xc,error_func_ptr_table_15ad44,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AD7C,0xc,error_func_ptr_table_15ad7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AD94,0xc,error_func_ptr_table_15ad94,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015ADB8,0xc,error_func_ptr_table_15adb8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AE04,0x14,error_func_ptr_table_15ae04,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AE40,0xc,error_func_ptr_table_15ae40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0015AF1F,0x6,error_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x0015D7D0,0x6,error_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x0015D7D6,0x6,error_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x0015D7DC,0x6,error_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x0015D7E2,0x6,error_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x0015D7E8,0x6,error_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0015D7EE,0x9,error_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x0015D7F7,0x9,error_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x0015D911,0x6,error_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x0015D917,0x8,error_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x0015D91F,0x8,error_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x0015D927,0x9,error_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x0015D930,0x9,error_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""

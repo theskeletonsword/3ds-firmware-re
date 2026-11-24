@@ -1,0 +1,118 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00103DFC,0x18,mcopy_svc_0x38_GetResourceLimit_103dfc,svc_wrapper,"function body is a single `svc #0x38` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105654,0x10,mcopy_func_ptr_table_105654,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001069A4,0x18,mcopy_svc_0x21_CreateAddressArbiter_1069a4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00106EE4,0x5,mcopy_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010CB78,0x1c,mcopy_svc_0x2B_GetProcessInfo_10cb78,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010D2C4,0x48,mcopy_ipc_client_cmd_0001_10d2c4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010D318,0x48,mcopy_ipc_client_cmd_0019_10d318,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00190002
+0x0010D3AC,0x48,mcopy_ipc_client_cmd_0001_10d3ac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010D480,0x48,mcopy_ipc_client_cmd_0001_10d480,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010D514,0x48,mcopy_ipc_client_cmd_0008_10d514,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010D568,0x48,mcopy_ipc_client_cmd_0008_10d568,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010D5BC,0x48,mcopy_ipc_client_cmd_0001_10d5bc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010D6D0,0x48,mcopy_ipc_client_cmd_0001_10d6d0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0010D764,0x48,mcopy_ipc_client_cmd_0010_10d764,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010D7B8,0x48,mcopy_ipc_client_cmd_0008_10d7b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010D8CC,0x48,mcopy_ipc_client_cmd_0010_10d8cc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010D920,0x48,mcopy_ipc_client_cmd_0010_10d920,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010D974,0x48,mcopy_ipc_client_cmd_0010_10d974,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010D9C8,0x48,mcopy_ipc_client_cmd_0010_10d9c8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010DA5C,0x48,mcopy_ipc_client_cmd_0008_10da5c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010DAB0,0x48,mcopy_ipc_client_cmd_0008_10dab0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010DB04,0x48,mcopy_ipc_client_cmd_0008_10db04,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010DB58,0x48,mcopy_ipc_client_cmd_0008_10db58,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0010DBAC,0x48,mcopy_ipc_client_cmd_0010_10dbac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010DCD4,0x48,mcopy_ipc_client_cmd_0010_10dcd4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010DD68,0x48,mcopy_ipc_client_cmd_0010_10dd68,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010DDFC,0x48,mcopy_ipc_client_cmd_0010_10ddfc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010DE90,0x48,mcopy_ipc_client_cmd_0010_10de90,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x0010E064,0x48,mcopy_ipc_client_cmd_0001_10e064,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00114BE4,0xca4,mcopy_ipc_handler_cmd_0007_0008_0040_etc_114be4,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0011CB40,0x3a24,mcopy_ipc_dispatcher_11cb40,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C5, 0x000F0200"
+0x00126FC0,0x5d8,mcopy_ipc_dispatcher_126fc0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x00127678,0x1c,mcopy_svc_0x1E_CreateMemoryBlock_127678,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001276F8,0xc,mcopy_svc_0x28_GetSystemTick_1276f8,svc_wrapper,"function body is a single `svc #0x28` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00127704,0xc,mcopy_svc_0x0A_SleepThread_127704,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0012A04C,0x44,mcopy_ipc_handler_cmd_001E_12a04c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x001E03D0
+0x00132D2C,0x3a04,mcopy_ipc_dispatcher_132d2c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x0013EA38,0x18,mcopy_svc_0x13_CreateMutex_13ea38,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0014A574,0x6,mcopy_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x00153CB0,0xda8,mcopy_ipc_handler_cmd_0004_000B_153cb0,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x00158298,0x18,mcopy_svc_0x22_ArbitrateAddress_158298,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0015B4C4,0x18,mcopy_svc_0x2D_ConnectToPort_15b4c4,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00160164,0x6,mcopy_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00165400,0x18,mcopy_svc_0x17_CreateEvent_165400,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0018C718,0xf12,mcopy_ipc_handler_cmd_0016_18c718,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00160002
+0x001AEC84,0xc,mcopy_func_ptr_table_1aec84,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001B0370,0x14,mcopy_func_ptr_table_1b0370,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BA1BC,0x7,mcopy_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001BA1C3,0x8,mcopy_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001BA1F8,0x6,mcopy_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x001BA210,0x5,mcopy_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001BA215,0x7,mcopy_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001BA574,0x6,mcopy_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x001BA57C,0x6,mcopy_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001BC048,0x5,mcopy_str_service_ac_i,service_name_string,"client of (in ExHeader service-access list): ""ac:i"""
+0x001BD770,0x9,mcopy_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x001BF148,0x6,mcopy_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x001BF2D8,0x6,mcopy_str_service_ssl_C,service_name_string,"client of (in ExHeader service-access list): ""ssl:C"""
+0x001BF32C,0xc,mcopy_func_ptr_table_1bf32c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001BF33C,0xc,mcopy_func_ptr_table_1bf33c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C38CC,0xc,mcopy_func_ptr_table_1c38cc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3940,0xc,mcopy_func_ptr_table_1c3940,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3988,0x10,mcopy_func_ptr_table_1c3988,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3A08,0x10,mcopy_func_ptr_table_1c3a08,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3A7C,0xc,mcopy_func_ptr_table_1c3a7c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3B00,0x10,mcopy_func_ptr_table_1c3b00,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3B7C,0x10,mcopy_func_ptr_table_1c3b7c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3C04,0x10,mcopy_func_ptr_table_1c3c04,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3E14,0xc,mcopy_func_ptr_table_1c3e14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C3F08,0x10,mcopy_func_ptr_table_1c3f08,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4014,0xc,mcopy_func_ptr_table_1c4014,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4248,0xc,mcopy_func_ptr_table_1c4248,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C42EC,0xc,mcopy_func_ptr_table_1c42ec,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4380,0xc,mcopy_func_ptr_table_1c4380,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C43C8,0xc,mcopy_func_ptr_table_1c43c8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C43E4,0x10,mcopy_func_ptr_table_1c43e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4458,0xc,mcopy_func_ptr_table_1c4458,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4470,0x14,mcopy_func_ptr_table_1c4470,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C44B4,0xc,mcopy_func_ptr_table_1c44b4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C44FC,0xc,mcopy_func_ptr_table_1c44fc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4520,0xc,mcopy_func_ptr_table_1c4520,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4B40,0xc,mcopy_func_ptr_table_1c4b40,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4C14,0xc,mcopy_func_ptr_table_1c4c14,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4C34,0xc,mcopy_func_ptr_table_1c4c34,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4CC0,0xc,mcopy_func_ptr_table_1c4cc0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4D04,0xc,mcopy_func_ptr_table_1c4d04,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4D48,0xc,mcopy_func_ptr_table_1c4d48,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4D8C,0xc,mcopy_func_ptr_table_1c4d8c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4DB0,0xc,mcopy_func_ptr_table_1c4db0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4EA4,0xc,mcopy_func_ptr_table_1c4ea4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4EC4,0xc,mcopy_func_ptr_table_1c4ec4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4F68,0xc,mcopy_func_ptr_table_1c4f68,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C4FA8,0xc,mcopy_func_ptr_table_1c4fa8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5008,0xc,mcopy_func_ptr_table_1c5008,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5028,0xc,mcopy_func_ptr_table_1c5028,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5240,0x10,mcopy_func_ptr_table_1c5240,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5488,0xc,mcopy_func_ptr_table_1c5488,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C55A4,0xc,mcopy_func_ptr_table_1c55a4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C55DC,0xc,mcopy_func_ptr_table_1c55dc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5750,0xc,mcopy_func_ptr_table_1c5750,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5768,0xc,mcopy_func_ptr_table_1c5768,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C57A4,0xc,mcopy_func_ptr_table_1c57a4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C57BC,0xc,mcopy_func_ptr_table_1c57bc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001C5D77,0x8,mcopy_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x001C5D7F,0x9,mcopy_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x001C5D88,0x9,mcopy_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x001C5D91,0x9,mcopy_str_service_MSETSYS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""MSETSYS:"""
+0x001C831B,0x6,mcopy_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x001C8321,0x6,mcopy_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x001C8327,0x6,mcopy_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x001C832D,0x6,mcopy_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x001C87E8,0x6,mcopy_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x001C87EE,0x6,mcopy_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x001C87F4,0x6,mcopy_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x001C87FA,0x9,mcopy_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x001C8803,0x9,mcopy_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x001E05A4,0xb,mcopy_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

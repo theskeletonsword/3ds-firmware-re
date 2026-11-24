@@ -1,0 +1,41 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,gsp_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100770,0x1cc,gsp_ipc_dispatcher_100770,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00100244, 0x00100250, 0x00100288, 0x00100390"
+0x001014BC,0x18,gsp_svc_0x4A_AcceptSession_1014bc,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001018FC,0x34,gsp_ipc_client_cmd_0001_1018fc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00101938,0x54,gsp_ipc_client_cmd_0003_101938,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00101994,0x48,gsp_ipc_client_cmd_0004_101994,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00102028,0x464,gsp_ipc_handler_cmd_000F_0010_0011_etc_102028,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000F0040, 0x00100040, 0x00110040, 0x00120040"
+0x00102568,0x1c,gsp_func_ptr_table_102568,pointer_table,7 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00102F00,0x18,gsp_svc_0x2D_ConnectToPort_102f00,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102F18,0x18,gsp_svc_0x21_CreateAddressArbiter_102f18,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102F30,0x1c,gsp_svc_0x1E_CreateMemoryBlock_102f30,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00102F4C,0x18,gsp_svc_0x4F_ReplyAndReceive_102f4c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103B6C,0xe8,gsp_ipc_handler_cmd_0008_103b6c,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00080300
+0x00104470,0x10,gsp_svc_0x50_BindInterrupt_104470,svc_wrapper,"function body is a single `svc #0x50` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001044A4,0x10,gsp_svc_0x51_UnbindInterrupt_1044a4,svc_wrapper,"function body is a single `svc #0x51` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010459C,0x48,gsp_ipc_client_cmd_0001_10459c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000100C0
+0x00104B28,0x8cc,gsp_ipc_handler_cmd_0001_0002_0003_etc_104b28,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020040, 0x00030040, 0x00050040"
+0x00105A6C,0x6c,gsp_ipc_client_cmd_000D_105a6c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D00C0
+0x00105ADC,0x44,gsp_ipc_client_cmd_0005_105adc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000500C0
+0x00106668,0x18,gsp_svc_0x37_GetThreadId_106668,svc_wrapper,"function body is a single `svc #0x37` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001074A8,0x18,gsp_svc_0x17_CreateEvent_1074a8,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108268,0x18,gsp_svc_0x35_GetProcessId_108268,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00108318,0x39c,gsp_ipc_handler_cmd_0001_108318,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010001
+0x00108C1C,0x34,gsp_ipc_client_cmd_000B_108c1c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B0040
+0x0010A2AC,0x10,gsp_svc_0x3C_Break_10a2ac,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010A610,0x3c,gsp_ipc_client_cmd_0002_10a610,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020080
+0x0010A694,0x34,gsp_ipc_client_cmd_0004_10a694,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00040040
+0x0010D0EC,0x6,gsp_str_service_pdn_g,service_name_string,"client of (in ExHeader service-access list): ""pdn:g"""
+0x0010D0F2,0x9,gsp_str_service_mcu__GPU,service_name_string,"client of (in ExHeader service-access list): ""mcu::GPU"""
+0x0010D120,0x6,gsp_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0010D126,0x6,gsp_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x0010D12C,0x9,gsp_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x0010D13C,0x5,gsp_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0010D141,0x7,gsp_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0010D14C,0x6,gsp_str_service_cfg_s,service_name_string,"client of (in ExHeader service-access list): ""cfg:s"""
+0x0010D152,0x9,gsp_str_service_i2c__LCD,service_name_string,"client of (in ExHeader service-access list): ""i2c::LCD"""
+0x0010D180,0x6,gsp_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x0010D18C,0x9,gsp_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x0010D195,0x9,gsp_str_service_gsp__Gpu,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Gpu"""
+0x0010D19E,0x6,gsp_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

@@ -1,0 +1,55 @@
+0x0010511B	c%d&ced
+0x001059F5	U%dedh
+0x00113490	RWSTDERR
+0x0011CB38	Exception: %s.
+0x0013824A	/H/J0I00
+0x001395FC	.bclyt
+0x00139B30	cbf_std.bcfnt
+0x00139B40	HudNOTES.bcfnt
+0x0014A5BC	 k%s+F
+0x0014CF68	%03d%s
+0x0014CF94	%s%04d
+0x00190610	Pane.bclyt
+0x001A67E7	photo/Nintendo 3DS/Private/00020400
+0x001A6E5F	Data_Delete_Failure_00
+0x001A6E76	Data_Copy_Failure_00
+0x001A70A2	Data_Delete_Failure_00_Btn0
+0x001A70BE	Data_Copy_Failure_00_Btn0
+0x001A7365	Data_Delete_Failure_01_Btn0
+0x001A7381	Data_Copy_Failure_01_Btn0
+0x001A7511	Data_Copy_Failure_02_Btn0
+0x001A75DB	Data_Copy_Failure_03_Btn0
+0x001A7649	Data_Copy_Failure_04_Btn0
+0x001A77A5	FailureSd_Btn0
+0x001A77F9	MakeImageDb_Failure_Btn0
+0x001A7A4B	Data_Delete_Failure_01
+0x001A7A62	Data_Copy_Failure_01
+0x001A7EE8	Data_Copy_Failure_02
+0x001A7FB2	Data_Copy_Failure_03
+0x001A800E	Data_Copy_Failure_04
+0x001A817C	FailureSd
+0x001A81BF	MakeImageDb_Failure
+0x001AAA18	gsp::Lcd
+0x001AAA21	gsp::Gpu
+0x001AAA36	%s: bad locale name: "%s"
+0x001AAA50	%s: range error: invalid range [%d, %d)
+0x001AAA78	%s: argument value %u out of range [0, %u)
+0x001AAAA3	%s: conversion failed
+0x001AAAB9	%s: facet %u not found in "%s" locale
+0x001AAADF	%s: failed to construct locale name
+0x001AAB03	%s: exception
+0x001AAB11	%s: unexpected exception
+0x001AAB2A	%s: invalid pointer %p
+0x001AAB41	%s: logic error
+0x001AAB51	%s: unspecified error
+0x001AAB67	%s: runtime error
+0x001AAB79	%s: underflow error
+0x001AAB8D	%s: overflow error
+0x001AABA0	%s: stream object has set %s
+0x001AABBD	%s: stream object has set ios::badbit
+0x001AABE3	%s: stream object has set ios::eofbit
+0x001AAC09	%s: stream object has set ios::failbit
+0x001AAC30	%s: bad cast
+0x001AAC3D	%s: length error: %u > %u
+0x001AAC57	%s: bad_alloc: out of memory
+0x001AAC74	%s: out of memory

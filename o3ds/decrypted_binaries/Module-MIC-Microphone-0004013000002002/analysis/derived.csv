@@ -1,0 +1,16 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010109C,0x4c,mic_ipc_client_cmd_0004_10109c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x0010118C,0x18,mic_svc_0x21_CreateAddressArbiter_10118c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101488,0x1c,mic_svc_0x2B_GetProcessInfo_101488,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101AE4,0x18,mic_svc_0x22_ArbitrateAddress_101ae4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103810,0x2d0,mic_ipc_handler_cmd_0002_0003_0004_etc_103810,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00030040, 0x00040040, 0x00050040"
+0x00105000,0x8,mic_str_service_cdc_MIC,service_name_string,"client of (in ExHeader service-access list): ""cdc:MIC"""
+0x001050C4,0x5,mic_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x001050C9,0x7,mic_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00105120,0x6,mic_str_service_mic_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mic:u"""
+0x00105126,0x6,mic_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0010512C,0x9,mic_str_service_ptm_sysm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:sysm"""
+0x00105135,0x6,mic_str_service_ptm_s,service_name_string,"client of (in ExHeader service-access list): ""ptm:s"""
+0x0010513B,0x9,mic_str_service_ptm_gets,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:gets"""
+0x00105144,0x6,mic_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0010514A,0x9,mic_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""

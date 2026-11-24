@@ -1,0 +1,46 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010004C,0x18,mcu_svc_0x27_DuplicateHandle_10004c,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00100230,0x4c,mcu_ipc_client_cmd_0001_100230,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010100
+0x00100800,0x3cc,mcu_ipc_handler_cmd_000B_000D_000E_100800,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0040, 0x000D0042, 0x000E0080"
+0x00100C14,0x3e0,mcu_ipc_handler_cmd_0005_000C_100c14,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00050040, 0x000C0042"
+0x00101040,0x2a8,mcu_ipc_handler_cmd_0007_101040,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00070040
+0x00101310,0x1a98,mcu_ipc_handler_cmd_0024_004B_004C_etc_101310,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00240042, 0x004B0040, 0x004C0040, 0x004D0080"
+0x00102EE8,0x100,mcu_ipc_handler_cmd_0001_102ee8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040
+0x00102FFC,0x2ac,mcu_ipc_handler_cmd_0003_102ffc,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00030080
+0x001032C4,0x1dc,mcu_ipc_handler_cmd_0002_1032c4,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020080
+0x001034B8,0x568,mcu_ipc_handler_cmd_000D_1034b8,ipc_command_handler,stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000D0040
+0x00103A78,0x2b0,mcu_ipc_dispatcher_103a78,ipc_dispatcher,"9 distinct header-shaped literals (command-id compare table), e.g. 0x000100C0, 0x00020080, 0x00030080, 0x00040080"
+0x001040D8,0x30,mcu_ipc_client_cmd_000C_1040d8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000C0080
+0x0010420C,0x18,mcu_svc_0x2D_ConnectToPort_10420c,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001042F8,0x18,mcu_svc_0x17_CreateEvent_1042f8,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00104510,0x18,mcu_svc_0x35_GetProcessId_104510,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001052B0,0x30,mcu_ipc_client_cmd_0002_1052b0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00020080
+0x0010532C,0x30,mcu_ipc_client_cmd_0008_10532c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080080
+0x0010556C,0x18,mcu_svc_0x4F_ReplyAndReceive_10556c,svc_wrapper,"function body is a single `svc #0x4F` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105584,0x10,mcu_svc_0x3C_Break_105584,svc_wrapper,"function body is a single `svc #0x3C` + return (16 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010701C,0x18,mcu_svc_0x4A_AcceptSession_10701c,svc_wrapper,"function body is a single `svc #0x4A` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00107904,0x54,mcu_ipc_client_cmd_0003_107904,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00030100
+0x00107960,0x48,mcu_ipc_client_cmd_0004_107960,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000400C0
+0x00107DAC,0x34,mcu_ipc_client_cmd_0001_107dac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00107E64,0x38,mcu_ipc_client_cmd_0009_107e64,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00090082
+0x00107EA4,0x38,mcu_ipc_client_cmd_000A_107ea4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000A0042
+0x00107EE4,0x30,mcu_ipc_client_cmd_0006_107ee4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00060080
+0x00107F90,0x18,mcu_svc_0x21_CreateAddressArbiter_107f90,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001082D0,0x6c,mcu_ipc_client_cmd_000D_1082d0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000D00C0
+0x00108340,0x58,mcu_ipc_client_cmd_000B_108340,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x000B00C2
+0x0010839C,0x54,mcu_ipc_client_cmd_0011_10839c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001100C2
+0x001083F4,0x54,mcu_ipc_client_cmd_0012_1083f4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x001200C2
+0x0010900C,0x9,mcu_str_service_i2c__MCU,service_name_string,"client of (in ExHeader service-access list): ""i2c::MCU"""
+0x00109015,0x9,mcu_str_service_gpio_MCU,service_name_string,"client of (in ExHeader service-access list): ""gpio:MCU"""
+0x0010901E,0x9,mcu_str_service_mcu__CAM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::CAM"""
+0x00109027,0x9,mcu_str_service_mcu__GPU,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::GPU"""
+0x00109030,0x9,mcu_str_service_mcu__HID,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::HID"""
+0x00109039,0x9,mcu_str_service_mcu__RTC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::RTC"""
+0x00109042,0x9,mcu_str_service_mcu__SND,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::SND"""
+0x0010904B,0x9,mcu_str_service_mcu__NWM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::NWM"""
+0x00109054,0x9,mcu_str_service_mcu__HWC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::HWC"""
+0x0010905D,0x9,mcu_str_service_mcu__PLS,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::PLS"""
+0x00109066,0x9,mcu_str_service_mcu__CDC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""mcu::CDC"""
+0x00109094,0x5,mcu_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00109099,0x7,mcu_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x001090CC,0x6,mcu_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""

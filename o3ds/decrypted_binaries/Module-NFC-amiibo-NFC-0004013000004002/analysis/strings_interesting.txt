@@ -1,0 +1,6 @@
+0x00105BBD	&gcfd%d"c
+0x00113FF2	 5-x%s
+0x001171EA	nfp_backup.dat
+0x0011788F	;d22Vt::N
+0x00117E68	nwm::EXT
+0x00118A00	nfc:/fangate_updater.bin

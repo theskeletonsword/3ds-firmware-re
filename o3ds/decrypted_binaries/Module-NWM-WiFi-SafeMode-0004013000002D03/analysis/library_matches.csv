@@ -1,0 +1,4 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00120BA0,0xb0,lib_crt_aeabi_uidivmod_120ba0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-PTM-Battery-and-Pedometer-0004013000002202 @0x001055E8 ""ptm_crt_aeabi_uidivmod"" (o3ds_semantic)"
+0x0011BADC,0x68,lib_engine_fsm_arm_11badc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E938 ""cecd_engine_fsm_arm_10e938"" (o3ds_semantic)"
+0x0011BB60,0x20c,lib_engine_fsm_arm_11bb60,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E9BC ""cecd_engine_fsm_arm_10e9bc"" (o3ds_semantic)"

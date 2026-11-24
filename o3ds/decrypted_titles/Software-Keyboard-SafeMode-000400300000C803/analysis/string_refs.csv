@@ -1,0 +1,3 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0013AB70,0x92b0,strref_hid_USER_13ab70,string_reference,function references string(s): hid:USER
+0x0017E850,0xcc,strref_csnd_SND_17e850,string_reference,function references string(s): csnd:SND

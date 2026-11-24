@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100534,0x2c,lib_crt_fini_array_100534,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x001021B4,0x5c,lib_crt_strlen_1021b4,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:fs @0x0011E1FC ""fs_crt_strlen_0011e1fc"" (o3ds_semantic)"
+0x00102028,0x38,lib_i2c_bus_102028,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x00102DC8 ""i2c_i2c_bus_102dc8"" (o3ds_semantic)"
+0x00103060,0x5c,lib_nn_fnd_HeapBase__vptr_init_103060,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x001ABA70 ""nn_fnd_HeapBase__vptr_init_1aba70"" (rtti_vptr_init)"
+0x00101614,0xa0,lib_slab_allocator_init_101614,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x001024AC ""sm_slab_allocator_init"" (o3ds_semantic)"
+0x001012A4,0x148,lib_slab_alloc_entry_1012a4,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x0010270C ""sm_slab_alloc_entry"" (o3ds_semantic)"

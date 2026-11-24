@@ -1,0 +1,10 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x00100EE8,0x1c,sm_svc_0x2A_GetSystemInfo_100ee8,svc_wrapper,"function body is a single `svc #0x2A` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001010B4,0x18,sm_svc_0x21_CreateAddressArbiter_1010b4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010131C,0x1c,sm_svc_0x2B_GetProcessInfo_10131c,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00101C34,0x18,sm_svc_0x22_ArbitrateAddress_101c34,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001021F8,0x18,sm_svc_0x15_CreateSemaphore_1021f8,svc_wrapper,"function body is a single `svc #0x15` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00103930,0xf4,sm_ipc_handler_cmd_0002_0003_103930,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00020040, 0x00030040"
+0x00103A44,0x3b4,sm_ipc_handler_cmd_0001_0002_0003_etc_103a44,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00010040, 0x00020042, 0x00030042, 0x00040040"
+0x00104198,0x5,sm_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0010419D,0x7,sm_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""

@@ -1,0 +1,5 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001017DC,0x5a4,strref_3D_nwgfx_DefaultShader_LZ_bin_1017dc,string_reference,function references string(s): 3D/nwgfx_DefaultShader_LZ.bin
+0x00137DDC,0x228,strref_P_Icon_01_137ddc,string_reference,function references string(s): P_Icon_01
+0x00159F34,0xe4,strref_dlp_CLNT_159f34,string_reference,function references string(s): dlp:CLNT
+0x00174348,0x284,strref_P_Icon_00_174348,string_reference,function references string(s): P_Icon_00

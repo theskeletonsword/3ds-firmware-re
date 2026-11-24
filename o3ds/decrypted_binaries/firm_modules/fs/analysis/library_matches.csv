@@ -1,0 +1,3 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00125CBC,0x68,lib_engine_fsm_arm_125cbc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E938 ""cecd_engine_fsm_arm_10e938"" (o3ds_semantic)"
+0x00125D40,0x20c,lib_engine_fsm_arm_125d40,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E9BC ""cecd_engine_fsm_arm_10e9bc"" (o3ds_semantic)"

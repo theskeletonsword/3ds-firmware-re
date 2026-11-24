@@ -1,0 +1,118 @@
+0x001026B4	RWSTDERR
+0x001027FC	Exception: %s.
+0x0010500C	dialog_LZ.bin
+0x00106194	.bcfnt
+0x0010619C	font/%s%s
+0x001061B0	font/%s%s%s
+0x001067A8	message_JP_LZ.bin
+0x001067BC	message_US_LZ.bin
+0x001067D0	message_EU_LZ.bin
+0x001067E4	message_CN_LZ.bin
+0x001067F8	message_KR_LZ.bin
+0x0010680C	message_TW_LZ.bin
+0x00106830	message_%s/%s/%s.msbt
+0x00106848	message_%s/%s/RI.mstl
+0x00111DB8	nw::lyt::Layout::CalculateMtx
+0x00111EFC	nw::lyt::Layout::Animate
+0x0014A2A0	%s_%s%s
+0x0014B5D8	BalloonPlate_U.bclyt
+0x0014B870	.bclyt
+0x0014B89C	%s_Loop_00.bclan
+0x00166FF4	%s%04d
+0x00167CF8	.bclyt
+0x00180934	Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Probe</
+0x00180FA8	Action>http://schemas.xmlsoap.org/ws/2004/09/transfer/Get</
+0x001851E8	\MAILSLOT\%s
+0x0019AA74	BalloonNavi_D.bclyt
+0x0019AB34	BalloonInit_D.bclyt
+0x0019ABC8	BalloonInit_U.bclyt
+0x0019E190	.bclyt
+0x001A1C10	.bclyt
+0x001A269C	.bclyt
+0x001A4258	table_LZ.bin
+0x001A4268	mset_table_file_name.bin
+0x001A4288	%s.bin
+0x001A4914	.bclyt
+0x001A4CF0	.bclyt
+0x001A533C	%s_SceneIn_00.bclan
+0x001A6258	.bclyt
+0x001A6FD8	HudMset_00.bclyt
+0x001A6FFC	CmnFade_U_00.bclyt
+0x001A7038	Aplt_D_00.bclyt
+0x001A7110	HomeNixSign.bclyt
+0x001A742C	layout_LZ.bin
+0x001A743C	button_LZ.bin
+0x001A744C	base_LZ.bin
+0x001A7458	up_LZ.bin
+0x001A7464	hud_LZ.bin
+0x001BA010	3D/nwgfx_DefaultShader_LZ.bin
+0x001BA0C0	WaitIcon.bclyt
+0x001BA17C	%s_spr
+0x001BA184	%s_flw
+0x001BA18C	%s_snk
+0x001BA194	%s_csr
+0x001BA1B0	.bcfnt
+0x001BD770	dsp::DSP
+0x001BF060	.bclyt
+0x001C23B0	Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Resolve</
+0x001C25B4	%d.%d.%d.%d
+0x001C84D1	MCOPY_Set_D_21.bclyt
+0x001C84E6	MCOPY_Set_D_22.bclyt
+0x001C87FA	gsp::Lcd
+0x001C8803	gsp::Gpu
+0x001C8954	<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addre
+0x001C89F4	ssing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery"><soap:Header><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To><wsa:Action>http://
+0x001C8A94	schemas.xmlsoap.org/ws/2005/04/discovery/Bye</wsa:Action><wsa:MessageID>urn:uuid:%s</wsa:MessageID><wsd:AppSequence InstanceId="%d" SequenceId="urn:uuid:%s" Mes
+0x001C8B34	sageNumber="%d"></wsd:AppSequence></soap:Header><soap:Body><wsd:Bye><wsa:EndpointReference><wsa:Address>urn:uuid:%s</wsa:Address></wsa:EndpointReference></wsd:B
+0x001C8BF4	<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addre
+0x001C8C94	ssing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsdp="http://schemas.xmlsoap.org/ws/2006/02/devprof" xmlns:pub="http://schemas.microsof
+0x001C8D34	t.com/windows/pub/2005/07"><soap:Header><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To><wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery
+0x001C8DD4	/Hello</wsa:Action><wsa:MessageID>urn:uuid:%s</wsa:MessageID><wsd:AppSequence InstanceId="%d" SequenceId="urn:uuid:%s" MessageNumber="%d"></wsd:AppSequence></so
+0x001C8E74	ap:Header><soap:Body><wsd:Hello><wsa:EndpointReference><wsa:Address>urn:uuid:%s</wsa:Address></wsa:EndpointReference><wsd:Types>wsdp:Device pub:Computer</wsd:Ty
+0x001C8F6D	<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addre
+0x001C900D	ssing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsdp="http://schemas.xmlsoap.org/ws/2006/02/devprof" xmlns:pub="http://schemas.microsof
+0x001C90AD	t.com/windows/pub/2005/07"><soap:Header><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsa:Action>http://schemas.xmlsoap.org/w
+0x001C914D	s/2005/04/discovery/ProbeMatches</wsa:Action><wsa:MessageID>urn:uuid:%s</wsa:MessageID><wsa:RelatesTo>urn:uuid:%s</wsa:RelatesTo><wsd:AppSequence InstanceId="%d
+0x001C91ED	" SequenceId="urn:uuid:%s" MessageNumber="%d"></wsd:AppSequence></soap:Header><soap:Body><wsd:ProbeMatches><wsd:ProbeMatch><wsa:EndpointReference><wsa:Address>u
+0x001C928D	rn:uuid:%s</wsa:Address></wsa:EndpointReference><wsd:Types>wsdp:Device pub:Computer</wsd:Types><wsd:XAddrs>http://%s:5357/%s/</wsd:XAddrs><wsd:MetadataVersion>4
+0x001C9384	<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addre
+0x001C9424	ssing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsdp="http://schemas.xmlsoap.org/ws/2006/02/devprof" xmlns:pub="http://schemas.microsof
+0x001C94C4	t.com/windows/pub/2005/07"><soap:Header><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsa:Action>http://schemas.xmlsoap.org/w
+0x001C9564	s/2005/04/discovery/ResolveMatches</wsa:Action><wsa:MessageID>urn:uuid:%s</wsa:MessageID><wsa:RelatesTo>urn:uuid:%s</wsa:RelatesTo><wsd:AppSequence InstanceId="
+0x001C9604	%d" SequenceId="urn:uuid:%s" MessageNumber="%d"></wsd:AppSequence></soap:Header><soap:Body><wsd:ResolveMatches><wsd:ResolveMatch><wsa:EndpointReference><wsa:Add
+0x001C96A4	ress>urn:uuid:%s</wsa:Address></wsa:EndpointReference><wsd:Types>wsdp:Device pub:Computer</wsd:Types><wsd:XAddrs>http://%s:5357/%s/</wsd:XAddrs><wsd:MetadataVer
+0x001C97EB	Content-Length: %d
+0x001C9802	<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addre
+0x001C98A2	ssing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsdp="http://schemas.xmlsoap.org/ws/2006/02/devprof" xmlns:un0="http://schemas.microsoft.com/
+0x001C9942	windows/pnpx/2005/10" xmlns:pub="http://schemas.microsoft.com/windows/pub/2005/07"><soap:Header><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/an
+0x001C99E2	onymous</wsa:To><wsa:Action>http://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse</wsa:Action><wsa:MessageID>urn:uuid:%s</wsa:MessageID><wsa:RelatesTo>urn:
+0x001C9A82	uuid:%s</wsa:RelatesTo></soap:Header><soap:Body><wsx:Metadata><wsx:MetadataSection Dialect="http://schemas.xmlsoap.org/ws/2006/02/devprof/ThisDevice"><wsdp:This
+0x001C9B22	Device><wsdp:FriendlyName>%s</wsdp:FriendlyName><wsdp:FirmwareVersion>%s</wsdp:FirmwareVersion><wsdp:SerialNumber>%s</wsdp:SerialNumber></wsdp:ThisDevice></wsx:
+0x001C9BC2	MetadataSection><wsx:MetadataSection Dialect="http://schemas.xmlsoap.org/ws/2006/02/devprof/ThisModel"><wsdp:ThisModel><wsdp:Manufacturer>%s</wsdp:Manufacturer>
+0x001C9C62	<wsdp:ManufacturerUrl>%s</wsdp:ManufacturerUrl><wsdp:ModelName>%s</wsdp:ModelName><wsdp:ModelNumber>%s</wsdp:ModelNumber><wsdp:ModelUrl>%s</wsdp:ModelUrl><wsdp:
+0x001C9D02	PresentationUrl>%s</wsdp:PresentationUrl><un0:DeviceCategory>Computers</un0:DeviceCategory></wsdp:ThisModel></wsx:MetadataSection><wsx:MetadataSection Dialect="
+0x001C9DA2	http://schemas.xmlsoap.org/ws/2006/02/devprof/Relationship"><wsdp:Relationship Type="http://schemas.xmlsoap.org/ws/2006/02/devprof/host"><wsdp:Host><wsa:Endpoin
+0x001C9E42	tReference><wsa:Address>urn:uuid:%s</wsa:Address></wsa:EndpointReference><wsdp:Types>pub:Computer</wsdp:Types><wsdp:ServiceId>urn:uuid:%s</wsdp:ServiceId><pub:C
+0x001C9EE2	omputer>%s/Workgroup:%s</pub:Computer></wsdp:Host></wsdp:Relationship></wsx:MetadataSection></wsx:Metadata></soap:Body></soap:Envelope>
+0x001C9F6A	%s: bad locale name: "%s"
+0x001C9F84	%s: range error: invalid range [%d, %d)
+0x001C9FAC	%s: argument value %u out of range [0, %u)
+0x001C9FD7	%s: conversion failed
+0x001C9FED	%s: facet %u not found in "%s" locale
+0x001CA013	%s: failed to construct locale name
+0x001CA037	%s: exception
+0x001CA045	%s: unexpected exception
+0x001CA05E	%s: invalid pointer %p
+0x001CA075	%s: logic error
+0x001CA085	%s: unspecified error
+0x001CA09B	%s: runtime error
+0x001CA0AD	%s: underflow error
+0x001CA0C1	%s: overflow error
+0x001CA0D4	%s: stream object has set %s
+0x001CA0F1	%s: stream object has set ios::badbit
+0x001CA117	%s: stream object has set ios::eofbit
+0x001CA13D	%s: stream object has set ios::failbit
+0x001CA164	%s: bad cast
+0x001CA171	%s: length error: %u > %u
+0x001CA18B	%s: bad_alloc: out of memory
+0x001CA1A8	%s: out of memory

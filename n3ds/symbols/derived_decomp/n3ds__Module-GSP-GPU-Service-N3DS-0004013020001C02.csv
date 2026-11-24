@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00105BE8,0x38,gsp_svc_0x32_SendSyncRequest_105be8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010B380,0x34,gsp_svc_0x32_SendSyncRequest_10b380,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010B3BC,0x2c,gsp_svc_0x32_SendSyncRequest_10b3bc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010D2CC,0x38,gsp_svc_0x32_SendSyncRequest_10d2cc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x0010D30C,0x2c,gsp_svc_0x32_SendSyncRequest_10d30c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines

@@ -1,0 +1,5 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00106088,0x2c,lib_crt_fini_array_106088,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x0010CC0C,0x20,lib_nn_fnd_ExpHeapBase__vslot2_10cc0c,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x00289E90 ""nn_fnd_ExpHeapBase__vslot2_289e90"" (rtti_vslot)"
+0x0010E51C,0x68,lib_engine_fsm_arm_10e51c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E938 ""cecd_engine_fsm_arm_10e938"" (o3ds_semantic)"
+0x0010E5A0,0x20c,lib_engine_fsm_arm_10e5a0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E9BC ""cecd_engine_fsm_arm_10e9bc"" (o3ds_semantic)"

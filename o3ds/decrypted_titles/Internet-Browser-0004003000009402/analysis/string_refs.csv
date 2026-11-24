@@ -1,0 +1,136 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00111E88,0x8d8,strref_res_isSuccess_111e88,string_reference,function references string(s): ((res).isSuccess())
+0x001129C0,0x5e8,strref_s_0x_08X_is_invalid_pointer_1129c0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((res).isSuccess()) | Pointer Assertion Failed:
+0x001199E0,0x144,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1199e0,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0011BEBC,0x56c,strref_0_www_Settings_InstMain_GetEngineBufSize_u_DEVIC_11bebc,string_reference,function references string(s): 0 < www::Settings::InstMain().GetEngineBufSize():%u <= DEVICE_BROWSER_ENGINE_PRIVATE_MEMORY_SIZE:%u is failed
+0x00147A60,0x3e0,strref_s_0x_08X_is_invalid_pointer_147a60,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((data.dialog)) | Pointer Assertion Failed:
+0x00147E58,0xb8,strref_s_0x_08X_is_invalid_pointer_147e58,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((data.dialog)) | Pointer Assertion Failed:
+0x0014CD3C,0x498,strref_s_0x_08X_is_invalid_pointer_14cd3c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001668C8,0x60,strref_TextBoxB_1668c8,string_reference,function references string(s): TextBoxB
+0x00166948,0x5c,strref_TextBoxB_166948,string_reference,function references string(s): TextBoxB
+0x001909A8,0xb8,strref_http_searcher_wii_com_search_search_p_3ds_r_s_l__1909a8,string_reference,function references string(s): http://searcher.wii.com/search/search?p=3ds&r=%s&l=%s&c=%s&n=%d&a=%s&k=%s
+0x001B37C0,0x358,strref_NintendoDS_1b37c0,string_reference,function references string(s): NintendoDS
+0x001B3BD0,0x2f8,strref_Nintendo_1b3bd0,string_reference,function references string(s): Nintendo
+0x001BED40,0xb8c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1bed40,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Instance_(Singleton of %s):%p is invalid ptr. | Pointer Assertion Failed:
+0x001BFFA0,0x240,strref_favoriteModel_getType_model_IFavoriteModel_Type__1bffa0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((init_.common.winHistoryGuide)) | (favoriteModel->getType() == model::IFavoriteModel::Type_Favorite)
+0x001C0230,0xdc,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1c0230,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001C5CC0,0x5d0,strref_s_0x_08X_is_invalid_pointer_1c5cc0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001C69C0,0x144,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1c69c0,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001C95B0,0x59c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1c95b0,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001CE200,0x174,strref_favoriteModel_getType_model_IFavoriteModel_Type__1ce200,string_reference,function references string(s): (favoriteModel.getType() == model::IFavoriteModel::Type_Favorite)
+0x001CE374,0x1a8,strref_s_0x_08X_is_invalid_pointer_1ce374,string_reference,function references string(s): %s(=0x%08X) is invalid pointer
+0x001CE58C,0x1cc,strref_s_0x_08X_is_invalid_pointer_1ce58c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer
+0x001D53A4,0x44,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1d53a4,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001D6084,0x40,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1d6084,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001D6348,0x7c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1d6348,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001D63C4,0x110,strref_s_0x_08X_is_invalid_pointer_1d63c4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001D6700,0xa4,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1d6700,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001D68CC,0xa8,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1d68cc,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001D6A20,0xd0,strref_StartMenu_Search_1d6a20,string_reference,function references string(s): StartMenu_Search
+0x001D9024,0xf4,strref_s_0x_08X_is_invalid_pointer_1d9024,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001DAC64,0x328,strref_Unexpected_SSL_error_code_at_FLC_sslFailed_peerR_1dac64,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed: | Unexpected SSL error code at FLC::sslFailed(): peerResult=0 && hostResult=0
+0x001DAFEC,0xf4,strref_s_0x_08X_is_invalid_pointer_1dafec,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001DB268,0x2f8,strref_text_plain_1db268,string_reference,function references string(s): text/plain
+0x001E00AC,0x5d4,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1e00ac,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001E0C1C,0xa0,strref_s_0x_08X_is_invalid_pointer_1e0c1c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((init_.winHistoryGuide)) | Pointer Assertion Failed:
+0x001E0CC4,0xcc,strref_s_0x_08X_is_invalid_pointer_1e0cc4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((init_.winHistoryGuide)) | Pointer Assertion Failed:
+0x001E0DCC,0xcc,strref_s_0x_08X_is_invalid_pointer_1e0dcc,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((init_.winHistoryGuide)) | Pointer Assertion Failed:
+0x001E0F2C,0x138,strref_s_0x_08X_is_invalid_pointer_1e0f2c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((init_.winHistoryGuide)) | Pointer Assertion Failed:
+0x001E765C,0x7c,strref_about_blank_1e765c,string_reference,function references string(s): about:blank
+0x001EA2E4,0xbc,strref_s_0x_08X_is_invalid_pointer_1ea2e4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001ECF78,0x29c,strref_s_0x_08X_is_invalid_pointer_1ecf78,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001EE01C,0x1f8,strref_s_0x_08X_is_invalid_pointer_1ee01c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer
+0x001EE5D4,0x130,strref_Instance_Singleton_of_s_p_is_invalid_ptr_1ee5d4,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x001EF2D0,0x64,strref_type_Type_NotifyKeyDown_type_Type_NotifyKeyUp_ty_1ef2d0,string_reference,function references string(s): (type == Type_NotifyKeyDown || type == Type_NotifyKeyUp || type == Type_MoveFocusedElement)
+0x001F2F94,0xe0,strref_NetMode_DriveBy_shouldn_t_be_played_as_frame_spe_1f2f94,string_reference,function references string(s): NetMode_DriveBy shouldn't be played as frame-specified animation. | unknown netMode:%d
+0x001F337C,0x98,strref_unknown_netMode_d_1f337c,string_reference,function references string(s): unknown netMode:%d
+0x001F3414,0xb0,strref_unknown_netMode_d_1f3414,string_reference,function references string(s): unknown netMode:%d
+0x001F7DEC,0xc8,strref_FocusedOnOff_1f7dec,string_reference,function references string(s): FocusedOnOff
+0x001F7EB4,0xa0,strref_FocusedOnOff_1f7eb4,string_reference,function references string(s): FocusedOnOff
+0x001F7F54,0xe0,strref_FocusedOnOff_1f7f54,string_reference,function references string(s): FocusedOnOff
+0x001F8034,0xfc,strref_DecidedOn_1f8034,string_reference,function references string(s): DecidedOn
+0x001F91F4,0x354,strref_s_0x_08X_is_invalid_pointer_1f91f4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((buffer_)) | Pointer Assertion Failed:
+0x001FA624,0x1c8,strref_SceneType_BEGIN_current_getSceneType_current_get_1fa624,string_reference,function references string(s): SceneType_BEGIN <= current.getSceneType() && current.getSceneType() < SceneType_END | SceneType_BEGIN <= target.getSceneType() && target.getSceneType() < SceneType_END
+0x001FAEA0,0x468,strref_s_0x_08X_is_invalid_pointer_1faea0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001FB308,0x380,strref_s_0x_08X_is_invalid_pointer_1fb308,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x001FF194,0x19670,strref_s_0x_08X_is_invalid_pointer_1ff194,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x00200B28,0xe4,strref_s_0x_08X_is_invalid_pointer_200b28,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x00202A84,0x348,strref_Instance_Singleton_of_s_p_is_invalid_ptr_202a84,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x00202DCC,0xbc,strref_Bounding_202dcc,string_reference,function references string(s): Bounding
+0x002037C0,0x200,strref_s_0x_08X_is_invalid_pointer_2037c0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002059A0,0x144,strref_s_0x_08X_is_invalid_pointer_2059a0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x00208E34,0xa4,strref_Instance_Singleton_of_s_p_is_invalid_ptr_208e34,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0020A140,0xdc,strref_invalid_ptr_p_20a140,string_reference,function references string(s): invalid ptr:%p
+0x0020B548,0xfc,strref_type_d_SceneType_Option_d_is_failed_20b548,string_reference,function references string(s): type_ == SceneType_Option | type_:%d == SceneType_Option:%d is failed.
+0x0020B704,0xac,strref_type_d_must_not_be_TERM_d_20b704,string_reference,function references string(s): type:%d must not be TERM:%d
+0x0020B7B0,0xa8,strref_type_d_must_not_be_TERM_d_20b7b0,string_reference,function references string(s): type:%d must not be TERM:%d
+0x0020C13C,0x334,strref_s_0x_08X_is_invalid_pointer_20c13c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x0020C550,0x40c,strref_leakCheckerStack_atLast_isNoLeak_reportLeakStatu_20c550,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((currentScene_.scn.get())) | Pointer Assertion Failed:
+0x00211264,0x2ac,strref_s_0x_08X_is_invalid_pointer_211264,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002121B0,0x150,strref_sys_IsNan_rect_bottom_sys_IsNan_rect_right_sys_I_2121b0,string_reference,function references string(s): (!sys::IsNan(rect.bottom) && !sys::IsNan(rect.right) && !sys::IsNan(rect.top) && !sys::IsNan(rect.left))
+0x002196E4,0x788,strref_s_0x_08X_is_invalid_pointer_2196e4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x0021BF94,0x148,strref_Instance_Singleton_of_s_p_is_invalid_ptr_21bf94,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0021E6DC,0xe8,strref_Instance_Singleton_of_s_p_is_invalid_ptr_21e6dc,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0021F0A8,0x34c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_21f0a8,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0022095C,0x1a6c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_22095c,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Instance_(Singleton of %s):%p is invalid ptr. | Pointer Assertion Failed:
+0x00223BDC,0xb4,strref_SE_CTR_SPIDER_LINK_223bdc,string_reference,function references string(s): SE_CTR_SPIDER_LINK
+0x00223EEC,0x120,strref_SE_CTR_SPIDER_SEL_END_223eec,string_reference,function references string(s): SE_CTR_SPIDER_SEL_END
+0x002240D0,0xe8,strref_Instance_Singleton_of_s_p_is_invalid_ptr_2240d0,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x00224868,0x574,strref_SE_CTR_COMMON_TOUCHOUT_224868,string_reference,function references string(s): SE_CTR_COMMON_TOUCHOUT
+0x00224F98,0x2a4,strref_s_0x_08X_is_invalid_pointer_224f98,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002260F4,0xb08,strref_Instance_Singleton_of_s_p_is_invalid_ptr_2260f4,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x00226BFC,0x9c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_226bfc,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x00227334,0x84,strref_Instance_Singleton_of_s_p_is_invalid_ptr_227334,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0022764C,0x1f0,strref_the_operation_to_this_heap_s_was_denied_the_heap_22764c,string_reference,function references string(s): the operation to this heap:%s was denied. the heap is sealed:%d.
+0x00227864,0x110,strref_cannot_free_p_p_because_nothing_is_in_this_heap__227864,string_reference,function references string(s): cannot free p:%p because nothing is in this heap:%s (allocCount_:%d) | the operation to this heap:%s was denied. the heap is sealed:%d.
+0x0022D238,0x1a4,strref_Priority_Highest_d_pri_d_pri_d_Priority_Lowest_d_22d238,string_reference,function references string(s): Priority_Highest:%d <= pri:%d && pri:%d <= Priority_Lowest:%d failed.
+0x0022D3DC,0x42c,strref_Priority_Highest_d_pri_d_pri_d_Priority_Lowest_d_22d3dc,string_reference,function references string(s): Priority_Highest:%d <= pri:%d && pri:%d <= Priority_Lowest:%d failed.
+0x0022DBF4,0x1e8,strref_This_PreLoader_is_specialized_for_Heap_p_s_Canno_22dbf4,string_reference,function references string(s): This PreLoader is specialized for Heap:%p(%s). Cannot associate with other heap:%p(%s).
+0x0022E3F0,0x140,strref_This_PreLoader_is_specialized_for_Heap_p_s_Canno_22e3f0,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed: | This PreLoader is specialized for Heap:%p(%s). Cannot associate with other heap:%p(%s).
+0x0022E530,0x128,strref_s_0x_08X_is_invalid_pointer_22e530,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | ((defaultHeap_)) | Pointer Assertion Failed:
+0x0022E6B4,0xa0,strref_s_0x_08X_is_invalid_pointer_22e6b4,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x0022E818,0x17c,strref_s_0x_08X_is_invalid_pointer_22e818,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002326FC,0x50,strref_GetType_EVENT_DOWNLOADER_DOWNLOAD_FINISHED_2326fc,string_reference,function references string(s): (GetType() == EVENT_DOWNLOADER_DOWNLOAD_FINISHED)
+0x00232750,0x50,strref_GetType_EVENT_CONTENT_CONNECTION_STARTED_232750,string_reference,function references string(s): (GetType() == EVENT_CONTENT_CONNECTION_STARTED)
+0x002327A0,0x50,strref_GetType_EVENT_CONTENT_UPDATE_NOTICE_2327a0,string_reference,function references string(s): (GetType() == EVENT_CONTENT_UPDATE_NOTICE)
+0x0023281C,0x50,strref_GetType_EVENT_CONTENT_PAGE_SAVED_23281c,string_reference,function references string(s): (GetType() == EVENT_CONTENT_PAGE_SAVED)
+0x0023286C,0x50,strref_GetType_EVENT_RENDERER_FINISH_23286c,string_reference,function references string(s): (GetType() == EVENT_RENDERER_FINISH)
+0x002328BC,0x50,strref_GetType_EVENT_WINDOW_VIEW_SCROLL_CHANGED_2328bc,string_reference,function references string(s): (GetType() == EVENT_WINDOW_VIEW_SCROLL_CHANGED)
+0x0023290C,0x50,strref_GetType_EVENT_WINDOW_VIEW_ZOOM_RECT_FOUND_23290c,string_reference,function references string(s): (GetType() == EVENT_WINDOW_VIEW_ZOOM_RECT_FOUND)
+0x0023295C,0x50,strref_GetType_EVENT_SENDER_FOCUSED_ELEMENT_MOVED_23295c,string_reference,function references string(s): (GetType() == EVENT_SENDER_FOCUSED_ELEMENT_MOVED)
+0x002329AC,0x50,strref_GetType_EVENT_SENDER_MOUSE_UP_NOTIFIED_2329ac,string_reference,function references string(s): (GetType() == EVENT_SENDER_MOUSE_UP_NOTIFIED)
+0x002329FC,0x50,strref_GetType_EVENT_IME_2329fc,string_reference,function references string(s): (GetType() == EVENT_IME)
+0x00232A4C,0x50,strref_GetType_EVENT_DIALOG_ALERT_232a4c,string_reference,function references string(s): (GetType() == EVENT_DIALOG_ALERT)
+0x00232A9C,0x50,strref_GetType_EVENT_DIALOG_CONFIRM_232a9c,string_reference,function references string(s): (GetType() == EVENT_DIALOG_CONFIRM)
+0x00232AEC,0x50,strref_GetType_EVENT_DIALOG_PROMPT_232aec,string_reference,function references string(s): (GetType() == EVENT_DIALOG_PROMPT)
+0x00232B3C,0x50,strref_GetType_EVENT_AUTHENTICATION_232b3c,string_reference,function references string(s): (GetType() == EVENT_AUTHENTICATION)
+0x00232B8C,0x50,strref_GetType_EVENT_FILE_SELECT_232b8c,string_reference,function references string(s): (GetType() == EVENT_FILE_SELECT)
+0x00232BDC,0x50,strref_GetType_EVENT_DROPDOWN_LIST_232bdc,string_reference,function references string(s): (GetType() == EVENT_DROPDOWN_LIST)
+0x00232C2C,0x50,strref_GetType_EVENT_ERROR_232c2c,string_reference,function references string(s): (GetType() == EVENT_ERROR)
+0x00232C7C,0x50,strref_GetType_EVENT_WINDOW_CREATED_232c7c,string_reference,function references string(s): (GetType() == EVENT_WINDOW_CREATED)
+0x00232CCC,0x50,strref_GetType_EVENT_WINDOW_CLOSING_232ccc,string_reference,function references string(s): (GetType() == EVENT_WINDOW_CLOSING)
+0x00232D1C,0x50,strref_GetType_EVENT_CONTENT_REBOOT_232d1c,string_reference,function references string(s): (GetType() == EVENT_CONTENT_REBOOT)
+0x00232D6C,0x50,strref_GetType_EVENT_CONTENT_LOADING_FINISHED_232d6c,string_reference,function references string(s): (GetType() == EVENT_CONTENT_LOADING_FINISHED)
+0x00232E44,0x50,strref_GetType_EVENT_CONTENT_SIZE_CHANGED_232e44,string_reference,function references string(s): (GetType() == EVENT_CONTENT_SIZE_CHANGED)
+0x00232E94,0x50,strref_GetType_EVENT_CONTENT_FIRST_LAYOUT_232e94,string_reference,function references string(s): (GetType() == EVENT_CONTENT_FIRST_LAYOUT)
+0x00232EE4,0x50,strref_GetType_EVENT_CONTENT_MOVE_HISTORY_READIED_232ee4,string_reference,function references string(s): (GetType() == EVENT_CONTENT_MOVE_HISTORY_READIED)
+0x00232F34,0x50,strref_GetType_EVENT_CONTENT_MOVE_HISTORY_REQUESTED_232f34,string_reference,function references string(s): (GetType() == EVENT_CONTENT_MOVE_HISTORY_REQUESTED)
+0x00232F84,0x50,strref_GetType_EVENT_CONTENT_MOVE_HISTORY_232f84,string_reference,function references string(s): (GetType() == EVENT_CONTENT_MOVE_HISTORY)
+0x00233024,0x50,strref_GetType_EVENT_UPLOAD_233024,string_reference,function references string(s): (GetType() == EVENT_UPLOAD)
+0x00233074,0x50,strref_GetType_EVENT_JS_TIMEOUT_233074,string_reference,function references string(s): (GetType() == EVENT_JS_TIMEOUT)
+0x00235158,0x2e0,strref_s_0x_08X_is_invalid_pointer_235158,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002357EC,0xc8,strref_s_0x_08X_is_invalid_pointer_2357ec,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x00235CD8,0xa0,strref_s_0x_08X_is_invalid_pointer_235cd8,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x00237988,0x5ec,strref_invalid_state_d_You_can_call_initialize_in_only__237988,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance | invalid state_:%d. You can call initialize() in only State_NotInitialized:%d.
+0x00237F74,0x32c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_237f74,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0023A640,0x180,strref_whe_getSceneType_SceneType_Browse_23a640,string_reference,function references string(s): (whe.getSceneType() == SceneType_Browse)
+0x0023A7C0,0x80,strref_Instance_Singleton_of_s_p_is_invalid_ptr_23a7c0,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0023A84C,0x9c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_23a84c,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0023C7C0,0x48,strref_size_FUNCTION_IMPL_BUFFER_SIZE_23c7c0,string_reference,function references string(s): (size <= FUNCTION_IMPL_BUFFER_SIZE)
+0x0023ECC8,0x2a4,strref_s_0x_08X_is_invalid_pointer_23ecc8,string_reference,function references string(s): %s(=0x%08X) is invalid pointer | Pointer Assertion Failed:
+0x002493A0,0x30,strref_SE_CTR_COMMON_BUTTON_2493a0,string_reference,function references string(s): SE_CTR_COMMON_BUTTON
+0x00249A40,0x45878,strref_Instance_Singleton_of_s_p_is_invalid_ptr_249a40,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x002515AC,0xc6c,strref_ScrollAreaRct_2515ac,string_reference,function references string(s): ScrollAreaRct
+0x00252218,0x18c,strref_Instance_Singleton_of_s_p_is_invalid_ptr_252218,string_reference,function references string(s): Instance_(Singleton of %s):%p is invalid ptr. | Singleton::Instance
+0x0025715C,0x1d0,strref_parentPane_GetBasePositionH_nw_lyt_HORIZONTALPOS_25715c,string_reference,function references string(s): (parentPane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)
+0x00257634,0x2b8,strref_parentPane_GetBasePositionH_nw_lyt_HORIZONTALPOS_257634,string_reference,function references string(s): (parentPane.GetBasePositionH() == nw::lyt::HORIZONTALPOSITION_CENTER)

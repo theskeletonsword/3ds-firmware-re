@@ -1,0 +1,116 @@
+# Symbol table for FIRM built-in module 'pxi' (TitleID 0x0004013000001402)
+# Load .text: 0x00100000 (+0x3844) | .rodata: 0x00104000 (+0x2BC) | .data: 0x00105000 (+0x4C) | .bss: 0x196D8
+# Total: 111 | CONFIRMED: 77 | EVIDENCE_BASED: 34 | HYPOTHESIS: 0
+Address         Size    Confidence      Name                                                    Notes
+----------------------------------------------------------------------------------------------------------------------------------
+0x00100000  0x002C  CONFIRMED       pxi_entry                                               Entry point: init BSS (0x100024), init_array (0x100048), OS/heap init (0x10071c), srv reg (0x10252c), main server (0x1000ac)
+0x00100024  0x001C  CONFIRMED       pxi_crt0_bss_zero_init                                  C: bucle limpiado a cero de seccion .bss (10L)
+0x00100048  0x001A  EVIDENCE_BASED  pxi_sub_00100048                                        C: funcion interna PXI (calls=[], callers=[0x100000]) (10L)
+0x00100074  0x0022  CONFIRMED       pxi_crt_vec_dtor_or_iter                                C: itera array param_1 de N elementos param_4 stride param_3 ejecutando callback param_2
+0x00100096  0x000C  EVIDENCE_BASED  pxi_init_post_stub                                      C: invocacion auxiliar CRT antes de salir
+0x001000AC  0x05E8  CONFIRMED       pxi_server_main_loop                                    C: registra 9 servicios PXI (0x104044), crea 3 hilos worker (0x100da8/0x100dbc/0x100dc8), bucle AcceptSession + worker
+0x001006E8  0x002C  CONFIRMED       pxi_crt_fini_array                                      C: itera tabla destructores estaticos CRT
+0x0010071C  0x004C  CONFIRMED       pxi_os_init_tls_and_handles                             C: configura handles base svc/srv y compara limites de entorno
+0x00100770  0x0018  CONFIRMED       pxi_svc_0x4A_AcceptSession                              Ejecuta swi 0x4A (AcceptSession)
+0x00100788  0x0008  EVIDENCE_BASED  pxi_get_env_config_ptr                                  C: devuelve puntero global configuracion runtime DAT_00100790
+0x00100794  0x005C  CONFIRMED       pxi_crt_strlen                                          C: strlen palabra-alineado usado al registrar servicios PXI
+0x001007F8  0x0034  CONFIRMED       pxi_srv_enable_notification_client                      C: llama 0x1010c8 (srv: EnableNotification 0x00020000) y devuelve semaphore handle
+0x0010082C  0x00B8  CONFIRMED       pxi_srv_receive_notification_client                     C: adquiere lock y llama 0x101104 (srv: ReceiveNotification 0x000B0000)
+0x001008E8  0x008C  EVIDENCE_BASED  pxi_session_table_find_or_bind                          C: asocia objeto de sesion con puerto/indice bajo lock
+0x00100978  0x0018  EVIDENCE_BASED  pxi_srv_has_active_handle                               C: comprueba *DAT_00100990 + 4 > 0
+0x00100994  0x0054  CONFIRMED       pxi_srv_RegisterService_0x30100                         C+SWI 0x32: envia srv: cmd 0x00030100 RegisterService con nombre servicio y max_sessions
+0x001009F0  0x0088  CONFIRMED       pxi_srv_unregister_and_close_handles                    C+SWI 0x23: cierra handles y libera slot de sesion
+0x00100A8C  0x0288  CONFIRMED       pxi_irq_sync_and_hw_worker_main                         C+SWI 0x23/0x24: inicializa mutex/eventos IRQ 80/82/83, enlaza HW PXI (0x1021a8), atiende cola TX/RX
+0x00100D28  0x0078  CONFIRMED       pxi_hw_shutdown_unbind_irqs                             C+SWI 0x23: desenlaza IRQs PXI (0x101ff8) y cierra mutex/eventos
+0x00100DA8  0x0014  CONFIRMED       pxi_worker_thread_entry_rx                              Entry hilo worker RX lanzado desde 0x1000ac
+0x00100DBC  0x000C  CONFIRMED       pxi_worker_thread_entry_ipc0                            Entry hilo worker IPC 0 lanzado desde 0x1000ac
+0x00100DC8  0x0014  CONFIRMED       pxi_worker_thread_entry_ipc1                            Entry hilo worker IPC 1 lanzado desde 0x1000ac
+0x00100DDC  0x0040  EVIDENCE_BASED  pxi_env_get_app_arg_0                                   C: valida y compara argumento string de entorno 0
+0x00100E24  0x0040  EVIDENCE_BASED  pxi_env_get_app_arg_1                                   C: valida y compara argumento string de entorno 1
+0x00100E8C  0x0018  CONFIRMED       pxi_svc_0x2D_ConnectToPort_00100e8c                     Wrapper/stub directo svc 0x2D (ConnectToPort) (6L)
+0x00100EA4  0x0018  CONFIRMED       pxi_svc_0x13_CreateMutex_00100ea4                       Wrapper/stub directo svc 0x13 (CreateMutex) (6L)
+0x00100EBC  0x0024  CONFIRMED       pxi_svc_0x08_CreateThread_00100ebc                      Wrapper/stub directo svc 0x08 (CreateThread) (8L)
+0x00100EE0  0x00B8  EVIDENCE_BASED  pxi_sub_00100ee0                                        C: funcion interna PXI (calls=[], callers=[0x100ddc,0x100e24]) (78L)
+0x00100F9C  0x0038  EVIDENCE_BASED  pxi_sub_00100f9c                                        C: funcion interna PXI (calls=[0x1027c4], callers=[0x100fd8]) (15L)
+0x00100FD8  0x0060  CONFIRMED       pxi_runtime_heap_and_arbiter_init                       C: inicializa AddressArbiter y escanea memoria (QueryMemory) para heap/TLS
+0x00100FFC  0x0064  EVIDENCE_BASED  pxi_sub_00100ffc                                        C: funcion interna PXI (calls=[0x1022dc,0x1027dc], callers=[0x100fd8]) (40L)
+0x00101064  0x0074  EVIDENCE_BASED  pxi_sub_00101064                                        C: funcion interna PXI (calls=[0x1022dc], callers=[0x100fd8]) (26L)
+0x00101078  0x0010  EVIDENCE_BASED  pxi_sub_00101078                                        C: funcion interna PXI (calls=[], callers=[0x100fd8]) (7L)
+0x0010108C  0x0034  CONFIRMED       pxi_srv_client_RegisterClient_0x10002                   C+SWI 0x32: srv: cmd 0x00010002 RegisterClient
+0x001010C8  0x0038  CONFIRMED       pxi_srv_client_EnableNotification_0x20000               C+SWI 0x32: srv: cmd 0x00020000 EnableNotification
+0x00101104  0x0038  CONFIRMED       pxi_srv_client_ReceiveNotification_0xB0000              C+SWI 0x32: srv: cmd 0x000B0000 ReceiveNotification
+0x0010114C  0x003C  CONFIRMED       pxi_hw_map_mmio_0x1EC63000                              C: inicializa puntero/estado base MMIO PXI 0x1EC63000
+0x00101190  0x0014  CONFIRMED       pxi_hw_poll_recv_word_nonblock                          C: sondea FIFO PXI 0x1EC63000 y devuelve palabra disponible
+0x001011A8  0x003C  CONFIRMED       pxi_hw_clear_ctrl_0x1EC63000                            C: deshabilita bit de interrupcion/control en PXI_CNT 0x1EC63004
+0x001012D4  0x0098  CONFIRMED       pxi_rx_fifo_worker_thread_loop                          C: bucle hilo RX esperando evento IRQ FIFO y despachando via 0x102a04
+0x00101370  0x003C  CONFIRMED       pxi_hw_deinit_0x1EC63000                                C+SWI 0x23: resetea PXI_CNT 0x1EC63004
+0x001013B0  0x0034  CONFIRMED       pxi_hw_reset_cnt_0x1EC63000                             C: configura/limpia registros PXI_SYNC/CNT en 0x1EC63000
+0x001013E8  0x0014  EVIDENCE_BASED  pxi_sub_001013e8                                        C: funcion interna PXI (calls=[], callers=[0x100994]) (8L)
+0x001013FC  0x0740  CONFIRMED       pxi_ipc_session_worker_loop                             C+SWI 0x23: ReplyAndReceive sesion IPC; envia a ARM9 por 0x101cc4/0x102830; maneja cmd 5 pxi:mc sleep lock
+0x00101B48  0x0038  EVIDENCE_BASED  pxi_chan_slot_init                                      C: inicializa descriptor de canal/slot de sesion PXI
+0x00101B8C  0x0004  CONFIRMED       pxi_crt_aeabi_atexit_entry                              Branch target destructores estaticos CRT en 0x10334c
+0x00101B90  0x0028  EVIDENCE_BASED  pxi_chan_slot_get_state                                 C: lee/actualiza estado de slot
+0x00101BB8  0x0018  CONFIRMED       pxi_svc_0x16_ReleaseSemaphore_00101bb8                  Wrapper/stub directo svc 0x16 (ReleaseSemaphore) (6L)
+0x00101BD0  0x0074  EVIDENCE_BASED  pxi_semaphore_acquire_arb                               C: decrementa semaforo de usuario y espera por ArbitrateAddress (0x101cac)
+0x00101C48  0x0030  CONFIRMED       pxi_hw_write_sync_irq_mask                              C: configura/dispara bit en PXI_SYNC 0x1EC63000
+0x00101C7C  0x0014  CONFIRMED       pxi_hw_is_tx_fifo_full                                  C: lee flag FIFO SEND full en PXI_CNT 0x1EC63004
+0x00101C94  0x0018  CONFIRMED       pxi_lightlock_init                                      C: inicializa LightLock a estado desbloqueado
+0x00101CAC  0x0018  CONFIRMED       pxi_svc_0x22_ArbitrateAddress_00101cac                  Wrapper/stub directo svc 0x22 (ArbitrateAddress) (5L)
+0x00101CC4  0x0004  CONFIRMED       pxi_send_command_arm11_to_arm9                          C: entrada principal de envio ARM11->ARM9 (escribe channel_id, cmd_hdr, payload al SEND FIFO + sync IRQ)
+0x00101CC8  0x011C  CONFIRMED       pxi_send_command_body                                   C+SWI 0x14/0x24: cuerpo mutex-protegido TX FIFO + ReleaseMutex
+0x00101E50  0x004C  EVIDENCE_BASED  pxi_sub_00101e50                                        C: funcion interna PXI (calls=[], callers=[0x102bac,0x102be4]) (22L)
+0x00101EF0  0x0104  EVIDENCE_BASED  pxi_sync_event_or_arbiter_wait_00101ef0                 C: espera atomica LDREX/STREX + ArbitrateAddress sobre contador
+0x00101FA8  0x0018  CONFIRMED       pxi_hw_read_recv_fifo_word                              C: lee palabra de RECV FIFO 0x1EC6300C
+0x00101FC4  0x0018  CONFIRMED       pxi_hw_write_send_fifo_word                             C: escribe palabra a SEND FIFO 0x1EC63008
+0x00101FE0  0x0014  CONFIRMED       pxi_hw_is_recv_fifo_empty                               C: comprueba bit empty en PXI_CNT 0x1EC63004
+0x00101FF8  0x009C  CONFIRMED       pxi_hw_unbind_irqs                                      C+SWI 0x51: limpia PXI_CNT y desenlaza IRQs 80/82/83
+0x00102098  0x0108  CONFIRMED       pxi_wait_event_wrapper                                  C+SWI 0x24: WaitSynchronization1 sobre evento HW PXI
+0x001021A8  0x0130  CONFIRMED       pxi_hw_bind_irqs_80_82_83                               C+SWI 0x50/0x51: enlaza IRQs 80 (SYNC), 82 (SEND empty), 83 (RECV not-empty) y habilita bits PXI_CNT 0x8404/0x400
+0x001022DC  0x001C  EVIDENCE_BASED  pxi_sub_001022dc                                        C: funcion interna PXI (calls=[0x101c94], callers=[0x100ffc,0x101064,0x10252c]) (7L)
+0x001022F8  0x0038  CONFIRMED       pxi_svc_0x24_WaitSynchronization1_001022f8              Wrapper/stub directo svc 0x24 (WaitSynchronization1) (11L)
+0x00102330  0x0090  EVIDENCE_BASED  pxi_sync_atomic_op_00102330                             C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x001023C0  0x0020  EVIDENCE_BASED  pxi_sync_atomic_op_001023c0                             C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x001023E0  0x0038  EVIDENCE_BASED  pxi_reclock_lock_001023e0                               C: verifica owner TLS (c13,c0,3) en param_1+4 y adquiere lock recursivo
+0x00102418  0x0024  CONFIRMED       pxi_svc_0x25_WaitSynchronizationN_00102418              Wrapper/stub directo svc 0x25 (WaitSynchronizationN) (8L)
+0x0010243C  0x00E4  CONFIRMED       pxi_thread_create_and_start                             C: reserva pila y lanza hilo worker con svc 0x08 (CreateThread)
+0x0010252C  0x0010  CONFIRMED       pxi_srv_connect_initial                                 C: conecta a srv: (con reintento nintendo -5 loop SleepThread) y llama RegisterClient
+0x0010253C  0x0108  CONFIRMED       pxi_srv_connect_retry                                   C: segunda entrada conexion srv: y RegisterClient
+0x00102660  0x0004  CONFIRMED       pxi_break_panic_thunk                                   Thumb/ARM entry a pxi_break_panic_0x102664
+0x00102664  0x0058  CONFIRMED       pxi_svc_0x3C_Break_00102664                             Wrapper/stub directo svc 0x3C (Break) (11L)
+0x001026B8  0x0068  EVIDENCE_BASED  pxi_err_check_and_panic                                 C: verifica Result < 0 y llama pxi_break_panic
+0x00102728  0x0018  CONFIRMED       pxi_svc_0x17_CreateEvent_00102728                       Wrapper/stub directo svc 0x17 (CreateEvent) (6L)
+0x00102740  0x0022  CONFIRMED       pxi_crt_aeabi_vec_ctor_00102740                         C verificado: __aeabi_vec_ctor_nocookie (itera ctor sobre N elementos)
+0x00102770  0x0020  EVIDENCE_BASED  pxi_sub_00102770                                        C: funcion interna PXI (calls=[], callers=[0x102be4]) (7L)
+0x00102798  0x002C  EVIDENCE_BASED  pxi_sub_00102798                                        C: funcion interna PXI (calls=[], callers=[0x102098]) (13L)
+0x001027C4  0x0018  CONFIRMED       pxi_svc_0x21_CreateAddressArbiter_001027c4              Wrapper/stub directo svc 0x21 (CreateAddressArbiter) (6L)
+0x001027DC  0x0030  CONFIRMED       pxi_svc_0x02_QueryMemory_001027dc                       Wrapper/stub directo svc 0x02 (QueryMemory) (12L)
+0x0010280C  0x0018  CONFIRMED       pxi_svc_0x4F_ReplyAndReceive                            Ejecuta swi 0x4F (ReplyAndReceive)
+0x00102824  0x000C  CONFIRMED       pxi_svc_0x0A_SleepThread_00102824                       Wrapper/stub directo svc 0x0A (SleepThread) (5L)
+0x00102830  0x0074  CONFIRMED       pxi_ipc_msg_copy_words                                  C: copia palabras entre TLS buffer e buffers de respuesta PXI
+0x001028A4  0x00C4  EVIDENCE_BASED  pxi_sync_atomic_op_001028a4                             C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x001029B0  0x004C  EVIDENCE_BASED  pxi_sub_001029b0                                        C: funcion interna PXI (calls=[], callers=[0x102be4]) (20L)
+0x00102A04  0x0114  CONFIRMED       pxi_rx_dispatch_from_fifo                               C: lee channel_id (0..8) y cmd_hdr desde RECV FIFO, valida (hdr&0x3f)+((hdr&0xfc0)>>6) <= 0x40, lee payload y despacha al cliente/cola
+0x00102B20  0x0088  CONFIRMED       pxi_svc_0x24_WaitSynchronization1_00102b20              Wrapper/stub directo svc 0x24 (WaitSynchronization1) (31L)
+0x00102BAC  0x0014  EVIDENCE_BASED  pxi_getter_setter_stub_00102bac                         C: getter/setter/constante directa (5L)
+0x00102BC0  0x000C  EVIDENCE_BASED  pxi_getter_setter_stub_00102bc0                         C: getter/setter/constante directa (4L)
+0x00102BCC  0x0010  CONFIRMED       pxi_svc_0x50_BindInterrupt_00102bcc                     Wrapper/stub directo svc 0x50 (BindInterrupt) (5L)
+0x00102BE4  0x004C  CONFIRMED       pxi_svc_0x09_ExitThread_00102be4                        Wrapper/stub directo svc 0x09 (ExitThread) (15L)
+0x00102C30  0x001C  CONFIRMED       pxi_svc_0x2B_GetProcessInfo_00102c30                    Wrapper/stub directo svc 0x2B (GetProcessInfo) (7L)
+0x00102C4C  0x0010  CONFIRMED       pxi_svc_0x51_UnbindInterrupt_00102c4c                   Wrapper/stub directo svc 0x51 (UnbindInterrupt) (5L)
+0x00102C5C  0x00D4  CONFIRMED       pxi_svc_0x24_WaitSynchronization1_00102c5c              Wrapper/stub directo svc 0x24 (WaitSynchronization1) (35L)
+0x00102D30  0x00E0  EVIDENCE_BASED  pxi_sync_lock_acquire_00102d30                          C: adquisicion atomica LDREX/STREX + ArbitrateAddress
+0x00102E14  0x0030  CONFIRMED       pxi_hw_recv_fifo_words                                  C: extrae N palabras desde RECV FIFO 0x1EC6300C al buffer
+0x00102EAC  0x0058  CONFIRMED       pxi_svc_0x23_CloseHandle_00102eac                       Wrapper/stub directo svc 0x23 (CloseHandle) (13L)
+0x00102F08  0x007C  CONFIRMED       pxi_chan_complete_and_signal                            C+SWI 0x18: verifica ch_id <= 8, marca reply recibido y SignalEvent al cliente
+0x00102F90  0x0034  EVIDENCE_BASED  pxi_sync_atomic_op_00102f90                             C: primitiva atomica hasExclusiveAccess (LDREX/STREX)
+0x00102FF8  0x0058  CONFIRMED       pxi_session_dtor_0x102FF8                               C+SWI 0x23: destructor vtable 0x104108; cierra handle de sesion
+0x00103054  0x0028  CONFIRMED       pxi_svc_0x23_CloseHandle_00103054                       Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x0010307C  0x0028  CONFIRMED       pxi_svc_0x23_CloseHandle_0010307c                       Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x001030A4  0x0054  EVIDENCE_BASED  pxi_sub_001030a4                                        C: funcion interna PXI (calls=[0x1026b8], callers=[]) (15L)
+0x001031CC  0x0024  EVIDENCE_BASED  pxi_obj_init_fields_001031cc                            C: inicializador de estructura de 3 campos (9L)
+0x00103200  0x0028  CONFIRMED       pxi_svc_0x23_CloseHandle_00103200                       Wrapper/stub directo svc 0x23 (CloseHandle) (8L)
+0x00103318  0x0004  EVIDENCE_BASED  pxi_sub_00103318                                        C: funcion interna PXI (calls=[], callers=[0x100096]) (4L)
+0x0010331C  0x0048  CONFIRMED       pxi_static_init_handles                                 ASM r2: .init_array ctor handles globales 0x10500c/0x105010
+0x00103364  0x0384  CONFIRMED       pxi_static_init_9_channels                              ASM r2: .init_array ctor de los 9 canales PXI (0x11bce4..), vec_ctor 0x102740, eventos y buffers 0x100B
+0x00104044  0x006C  CONFIRMED       pxi_ro_service_channel_table                            .rodata: tabla de 9 servicios PXI <-> ch_id 0..8 (mc,FS0/1/B/R,PM,dev,am9,ps9)
+0x001040E4  0x000C  CONFIRMED       pxi_ro_str_srv_ports                                    .rodata: strings 'srv:' y 'srv:pm'

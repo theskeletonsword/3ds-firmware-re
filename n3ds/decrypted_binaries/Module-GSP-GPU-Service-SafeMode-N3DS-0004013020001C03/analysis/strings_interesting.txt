@@ -1,0 +1,4 @@
+0x0010E0BB	?mcu::GPU
+0x0010E298	i2c::LCD
+0x0010E311	SZ8gsp::Lcd
+0x0010E31D	gsp::Gpu

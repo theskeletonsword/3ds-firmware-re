@@ -1,0 +1,60 @@
+0x00168C30	Exception: %s.
+0x00197880	Mii_No.bclim
+0x00198DE4	Mii_No.bclim
+0x00211468	%03d%s
+0x002114B4	%s%04d
+0x0027D5A0	sftwrcidedid/j/
+0x002995B8	.bclyt
+0x0029A0C8	cbf_std.bcfnt
+0x0029A0DC	HudNOTES.bcfnt
+0x0029B140	Pane.bclyt
+0x002BCC58	$CFLRES:/CFL_Res.dat
+0x002BCE8C	$CFLRES:/CFL_Res.dat
+0x002D3A74	$CFLDB:/CFL_OldDB.dat
+0x002D3A90	$CFLDB:/CFL_DB.dat
+0x002D3CA8	$CFLDB:/CFL_DB.dat
+0x002D3D84	$CFLRES:/CFL_Res.dat
+0x002D3E90	$CFLDB:/CFL_OldDB.dat
+0x002D3EA8	$CFLDB:/CFL_DB.dat
+0x002E0C1C	$CFLDB:/CFL_OldDB.dat
+0x002EB37C	$CFLDB:/CFL_OldDB.dat
+0x002EF0E8	RWSTDERR
+0x002F6C60	C_ColColor.bclim
+0x002FD142	x?}%u?
+0x00303CF4	dsp::DSP
+0x0030BC68	$CFLDB:/CFL_OldDB.dat
+0x0030BC80	$CFLDB:/CFL_DB.dat
+0x00323633	photo/Nintendo 3DS/Private/00020400
+0x0032493B	Album/Movie/Show title
+0x00324952	Original album/movie/show title
+0x00324C0E	Title/songname/content description
+0x00324E12	Band/orchestra/accompaniment
+0x0032748B	gsp::Lcd
+0x00327494	gsp::Gpu
+0x0032749D	%s: bad locale name: "%s"
+0x003274B7	%s: range error: invalid range [%d, %d)
+0x003274DF	%s: argument value %u out of range [0, %u)
+0x0032750A	%s: conversion failed
+0x00327520	%s: facet %u not found in "%s" locale
+0x00327546	%s: failed to construct locale name
+0x0032756A	%s: exception
+0x00327578	%s: unexpected exception
+0x00327591	%s: invalid pointer %p
+0x003275A8	%s: logic error
+0x003275B8	%s: unspecified error
+0x003275CE	%s: runtime error
+0x003275E0	%s: underflow error
+0x003275F4	%s: overflow error
+0x00327607	%s: stream object has set %s
+0x00327624	%s: stream object has set ios::badbit
+0x0032764A	%s: stream object has set ios::eofbit
+0x00327670	%s: stream object has set ios::failbit
+0x00327697	%s: bad cast
+0x003276A4	%s: length error: %u > %u
+0x003276BE	%s: bad_alloc: out of memory
+0x003276DB	%s: out of memory
+0x0032D6F1	s4s/s)s%s>sNsOs
+0x0036DED3	N/4/q?
+0x0036E151	[Ai/y/
+0x0037307F	ERROR   
+0x00373088	ERROR   

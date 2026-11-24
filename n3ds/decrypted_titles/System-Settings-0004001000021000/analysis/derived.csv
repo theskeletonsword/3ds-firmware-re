@@ -1,0 +1,142 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x001055B4,0x18,mset_svc_0x21_CreateAddressArbiter_1055b4,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00105B24,0x5,mset_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x0010C6BC,0x1c,mset_svc_0x2B_GetProcessInfo_10c6bc,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00114D88,0xca4,mset_ipc_handler_cmd_0007_0008_0040_etc_114d88,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x00400410, 0x01C501C1, 0x01920002, 0x00080340"
+0x0011600C,0x48,mset_ipc_client_cmd_0001_11600c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00116060,0x48,mset_ipc_client_cmd_0019_116060,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00190002
+0x001161B8,0x48,mset_ipc_client_cmd_0001_1161b8,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0011630C,0x48,mset_ipc_client_cmd_0001_11630c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x00116420,0x48,mset_ipc_client_cmd_0008_116420,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x00116474,0x48,mset_ipc_client_cmd_0008_116474,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0011658C,0x48,mset_ipc_client_cmd_0001_11658c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x0011675C,0x48,mset_ipc_client_cmd_0001_11675c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x001168AC,0x48,mset_ipc_client_cmd_0010_1168ac,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00116944,0x48,mset_ipc_client_cmd_0008_116944,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x00116B14,0x48,mset_ipc_client_cmd_0010_116b14,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00116B68,0x48,mset_ipc_client_cmd_0010_116b68,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00116BBC,0x48,mset_ipc_client_cmd_0010_116bbc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00116C10,0x48,mset_ipc_client_cmd_0010_116c10,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00116DF0,0x48,mset_ipc_client_cmd_0008_116df0,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x00116E44,0x48,mset_ipc_client_cmd_0008_116e44,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x00116E98,0x48,mset_ipc_client_cmd_0008_116e98,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x00116EEC,0x48,mset_ipc_client_cmd_0008_116eec,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00080002
+0x0011708C,0x48,mset_ipc_client_cmd_0010_11708c,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x001172B4,0x48,mset_ipc_client_cmd_0010_1172b4,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00117348,0x48,mset_ipc_client_cmd_0010_117348,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x001173DC,0x48,mset_ipc_client_cmd_0010_1173dc,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00117470,0x48,mset_ipc_client_cmd_0010_117470,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00100002
+0x00117970,0x48,mset_ipc_client_cmd_0001_117970,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x00010002
+0x001221DC,0x2d78,mset_ipc_dispatcher_1221dc,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C5, 0x000F028B, 0x000F028C"
+0x0012B4F0,0x5d8,mset_ipc_dispatcher_12b4f0,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00020100, 0x00030107, 0x000F0040, 0x000F0041"
+0x0012BDDC,0x18,mset_svc_0x35_GetProcessId_12bddc,svc_wrapper,"function body is a single `svc #0x35` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001394C4,0x3a04,mset_ipc_dispatcher_1394c4,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0110, 0x000F01C3, 0x000F01C5"
+0x00146618,0x18,mset_svc_0x27_DuplicateHandle_146618,svc_wrapper,"function body is a single `svc #0x27` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00179B70,0x6,mset_str_service_frd_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""frd:u"""
+0x0017A074,0x48,mset_ipc_client_cmd_004B_17a074,ipc_client_call,uses SVC 0x32 SendSyncRequest or stores to [tls+0x80]: builds request header 0x004B0002
+0x00185DD4,0x890,mset_ipc_dispatcher_185dd4,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00010149, 0x00020107, 0x000401C4, 0x000F01C3"
+0x00189F80,0xc54,mset_ipc_dispatcher_189f80,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x0001008F, 0x00010149, 0x00020107, 0x000401C4"
+0x00194F3C,0x6,mset_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x00195938,0x6,mset_str_service_eula_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""eula:"""
+0x0019ABE4,0x6,mset_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x0019B2FC,0x6,mset_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x001A3308,0x485f8,mset_ipc_handler_cmd_0004_000B_1a3308,ipc_command_handler,"stores header-shaped literal to the IPC command buffer argument: reply/response header 0x000B0080, 0x00040080"
+0x001A7658,0x6,mset_str_service_frd_a,service_name_string,"client of (in ExHeader service-access list): ""frd:a"""
+0x001AD704,0x18,mset_svc_0x13_CreateMutex_1ad704,svc_wrapper,"function body is a single `svc #0x13` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001AD8E0,0x18,mset_svc_0x0B_GetThreadPriority_1ad8e0,svc_wrapper,"function body is a single `svc #0x0B` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001BDC40,0x18,mset_svc_0x22_ArbitrateAddress_1bdc40,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001C62A4,0x18,mset_svc_0x2D_ConnectToPort_1c62a4,svc_wrapper,"function body is a single `svc #0x2D` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001CDF78,0x18,mset_svc_0x17_CreateEvent_1cdf78,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001CE1A8,0x1c,mset_svc_0x1E_CreateMemoryBlock_1ce1a8,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001D062C,0x2b4,mset_ipc_dispatcher_1d062c,ipc_dispatcher,"10 distinct header-shaped literals (command-id compare table), e.g. 0x000A0001, 0x000A0002, 0x000B0001, 0x000B0002"
+0x001D4388,0x6,mset_str_service_act_a,service_name_string,"client of (in ExHeader service-access list): ""act:a"""
+0x001EB90C,0x648,mset_ipc_dispatcher_1eb90c,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x001FE344,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001FECC8,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001FEDFC,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001FF6A8,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x001FFDD4,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00200AD4,0x6,mset_str_service_sdat_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdat:"""
+0x00201010,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00201D6C,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00202498,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x002118CC,0x6,mset_str_service_rate_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rate:"""
+0x00225614,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00239AEC,0x6,mset_str_service_cver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cver:"""
+0x00239CA0,0x6,mset_str_service_nver_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""nver:"""
+0x00248E54,0xc,mset_func_ptr_table_248e54,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0024944C,0x10,mset_func_ptr_table_24944c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0026A56C,0x6,mset_str_service_area_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""area:"""
+0x0026A643,0x7,mset_str_service_am_sys,service_name_string,"client of (in ExHeader service-access list): ""am:sys"""
+0x0026A65C,0x7,mset_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x0026A663,0x8,mset_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x0026A69C,0x6,mset_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x0026A6C0,0x5,mset_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x0026A6C5,0x7,mset_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x0026A6D4,0x6,mset_str_service_nim_u,service_name_string,"client of (in ExHeader service-access list): ""nim:u"""
+0x0026A6EC,0x6,mset_str_service_sdck_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdck:"""
+0x0026A6FC,0x6,mset_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x0026CF3C,0x5,mset_str_service_ac_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ac:u"""
+0x0026CF41,0x5,mset_str_service_ac_i,service_name_string,"client of (in ExHeader service-access list): ""ac:i"""
+0x0026E084,0x5,mset_str_service_ns_s,service_name_string,"client of (in ExHeader service-access list): ""ns:s"""
+0x0026E0D0,0x6,mset_str_service_qtm_s,service_name_string,"client of (in ExHeader service-access list): ""qtm:s"""
+0x0026EBD4,0x7,mset_str_service_boss_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:U"""
+0x0026EBDB,0x7,mset_str_service_boss_P,service_name_string,"client of (in ExHeader service-access list): ""boss:P"""
+0x0026EBE2,0x7,mset_str_service_boss_M,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""boss:M"""
+0x0026EC00,0x9,mset_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x0026EC3C,0x9,mset_str_service_nwm__EXT,service_name_string,"client of (in ExHeader service-access list): ""nwm::EXT"""
+0x0027061C,0x6,mset_str_service_nim_u,service_name_string,"client of (in ExHeader service-access list): ""nim:u"""
+0x00270904,0x6,mset_str_service_nim_u,service_name_string,"client of (in ExHeader service-access list): ""nim:u"""
+0x00270988,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00270BAC,0x6,mset_str_service_nim_u,service_name_string,"client of (in ExHeader service-access list): ""nim:u"""
+0x00270CBC,0x6,mset_str_service_cam_s,service_name_string,"client of (in ExHeader service-access list): ""cam:s"""
+0x00270CC2,0x6,mset_str_service_y2r_u,service_name_string,"client of (in ExHeader service-access list): ""y2r:u"""
+0x002712C8,0x6,mset_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00271D9E,0x8,mset_str_service_WBssl_C,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""WBssl:C"""
+0x002775A1,0x7,mset_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x0027B070,0x8,mset_str_service_ngword_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ngword:"""
+0x0027B1A0,0xc,mset_func_ptr_table_27b1a0,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0027B204,0xc,mset_func_ptr_table_27b204,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0027B224,0xc,mset_func_ptr_table_27b224,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0027BBDD,0xa,mset_str_service_0nwm__INF,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""0nwm::INF"""
+0x0027BBE7,0x9,mset_str_service_nwm__SOC,service_name_string,"client of (in ExHeader service-access list): ""nwm::SOC"""
+0x0027BBF0,0x6,mset_str_service_soc_U,service_name_string,"client of (in ExHeader service-access list): ""soc:U"""
+0x0027BD80,0x6,mset_str_service_soc_P,service_name_string,"client of (in ExHeader service-access list): ""soc:P"""
+0x00280DE9,0x7,mset_str_service_cecd_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cecd:u"""
+0x00280DF0,0x7,mset_str_service_cecd_s,service_name_string,"client of (in ExHeader service-access list): ""cecd:s"""
+0x002899B8,0x10,mset_func_ptr_table_2899b8,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289A18,0xc,mset_func_ptr_table_289a18,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289A84,0xc,mset_func_ptr_table_289a84,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289AB8,0xc,mset_func_ptr_table_289ab8,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289AE4,0xc,mset_func_ptr_table_289ae4,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289B60,0xc,mset_func_ptr_table_289b60,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00289BC4,0x10,mset_func_ptr_table_289bc4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0028B63C,0x10,mset_func_ptr_table_28b63c,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0028C8AA,0x6,mset_str_service_cfg_i,service_name_string,"client of (in ExHeader service-access list): ""cfg:i"""
+0x0028C8B0,0x8,mset_str_service_cfg_nor,service_name_string,"client of (in ExHeader service-access list): ""cfg:nor"""
+0x0028C8B8,0x8,mset_str_service_hid_NFC,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:NFC"""
+0x0028C8C0,0x8,mset_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x0028C8C8,0x9,mset_str_service_hid_USER,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:USER"""
+0x0028C8D1,0x9,mset_str_service_hid_SPVR,service_name_string,"client of (in ExHeader service-access list): ""hid:SPVR"""
+0x0028CA06,0x9,mset_str_service_ptm_sysm,service_name_string,"client of (in ExHeader service-access list): ""ptm:sysm"""
+0x0028CA0F,0x6,mset_str_service_ptm_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:s"""
+0x0028CA15,0x9,mset_str_service_ptm_gets,service_name_string,"client of (in ExHeader service-access list): ""ptm:gets"""
+0x0028CA1E,0x6,mset_str_service_ptm_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:u"""
+0x0028CA24,0x9,mset_str_service_ptm_play,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ptm:play"""
+0x0028CB5B,0x9,mset_str_service_MSETSYS_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""MSETSYS:"""
+0x0028CB64,0x9,mset_str_service_MSETEXT_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""MSETEXT:"""
+0x0028F0EE,0x6,mset_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x0028F0F4,0x6,mset_str_service_APT_U,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:U"""
+0x0028F0FA,0x6,mset_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x0028F262,0x6,mset_str_service_cfg_u,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:u"""
+0x0028F27D,0x6,mset_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0028F396,0x6,mset_str_service_twlp_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""twlp:"""
+0x0028F762,0x6,mset_str_service_APT_A,service_name_string,"client of (in ExHeader service-access list): ""APT:A"""
+0x0028F768,0x9,mset_str_service_gsp__Lcd,service_name_string,"client of (in ExHeader service-access list): ""gsp::Lcd"""
+0x0028F771,0x9,mset_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x002901ED,0x6,mset_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x002997B8,0x18,mset_func_ptr_table_2997b8,pointer_table,6 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002997E4,0x14,mset_func_ptr_table_2997e4,pointer_table,5 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002A64F0,0x10,mset_func_ptr_table_2a64f0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002A67E4,0x10,mset_func_ptr_table_2a67e4,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x002AA694,0xc,mset_func_ptr_table_2aa694,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)

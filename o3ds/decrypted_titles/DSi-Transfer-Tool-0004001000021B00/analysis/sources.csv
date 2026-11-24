@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00108E00,0x1a,str_srcpath_http_cpp,source_path_string,src/manager/http/http.cpp
+0x001100DC,0x1a,str_srcpath_http_cpp,source_path_string,src/manager/http/http.cpp
+0x00122BA4,0x1a,str_srcpath_http_cpp,source_path_string,src/manager/http/http.cpp
+0x00133D20,0x1a,str_srcpath_http_cpp,source_path_string,src/manager/http/http.cpp
+0x0013D2B8,0x22,str_srcpath_connection_cpp,source_path_string,libs/libloader/src/connection.cpp
+0x001FD980,0x1a,str_srcpath_http_cpp,source_path_string,src/manager/http/http.cpp
+0x0010FDA0,0xae0,srcref_http_cpp_10fda0,source_file_reference,function references source path(s): src/manager/http/http.cpp

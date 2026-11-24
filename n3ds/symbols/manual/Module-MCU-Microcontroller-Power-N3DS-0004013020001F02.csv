@@ -1,0 +1,2 @@
+binary,ea,symbol_name,evidence
+Module-MCU-Microcontroller-Power-N3DS-0004013020001F02,0x00103ACC,mcu_svc_0x3C_Break_103acc,decompiled-C token similarity 0.96 (margin 0.90) with O3DS mcu_svc_0x3C_Break_1019dc; unique unclaimed candidate

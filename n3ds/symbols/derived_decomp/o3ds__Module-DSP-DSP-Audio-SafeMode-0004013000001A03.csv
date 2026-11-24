@@ -1,0 +1,16 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100318,0x28,dsp_svc_0x23_CloseHandle_100318,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100354,0x34,dsp_svc_0x23_CloseHandle_100354,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x00100388,0x28,dsp_svc_0x23_CloseHandle_100388,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100408,0x28,dsp_svc_0x23_CloseHandle_100408,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 8 C lines
+0x00101928,0x28,dsp_svc_0x23_CloseHandle_101928,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00102BC0,0x38,dsp_svc_0x32_SendSyncRequest_102bc0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00103390,0x24,dsp_svc_0x25_WaitSynchronizationN_103390,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00104B0C,0x10,dsp_svc_0x23_CloseHandle_104b0c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x00104B90,0x8,dsp_svc_0x3C_Break_104b90,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x00106714,0x38,dsp_svc_0x32_SendSyncRequest_106714,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00106750,0x3c,dsp_svc_0x32_SendSyncRequest_106750,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00106790,0x8,dsp_svc_0x23_CloseHandle_106790,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 5 C lines
+0x00106988,0xc,dsp_svc_0x3C_Break_106988,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x001070AC,0x24,dsp_svc_0x08_CreateThread_1070ac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00100714,0xc8,dsp_ipc_server_loop_100714,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x100064

@@ -1,0 +1,9 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0011F454,0x8,nwm_get_tls_11f454,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00123FBC,0x8,nwm_get_tls_123fbc,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x0013ADB0,0x24,nwm_svc_0x01_ControlMemory_13adb0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0013AE94,0x24,nwm_svc_0x08_CreateThread_13ae94,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x0013B20C,0x24,nwm_svc_0x25_WaitSynchronizationN_13b20c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x0013C654,0x28,nwm_svc_0x55_StartInterProcessDma_13c654,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x55) (StartInterProcessDma); 8 C lines
+0x001016E0,0x34a,nwm_ipc_server_loop_1016e0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x1231d0
+0x00123504,0x1d6,nwm_ipc_server_loop_123504,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x1231d0

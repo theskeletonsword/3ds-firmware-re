@@ -1,0 +1,11 @@
+ea,size,symbol_name,kind,technical_evidence
+0x14000B14,0x4c,lib_ipc_send_cmd_14000b14,library_match,"masked bytes identical to 5 named function(s), e.g. o3ds:Module-GSP-GPU-Service-0004013000001C02 @0x00100E60 ""gsp_ipc_send_cmd_0x0004_100e60"" (o3ds_semantic)"
+0x14000730,0x50,lib_sub_14000730,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00103604 ""pm_sub_00103604"" (o3ds_semantic)"
+0x14005398,0x30,lib_crt_fill_words_14005398,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00102478 ""pm_crt_fill_words_00102478"" (o3ds_semantic)"
+0x1400070C,0x20,lib_sub_1400070c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00102E18 ""pm_sub_00102e18"" (o3ds_semantic)"
+0x140013E8,0x38,lib_ipc_send_cmd_140013e8,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:Module-GSP-GPU-Service-0004013000001C02 @0x0010820C ""gsp_ipc_send_cmd_0x0001_10820c"" (o3ds_semantic)"
+0x140050B4,0xc4,lib_nn_crypto_Sha256Context__vptr_init_140050b4,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x0012CCBC ""nn_crypto_Sha256Context__vptr_init_12ccbc"" (rtti_vptr_init)"
+0x140061E0,0x98,lib_cecd_u_140061e0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010CD00 ""cecd_cecd_u_10cd00"" (o3ds_semantic)"
+0x14006158,0x80,lib_cecd_u_14006158,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010CC78 ""cecd_cecd_u_10cc78"" (o3ds_semantic)"
+0x140021D8,0x30,lib_svc_0x02_QueryMemory_140021d8,library_match,"masked bytes identical to 6 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0011FFE8 ""cecd_svc_0x02_QueryMemory_11ffe8"" (o3ds_semantic)"
+0x14004BEC,0x74,lib_mac_net_ipc_14004bec,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-NWM-WiFi-0004013000002D02 @0x0011E5B8 ""nwm_mac_net_ipc_11e5b8"" (o3ds_semantic)"

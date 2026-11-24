@@ -1,0 +1,63 @@
+ea_n3ds,size,symbol_name,kind,technical_evidence
+0x0010457C,0x6,solv3_str_service_sdmc_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""sdmc:"""
+0x00104CD0,0x5,solv3_str_service_rom_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rom:"""
+0x00105034,0x6,solv3_str_service_act_u,service_name_string,"client of (in ExHeader service-access list): ""act:u"""
+0x0010B91C,0x18,solv3_svc_0x21_CreateAddressArbiter_10b91c,svc_wrapper,"function body is a single `svc #0x21` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0010B934,0x1c,solv3_svc_0x1E_CreateMemoryBlock_10b934,svc_wrapper,"function body is a single `svc #0x1E` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00113B14,0x1c,solv3_svc_0x2B_GetProcessInfo_113b14,svc_wrapper,"function body is a single `svc #0x2B` + return (28 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x00114EC0,0x9,solv3_str_service_olvconf_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""olvconf:"""
+0x001194B4,0x8898,solv3_ipc_dispatcher_1194b4,ipc_dispatcher,"5 distinct header-shaped literals (command-id compare table), e.g. 0x00010244, 0x000F0200, 0x000F028B, 0x000F028C"
+0x0011A5DC,0x2d78,solv3_ipc_dispatcher_11a5dc,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x000F0110, 0x000F01C5, 0x000F028B, 0x000F028C"
+0x00124338,0xc,solv3_svc_0x0A_SleepThread_124338,svc_wrapper,"function body is a single `svc #0x0A` + return (12 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0013425C,0xc,solv3_func_ptr_table_13425c,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0017FBB4,0x18,solv3_svc_0x22_ArbitrateAddress_17fbb4,svc_wrapper,"function body is a single `svc #0x22` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x001897C4,0x18,solv3_svc_0x17_CreateEvent_1897c4,svc_wrapper,"function body is a single `svc #0x17` + return (24 bytes); SVC name from the Kernel11 table (3dbrew naming, see o3ds/KERNEL_ANALYSIS.md)"
+0x0019D6F0,0x97c,solv3_ipc_dispatcher_19d6f0,ipc_dispatcher,"6 distinct header-shaped literals (command-id compare table), e.g. 0x0001008F, 0x00010149, 0x000101C6, 0x000401C4"
+0x001A055C,0xd70,solv3_ipc_dispatcher_1a055c,ipc_dispatcher,"7 distinct header-shaped literals (command-id compare table), e.g. 0x0001008F, 0x00010149, 0x000101C6, 0x00020107"
+0x001BEB4E,0x4cc,solv3_ipc_dispatcher_1beb4e,ipc_dispatcher,"4 distinct header-shaped literals (command-id compare table), e.g. 0x00040080, 0x000F0082, 0x000F0083, 0x000F0085"
+0x001D6834,0xc,solv3_func_ptr_table_1d6834,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001D9658,0xc,solv3_func_ptr_table_1d9658,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001E9B20,0x10,solv3_func_ptr_table_1e9b20,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x001FA4A4,0x6,solv3_str_service_cave_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cave:"""
+0x001FC180,0x5,solv3_str_service_ac_u,service_name_string,"client of (in ExHeader service-access list): ""ac:u"""
+0x001FC1B0,0x7,solv3_str_service_fs_LDR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""fs:LDR"""
+0x001FC1B7,0x8,solv3_str_service_fs_USER,service_name_string,"client of (in ExHeader service-access list): ""fs:USER"""
+0x001FC1E0,0x7,solv3_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x001FD5E0,0x9,solv3_str_service_dsp__DSP,service_name_string,"client of (in ExHeader service-access list): ""dsp::DSP"""
+0x002006F0,0x6,solv3_str_service_ndm_u,service_name_string,"client of (in ExHeader service-access list): ""ndm:u"""
+0x00200860,0x5,solv3_str_service_srv_,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:"""
+0x00200865,0x7,solv3_str_service_srv_pm,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""srv:pm"""
+0x00209008,0x7,solv3_str_service_http_C,service_name_string,"client of (in ExHeader service-access list): ""http:C"""
+0x0020BD0A,0x9,solv3_str_service_std__cin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cin"""
+0x0020BD15,0xa,solv3_str_service_std__cout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cout"""
+0x0020BD20,0xa,solv3_str_service_std__cerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::cerr"""
+0x0020BD2B,0xa,solv3_str_service_std__clog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::clog"""
+0x0020BD36,0xa,solv3_str_service_std__wcin,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcin"""
+0x0020BD41,0xb,solv3_str_service_std__wcout,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcout"""
+0x0020BD4C,0xb,solv3_str_service_std__wcerr,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wcerr"""
+0x0020BD57,0xb,solv3_str_service_std__wclog,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""std::wclog"""
+0x0020C060,0x10,solv3_func_ptr_table_20c060,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CC88,0xc,solv3_func_ptr_table_20cc88,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CCD0,0x10,solv3_func_ptr_table_20ccd0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CD58,0x10,solv3_func_ptr_table_20cd58,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CDCC,0xc,solv3_func_ptr_table_20cdcc,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CE50,0x10,solv3_func_ptr_table_20ce50,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CED0,0x10,solv3_func_ptr_table_20ced0,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020CF58,0x10,solv3_func_ptr_table_20cf58,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D100,0x10,solv3_func_ptr_table_20d100,pointer_table,4 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D704,0xc,solv3_func_ptr_table_20d704,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x0020D818,0xc,solv3_func_ptr_table_20d818,pointer_table,3 consecutive pointers to function starts (vtable / dispatch / jump table)
+0x00210409,0x6,solv3_str_service_err_f,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""err:f"""
+0x0021040F,0x8,solv3_str_service_hid_QTM,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:QTM"""
+0x00210417,0x9,solv3_str_service_hid_USER,service_name_string,"client of (in ExHeader service-access list): ""hid:USER"""
+0x00210420,0x9,solv3_str_service_hid_SPVR,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""hid:SPVR"""
+0x00210471,0x6,solv3_str_service_APT_S,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:S"""
+0x00210477,0x6,solv3_str_service_APT_U,service_name_string,"client of (in ExHeader service-access list): ""APT:U"""
+0x0021047D,0x6,solv3_str_service_APT_A,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""APT:A"""
+0x00210483,0x6,solv3_str_service_cfg_u,service_name_string,"client of (in ExHeader service-access list): ""cfg:u"""
+0x00210489,0x9,solv3_str_service_gsp__Lcd,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""gsp::Lcd"""
+0x00210492,0x9,solv3_str_service_gsp__Gpu,service_name_string,"client of (in ExHeader service-access list): ""gsp::Gpu"""
+0x0021050E,0x6,solv3_str_service_ubl__,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""ubl_:"""
+0x002105B0,0x6,solv3_str_service_cfg_i,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:i"""
+0x002105B6,0x6,solv3_str_service_cfg_s,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""cfg:s"""
+0x00226A28,0xb,solv3_str_service_rwstderr_1,service_name_string,"name present in module data but not in the ExHeader access list (server port registered by this module, or an ACL/name table entry): ""rwstderr:1"""

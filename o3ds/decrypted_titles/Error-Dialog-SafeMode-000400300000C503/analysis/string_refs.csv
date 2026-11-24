@@ -1,0 +1,4 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010D788,0xc24,strref_Group_Scene_10d788,string_reference,function references string(s): Group_Scene
+0x0011AB08,0x8a7c,strref_hid_USER_11ab08,string_reference,function references string(s): hid:USER
+0x00149FA4,0xcc,strref_csnd_SND_149fa4,string_reference,function references string(s): csnd:SND

@@ -1,0 +1,41 @@
+0x001124C8	RWSTDERR
+0x0012CE34	Exception: %s.
+0x0012EEB0	%s%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x
+0x0013D120	nwm::UDS
+0x0013D129	nwm::INF
+0x0013D132	nwm::SOC
+0x0013D13B	nwm::SAP
+0x0013D144	nwm::CEC
+0x0013D14D	nwm::EXT
+0x0013D156	nwm::TST
+0x0013D4F4	mcu::NWM
+0x0013D9FB	;d22Vt::N
+0x0013F40A	%s: bad locale name: "%s"
+0x0013F424	%s: range error: invalid range [%d, %d)
+0x0013F44C	%s: argument value %u out of range [0, %u)
+0x0013F477	%s: conversion failed
+0x0013F48D	%s: facet %u not found in "%s" locale
+0x0013F4B3	%s: failed to construct locale name
+0x0013F4D7	%s: exception
+0x0013F4E5	%s: unexpected exception
+0x0013F4FE	%s: invalid pointer %p
+0x0013F515	%s: logic error
+0x0013F525	%s: unspecified error
+0x0013F53B	%s: runtime error
+0x0013F54D	%s: underflow error
+0x0013F561	%s: overflow error
+0x0013F574	%s: stream object has set %s
+0x0013F591	%s: stream object has set ios::badbit
+0x0013F5B7	%s: stream object has set ios::eofbit
+0x0013F5DD	%s: stream object has set ios::failbit
+0x0013F604	%s: bad cast
+0x0013F611	%s: length error: %u > %u
+0x0013F62B	%s: bad_alloc: out of memory
+0x0013F648	%s: out of memory
+0x001406D1	A_INIT() FAILED.
+0x0014230A	A_INIT() FAILED.
+0x0014231E	wreg_get_next_channel failed
+0x0014233C	 unable to reset hardware; hal status %u
+0x001423E5	0x%x,%d
+0x00149CA0	A_INIT() FAILED.
+0x00149CB4	Chip reset failed

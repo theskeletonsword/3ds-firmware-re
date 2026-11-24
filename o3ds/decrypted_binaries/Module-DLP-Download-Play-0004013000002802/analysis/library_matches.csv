@@ -1,0 +1,13 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00111308,0x4c,lib_dispatchers_rt_arm_111308,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x001113A0,0x4c,lib_dispatchers_rt_arm_1113a0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x0010AB98,0x5c,lib_crt_strlen_10ab98,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:fs @0x0011E1FC ""fs_crt_strlen_0011e1fc"" (o3ds_semantic)"
+0x001006AC,0x50,lib_init_fs_session_1006ac,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010079C ""cecd_init_fs_session"" (o3ds_semantic)"
+0x0010A2CC,0x54,lib_crt_aeabi_memcpy_10a2cc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00102C2C ""pm_crt_aeabi_memcpy_00102c2c"" (o3ds_semantic)"
+0x00111BA0,0x4c,lib_dispatchers_rt_arm_111ba0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00111B54,0x4c,lib_dispatchers_rt_arm_111b54,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00111B08,0x4c,lib_dispatchers_rt_arm_111b08,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00111ABC,0x4c,lib_dispatchers_rt_arm_111abc,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00111A70,0x4c,lib_dispatchers_rt_arm_111a70,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x00121E0C ""cecd_dispatchers_rt_arm_121e0c"" (o3ds_semantic)"
+0x00109DA8,0x68,lib_engine_fsm_arm_109da8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E938 ""cecd_engine_fsm_arm_10e938"" (o3ds_semantic)"
+0x00109E2C,0x20c,lib_engine_fsm_arm_109e2c,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0010E9BC ""cecd_engine_fsm_arm_10e9bc"" (o3ds_semantic)"

@@ -1,0 +1,20 @@
+ea,size,symbol_name,kind,technical_evidence
+0x0010013C,0x28,mcu_svc_0x23_CloseHandle_10013c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00100178,0x34,mcu_svc_0x23_CloseHandle_100178,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 10 C lines
+0x001001AC,0x28,mcu_svc_0x23_CloseHandle_1001ac,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x23) (CloseHandle); 7 C lines
+0x00104310,0x24,mcu_svc_0x01_ControlMemory_104310,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x0010441C,0x24,mcu_svc_0x25_WaitSynchronizationN_10441c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x0010450C,0x4,mcu_svc_0x3C_Break_10450c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x3C) (Break); 5 C lines
+0x001052E8,0x3c,mcu_svc_0x32_SendSyncRequest_1052e8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00107DE8,0x38,mcu_svc_0x32_SendSyncRequest_107de8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00107E24,0x3c,mcu_svc_0x32_SendSyncRequest_107e24,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x32) (SendSyncRequest); 12 C lines
+0x00107FA8,0x24,mcu_svc_0x08_CreateThread_107fa8,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00100280,0xa4,mcu_ipc_server_loop_100280,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x00100330,0xa4,mcu_ipc_server_loop_100330,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x001003E0,0xa4,mcu_ipc_server_loop_1003e0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x00100490,0xa4,mcu_ipc_server_loop_100490,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x00100540,0xa4,mcu_ipc_server_loop_100540,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x001005F0,0xa4,mcu_ipc_server_loop_1005f0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x001006A0,0xa4,mcu_ipc_server_loop_1006a0,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x00100750,0xa4,mcu_ipc_server_loop_100750,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c
+0x00102E38,0xa4,mcu_ipc_server_loop_102e38,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x10556c

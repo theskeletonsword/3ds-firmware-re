@@ -1,0 +1,10 @@
+ea,size,symbol_name,kind,technical_evidence
+0x002B729C,0x2c,lib_crt_fini_array_2b729c,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x00144874,0x34,lib_nw_gfx_WorldMatrixUpdater__vptr_init_144874,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00125890 ""nw_gfx_WorldMatrixUpdater__vptr_init_125890"" (rtti_vptr_init)"
+0x00147A2C,0x34,lib_nw_gfx_WorldMatrixUpdater__vptr_init_147a2c,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00125890 ""nw_gfx_WorldMatrixUpdater__vptr_init_125890"" (rtti_vptr_init)"
+0x002123A4,0x50,lib_imgdb_FileReader__vptr_init_2123a4,library_match,"masked bytes identical to 18 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x0013A218 ""imgdb_FileReader__vptr_init_13a218"" (rtti_vptr_init)"
+0x0020FEE4,0x50,lib_imgdb_FileReader__vptr_init_20fee4,library_match,"masked bytes identical to 18 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x0013A218 ""imgdb_FileReader__vptr_init_13a218"" (rtti_vptr_init)"
+0x00168D9C,0x50,lib_imgdb_FileReader__vptr_init_168d9c,library_match,"masked bytes identical to 18 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x0013A218 ""imgdb_FileReader__vptr_init_13a218"" (rtti_vptr_init)"
+0x0016A6A8,0x54,lib_imgdb_ImageDatabase__vptr_init_16a6a8,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x00128978 ""imgdb_ImageDatabase__vptr_init_128978"" (rtti_vptr_init)"
+0x001D1FF8,0x174,lib_lib_MemFun_sequence_main_inputaddr_InputAddr_void_bool__vptr_init_1d1ff8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Miiverse-Applet-000400300000BD02 @0x0019EDF4 ""lib_MemFun_sequence_main_inputaddr_InputAddr_void_bool__vptr_init_19edf4"" (rtti_vptr_init)"
+0x00209624,0x20,lib_nn_fnd_ExpHeapBase__vslot2_209624,library_match,"masked bytes identical to 4 named function(s), e.g. o3ds:Internet-Browser-0004003000009402 @0x00289E90 ""nn_fnd_ExpHeapBase__vslot2_289e90"" (rtti_vslot)"

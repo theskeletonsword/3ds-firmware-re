@@ -1,0 +1,4 @@
+0x0010D0A0	mcu::GPU
+0x0010D168	i2c::LCD
+0x0010D1A0	gsp::Lcd
+0x0010D1A9	gsp::Gpu

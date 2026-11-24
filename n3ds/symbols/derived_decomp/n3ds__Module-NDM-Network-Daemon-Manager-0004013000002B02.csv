@@ -1,0 +1,7 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00105ABC,0x8,ndm_get_tls_105abc,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x001092D0,0x24,ndm_svc_0x01_ControlMemory_1092d0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x001093DC,0x24,ndm_svc_0x08_CreateThread_1093dc,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines
+0x00109524,0x8,ndm_get_tls_109524,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00109B44,0x24,ndm_svc_0x25_WaitSynchronizationN_109b44,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00101598,0x202,ndm_ipc_server_loop_101598,ipc_server_loop_decomp,loop that calls the ReplyAndReceive SVC wrapper 0x109394

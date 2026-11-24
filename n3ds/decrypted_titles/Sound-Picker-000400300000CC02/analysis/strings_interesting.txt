@@ -1,0 +1,34 @@
+0x00104EE7	c%d&ced
+0x0010563D	U%dedh
+0x001126B8	RWSTDERR
+0x0011940C	Exception: %s.
+0x00121BCE	/H/J0I00
+0x00122E08	.bclyt
+0x001231B4	cbf_std.bcfnt
+0x001231C4	HudNOTES.bcfnt
+0x001324D0	 k%s+F
+0x0015EE0C	Pane.bclyt
+0x00175E9B	gsp::Lcd
+0x00175EA4	gsp::Gpu
+0x00175EB9	%s: bad locale name: "%s"
+0x00175ED3	%s: range error: invalid range [%d, %d)
+0x00175EFB	%s: argument value %u out of range [0, %u)
+0x00175F26	%s: conversion failed
+0x00175F3C	%s: facet %u not found in "%s" locale
+0x00175F62	%s: failed to construct locale name
+0x00175F86	%s: exception
+0x00175F94	%s: unexpected exception
+0x00175FAD	%s: invalid pointer %p
+0x00175FC4	%s: logic error
+0x00175FD4	%s: unspecified error
+0x00175FEA	%s: runtime error
+0x00175FFC	%s: underflow error
+0x00176010	%s: overflow error
+0x00176023	%s: stream object has set %s
+0x00176040	%s: stream object has set ios::badbit
+0x00176066	%s: stream object has set ios::eofbit
+0x0017608C	%s: stream object has set ios::failbit
+0x001760B3	%s: bad cast
+0x001760C0	%s: length error: %u > %u
+0x001760DA	%s: bad_alloc: out of memory
+0x001760F7	%s: out of memory

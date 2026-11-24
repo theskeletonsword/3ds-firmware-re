@@ -1,0 +1,15 @@
+o3ds_symbol,o3ds_ea,rank,n3ds_candidate_ea,score,margin_to_rank2,note
+gsp_gpu_ipc_thumb_1001e4,0x1001e4,0,,0,0,no decompiled O3DS function at that address
+gsp_gx_command_queue_proc,0x103a4c,1,0x103b18,0.569,0.368,
+gsp_gx_command_queue_proc,0x103a4c,2,0x106e2c,0.201,0.201,
+gsp_gx_command_queue_proc,0x103a4c,3,0x109be8,0.15,0.15,
+gsp_irq_handler_0_to_F,0x104ce4,1,0x104cd4,0.426,0.296,
+gsp_irq_handler_0_to_F,0x104ce4,2,0x10a518,0.13,0.13,
+gsp_irq_handler_0_to_F,0x104ce4,3,0x109be8,0.13,0.13,
+gsp_gpu_cache_inv_and_ctrl,0x1050e0,1,0x1053f8,0.833,0.786,
+gsp_gpu_cache_inv_and_ctrl,0x1050e0,2,0x100070,0.047,0.047,
+gsp_gpu_cache_inv_and_ctrl,0x1050e0,3,0x102dfc,0.027,0.027,
+gsp_hw_mmio_105c88,0x105c88,1,0x106974,0.354,0.243,
+gsp_hw_mmio_105c88,0x105c88,2,0x107170,0.111,0.111,
+gsp_hw_mmio_105c88,0x105c88,3,0x10c4bc,0.089,0.089,
+gsp_dma_os_10b8b0,0x10b8b0,0,,0,0,no decompiled O3DS function at that address

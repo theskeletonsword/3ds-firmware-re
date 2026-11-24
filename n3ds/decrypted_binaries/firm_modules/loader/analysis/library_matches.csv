@@ -1,0 +1,6 @@
+ea,size,symbol_name,kind,technical_evidence
+0x14000794,0x4c,lib_ipc_send_cmd_14000794,library_match,"masked bytes identical to 5 named function(s), e.g. o3ds:Module-GSP-GPU-Service-0004013000001C02 @0x00100E60 ""gsp_ipc_send_cmd_0x0004_100e60"" (o3ds_semantic)"
+0x14000CE8,0x20,lib_getter_setter_stub_14000ce8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x001012FC ""sm_getter_setter_stub_001012fc"" (o3ds_semantic)"
+0x14000B88,0x30,lib_svc_0x02_QueryMemory_14000b88,library_match,"masked bytes identical to 6 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0011FFE8 ""cecd_svc_0x02_QueryMemory_11ffe8"" (o3ds_semantic)"
+0x14002228,0x30,lib_crt_fill_words_14002228,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pm @0x00102478 ""pm_crt_fill_words_00102478"" (o3ds_semantic)"
+0x14001960,0x24,lib_svc_0x01_ControlMemory_14001960,library_match,"masked bytes identical to 6 named function(s), e.g. o3ds:Module-CECD-StreetPass-0004013000002602 @0x0011FFAC ""cecd_svc_0x01_ControlMemory_11ffac"" (o3ds_semantic)"

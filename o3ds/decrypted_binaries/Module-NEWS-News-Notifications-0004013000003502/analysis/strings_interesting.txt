@@ -1,0 +1,2 @@
+0x0010A991	gsp::Lcd
+0x0010A99A	gsp::Gpu

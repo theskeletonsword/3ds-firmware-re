@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001036A0,0x24,csnd_svc_0x01_ControlMemory_1036a0,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x01) (ControlMemory); 8 C lines
+0x00103B3C,0x8,csnd_get_tls_103b3c,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00103CB8,0x8,csnd_get_tls_103cb8,tls_accessor_decomp,"decompiled body only reads the TLS pointer (mrc p15,0,Rd,c13,c0,3)"
+0x00103D54,0x24,csnd_svc_0x25_WaitSynchronizationN_103d54,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x25) (WaitSynchronizationN); 8 C lines
+0x00104C0C,0x18,csnd_svc_0x13_CreateMutex_104c0c,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x13) (CreateMutex); 5 C lines
+0x00104C74,0x8,csnd_svc_0x20_UnmapMemoryBlock_104c74,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x20) (UnmapMemoryBlock); 5 C lines
+0x00105980,0x24,csnd_svc_0x08_CreateThread_105980,svc_wrapper_decomp,decompiled body is a single software_interrupt(0x08) (CreateThread); 8 C lines

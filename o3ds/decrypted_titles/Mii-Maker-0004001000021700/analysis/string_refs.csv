@@ -1,0 +1,40 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00105274,0x138,strref_StartBg_Up_Loop_bclan_105274,string_reference,function references string(s): AnimLoop | P_BgCommon_00 | P_MiiLogo_00
+0x001173BC,0x174,strref_CFLDB_CFL_OldDB_dat_1173bc,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x0011FE98,0x90,strref_P_BgCommon_00_11fe98,string_reference,function references string(s): P_BgCommon_00 | P_MiiLogo_00
+0x0014640C,0xbc,strref_CFLRES_14640c,string_reference,function references string(s): $CFLRES:
+0x0015A988,0x670,strref_BtnBase_00_15a988,string_reference,function references string(s): BtnBase_00 | BtnBase_01 | BtnBase_02
+0x0015F5A4,0x24ec,strref_editor_btn_back_dlg_15f5a4,string_reference,function references string(s): editor_btn_back_dlg | editor_btn_ok | editor_text_09
+0x00165C34,0x1c8,strref_BtnNickname_165c34,string_reference,function references string(s): BtnNickname | T_Nickname
+0x00168350,0x1e0,strref_code_btn_ok_dlg_168350,string_reference,function references string(s): code_btn_ok_dlg | first_text_02 | plaza_first_00
+0x0016BE30,0x1cc,strref_s_s_bclan_16be30,string_reference,function references string(s): %s_%s.bclan
+0x0016DCEC,0x27194,strref_s_s_bclan_16dcec,string_reference,function references string(s): %s_%s.bclan
+0x0017059C,0x174,strref_Dialog_00_17059c,string_reference,function references string(s): Dialog_00
+0x00170F24,0xcc,strref_Dialog_00_170f24,string_reference,function references string(s): Dialog_00
+0x00172BA4,0x1060,strref_Flash00_bcptl_172ba4,string_reference,function references string(s): Flash00.bcptl | Floor00.bcmdl
+0x00173C38,0xec,strref_Walk00_bcskla_173c38,string_reference,function references string(s): Walk00.bcskla
+0x0017646C,0x178,strref_editor_btn_back_dlg_17646c,string_reference,function references string(s): editor_btn_back_dlg | editor_btn_out_cam | editor_btn_photo
+0x00177664,0x128,strref_DialogGender_Unselect_bclan_177664,string_reference,function references string(s): DialogGender_Decide.bclan | DialogGender_Select.bclan | DialogGender_Unselect.bclan
+0x001779CC,0xac,strref_T_Title_00_1779cc,string_reference,function references string(s): T_Title_00
+0x001843E8,0x178,strref_connect_btn_back_dlg_1843e8,string_reference,function references string(s): connect_btn_back_dlg | connect_btn_edit | connect_btn_wii
+0x00185FBC,0x3cc,strref_s_s_bclan_185fbc,string_reference,function references string(s): %s_%s.bclan
+0x00190BBC,0xc,strref_T_BaseShadow_00_190bbc,string_reference,function references string(s): T_BaseShadow_00
+0x00192A64,0xd8,strref_T_PhotoPos_192a64,string_reference,function references string(s): T_PhotoPos
+0x00193E14,0x14c,strref_DialogPhotoSelect_Unselect_bclan_193e14,string_reference,function references string(s): DialogPhotoSelect_Decide.bclan | DialogPhotoSelect_Select.bclan | DialogPhotoSelect_Unselect.bclan
+0x00194144,0xe0,strref_Dialog_Up_194144,string_reference,function references string(s): Dialog_Up
+0x00195F44,0x124,strref_T_Admission_195f44,string_reference,function references string(s): T_Admission
+0x0019724C,0x140,strref_code_btn_cancel_base_19724c,string_reference,function references string(s): N_WaitIcon | QRPhotoText.bclyt | code_btn_cancel_base
+0x001BA040,0xb0,strref_BgCommon_00_1ba040,string_reference,function references string(s): BgCommon_00 | P_BgCommon
+0x001BC688,0xc,strref_T_Base_00_1bc688,string_reference,function references string(s): T_Base_00
+0x001BE1AC,0x2e4,strref_BtnQR_bclyt_1be1ac,string_reference,function references string(s): BtnQR.bclyt
+0x001C014C,0x4c,strref_WaitIcon00_00_1c014c,string_reference,function references string(s): WaitIcon00_00
+0x001C01A0,0xac,strref_Group_00_1c01a0,string_reference,function references string(s): Group_00
+0x001C2FF8,0x70,strref_BgCommon_00_1c2ff8,string_reference,function references string(s): BgCommon_00 | P_BgCommon
+0x001C48F4,0x70,strref_T_BaseShadow_00_1c48f4,string_reference,function references string(s): T_BaseShadow_00 | T_Base_00
+0x001C5060,0xd4,strref_W_Dialog_1c5060,string_reference,function references string(s): W_Dialog
+0x001DEA4C,0x50,strref_BgCommon_00_1dea4c,string_reference,function references string(s): BgCommon_00 | P_BgCommon
+0x00233FA4,0x358,strref_NintendoDS_233fa4,string_reference,function references string(s): NintendoDS
+0x0023930C,0x2f8,strref_Nintendo_23930c,string_reference,function references string(s): Nintendo
+0x002801D8,0x37c,strref_LightQR_bcmdl_2801d8,string_reference,function references string(s): LightQR.bcmdl | QR00.bcptl | QRBG.bcmdl
+0x00280924,0x158,strref_code_btn_back_280924,string_reference,function references string(s): BtnQr_00 | code_btn_back
+0x002817AC,0x44,strref_T_BaseShadow_00_2817ac,string_reference,function references string(s): T_BaseShadow_00 | T_Base_00

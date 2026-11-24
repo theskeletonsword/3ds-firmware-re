@@ -1,0 +1,12 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001044C8,0x5d4,strref_3D_nwgfx_DefaultShader_LZ_bin_1044c8,string_reference,function references string(s): 3D/nwgfx_DefaultShader_LZ.bin
+0x001608DC,0xb4,strref_WaitIcon_bclyt_1608dc,string_reference,function references string(s): N_WaitIcon_00 | WaitIcon.bclyt
+0x00167970,0x95c,strref_ProgStart_bclan_167970,string_reference,function references string(s): NumbWndw_10 | TextBoxTitle_04 | _ProgStart.bclan
+0x00180510,0x10e4,strref_Action_http_schemas_xmlsoap_org_ws_2005_04_disco_180510,string_reference,function references string(s): Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Resolve</
+0x0019A2E0,0x968,strref_BalloonNavi_D_SceneIn_01_bclan_19a2e0,string_reference,function references string(s): BalloonNavi_D_SceneIn_01.bclan | Null_Obj
+0x0019A6AC,0xfb6,strref_Null_Obj_19a6ac,string_reference,function references string(s): Null_Obj
+0x0019C90C,0x1114,strref_MultiPage_19c90c,string_reference,function references string(s): MultiPage
+0x0019E428,0x39e,strref_T_SDBlock_01_19e428,string_reference,function references string(s): T_SDBlock_01
+0x001A1968,0x35e,strref_CommonBG_U_00_1a1968,string_reference,function references string(s): CommonBG_U_00
+0x001A1C40,0x4d6,strref_TextBoxTitle_00_1a1c40,string_reference,function references string(s): Null_Title | TextBoxTitle_00 | TextBox_00
+0x001A50F0,0x1452,strref_R_UpSmall_1a50f0,string_reference,function references string(s): R_UpSmall

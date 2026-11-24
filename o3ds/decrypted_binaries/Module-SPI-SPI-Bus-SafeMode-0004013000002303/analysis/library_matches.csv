@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100FF8,0x2c,lib_crt_fini_array_100ff8,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"

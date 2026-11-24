@@ -1,0 +1,15 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001028F4,0x170,strref_https_ecs_c_shop_nintendowifi_net_ecs_services_E_1028f4,string_reference,function references string(s): https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x00102AC8,0x21c,strref_https_nus_c_shop_nintendowifi_net_nus_services_N_102ac8,string_reference,function references string(s): https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x001054A0,0x2474,strref_ExtAccountId_1054a0,string_reference,function references string(s): </ExtAccountId>
+0x00115CB0,0x4f8,strref_https_ninja_ctr_shop_nintendo_net_ninja_ws_my_ba_115cb0,string_reference,function references string(s): https://ninja.ctr.shop.nintendo.net/ninja/ws/my/balance/current_raw
+0x0011F7D4,0x724,strref_PurchaseInfoResult_11f7d4,string_reference,function references string(s): Discount | PurchaseInfoResult
+0x00120C44,0xec,strref_EC_PLATFORM_STRING_TKT_120c44,string_reference,function references string(s): EC_PLATFORM_STRING_TKT
+0x001248DC,0x744,strref_PurchaseInfoResult_1248dc,string_reference,function references string(s): Discount | PurchaseInfoResult
+0x001312AC,0x21c,strref_AttributeValue_1312ac,string_reference,function references string(s): AttributeName | AttributeValue
+0x00135D80,0x330,strref_https_ecs_c_shop_nintendowifi_net_ecs_services_E_135d80,string_reference,function references string(s): https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP
+0x0013A800,0x9c,strref_The_nup_debug_message_can_not_be_read_because_an_13a800,string_reference,function references string(s): The ec debug message can not be read because an api is active in other thread. | The nup debug message can not be read because an api is active in other thread.
+0x0013EFBC,0x8c,strref_https_nus_c_shop_nintendowifi_net_nus_services_N_13efbc,string_reference,function references string(s): https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x0013F050,0x314,strref_https_ecs_c_shop_nintendowifi_net_ecs_services_E_13f050,string_reference,function references string(s): https://ecs.c.shop.nintendowifi.net/ecs/services/ECommerceSOAP | https://nus.c.shop.nintendowifi.net/nus/services/NetUpdateSOAP
+0x001587CC,0x88,strref_Connection_Cancel_1587cc,string_reference,function references string(s): Connection.Cancel
+0x00158858,0xc4,strref_Connection_Cancel_158858,string_reference,function references string(s): Connection.Cancel

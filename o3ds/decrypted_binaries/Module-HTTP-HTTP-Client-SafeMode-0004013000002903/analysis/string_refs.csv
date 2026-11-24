@@ -1,0 +1,9 @@
+ea,size,symbol_name,kind,technical_evidence
+0x001014BC,0x2ec,strref_https_1014bc,string_reference,function references string(s): https://
+0x001017B8,0xfc,strref_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv_1017b8,string_reference,function references string(s): ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x00109FD0,0x60,strref_Transfer_Encoding_chunked_109fd0,string_reference,function references string(s): Transfer-Encoding: chunked
+0x00112A8C,0xf8,strref_Proxy_Authorization_Basic_112a8c,string_reference,function references string(s): Authorization: Basic  | Proxy-Authorization: Basic 
+0x00113100,0x238,strref_Content_Type_multipart_form_data_boundary_113100,string_reference,"function references string(s): Content-Disposition: form-data; name="" | Content-Type: multipart/form-data; boundary="
+0x0011384C,0x488,strref_Content_Type_multipart_form_data_boundary_11384c,string_reference,"function references string(s): Content-Disposition: form-data; name="" | Content-Type: multipart/form-data; boundary="
+0x00114BE8,0x78,strref_HTTP_1_0_114be8,string_reference,function references string(s): HTTP/1.0  | HTTP/1.1 
+0x00115498,0x4e4,strref_Content_Disposition_form_data_name_115498,string_reference,"function references string(s): Content-Disposition: form-data; name="""

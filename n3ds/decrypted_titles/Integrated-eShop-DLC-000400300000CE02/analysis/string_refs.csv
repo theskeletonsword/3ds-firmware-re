@@ -1,0 +1,18 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00123B0C,0xcc,strref_csnd_SND_123b0c,string_reference,function references string(s): csnd:SND
+0x00143C00,0x5824,strref_s_bflyt_143c00,string_reference,function references string(s): %s.bflyt
+0x0014D3D4,0x2c6f8,strref_P_icon_01_14d3d4,string_reference,function references string(s): P_icon_01
+0x0014E6D8,0x88,strref_P_icon_01_14e6d8,string_reference,function references string(s): P_icon_01
+0x0015EEF0,0x47c,strref_s_ws_s_titles_ec_info_ns_uid_5B_5D_s_lang_s_shop_15eef0,string_reference,function references string(s): %s/ws/%s/titles/ec_info?ns_uid%%5B%%5D=%s&lang=%s&shop_id=1&_type=json
+0x00160168,0x790,strref_s_ws_titles_id_pair_title_id_5B_5D_s_lang_s_shop_160168,string_reference,function references string(s): %s/ws/titles/id_pair?title_id%%5B%%5D=%s&lang=%s&shop_id=1&_type=json
+0x00162884,0x2bff8,strref_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv_162884,string_reference,function references string(s): ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x001A53AC,0x13ae,strref_CommonSignIn_01_01_1a53ac,string_reference,function references string(s): CommonSignIn_01_01
+0x001B8094,0x4c0,strref_N_CmnProgBar_00_1b8094,string_reference,function references string(s): Boot_txt01_06 | Boot_txt01_08 | N_CmnProgBar_00
+0x001B8C10,0x34e,strref_N_CmnProgBar_00_1b8c10,string_reference,function references string(s): Boot_txt01_06 | Boot_txt01_08 | N_CmnProgBar_00
+0x001B8F38,0x97c,strref_N_CmnProgBar_00_1b8f38,string_reference,function references string(s): Boot_txt01_06 | Boot_txt01_08 | N_CmnProgBar_00
+0x001E597A,0x1666,strref_s_ws_my_balance_current_nfc_prepare_lang_s_shop__1e597a,string_reference,function references string(s): %s/ws/my/balance/current/!nfc_prepare?lang=%s&shop_id=1&_type=json
+0x001EBAEC,0x28c,strref_s_ws_my_nfc_transactions_s_result_lang_s_shop_id_1ebaec,string_reference,function references string(s): %s/ws/my/nfc_transactions/%s/result?lang=%s&shop_id=1&_type=json
+0x001EDB44,0x28c,strref_s_ws_my_nfc_transactions_s_history_lang_s_shop_i_1edb44,string_reference,function references string(s): %s/ws/my/nfc_transactions/%s/history?lang=%s&shop_id=1&_type=json
+0x001F1DB4,0x6b0,strref_NA_NAME_JPN_ja_1f1db4,string_reference,function references string(s): NA_NAME_JPN_ja
+0x001F3600,0x330,strref_s_ws_s_tax_locations_postal_code_s_lang_s_shop_i_1f3600,string_reference,function references string(s): %s/ws/%s/tax_locations?postal_code=%s&lang=%s&shop_id=1&_type=json
+0x001F4F7C,0x874,strref_s_ws_my_nfc_transactions_incomplete_transaction__1f4f7c,string_reference,function references string(s): %s/ws/my/nfc_transactions/%s/history/inquiry?lang=%s&shop_id=1&_type=json | %s/ws/my/nfc_transactions/%s/result/inquiry?lang=%s&shop_id=1&_type=json | %s/ws/my/nfc_transactions/incomplete_transaction?lang=%s&shop_id=1&_type=json

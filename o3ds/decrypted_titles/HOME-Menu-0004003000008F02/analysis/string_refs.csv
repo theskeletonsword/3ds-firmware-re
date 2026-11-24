@@ -1,0 +1,113 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00102F9C,0x638,strref_3D_nwgfx_DefaultShader_LZ_bin_102f9c,string_reference,function references string(s): 3D/nwgfx_DefaultShader_LZ.bin
+0x00158A8C,0x174,strref_CFLDB_CFL_OldDB_dat_158a8c,string_reference,function references string(s): $CFLDB:/CFL_DB.dat | $CFLDB:/CFL_OldDB.dat
+0x0016D450,0x78c,strref_https_npvk_app_nintendo_net_reports_16d450,string_reference,function references string(s): X-BOSS-TaskId | https://npvk.app.nintendo.net/reports
+0x00176954,0x358,strref_NintendoDS_176954,string_reference,function references string(s): NintendoDS
+0x0017B9F0,0x2f8,strref_Nintendo_17b9f0,string_reference,function references string(s): Nintendo
+0x001B41D8,0x10c,strref_default_cic_1b41d8,string_reference,function references string(s): default.cic | special.cic
+0x001B4E6C,0x46c,strref_MG4SF5LYDDpjWviYp2gfbWJgWLbnTTVQ_1b4e6c,string_reference,function references string(s): MG4SF5LYDDpjWviYp2gfbWJgWLbnTTVQ
+0x001B564C,0xe4,strref_MG4SF5LYDDpjWviYp2gfbWJgWLbnTTVQ_1b564c,string_reference,function references string(s): MG4SF5LYDDpjWviYp2gfbWJgWLbnTTVQ
+0x001CEBE4,0x54,strref_T_BtnB_00_1cebe4,string_reference,function references string(s): T_BtnB_00 | T_BtnF_00
+0x001CF744,0x88,strref_lau_theme_change_thm_fail_1cf744,string_reference,function references string(s): lau_theme_change_thm_fail
+0x001D1600,0x8c,strref_lau_theme_change_thm_fail_1d1600,string_reference,function references string(s): lau_theme_change_thm_fail
+0x001D5E80,0x1c,strref_G_Undo_01_1d5e80,string_reference,function references string(s): G_Undo_01
+0x001D7BF8,0x184,strref_N_IconPos_00_1d7bf8,string_reference,function references string(s): N_IconPos_00
+0x001DB1E4,0x350,strref_lau_dlg_2b_canc0_1db1e4,string_reference,function references string(s): lau_dlg_2b_canc0 | lau_dlg_sample0 | lau_dlg_sample1
+0x001DC5D4,0x5dc,strref_lau_dlg_2b_canc0_1dc5d4,string_reference,function references string(s): lau_dlg_2b_canc0 | lau_dlg_quit2
+0x001DDCB0,0x258,strref_lau_dlg_sd_error_1ddcb0,string_reference,function references string(s): lau_dlg_sd_error | lau_dlg_sd_prote
+0x001DE8AC,0xd69f4,strref_https_i_nintendo_net_3ds_1de8ac,string_reference,function references string(s): https://i.nintendo.net/3ds | lau_dlg_app_jump | lau_dlg_no_upper_cap
+0x001E7EE0,0x8e8,strref_P_IconPrize_00_1e7ee0,string_reference,function references string(s): P_IconPrize_00 | P_Icon_00
+0x001EA1B0,0x9a8,strref_TextBox_00_1ea1b0,string_reference,function references string(s): TextBox_00 | TextBox_02
+0x001EE074,0x92604,strref_PtSlideBar_bclyt_1ee074,string_reference,function references string(s): N_SlideBar_00 | PtSlideBar.bclyt
+0x001EEF00,0x110,strref_T_Walk_00_1eef00,string_reference,function references string(s): T_Walk_00
+0x001EF020,0x1e0,strref_T_Walk_00_1ef020,string_reference,function references string(s): T_Walk_00
+0x001F60C8,0x68,strref_G_Cntnt_01_1f60c8,string_reference,function references string(s): G_Cntnt_01 | G_News_00
+0x001FD09C,0x30,strref_content_1fd09c,string_reference,function references string(s): content:
+0x00240AC0,0x476,strref_lau_theme_default_240ac0,string_reference,function references string(s): lau_theme_default
+0x00244CF4,0x254,strref_YapN7dMun6U6CVPx_244cf4,string_reference,function references string(s): YapN7dMun6U6CVPx
+0x00251214,0xc8,strref_SBBaseWndw_251214,string_reference,function references string(s): SBBaseWndw | SBBtnFrame | SBBtnShdw
+0x00254998,0xd4,strref_SBBaseWndw_254998,string_reference,function references string(s): SBBaseWndw | SBBtnFrame | SBBtnShdw
+0x00255FF4,0x57c,strref_G_Close_00_255ff4,string_reference,function references string(s): G_Close_00
+0x0025A074,0x124,strref_T_btnB_01_25a074,string_reference,function references string(s): T_btnB_01 | T_btnB_02
+0x0025A350,0xf0,strref_tm_shop_btm_bu_exit_25a350,string_reference,function references string(s): T_BtnB_00 | T_BtnF_00 | tm_shop_btm_bu_exit
+0x0025D174,0x15c,strref_N_BtmBtn_00_25d174,string_reference,function references string(s): G_Scene_00 | N_BtmBtn_00 | T_BtnB_00
+0x0025EACC,0xcc,strref_N_ElemPos_00_25eacc,string_reference,function references string(s): N_ElemPos_00
+0x00262B78,0x19c,strref_waiticon_LZ_bin_262b78,string_reference,function references string(s): N_WaitIcon_01 | waiticon_LZ.bin
+0x002635D0,0x26c,strref_N_Scroll_00_2635d0,string_reference,function references string(s): N_Scroll_00
+0x002639A0,0x80,strref_N_TopBanner_00_2639a0,string_reference,function references string(s): N_Scroll_00 | N_TopBanner_00
+0x002683D8,0x138,strref_LncBtmBtn_03_Decide_bclan_2683d8,string_reference,function references string(s): LncBtmBtn_03_Decide.bclan | LncBtmBtn_03_Select.bclan
+0x0026D964,0x128,strref_PUBLISHER_NAME_26d964,string_reference,function references string(s): ITEM_CODE | PUBLISHER_NAME
+0x0026E4B0,0x44,strref_content_26e4b0,string_reference,function references string(s): content:
+0x0027F388,0xf4,strref_PtClose_00_bclyt_27f388,string_reference,function references string(s): G_PetitBtn_00 | N_PetitBtn_00 | PtClose_00.bclyt
+0x002808D0,0xd0,strref_PtThmEff_00_bclyt_2808d0,string_reference,function references string(s): G_Color_00 | G_Loop_00 | N_EPos_Btn_00
+0x0028100C,0x1e8,strref_PtDlgCnt_CTR_28100c,string_reference,function references string(s): PtDlgCnt_CTR | PtDlgCnt_FTR | PtDlgCnt_JAN
+0x00282F68,0x148,strref_DlgWaitIcon_00_bclyt_282f68,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002839E4,0x168,strref_DlgWaitIcon_00_bclyt_2839e4,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x00283CA8,0x168,strref_DlgWaitIcon_00_bclyt_283ca8,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x0028403C,0x138,strref_DlgWaitIcon_00_bclyt_28403c,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x0028418C,0x1a0,strref_DlgWaitIcon_00_bclyt_28418c,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x00284344,0x1b0,strref_DlgWaitIcon_00_bclyt_284344,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x0028531C,0x138,strref_DlgWaitIcon_00_bclyt_28531c,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002860F4,0xe4,strref_T_CamText_00_2860f4,string_reference,function references string(s): T_CamText_00 | T_CamText_01
+0x002886B0,0x138,strref_DlgWaitIcon_00_bclyt_2886b0,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x0028B750,0x274,strref_plt_setting_reset_28b750,string_reference,function references string(s): TextBox_08 | TextBox_13 | plt_setting_reset
+0x0028ED0C,0x14c,strref_LncIconPrizePickup_00_bclyt_28ed0c,string_reference,function references string(s): G_Scale_00 | LncIconPrizePickup_00.bclyt | PaletteClear.bclyt
+0x0028F960,0x3ca68,strref_Bounding_03_28f960,string_reference,function references string(s): Bounding_03
+0x0028FDA0,0x110,strref_G_Undo_01_28fda0,string_reference,function references string(s): G_Undo_01
+0x002900AC,0x4c8,strref_TextBox_00_2900ac,string_reference,function references string(s): TextBox_00 | TextBox_02
+0x00290578,0x648,strref_N_PrizeBlank_00_290578,string_reference,function references string(s): N_PrizeBlank_00
+0x00298090,0x18c,strref_eula_country_bin_298090,string_reference,function references string(s): eula:/country.bin
+0x002A7DCC,0xd8,strref_P_BnrText_00_2a7dcc,string_reference,function references string(s): P_BnrText_00 | T_BnrText_00 | T_BnrText_01
+0x002AA9DC,0x3ec,strref_CmnFadeNinLogo_U_00_2aa9dc,string_reference,function references string(s): CmnFadeNinLogo_U_00 | CmnFade_U_00 | lau_title_menu
+0x002AE508,0x108,strref_P_arwIconL_00_2ae508,string_reference,function references string(s): P_arwIconL_00 | P_arwIconR_00
+0x002BB3F0,0x51c,strref_DlgN_Csr_00_bclyt_2bb3f0,string_reference,function references string(s): DlgN_Csr_00.bclyt | G_Scale_00
+0x002BCEBC,0x27c,strref_N_PostPos_00_2bcebc,string_reference,function references string(s): G_Cntnt_00 | N_PostPos_00 | P_Icon_00
+0x002BD310,0x18c,strref_lau_dlg_applet_hangup_2bd310,string_reference,function references string(s): lau_dlg_app_hangup | lau_dlg_applet_hangup
+0x002BDD1C,0x88,strref_P_Icon_Badge_01_2bdd1c,string_reference,function references string(s): P_Icon_01 | P_Icon_Badge_01 | P_Icon_Cbnt_01
+0x002BDDB0,0x744d0,strref_lau_dlg_rsv1_already_plural_2bddb0,string_reference,function references string(s): G_Loop_00 | lau_dlg_rsv1_already | lau_dlg_rsv1_already_plural
+0x002BE4EC,0xac,strref_lau_dlg_rsv1_still_manual_2be4ec,string_reference,function references string(s): lau_dlg_rsv1_still_manual | lau_dlg_rsv_still
+0x002BE5B0,0x13c,strref_DlgWaitIcon_00_bclyt_2be5b0,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002BE704,0x138,strref_P_Icon_00_2be704,string_reference,function references string(s): P_Icon_00
+0x002BECE8,0x164,strref_lau_dlg_2b_canc0_2bece8,string_reference,function references string(s): lau_dlg_2b_canc0 | lau_dlg_quit1 | lau_dlg_quit3
+0x002BF2FC,0x524,strref_T_AppTitle_00_2bf2fc,string_reference,function references string(s): G_Icon_00 | P_Icon_01 | T_AppTitle_00
+0x002C16C0,0x134,strref_lau_dlg_welc_theme_2_2c16c0,string_reference,function references string(s): lau_dlg_welc_theme_2
+0x002C183C,0x330,strref_tm_shop_dlg_local_thm_over_2c183c,string_reference,function references string(s): lau_dlg_2b_canc0 | tm_shop_dlg_local_thm_over
+0x002C28BC,0x3ec,strref_Icon_space_bclim_2c28bc,string_reference,function references string(s): Icon_space.bclim
+0x002C35C8,0x148,strref_Icon_space_bclim_2c35c8,string_reference,function references string(s): Icon_space.bclim
+0x002C4B30,0x1cc,strref_T_Number_00_2c4b30,string_reference,function references string(s): T_Number_00
+0x002C4D14,0x168,strref_DlgWaitIcon_00_bclyt_2c4d14,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002C5D34,0x108,strref_lau_theme_dlg_delete_0_2c5d34,string_reference,function references string(s): lau_dlg_2b_canc0 | lau_theme_dlg_delete_0 | lau_theme_dlg_delete_1
+0x002C5E5C,0x1588,strref_lau_dlg_welc_theme_3_2c5e5c,string_reference,function references string(s): lau_dlg_welc_theme_3
+0x002C791C,0x790,strref_lau_theme_dlg_delete_done_2c791c,string_reference,function references string(s): lau_theme_dlg_delete_done
+0x002C8B8C,0x4a4,strref_lau_theme_shop_80_2c8b8c,string_reference,function references string(s): lau_theme_shop_80 | ptt_dlg_sd_diff | ptt_dlg_sd_prote
+0x002C93BC,0x138,strref_DlgWaitIcon_00_bclyt_2c93bc,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002CC6AC,0x104,strref_N_Thumb_All_2cc6ac,string_reference,function references string(s): N_Thumb_All
+0x002CCA10,0x144,strref_PlateGray_bclim_2cca10,string_reference,function references string(s): PlateGray.bclim | Thumb_D_00 | Thumb_U_00
+0x002CE5C4,0x124,strref_Thumb_D_00_2ce5c4,string_reference,function references string(s): Thumb_D_00 | Thumb_U_00
+0x002CE6F8,0xff540,strref_Thumb_D_00_2ce6f8,string_reference,function references string(s): Thumb_D_00 | Thumb_D_01 | Thumb_U_00
+0x002CEA34,0x94,strref_T_Number_00_2cea34,string_reference,function references string(s): T_Number_00 | T_Title_00
+0x002CEAD0,0x124,strref_Thumb_D_00_2cead0,string_reference,function references string(s): Thumb_D_00 | Thumb_U_00
+0x002CED40,0x140,strref_DlgWaitIcon_00_bclyt_2ced40,string_reference,function references string(s): DlgWaitIcon_00.bclyt
+0x002D27E4,0x164,strref_DlgWaitIcon_00_bclyt_2d27e4,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002D36E8,0x220,strref_tm_shop_dlg_about_news_2d36e8,string_reference,function references string(s): lau_dlg_1b_next | tm_shop_dlg_about_news
+0x002D49D8,0x184,strref_tm_shop_title_2d49d8,string_reference,function references string(s): tm_shop_title
+0x002D4E4C,0x184,strref_tm_shop_title_2d4e4c,string_reference,function references string(s): tm_shop_title
+0x002D4FDC,0xe4,strref_tm_shop_dlg_bu_back_2d4fdc,string_reference,function references string(s): tm_shop_dlg_bu_back
+0x002D50C8,0xe4,strref_tm_shop_dlg_bu_back_2d50c8,string_reference,function references string(s): tm_shop_dlg_bu_back
+0x002D51B4,0xb90,strref_tm_shop_dlg_save_set_2d51b4,string_reference,function references string(s): tm_shop_dlg_save_set
+0x002D6C14,0x16c,strref_tm_shop_dlg_save_set_2d6c14,string_reference,function references string(s): tm_shop_dlg_save_set
+0x002D8430,0xd8,strref_ptt_dlg_contactinfo_2d8430,string_reference,function references string(s): ptt_dlg_contactinfo
+0x002D8FEC,0x414,strref_tm_shop_dlg_price_changed_2d8fec,string_reference,function references string(s): lau_theme_shop_error | tm_shop_dlg_price_changed
+0x002D9524,0x104,strref_lau_theme_shop_error_2d9524,string_reference,function references string(s): lau_theme_shop_error
+0x002DA0C8,0x238,strref_lau_theme_shop_fin_2da0c8,string_reference,function references string(s): lau_dlg_2b_canc0 | lau_dlg_2b_launch | lau_theme_shop_fin
+0x002DAE80,0x2e0,strref_tm_shop_dlg_empty_list_2dae80,string_reference,function references string(s): tm_shop_dlg_empty_list
+0x002DB440,0x114,strref_tm_shop_dlg_empty_list_2db440,string_reference,function references string(s): tm_shop_dlg_empty_list
+0x002DC0C8,0x14,strref_tm_shop_dlg_contain_pcsd_2dc0c8,string_reference,function references string(s): tm_shop_dlg_contain_pcsd
+0x002DC0E0,0x27c,strref_tm_shop_dlg_local_thm_max_2dc0e0,string_reference,function references string(s): lau_dlg_2b_canc0 | tm_shop_dlg_contain_pcsd | tm_shop_dlg_local_thm_max
+0x002DCF88,0x1bc,strref_LncDlgBgDl_D_02_bclyt_2dcf88,string_reference,function references string(s): LncDlgBgDl_D_02.bclyt | TextBoxDialog | TextBoxDialog_01
+0x002DE208,0x188,strref_DlgWaitIcon_00_bclyt_2de208,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002DE3A8,0xe4,strref_T_BtnB_00_2de3a8,string_reference,function references string(s): Group_00 | T_BtnB_00 | T_BtnF_00
+0x002DE824,0x178,strref_DlgWaitIcon_00_bclyt_2de824,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002DE9B4,0x188,strref_DlgWaitIcon_00_bclyt_2de9b4,string_reference,function references string(s): DlgWaitIcon_00.bclyt | waiticon_LZ.bin
+0x002DFDD8,0xf0,strref_lau_dlg_zone_2dfdd8,string_reference,function references string(s): lau_dlg_zone
+0x00305134,0x1023b0,strref_TextBoxTitle_305134,string_reference,function references string(s): TextBoxTitle

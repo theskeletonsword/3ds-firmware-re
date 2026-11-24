@@ -1,0 +1,2 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00123C1C,0xda,strref_IE_in_3_4_msg_does_not_match_with_IE_in_Beacon_P_123c1c,string_reference,function references string(s): IE in 3/4 msg does not match with IE in Beacon/ProbeResp (no IE?)

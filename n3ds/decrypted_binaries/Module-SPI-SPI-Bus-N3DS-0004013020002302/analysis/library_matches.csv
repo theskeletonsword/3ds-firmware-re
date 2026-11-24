@@ -1,0 +1,8 @@
+ea,size,symbol_name,kind,technical_evidence
+0x00100540,0x2c,lib_crt_fini_array_100540,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:pm @0x00100460 ""pm_crt_fini_array"" (o3ds_semantic)"
+0x00101D50,0x38,lib_i2c_bus_101d50,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x00102DC8 ""i2c_i2c_bus_102dc8"" (o3ds_semantic)"
+0x001025B0,0xe0,lib_i2c_bus_1025b0,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:Module-I2C-I2C-Bus-0004013000001E02 @0x001013C0 ""i2c_i2c_bus_1013c0"" (o3ds_semantic)"
+0x00103254,0xa0,lib_nn_os_anonymous_namespace_DefaultAutoStackManager__vslot2_103254,library_match,"masked bytes identical to 3 named function(s), e.g. o3ds:amiibo-Settings-App-000400100002C000 @0x00286270 ""nn_os_anonymous_namespace_DefaultAutoStackManager__vslot2_286270"" (rtti_vslot)"
+0x00101F28,0x22,lib_crt_aeabi_vec_ctor_101f28,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:pxi @0x00102740 ""pxi_crt_aeabi_vec_ctor_00102740"" (o3ds_semantic)"
+0x00100D08,0xe4,lib_thread_create_and_start_100d08,library_match,"masked bytes identical to 2 named function(s), e.g. o3ds:pm @0x00100FB4 ""pm_thread_create_and_start"" (o3ds_semantic)"
+0x00102CE8,0x148,lib_slab_alloc_entry_102ce8,library_match,"masked bytes identical to 1 named function(s), e.g. o3ds:sm @0x0010270C ""sm_slab_alloc_entry"" (o3ds_semantic)"

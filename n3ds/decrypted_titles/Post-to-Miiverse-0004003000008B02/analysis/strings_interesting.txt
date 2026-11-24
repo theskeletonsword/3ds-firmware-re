@@ -1,0 +1,76 @@
+0x00100254	RWSTDERR
+0x001034BC	Exception: %s.
+0x001045BC	cbf_std.bcfnt
+0x00114A34	%s\%u\
+0x00132CC8	$CFLRES:/CFL_Res.dat
+0x001331B8	$CFLRES:/CFL_Res.dat
+0x00134228	$CFLDB:/CFL_OldDB.dat
+0x00134DF0	$CFLDB:/CFL_DB.dat
+0x00134F08	$CFLRES:/CFL_Res.dat
+0x0013525C	$CFLDB:/CFL_OldDB.dat
+0x00135274	$CFLDB:/CFL_DB.dat
+0x0013C8AC	$CFLDB:/CFL_OldDB.dat
+0x0013FD5C	STR_ERROR_INIT
+0x00146C7C	https://discovery.olv.nintendo.net/v1/endpoint
+0x001493A4	result/posts/post
+0x0016B5C8	STR_ERROR_SAVEMSG
+0x0017A6D4	.bclyt
+0x00190898	std::ios::badbit, std::ios::failbit, std::ios::eofbit
+0x001908E8	badbit, failbit
+0x00190908	failbit, eofbit
+0x001C0188	STR_ERROR_MII
+0x001C01F7	?STR_ERROR_COMMON
+0x001C4BD0	STR_ERROR_COMMON
+0x001D292C	STR_ERROR_COMMON
+0x001D3944	STR_ERROR_NNID
+0x001FA0C0	STR_ERROR_COMMON
+0x001FA180	STR_ERROR_SAVEMSG
+0x001FA354	STR_ERROR_INIT
+0x001FA364	STR_ERROR_SAVEBROKEN
+0x001FA37C	STR_ERROR_SAVEMSG
+0x001FA478	STR_ERROR_INIT
+0x001FA488	STR_ERROR_SAVEBROKEN
+0x001FA4C4	STR_ERROR_COMMON
+0x001FA51C	STR_ERROR_INIT
+0x001FA6C0	STR_SAVE_ERROR
+0x001FC720	$CFLDB:/CFL_OldDB.dat
+0x001FC738	$CFLDB:/CFL_DB.dat
+0x001FD5E0	dsp::DSP
+0x00200708	\%s\%llu\%s\%u\%s\%u\%s\%d\%s\%d\%s\%d\%s\%d\%s\%d\%s\%d\%s\%u\%s\%d\%s\%llu\%s\%s\%s\%lld\
+0x00200764	3DS/%s-%d.%d/%05X
+0x00200778	https://%s/v1/posts/%s.delete
+0x00200798	https://%s/v1/posts/%s/replies
+0x002007B8	https://%s/v1/posts/%s.delete
+0x002007D8	https://%s/v1/posts
+0x0020BD0A	std::cin
+0x0020BD15	std::cout
+0x0020BD20	std::cerr
+0x0020BD2B	std::clog
+0x0020BD36	std::wcin
+0x0020BD41	std::wcout
+0x0020BD4C	std::wcerr
+0x0020BD57	std::wclog
+0x00210489	gsp::Lcd
+0x00210492	gsp::Gpu
+0x00210630	%s: bad locale name: "%s"
+0x0021064A	%s: range error: invalid range [%d, %d)
+0x00210672	%s: argument value %u out of range [0, %u)
+0x0021069D	%s: conversion failed
+0x002106B3	%s: facet %u not found in "%s" locale
+0x002106D9	%s: failed to construct locale name
+0x002106FD	%s: exception
+0x0021070B	%s: unexpected exception
+0x00210724	%s: invalid pointer %p
+0x0021073B	%s: logic error
+0x0021074B	%s: unspecified error
+0x00210761	%s: runtime error
+0x00210773	%s: underflow error
+0x00210787	%s: overflow error
+0x0021079A	%s: stream object has set %s
+0x002107B7	%s: stream object has set ios::badbit
+0x002107DD	%s: stream object has set ios::eofbit
+0x00210803	%s: stream object has set ios::failbit
+0x0021082A	%s: bad cast
+0x00210837	%s: length error: %u > %u
+0x00210851	%s: bad_alloc: out of memory
+0x0021086E	%s: out of memory

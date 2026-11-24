@@ -1,0 +1,2 @@
+        │   0x0000006c      00f09eef       svc 0x9ef000
+        │   0x000000bc      00f076ef       svc 0x76f000
